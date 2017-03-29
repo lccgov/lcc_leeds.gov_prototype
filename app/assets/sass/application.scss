@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+
+
 // available variables to change the brand colours as required
 // masterhead.scss
 
@@ -16,8 +19,8 @@
 //$base-link-color:#133E8D ;
 //$base-container-width:1500px ;
 //$btn-background-color:green ;
-//$font-primary: Arial ; // main font
-//$font-secondary: Arial ; // secondary font
+$font-primary: 'Open Sans', Arial ; // main font
+$font-secondary:'Open Sans', Arial ; // secondary font
 
 
 // global used on all partials to get a uniform spacing between elements
@@ -28,7 +31,7 @@
 //$search-link:#333 ;
 
 // mainNav.scss
-//$main-nav-background:#133E8D ;
+$main-nav-background:#085da9 ;
 //$main-nav-link:#fff ;
 
 //footer.scss
@@ -75,12 +78,12 @@
 //$content-border-color:#ddd;
 
 // section backgrounds
-//$sectionHeader-background-color:lighten($base-background-color, 3%) ;
-//$sectionOne-background-color:darken($base-background-color, 5%) ;
-//$sectionTwo-background-color:darken($base-background-color, 10%) ;
-//$sectionThree-background-color:lighten($base-background-color, 3%) ;
-//$sectionFour-background-color:lighten($base-background-color, 5%) ;
-//$sectionFive-background-color:darken($base-background-color, 5%) ;
+$sectionHeader-background-color:#085da9;
+$sectionOne-background-color:#fff ;
+$sectionTwo-background-color:#f6f6f6;
+$sectionThree-background-color:#f6f6f6;
+$sectionFour-background-color:#fff ;
+$sectionFive-background-color:#f6f6f6;
 
 //iconlinks
 //$iconLinkIconColor:#FFC82E;
@@ -128,3 +131,38 @@ $accordion-color:green;
 @import 'docList';
 
 
+.logo {
+    background:none;
+    margin: 20px -5px;
+    height:auto;
+    width:auto;
+
+    
+    &:hover{
+        text-decoration:none;
+    }
+
+    &:after{
+        content:'Leeds.gov.uk';
+        text-transform:uppercase;
+        font-size:50px;
+        color:#fff;
+        font-weight:300;
+
+
+    }
+
+        @media screen and (max-width:768px){
+            text-align: center;
+
+                &:after{
+           font-size:30px;
+            text-align: center;
+
+
+    }
+        }
+}
+.main-nav{
+    border-top:1px solid #075498;
+}

@@ -18,7 +18,7 @@
 //$base-font-color:#333 ;
 //$base-link-color:#133E8D ;
 //$base-container-width:1500px ;
-//$btn-background-color:green ;
+$btn-background-color:#3A7BBF ;
 $font-primary: 'Open Sans', Arial ; // main font
 $font-secondary:'Open Sans', Arial ; // secondary font
 
@@ -93,13 +93,14 @@ $sectionFive-background-color:#fff;
 //$heroFontcolor:#fff; 
 
 //news
-//$news-button-background: #3498DB ;
+$news-button-background: #929432 ;
 $news-pod-back:#ffffff ;
 $news-pod-border-color:#ddd;
 
 //accordion
 $accordion-color:green;
 //$accordion-border-color:#ECF0F1;
+
 
 @import 'mixins';
 @import 'variables';
@@ -155,6 +156,11 @@ $accordion-color:green;
         }
 }
 
+.breadcrumb ul{
+  padding:0px;
+  margin:0px;
+}
+
 
 .sectionHeader{
     border-top:1px solid #ddd;
@@ -203,6 +209,11 @@ h1, h2, h3, h4, h5 {
     color: #BFC24C;
 }
 
+h1 {
+    font-size: 50px;
+    margin: .0em 0 .6em 0;
+}
+
 p.highlight {
     font-size: 1.4em;
     font-style: italic;
@@ -213,7 +224,9 @@ p.highlight {
 
 .sectionOne{
     border-top:1px solid #3A7BBF;
-    margin-top:-1px;
+    img{
+    max-width:100%;
+}
 }
 
 .sectionThree{
@@ -773,3 +786,43 @@ h2.contactUs:after{
 }
 
 /*END CONTACT US FORM*/
+
+
+.sectionSubsite.news{
+     background: #BFC24C;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+
+    h3, label{
+      color:#fff;
+    }
+
+    .button{
+      padding:14px;
+      box-shadow: none;
+      margin-left: -4px;
+    }
+input {
+    border:none;
+}
+
+ul.accordion {
+
+    border-top: 1px solid #929432;
+
+    li{
+      border-color:#929432;
+      a{
+        background:transparent;
+        color:#fff;
+      }
+    }
+}
+
+}
+
+#paging .contentPod h3 {
+ color:#3A7BBF;
+}
+
+
