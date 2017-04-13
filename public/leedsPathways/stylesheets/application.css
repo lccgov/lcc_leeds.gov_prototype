@@ -5,7 +5,7 @@ body {
   font-size: 16px;
   font-family: Arial;
   color: #333;
-  background-color: #fff; }
+  background-color: #f6f6f6; }
 
 .ms-rtestate-field h1.ms-rteElement-H2, .ms-rtestate-field h2.ms-rteElement-H2, .ms-rtestate-field h3.ms-rteElement-H2, .ms-rtestate-field h4.ms-rteElement-H2, .ms-rtestate-field h5.ms-rteElement-H2 {
   font-family: Arial;
@@ -31,22 +31,22 @@ body {
   max-width: 1500px; }
 
 .sectionHeader {
-  background: white; }
+  background: #fefefe; }
 
 .sectionOne {
-  background: #f2f2f2; }
+  background: #e9e9e9; }
 
 .sectionTwo {
-  background: #e6e6e6; }
+  background: #dddddd; }
 
 .sectionThree {
-  background: white; }
+  background: #fefefe; }
 
 .sectionFour {
   background: white; }
 
 .sectionFive {
-  background: #f2f2f2; }
+  background: #e9e9e9; }
 
 /*********************************************
  End Base.sass variables

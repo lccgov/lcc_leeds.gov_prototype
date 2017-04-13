@@ -2020,6 +2020,58 @@ docsList
   .docList.two li, .docList.three li, .docList.four li, .docList.five li {
     width: 100%; } }
 
+.highlighted {
+  padding: 2em 1.75em;
+  margin: 1em 0;
+  background: #333; }
+  .highlighted img {
+    max-width: 100%; }
+  .highlighted.section {
+    margin: 0px; }
+  .highlighted.alignCenter {
+    text-align: center; }
+  .highlighted h2, .highlighted h3, .highlighted h4 {
+    margin-top: 0px; }
+  .highlighted h2, .highlighted h3, .highlighted h4, .highlighted p, .highlighted ul, .highlighted ol, .highlighted em {
+    color: #fff; }
+  .highlighted p strong {
+    font-weight: 800 !important;
+    font-size: 28px !important;
+    line-height: 1.25 !important; }
+  .highlighted em {
+    font-size: 80px;
+    font-style: normal;
+    line-height: 60px;
+    margin-bottom: 30px;
+    font-weight: 800;
+    display: block; }
+  .highlighted a.btn {
+    font-size: 16px;
+    border-color: #fff;
+    color: #fff;
+    background: transparent;
+    margin: 0px 0 20px;
+    display: inline-block; }
+    @media screen and (max-width: 400px) {
+      .highlighted a.btn {
+        width: 100%; } }
+    .highlighted a.btn:hover {
+      background: #fff;
+      color: #333; }
+  .highlighted.alt {
+    background: #f6f6f6; }
+    .highlighted.alt h2, .highlighted.alt h3, .highlighted.alt h4, .highlighted.alt p, .highlighted.alt ul, .highlighted.alt ol, .highlighted.alt em {
+      color: #333; }
+    .highlighted.alt a.btn {
+      border-color: #333;
+      color: #333; }
+      .highlighted.alt a.btn:hover {
+        background: #333;
+        color: #f6f6f6; }
+  @media screen and (max-width: 400px) {
+    .highlighted {
+      padding: 1.5em 1em; } }
+
 .logo {
   background: none;
   margin: 20px -5px;

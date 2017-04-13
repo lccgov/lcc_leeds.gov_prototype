@@ -1,14 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:300,700,800,400,600");
 /*********************************************
 Base.sass variables
 *********************************************/
 body {
-  font-size: 16px;
-  font-family: Arial;
+  font-size: 19px;
+  font-family: "Oswald", Helvetica, Arial;
   color: #333;
   background-color: #fff; }
 
 .ms-rtestate-field h1.ms-rteElement-H2, .ms-rtestate-field h2.ms-rteElement-H2, .ms-rtestate-field h3.ms-rteElement-H2, .ms-rtestate-field h4.ms-rteElement-H2, .ms-rtestate-field h5.ms-rteElement-H2 {
-  font-family: Arial;
+  font-family: "Oswald", Helvetica, Arial;
   color: #333; }
 
 .btn-primary, .button {
@@ -31,13 +32,13 @@ body {
   max-width: 1500px; }
 
 .sectionHeader {
-  background: white; }
+  background: #c3102f; }
 
 .sectionOne {
-  background: #f2f2f2; }
+  background: #fff; }
 
 .sectionTwo {
-  background: #e6e6e6; }
+  background: #ecf0f1; }
 
 .sectionThree {
   background: white; }
@@ -67,35 +68,35 @@ body {
  mainMenu.sass variables
 *********************************************/
 .ms-core-navigation {
-  font-family: Arial; }
+  font-family: "Oswald", Helvetica, Arial; }
 
 .ms-core-listMenu-item, .ms-core-listMenu-item:link, .ms-core-listMenu-item:visited, .ms-tv-item:link, .ms-tv-item:visited, .ms-tv-header:link, .ms-tv-header:visited {
   color: #fff; }
 
 .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, a.ms-tv-item:hover, a.ms-tv-header:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
-  background-color: #103477;
+  background-color: #ab0e29;
   color: #fff; }
 
 .main-nav {
-  background: #133E8D; }
+  background: #c3102f; }
   .main-nav ul {
     width: 100%; }
     .main-nav ul li a {
       color: #fff; }
     .main-nav ul li a:hover, .main-nav ul li a:focus {
-      background-color: #103477;
+      background-color: #ab0e29;
       color: #fff; }
     .main-nav ul li a.selected {
-      background: #11367b !important; }
+      background: #b00e2a !important; }
   .main-nav ul ul {
-    background-color: #103477;
-    background-color: #103477; }
+    background-color: #ab0e29;
+    background-color: #ab0e29; }
     .main-nav ul ul li {
-      border-bottom: 1px solid #0e2e69; }
+      border-bottom: 1px solid #9d0d26; }
       .main-nav ul ul li:first-of-type {
-        border-top: 1px solid #0e2e69; }
+        border-top: 1px solid #9d0d26; }
       .main-nav ul ul li a:hover {
-        background: #0e2e69; }
+        background: #9d0d26; }
 
 /*********************************************
  End mainMenu.sass variables
@@ -106,7 +107,7 @@ body {
 ul.menu li a {
   color: #337ab7; }
   ul.menu li a:hover, ul.menu li a:focus {
-    background: #133E8D !important; }
+    background: #c3102f !important; }
   ul.menu li a.main-menu, ul.menu li a.search {
     background: #fff; }
   ul.menu li a.search {
@@ -114,10 +115,10 @@ ul.menu li a {
   ul.menu li a.search.active, ul.menu li a.search:hover, ul.menu li a.search:focus {
     background: #bdc3c7 !important; }
   ul.menu li a.main-menu {
-    background: #133E8D !important;
+    background: #c3102f !important;
     color: #fff; }
   ul.menu li a.main-menu:hover, ul.menu li a.main-menu:focus, ul.menu li a.main-menu.active {
-    background: #0e2e69; }
+    background: #9d0d26; }
 
 /*********************************************
  End ResponsiveMenu.sass variables
@@ -126,11 +127,11 @@ ul.menu li a {
  footer.sass variables
 *********************************************/
 footer.main {
-  background: #133E8D; }
+  background: #c3102f; }
   footer.main p {
     color: #fff; }
   footer.main .footer {
-    background: #133E8D; }
+    background: #c3102f; }
     footer.main .footer ul li a {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
       color: #fff !important; }
@@ -153,10 +154,10 @@ footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twit
 
 footer.main .socialBookmarks a:hover:after {
   background: #fff;
-  color: #133E8D; }
+  color: #c3102f; }
 
 footer.main .footerGlobal {
-  background: #11367b; }
+  background: #b00e2a; }
 
 .footerGlobal nav ul {
   list-style: none;
@@ -682,7 +683,7 @@ ul.promo-group {
         overflow: hidden;
         height: 170px;
         display: block;
-        color: #fff;
+        color: #414141;
         background-size: cover !important;
         background-position: 0px enter !important; }
         .promoListWebpart ul li a span {
@@ -693,7 +694,7 @@ ul.promo-group {
           bottom: 0px;
           right: 0px;
           padding: 20px 40px 20px 20px;
-          background: #133E8D;
+          background: #fff;
           width: 100%;
           opacity: 0.90;
           filter: alpha(opacity=90);
@@ -704,14 +705,14 @@ ul.promo-group {
           position: absolute; }
         .promoListWebpart ul li a:hover span.info,
         .promoListWebpart ul li a:focus span.info {
-          background: #131A22;
+          background: #efefef;
           text-decoration: none;
           opacity: 1;
           filter: alpha(opacity=100);
           /* For IE8 and earlier */ }
         .promoListWebpart ul li a .secondaryInfo {
-          font-family: Arial;
-          color: #fff;
+          font-family: "Oswald", Helvetica, Arial;
+          color: #666;
           width: 70%;
           display: block;
           opacity: 1;
@@ -725,14 +726,14 @@ ul.promo-group {
           padding: 30px 0;
           width: 15%;
           display: block;
-          background: #0d2a60;
+          background: transparent;
           height: 100%;
           text-align: center; }
           .promoListWebpart ul li a .arrow:after {
             font-family: FontAwesome;
             font-size: 35px;
             content: "\f105";
-            color: #fff;
+            color: #414141;
             position: absolute;
             display: inline-block;
             vertical-align: middle;
@@ -741,7 +742,7 @@ ul.promo-group {
             top: 50%;
             margin: -25px 0 0 -36px; }
         .promoListWebpart ul li a span.thirdInfo {
-          background: #f6f6f6;
+          background: #fff;
           right: 0px;
           color: #333;
           width: 33.3%;
@@ -749,7 +750,7 @@ ul.promo-group {
           max-width: 100%;
           text-align: center;
           line-height: 60px;
-          font-size: 19.2px; }
+          font-size: 22.8px; }
       .promoListWebpart ul li a[rel="xl"]:after,
       .promoListWebpart ul li a[rel="pdf"]:after,
       .promoListWebpart ul li a[rel="doc"]:after,
@@ -772,32 +773,32 @@ ul.promo-group {
         width: 100%;
         min-width: 100%; }
   .promoListWebpart li.six a span.info {
-    font-size: 40px; }
+    font-size: 47.5px; }
   .promoListWebpart .six a span.secondaryInfo {
-    font-size: 20.8px;
+    font-size: 24.7px;
     display: block; }
   .promoListWebpart .two a span.info,
   .promoListWebpart .three a span.info,
   .promoListWebpart .four a span.info,
   .promoListWebpart .quarter a span.info {
-    font-size: 24px;
+    font-size: 28.5px;
     padding: 20px 100px 20px 20px; }
   .promoListWebpart .two a span.secondaryInfo,
   .promoListWebpart .three a span.secondaryInfo,
   .promoListWebpart .four a span.secondaryInfo,
   .promoListWebpart .quarter a span.secondaryInfo {
-    font-size: 16px; }
+    font-size: 19px; }
   .promoListWebpart .four.heightTwo a {
-    font-size: 36.8px; }
+    font-size: 43.7px; }
   @media screen and (max-width: 1000px) {
     .promoListWebpart a span.info,
     .promoListWebpart li.four.heightTwo a span.info,
     .promoListWebpart li.six a span.info {
-      font-size: 24px; }
+      font-size: 28.5px; }
     .promoListWebpart a span.secondaryInfo,
     .promoListWebpart li.four.heightTwo a span.secondaryInfo,
     .promoListWebpart li.six a span.secondaryInfo {
-      font-size: 19.2px; } }
+      font-size: 22.8px; } }
   @media screen and (min-width: 1000px) {
     .promoListWebpart li.six a span.info,
     .promoListWebpart li.four a span.info {
@@ -833,7 +834,7 @@ ul.promo-group {
     padding-bottom: 100px;
     height: 200px; }
     .promoListWebpart .contentLink h2 {
-      font-size: 35.2px; }
+      font-size: 41.8px; }
     .promoListWebpart .contentLink a {
       color: #333; }
       .promoListWebpart .contentLink a .arrow:after {
@@ -841,18 +842,18 @@ ul.promo-group {
       .promoListWebpart .contentLink a:hover {
         color: #fff; }
         .promoListWebpart .contentLink a:hover .arrow:after {
-          color: #fff; }
+          color: #414141; }
     .promoListWebpart .contentLink.color a {
       bottom: 10px !important; }
     .promoListWebpart .contentLink.color p {
       color: #333; }
     .promoListWebpart .contentLink.color div {
-      background: #133E8D;
+      background: #fff;
       padding: 15px 15px 30px 15px; }
     .promoListWebpart .contentLink.color.lighter div {
-      background: #174cac; }
+      background: white; }
     .promoListWebpart .contentLink.color.darker div {
-      background: #0f306e; }
+      background: #ededed; }
     @media only screen and (max-width: 1200px) and (min-width: 601px) {
       .promoListWebpart .contentLink.color div {
         display: table-cell;
@@ -871,7 +872,7 @@ ul.promo-group {
         .promoListWebpart .contentLink.color a .info:hover, .promoListWebpart .contentLink.color a .info:focus {
           color: #fff; }
         .promoListWebpart .contentLink.color a .info .arrow {
-          background-color: #0d2a60; }
+          background-color: transparent; }
     .promoListWebpart .contentLink.heightAuto {
       height: auto;
       padding-bottom: 0px; }
@@ -900,7 +901,7 @@ ul.promo-group {
       .promoListWebpart .contentLink.heightTwo a:focus span.info,
       .promoListWebpart .contentLink a:hover span.info,
       .promoListWebpart .contentLink a:focus span.info {
-        background: #131A22; }
+        background: #efefef; }
     .promoListWebpart .contentLink p {
       text-align: center;
       font-size: 24px;
@@ -931,12 +932,12 @@ ul.promo-group {
     height: 200px;
     color: #333; }
     .promoListWebpart .content.color div {
-      background: #133E8D;
+      background: #fff;
       padding: 15px 15px 30px 15px; }
     .promoListWebpart .content.color.lighter div {
-      background: #1952ba; }
+      background: white; }
     .promoListWebpart .content.color.darker div {
-      background: #071633; }
+      background: #cccccc; }
     .promoListWebpart .content.heightAuto {
       height: auto;
       padding-bottom: 0px; }
@@ -1258,7 +1259,7 @@ ul.cbs-List {
 Sharepoint overides
 ********************/
 h1, h2, h3, h4, h5, ul, ol, p, input {
-  font-family: Arial;
+  font-family: "Oswald", Helvetica, Arial;
   color: #333; }
 
 h1, h2, h3, h4, h5 {
@@ -1266,7 +1267,7 @@ h1, h2, h3, h4, h5 {
 
 .ms-rtestate-field h1, .ms-rtestate-field h2, .ms-rtestate-field h3, .ms-rtestate-field h4, .ms-rtestate-field h5 {
   font-weight: 400;
-  font-family: Arial;
+  font-family: "Oswald", Helvetica, Arial;
   color: #333; }
 
 input[type=button], input[type=reset], input[type=submit], button {
@@ -1391,215 +1392,6 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
     content: "\f0e1";
     left: 35%; }
 
-.heroBanner {
-  padding: 55px 0;
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -o-background-size: cover !important;
-  background-size: cover !important; }
-  .heroBanner .container-fluid {
-    position: relative; }
-    .heroBanner .container-fluid h1, .heroBanner .container-fluid p.lead {
-      font-size: 40px;
-      font-weight: 100;
-      color: #fff;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
-      line-height: 48px;
-      width: 40%;
-      margin: 0 0 20px 0; }
-    .heroBanner .container-fluid p {
-      font-size: 20px;
-      font-weight: 100;
-      color: #fff;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
-      width: 40%;
-      margin: 0 0 20px 0; }
-  .heroBanner .button {
-    position: absolute;
-    bottom: 0px;
-    right: 55px;
-    font-size: 20px; }
-  @media only screen and (max-width: 700px) {
-    .heroBanner {
-      padding: 0px; }
-      .heroBanner .container-fluid {
-        padding: 30px;
-        background: rgba(0, 0, 0, 0.5); }
-        .heroBanner .container-fluid h1, .heroBanner .container-fluid p.lead {
-          width: 100%;
-          margin: 0 auto;
-          font-size: 30px;
-          line-height: 30px;
-          background: none;
-          padding: 0 20px; }
-        .heroBanner .container-fluid p {
-          font-size: 25px;
-          width: 100%;
-          margin: 0px auto;
-          background: none; }
-        .heroBanner .container-fluid .button {
-          position: relative;
-          font-size: 20px;
-          width: 100%;
-          right: 0px;
-          display: block; } }
-
-.sectionSubsite.news {
-  float: left; }
-  .sectionSubsite.news h3 {
-    border: 0px; }
-  .sectionSubsite.news input {
-    padding: 10px;
-    height: 50px;
-    border: 1px solid #ddd;
-    float: left; }
-  @media only screen and (max-width: 400px) {
-    .sectionSubsite.news input {
-      width: 150px; } }
-  .sectionSubsite.news a.button {
-    display: inline-block;
-    background: green;
-    border: none;
-    margin-top: 0px;
-    float: left;
-    padding: 14px; }
-    .sectionSubsite.news a.button:hover {
-      background: #001a00;
-      color: #fff;
-      text-decoration: none; }
-    .sectionSubsite.news a.button:after {
-      display: none; }
-  .sectionSubsite.news .datePickerContainer {
-    float: left;
-    width: 250px; }
-    .sectionSubsite.news .datePickerContainer:first-of-type {
-      width: 150px; }
-    .sectionSubsite.news .datePickerContainer label {
-      width: 100%; }
-    .sectionSubsite.news .datePickerContainer input {
-      width: 120px;
-      margin-bottom: 10px; }
-    @media only screen and (max-width: 400px) {
-      .sectionSubsite.news .datePickerContainer input {
-        width: 150px; } }
-  .sectionSubsite.news .accordion {
-    margin: 0px; }
-    .sectionSubsite.news .accordion a.header {
-      margin: 0px; }
-    .sectionSubsite.news .accordion li div div {
-      padding: 0px; }
-
-#paging h2 {
-  font-size: 40px;
-  color: #9B59B6;
-  padding: 10px 0px; }
-
-#paging .contentPod {
-  margin: 0px 0px 0px 0px;
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-  background: #ffffff;
-  font-size: 0.9em; }
-  #paging .contentPod h3 {
-    font-size: 1.4em;
-    margin: 0px;
-    line-height: 1.1em;
-    margin-bottom: 5px; }
-  #paging .contentPod a {
-    display: block;
-    width: 100%;
-    padding: 15px; }
-    #paging .contentPod a:hover, #paging .contentPod a:focus {
-      text-decoration: none;
-      background: #f2f2f2; }
-    #paging .contentPod a p.date {
-      text-transform: uppercase; }
-    #paging .contentPod a img {
-      margin: 0px 15px 0px 0px;
-      max-width: 300px; }
-  #paging .contentPod h2 {
-    font-size: 1.4em;
-    font-weight: normal !important; }
-
-#paging ul.content {
-  border: none;
-  margin: 0;
-  padding: 0px 0 0 0;
-  list-style: none;
-  clear: left; }
-  #paging ul.content li {
-    padding: 0; }
-
-/*******************
-POLAROID WEBPART
-********************/
-.polaroid {
-  -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s;
-  transition: all ease .5s;
-  margin: 50px 0; }
-  .polaroid .listWebpart li {
-    width: 25% !important; }
-    .polaroid .listWebpart li a {
-      text-decoration: none;
-      color: #293238;
-      border-bottom: none;
-      margin-bottom: 5px;
-      font-size: 1.3em;
-      font-weight: bold;
-      margin: 0px;
-      padding: 0px;
-      background: #fff;
-      border: 10px solid #293238;
-      margin: 10px;
-      text-align: center;
-      padding: 10px;
-      height: 100%;
-      display: block;
-      -webkit-box-shadow: 10px 10px 21px -5px #bdbdbd;
-      -moz-box-shadow: 10px 10px 21px -5px #bdbdbd;
-      box-shadow: 10px 10px 21px -5px #bdbdbd;
-      -ms-transform: rotate(4deg) translate3d(0, 0, 0);
-      -webkit-transform: rotate(4deg) translate3d(0, 0, 0);
-      transform: rotate(4deg) translate3d(0, 0, 0);
-      -webkit-transition: all ease .5s;
-      -moz-transition: all ease .5s;
-      transition: all ease .5s;
-      cursor: pointer; }
-      .polaroid .listWebpart li a:hover, .polaroid .listWebpart li a:focus {
-        -ms-transform: rotate(0deg) translate3d(0, 0, 0);
-        -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
-        transform: rotate(0deg) translate3d(0, 0, 0); }
-      .polaroid .listWebpart li a span {
-        font-size: 0.9em;
-        line-height: 1.3em;
-        font-weight: normal;
-        margin: 0px;
-        padding: 0px;
-        color: #293238;
-        border-bottom: none;
-        margin-bottom: 5px;
-        display: block; }
-    .polaroid .listWebpart li:nth-child(odd) a {
-      -ms-transform: rotate(-4deg) translate3d(0, 0, 0);
-      -webkit-transform: rotate(-4deg) translate3d(0, 0, 0);
-      transform: rotate(-4deg) translate3d(0, 0, 0); }
-      .polaroid .listWebpart li:nth-child(odd) a:hover, .polaroid .listWebpart li:nth-child(odd) a:focus {
-        -ms-transform: rotate(0deg) translate3d(0, 0, 0);
-        -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
-        transform: rotate(0deg) translate3d(0, 0, 0); }
-
-@media only screen and (max-width: 800px) {
-  .polaroid .listWebpart li {
-    width: 50% !important; } }
-
-@media only screen and (max-width: 500px) {
-  .polaroid {
-    margin: 10px 0; } }
-
-/*END POLAROID SECTION*/
 .groupPromo .listWebpart {
   background: transparent;
   color: #333;
@@ -1775,246 +1567,645 @@ POLAROID WEBPART
     .groupPromo.default .listWebpart a:hover {
       background: #ddd; }
 
-.blockLinks .listWebpart {
-  background: transparent;
-  color: #555;
-  padding: 0px; }
-  .blockLinks .listWebpart h2 {
-    color: #555; }
-  .blockLinks .listWebpart a {
-    background: rgba(18, 18, 18, 0);
-    color: #555; }
-    .blockLinks .listWebpart a:hover {
-      background: transparent; }
-  .blockLinks .listWebpart h2 {
-    display: block;
-    padding-bottom: 15px; }
-  .blockLinks .listWebpart ul {
-    text-align: center; }
-    .col-lg-12 .blockLinks .listWebpart ul li {
-      width: 12.5%; }
-    .col-md-8 .blockLinks .listWebpart ul li {
-      width: 20%; }
-    .col-md-6 .blockLinks .listWebpart ul li {
-      width: 25%; }
-    .col-md-4 .blockLinks .listWebpart ul li {
-      width: 50%; }
-      .col-md-4 .blockLinks .listWebpart ul li a img {
-        width: 66%;
-        margin: 0 17% 15px; }
-    .blockLinks .listWebpart ul li a {
-      text-align: center;
-      font-size: 1em;
-      float: left;
-      width: 100%;
-      padding: 15px;
-      cursor: pointer;
-      border: none;
-      margin: 0px; }
-      .blockLinks .listWebpart ul li a img {
-        border: 0px;
-        width: 80%;
-        margin: 0 10% 15px; }
-      .blockLinks .listWebpart ul li a:hover {
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        background: rgba(0, 0, 0, 0.1); }
-    @media only screen and (max-width: 991px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 16.66%; }
-        .col-lg-12 .blockLinks .listWebpart ul li a img, .col-md-8 .blockLinks .listWebpart ul li a img, .col-md-6 .blockLinks .listWebpart ul li a img, .col-md-4 .blockLinks .listWebpart ul li a img {
-          width: 100%;
-          margin: 0 0 15px 0; } }
-    @media only screen and (max-width: 768px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 25%; } }
-    @media only screen and (max-width: 600px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 33.333%; } }
-    @media only screen and (max-width: 420px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 50%; } }
+h1, h2, h3, h4, h5 {
+  font-family: "Oswald", Helvetica, Arial; }
 
-/*BLOCK LINK END*/
-.contentLink ul {
+p {
+  font-family: "Oswald", Helvetica, Arial; }
+
+.header-nav-container .logo {
+  background: url(../images/logo.svg) left center no-repeat;
   margin: 0px;
-  list-style: none;
-  padding: 0px; }
-  .contentLink ul li {
-    margin: 30px 0px; }
-    .contentLink ul li div {
-      padding: 30px;
-      background: #ECF0F1;
-      text-align: center; }
-      .contentLink ul li div img {
-        max-width: 100%; }
-      .contentLink ul li div h2 {
-        font-size: 30px;
-        font-weight: bold; }
-      .contentLink ul li div p {
-        margin: 30px; }
-      .contentLink ul li div a {
-        width: 100%; }
+  height: 200px;
+  width: 200px; }
+  .header-nav-container .logo:hover {
+    text-decoration: none; }
+  @media screen and (max-width: 768px) {
+    .header-nav-container .logo {
+      text-align: center;
+      margin: 0 auto;
+      width: 150px;
+      height: 150px;
+      background-size: 100%; } }
 
-/*********************
-docsList
-**********************/
-.docList a {
-  display: block;
-  text-align: left;
-  position: relative;
-  height: 100%;
-  padding-top: 45px;
-  font-weight: bold;
-  border: 1px solid #ddd; }
-  .docList a:hover, .docList a:focus {
-    background: #525252;
-    border-color: #525252; }
-    .docList a:hover span.info, .docList a:focus span.info {
-      background: #676767;
-      border-color: #676767;
-      color: #fff; }
-    .docList a:hover span.thirdInfo, .docList a:focus span.thirdInfo {
-      color: #fff; }
-  .docList a:before {
-    content: '\f138';
-    font-family: FontAwesome;
-    position: absolute;
-    font-weight: normal;
-    top: -1px;
-    left: -1px;
-    height: 45px;
-    width: 45px;
-    display: block;
-    padding: 8px 15px;
-    color: #fff;
-    font-size: 22px; }
-    .docList a:before:hover {
-      color: #fff !important; }
-  .docList a span.info {
-    border-top: 1px solid #ddd;
-    display: inline-block;
-    width: 100%;
-    padding: 10px;
-    padding: 15px 40px 15px 15px;
-    height: 100%; }
-    .docList a span.info span.arrow {
-      position: absolute;
-      height: auto;
-      width: 20px;
-      right: 10px;
-      bottom: 10px;
-      background: transparent; }
-      .docList a span.info span.arrow:after {
-        content: '\f138';
-        font-family: FontAwesome;
-        font-weight: normal;
-        font-style: normal;
-        text-decoration: none !important;
-        border: none; }
-  .docList a span.thirdInfo {
-    position: absolute;
-    top: 12px;
-    right: 15px;
-    color: #555; }
+.main-nav {
+  border-top: 1px solid #ab0e29; }
+  .main-nav ul li a {
+    font-size: 20px; }
 
-.docList .pdf a:before {
-  content: '\f1c1';
-  color: #ED1F24; }
-
-.docList .word a:before {
-  content: '\f1c2';
-  color: #294BA0; }
-
-.docList .xl a:before {
-  content: '\f1c3';
-  color: #269129; }
-
-.docList .external a:before {
-  content: '\f08e';
-  color: rgba(0, 0, 0, 0.5); }
-
-.docList .pp a:before {
-  content: '\f1c4';
-  color: orange; }
-
-.docList .pdf a:hover:before, .docList .word a:hover:before, .docList .xl a:hover:before, .docList .external a:hover:before, .docList .pp a:hover:before {
-  color: #fff; }
-
-.docList.one, .docList.two, .docList.three, .docList.four, .docList.five {
-  width: 100%; }
-
-.docList ul {
-  padding: 0px; }
-
-.docList li {
-  padding: 15px; }
-
-.docList.five li {
-  width: 20%; }
-
-.docList.four li {
-  width: 25%; }
-
-.docList.three li {
-  width: 33.333333%; }
-
-.docList.two li {
-  width: 50%; }
-
-.docList.one li {
-  width: 100%;
-  padding: 0;
+.carousel {
+  height: 70vh;
   margin-bottom: 0px; }
-  .docList.one li a {
-    border: none;
-    border-bottom: 1px solid #ddd;
-    padding: 20px 15px 20px 40px;
-    margin: 0px; }
-    .docList.one li a:hover {
-      background: #ddd;
-      text-decoration: none; }
-      .docList.one li a:hover span.info, .docList.one li a:hover:before, .docList.one li a:hover span.thirdInfo {
-        background: transparent;
-        color: #333; }
-    .docList.one li a:before {
-      font-family: FontAwesome;
-      position: absolute;
-      font-weight: normal;
-      top: 17px;
-      left: 10px;
-      height: 25px;
-      margin-top: -5px;
-      width: 25px;
+
+.heroBanner {
+  height: 70vh;
+  background-size: cover !important;
+  position: relative; }
+  .heroBanner .container-fluid a {
+    background: #fff;
+    padding: 50px 100px 50px 50px;
+    position: absolute;
+    bottom: 0px;
+    color: #414141;
+    font-size: 28px; }
+    .heroBanner .container-fluid a span {
       display: block;
-      padding: 0px;
-      font-size: 22px; }
-    .docList.one li a .info {
-      border: none;
-      padding: 0px;
-      margin: 0px;
-      display: inline;
-      margin: 0; }
-      .docList.one li a .info span.arrow {
-        display: none; }
-    .docList.one li a span.thirdInfo {
-      padding: 0px 25px;
-      padding: 0px 20px 0 10px;
-      display: inline;
-      position: relative;
+      width: 100%;
+      font-size: 0.8em;
+      font-size: 20px;
+      color: #666; }
+    .heroBanner .container-fluid a:after {
+      font-family: FontAwesome;
+      font-size: 32px;
+      content: "\f105";
+      display: block;
+      color: #414141;
+      position: absolute;
+      right: 0px;
+      height: 100%;
+      border-left: 1px solid #ddd;
       top: 0px;
-      right: auto; }
+      padding: 0 30px;
+      line-height: 130px; }
 
-@media (max-width: 1200px) {
-  .docList.four li, .docList.five li {
-    width: 33%;
-    float: left; } }
+/*Venues base less colours */
+.promoListWebpart {
+  margin: 0 -15px; }
+  .promoListWebpart ul li a {
+    background-position: center  0px !important; }
+    .promoListWebpart ul li a .info {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      font-weight: 400;
+      background: #f6f6f6; }
+      .promoListWebpart ul li a .info .arrow {
+        border-left: 1px solid #ddd; }
+    .promoListWebpart ul li a span.thirdInfo {
+      border-bottom: 1px solid #ddd; }
 
-@media (max-width: 991px) {
-  .docList.three li, .docList.four li, .docList.five li {
-    width: 50%;
-    float: left; } }
+.promoListWebpart ul li.four a .info .arrow, .promoListWebpart ul li.six a .info .arrow {
+  border-left: none; }
 
-@media (max-width: 600px) {
-  .docList.two li, .docList.three li, .docList.four li, .docList.five li {
-    width: 100%; } }
+.promoListWebpart ul li.abbey a .info {
+  background: #f6f6f6;
+  color: #7D4199; }
+  .promoListWebpart ul li.abbey a .info .secondaryInfo {
+    color: #666; }
+  .promoListWebpart ul li.abbey a .info .arrow {
+    background: transparent; }
+    .promoListWebpart ul li.abbey a .info .arrow:after {
+      color: #7D4199; }
+
+.promoListWebpart ul li.abbey a span.thirdInfo {
+  background: #7D4199;
+  color: #ffffff;
+  border-bottom: 0px; }
+
+.promoListWebpart ul li.thwaite a .info {
+  background: #f6f6f6;
+  color: #5C8727; }
+  .promoListWebpart ul li.thwaite a .info .secondaryInfo {
+    color: #666; }
+  .promoListWebpart ul li.thwaite a .info .arrow {
+    background: transparent; }
+    .promoListWebpart ul li.thwaite a .info .arrow:after {
+      color: #5C8727; }
+
+.promoListWebpart ul li.thwaite a span.thirdInfo {
+  background: #5C8727;
+  color: #ffffff;
+  border-bottom: 0px; }
+
+.promoListWebpart ul li.temple a .info {
+  background: #f6f6f6;
+  color: #860037; }
+  .promoListWebpart ul li.temple a .info .secondaryInfo {
+    color: #666; }
+  .promoListWebpart ul li.temple a .info .arrow {
+    background: transparent; }
+    .promoListWebpart ul li.temple a .info .arrow:after {
+      color: #860037; }
+
+.promoListWebpart ul li.temple a span.thirdInfo {
+  background: #860037;
+  color: #ffffff;
+  border-bottom: 0px; }
+
+.promoListWebpart ul li.lim a .info {
+  background: #f6f6f6;
+  color: #77230A; }
+  .promoListWebpart ul li.lim a .info .secondaryInfo {
+    color: #666; }
+  .promoListWebpart ul li.lim a .info .arrow {
+    background: transparent; }
+    .promoListWebpart ul li.lim a .info .arrow:after {
+      color: #77230A; }
+
+.promoListWebpart ul li.lim a span.thirdInfo {
+  background: #77230A;
+  color: #ffffff;
+  border-bottom: 0px; }
+
+.promoListWebpart ul li.lag a .info {
+  background: #f6f6f6;
+  color: #005953; }
+  .promoListWebpart ul li.lag a .info .secondaryInfo {
+    color: #666; }
+  .promoListWebpart ul li.lag a .info .arrow {
+    background: transparent; }
+    .promoListWebpart ul li.lag a .info .arrow:after {
+      color: #005953; }
+
+.promoListWebpart ul li.lag a span.thirdInfo {
+  background: #005953;
+  color: #ffffff;
+  border-bottom: 0px; }
+
+.promoListWebpart ul li.kirkstall a .info {
+  background: #f6f6f6;
+  color: #00447C; }
+  .promoListWebpart ul li.kirkstall a .info .secondaryInfo {
+    color: #666; }
+  .promoListWebpart ul li.kirkstall a .info .arrow {
+    background: transparent; }
+    .promoListWebpart ul li.kirkstall a .info .arrow:after {
+      color: #00447C; }
+
+.promoListWebpart ul li.kirkstall a span.thirdInfo {
+  background: #00447C;
+  color: #ffffff;
+  border-bottom: 0px; }
+
+.promoListWebpart ul li.discovery a .info {
+  background: #f6f6f6;
+  color: #16145F; }
+  .promoListWebpart ul li.discovery a .info .secondaryInfo {
+    color: #666; }
+  .promoListWebpart ul li.discovery a .info .arrow {
+    background: transparent; }
+    .promoListWebpart ul li.discovery a .info .arrow:after {
+      color: #16145F; }
+
+.promoListWebpart ul li.discovery a span.thirdInfo {
+  background: #16145F;
+  color: #ffffff;
+  border-bottom: 0px; }
+
+.promoListWebpart ul li.lotherton a .info {
+  background: #f6f6f6;
+  color: #2f7251; }
+  .promoListWebpart ul li.lotherton a .info .secondaryInfo {
+    color: #666; }
+  .promoListWebpart ul li.lotherton a .info .arrow {
+    background: transparent; }
+    .promoListWebpart ul li.lotherton a .info .arrow:after {
+      color: #2f7251; }
+
+.promoListWebpart ul li.lotherton a span.thirdInfo {
+  background: #2f7251;
+  color: #d0c7a7;
+  border-bottom: 0px; }
+
+.promoListWebpart ul li.city a .info {
+  background: #f6f6f6;
+  color: #E86D1F; }
+  .promoListWebpart ul li.city a .info .secondaryInfo {
+    color: #666; }
+  .promoListWebpart ul li.city a .info .arrow {
+    background: transparent; }
+    .promoListWebpart ul li.city a .info .arrow:after {
+      color: #E86D1F; }
+
+.promoListWebpart ul li.city a span.thirdInfo {
+  background: #E86D1F;
+  color: #fff;
+  border-bottom: 0px; }
+
+/* start of reveal museums -----------------------------------------------------------------*/
+#reveal {
+  background: #fff; }
+  #reveal .revealHeader {
+    text-align: right;
+    position: absolute;
+    right: 0px;
+    z-index: 9; }
+    #reveal .revealHeader a {
+      display: inline-block;
+      cursor: pointer;
+      position: relative;
+      background: #ec1a3e;
+      padding: 20px 80px 20px 20px; }
+      #reveal .revealHeader a span.textLink {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: block;
+        font-weight: 600;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        transition: all ease .5s; }
+      #reveal .revealHeader a span.icon {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        transition: all ease .5s; }
+        #reveal .revealHeader a span.icon:after {
+          font-family: FontAwesome;
+          font-size: 32px;
+          content: "\f067";
+          display: block;
+          margin: 12px 0 0 3px;
+          color: #fff; }
+  #reveal #revealContent {
+    display: none; }
+  #reveal ul {
+    margin: 0;
+    padding: 90px 0 50px;
+    display: inline-block;
+    list-style: none;
+    text-align: center; }
+    #reveal ul li {
+      width: 20%;
+      float: left;
+      border: 1px solid #fff;
+      background: #fff;
+      min-height: 310px;
+      position: relative; }
+      #reveal ul li h3 {
+        margin: 0;
+        padding: 20px 10px;
+        background: #27ae60; }
+        #reveal ul li h3 span {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0, 0, 0, 0);
+          border: 0; }
+        #reveal ul li h3 img {
+          margin: 0 auto;
+          max-width: 100%; }
+      #reveal ul li .rollover {
+        position: relative;
+        overflow: hidden; }
+        #reveal ul li .rollover img {
+          width: 100%; }
+        #reveal ul li .rollover p {
+          position: absolute;
+          top: 150px;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          font-weight: 300;
+          background: rgba(39, 174, 96, 0.8);
+          color: #fff;
+          padding: 15px;
+          text-align: left;
+          line-height: 1.2em;
+          font-size: 19px;
+          margin: 0;
+          -webkit-transition: all ease 1s;
+          -moz-transition: all ease 1s;
+          transition: all ease 1s; }
+      #reveal ul li a.link span.link {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        width: 100%;
+        background: #fff;
+        padding: 25px;
+        text-align: left;
+        color: #111;
+        font-size: 28.5px;
+        font-weight: 700;
+        text-transform: uppercase;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        transition: all ease .5s; }
+      #reveal ul li a.link span.arrow {
+        background: #111;
+        position: absolute;
+        bottom: 19px;
+        right: 20px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        z-index: 2;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        transition: all ease .5s; }
+        #reveal ul li a.link span.arrow:after {
+          font-family: FontAwesome;
+          font-size: 25px;
+          content: "\f105";
+          display: block;
+          color: #fff;
+          margin: 7px 0 0 3px; }
+  #reveal a.revealClose {
+    text-align: center;
+    color: #bbb;
+    font-size: 34.2px;
+    padding: 0 0 50px;
+    display: block;
+    cursor: pointer;
+    margin: 0;
+    text-transform: uppercase;
+    width: 100px;
+    margin: 0 auto; }
+    #reveal a.revealClose span {
+      margin: 0 auto 10px;
+      display: block;
+      width: 35px;
+      height: 35px;
+      background: #fff url(../images/revealClose.svg) center center no-repeat; }
+
+/****************
+RESPONSIVE 990PX
+*****************/
+@media only screen and (max-width: 990px) {
+  #reveal ul {
+    padding: 40px 0 70px; }
+    #reveal ul li {
+      width: 33.33%;
+      min-height: 150px; }
+      #reveal ul li .rollover {
+        display: none; }
+      #reveal ul li a.link span.link {
+        position: relative;
+        display: block;
+        width: 100%; } }
+
+/****************
+RESPONSIVE 500PX
+*****************/
+@media only screen and (max-width: 600px) {
+  #reveal ul {
+    padding: 0 0 50px; }
+    #reveal ul li {
+      width: 100%;
+      min-height: 0; }
+      #reveal ul li h3 {
+        padding: 15px;
+        text-align: left;
+        cursor: pointer; }
+        #reveal ul li h3 span {
+          position: relative;
+          width: auto;
+          height: auto;
+          padding: 0;
+          margin: 0;
+          color: #fff;
+          font-size: 20.9px; }
+        #reveal ul li h3 img {
+          display: none; }
+      #reveal ul li .revealInfo {
+        display: none;
+        -webkit-transition: all ease .5s;
+        -moz-transition: all ease .5s;
+        transition: all ease .5s; }
+        #reveal ul li .revealInfo .rollover {
+          display: block; }
+          #reveal ul li .revealInfo .rollover img {
+            display: none; }
+          #reveal ul li .revealInfo .rollover p {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            padding: 20px;
+            top: 0; }
+        #reveal ul li .revealInfo a.link span.link {
+          padding: 15px;
+          font-size: 26.6px; }
+        #reveal ul li .revealInfo a.link span.arrow {
+          bottom: 10px;
+          right: 10px;
+          padding: 8px; } }
+
+/*************
+HOVER STATES
+*************/
+#reveal .revealHeader a:hover, #reveal .revealHeader a:focus {
+  text-decoration: none; }
+
+#reveal .revealHeader a:hover, #reveal .revealHeader a:focus {
+  background: #940c24; }
+
+#reveal .revealHeader a span.icon.active {
+  border-radius: 0;
+  top: 0px; }
+  #reveal .revealHeader a span.icon.active:after {
+    content: '\f00d'; }
+
+#reveal a:hover, #reveal a:focus {
+  text-decoration: none !important; }
+
+#reveal ul li:hover .rollover p, #reveal ul li:focus .rollover p {
+  top: 0px; }
+
+#reveal ul li a.link:hover span.link, #reveal ul li a.link:focus span.link {
+  background: #efefef; }
+
+#reveal a.revealClose:hover, #reveal a.revealClose:focus {
+  color: #000; }
+
+#reveal a.revealClose:hover span, #reveal a.revealClose:focus span {
+  background: #fff url(../img/revealCloseBlack.svg) center center no-repeat; }
+
+@media only screen and (max-width: 600px) {
+  #reveal .revealHeader a span.icon.active {
+    height: 50px; }
+  #reveal ul li .revealInfo.active {
+    display: block; } }
+
+/*hover states end*/
+/****************
+li title style
+***************/
+#reveal ul li.title {
+  padding: 25px;
+  background: #fff; }
+  #reveal ul li.title h2 {
+    text-transform: uppercase;
+    font-size: 38px;
+    color: #000;
+    font-weight: 700;
+    margin-top: 0px; }
+  #reveal ul li.title p {
+    margin: 0;
+    font-size: 22.8px; }
+
+/*li title style end*/
+@media only screen and (max-width: 1200px) {
+  #reveal ul li.title {
+    padding: 20px 10px; }
+  /*li title style end*/ }
+
+@media only screen and (max-width: 990px) {
+  #reveal ul li.title {
+    padding: 20px 10px;
+    width: 100%; }
+  /*li title style end*/ }
+
+/***************
+li thwaite style
+****************/
+#reveal ul li.thwaite h3 {
+  background: #5C8727; }
+
+#reveal ul li.thwaite .rollover p {
+  background: rgba(92, 135, 39, 0.8); }
+
+#reveal ul li.thwaite a.link span.arrow {
+  background: #5C8727; }
+
+#reveal ul li.thwaite a.link:hover span.arrow, #reveal ul li.thwaite a.link:focus span.arrow {
+  background: #111; }
+
+/***************
+li abbey style
+****************/
+#reveal ul li.abbey h3 {
+  background: #7D4199; }
+
+#reveal ul li.abbey .rollover p {
+  background: rgba(125, 65, 153, 0.8); }
+
+#reveal ul li.abbey a.link span.arrow {
+  background: #7D4199; }
+
+#reveal ul li.abbey a.link:hover span.arrow, #reveal ul li.abbey a.link:focus span.arrow {
+  background: #111; }
+
+/*li abbey style end*/
+/***************
+li discovery style
+****************/
+#reveal ul li.discovery h3 {
+  background: #16145F; }
+
+#reveal ul li.discovery .rollover p {
+  background: rgba(22, 20, 95, 0.8); }
+
+#reveal ul li.discovery a.link span.arrow {
+  background: #16145F; }
+
+#reveal ul li.discovery a.link:hover span.arrow, #reveal ul li.discovery a.link:focus span.arrow {
+  background: #111; }
+
+/*li discovery style end*/
+/***************
+li kirkstall style
+****************/
+#reveal ul li.kirkstall h3 {
+  background: #00447C; }
+
+#reveal ul li.kirkstall .rollover p {
+  background: rgba(0, 68, 124, 0.8); }
+
+#reveal ul li.kirkstall a.link span.arrow {
+  background: #00447C; }
+
+#reveal ul li.kirkstall a.link:hover span.arrow, #reveal ul li.kirkstall a.link:focus span.arrow {
+  background: #111; }
+
+/*li kirkstall style end*/
+/***************
+li lag style
+****************/
+#reveal ul li.lag h3 {
+  background: #005953; }
+
+#reveal ul li.lag .rollover p {
+  background: rgba(0, 89, 83, 0.8); }
+
+#reveal ul li.lag a.link span.arrow {
+  background: #005953; }
+
+#reveal ul li.lag a.link:hover span.arrow, #reveal ul li.lag a.link:focus span.arrow {
+  background: #111; }
+
+/*li lag style end*/
+/***************
+li lim style
+****************/
+#reveal ul li.lim h3 {
+  background: #77230A; }
+
+#reveal ul li.lim .rollover p {
+  background: rgba(119, 35, 10, 0.8); }
+
+#reveal ul li.lim a.link span.arrow {
+  background: #77230A; }
+
+#reveal ul li.lim a.link:hover span.arrow, #reveal ul li.lim a.link:focus span.arrow {
+  background: #111; }
+
+/*li lim style end*/
+/***************
+li temple style
+****************/
+#reveal ul li.temple h3 {
+  background: #860037; }
+
+#reveal ul li.temple .rollover p {
+  background: rgba(134, 0, 55, 0.8); }
+
+#reveal ul li.temple a.link span.arrow {
+  background: #860037; }
+
+#reveal ul li.temple a.link:hover span.arrow, #reveal ul li.temple a.link:focus span.arrow {
+  background: #111; }
+
+/*li temple style end*/
+/***************
+li city style
+****************/
+#reveal ul li.city h3 {
+  background: #E86D1F; }
+
+#reveal ul li.city .rollover p {
+  background: rgba(232, 109, 31, 0.8); }
+
+#reveal ul li.city a.link span.arrow {
+  background: #E86D1F; }
+
+#reveal ul li.city a.link:hover span.arrow, #reveal ul li.city a.link:focus span.arrow {
+  background: #111; }
+
+/*li city style end*/
+/***************
+li lotherton style
+****************/
+#reveal ul li.lotherton h3 {
+  background: #2f7251; }
+
+#reveal ul li.lotherton .rollover p {
+  background: rgba(47, 114, 81, 0.8); }
+
+#reveal ul li.lotherton a.link span.arrow {
+  background: #2f7251; }
+
+#reveal ul li.lotherton a.link:hover span.arrow, #reveal ul li.lotherton a.link:focus span.arrow {
+  background: #111; }
+
+/*li lotherton style end*/
+/*********************
+additional styling
+********************/
+#reveal ul li.thwaite h2, #reveal ul li.abbey h2, #reveal ul li.discovery h2, #reveal ul li.kirkstall h2, #reveal ul li.lag h2, #reveal ul li.lim h2, #reveal ul li.temple h2, #reveal ul li.city h2, #reveal ul li.lotherton h2 {
+  display: none; }
+
+#reveal ul li.thwaite p, #reveal ul li.abbey p, #reveal ul li.discovery p, #reveal ul li.kirkstall p, #reveal ul li.lag p, #reveal ul li.lim p, #reveal ul li.temple p, #reveal ul li.city p, #reveal ul li.lotherton p {
+  display: none; }
+
+#reveal ul li.thwaite .rollover p, #reveal ul li.abbey .rollover p, #reveal ul li.discovery .rollover p, #reveal ul li.kirkstall .rollover p, #reveal ul li.lag .rollover p, #reveal ul li.lim .rollover p, #reveal ul li.temple .rollover p, #reveal ul li.city .rollover p, #reveal ul li.lotherton .rollover p {
+  display: block; }
+
+/*additional styling end*/
+/* reaveal end -------------------------------------------------------------------------------------------------*/
