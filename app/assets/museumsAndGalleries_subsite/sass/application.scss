@@ -99,6 +99,12 @@ $news-pod-border-color:#ddd;
 $accordion-color:green;
 //$accordion-border-color:#ECF0F1;
 
+//highlighted box in content assets
+$highlighted-background-color:#fff;
+$highlighted-font-color:#c3102f;
+$highlighted-alt-background-color:#f6f6f6 ;
+$highlighted-alt-font-color:#333;
+
 @import 'mixins';
 @import 'variables';
 @import 'brandColors';
@@ -127,6 +133,8 @@ $accordion-color:green;
 //@import 'blocklinks';
 //@import 'contentLink';
 //@import 'docList';
+@import 'contentAssets';
+@import 'museums';
 
 
 h1,h2,h3,h4,h5{
@@ -170,192 +178,6 @@ p{
     height: 70vh;
     margin-bottom:0px;
 }
-
-
-.heroBanner{
-    height:70vh;
-    background-size:cover !important;
-    position:relative;
-
-  .container-fluid { 
-
-      a {
-          background:#fff;
-          padding:50px 100px 50px 50px;
-          position:absolute;
-          bottom:0px;
-          color:#414141;
-          font-size:28px;
-
-          span{
-              display:block;
-              width:100%;
-              font-size:0.8em;
-              font-size:20px;
-              color:#666;
-          }
-
-
-          
-            &:after {
-            font-family: FontAwesome;
-            font-size: 32px;
-            content: "\f105";
-            display: block;
-            color:#414141;
-            position:absolute;
-            right:0px;
-            height:100%;
-            border-left:1px solid #ddd;
-            top:0px;
-            padding:0 30px;
-            line-height:130px;
-        }
-
-
-      }
-      
-
-  }
-
-}
-
-
-
-// museums promolist webpart venue colours
-
-/*Venues base less colours */
-$lotherton-base-color: #2f7251;
-$discovery-base-color: #16145F;
-$kirkstall-base-color: #00447C;
-$lag-base-color: #005953;
-$lim-base-color: #77230A;
-$temple-base-color: #860037;
-$city-base-color: #E86D1F;
-$thwaite-base-color:#5C8727;
-$abbey-base-color:#7D4199;
-
-
-.promoListWebpart
-{
-
-margin:0 -15px;    
-
- ul li a 
-
-{
-    background-position: center  0px !important;
-
-    .info {
-    opacity:1;
-    filter: alpha(opacity=100);
-    font-weight:400;
-    background:#f6f6f6;
-
-
-    .arrow{
-        border-left:1px solid #ddd;
-    }
-
-
-
-
-}
-
- span.thirdInfo{
-            border-bottom:1px solid #ddd;
-         }
-}
-
-}
-
-.promoListWebpart ul li.four, .promoListWebpart ul li.six {
-
- a .info .arrow {
-    border-left:none;
-}
-}
-
- @mixin promoListWebpartColors($span-info-color, $link-font-color, $span-info-secondary-color, $span-arrow-base, $arrow-color, $span-third-info-base,$third-info-font-color) {
-     .info {
-         background: $span-info-color;
-         color: $link-font-color;
-         .secondaryInfo {
-             color: $span-info-secondary-color;
-         }
-         .arrow {
-             background: $span-arrow-base;
-             &:after {
-                 color: $arrow-color;
-             }
-         }
-
-      
-     }
-
-        span.thirdInfo{
-             background:$span-third-info-base;
-             color:$third-info-font-color;
-             border-bottom:0px;
-         }
- }
-
-
-
- .promoListWebpart {
-     ul li {
-
-
-                        &.abbey a {
-             @include promoListWebpartColors(#f6f6f6,$abbey-base-color,#666,transparent,$abbey-base-color,$abbey-base-color, #ffffff);
-     }       
-
-
-                       &.thwaite a {
-             @include promoListWebpartColors(#f6f6f6,$thwaite-base-color,#666,transparent,$thwaite-base-color,$thwaite-base-color, #ffffff);
-     }      
-
-
-                    &.temple a {
-             @include promoListWebpartColors(#f6f6f6,$temple-base-color,#666,transparent,$temple-base-color,$temple-base-color, #ffffff);
-     }  
-   
-
-
-                 &.lim a {
-             @include promoListWebpartColors(#f6f6f6,$lim-base-color,#666,transparent,$lim-base-color,$lim-base-color, #ffffff);
-     }  
-
-        
-              &.lag a {
-             @include promoListWebpartColors(#f6f6f6,$lag-base-color,#666,transparent, $lag-base-color,$lag-base-color, #ffffff);
-     }  
-              &.kirkstall a {
-             @include promoListWebpartColors(#f6f6f6,$kirkstall-base-color,#666,transparent, $kirkstall-base-color,$kirkstall-base-color, #ffffff);
-     }      
-
-
-              &.discovery a {
-             @include promoListWebpartColors(#f6f6f6,$discovery-base-color,#666,transparent, $discovery-base-color,$discovery-base-color, #ffffff);
-     }     
-
-
-             &.lotherton a {
-             @include promoListWebpartColors(#f6f6f6, $lotherton-base-color,#666,transparent, $lotherton-base-color,$lotherton-base-color, #d0c7a7);
-     }
-
-
-         &.city a {
-             @include promoListWebpartColors(#f6f6f6, $city-base-color,#666,transparent, $city-base-color, $city-base-color, #fff);
-     }
-
-
-
- }
-
- }
-
-
 
 
 /* start of reveal museums -----------------------------------------------------------------*/
@@ -1115,6 +937,5 @@ additional styling
 /*additional styling end*/
 
 /* reaveal end -------------------------------------------------------------------------------------------------*/
-
 
 

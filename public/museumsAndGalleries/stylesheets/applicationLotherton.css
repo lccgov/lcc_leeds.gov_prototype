@@ -13,26 +13,26 @@ body {
   color: #333; }
 
 .btn-primary, .button {
-  background: green;
-  box-shadow: inset 0 1px 1px #00b300; }
+  background: #bc6122;
+  box-shadow: inset 0 1px 1px #db7a36; }
   .btn-primary:hover, .button:hover {
-    background: #004d00; }
+    background: #914b1a; }
 
 .btn, .button {
-  border-color: green;
+  border-color: #bc6122;
   color: #fff; }
   .btn.btn-default, .btn.alt, .button.btn-default, .button.alt {
-    border-color: green;
-    color: green; }
+    border-color: #bc6122;
+    color: #bc6122; }
     .btn.btn-default:hover, .btn.alt:hover, .button.btn-default:hover, .button.alt:hover {
-      background: #004d00;
+      background: #914b1a;
       color: #fff; }
 
 .container-fluid {
   max-width: 1500px; }
 
 .sectionHeader {
-  background: #c3102f; }
+  background: #2f7251; }
 
 .sectionOne {
   background: #fff; }
@@ -74,29 +74,29 @@ body {
   color: #fff; }
 
 .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, a.ms-tv-item:hover, a.ms-tv-header:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
-  background-color: #ab0e29;
+  background-color: #286044;
   color: #fff; }
 
 .main-nav {
-  background: #c3102f; }
+  background: #2f7251; }
   .main-nav ul {
     width: 100%; }
     .main-nav ul li a {
       color: #fff; }
     .main-nav ul li a:hover, .main-nav ul li a:focus {
-      background-color: #ab0e29;
+      background-color: #286044;
       color: #fff; }
     .main-nav ul li a.selected {
-      background: #b00e2a !important; }
+      background: #296447 !important; }
   .main-nav ul ul {
-    background-color: #ab0e29;
-    background-color: #ab0e29; }
+    background-color: #286044;
+    background-color: #286044; }
     .main-nav ul ul li {
-      border-bottom: 1px solid #9d0d26; }
+      border-bottom: 1px solid #23553c; }
       .main-nav ul ul li:first-of-type {
-        border-top: 1px solid #9d0d26; }
+        border-top: 1px solid #23553c; }
       .main-nav ul ul li a:hover {
-        background: #9d0d26; }
+        background: #23553c; }
 
 /*********************************************
  End mainMenu.sass variables
@@ -107,7 +107,7 @@ body {
 ul.menu li a {
   color: #337ab7; }
   ul.menu li a:hover, ul.menu li a:focus {
-    background: #c3102f !important; }
+    background: #2f7251 !important; }
   ul.menu li a.main-menu, ul.menu li a.search {
     background: #fff; }
   ul.menu li a.search {
@@ -115,10 +115,10 @@ ul.menu li a {
   ul.menu li a.search.active, ul.menu li a.search:hover, ul.menu li a.search:focus {
     background: #bdc3c7 !important; }
   ul.menu li a.main-menu {
-    background: #c3102f !important;
+    background: #2f7251 !important;
     color: #fff; }
   ul.menu li a.main-menu:hover, ul.menu li a.main-menu:focus, ul.menu li a.main-menu.active {
-    background: #9d0d26; }
+    background: #23553c; }
 
 /*********************************************
  End ResponsiveMenu.sass variables
@@ -127,11 +127,11 @@ ul.menu li a {
  footer.sass variables
 *********************************************/
 footer.main {
-  background: #c3102f; }
+  background: #2f7251; }
   footer.main p {
     color: #fff; }
   footer.main .footer {
-    background: #c3102f; }
+    background: #2f7251; }
     footer.main .footer ul li a {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
       color: #fff !important; }
@@ -154,10 +154,10 @@ footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twit
 
 footer.main .socialBookmarks a:hover:after {
   background: #fff;
-  color: #c3102f; }
+  color: #2f7251; }
 
 footer.main .footerGlobal {
-  background: #b00e2a; }
+  background: #296447; }
 
 .footerGlobal nav ul {
   list-style: none;
@@ -190,7 +190,7 @@ td .ui-state-hover {
 /** jquery ui datepicker overides ***/
 /** main button color for forms and comments **/
 form input[type=submit].submit {
-  background: green; }
+  background: #bc6122; }
 
 /**End  main button color for forms and comments **/
 .breadcrumb {
@@ -478,7 +478,7 @@ ul.accordion {
         content: "\f067";
         position: absolute;
         right: 10px;
-        color: green; }
+        color: #bc6122; }
       ul.accordion li a.header.active:after {
         content: "\f068"; }
     ul.accordion li div div {
@@ -683,7 +683,7 @@ ul.promo-group {
         overflow: hidden;
         height: 170px;
         display: block;
-        color: #414141;
+        color: #bc6122;
         background-size: cover !important;
         background-position: 0px enter !important; }
         .promoListWebpart ul li a span {
@@ -733,7 +733,7 @@ ul.promo-group {
             font-family: FontAwesome;
             font-size: 35px;
             content: "\f105";
-            color: #414141;
+            color: #bc6122;
             position: absolute;
             display: inline-block;
             vertical-align: middle;
@@ -842,7 +842,7 @@ ul.promo-group {
       .promoListWebpart .contentLink a:hover {
         color: #fff; }
         .promoListWebpart .contentLink a:hover .arrow:after {
-          color: #414141; }
+          color: #bc6122; }
     .promoListWebpart .contentLink.color a {
       bottom: 10px !important; }
     .promoListWebpart .contentLink.color p {
@@ -1580,7 +1580,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   .highlighted h2, .highlighted h3, .highlighted h4 {
     margin-top: 0px; }
   .highlighted h2, .highlighted h3, .highlighted h4, .highlighted p, .highlighted ul, .highlighted ol, .highlighted em {
-    color: #c3102f; }
+    color: #2f7251; }
   .highlighted p strong {
     font-weight: 800 !important;
     font-size: 28px !important;
@@ -1594,8 +1594,8 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
     display: block; }
   .highlighted a.btn {
     font-size: 19px;
-    border-color: #c3102f;
-    color: #c3102f;
+    border-color: #2f7251;
+    color: #2f7251;
     background: transparent;
     margin: 0px 0 20px;
     display: inline-block; }
@@ -1603,7 +1603,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
       .highlighted a.btn {
         width: 100%; } }
     .highlighted a.btn:hover {
-      background: #c3102f;
+      background: #2f7251;
       color: #fff; }
   .highlighted.alt {
     background: #f6f6f6; }
@@ -1904,7 +1904,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
     margin-bottom: 30px; }
     .btn.block:after {
       background: transparent;
-      border-left: 1px solid #006700;
+      border-left: 1px solid #a6561e;
       padding: 3% 0px !important;
       font-size: 25px;
       min-width: 65px;
@@ -1929,454 +1929,41 @@ p {
   font-family: "Oswald", Helvetica, Arial; }
 
 .header-nav-container .logo {
-  background: url(../images/logo.svg) left center no-repeat;
+  background: url(../images/Lotherton_Logo_.svg) left center no-repeat;
   margin: 0px;
   height: 200px;
-  width: 200px; }
+  width: 300px; }
   .header-nav-container .logo:hover {
     text-decoration: none; }
   @media screen and (max-width: 768px) {
     .header-nav-container .logo {
       text-align: center;
       margin: 0 auto;
-      width: 150px;
+      width: 300px;
       height: 150px;
       background-size: 100%; } }
 
-.main-nav {
-  border-top: 1px solid #ab0e29; }
-  .main-nav ul li a {
-    font-size: 20px; }
+.main-nav ul li a {
+  font-size: 20px; }
 
 .carousel {
   height: 70vh;
   margin-bottom: 0px; }
 
-/* start of reveal museums -----------------------------------------------------------------*/
-#reveal {
-  background: #fff; }
-  #reveal .revealHeader {
-    text-align: right;
-    position: absolute;
-    right: 0px;
-    z-index: 9; }
-    #reveal .revealHeader a {
-      display: inline-block;
-      cursor: pointer;
-      position: relative;
-      background: #ec1a3e;
-      padding: 20px 80px 20px 20px; }
-      #reveal .revealHeader a span.textLink {
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: bold;
-        display: block;
-        font-weight: 600;
-        -webkit-transition: all ease .5s;
-        -moz-transition: all ease .5s;
-        transition: all ease .5s; }
-      #reveal .revealHeader a span.icon {
-        display: block;
-        position: absolute;
-        top: 0px;
-        right: 20px;
-        -webkit-transition: all ease .5s;
-        -moz-transition: all ease .5s;
-        transition: all ease .5s; }
-        #reveal .revealHeader a span.icon:after {
-          font-family: FontAwesome;
-          font-size: 32px;
-          content: "\f067";
-          display: block;
-          margin: 12px 0 0 3px;
-          color: #fff; }
-  #reveal #revealContent {
-    display: none; }
-  #reveal ul {
-    margin: 0;
-    padding: 90px 0 50px;
-    display: inline-block;
-    list-style: none;
-    text-align: center; }
-    #reveal ul li {
-      width: 20%;
-      float: left;
-      border: 1px solid #fff;
-      background: #fff;
-      min-height: 310px;
-      position: relative; }
-      #reveal ul li h3 {
-        margin: 0;
-        padding: 20px 10px;
-        background: #27ae60; }
-        #reveal ul li h3 span {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0, 0, 0, 0);
-          border: 0; }
-        #reveal ul li h3 img {
-          margin: 0 auto;
-          max-width: 100%; }
-      #reveal ul li .rollover {
-        position: relative;
-        overflow: hidden; }
-        #reveal ul li .rollover img {
-          width: 100%; }
-        #reveal ul li .rollover p {
-          position: absolute;
-          top: 150px;
-          right: 0;
-          width: 100%;
-          height: 100%;
-          font-weight: 300;
-          background: rgba(39, 174, 96, 0.8);
-          color: #fff;
-          padding: 15px;
-          text-align: left;
-          line-height: 1.2em;
-          font-size: 19px;
-          margin: 0;
-          -webkit-transition: all ease 1s;
-          -moz-transition: all ease 1s;
-          transition: all ease 1s; }
-      #reveal ul li a.link span.link {
-        position: absolute;
-        bottom: 0px;
-        right: 0;
-        width: 100%;
-        background: #fff;
-        padding: 25px;
-        text-align: left;
-        color: #111;
-        font-size: 28.5px;
-        font-weight: 700;
-        text-transform: uppercase;
-        -webkit-transition: all ease .5s;
-        -moz-transition: all ease .5s;
-        transition: all ease .5s; }
-      #reveal ul li a.link span.arrow {
-        background: #111;
-        position: absolute;
-        bottom: 19px;
-        right: 20px;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        z-index: 2;
-        -webkit-transition: all ease .5s;
-        -moz-transition: all ease .5s;
-        transition: all ease .5s; }
-        #reveal ul li a.link span.arrow:after {
-          font-family: FontAwesome;
-          font-size: 25px;
-          content: "\f105";
-          display: block;
-          color: #fff;
-          margin: 7px 0 0 3px; }
-  #reveal a.revealClose {
-    text-align: center;
-    color: #bbb;
-    font-size: 34.2px;
-    padding: 0 0 50px;
-    display: block;
-    cursor: pointer;
-    margin: 0;
-    text-transform: uppercase;
-    width: 100px;
-    margin: 0 auto; }
-    #reveal a.revealClose span {
-      margin: 0 auto 10px;
-      display: block;
-      width: 35px;
-      height: 35px;
-      background: #fff url(../images/revealClose.svg) center center no-repeat; }
+.header-nav-container:after {
+  content: '';
+  width: 100%;
+  height: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 150px 100vw 0 0;
+  border-color: #2f7251 transparent transparent transparent;
+  position: absolute;
+  z-index: 8; }
+  @media screen and (max-width: 768px) {
+    .header-nav-container:after {
+      border-width: 70px 100vw 0 0; } }
 
-/****************
-RESPONSIVE 990PX
-*****************/
-@media only screen and (max-width: 990px) {
-  #reveal ul {
-    padding: 40px 0 70px; }
-    #reveal ul li {
-      width: 33.33%;
-      min-height: 150px; }
-      #reveal ul li .rollover {
-        display: none; }
-      #reveal ul li a.link span.link {
-        position: relative;
-        display: block;
-        width: 100%; } }
-
-/****************
-RESPONSIVE 500PX
-*****************/
-@media only screen and (max-width: 600px) {
-  #reveal ul {
-    padding: 0 0 50px; }
-    #reveal ul li {
-      width: 100%;
-      min-height: 0; }
-      #reveal ul li h3 {
-        padding: 15px;
-        text-align: left;
-        cursor: pointer; }
-        #reveal ul li h3 span {
-          position: relative;
-          width: auto;
-          height: auto;
-          padding: 0;
-          margin: 0;
-          color: #fff;
-          font-size: 20.9px; }
-        #reveal ul li h3 img {
-          display: none; }
-      #reveal ul li .revealInfo {
-        display: none;
-        -webkit-transition: all ease .5s;
-        -moz-transition: all ease .5s;
-        transition: all ease .5s; }
-        #reveal ul li .revealInfo .rollover {
-          display: block; }
-          #reveal ul li .revealInfo .rollover img {
-            display: none; }
-          #reveal ul li .revealInfo .rollover p {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            color: #fff;
-            padding: 20px;
-            top: 0; }
-        #reveal ul li .revealInfo a.link span.link {
-          padding: 15px;
-          font-size: 26.6px; }
-        #reveal ul li .revealInfo a.link span.arrow {
-          bottom: 10px;
-          right: 10px;
-          padding: 8px; } }
-
-/*************
-HOVER STATES
-*************/
-#reveal .revealHeader a:hover, #reveal .revealHeader a:focus {
-  text-decoration: none; }
-
-#reveal .revealHeader a:hover, #reveal .revealHeader a:focus {
-  background: #940c24; }
-
-#reveal .revealHeader a span.icon.active {
-  border-radius: 0;
-  top: 0px; }
-  #reveal .revealHeader a span.icon.active:after {
-    content: '\f00d'; }
-
-#reveal a:hover, #reveal a:focus {
-  text-decoration: none !important; }
-
-#reveal ul li:hover .rollover p, #reveal ul li:focus .rollover p {
-  top: 0px; }
-
-#reveal ul li a.link:hover span.link, #reveal ul li a.link:focus span.link {
-  background: #efefef; }
-
-#reveal a.revealClose:hover, #reveal a.revealClose:focus {
-  color: #000; }
-
-#reveal a.revealClose:hover span, #reveal a.revealClose:focus span {
-  background: #fff url(../img/revealCloseBlack.svg) center center no-repeat; }
-
-@media only screen and (max-width: 600px) {
-  #reveal .revealHeader a span.icon.active {
-    height: 50px; }
-  #reveal ul li .revealInfo.active {
-    display: block; } }
-
-/*hover states end*/
-/****************
-li title style
-***************/
-#reveal ul li.title {
-  padding: 25px;
-  background: #fff; }
-  #reveal ul li.title h2 {
-    text-transform: uppercase;
-    font-size: 38px;
-    color: #000;
-    font-weight: 700;
-    margin-top: 0px; }
-  #reveal ul li.title p {
-    margin: 0;
-    font-size: 22.8px; }
-
-/*li title style end*/
-@media only screen and (max-width: 1200px) {
-  #reveal ul li.title {
-    padding: 20px 10px; }
-  /*li title style end*/ }
-
-@media only screen and (max-width: 990px) {
-  #reveal ul li.title {
-    padding: 20px 10px;
-    width: 100%; }
-  /*li title style end*/ }
-
-/***************
-li thwaite style
-****************/
-#reveal ul li.thwaite h3 {
-  background: #5C8727; }
-
-#reveal ul li.thwaite .rollover p {
-  background: rgba(92, 135, 39, 0.8); }
-
-#reveal ul li.thwaite a.link span.arrow {
-  background: #5C8727; }
-
-#reveal ul li.thwaite a.link:hover span.arrow, #reveal ul li.thwaite a.link:focus span.arrow {
-  background: #111; }
-
-/***************
-li abbey style
-****************/
-#reveal ul li.abbey h3 {
-  background: #7D4199; }
-
-#reveal ul li.abbey .rollover p {
-  background: rgba(125, 65, 153, 0.8); }
-
-#reveal ul li.abbey a.link span.arrow {
-  background: #7D4199; }
-
-#reveal ul li.abbey a.link:hover span.arrow, #reveal ul li.abbey a.link:focus span.arrow {
-  background: #111; }
-
-/*li abbey style end*/
-/***************
-li discovery style
-****************/
-#reveal ul li.discovery h3 {
-  background: #16145F; }
-
-#reveal ul li.discovery .rollover p {
-  background: rgba(22, 20, 95, 0.8); }
-
-#reveal ul li.discovery a.link span.arrow {
-  background: #16145F; }
-
-#reveal ul li.discovery a.link:hover span.arrow, #reveal ul li.discovery a.link:focus span.arrow {
-  background: #111; }
-
-/*li discovery style end*/
-/***************
-li kirkstall style
-****************/
-#reveal ul li.kirkstall h3 {
-  background: #00447C; }
-
-#reveal ul li.kirkstall .rollover p {
-  background: rgba(0, 68, 124, 0.8); }
-
-#reveal ul li.kirkstall a.link span.arrow {
-  background: #00447C; }
-
-#reveal ul li.kirkstall a.link:hover span.arrow, #reveal ul li.kirkstall a.link:focus span.arrow {
-  background: #111; }
-
-/*li kirkstall style end*/
-/***************
-li lag style
-****************/
-#reveal ul li.lag h3 {
-  background: #005953; }
-
-#reveal ul li.lag .rollover p {
-  background: rgba(0, 89, 83, 0.8); }
-
-#reveal ul li.lag a.link span.arrow {
-  background: #005953; }
-
-#reveal ul li.lag a.link:hover span.arrow, #reveal ul li.lag a.link:focus span.arrow {
-  background: #111; }
-
-/*li lag style end*/
-/***************
-li lim style
-****************/
-#reveal ul li.lim h3 {
-  background: #77230A; }
-
-#reveal ul li.lim .rollover p {
-  background: rgba(119, 35, 10, 0.8); }
-
-#reveal ul li.lim a.link span.arrow {
-  background: #77230A; }
-
-#reveal ul li.lim a.link:hover span.arrow, #reveal ul li.lim a.link:focus span.arrow {
-  background: #111; }
-
-/*li lim style end*/
-/***************
-li temple style
-****************/
-#reveal ul li.temple h3 {
-  background: #860037; }
-
-#reveal ul li.temple .rollover p {
-  background: rgba(134, 0, 55, 0.8); }
-
-#reveal ul li.temple a.link span.arrow {
-  background: #860037; }
-
-#reveal ul li.temple a.link:hover span.arrow, #reveal ul li.temple a.link:focus span.arrow {
-  background: #111; }
-
-/*li temple style end*/
-/***************
-li city style
-****************/
-#reveal ul li.city h3 {
-  background: #E86D1F; }
-
-#reveal ul li.city .rollover p {
-  background: rgba(232, 109, 31, 0.8); }
-
-#reveal ul li.city a.link span.arrow {
-  background: #E86D1F; }
-
-#reveal ul li.city a.link:hover span.arrow, #reveal ul li.city a.link:focus span.arrow {
-  background: #111; }
-
-/*li city style end*/
-/***************
-li lotherton style
-****************/
-#reveal ul li.lotherton h3 {
-  background: #2f7251; }
-
-#reveal ul li.lotherton .rollover p {
-  background: rgba(47, 114, 81, 0.8); }
-
-#reveal ul li.lotherton a.link span.arrow {
-  background: #2f7251; }
-
-#reveal ul li.lotherton a.link:hover span.arrow, #reveal ul li.lotherton a.link:focus span.arrow {
-  background: #111; }
-
-/*li lotherton style end*/
-/*********************
-additional styling
-********************/
-#reveal ul li.thwaite h2, #reveal ul li.abbey h2, #reveal ul li.discovery h2, #reveal ul li.kirkstall h2, #reveal ul li.lag h2, #reveal ul li.lim h2, #reveal ul li.temple h2, #reveal ul li.city h2, #reveal ul li.lotherton h2 {
-  display: none; }
-
-#reveal ul li.thwaite p, #reveal ul li.abbey p, #reveal ul li.discovery p, #reveal ul li.kirkstall p, #reveal ul li.lag p, #reveal ul li.lim p, #reveal ul li.temple p, #reveal ul li.city p, #reveal ul li.lotherton p {
-  display: none; }
-
-#reveal ul li.thwaite .rollover p, #reveal ul li.abbey .rollover p, #reveal ul li.discovery .rollover p, #reveal ul li.kirkstall .rollover p, #reveal ul li.lag .rollover p, #reveal ul li.lim .rollover p, #reveal ul li.temple .rollover p, #reveal ul li.city .rollover p, #reveal ul li.lotherton .rollover p {
-  display: block; }
-
-/*additional styling end*/
-/* reaveal end -------------------------------------------------------------------------------------------------*/
+.breadcrumb {
+  padding-top: 130px; }

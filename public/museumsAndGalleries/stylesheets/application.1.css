@@ -1770,188 +1770,6 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   color: #fff;
   border-bottom: 0px; }
 
-.highlighted {
-  border: 1px solid #f6f6f6;
-  padding: 100px; }
-  @media screen and (max-width: 768px) {
-    .highlighted {
-      padding: 50px; }
-      .highlighted em {
-        font-size: 60px; } }
-
-.groupPromo.default {
-  margin: 0 -15px; }
-  .groupPromo.default .listWebpart a {
-    padding: 15px 15px 30px 15px; }
-
-.vertical-content {
-  display: table; }
-
-.carousel {
-  height: 70vh;
-  margin-bottom: 0px; }
-
-.heroBanner {
-  height: 70vh;
-  background-size: cover !important;
-  position: relative; }
-  .heroBanner .container-fluid {
-    position: relative; }
-    @media screen and (max-width: 768px) {
-      .heroBanner .container-fluid {
-        padding: 0px; } }
-  .heroBanner a {
-    background: #fff;
-    padding: 50px 100px 50px 50px;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    color: #414141;
-    font-size: 28px;
-    text-align: left;
-    border-bottom: 1px solid #e6e6e6; }
-    @media screen and (max-width: 768px) {
-      .heroBanner a {
-        position: relative;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        display: block;
-        padding: 50px 100px 50px 50px; }
-        .heroBanner a:after {
-          line-height: 140px; } }
-    .heroBanner a:hover {
-      text-decoration: none;
-      background: white; }
-    .heroBanner a span {
-      display: block;
-      width: 100%;
-      font-size: 0.8em;
-      font-size: 20px;
-      color: gray; }
-    .heroBanner a:after {
-      font-family: FontAwesome;
-      font-size: 32px;
-      content: "\f105";
-      display: block;
-      color: #414141;
-      position: absolute;
-      right: 0px;
-      height: 100%;
-      border-left: 1px solid #e6e6e6;
-      top: 0px;
-      padding: 0 30px;
-      line-height: 170px; }
-
-.visitorInfo {
-  background: rgba(208, 199, 167, 0.9);
-  padding: 0px 0px 30px 0;
-  position: absolute;
-  bottom: 0px;
-  width: 100%; }
-  @media screen and (max-width: 768px) {
-    .visitorInfo {
-      position: relative;
-      padding: 60px 30px 50px 30px; }
-      .visitorInfo a.btn {
-        display: block; } }
-  .visitorInfo h2 {
-    font-size: 25px;
-    margin: 30px 0px 0px;
-    padding-bottom: 15px;
-    color: #2f7251;
-    border-bottom: 1px solid #2f7251; }
-  .visitorInfo p {
-    font-size: 16px; }
-  .visitorInfo a.btn {
-    position: relative;
-    padding: 15px 60px 15px 15px;
-    font-size: 20px;
-    background: transparent;
-    border-color: #414141;
-    color: #414141;
-    margin: 30px auto 0 auto;
-    top: 0px;
-    left: 0px; }
-    .visitorInfo a.btn:after {
-      line-height: 1.8em;
-      color: #414141;
-      border-left: 1px solid #414141;
-      background: transparent; }
-
-@media screen and (max-width: 768px) {
-  .heroBanner {
-    height: auto; } }
-
-.promoListWebpart ul li.heightAuto a {
-  height: auto !important;
-  min-height: 100px; }
-  .promoListWebpart ul li.heightAuto a .info {
-    position: relative; }
-
-.promoListWebpart ul li a .secondaryInfo {
-  width: 100%; }
-
-.btn {
-  font-size: 25px;
-  text-align: left; }
-  .btn span {
-    display: block;
-    width: 100%;
-    font-size: 20px; }
-  .btn.block {
-    display: block;
-    margin-bottom: 30px; }
-    .btn.block:after {
-      background: transparent;
-      border-left: 1px solid #006700;
-      padding: 3% 0px !important;
-      font-size: 25px;
-      min-width: 65px;
-      text-align: center; }
-
-.groupPromo .listWebpart {
-  padding: 0px; }
-  .groupPromo .listWebpart a:after {
-    font-family: FontAwesome;
-    font-size: 32px;
-    content: "\f105";
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    padding: 0 0px;
-    color: #999; }
-
-h1, h2, h3, h4, h5 {
-  font-family: "Oswald", Helvetica, Arial; }
-
-p {
-  font-family: "Oswald", Helvetica, Arial; }
-
-.header-nav-container .logo {
-  background: url(../images/logo.svg) left center no-repeat;
-  margin: 0px;
-  height: 200px;
-  width: 200px; }
-  .header-nav-container .logo:hover {
-    text-decoration: none; }
-  @media screen and (max-width: 768px) {
-    .header-nav-container .logo {
-      text-align: center;
-      margin: 0 auto;
-      width: 150px;
-      height: 150px;
-      background-size: 100%; } }
-
-.main-nav {
-  border-top: 1px solid #ab0e29; }
-  .main-nav ul li a {
-    font-size: 20px; }
-
-.carousel {
-  height: 70vh;
-  margin-bottom: 0px; }
-
 /* start of reveal museums -----------------------------------------------------------------*/
 #reveal {
   background: #fff; }
@@ -2380,3 +2198,80 @@ additional styling
 
 /*additional styling end*/
 /* reaveal end -------------------------------------------------------------------------------------------------*/
+.highlighted {
+  border: 1px solid #f6f6f6;
+  padding: 100px; }
+  @media screen and (max-width: 768px) {
+    .highlighted {
+      padding: 50px; }
+      .highlighted em {
+        font-size: 60px; } }
+
+.groupPromo.default {
+  margin: 0 -15px; }
+  .groupPromo.default .listWebpart a {
+    padding: 15px 15px 30px 15px; }
+
+.vertical-content {
+  display: table; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Oswald", Helvetica, Arial; }
+
+p {
+  font-family: "Oswald", Helvetica, Arial; }
+
+.header-nav-container .logo {
+  background: url(../images/logo.svg) left center no-repeat;
+  margin: 0px;
+  height: 200px;
+  width: 200px; }
+  .header-nav-container .logo:hover {
+    text-decoration: none; }
+  @media screen and (max-width: 768px) {
+    .header-nav-container .logo {
+      text-align: center;
+      margin: 0 auto;
+      width: 150px;
+      height: 150px;
+      background-size: 100%; } }
+
+.main-nav {
+  border-top: 1px solid #ab0e29; }
+  .main-nav ul li a {
+    font-size: 20px; }
+
+.carousel {
+  height: 70vh;
+  margin-bottom: 0px; }
+
+.heroBanner {
+  height: 70vh;
+  background-size: cover !important;
+  position: relative; }
+  .heroBanner .container-fluid a {
+    background: #f6f6f6;
+    padding: 50px 100px 50px 50px;
+    position: absolute;
+    bottom: 0px;
+    color: #414141;
+    font-size: 28px; }
+    .heroBanner .container-fluid a span {
+      display: block;
+      width: 100%;
+      font-size: 0.8em;
+      font-size: 20px;
+      color: #666; }
+    .heroBanner .container-fluid a:after {
+      font-family: FontAwesome;
+      font-size: 32px;
+      content: "\f105";
+      display: block;
+      color: #414141;
+      position: absolute;
+      right: 0px;
+      height: 100%;
+      border-left: 1px solid #ddd;
+      top: 0px;
+      padding: 0 30px;
+      line-height: 130px; }
