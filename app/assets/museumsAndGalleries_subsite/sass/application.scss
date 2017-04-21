@@ -64,8 +64,8 @@ $main-nav-background:#c3102f;
 
 //promolist webpart
 $link-font-color:#414141;
-$span-info-color:#fff;
-$span-info-hover:#efefef;
+$span-info-color:#ecf0f1;
+$span-info-hover:darken(#ecf0f1,5%);
 $span-info-secondary-color:#666;
 $span-arrow-base:transparent;
 $span-third-info-base:#fff;
@@ -78,7 +78,7 @@ $arrow-color:#414141;
 // section backgrounds
 $sectionHeader-background-color:#c3102f ;
 $sectionOne-background-color:#fff;
-$sectionTwo-background-color:#ecf0f1;
+$sectionTwo-background-color:darken(#ecf0f1,5%);
 //$sectionThree-background-color:lighten($base-background-color, 3%) ;
 //$sectionFour-background-color:lighten($base-background-color, 5%) ;
 //$sectionFive-background-color:darken($base-background-color, 5%) ;
@@ -102,7 +102,7 @@ $accordion-color:green;
 //highlighted box in content assets
 $highlighted-background-color:#fff;
 $highlighted-font-color:#c3102f;
-$highlighted-alt-background-color:#f6f6f6 ;
+$highlighted-alt-background-color:#ecf0f1 ;
 $highlighted-alt-font-color:#333;
 
 @import 'mixins';
@@ -147,10 +147,11 @@ p{
 }
 
 .header-nav-container .logo {
-    background:url(../images/logo.svg) left center no-repeat;
-    margin: 0px;
-    height:200px;
+    background:url(../images/museums-logo-w.svg) left center no-repeat;
+    margin: 30px 0 30px -30px;
+    height:150px;
     width:200px;
+    background-size:150%;
 
     
     &:hover{
@@ -160,10 +161,8 @@ p{
 
         @media screen and (max-width:768px){
             text-align: center;
-            margin:0 auto;
-            width:150px;
-            height:150px;
-            background-size:100%;
+            margin:20px auto;
+
         }
 }
 

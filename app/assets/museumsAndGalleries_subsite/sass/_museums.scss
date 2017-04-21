@@ -1,3 +1,80 @@
+
+
+div.promo {
+    background-size:cover !important;
+    padding: 0;
+    margin-bottom: $base-margin-bottom;
+    position: relative;
+    width: 100%;
+    overflow:hidden;
+
+a{
+    display:block;
+    min-height:270px;
+
+    span.image{
+    height:100%;
+    width:100%;
+    bottom:0px;
+    transition: transform 1s;
+    background-size:cover !important;
+
+  
+        &:hover { transform:scale(1.1) }
+
+        &:after{
+            display:none;
+        }
+ 
+
+}
+
+ span {
+    background:$span-info-color;
+    padding: 20px;
+    color: $link-font-color;
+    border-radius: 0 0px 0px 0;
+    bottom: 0px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    transition:all 0.5s ease;
+    font-size:25px;
+
+
+    &:after{
+            content: '\f105';
+            font-family: FontAwesome;
+            position: absolute;
+            font-weight: normal;
+            right: 0px;
+            bottom:0px;
+            height: 100%;
+            display: block;
+            color: $link-font-color;
+            font-size: 35px;
+            transition:all 0.5s ease;
+            border-left:1px solid #ddd;
+            padding:0 20px;
+            line-height: 2.25em;
+
+    }
+}
+
+&:hover span{
+    width:100%;
+    padding: 20px 20px 40px 20px;
+    background:darken(#ecf0f1,5%);
+
+
+}
+
+}
+}
+
+
+
+
 // museums promolist webpart venue colours
 
 /*Venues base less colours */
@@ -26,7 +103,7 @@ margin:0 -15px;
     opacity:1;
     filter: alpha(opacity=100);
     font-weight:400;
-    background:#fbfbfb;
+    background:#ecf0f1;
 
 
     .arrow{
@@ -80,46 +157,46 @@ margin:0 -15px;
 
 
                         &.abbey a {
-             @include promoListWebpartColors(#fbfbfb,$abbey-base-color,#666,transparent,$abbey-base-color,$abbey-base-color, #ffffff);
+             @include promoListWebpartColors(#ecf0f1,$abbey-base-color,#666,transparent,$abbey-base-color,$abbey-base-color, #ffffff);
      }       
 
 
                        &.thwaite a {
-             @include promoListWebpartColors(#fbfbfb,$thwaite-base-color,#666,transparent,$thwaite-base-color,$thwaite-base-color, #ffffff);
+             @include promoListWebpartColors(#ecf0f1,$thwaite-base-color,#666,transparent,$thwaite-base-color,$thwaite-base-color, #ffffff);
      }      
 
 
                     &.temple a {
-             @include promoListWebpartColors(#fbfbfb,$temple-base-color,#666,transparent,$temple-base-color,$temple-base-color, #ffffff);
+             @include promoListWebpartColors(#ecf0f1,$temple-base-color,#666,transparent,$temple-base-color,$temple-base-color, #ffffff);
      }  
    
 
 
                  &.lim a {
-             @include promoListWebpartColors(#fbfbfb,$lim-base-color,#666,transparent,$lim-base-color,$lim-base-color, #ffffff);
+             @include promoListWebpartColors(#ecf0f1,$lim-base-color,#666,transparent,$lim-base-color,$lim-base-color, #ffffff);
      }  
 
         
               &.lag a {
-             @include promoListWebpartColors(#fbfbfb,$lag-base-color,#666,transparent, $lag-base-color,$lag-base-color, #ffffff);
+             @include promoListWebpartColors(#ecf0f1,$lag-base-color,#666,transparent, $lag-base-color,$lag-base-color, #ffffff);
      }  
               &.kirkstall a {
-             @include promoListWebpartColors(#fbfbfb,$kirkstall-base-color,#666,transparent, $kirkstall-base-color,$kirkstall-base-color, #ffffff);
+             @include promoListWebpartColors(#ecf0f1,$kirkstall-base-color,#666,transparent, $kirkstall-base-color,$kirkstall-base-color, #ffffff);
      }      
 
 
               &.discovery a {
-             @include promoListWebpartColors(#fbfbfb,$discovery-base-color,#666,transparent, $discovery-base-color,$discovery-base-color, #ffffff);
+             @include promoListWebpartColors(#ecf0f1,$discovery-base-color,#666,transparent, $discovery-base-color,$discovery-base-color, #ffffff);
      }     
 
 
              &.lotherton a {
-             @include promoListWebpartColors(#fbfbfb, $lotherton-base-color,#666,transparent, $lotherton-base-color,$lotherton-base-color, #d0c7a7);
+             @include promoListWebpartColors(#ecf0f1, $lotherton-base-color,#666,transparent, $lotherton-base-color,$lotherton-base-color, #d0c7a7);
      }
 
 
          &.city a {
-             @include promoListWebpartColors(#fbfbfb, $city-base-color,#666,transparent, $city-base-color, $city-base-color, #fff);
+             @include promoListWebpartColors(#ecf0f1, $city-base-color,#666,transparent, $city-base-color, $city-base-color, #fff);
      }
 
 
@@ -137,14 +214,14 @@ margin:0 -15px;
 
 
 .highlighted {
-    border:1px solid #f6f6f6;
+    border:1px solid #ecf0f1;
     padding:100px;
 
     @media screen and(max-width:768px){
         padding:50px;
 
         em{
-            font-size:60px;
+            font-size:40px;
         }
     }
 }
@@ -374,5 +451,4 @@ $vistitorInfoHeadingColor:#2f7251 !default;
             
     }
 }
-
 

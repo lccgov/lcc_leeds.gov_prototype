@@ -64,8 +64,8 @@ $main-nav-background:#2f7251;
 
 //promolist webpart
 $link-font-color:#bc6122;
-$span-info-color:#fff;
-$span-info-hover:#efefef;
+$span-info-color:#ecf0f1;
+$span-info-hover:darken(#ecf0f1,3%);
 $span-info-secondary-color:#666;
 $span-arrow-base:transparent;
 $span-third-info-base:#fff;
@@ -78,7 +78,7 @@ $arrow-color:#bc6122;
 // section backgrounds
 $sectionHeader-background-color:#2f7251 ;
 $sectionOne-background-color:#fff;
-$sectionTwo-background-color:#ecf0f1;
+$sectionTwo-background-color:darken(#ecf0f1,5%);
 //$sectionThree-background-color:lighten($base-background-color, 3%) ;
 //$sectionFour-background-color:lighten($base-background-color, 5%) ;
 //$sectionFive-background-color:darken($base-background-color, 5%) ;
@@ -115,7 +115,7 @@ $highlighted-alt-font-color:#333;
 //@import 'mainMenuSubsites';
 @import 'breadcrumb';
 @import 'sectionSubsite';
-@import 'promo';
+//@import 'promo';
 @import 'carousel';
 //@import 'socialMedia';
 //@import 'sideNavigation';

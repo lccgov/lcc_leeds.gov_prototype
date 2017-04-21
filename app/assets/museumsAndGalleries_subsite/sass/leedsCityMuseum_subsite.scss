@@ -64,8 +64,8 @@ $main-nav-background:#E86D1F;
 
 //promolist webpart
 $link-font-color:#414141;
-$span-info-color:#fff;
-$span-info-hover:#efefef;
+$span-info-color:#ecf0f1;
+$span-info-hover:darken(#ecf0f1,3%);
 $span-info-secondary-color:#666;
 $span-arrow-base:transparent;
 $span-third-info-base:#fff;
@@ -78,7 +78,7 @@ $arrow-color:#414141;
 // section backgrounds
 $sectionHeader-background-color:#E86D1F;
 $sectionOne-background-color:#fff;
-$sectionTwo-background-color:#ecf0f1;
+$sectionTwo-background-color:darken(#ecf0f1,5%);
 //$sectionThree-background-color:lighten($base-background-color, 3%) ;
 //$sectionFour-background-color:lighten($base-background-color, 5%) ;
 //$sectionFive-background-color:darken($base-background-color, 5%) ;
@@ -151,11 +151,11 @@ p{
 }
 
 .header-nav-container .logo {
-    background:url(../images/logo.svg) left center no-repeat;
-    margin: 0px;
-    height:200px;
-    width:200px;
-
+    background:url(../images/leedsCity-logo-w.svg) left center  no-repeat;
+    margin: 0px 0 0 -30px;
+    height:150px;
+    width:290px;
+    background-size:140%;
     
     &:hover{
         text-decoration:none;
@@ -165,9 +165,7 @@ p{
         @media screen and (max-width:768px){
             text-align: center;
             margin:0 auto;
-            width:150px;
-            height:150px;
-            background-size:100%;
+
         }
 }
 
@@ -181,75 +179,5 @@ p{
 
 
 
-.promo {
-    background-size:cover !important;
-    padding: 0;
-    margin-bottom: $base-margin-bottom;
-    position: relative;
-    width: 100%;
-    overflow:hidden;
 
-a{
-    display:block;
-    min-height:270px;
-
-    span.image{
-    height:100%;
-    width:100%;
-    bottom:0px;
-    transition: transform 1s;
-    background-size:cover !important;
-
-  
-        &:hover { transform:scale(1.1) }
-
-        &:after{
-            display:none;
-        }
- 
-
-}
-
- span {
-    background:#f6f6f6;
-    padding: 20px;
-    color: $link-font-color;
-    border-radius: 0 0px 0px 0;
-    bottom: 0px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    transition:all 0.5s ease;
-    font-size:25px;
-
-
-    &:after{
-            content: '\f105';
-            font-family: FontAwesome;
-            position: absolute;
-            font-weight: normal;
-            right: 0px;
-            bottom:0px;
-            height: 100%;
-            display: block;
-            color: $link-font-color;
-            font-size: 35px;
-            transition:all 0.5s ease;
-            border-left:1px solid #ddd;
-            padding:0 20px;
-            line-height: 2.25em;
-
-    }
-}
-
-&:hover span{
-    width:100%;
-    padding: 20px 20px 40px 20px;
-    background:#dedede;
-
-
-}
-
-}
-}
 

@@ -38,7 +38,7 @@ body {
   background: #fff; }
 
 .sectionTwo {
-  background: #ecf0f1; }
+  background: #dde4e6; }
 
 .sectionThree {
   background: white; }
@@ -261,57 +261,6 @@ form input[type=submit].submit {
     margin: 2px 0 0;
     padding: 15px;
     background: #fff; }
-
-.promo {
-  background-size: cover !important;
-  padding: 0;
-  margin-bottom: 1.875em;
-  position: relative;
-  width: 100%;
-  overflow: hidden; }
-  .promo a {
-    display: block;
-    min-height: 270px; }
-    .promo a span.image {
-      height: 100%;
-      width: 100%;
-      bottom: 0px;
-      transition: transform 1s;
-      background-size: cover !important; }
-      .promo a span.image:hover {
-        transform: scale(1.1); }
-      .promo a span.image:after {
-        display: none; }
-    .promo a span {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 15px;
-      color: #fff;
-      border-radius: 0 0px 0px 0;
-      bottom: 0px;
-      color: #fff;
-      left: 0;
-      position: absolute;
-      width: 100%;
-      transition: all 0.5s ease; }
-      .promo a span:after {
-        content: '\f105';
-        font-family: FontAwesome;
-        position: absolute;
-        font-weight: normal;
-        bottom: -40px;
-        right: 0px;
-        height: 25px;
-        width: 25px;
-        display: block;
-        color: #fff;
-        font-size: 22px;
-        transition: all 0.5s ease; }
-    .promo a:hover span {
-      width: 100%;
-      padding: 15px 15px 40px 15px; }
-      .promo a:hover span:after {
-        bottom: 10px;
-        right: 0px; }
 
 /*****************
 CAROUSEL BOOTSTRAP
@@ -694,7 +643,7 @@ ul.promo-group {
           bottom: 0px;
           right: 0px;
           padding: 20px 40px 20px 20px;
-          background: #fff;
+          background: #ecf0f1;
           width: 100%;
           opacity: 0.90;
           filter: alpha(opacity=90);
@@ -705,7 +654,7 @@ ul.promo-group {
           position: absolute; }
         .promoListWebpart ul li a:hover span.info,
         .promoListWebpart ul li a:focus span.info {
-          background: #efefef;
+          background: #e3e9eb;
           text-decoration: none;
           opacity: 1;
           filter: alpha(opacity=100);
@@ -848,12 +797,12 @@ ul.promo-group {
     .promoListWebpart .contentLink.color p {
       color: #333; }
     .promoListWebpart .contentLink.color div {
-      background: #fff;
+      background: #ecf0f1;
       padding: 15px 15px 30px 15px; }
     .promoListWebpart .contentLink.color.lighter div {
       background: white; }
     .promoListWebpart .contentLink.color.darker div {
-      background: #ededed; }
+      background: #d7e0e2; }
     @media only screen and (max-width: 1200px) and (min-width: 601px) {
       .promoListWebpart .contentLink.color div {
         display: table-cell;
@@ -901,7 +850,7 @@ ul.promo-group {
       .promoListWebpart .contentLink.heightTwo a:focus span.info,
       .promoListWebpart .contentLink a:hover span.info,
       .promoListWebpart .contentLink a:focus span.info {
-        background: #efefef; }
+        background: #e3e9eb; }
     .promoListWebpart .contentLink p {
       text-align: center;
       font-size: 24px;
@@ -932,12 +881,12 @@ ul.promo-group {
     height: 200px;
     color: #333; }
     .promoListWebpart .content.color div {
-      background: #fff;
+      background: #ecf0f1;
       padding: 15px 15px 30px 15px; }
     .promoListWebpart .content.color.lighter div {
       background: white; }
     .promoListWebpart .content.color.darker div {
-      background: #cccccc; }
+      background: #b1c2c6; }
     .promoListWebpart .content.heightAuto {
       height: auto;
       padding-bottom: 0px; }
@@ -1619,6 +1568,57 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
     .highlighted {
       padding: 1.5em 1em; } }
 
+div.promo {
+  background-size: cover !important;
+  padding: 0;
+  margin-bottom: 1.875em;
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  div.promo a {
+    display: block;
+    min-height: 270px; }
+    div.promo a span.image {
+      height: 100%;
+      width: 100%;
+      bottom: 0px;
+      transition: transform 1s;
+      background-size: cover !important; }
+      div.promo a span.image:hover {
+        transform: scale(1.1); }
+      div.promo a span.image:after {
+        display: none; }
+    div.promo a span {
+      background: #ecf0f1;
+      padding: 20px;
+      color: #bc6122;
+      border-radius: 0 0px 0px 0;
+      bottom: 0px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      transition: all 0.5s ease;
+      font-size: 25px; }
+      div.promo a span:after {
+        content: '\f105';
+        font-family: FontAwesome;
+        position: absolute;
+        font-weight: normal;
+        right: 0px;
+        bottom: 0px;
+        height: 100%;
+        display: block;
+        color: #bc6122;
+        font-size: 35px;
+        transition: all 0.5s ease;
+        border-left: 1px solid #ddd;
+        padding: 0 20px;
+        line-height: 2.25em; }
+    div.promo a:hover span {
+      width: 100%;
+      padding: 20px 20px 40px 20px;
+      background: #dde4e6; }
+
 /*Venues base less colours */
 .promoListWebpart {
   margin: 0 -15px; }
@@ -1628,7 +1628,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
       opacity: 1;
       filter: alpha(opacity=100);
       font-weight: 400;
-      background: #fbfbfb; }
+      background: #ecf0f1; }
       .promoListWebpart ul li a .info .arrow {
         border-left: 1px solid #ddd; }
 
@@ -1636,7 +1636,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   border-left: none; }
 
 .promoListWebpart ul li.abbey a .info {
-  background: #fbfbfb;
+  background: #ecf0f1;
   color: #7D4199; }
   .promoListWebpart ul li.abbey a .info .secondaryInfo {
     color: #666; }
@@ -1651,7 +1651,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   border-bottom: 0px; }
 
 .promoListWebpart ul li.thwaite a .info {
-  background: #fbfbfb;
+  background: #ecf0f1;
   color: #5C8727; }
   .promoListWebpart ul li.thwaite a .info .secondaryInfo {
     color: #666; }
@@ -1666,7 +1666,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   border-bottom: 0px; }
 
 .promoListWebpart ul li.temple a .info {
-  background: #fbfbfb;
+  background: #ecf0f1;
   color: #860037; }
   .promoListWebpart ul li.temple a .info .secondaryInfo {
     color: #666; }
@@ -1681,7 +1681,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   border-bottom: 0px; }
 
 .promoListWebpart ul li.lim a .info {
-  background: #fbfbfb;
+  background: #ecf0f1;
   color: #77230A; }
   .promoListWebpart ul li.lim a .info .secondaryInfo {
     color: #666; }
@@ -1696,7 +1696,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   border-bottom: 0px; }
 
 .promoListWebpart ul li.lag a .info {
-  background: #fbfbfb;
+  background: #ecf0f1;
   color: #005953; }
   .promoListWebpart ul li.lag a .info .secondaryInfo {
     color: #666; }
@@ -1711,7 +1711,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   border-bottom: 0px; }
 
 .promoListWebpart ul li.kirkstall a .info {
-  background: #fbfbfb;
+  background: #ecf0f1;
   color: #00447C; }
   .promoListWebpart ul li.kirkstall a .info .secondaryInfo {
     color: #666; }
@@ -1726,7 +1726,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   border-bottom: 0px; }
 
 .promoListWebpart ul li.discovery a .info {
-  background: #fbfbfb;
+  background: #ecf0f1;
   color: #16145F; }
   .promoListWebpart ul li.discovery a .info .secondaryInfo {
     color: #666; }
@@ -1741,7 +1741,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   border-bottom: 0px; }
 
 .promoListWebpart ul li.lotherton a .info {
-  background: #fbfbfb;
+  background: #ecf0f1;
   color: #2f7251; }
   .promoListWebpart ul li.lotherton a .info .secondaryInfo {
     color: #666; }
@@ -1756,7 +1756,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   border-bottom: 0px; }
 
 .promoListWebpart ul li.city a .info {
-  background: #fbfbfb;
+  background: #ecf0f1;
   color: #E86D1F; }
   .promoListWebpart ul li.city a .info .secondaryInfo {
     color: #666; }
@@ -1771,13 +1771,13 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   border-bottom: 0px; }
 
 .highlighted {
-  border: 1px solid #f6f6f6;
+  border: 1px solid #ecf0f1;
   padding: 100px; }
   @media screen and (max-width: 768px) {
     .highlighted {
       padding: 50px; }
       .highlighted em {
-        font-size: 60px; } }
+        font-size: 40px; } }
 
 .groupPromo.default {
   margin: 0 -15px; }
