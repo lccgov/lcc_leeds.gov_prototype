@@ -268,7 +268,7 @@ $heroButtonColor:#414141 !default;
           background:$heroButtonBack;
           padding:50px 100px 50px 50px;
           position:absolute;
-          top:0px;
+          top:15vh;
           right:0px;
           color:$heroButtonColor;
           font-size:28px;
@@ -320,7 +320,10 @@ $heroButtonColor:#414141 !default;
             line-height:170px;
         }
 
+        &.alt{
 
+
+        }
       }
       
 
@@ -450,5 +453,15 @@ $vistitorInfoHeadingColor:#2f7251 !default;
             color:#999;
             
     }
+}
+
+
+ul.footerLogos{
+     @include ulStyle;
+     margin:15px 15px 30px 15px;
+
+     img{
+         margin-bottom:5px;
+     }
 }
 

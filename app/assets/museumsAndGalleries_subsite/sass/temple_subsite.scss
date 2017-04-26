@@ -15,8 +15,8 @@
 $base-font-size:19px ;
 //$base-font-color:#333 ;
 //$base-link-color:#133E8D ;
-//$base-container-width:1500px ;
-$btn-background-color:#bc6122 ;
+$base-container-width:1500px ;
+//$btn-background-color:green ;
 $font-primary:'Oswald', Helvetica, Arial;
 $font-secondary: 'Oswald', Helvetica, Arial;
 
@@ -29,7 +29,7 @@ $font-secondary: 'Oswald', Helvetica, Arial;
 //$search-link:#333 ;
 
 // mainNav.scss
-$main-nav-background:#2f7251;
+$main-nav-background:#860037;
 //$main-nav-link:#fff ;
 
 //footer.scss
@@ -37,7 +37,7 @@ $main-nav-background:#2f7251;
 //$footer-nav-selected-link:#133E8D ;
 
 // sectionSubsite.scss - socialamedia.scss
-//$section-Background:#efefef ;
+$section-Background:#ecf0f1;
 
 //  socialamedia.scss
 //$social-link-color:#337ab7 ;
@@ -63,20 +63,20 @@ $main-nav-background:#2f7251;
 
 
 //promolist webpart
-$link-font-color:#bc6122;
+$link-font-color:#414141;
 $span-info-color:#ecf0f1;
 $span-info-hover:darken(#ecf0f1,3%);
 $span-info-secondary-color:#666;
 $span-arrow-base:transparent;
 $span-third-info-base:#fff;
 //$third-info-font-color:#333;
-$arrow-color:#bc6122;
+$arrow-color:#414141;
 //$contentFontColor:#333;
 //$content-arrow-color:#133E8D;
 //$content-border-color:#ddd;
 
 // section backgrounds
-$sectionHeader-background-color:#2f7251 ;
+$sectionHeader-background-color:#860037;
 $sectionOne-background-color:#fff;
 $sectionTwo-background-color:darken(#ecf0f1,5%);
 //$sectionThree-background-color:lighten($base-background-color, 3%) ;
@@ -96,15 +96,18 @@ $news-pod-back:#ffffff ;
 $news-pod-border-color:#ddd;
 
 //accordion
-$accordion-color:#bc6122;
+$accordion-color:green;
 //$accordion-border-color:#ECF0F1;
 
 //highlighted box in content assets
 $highlighted-background-color:#fff;
-$highlighted-font-color:#2f7251 ;
+$highlighted-font-color:#860037;
 $highlighted-alt-background-color:#f6f6f6 ;
 $highlighted-alt-font-color:#333;
 
+
+$vistitorInfoBack:rgba(#fff, 0.9);
+$vistitorInfoHeadingColor:#414141;
 
 @import 'mixins';
 @import 'variables';
@@ -137,6 +140,7 @@ $highlighted-alt-font-color:#333;
 @import 'contentAssets';
 @import 'museums';
 
+
 h1,h2,h3,h4,h5{
     font-family:$font-primary;
 }
@@ -147,11 +151,11 @@ p{
 }
 
 .header-nav-container .logo {
-    background:url(../images/Lotherton_Logo_.svg) left center no-repeat;
-    margin: 0px;
-    height:200px;
-    width:300px;
-
+    background:url(../images/templeNewsam-logo-w.svg) left center  no-repeat;
+    margin: 0px 0 0 -30px;
+    height:150px;
+    width:350px;
+    background-size:100%;
     
     &:hover{
         text-decoration:none;
@@ -161,47 +165,19 @@ p{
         @media screen and (max-width:768px){
             text-align: center;
             margin:0 auto;
-            width:300px;
-            height:150px;
-            background-size:100%;
+
         }
 }
 
 .main-nav{
+    border-top:1px solid darken($main-nav-background,5%);
     ul li a{
         font-size:20px;
     }
 }
 
-.carousel {
-    height: 70vh;
-    margin-bottom:0px;
-}
 
 
-
-.header-nav-container:after {
-  content:'';  
-  width: 100%; 
-  height: 0; 
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 150px 100vw 0 0;
-border-color: #2f7251 transparent transparent transparent;
-  position:absolute;
-  z-index: 8;
-
-  @media screen and (max-width:768px){
-      border-width: 70px 100vw 0 0;
-  }
-
-}
-
-
-.breadcrumb{
-    padding-top:130px;
-}
 
 
 
