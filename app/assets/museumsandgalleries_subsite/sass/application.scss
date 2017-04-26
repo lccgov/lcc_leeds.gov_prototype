@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,700,800,400,600');
+// available variables to change the brand colours as required
+// masterhead.scss
+
+//$head-background: #ffffff;
+
+
+// mainMenu.scss -- responsive icons color
+//$menu-link-color:#337ab7;
+
+
+//base.scss
+
+//$base-background-color:#fff;
+$base-font-size:19px ;
+//$base-font-color:#333 ;
+//$base-link-color:#133E8D ;
+//$base-container-width:1500px ;
+//$btn-background-color:green ;
+$font-primary:'Oswald', Helvetica, Arial;
+$font-secondary: 'Oswald', Helvetica, Arial;
+
+
+// global used on all partials to get a uniform spacing between elements
+//$base-margin-bottom:1.875em ;
+
+//headerTop
+//$search-link-background:#F3F3F4 ;
+//$search-link:#333 ;
+
+// mainNav.scss
+$main-nav-background:#c3102f;
+//$main-nav-link:#fff ;
+
+//footer.scss
+//$footer-font-color:#fff ;
+//$footer-nav-selected-link:#133E8D ;
+
+// sectionSubsite.scss - socialamedia.scss
+//$section-Background:#efefef ;
+
+//  socialamedia.scss
+//$social-link-color:#337ab7 ;
+
+//  sideNavigation.scss
+//$side-nav-active-background:#133E8D ;
+
+//  carousel.scss
+//$carousel-active-background:#000 ;
+//$carousel-indicators-active-background:#ccc ;
+//$carousel-caption-background: rgba(0,0,0,0.6) ;
+//$carousel-caption-font-color:#fff ;
+
+
+// blocklinks.scss
+
+//$block-link-back:#f6f6f6 ;
+//$block-link-back-hover:#3380A4 ;
+//$promo-group-border:1px solid #fff ; 
+//$promo-group-background:#EDF2F5 ; 
+//$promo-group-li-background:#EDF2F5 ;
+//$promo-group-link-color:#216486 ;
+
+
+//promolist webpart
+$link-font-color:#414141;
+$span-info-color:#ecf0f1;
+$span-info-hover:darken(#ecf0f1,5%);
+$span-info-secondary-color:#666;
+$span-arrow-base:transparent;
+$span-third-info-base:#fff;
+//$third-info-font-color:#333;
+$arrow-color:#414141;
+//$contentFontColor:#333;
+//$content-arrow-color:#133E8D;
+//$content-border-color:#ddd;
+
+// section backgrounds
+$sectionHeader-background-color:#c3102f ;
+$sectionOne-background-color:#fff;
+$sectionTwo-background-color:darken(#ecf0f1,5%);
+//$sectionThree-background-color:lighten($base-background-color, 3%) ;
+//$sectionFour-background-color:lighten($base-background-color, 5%) ;
+//$sectionFive-background-color:darken($base-background-color, 5%) ;
+
+//iconlinks
+//$iconLinkIconColor:#FFC82E;
+
+//heroBanner
+//$heroFontBackground:rgba(0, 0, 0, 0.5); 
+//$heroFontcolor:#fff; 
+
+//news
+//$news-button-background: #3498DB ;
+$news-pod-back:#ffffff ;
+$news-pod-border-color:#ddd;
+
+//accordion
+$accordion-color:green;
+//$accordion-border-color:#ECF0F1;
+
+//highlighted box in content assets
+$highlighted-background-color:#fff;
+$highlighted-font-color:#c3102f;
+$highlighted-alt-background-color:#ecf0f1 ;
+$highlighted-alt-font-color:#333;
+
+@import 'mixins';
+@import 'variables';
+@import 'brandColors';
+
+// available sass files please un-comment out as required
+
+//@import 'mainMenuSubsites';
+@import 'breadcrumb';
+@import 'sectionSubsite';
+@import 'promo';
+@import 'carousel';
+//@import 'socialMedia';
+//@import 'sideNavigation';
+//@import 'blockLinks';
+@import 'accordion';
+@import 'promoGroup';
+@import 'alerts';
+@import 'promoListwebpart';
+//@import 'eventsWebparts';
+@import 'sharepointOverides';
+@import 'iconLinks';
+//@import 'heroBanner';
+//@import 'news';
+//@import 'polaroids';
+@import 'groupPromo';
+//@import 'blocklinks';
+//@import 'contentLink';
+//@import 'docList';
+@import 'contentAssets';
+@import 'museums';
+
+
+h1,h2,h3,h4,h5{
+    font-family:$font-primary;
+}
+
+
+p{
+    font-family:$font-secondary;
+}
+
+.header-nav-container .logo {
+    background:url(../images/museums-logo-w.svg) left center no-repeat;
+    margin: 30px 0 30px -30px;
+    height:150px;
+    width:200px;
+    background-size:150%;
+
+    
+    &:hover{
+        text-decoration:none;
+    }
+
+
+        @media screen and (max-width:768px){
+            text-align: center;
+            margin:20px auto;
+
+        }
+}
+
+.main-nav{
+    border-top:1px solid darken($main-nav-background,5%);
+    ul li a{
+        font-size:20px;
+    }
+}
+
+.carousel {
+    height: 70vh;
+    margin-bottom:0px;
+}
+
+
+/* start of reveal museums -----------------------------------------------------------------*/
+
+#reveal{
+    
+    background:#fff;
+    
+    .revealHeader{
+        text-align:right;
+        position:absolute;
+        right:0px;
+        z-index: 9;
+        a{
+            display:inline-block;
+            cursor:pointer;
+            position:relative;
+            background:lighten($main-nav-background,10%);
+            padding:20px 80px 20px 20px;
+            
+            span.textLink{
+                color:#fff;
+                text-transform:uppercase;
+                font-weight:bold;
+                display:block;
+                font-weight:600;
+                -webkit-transition: all ease .5s;
+                -moz-transition: all ease .5s;
+                transition: all ease .5s;
+            }//span textLink end
+            
+            span.icon{
+                display:block;
+                position:absolute;
+                top:0px;
+                right:20px;
+                -webkit-transition: all ease .5s;
+                -moz-transition: all ease .5s;
+                transition: all ease .5s;
+
+                 &:after {
+            font-family: FontAwesome;
+            font-size: 32px;
+            content: "\f067";
+            display: block;
+            margin:12px 0 0 3px;
+            color:#fff;
+        }
+            }//span icon end
+  
+        } //a end
+     
+    }//reveal header end
+    
+    #revealContent{
+        display:none;
+    }
+    
+    ul{
+        margin:0;
+        padding:90px 0 50px;
+        display:inline-block;
+        list-style: none;
+        text-align:center;
+           
+            li{
+                width:20%;
+                float:left;
+                border:1px solid #fff;
+                background:#fff;
+                min-height:310px;
+                position:relative;
+                
+                    h3{ 
+                        margin:0;
+                        padding: 20px 10px;
+                        background:rgba(39, 174, 96,1.0);
+                        
+                        span{
+                            position: absolute;
+                            width: 1px;
+                            height: 1px;
+                            padding: 0;
+                            margin: -1px;
+                            overflow: hidden;
+                            clip: rect(0, 0, 0, 0);
+                            border: 0;
+                        } // h3 span end
+                        
+                        img{
+                            margin:0 auto;
+                            max-width:100%;
+                            padding:0 60px 0 0;
+                        }//h3 img end
+                        
+                    }// h3 end
+
+                
+                    
+                    .rollover{
+                        position:relative;
+                        overflow: hidden;
+                        
+                        img{
+                            width:100%;
+                        }// rollover img end
+                        
+                        p{
+                            position:absolute;
+                            top:150px;
+                            right:0;
+                            width:100%;
+                            height:100%;
+                            font-weight:300;
+                            background:rgba(39, 174, 96,0.8);
+                            color:#fff;
+                            padding:15px;
+                            text-align:left;
+                            line-height:1.2em;
+                            font-size:$base-font-size;
+                            margin:0;
+                                -webkit-transition: all ease 1s;
+                            -moz-transition: all ease 1s;
+                            transition: all ease 1s;
+                        }// rollover p end
+                        
+                    }//rollover end
+                
+                a.link{
+                    
+                    span.link{
+                        position:absolute;
+                        bottom:0px;
+                        right:0;
+                        width:100%;
+                        background:#fff;
+                        padding:25px;
+                        text-align:left;
+                        color:#111;
+                        font-size:$base-font-size * 1.5;
+                        font-weight:700;
+                        text-transform:uppercase;
+                            -webkit-transition: all ease .5s;
+                        -moz-transition: all ease .5s;
+                        transition: all ease .5s;
+                    }//span link end
+                    
+                    span.arrow{
+                        background:#111;
+                        position:absolute;
+                        bottom:19px;
+                        right:20px;
+                        border-radius: 50%;
+                        width:50px;
+                        height:50px;
+                        z-index:2;
+                            -webkit-transition: all ease .5s;
+                        -moz-transition: all ease .5s;
+                        transition: all ease .5s;
+ &:after {
+            font-family: FontAwesome;
+            font-size: 25px;
+            content: "\f105";
+            display: block;
+            color:#fff;
+            margin:7px 0 0 3px;
+        }
+                    }//span arrow end
+                                        
+                }//a end
+
+            }//li end
+
+    }//ul end
+    
+    a.revealClose{
+        text-align:center;
+        color:#bbb;
+        font-size:$base-font-size * 1.8;
+        padding:0 0 50px;
+        display:block;
+        cursor:pointer;
+        margin:0;
+        text-transform:uppercase;
+        width:100px;
+        margin:0 auto;
+        
+        span{
+            margin:0 auto 10px;
+            display:block;
+            width:35px;
+            height:35px;
+            background:#fff url(../images/revealClose.svg) center center no-repeat;
+        }//span end
+        
+    }//a reveal close end
+    
+}//reveal end
+
+/****************
+RESPONSIVE 990PX
+*****************/
+
+@media only screen and (max-width:990px) {
+
+    #reveal{
+
+        ul{
+            padding:40px 0 70px;
+
+                li{
+                    width:33.33%;
+                    min-height:150px;
+
+                      .rollover{
+                           display:none;
+                        }//rollover end
+
+                    a.link{
+
+                        span.link{
+                            position:relative;
+                            display:block;
+                            width:100%;
+                        }//span link end
+
+                    }//a link end
+
+                }//li end
+
+        }//ul end
+
+    }//reveal end
+       
+}//RESPONSIVE 990PX END
+
+/****************
+RESPONSIVE 500PX
+*****************/
+
+@media only screen and (max-width:600px) {
+
+    #reveal{
+        
+
+
+        ul{
+            padding:0 0 50px;
+
+                li{
+                    width:100%;
+                    min-height:0;
+
+                        h3{ 
+                            padding: 15px;
+                            text-align:left;
+                            cursor:pointer;
+
+                            span{
+                                position: relative;
+                                width: auto;
+                                height: auto;
+                                padding: 0;
+                                margin: 0;
+                                color:#fff;
+                                font-size:$base-font-size * 1.1;
+                            }//h3 span end
+
+                            img{
+                                display:none;
+                            }//h3 img end
+
+                        }//h3 end
+
+                        .revealInfo{
+                            display:none;
+                                -webkit-transition: all ease .5s;
+                            -moz-transition: all ease .5s;
+                            transition: all ease .5s;
+
+                            .rollover{
+                                display:block;
+
+                                img{
+                                    display:none;
+                                }// rollover img end
+
+                                p{
+                                    position:relative;
+                                    width:100%;
+                                    height:100%;
+                                    color:#fff;
+                                    padding:20px;
+                                    top:0;
+
+                                }// rollover p end
+
+                            }//rollover end
+
+                            a.link{    
+
+                                span.link{
+                                    padding: 15px;
+                                    font-size:$base-font-size * 1.4;
+                                }// span link end
+
+                                span.arrow{
+                                    bottom:10px;
+                                    right:10px;
+                                    padding:8px;
+                                }//span arrow end
+
+                            }//a link end
+
+                        }//reveal info end
+
+                }//li end
+
+        }//ul end
+
+    }//reveal end
+    
+    
+}//RESPONSIVE 500PX END
+
+/*************
+HOVER STATES
+*************/
+
+#reveal .revealHeader a:hover, #reveal .revealHeader a:focus{
+     text-decoration:none;
+}
+
+#reveal .revealHeader a:hover , #reveal .revealHeader a:focus{
+     background:darken($main-nav-background,10%) ;
+}
+
+#reveal .revealHeader a span.icon.active{
+    border-radius: 0;
+    top:0px;
+    
+    &:after{
+     content:'\f00d'   
+
+   }
+}
+
+#reveal a:hover, #reveal a:focus{
+    text-decoration:none !important;
+}
+
+
+#reveal ul li:hover .rollover p, #reveal ul li:focus .rollover p{
+    top:0px;
+}
+
+#reveal ul li a.link:hover span.link, #reveal ul li a.link:focus span.link{
+    background:#efefef;
+}
+
+#reveal a.revealClose:hover, #reveal a.revealClose:focus {
+    color:#000;
+}
+
+#reveal a.revealClose:hover span, #reveal a.revealClose:focus span{
+    background:#fff url(../img/revealCloseBlack.svg) center center no-repeat;
+}
+
+@media only screen and (max-width:600px) {
+    
+    #reveal .revealHeader a span.icon.active{
+        height:50px;
+    }
+    
+    #reveal ul li .revealInfo.active{
+        display:block;
+    }
+    
+}
+
+/*hover states end*/
+
+/****************
+li title style
+***************/
+
+#reveal ul li.title{
+    padding:25px;
+    background:#fff;
+    
+    h2{
+        text-transform:uppercase;
+        font-size:$base-font-size * 2;
+        color:#000;
+        font-weight:700;
+        margin-top:0px;
+    }
+    
+    p{
+        margin:0;
+        font-size:$base-font-size * 1.2;
+    }
+}
+
+/*li title style end*/
+
+@media only screen and (max-width:1200px) {
+
+    #reveal ul li.title{
+        padding:20px 10px;
+    }
+
+/*li title style end*/
+}
+
+@media only screen and (max-width:990px) {
+
+    #reveal ul li.title{
+        padding:20px 10px;
+        width:100%;
+    }
+
+/*li title style end*/
+}
+
+/***************
+li thwaite style
+****************/
+
+#reveal ul li.thwaite{
+    
+    h3{ 
+        background:$thwaite-base-color;
+
+    }
+
+    .rollover{
+                        
+        p{
+            background:rgba($thwaite-base-color, 0.8);
+        }
+
+    }//rollover end
+    
+    a.link{
+    
+        span.arrow{
+            background:$thwaite-base-color;
+        }
+        
+        &:hover span.arrow, &:focus span.arrow{
+            background:#111;
+        }
+        
+    }//a link end
+    
+}
+
+
+/***************
+li abbey style
+****************/
+
+#reveal ul li.abbey{
+    
+    h3{ 
+        background:$abbey-base-color;
+    }
+    
+    .rollover{
+                        
+        p{
+            background:rgba($abbey-base-color, 0.8);
+        }
+
+    }//rollover end
+    
+    a.link{
+    
+        span.arrow{
+            background:$abbey-base-color;
+        }
+        
+        &:hover span.arrow, &:focus span.arrow{
+            background:#111;
+        }
+        
+    }
+    
+}
+
+/*li abbey style end*/
+
+/***************
+li discovery style
+****************/
+
+#reveal ul li.discovery{
+
+    h3{ 
+        background:$discovery-base-color;
+    }
+
+    .rollover{
+                        
+        p{
+            background:rgba($discovery-base-color, 0.8);
+        }
+
+    }//rollover end
+    
+    a.link{
+    
+        span.arrow{
+            background:$discovery-base-color;
+        }
+        
+        &:hover span.arrow, &:focus span.arrow{
+            background:#111;
+        }
+        
+    }
+    
+}
+
+/*li discovery style end*/
+
+/***************
+li kirkstall style
+****************/
+
+#reveal ul li.kirkstall{
+
+    h3{ 
+        background:$kirkstall-base-color;
+    }
+    
+    .rollover{
+                        
+        p{
+            background:rgba($kirkstall-base-color, 0.8);
+        }
+
+    }//rollover end
+    
+    a.link{
+    
+        span.arrow{
+            background:$kirkstall-base-color;
+        }
+        
+        &:hover span.arrow, &:focus span.arrow{
+            background:#111;
+        }
+    }
+
+}
+
+/*li kirkstall style end*/
+
+/***************
+li lag style
+****************/
+
+#reveal ul li.lag{
+
+    h3{ 
+        background:$lag-base-color;
+    }
+        
+    .rollover{
+                        
+        p{
+            background:rgba($lag-base-color, 0.8);
+        }
+
+    }//rollover end
+    
+    a.link{
+    
+        span.arrow{
+            background:$lag-base-color;
+        }
+        
+        &:hover span.arrow, &:focus span.arrow{
+            background:#111;
+        }
+        
+    }
+    
+}
+
+/*li lag style end*/
+
+/***************
+li lim style
+****************/
+
+#reveal ul li.lim{
+
+    h3{ 
+        background:$lim-base-color;
+    }
+    
+    .rollover{
+                        
+        p{
+            background:rgba($lim-base-color, 0.8);
+        }
+
+    }//rollover end
+    
+    a.link{
+    
+        span.arrow{
+            background:$lim-base-color;
+        }
+        
+        &:hover span.arrow, &:focus span.arrow{
+            background:#111;
+        }
+        
+    }
+    
+}
+
+/*li lim style end*/
+
+/***************
+li temple style
+****************/
+
+#reveal ul li.temple{
+
+    h3{ 
+        background:$temple-base-color;
+    }
+
+    .rollover{
+                        
+        p{
+            background:rgba($temple-base-color, 0.8);
+        }
+
+    }//rollover end
+    
+    a.link{
+    
+        span.arrow{
+            background:$temple-base-color;
+        }
+        
+        &:hover span.arrow, &:focus span.arrow{
+            background:#111;
+        }
+        
+    }
+    
+}
+
+/*li temple style end*/
+
+/***************
+li city style
+****************/
+
+#reveal ul li.city{
+
+    h3{ 
+        background:$city-base-color;
+    }
+
+    .rollover{
+                        
+        p{
+            background:rgba($city-base-color, 0.8);
+        }
+
+    }//rollover end
+    
+    a.link{
+    
+        span.arrow{
+            background:$city-base-color;
+        }
+        
+        &:hover span.arrow, &:focus span.arrow{
+            background:#111;
+        }
+        
+    }
+    
+}
+
+/*li city style end*/
+
+/***************
+li lotherton style
+****************/
+
+#reveal ul li.lotherton{
+
+    h3{ 
+        background:$lotherton-base-color;
+    }
+
+    .rollover{
+                        
+        p{
+            background:rgba($lotherton-base-color, 0.8);
+        }
+
+    }//rollover end
+    
+    a.link{
+    
+        span.arrow{
+            background:$lotherton-base-color;
+        }
+        
+        &:hover span.arrow, &:focus span.arrow{
+            background:#111;
+        }
+        
+    }
+    
+}
+
+/*li lotherton style end*/
+
+
+/*********************
+additional styling
+********************/
+
+// additional styling to the li's to stop the title h2 & p displaying. It really needs to not display if the field is empty, some XSL coding needed!
+
+#reveal ul li.thwaite, #reveal ul li.abbey, #reveal ul li.discovery, #reveal ul li.kirkstall, #reveal ul li.lag, #reveal ul li.lim, #reveal ul li.temple, #reveal ul li.city, #reveal ul li.lotherton{
+    
+    
+    h2{
+        display:none;
+    }
+    
+    p{
+        display:none;
+    }
+    
+    .rollover{
+                        
+        p{
+            display:block;
+        }
+
+    }
+}
+
+/*additional styling end*/
+
+/* reaveal end -------------------------------------------------------------------------------------------------*/
+
+
