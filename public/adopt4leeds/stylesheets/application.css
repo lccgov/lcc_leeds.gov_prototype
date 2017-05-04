@@ -1213,6 +1213,49 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
 .carousel-inner .item {
   padding: 0px; }
 
+.col-md-8 .ms-srch-item {
+  width: 100%;
+  overflow: visible;
+  margin: 10px 0px 10px 0px; }
+
+.col-md-8 h3.ms-srch-ellipsis {
+  white-space: normal;
+  overflow: visible;
+  display: inline; }
+
+.col-md-8 #SearchBox {
+  border: 1px solid #ddd;
+  padding: 10px 10px 0 10px;
+  width: 100%;
+  max-width: 600px; }
+  .col-md-8 #SearchBox .ms-srch-sbLarge > .ms-srch-sb-searchLink {
+    float: right; }
+
+.col-md-8 .ms-srch-item-body {
+  overflow: visible;
+  display: inline-block;
+  width: 100%; }
+
+.col-md-8 .ms-srch-item-icon {
+  margin-bottom: 10px; }
+
+.col-md-8 #UpScopeLinkTop {
+  width: 100% !important; }
+
+.col-md-8 .ms-srch-item-path {
+  width: 100%; }
+
+.col-md-8 .ms-promlink-button-image {
+  margin: -9px 0 9px -5px; }
+
+.col-md-8 .ms-srch-sbLarge-fullWidth {
+  width: 80%;
+  max-width: 500px; }
+
+@media (max-width: 1024px) {
+  .col-md-8 .col-md-8 .ms-srch-hover-outerContainer {
+    display: none !important; } }
+
 .heroBanner {
   padding: 55px 0;
   -webkit-background-size: cover !important;

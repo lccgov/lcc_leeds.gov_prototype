@@ -158,58 +158,19 @@
                </div>
         </section>
 
+
 <div class="heroBanner" style="background: transparent url(/public/museumsandgalleries/images/Fashionable-Yorkshire-Lothe.jpg) no-repeat scroll 50% 0px;">
   <div class="container-fluid">
      
    <a href="#" class="alt">Discover Fashionable Yorkshire<span>The latest exhibition at Lotherton Hall</span></a>
     </div>
-</div>        
+</div>     
 
 {% endblock %} 
 
 {% block sectionOneFull%}
-<hr class="ms-rteElement-spacer" />
-<div class="promoListWebpart">
-  <div class="">
-<ul>
-            
-         
-         
-          <li class="four heightTwo">
-     <a style="background: url(/public/museumsandgalleries/images/LMG_FebHalfterm2017.jpg) no-repeat" href="articlePage.html"><span class="info">Explore our exciting Easter Holiday event programme!<span class="secondaryInfo"></span> <span class="arrow"></span></span><span class="thirdInfo">Easter Holidays</span></a>
-     </li> 
 
-              
-          <li class="two heightTwo city">
-     <a style="background: url(/public/museumsandgalleries/images/ForAllSeasonsExhibition.jpg) no-repeat" href="articlePage.html"><span class="info">For All Seasons<span class="secondaryInfo">10 February – 28 August 2017</span> <span class="arrow"></span></span><span class="thirdInfo">LEEDS CITY MUSEUM</span></a>
-     </li> 
-
-
-             <li class="two heightTwo abbey">
-     <a style="background: url(/public/museumsandgalleries/images/AH_Fairy%20Tales%20and%20Fantasy%20exhibition%20at%20Abbey%20House%20Museum.jpg) no-repeat" href="articlePage.html"><span class="info">Fairy Tales & Fantasy<span class="secondaryInfo">21 January - 31 December 2017</span> <span class="arrow"></span></span><span class="thirdInfo">Abbey House Museum</span></a>
-     </li>  
-
-                  <li class="two heightTwo discovery">
-     <a style="background: url(/public/museumsandgalleries/images/Discovery-Centre-Store-tour.jpg) no-repeat" href="articlePage.html"><span class="info">What will you find in our museum store? <span class="secondaryInfo">Take a free tour!</span> <span class="arrow"></span></span><span class="thirdInfo">Discovery Centre</span></a>
-     </li> 
-
-                       <li class="two heightTwo promo">
-                                   <div>
-             <a style="background: url(/public/museumsandgalleries/images/Promo-2-jpg.jpg) no-repeat" href="articlePage.html"><span class="info">Commemorating our first world war heritage<span class="secondaryInfo">Take a free tour!</span> <span class="arrow"></span></a>
-         </div>
-     </li>     
-         
-     </ul>
-
-
-  </div>
-</div>
-
-<hr class="ms-rteElement-spacer" />
-    <div class="highlighted  alignCenter col-md-6 section"><em>E-newsletter <i class="fa fa-envelope-o" aria-hidden="true"></i></em><p>keep in the now with our </p><a href="" class="btn">Sign up  now</a></div> 
-            <div class="highlighted alt   alignCenter col-md-6 section"><em>What's on <i class="fa fa-calendar" aria-hidden="true"></i></em><p>Upcoming events and workshops</p><a href="" class="btn">See what's on</a></div>  
-<hr class="ms-rteElement-spacer" />
-
+  {% include "includes/museums/mega-promo.html" %}
 {% endblock %}
 
      {% block sectionOneHalf %}
@@ -217,6 +178,7 @@
 
 
           {% block sectionOneHalfRight %}
+   
 
           {% endblock %}
 
@@ -251,42 +213,7 @@
 {% endblock %} 
 
 {% block sectionTwoFull%} 
-
-
-
-
-   <hr class="ms-rteElement-spacer" />                    
-
-<div class="promoListWebpart">
-  <div class="">
-<ul>
-            
-         
-              
-          <li class="two heightTwo">
-     <a style="background: url(/public/museumsandgalleries/images/Art_UK_by_John_Cairns_17.12.15-190.jpg) no-repeat bottom 0px left -100px !important"  rel="external" href="articlePage.html"><span class="info">Art Uk<span class="secondaryInfo">Veiw our art collections online</span> <span class="arrow"></span></span><span class="thirdInfo"></span></a>
-     </li> 
-
-
-    <li class="two heightTwo">
-     <a style="background: url(/public/museumsandgalleries/images/leedsInspired2.jpg) no-repeat"  rel="external"href="articlePage.html"><span class="info">Leeds Inspired<span class="secondaryInfo">See what's on in leeds</span> <span class="arrow"></span></span><span class="thirdInfo"></span></a>
-     </li>  
-
-                  <li class="two heightTwo">
-     <a style="background: url(/public/museumsandgalleries/images/prod_15696.jpg) no-repeat"  rel="external" href="articlePage.html"><span class="info">Online Shop<span class="secondaryInfo">Leeds Museums and Galleries</span> <span class="arrow"></span></span><span class="thirdInfo"></span></a>
-     </li> 
-
-
-     </ul>
-
-
-
-
-   <hr class="ms-rteElement-spacer" />                    
-
-
-  </div>
-</div>
+  {% include "includes/museums/mega-promo-external.html" %}
 
 {% endblock %}
 

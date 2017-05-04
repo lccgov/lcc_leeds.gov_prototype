@@ -226,18 +226,6 @@ margin:0 -15px;
     }
 }
 
-.groupPromo.default
-
-{
-
- margin:0 -15px;   
-
- .listWebpart a{
-    padding:15px 15px 30px 15px;
-}
-
-}
-
 .vertical-content{
  display: table;
 }
@@ -439,21 +427,6 @@ $vistitorInfoHeadingColor:#2f7251 !default;
 }
 
 
-.groupPromo .listWebpart {
-    padding: 0px;
-
-    a:after{
-            font-family: FontAwesome;
-            font-size: 32px;
-            content: "\f105";
-            position:absolute;
-            right:15px;
-            bottom:15px;
-            padding:0 0px;
-            color:#999;
-            
-    }
-}
 
 
 ul.footerLogos{
@@ -465,3 +438,89 @@ ul.footerLogos{
      }
 }
 
+
+@mixin mega-promo-colors($promo-background-color, $promo-header-color, $promo-secondary-color, $promo-arrow-color, $promo-highlight-background-color, $promo-highlight-color) {
+    a{
+        background:$promo-background-color;
+
+        &:after {
+            color:$promo-arrow-color;
+        }
+
+        &:hover{
+            background:darken($promo-background-color, 5%);
+        }
+
+        .mega-promo__content{
+
+            @media (max-width: 500px) {
+                &:after{
+                    color:$promo-arrow-color;
+                }
+            }
+
+            .mega-promo__header{
+                color:$promo-header-color;
+            }
+
+            .mega-promo__secondary{
+                color:$promo-secondary-color;
+            }
+        }
+
+        .mega-promo__highlight{
+            background:$promo-highlight-background-color;
+            color:$promo-highlight-color;
+        }
+    }
+}
+
+
+
+.mega-promo{
+    .mega-promo__item{
+
+            a {
+            &:after{
+                font-size:32px;
+            }    
+            
+             .mega-promo__content .mega-promo__header {
+                font-weight: 400;
+           }
+             }
+
+
+         &.abbey{
+            @include mega-promo-colors($promo-background-color, $abbey-base-color, $promo-secondary-color, $abbey-base-color, $abbey-base-color, $promo-highlight-color);
+        }
+
+           &.thwaite{
+            @include mega-promo-colors($promo-background-color, $thwaite-base-color, $promo-secondary-color, $thwaite-base-color, $thwaite-base-color, $promo-highlight-color);
+        }
+
+            &.temple{
+            @include mega-promo-colors($promo-background-color, $temple-base-color, $promo-secondary-color, $temple-base-color, $temple-base-color, $promo-highlight-color);
+        }
+
+               &.lim{
+            @include mega-promo-colors($promo-background-color, $lim-base-color, $promo-secondary-color, $lim-base-color, $lim-base-color, $promo-highlight-color);
+        }
+               &.lag{
+            @include mega-promo-colors($promo-background-color, $lag-base-color, $promo-secondary-color, $lag-base-color,$lag-base-color, $promo-highlight-color);
+        }
+               &.kirkstall{
+            @include mega-promo-colors($promo-background-color,$kirkstall-base-color, $promo-secondary-color, $kirkstall-base-color, $kirkstall-base-color, $promo-highlight-color);
+        }
+               &.discovery{
+            @include mega-promo-colors($promo-background-color, $discovery-base-color, $promo-secondary-color,$discovery-base-color, $discovery-base-color, $promo-highlight-color);
+        }
+               &.lotherton{
+            @include mega-promo-colors($promo-background-color, $lotherton-base-color, $promo-secondary-color, $lotherton-base-color, $lotherton-base-color, $promo-highlight-color);
+        }
+
+               &.city{
+            @include mega-promo-colors($promo-background-color, $city-base-color, $promo-secondary-color, $city-base-color, $city-base-color,  $promo-highlight-color);
+        }
+    }
+}

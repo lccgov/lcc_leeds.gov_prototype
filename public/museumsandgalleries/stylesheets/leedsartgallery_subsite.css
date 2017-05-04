@@ -435,122 +435,6 @@ ul.accordion {
       ul.accordion li div div li {
         border: none; }
 
-ul.promo-group {
-  padding: 0;
-  margin: 0 0 1.875em 0;
-  display: inline-block;
-  width: 100%;
-  background: #EDF2F5;
-  border-left: 1px solid #fff;
-  border-top: 1px solid #fff; }
-  ul.promo-group li {
-    width: 20%;
-    float: left;
-    background: #EDF2F5;
-    list-style: none;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff; }
-    ul.promo-group li h2 {
-      padding: 0.5em; }
-    ul.promo-group li a {
-      padding: 20px;
-      display: inline-block;
-      background: #EDF2F5;
-      width: 100%;
-      color: #216486;
-      font-size: 1.313em;
-      position: relative; }
-      ul.promo-group li a img {
-        max-width: 100%;
-        width: 100%;
-        margin: 0 0 0.4em 0; }
-      ul.promo-group li a:hover {
-        text-decoration: none;
-        background: #216486;
-        color: #fff;
-        border-color: #212d3a; }
-        ul.promo-group li a:hover p, ul.promo-group li a:hover h3 {
-          color: #fff; }
-      ul.promo-group li a h3 {
-        margin: 0 0 0.4em;
-        font-weight: 600;
-        font-size: 1em;
-        color: #216486; }
-      ul.promo-group li a p {
-        color: #666666;
-        font-size: 0.7em;
-        margin: 0; }
-    ul.promo-group li ul {
-      padding: 1em 1.5em;
-      border-top: 1px solid #fff; }
-      ul.promo-group li ul li {
-        width: 100%;
-        float: none;
-        border: none !important; }
-        ul.promo-group li ul li a {
-          font-size: 0.875em;
-          font-weight: 400;
-          padding: 0 0 0 1em;
-          margin-bottom: 0.75em;
-          color: #444444;
-          border: none !important;
-          background: transparent; }
-          ul.promo-group li ul li a.more {
-            color: #216486;
-            margin-bottom: 0; }
-          ul.promo-group li ul li a:hover {
-            background: transparent !important;
-            text-decoration: underline !important;
-            color: #216486 !important; }
-          ul.promo-group li ul li a:before {
-            content: '\f105';
-            font-family: FontAwesome;
-            top: 0px;
-            left: 0px;
-            position: absolute; }
-
-.col-md-8 ul.promo-group li {
-  width: 33.3%; }
-
-@media (max-width: 1300px) {
-  ul.promo-group li {
-    width: 25%; } }
-
-@media (max-width: 990px) {
-  ul.promo-group li, .col-md-8 ul.promo-group li {
-    width: 50%; }
-    ul.promo-group li h2, .col-md-8 ul.promo-group li h2 {
-      margin-top: 0px;
-      padding: 20px 0;
-      font-size: 1.3em; }
-      ul.promo-group li h2 span, .col-md-8 ul.promo-group li h2 span {
-        display: inline-block;
-        font-weight: 700;
-        font-size: 1em; }
-    ul.promo-group li a, .col-md-8 ul.promo-group li a {
-      padding: 20px;
-      position: relative;
-      height: 100%; }
-      ul.promo-group li a img, .col-md-8 ul.promo-group li a img {
-        display: none; }
-      ul.promo-group li a.jump-to, .col-md-8 ul.promo-group li a.jump-to {
-        display: none; }
-      ul.promo-group li a h3, .col-md-8 ul.promo-group li a h3 {
-        min-height: 0px;
-        font-size: 0.9em; }
-        ul.promo-group li a h3:after, .col-md-8 ul.promo-group li a h3:after {
-          content: '\f105';
-          font-family: FontAwesome;
-          position: absolute;
-          top: 40%;
-          right: 10px; }
-    ul.promo-group li ul, .col-md-8 ul.promo-group li ul {
-      display: none; } }
-
-@media (max-width: 600px) {
-  ul.promo-group li, .col-md-8 ul.promo-group li {
-    width: 100%; } }
-
 .alert {
   padding: 0px;
   margin-bottom: 0px;
@@ -1279,6 +1163,49 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
 .carousel-inner .item {
   padding: 0px; }
 
+.col-md-8 .ms-srch-item {
+  width: 100%;
+  overflow: visible;
+  margin: 10px 0px 10px 0px; }
+
+.col-md-8 h3.ms-srch-ellipsis {
+  white-space: normal;
+  overflow: visible;
+  display: inline; }
+
+.col-md-8 #SearchBox {
+  border: 1px solid #ddd;
+  padding: 10px 10px 0 10px;
+  width: 100%;
+  max-width: 600px; }
+  .col-md-8 #SearchBox .ms-srch-sbLarge > .ms-srch-sb-searchLink {
+    float: right; }
+
+.col-md-8 .ms-srch-item-body {
+  overflow: visible;
+  display: inline-block;
+  width: 100%; }
+
+.col-md-8 .ms-srch-item-icon {
+  margin-bottom: 10px; }
+
+.col-md-8 #UpScopeLinkTop {
+  width: 100% !important; }
+
+.col-md-8 .ms-srch-item-path {
+  width: 100%; }
+
+.col-md-8 .ms-promlink-button-image {
+  margin: -9px 0 9px -5px; }
+
+.col-md-8 .ms-srch-sbLarge-fullWidth {
+  width: 80%;
+  max-width: 500px; }
+
+@media (max-width: 1024px) {
+  .col-md-8 .col-md-8 .ms-srch-hover-outerContainer {
+    display: none !important; } }
+
 /* iconLinks -----------------------------------------------------------------*/
 .iconLinks ul {
   text-align: center;
@@ -1426,181 +1353,6 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   clear: left; }
   #paging ul.content li {
     padding: 0; }
-
-.groupPromo .listWebpart {
-  background: transparent;
-  color: #333;
-  max-width: 100%;
-  padding: 15px 7.5px 0px; }
-  .groupPromo .listWebpart h2 {
-    color: #333; }
-  .groupPromo .listWebpart a {
-    background: rgba(18, 18, 18, 0);
-    color: #333; }
-    .groupPromo .listWebpart a:hover {
-      background: transparent; }
-  .groupPromo .listWebpart h2 {
-    margin: 0 7.5px 15px;
-    display: inline-block; }
-  .groupPromo .listWebpart ul {
-    list-style: none;
-    margin: 0px;
-    padding: 0px; }
-    .groupPromo .listWebpart ul li {
-      float: left; }
-      .groupPromo .listWebpart ul li a {
-        margin: 0 7.5px 15px;
-        padding: 15px;
-        display: block;
-        font-weight: bold;
-        position: relative;
-        width: auto; }
-        .groupPromo .listWebpart ul li a span {
-          font-size: 0.8em;
-          display: block; }
-        .groupPromo .listWebpart ul li a img {
-          width: 100%;
-          max-width: 100%;
-          margin-bottom: 15px; }
-        .groupPromo .listWebpart ul li a:hover {
-          text-decoration: none; }
-      .col-lg-12 .groupPromo .listWebpart ul li {
-        width: 20%; }
-      .col-md-8 .groupPromo .listWebpart ul li {
-        width: 33.333%; }
-      .col-md-6 .groupPromo .listWebpart ul li {
-        width: 25%; }
-      .col-md-4 .groupPromo .listWebpart ul li {
-        width: 50%; }
-      @media only screen and (max-width: 990px) {
-        .col-lg-12 .groupPromo .listWebpart ul li,
-        .col-md-8 .groupPromo .listWebpart ul li,
-        .col-md-6 .groupPromo .listWebpart ul li,
-        .col-md-4 .groupPromo .listWebpart ul li {
-          width: 33.333%; } }
-      @media only screen and (max-width: 700px) {
-        .col-lg-12 .groupPromo .listWebpart ul li,
-        .col-md-8 .groupPromo .listWebpart ul li,
-        .col-md-6 .groupPromo .listWebpart ul li,
-        .col-md-4 .groupPromo .listWebpart ul li {
-          width: 50%; } }
-      @media only screen and (max-width: 350px) {
-        .col-lg-12 .groupPromo .listWebpart ul li,
-        .col-md-8 .groupPromo .listWebpart ul li,
-        .col-md-6 .groupPromo .listWebpart ul li,
-        .col-md-4 .groupPromo .listWebpart ul li {
-          width: 100%; } }
-  .groupPromo .listWebpart a.ask {
-    background: #B10042;
-    border-color: #B10042;
-    color: #fff; }
-    .groupPromo .listWebpart a.ask:hover {
-      background: #7e002f; }
-  .groupPromo .listWebpart a.arrow {
-    padding-right: 30px; }
-    .groupPromo .listWebpart a.arrow:after {
-      font-family: FontAwesome;
-      font-size: 25px;
-      content: "\f105";
-      display: inline-block;
-      right: 10px;
-      top: 42%;
-      position: absolute; }
-
-.groupPromo.blockLinksGreen .listWebpart {
-  background: #97BD0E;
-  color: #fff; }
-  .groupPromo.blockLinksGreen .listWebpart h2 {
-    color: #fff; }
-  .groupPromo.blockLinksGreen .listWebpart a {
-    background: #b2de10;
-    color: #fff; }
-    .groupPromo.blockLinksGreen .listWebpart a:hover {
-      background: #718e0a; }
-
-.groupPromo.blockLinksPurple .listWebpart {
-  background: #72286E;
-  color: #fff; }
-  .groupPromo.blockLinksPurple .listWebpart h2 {
-    color: #fff; }
-  .groupPromo.blockLinksPurple .listWebpart a {
-    background: #8c3188;
-    color: #fff; }
-    .groupPromo.blockLinksPurple .listWebpart a:hover {
-      background: #4c1b4a; }
-
-.groupPromo.blockLinksPink .listWebpart {
-  background: #B10042;
-  color: #fff; }
-  .groupPromo.blockLinksPink .listWebpart h2 {
-    color: #fff; }
-  .groupPromo.blockLinksPink .listWebpart a {
-    background: #d5004f;
-    color: #fff; }
-    .groupPromo.blockLinksPink .listWebpart a:hover {
-      background: #7e002f; }
-
-.groupPromo.midnightBlue .listWebpart {
-  background: transparent;
-  color: #fff; }
-  .groupPromo.midnightBlue .listWebpart h2 {
-    color: #fff; }
-  .groupPromo.midnightBlue .listWebpart a {
-    background: rgba(18, 18, 18, 0);
-    color: #fff; }
-    .groupPromo.midnightBlue .listWebpart a:hover {
-      background: transparent; }
-  .groupPromo.midnightBlue .listWebpart h2 {
-    color: #333; }
-  .groupPromo.midnightBlue .listWebpart a {
-    background: #2c3e50; }
-    .groupPromo.midnightBlue .listWebpart a:hover {
-      background: #161f29; }
-
-.groupPromo.carrot .listWebpart {
-  background: transparent;
-  color: #fff; }
-  .groupPromo.carrot .listWebpart h2 {
-    color: #fff; }
-  .groupPromo.carrot .listWebpart a {
-    background: rgba(18, 18, 18, 0);
-    color: #fff; }
-    .groupPromo.carrot .listWebpart a:hover {
-      background: transparent; }
-  .groupPromo.carrot .listWebpart h2 {
-    color: #333; }
-  .groupPromo.carrot .listWebpart a {
-    background: #e67e22; }
-    .groupPromo.carrot .listWebpart a:hover {
-      background: #b66015; }
-
-.groupPromo.white .listWebpart {
-  background: #fff;
-  color: #333; }
-  .groupPromo.white .listWebpart h2 {
-    color: #333; }
-  .groupPromo.white .listWebpart a {
-    background: white;
-    color: #333; }
-    .groupPromo.white .listWebpart a:hover {
-      background: #e6e6e6; }
-  .groupPromo.white .listWebpart a {
-    background: #f2f4f3; }
-
-.groupPromo.default .listWebpart {
-  background: transparent;
-  color: #333; }
-  .groupPromo.default .listWebpart h2 {
-    color: #333; }
-  .groupPromo.default .listWebpart a {
-    background: rgba(18, 18, 18, 0);
-    color: #333; }
-    .groupPromo.default .listWebpart a:hover {
-      background: transparent; }
-  .groupPromo.default .listWebpart a {
-    border: 1px solid #ddd; }
-    .groupPromo.default .listWebpart a:hover {
-      background: #ddd; }
 
 .highlighted {
   padding: 2em 1.75em;
@@ -1865,11 +1617,6 @@ div.promo {
       .highlighted em {
         font-size: 40px; } }
 
-.groupPromo.default {
-  margin: 0 -15px; }
-  .groupPromo.default .listWebpart a {
-    padding: 15px 15px 30px 15px; }
-
 .vertical-content {
   display: table; }
 
@@ -1996,18 +1743,6 @@ div.promo {
       min-width: 65px;
       text-align: center; }
 
-.groupPromo .listWebpart {
-  padding: 0px; }
-  .groupPromo .listWebpart a:after {
-    font-family: FontAwesome;
-    font-size: 32px;
-    content: "\f105";
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-    padding: 0 0px;
-    color: #999; }
-
 ul.footerLogos {
   list-style: none;
   padding: 0px;
@@ -2017,6 +1752,165 @@ ul.footerLogos {
     display: inline-block; }
   ul.footerLogos img {
     margin-bottom: 5px; }
+
+.mega-promo .mega-promo__item a:after {
+  font-size: 32px; }
+
+.mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header {
+  font-weight: 400; }
+
+.mega-promo .mega-promo__item.abbey a {
+  background: #F6F7FA; }
+  .mega-promo .mega-promo__item.abbey a:after {
+    color: #7D4199; }
+  .mega-promo .mega-promo__item.abbey a:hover {
+    background: #e6e8f1; }
+  @media (max-width: 500px) {
+    .mega-promo .mega-promo__item.abbey a .mega-promo__content:after {
+      color: #7D4199; } }
+  .mega-promo .mega-promo__item.abbey a .mega-promo__content .mega-promo__header {
+    color: #7D4199; }
+  .mega-promo .mega-promo__item.abbey a .mega-promo__content .mega-promo__secondary {
+    color: #666B76; }
+  .mega-promo .mega-promo__item.abbey a .mega-promo__highlight {
+    background: #7D4199;
+    color: #3D414A; }
+
+.mega-promo .mega-promo__item.thwaite a {
+  background: #F6F7FA; }
+  .mega-promo .mega-promo__item.thwaite a:after {
+    color: #5C8727; }
+  .mega-promo .mega-promo__item.thwaite a:hover {
+    background: #e6e8f1; }
+  @media (max-width: 500px) {
+    .mega-promo .mega-promo__item.thwaite a .mega-promo__content:after {
+      color: #5C8727; } }
+  .mega-promo .mega-promo__item.thwaite a .mega-promo__content .mega-promo__header {
+    color: #5C8727; }
+  .mega-promo .mega-promo__item.thwaite a .mega-promo__content .mega-promo__secondary {
+    color: #666B76; }
+  .mega-promo .mega-promo__item.thwaite a .mega-promo__highlight {
+    background: #5C8727;
+    color: #3D414A; }
+
+.mega-promo .mega-promo__item.temple a {
+  background: #F6F7FA; }
+  .mega-promo .mega-promo__item.temple a:after {
+    color: #860037; }
+  .mega-promo .mega-promo__item.temple a:hover {
+    background: #e6e8f1; }
+  @media (max-width: 500px) {
+    .mega-promo .mega-promo__item.temple a .mega-promo__content:after {
+      color: #860037; } }
+  .mega-promo .mega-promo__item.temple a .mega-promo__content .mega-promo__header {
+    color: #860037; }
+  .mega-promo .mega-promo__item.temple a .mega-promo__content .mega-promo__secondary {
+    color: #666B76; }
+  .mega-promo .mega-promo__item.temple a .mega-promo__highlight {
+    background: #860037;
+    color: #3D414A; }
+
+.mega-promo .mega-promo__item.lim a {
+  background: #F6F7FA; }
+  .mega-promo .mega-promo__item.lim a:after {
+    color: #77230A; }
+  .mega-promo .mega-promo__item.lim a:hover {
+    background: #e6e8f1; }
+  @media (max-width: 500px) {
+    .mega-promo .mega-promo__item.lim a .mega-promo__content:after {
+      color: #77230A; } }
+  .mega-promo .mega-promo__item.lim a .mega-promo__content .mega-promo__header {
+    color: #77230A; }
+  .mega-promo .mega-promo__item.lim a .mega-promo__content .mega-promo__secondary {
+    color: #666B76; }
+  .mega-promo .mega-promo__item.lim a .mega-promo__highlight {
+    background: #77230A;
+    color: #3D414A; }
+
+.mega-promo .mega-promo__item.lag a {
+  background: #F6F7FA; }
+  .mega-promo .mega-promo__item.lag a:after {
+    color: #005953; }
+  .mega-promo .mega-promo__item.lag a:hover {
+    background: #e6e8f1; }
+  @media (max-width: 500px) {
+    .mega-promo .mega-promo__item.lag a .mega-promo__content:after {
+      color: #005953; } }
+  .mega-promo .mega-promo__item.lag a .mega-promo__content .mega-promo__header {
+    color: #005953; }
+  .mega-promo .mega-promo__item.lag a .mega-promo__content .mega-promo__secondary {
+    color: #666B76; }
+  .mega-promo .mega-promo__item.lag a .mega-promo__highlight {
+    background: #005953;
+    color: #3D414A; }
+
+.mega-promo .mega-promo__item.kirkstall a {
+  background: #F6F7FA; }
+  .mega-promo .mega-promo__item.kirkstall a:after {
+    color: #00447C; }
+  .mega-promo .mega-promo__item.kirkstall a:hover {
+    background: #e6e8f1; }
+  @media (max-width: 500px) {
+    .mega-promo .mega-promo__item.kirkstall a .mega-promo__content:after {
+      color: #00447C; } }
+  .mega-promo .mega-promo__item.kirkstall a .mega-promo__content .mega-promo__header {
+    color: #00447C; }
+  .mega-promo .mega-promo__item.kirkstall a .mega-promo__content .mega-promo__secondary {
+    color: #666B76; }
+  .mega-promo .mega-promo__item.kirkstall a .mega-promo__highlight {
+    background: #00447C;
+    color: #3D414A; }
+
+.mega-promo .mega-promo__item.discovery a {
+  background: #F6F7FA; }
+  .mega-promo .mega-promo__item.discovery a:after {
+    color: #16145F; }
+  .mega-promo .mega-promo__item.discovery a:hover {
+    background: #e6e8f1; }
+  @media (max-width: 500px) {
+    .mega-promo .mega-promo__item.discovery a .mega-promo__content:after {
+      color: #16145F; } }
+  .mega-promo .mega-promo__item.discovery a .mega-promo__content .mega-promo__header {
+    color: #16145F; }
+  .mega-promo .mega-promo__item.discovery a .mega-promo__content .mega-promo__secondary {
+    color: #666B76; }
+  .mega-promo .mega-promo__item.discovery a .mega-promo__highlight {
+    background: #16145F;
+    color: #3D414A; }
+
+.mega-promo .mega-promo__item.lotherton a {
+  background: #F6F7FA; }
+  .mega-promo .mega-promo__item.lotherton a:after {
+    color: #2f7251; }
+  .mega-promo .mega-promo__item.lotherton a:hover {
+    background: #e6e8f1; }
+  @media (max-width: 500px) {
+    .mega-promo .mega-promo__item.lotherton a .mega-promo__content:after {
+      color: #2f7251; } }
+  .mega-promo .mega-promo__item.lotherton a .mega-promo__content .mega-promo__header {
+    color: #2f7251; }
+  .mega-promo .mega-promo__item.lotherton a .mega-promo__content .mega-promo__secondary {
+    color: #666B76; }
+  .mega-promo .mega-promo__item.lotherton a .mega-promo__highlight {
+    background: #2f7251;
+    color: #3D414A; }
+
+.mega-promo .mega-promo__item.city a {
+  background: #F6F7FA; }
+  .mega-promo .mega-promo__item.city a:after {
+    color: #E86D1F; }
+  .mega-promo .mega-promo__item.city a:hover {
+    background: #e6e8f1; }
+  @media (max-width: 500px) {
+    .mega-promo .mega-promo__item.city a .mega-promo__content:after {
+      color: #E86D1F; } }
+  .mega-promo .mega-promo__item.city a .mega-promo__content .mega-promo__header {
+    color: #E86D1F; }
+  .mega-promo .mega-promo__item.city a .mega-promo__content .mega-promo__secondary {
+    color: #666B76; }
+  .mega-promo .mega-promo__item.city a .mega-promo__highlight {
+    background: #E86D1F;
+    color: #3D414A; }
 
 h1, h2, h3, h4, h5 {
   font-family: "Oswald", Helvetica, Arial; }

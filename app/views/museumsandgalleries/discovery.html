@@ -48,6 +48,124 @@
 {% endblock %}
 
 {% block pageContent %}
+
+
+
+<div class="ms-webpart-zone ms-fullWidth">
+	<div id="MSOZoneCell_WebPartctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div webpartid="cf68babb-44fa-49df-8ea4-de5844f7ab90" haspers="false" id="WebPartctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90" width="100%" class="ms-WPBody " allowdelete="false" allowexport="false" style=""><div id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90">
+				
+
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+
+<script type="text/javascript">
+    function validEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+    function validateEmail(source, args) {
+        if (validEmail(document.getElementById('ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtEmail').value)) {
+            args.IsValid = true;
+        }
+        else {
+            args.IsValid = false;
+        }
+    }
+    function validateName(source, args) {
+        if (document.getElementById('ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtName').value == '') {
+            args.IsValid = false;
+        }
+        else {
+            args.IsValid = true;
+        }
+    }
+    function validateComment(source, args) {
+        if (document.getElementById('ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtBody').value == '' || document.getElementById('ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtBody').value.length>1000) {
+            args.IsValid = false;
+        }
+        else {
+            args.IsValid = true;
+        }
+    }
+</script>
+
+<div class="pageCommentsControl"><h2>All comments(2)</h2><div class="comment"><div class="detailsContainer"><span><strong>someone</strong>  4/25/2017 1:56:25 PM</span><p>some more comments</p></div></div><div class="comment"><div class="detailsContainer"><span><strong>matt</strong>  4/25/2017 1:30:15 PM</span><p>test comments</p></div></div></div></div>
+<div id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_AddCommentsDiv">
+
+<div id="Contact-US" data-module="ContactUs">
+
+            <div class="alert alert-success" role="alert">
+            <div class="alertInner">
+                <p class="lead"><span id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_lblResult">Success you have filled in your form</span></p>
+            </div>
+        </div>
+
+        <div id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtNameDiv" class="form-group">
+            <label for="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtName">Name </label>
+            <input name="ctl00$ctl47$g_cf68babb_44fa_49df_8ea4_de5844f7ab90$ctl00$txtName" type="text" maxlength="50" id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtName" class="lcc-input">
+            
+            <span id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtNameValidator" class="alert" style="display:none;">Please enter Name</span>
+        </div>
+        <div id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtEmailDiv" class="form-group">
+            <label for="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtEmail">Email Address </label>
+            <input name="ctl00$ctl47$g_cf68babb_44fa_49df_8ea4_de5844f7ab90$ctl00$txtEmail" type="text" maxlength="50" id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtEmail" class="lcc-input">
+            
+            <span id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtEmailCustomValidator" class="alert" style="display:none;">Please enter valid email address</span>
+        </div>
+         <div id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtBodyDiv" class="form-group">
+            <label for="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtBody">Comments </label>
+            <textarea name="ctl00$ctl47$g_cf68babb_44fa_49df_8ea4_de5844f7ab90$ctl00$txtBody" rows="2" cols="20" id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtBody" class="lcc-input" onkeypress="return this.value.length<=1000"></textarea>
+        
+            
+            <span id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_txtBodyCustomValidator" class="alert" style="display:none;">Please enter Comments between 1 - 1000 characters</span>
+        </div>
+        <div id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_divRecaptcha" class="recaptcha">
+            <div>
+                <div>
+                    <div class="g-recaptcha" data-sitekey="6LdKcRUTAAAAANf7GSp08gjotDLHIWqCPDUm5BwL"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?k=6LdKcRUTAAAAANf7GSp08gjotDLHIWqCPDUm5BwL&amp;co=aHR0cDovL3doYXRzb24tMjAxMy5sZWVkcy5nb3YudWs6ODA.&amp;hl=en&amp;v=r20170411114922&amp;size=normal&amp;cb=h3kc5xvgia6c" title="recaptcha widget" width="304" height="78" frameborder="0" scrolling="no" name="undefined"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div>
+                    <label id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_lblErrorMessage" style="color:red"></label>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <input type="submit" name="ctl00$ctl47$g_cf68babb_44fa_49df_8ea4_de5844f7ab90$ctl00$btnSubmit" value="Submit Comments" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl47$g_cf68babb_44fa_49df_8ea4_de5844f7ab90$ctl00$btnSubmit&quot;, &quot;&quot;, true, &quot;CommentsGroup&quot;, &quot;&quot;, false, false))" id="ctl00_ctl47_g_cf68babb_44fa_49df_8ea4_de5844f7ab90_ctl00_btnSubmit" class="btn btn-primary">
+        
+   
+        
+        
+
+    </div>
+
+
+
+			</div><div class="ms-clear"></div></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <hr class="ms-rteElement-spacer" />
 <div class="groupPromo default">
   <div class="listWebpart">

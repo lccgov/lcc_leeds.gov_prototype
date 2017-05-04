@@ -20,7 +20,6 @@ $base-font-size:19px ;
 $font-primary:'Oswald', Helvetica, Arial;
 $font-secondary: 'Oswald', Helvetica, Arial;
 
-
 // global used on all partials to get a uniform spacing between elements
 //$base-margin-bottom:1.875em ;
 
@@ -52,14 +51,6 @@ $main-nav-background:#c3102f;
 //$carousel-caption-font-color:#fff ;
 
 
-// blocklinks.scss
-
-//$block-link-back:#f6f6f6 ;
-//$block-link-back-hover:#3380A4 ;
-//$promo-group-border:1px solid #fff ; 
-//$promo-group-background:#EDF2F5 ; 
-//$promo-group-li-background:#EDF2F5 ;
-//$promo-group-link-color:#216486 ;
 
 
 //promolist webpart
@@ -105,6 +96,24 @@ $highlighted-font-color:#c3102f;
 $highlighted-alt-background-color:#ecf0f1 ;
 $highlighted-alt-font-color:#333;
 
+//group promo colours
+$group-promo-background-color: #F6F7FA;
+$group-promo-header-color: #3D414A;
+$group-promo-description-color: #666B76;
+$group-promo-arrow-color: #9DA5B2;
+
+//mega-promo
+$promo-background-color:#F6F7FA;
+$promo-arrow-color:#c3102f;
+$promo-header-color:#c3102f;
+$promo-secondary-color:#666B76;
+$promo-highlight-background-color:#c3102f;
+$promo-highlight-color:#fff;
+$promo-arrow:"\f105";
+
+
+
+
 @import 'mixins';
 @import 'variables';
 @import 'brandColors';
@@ -120,7 +129,6 @@ $highlighted-alt-font-color:#333;
 //@import 'sideNavigation';
 //@import 'blockLinks';
 @import 'accordion';
-@import 'promoGroup';
 @import 'alerts';
 @import 'promoListwebpart';
 //@import 'eventsWebparts';
@@ -134,6 +142,7 @@ $highlighted-alt-font-color:#333;
 //@import 'contentLink';
 //@import 'docList';
 @import 'contentAssets';
+@import 'mega-promo';
 @import 'museums';
 
 

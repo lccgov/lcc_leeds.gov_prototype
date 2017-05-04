@@ -10,14 +10,14 @@
 
 //base.scss
 
-$base-background-color:#f6f6f6;
+$base-background-color:#fff;
 //$base-font-size:16px ;
 //$base-font-color:#333 ;
 //$base-link-color:#133E8D ;
 //$base-container-width:1500px ;
 //$btn-background-color:green ;
-//$font-primary: Arial ; // main font
-//$font-secondary: Arial ; // secondary font
+$font-primary:  Verdana,Arial,sans-serif; // main font
+$font-secondary: Verdana,Arial,sans-serif; // secondary font
 
 
 // global used on all partials to get a uniform spacing between elements
@@ -28,8 +28,8 @@ $base-background-color:#f6f6f6;
 //$search-link:#333 ;
 
 // mainNav.scss
-//$main-nav-background:#133E8D ;
-//$main-nav-link:#fff ;
+$main-nav-background:#ABCE1E ;
+$main-nav-link:#333F07;
 
 //footer.scss
 //$footer-font-color:#fff ;
@@ -75,9 +75,9 @@ $base-background-color:#f6f6f6;
 //$content-border-color:#ddd;
 
 // section backgrounds
-//$sectionHeader-background-color:lighten($base-background-color, 3%) ;
-//$sectionOne-background-color:darken($base-background-color, 5%) ;
-//$sectionTwo-background-color:darken($base-background-color, 10%) ;
+ $sectionHeader-background-color:#fff ;
+$sectionOne-background-color:#fff ;
+$sectionTwo-background-color:#fff ;
 //$sectionThree-background-color:lighten($base-background-color, 3%) ;
 //$sectionFour-background-color:lighten($base-background-color, 5%) ;
 //$sectionFive-background-color:darken($base-background-color, 5%) ;
@@ -97,6 +97,8 @@ $news-pod-border-color:#ddd;
 //accordion
 $accordion-color:green;
 //$accordion-border-color:#ECF0F1;
+
+
 
 @import 'mixins';
 @import 'variables';
@@ -126,4 +128,95 @@ $accordion-color:green;
 @import 'blocklinks';
 @import 'contentLink';
 @import 'docList';
+
+
+
+.header-nav-container .logo {
+    background:url(../images/logo.png) left center  no-repeat;
+    margin: 0px 0 0 -30px;
+    height:150px;
+    width:350px;
+    background-size:100%;
+    
+    &:hover{
+        text-decoration:none;
+    }
+
+
+        @media screen and (max-width:768px){
+            text-align: center;
+            margin:0 auto;
+
+        }
+}
+
+.masterhead {
+    border-bottom:1px solid #ddd;
+}
+
+.sectionHeader .container-fluid {
+    background:url(../images/skyline.png) bottom -2px  right 0px no-repeat;
+}
+
+
+ul.breadcrumb li a {
+    background: transparent;
+}
+
+.mainContent {
+    margin: 0;
+}
+
+
+@font-face {
+	font-family: 'BebasNeuewebfont';
+	src: url('../fonts/BebasNeuewebfont.eot');
+	src: local('../fonts/BebasNeuewebfont'), url('../fonts/BebasNeuewebfont.woff') format('woff'), url('../fonts/BebasNeuewebfont.ttf') format('truetype');
+}
+/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_1962">Text with this font applied</p> */
+.fontsforweb_fontid_1962 {
+	font-family: 'BebasNeuewebfont' !important;
+}
+
+/* Font downloaded from FontsForWeb.com */
+
+h1, h2, h3, h4, h5 {
+	font-family: 'BebasNeuewebfont';
+}
+
+h1, h2, h3{
+
+	color: #C71585;
+}
+
+
+.promo
+{
+  display:table;
+  width:100%;
+
+  &.blue span{
+      background:blue;
+  }
+
+  &.pink span {
+      background:#eb278e;
+  }
+
+   &.lime span {
+      background:lime;
+  }
+ span   
+{
+    font-family: 'BebasNeuewebfont';
+    display:table-cell;
+    vertical-align: middle;
+    background:#ddd;
+    text-align:center;
+    color:#fff;
+    font-size:70px;
+    height:300px;
+    border-radius:15px;
+}
+}
 
