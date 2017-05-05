@@ -2284,6 +2284,9 @@ ul.footerLogos {
     background: #E86D1F;
     color: #fff; }
 
+.groupPromo ul li a h3 {
+  font-weight: 400; }
+
 h1, h2, h3, h4, h5 {
   font-family: "Oswald", Helvetica, Arial; }
 
@@ -2741,3 +2744,78 @@ additional styling
 
 /*additional styling end*/
 /* reaveal end -------------------------------------------------------------------------------------------------*/
+h2 span {
+  font-size: 20px;
+  color: #666;
+  font-weight: 200; }
+  @media only screen and (max-width: 990px) {
+    h2 span {
+      display: block;
+      margin-top: 10px; } }
+
+.venues {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-direction: row;
+  -moz-box-flex-direction: row;
+  -ms-flex-flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex-wrap: wrap;
+  -moz-box-flex-wrap: wrap;
+  -ms-flex-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0px 0 0 -6px;
+  width: auto;
+  border: 0;
+  list-style: none;
+  padding: 0px; }
+  .venues li {
+    border: 0;
+    width: calc(100% * (1/9) - 5px) !important;
+    margin: 5px 0 0 5px;
+    border: 0; }
+    .venues li a {
+      display: block;
+      padding: 10px;
+      height: 100%; }
+      .venues li a h3 {
+        display: none; }
+      .venues li a.lotherton {
+        background: #2f7251; }
+      .venues li a.discovery {
+        background: #16145F; }
+      .venues li a.kirkstall {
+        background: #00447C; }
+      .venues li a.lag {
+        background: #005953; }
+      .venues li a.lim {
+        background: #77230A; }
+      .venues li a.temple {
+        background: #860037; }
+      .venues li a.city {
+        background: #E86D1F; }
+      .venues li a.thwaite {
+        background: #5C8727; }
+      .venues li a.abbey {
+        background: #7D4199; }
+      .venues li a img {
+        max-width: 100%; }
+    @media only screen and (max-width: 1200px) {
+      .venues li {
+        width: calc(100% * (1/7) - 5px) !important; } }
+    @media only screen and (max-width: 990px) {
+      .venues li {
+        width: calc(100% * (1/5) - 5px) !important; }
+        .venues li a {
+          padding: 20px; } }
+    @media only screen and (max-width: 768px) {
+      .venues li {
+        width: calc(100% * (1/3) - 5px) !important; } }
+    @media only screen and (max-width: 500px) {
+      .venues li {
+        width: calc(100% * (1/2) - 5px) !important; } }

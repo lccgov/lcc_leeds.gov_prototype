@@ -947,4 +947,107 @@ additional styling
 
 /* reaveal end -------------------------------------------------------------------------------------------------*/
 
+h2{
+    span{
+        font-size:20px;
+        color:#666;
+        font-weight:200;
 
+             @media only screen and (max-width:990px){
+                 display:block;
+                 margin-top:10px;
+             }
+    }
+}
+.venues
+{
+      @include flexbox();
+            @include flex-direction(row);
+            @include flex-wrap(wrap);
+            margin:0px 0 0 -6px;
+            width:auto;
+            border:0;
+            list-style:none;
+            padding:0px;
+
+  li{
+                border: 0;
+                width: calc(100% * (1/9) - 5px) !important;
+                margin:5px 0 0 5px;
+                border:0;
+
+                     a{
+         display:block;
+         padding:10px;
+         height:100%;
+        
+        h3{
+            display:none;
+        }
+
+         &.lotherton{
+             background:$lotherton-base-color;
+         }
+
+           &.discovery{
+             background:$discovery-base-color;
+         }
+
+           &.kirkstall{
+             background:$kirkstall-base-color;
+         }
+
+           &.lag{
+             background:$lag-base-color;
+         }
+
+           &.lim{
+             background:$lim-base-color;
+         }
+
+           &.temple{
+             background:$temple-base-color;
+         }
+
+           &.city{
+             background:$city-base-color;
+         }
+
+           &.thwaite{
+             background:$thwaite-base-color;
+         }
+
+           &.abbey{
+             background:$abbey-base-color;
+         }
+
+           img{
+      max-width:100%;
+
+  }
+     }
+
+                @media only screen and (max-width:1200px){
+                    width: calc(100% * (1/7) - 5px) !important;
+                }
+
+                @media only screen and (max-width:990px){
+                    width: calc(100% * (1/5) - 5px) !important;
+                    a{
+                        padding:20px;
+                    }
+                }
+                  @media only screen and (max-width:768px){
+                    width: calc(100% * (1/3) - 5px) !important;
+                }
+
+                   @media only screen and (max-width:500px){
+                    width: calc(100% * (1/2) - 5px) !important;
+                }
+
+
+
+
+  }
+
+}

@@ -105,6 +105,15 @@ $highlighted-font-color:#E86D1F;
 $highlighted-alt-background-color:#f6f6f6 ;
 $highlighted-alt-font-color:#333;
 
+//mega-promo
+//$promo-background-color:#F6F7FA;
+//$promo-arrow-color:#c3102f;
+//$promo-header-color:#c3102f;
+//$promo-secondary-color:#666B76;
+//$promo-highlight-background-color:#c3102f;
+//$promo-highlight-color:#fff;
+$promo-arrow:"\f105";
+
 
 $vistitorInfoBack:rgba(#fff, 0.9);
 $vistitorInfoHeadingColor:#414141;
@@ -133,11 +142,12 @@ $vistitorInfoHeadingColor:#414141;
 //@import 'heroBanner';
 @import 'news';
 //@import 'polaroids';
-//@import 'groupPromo';
+@import 'groupPromo';
 //@import 'blocklinks';
 //@import 'contentLink';
 //@import 'docList';
 @import 'contentAssets';
+@import 'mega-promo';
 @import 'museums';
 
 

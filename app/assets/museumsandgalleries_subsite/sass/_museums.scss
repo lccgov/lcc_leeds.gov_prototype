@@ -439,6 +439,8 @@ ul.footerLogos{
 }
 
 
+
+
 @mixin mega-promo-colors($promo-background-color, $promo-header-color, $promo-secondary-color, $promo-arrow-color, $promo-highlight-background-color, $promo-highlight-color) {
     a{
         background:$promo-background-color;
@@ -523,4 +525,9 @@ ul.footerLogos{
             @include mega-promo-colors($promo-background-color, $city-base-color, $promo-secondary-color, $city-base-color, $city-base-color,  $promo-highlight-color);
         }
     }
+}
+
+
+.groupPromo ul li a h3 {
+    font-weight: 400;
 }

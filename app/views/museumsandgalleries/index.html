@@ -21,7 +21,7 @@
 
 
  {% block sectionOneTop %}
- <section id="reveal">
+ <!--<section id="reveal">
            <div class="revealHeader">
                 <a href="#"><span class="textLink">See all our Nine venues</span><span class="icon"></span></a>
             </div>
@@ -156,19 +156,64 @@
                         <a href="#" class="revealClose"><span></span>Close</a>
                     </div>
                </div>
-        </section>
+        </section> -->
 
-
-<div class="heroBanner" style="background: transparent url(/public/museumsandgalleries/images/Fashionable-Yorkshire-Lothe.jpg) no-repeat scroll 50% 0px;">
+<!--<div class="heroBanner" style="background: transparent url(/public/museumsandgalleries/images/Fashionable-Yorkshire-Lothe.jpg) no-repeat scroll 50% 0px;">
   <div class="container-fluid">
      
    <a href="#" class="alt">Discover Fashionable Yorkshire<span>The latest exhibition at Lotherton Hall</span></a>
     </div>
-</div>     
+</div>     -->
+
 
 {% endblock %} 
 
 {% block sectionOneFull%}
+ <h2 class="">Nine Venues<br/> <span>Find out all about our nine fascinating museum sites and discover all the fun</span></h2>
+
+<ul class="venues">
+  <li><a href="" class="thwaite">
+      <img src="/public/museumsandgalleries/images/thwaiteMills-logo-w.svg" alt="">
+      <h3>Lotherton Hall</h3>
+      </a></li>
+        <li><a href="" class="abbey">
+      <img src="/public/museumsandgalleries/images/abbeyHouse-logo-w.svg" alt="">
+          <h3>Lotherton Hall</h3>
+      </a></li>
+        <li><a href="" class="discovery">
+      <img src="/public/museumsandgalleries/images/discoveryCentre-logo-w.svg" alt="">
+            <h3>Lotherton Hall</h3>
+      </a></li>
+        <li><a href="" class="kirkstall">
+      <img src="/public/museumsandgalleries/images/kirkstallAbbey-logo-w.svg" alt="">
+            <h3>Lotherton Hall</h3>
+      </a></li>
+        <li><a href="" class="lag">
+      <img src="/public/museumsandgalleries/images/leedsArtGallery-logo-w.svg" alt="">
+            <h3>Lotherton Hall</h3>
+      </a></li>
+        <li><a href="" class="lim">
+      <img src="/public/museumsandgalleries/images/armleyMills-logo-w.svg" alt="">
+            <h3>Lotherton Hall</h3>
+      </a></li>
+        <li><a href="" class="temple">
+      <img src="/public/museumsandgalleries/images/templeNewsam-logo-w.svg" alt="">
+            <h3>Lotherton Hall</h3>
+      </a></li>
+        <li><a href="" class="city">
+      <img src="/public/museumsandgalleries/images/leedsCity-logo-w.svg" alt="">
+            <h3>Lotherton Hall</h3>
+      </a></li>
+
+
+  <li><a href="" class="lotherton">
+      <img src="/public/museumsandgalleries/images/Lotherton_Logo_.svg" alt="">
+           <h3>Lotherton Hall</h3>
+      </a></li>
+
+
+
+</ul>
 
   {% include "includes/museums/mega-promo.html" %}
 {% endblock %}
