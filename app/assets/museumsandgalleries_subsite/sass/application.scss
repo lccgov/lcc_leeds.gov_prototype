@@ -16,7 +16,7 @@ $base-font-size:19px ;
 //$base-font-color:#333 ;
 //$base-link-color:#133E8D ;
 //$base-container-width:1500px ;
-//$btn-background-color:green ;
+$btn-background-color:#c3102f ;
 $font-primary:'Oswald', Helvetica, Arial;
 $font-secondary: 'Oswald', Helvetica, Arial;
 
@@ -87,7 +87,7 @@ $news-pod-back:#ffffff ;
 $news-pod-border-color:#ddd;
 
 //accordion
-$accordion-color:green;
+$accordion-color:#c3102f;
 //$accordion-border-color:#ECF0F1;
 
 //highlighted box in content assets
@@ -146,8 +146,13 @@ $promo-arrow:"\f105";
 @import 'museums';
 
 
+body{
+    font-weight:200;
+}
+
 h1,h2,h3,h4,h5{
     font-family:$font-primary;
+    margin:0.6em 0 0.4em 0;
 }
 
 
@@ -976,16 +981,8 @@ h2{
                 margin:5px 0 0 5px;
                 border:0;
 
-                     a{
-         display:block;
-         padding:10px;
-         height:100%;
-        
-        h3{
-            display:none;
-        }
 
-         &.lotherton{
+           &.lotherton{
              background:$lotherton-base-color;
          }
 
@@ -1021,6 +1018,22 @@ h2{
              background:$abbey-base-color;
          }
 
+
+                     a{
+         display:block;
+         padding:10px;
+         height:100%;
+
+         &:hover{
+             background:rgba(0, 0, 0, 0.4);
+         }
+        
+        h3{
+            display:none;
+        }
+
+        
+
            img{
       max-width:100%;
 
@@ -1050,4 +1063,12 @@ h2{
 
   }
 
+}
+
+table td {
+    padding: 0.63158em 1.05263em 0.63158em 0;
+
+    &:last-of-type{
+        border:none;
+    }
 }

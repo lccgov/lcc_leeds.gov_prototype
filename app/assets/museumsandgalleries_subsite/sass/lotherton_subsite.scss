@@ -137,14 +137,21 @@ $highlighted-alt-font-color:#333;
 @import 'contentAssets';
 @import 'museums';
 
+
+body{
+    font-weight:200;
+}
+
 h1,h2,h3,h4,h5{
     font-family:$font-primary;
+    margin:0.6em 0 0.4em 0;
 }
 
 
 p{
     font-family:$font-secondary;
 }
+
 
 .header-nav-container .logo {
     background:url(../images/Lotherton_Logo_.svg) left center no-repeat;

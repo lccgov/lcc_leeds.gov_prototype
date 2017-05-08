@@ -1965,10 +1965,13 @@ div.promo {
     .btn.block:after {
       background: transparent;
       border-left: 1px solid #a6561e;
-      padding: 3% 0px !important;
+      padding: 5% 0px !important;
       font-size: 25px;
       min-width: 65px;
-      text-align: center; }
+      text-align: center;
+      line-height: 1em; }
+    .btn.block span {
+      font-weight: 200; }
 
 ul.footerLogos {
   list-style: none;
@@ -2142,8 +2145,12 @@ ul.footerLogos {
 .groupPromo ul li a h3 {
   font-weight: 400; }
 
+body {
+  font-weight: 200; }
+
 h1, h2, h3, h4, h5 {
-  font-family: "Oswald", Helvetica, Arial; }
+  font-family: "Oswald", Helvetica, Arial;
+  margin: 0.6em 0 0.4em 0; }
 
 p {
   font-family: "Oswald", Helvetica, Arial; }

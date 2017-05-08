@@ -1,0 +1,324 @@
+{% extends "layout_multi_sections.html" %}
+
+{% block page_title %}
+visitor information
+{% endblock %}
+
+
+  {% block css_register %}
+          <link href="{{ asset_path }}museumsandgalleries/stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+Visitor Information
+{% endblock %}
+
+ {% block main_nav %}
+  {% include "includes/museums/main_nav.html" %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+
+{% endblock %}
+
+
+ {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
+ {% endblock %}
+
+{% block sectionOneContent %}
+{% endblock %}
+
+{% block pageContent %}
+
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+{% endblock %}
+
+{% block sectionLeftHandColumn %}
+<h2><i class="fa fa-map-marker" aria-hidden="true"></i> Venue Address</h2>       <p>Abbey Walk, Kirkstall, Leeds, LS5 3EH</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2356.32812821897!2d-1.5504502341443347!3d53.80144473007692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48795c1ce33fff99%3A0x6457c56ad94a1220!2sMillennium+Square%2C+Leeds+LS2+3AD!5e0!3m2!1sen!2suk!4v1476362307058" width="100%" height="207" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        <p>Tel: 0113 3784079</p>
+        <a href="mailto:abbey.house@leeds.gov.uk" class="btn btn-default block">Email us</a>
+        <hr class="ms-rteElement-spacer" />
+{% endblock %}
+
+{% block sectionOneRightContent %}
+<hr class="ms-rteElement-spacer" />
+<ul class="accordion" data-module="accordion">
+    <li>
+        <div class="accordion-drawer">
+            <a href="#" class="header"><span class="sr-only">Click to expand</span>Opening hours</a>
+            <div
+                style="display: none;" class="content-block">
+               <table class="styledTable">
+  <tbody>
+    <tr>
+      <td><strong>Monday</strong></td>
+      <td>Closed (Open Bank Holiday Mondays, 10:00 - 17:00)</td>
+    </tr>
+      <tr>
+      <td><strong>Tuesday</strong></td>
+      <td>10:00 - 17:00.</td>
+    </tr>
+      <tr>
+      <td><strong>Wednestday</strong></td>
+      <td>10:00 - 17:00.</td>
+    </tr>
+      <tr>
+      <td><strong>Thursday</strong></td>
+      <td>10:00 - 17:00.</td>
+    </tr>
+          <tr>
+      <td><strong>Friday</strong></td>
+      <td>10:00 - 17:00.</td>
+    </tr>
+    <tr>
+      <td><strong>Saturday</strong></td>
+      <td>12:00 - 17:00.</td>
+    </tr>
+      <tr>
+      <td><strong>Sunday</strong></td>
+      <td>10:00 - 17:00.</td>
+    </tr>
+
+          <tr>
+      <td colspan="2">Last admission 16:30 every day</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+        </div>
+    </li>
+
+      <li>
+        <div class="accordion-drawer">
+            <a href="#" class="header"><span class="sr-only">Click to expand</span>Prices</a>
+            <div
+                style="display: none;" class="content-block">
+<table class="styledTable">
+  <tbody>
+    <tr>
+      <td><strong>Adult</strong></td>
+      <td>£4.50 </td>
+    </tr>
+       <tr>
+      <td><strong>Child</strong></td>
+      <td>£2.30 Children under 5 years - <strong>free.</strong> </td>
+    </tr>
+      <tr>
+      <td><strong>Concession</strong></td>
+      <td>£3.70 </td>
+    </tr>
+      <tr>
+      <td><strong>Membership</strong></td>
+      <td>Admission is free to members of the Leeds Art Fund, Friends of Leeds City Museums, the Museums Association and the National Arts Collection Fund. </td>
+    </tr>
+          <tr>
+      <td><strong>Family</strong></td>
+      <td>£9.50 </td>
+    </tr>
+    <tr>
+      <td><strong>Group</strong></td>
+      <td>£3.70</td>
+    </tr>
+      <tr>
+      <td><strong>Max card</strong></td>
+      <td>General admission is free </td>
+    </tr>
+
+     <tr>
+      <td><strong>Leeds card</strong></td>
+      <td>Leeds Card Adult £3.60, Breezecard child £1.80, LeedsCard Family £7.50. Leeds Card Extra £2.80 Please make sure you have your card with you. </td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+        </div>
+    </li>  
+
+      <li>
+        <div class="accordion-drawer">
+            <a href="#" class="header"><span class="sr-only">Click to expand</span>Facilities</a>
+            <div
+                style="display: none;" class="content-block">
+                <ul><li><p>Baby change</p></li><li><p>Cafe</p></li><li><p>Shop</p></li><li><p>Education facilities</p></li><li><p>Picnic area</p></li><li><p>Play area</p></li><li><p>Toilets</p></li><li><p>Parking</p></li></ul>
+                </div>
+        </div>
+    </li> 
+
+          <li>
+        <div class="accordion-drawer">
+            <a href="#" class="header"><span class="sr-only">Click to expand</span>Travel Options</a>
+            <div
+                style="display: none;" class="content-block">
+               <p>Bus numbers 33, 33a and 757 travel from the city centre to Kirkstall Road. <br><br>The nearest train stations are Kirkstall Forge, c.1 mile away, and Headingley, a 1 mile walk. Contact Metroline for up-to-date travel information on (0113) 245 7676.<br><br>By car: If you are using a route planner, our postcode is LS5 3EH.<br></p>
+                </div>
+        </div>
+    </li> 
+
+              <li>
+        <div class="accordion-drawer">
+            <a href="#" class="header"><span class="sr-only">Click to expand</span>Parking</a>
+            <div
+                style="display: none;" class="content-block">
+               <p> A large free car park is situated next to Abbey House Museum on Abbey Walk. This includes disabled parking. </p>
+
+<p>There is an additional disabled access parking space immediately outside the museum entrance.</p>
+                </div>
+        </div>
+    </li> 
+
+                  <li>
+        <div class="accordion-drawer">
+            <a href="#" class="header"><span class="sr-only">Click to expand</span>Venue Access</a>
+            <div  style="display: none;" class="content-block">
+<p>Abbey House museum is a member of the Visitor Attraction Quality Assurance Scheme (VAQAS). </p>
+<p>Situated in Leeds, the museum is approximately 3.5 miles from the city centre.&nbsp; Located on Abbey Walk, just off Abbey Road (sometimes referred to as Kirkstall Road), the&nbsp;entrance to the museum is on a short but fairly steep hill.</p>
+<p>We look forward to welcoming you but for more information before your visit, please call us on 0113 230 5492.&nbsp; <br></p>
+<p><strong>Disabled parking</strong><br><br>There is one disabled parking space immediately outside the&nbsp;entrance to the museum and four more spaces are located across Abbey Walk in the Vesper Lane car park.&nbsp;Access from the car park to the museum entrance is primarily flat and a pedestrian crossing over Abbey Walk is in place. <br><br><strong>Museum entrances</strong><br><br>The main entrance does have level access although the museum is set back from a steep road when arriving from Kirkstall Abbey on Kirkstall Road.&nbsp; The entrance is automatic, opening outwards with a clear opening space of 87cm. <br><br><strong>Lifts and access to galleries</strong><br><br>The majority of the galleries, Victorian street and special exhibitions are fully accessible. Please note that there are cobbled streets and some narrow spaces in the Victorian Streets. Seating is available around the museum and in the café.<br><br>The lift to the second floor is available through the Victorian street which has capacity for one wheelchair at a time.&nbsp; </p>
+<p><strong><br>Accessible toilets</strong><br><br>There are accessible toilets in main entrance foyer and shop in the Museum. Facilities in the accessible toilets include an emergency alarm, a fire alarm with a flashing light and a baby change unit. This toilet is not RADAR key operated. </p>
+<p>We do not currently have a Changing Places facility. The nearest one is located 1.5 miles away at the HEART Centre (Headingley Enterprise and Arts Centre) Bennett Road, LS6 3HN.<br><br><strong>Borrow a wheelchair</strong></p>
+<p>A wheelchair is available from the museum entrance and shop to borrow on your visit. Unfortunately we cannot provide assistance around the Museum for wheelchair users.&nbsp; Please telephone +44 113 2305492 in advance of your visit to ensure the chair is available.</p>
+<p>Entry to the museum is free of charge for carers.<br><br></p>
+<p><strong>Guide and assistance dogs</strong></p>
+<p>Guide and assistance dogs are welcome and dog bowls are available at the front entrance.<br><br><strong>Induction loops / Sound enhancement systems</strong></p>
+<p>An induction loop is in place in the entrance foyer and shop. <br><br><strong>Access provision for groups</strong></p>
+<p>Tailored handling sessions or touch tours on a group-specific interest area for groups can be organised with two weeks' notice.</p>
+<p>If a member or members of your group require access provision, please contact Sarah Allen, learning and access officer, at least six weeks in advance of your visit on +44 113 230 5492 or <a href="mailto:sarah.allen@leeds.gov.uk"><font color="#0066cc">sarah.allen@leeds.gov.uk</font></a>.</p>
+
+                </div>
+        </div>
+    </li> 
+
+    </ul>
+<hr class="ms-rteElement-spacer" />
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+
+{% endblock %} 
+
+
+{% block sectionOneThirdCol1 %}
+
+{% endblock %} 
+
+
+{% block sectionOneThirdCol2 %}
+{% endblock %} 
+
+
+{% block sectionOneThirdCol3 %}
+{% endblock %} 
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+
+
+
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+   {% include "includes/museums/footer_nav.html" %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+         {% include "includes/museums/re-userble-content-footer.html" %}
+ {% endblock %}

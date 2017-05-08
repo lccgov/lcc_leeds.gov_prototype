@@ -14,19 +14,19 @@ body {
   color: #333; }
 
 .btn-primary, .button {
-  background: green;
-  box-shadow: inset 0 1px 1px #00b300; }
+  background: #c3102f;
+  box-shadow: inset 0 1px 1px #ec1a3e; }
   .btn-primary:hover, .button:hover {
-    background: #004d00; }
+    background: #940c24; }
 
 .btn, .button {
-  border-color: green;
+  border-color: #c3102f;
   color: #fff; }
   .btn.btn-default, .btn.alt, .button.btn-default, .button.alt {
-    border-color: green;
-    color: green; }
+    border-color: #c3102f;
+    color: #c3102f; }
     .btn.btn-default:hover, .btn.alt:hover, .button.btn-default:hover, .button.alt:hover {
-      background: #004d00;
+      background: #940c24;
       color: #fff; }
 
 .container-fluid {
@@ -191,7 +191,7 @@ td .ui-state-hover {
 /** jquery ui datepicker overides ***/
 /** main button color for forms and comments **/
 form input[type=submit].submit {
-  background: green; }
+  background: #c3102f; }
 
 /**End  main button color for forms and comments **/
 .breadcrumb {
@@ -479,7 +479,7 @@ ul.accordion {
         content: "\f067";
         position: absolute;
         right: 10px;
-        color: green; }
+        color: #c3102f; }
       ul.accordion li a.header.active:after {
         content: "\f068"; }
     ul.accordion li div div {
@@ -2109,11 +2109,14 @@ div.promo {
     margin-bottom: 30px; }
     .btn.block:after {
       background: transparent;
-      border-left: 1px solid #006700;
-      padding: 3% 0px !important;
+      border-left: 1px solid #ab0e29;
+      padding: 5% 0px !important;
       font-size: 25px;
       min-width: 65px;
-      text-align: center; }
+      text-align: center;
+      line-height: 1em; }
+    .btn.block span {
+      font-weight: 200; }
 
 ul.footerLogos {
   list-style: none;
@@ -2287,8 +2290,12 @@ ul.footerLogos {
 .groupPromo ul li a h3 {
   font-weight: 400; }
 
+body {
+  font-weight: 200; }
+
 h1, h2, h3, h4, h5 {
-  font-family: "Oswald", Helvetica, Arial; }
+  font-family: "Oswald", Helvetica, Arial;
+  margin: 0.6em 0 0.4em 0; }
 
 p {
   font-family: "Oswald", Helvetica, Arial; }
@@ -2779,30 +2786,32 @@ h2 span {
     width: calc(100% * (1/9) - 5px) !important;
     margin: 5px 0 0 5px;
     border: 0; }
+    .venues li.lotherton {
+      background: #2f7251; }
+    .venues li.discovery {
+      background: #16145F; }
+    .venues li.kirkstall {
+      background: #00447C; }
+    .venues li.lag {
+      background: #005953; }
+    .venues li.lim {
+      background: #77230A; }
+    .venues li.temple {
+      background: #860037; }
+    .venues li.city {
+      background: #E86D1F; }
+    .venues li.thwaite {
+      background: #5C8727; }
+    .venues li.abbey {
+      background: #7D4199; }
     .venues li a {
       display: block;
       padding: 10px;
       height: 100%; }
+      .venues li a:hover {
+        background: rgba(0, 0, 0, 0.4); }
       .venues li a h3 {
         display: none; }
-      .venues li a.lotherton {
-        background: #2f7251; }
-      .venues li a.discovery {
-        background: #16145F; }
-      .venues li a.kirkstall {
-        background: #00447C; }
-      .venues li a.lag {
-        background: #005953; }
-      .venues li a.lim {
-        background: #77230A; }
-      .venues li a.temple {
-        background: #860037; }
-      .venues li a.city {
-        background: #E86D1F; }
-      .venues li a.thwaite {
-        background: #5C8727; }
-      .venues li a.abbey {
-        background: #7D4199; }
       .venues li a img {
         max-width: 100%; }
     @media only screen and (max-width: 1200px) {
@@ -2819,3 +2828,8 @@ h2 span {
     @media only screen and (max-width: 500px) {
       .venues li {
         width: calc(100% * (1/2) - 5px) !important; } }
+
+table td {
+  padding: 0.63158em 1.05263em 0.63158em 0; }
+  table td:last-of-type {
+    border: none; }
