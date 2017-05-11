@@ -1432,6 +1432,10 @@ blockquote {
 
 .sectionHeader .container-fluid {
   background: url(../images/skyline.png) bottom -2px right 0px no-repeat; }
+  @media screen and (max-width: 768px) {
+    .sectionHeader .container-fluid {
+      background: transparent;
+      border-bottom: 1px solid #efefef; } }
 
 ul.breadcrumb li a {
   background: transparent; }
