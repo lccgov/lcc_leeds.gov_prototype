@@ -1502,6 +1502,8 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
             padding-right: 30px;
             font-size: 16px;
             margin-top: 5px; } }
+    .groupPromo ul li.external a h3:after {
+      content: '\f08e'; }
 
 .groupPromo.blockLinksGreen .listWebpart ul li {
   background: #97BD0E; }
@@ -1595,10 +1597,6 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
     margin-top: 0px; }
   .highlighted h2, .highlighted h3, .highlighted h4, .highlighted p, .highlighted ul, .highlighted ol, .highlighted em {
     color: #860037; }
-  .highlighted p strong {
-    font-weight: 800 !important;
-    font-size: 28px !important;
-    line-height: 1.25 !important; }
   .highlighted em {
     font-size: 80px;
     font-style: normal;
@@ -1632,6 +1630,28 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   @media screen and (max-width: 400px) {
     .highlighted {
       padding: 1.5em 1em; } }
+
+.imgRight {
+  float: right;
+  margin: 0 0 30px 30px;
+  max-width: 50%; }
+  @media screen and (max-width: 500px) {
+    .imgRight {
+      max-width: 100%;
+      margin: 0px 0 30px 0; } }
+
+.imgLeft {
+  float: left;
+  margin: 0 30px 30px 0px;
+  max-width: 50%; }
+  @media screen and (max-width: 500px) {
+    .imgLeft {
+      max-width: 100%;
+      margin: 0px 0 30px 0; } }
+
+@media (max-width: 768px) {
+  .lead {
+    font-size: 21px; } }
 
 div.promo {
   background-size: cover !important;
@@ -1965,7 +1985,7 @@ div.promo {
     .btn.block:after {
       background: transparent;
       border-left: 1px solid #006700;
-      padding: 5% 0px !important;
+      padding: 4.5% 0px !important;
       font-size: 25px;
       min-width: 65px;
       text-align: center;

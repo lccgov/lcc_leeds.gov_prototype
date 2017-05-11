@@ -356,50 +356,51 @@ ul.menu li a.main-menu {
 
 
 .groupPromo .listWebpart{ 
-    
-    
     ul li a {
-    background:#333;
     min-height:150px;
-    color:#fff;
-
-
-    &.orange{
-        background:#DD781B;
-    }
-
-     &.pink{
-        background:#C50650;
-    }
-     &.purple{
-        background:#721371;
-    }
-     &.green{
-        background:#00919E;
-    }
-     &.blue{
-        background:#00ADEE;
-    }
-     &.darkgreen{
-        background:#376250;
-    }
-
-      &.olive{
-        background:#8C8A00;
-    }
-     &.gold{
-        background:#BA8C09;
-    }
-
-    
-    
-
-    
-    &:hover{
-        background:#333;
+    h3{
+        font-weight:400;
     }
 }
 }
+
+.groupPromo {
+
+    .listWebpart li.blue  {
+        @include groupPromoMulticolors(#00ADEE, #fff, #fff,#fff);
+    }
+
+      .listWebpart li.pink {
+        @include groupPromoMulticolors(#C50650, #fff, #fff,#fff);
+    }
+
+     .listWebpart li.green {
+        @include groupPromoMulticolors(#00919E, #fff, #fff,#fff);
+    }
+
+     .listWebpart li.orange {
+        @include groupPromoMulticolors(#DD781B, #fff, #fff,#fff);
+    }
+
+    
+ .listWebpart li.purple {
+        @include groupPromoMulticolors(#721371, #fff, #fff,#fff);
+    }
+
+.listWebpart li.darkgreen {
+        @include groupPromoMulticolors(#376250, #fff, #fff,#fff);
+    }
+
+
+.listWebpart li.olive {
+        @include groupPromoMulticolors(#8C8A00, #fff, #fff,#fff);
+    }
+
+.listWebpart  li.gold {
+        @include groupPromoMulticolors(#BA8C09, #fff, #fff,#fff);
+    }
+
+} 
 
 .limitedrte-Style-right-blue {
     -ms-name: "BOX RIGHT Purple";

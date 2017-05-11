@@ -1762,6 +1762,8 @@ POLAROID WEBPART
             padding-right: 30px;
             font-size: 16px;
             margin-top: 5px; } }
+    .groupPromo ul li.external a h3:after {
+      content: '\f08e'; }
 
 .groupPromo.blockLinksGreen .listWebpart ul li {
   background: #97BD0E; }
@@ -2099,10 +2101,6 @@ docsList
     margin-top: 0px; }
   .highlighted h2, .highlighted h3, .highlighted h4, .highlighted p, .highlighted ul, .highlighted ol, .highlighted em {
     color: #fff; }
-  .highlighted p strong {
-    font-weight: 800 !important;
-    font-size: 28px !important;
-    line-height: 1.25 !important; }
   .highlighted em {
     font-size: 80px;
     font-style: normal;
@@ -2136,6 +2134,28 @@ docsList
   @media screen and (max-width: 400px) {
     .highlighted {
       padding: 1.5em 1em; } }
+
+.imgRight {
+  float: right;
+  margin: 0 0 30px 30px;
+  max-width: 50%; }
+  @media screen and (max-width: 500px) {
+    .imgRight {
+      max-width: 100%;
+      margin: 0px 0 30px 0; } }
+
+.imgLeft {
+  float: left;
+  margin: 0 30px 30px 0px;
+  max-width: 50%; }
+  @media screen and (max-width: 500px) {
+    .imgLeft {
+      max-width: 100%;
+      margin: 0px 0 30px 0; } }
+
+@media (max-width: 768px) {
+  .lead {
+    font-size: 21px; } }
 
 blockquote {
   padding: 30px 60px 30px 80px;
@@ -2310,27 +2330,113 @@ ul.menu li a.main-menu {
   color: orange; }
 
 .groupPromo .listWebpart ul li a {
-  background: #333;
-  min-height: 150px;
-  color: #fff; }
-  .groupPromo .listWebpart ul li a.orange {
-    background: #DD781B; }
-  .groupPromo .listWebpart ul li a.pink {
-    background: #C50650; }
-  .groupPromo .listWebpart ul li a.purple {
-    background: #721371; }
-  .groupPromo .listWebpart ul li a.green {
-    background: #00919E; }
-  .groupPromo .listWebpart ul li a.blue {
+  min-height: 150px; }
+  .groupPromo .listWebpart ul li a h3 {
+    font-weight: 400; }
+
+.groupPromo .listWebpart li.blue {
+  background: #00ADEE; }
+  .groupPromo .listWebpart li.blue a {
     background: #00ADEE; }
-  .groupPromo .listWebpart ul li a.darkgreen {
+    .groupPromo .listWebpart li.blue a:hover, .groupPromo .listWebpart li.blue a:active {
+      background: #0088bb; }
+    .groupPromo .listWebpart li.blue a h3 {
+      color: #fff; }
+      .groupPromo .listWebpart li.blue a h3:after {
+        color: #fff; }
+    .groupPromo .listWebpart li.blue a p {
+      color: #fff; }
+
+.groupPromo .listWebpart li.pink {
+  background: #C50650; }
+  .groupPromo .listWebpart li.pink a {
+    background: #C50650; }
+    .groupPromo .listWebpart li.pink a:hover, .groupPromo .listWebpart li.pink a:active {
+      background: #94043c; }
+    .groupPromo .listWebpart li.pink a h3 {
+      color: #fff; }
+      .groupPromo .listWebpart li.pink a h3:after {
+        color: #fff; }
+    .groupPromo .listWebpart li.pink a p {
+      color: #fff; }
+
+.groupPromo .listWebpart li.green {
+  background: #00919E; }
+  .groupPromo .listWebpart li.green a {
+    background: #00919E; }
+    .groupPromo .listWebpart li.green a:hover, .groupPromo .listWebpart li.green a:active {
+      background: #00626b; }
+    .groupPromo .listWebpart li.green a h3 {
+      color: #fff; }
+      .groupPromo .listWebpart li.green a h3:after {
+        color: #fff; }
+    .groupPromo .listWebpart li.green a p {
+      color: #fff; }
+
+.groupPromo .listWebpart li.orange {
+  background: #DD781B; }
+  .groupPromo .listWebpart li.orange a {
+    background: #DD781B; }
+    .groupPromo .listWebpart li.orange a:hover, .groupPromo .listWebpart li.orange a:active {
+      background: #b05f15; }
+    .groupPromo .listWebpart li.orange a h3 {
+      color: #fff; }
+      .groupPromo .listWebpart li.orange a h3:after {
+        color: #fff; }
+    .groupPromo .listWebpart li.orange a p {
+      color: #fff; }
+
+.groupPromo .listWebpart li.purple {
+  background: #721371; }
+  .groupPromo .listWebpart li.purple a {
+    background: #721371; }
+    .groupPromo .listWebpart li.purple a:hover, .groupPromo .listWebpart li.purple a:active {
+      background: #460c46; }
+    .groupPromo .listWebpart li.purple a h3 {
+      color: #fff; }
+      .groupPromo .listWebpart li.purple a h3:after {
+        color: #fff; }
+    .groupPromo .listWebpart li.purple a p {
+      color: #fff; }
+
+.groupPromo .listWebpart li.darkgreen {
+  background: #376250; }
+  .groupPromo .listWebpart li.darkgreen a {
     background: #376250; }
-  .groupPromo .listWebpart ul li a.olive {
+    .groupPromo .listWebpart li.darkgreen a:hover, .groupPromo .listWebpart li.darkgreen a:active {
+      background: #254135; }
+    .groupPromo .listWebpart li.darkgreen a h3 {
+      color: #fff; }
+      .groupPromo .listWebpart li.darkgreen a h3:after {
+        color: #fff; }
+    .groupPromo .listWebpart li.darkgreen a p {
+      color: #fff; }
+
+.groupPromo .listWebpart li.olive {
+  background: #8C8A00; }
+  .groupPromo .listWebpart li.olive a {
     background: #8C8A00; }
-  .groupPromo .listWebpart ul li a.gold {
+    .groupPromo .listWebpart li.olive a:hover, .groupPromo .listWebpart li.olive a:active {
+      background: #595800; }
+    .groupPromo .listWebpart li.olive a h3 {
+      color: #fff; }
+      .groupPromo .listWebpart li.olive a h3:after {
+        color: #fff; }
+    .groupPromo .listWebpart li.olive a p {
+      color: #fff; }
+
+.groupPromo .listWebpart li.gold {
+  background: #BA8C09; }
+  .groupPromo .listWebpart li.gold a {
     background: #BA8C09; }
-  .groupPromo .listWebpart ul li a:hover {
-    background: #333; }
+    .groupPromo .listWebpart li.gold a:hover, .groupPromo .listWebpart li.gold a:active {
+      background: #896707; }
+    .groupPromo .listWebpart li.gold a h3 {
+      color: #fff; }
+      .groupPromo .listWebpart li.gold a h3:after {
+        color: #fff; }
+    .groupPromo .listWebpart li.gold a p {
+      color: #fff; }
 
 .limitedrte-Style-right-blue {
   -ms-name: "BOX RIGHT Purple";

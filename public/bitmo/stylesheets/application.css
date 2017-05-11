@@ -864,6 +864,8 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
             padding-right: 30px;
             font-size: 16px;
             margin-top: 5px; } }
+    .groupPromo ul li.external a h3:after {
+      content: '\f08e'; }
 
 .groupPromo.blockLinksGreen .listWebpart ul li {
   background: #97BD0E; }
