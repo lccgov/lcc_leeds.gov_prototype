@@ -105,8 +105,17 @@ $highlighted-font-color:#860037;
 $highlighted-alt-background-color:#f6f6f6 ;
 $highlighted-alt-font-color:#333;
 
+//mega-promo
+//$promo-background-color:#F6F7FA;
+$promo-arrow-color:#860037;
+//$promo-header-color:#c3102f;
+//$promo-secondary-color:#666B76;
+$promo-highlight-background-color:#860037;
+$promo-highlight-color:#fff;
+$promo-arrow:"\f105";
 
-$vistitorInfoBack:rgba(#fff, 0.9);
+
+$vistitorInfoBack:rgba(#ecf0f1, 0.9);
 $vistitorInfoHeadingColor:#414141;
 
 @import 'mixins';
@@ -124,7 +133,6 @@ $vistitorInfoHeadingColor:#414141;
 //@import 'sideNavigation';
 //@import 'blockLinks';
 @import 'accordion';
-@import 'promoGroup';
 @import 'alerts';
 @import 'promoListwebpart';
 //@import 'eventsWebparts';
@@ -138,6 +146,7 @@ $vistitorInfoHeadingColor:#414141;
 //@import 'contentLink';
 //@import 'docList';
 @import 'contentAssets';
+@import 'mega-promo';
 @import 'museums';
 
 

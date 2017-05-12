@@ -105,6 +105,15 @@ $highlighted-font-color:#2f7251 ;
 $highlighted-alt-background-color:#f6f6f6 ;
 $highlighted-alt-font-color:#333;
 
+//mega-promo
+//$promo-background-color:#F6F7FA;
+$promo-arrow-color:#2f7251;
+//$promo-header-color:#c3102f;
+//$promo-secondary-color:#666B76;
+$promo-highlight-background-color:#2f7251;
+$promo-highlight-color:#fff;
+$promo-arrow:"\f105";
+
 
 @import 'mixins';
 @import 'variables';
@@ -135,6 +144,7 @@ $highlighted-alt-font-color:#333;
 //@import 'contentLink';
 //@import 'docList';
 @import 'contentAssets';
+@import 'mega-promo';
 @import 'museums';
 
 

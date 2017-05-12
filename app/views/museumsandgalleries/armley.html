@@ -22,7 +22,7 @@
 
  {% block sectionOneTop %}
 
-
+<!--
 <div class="heroBanner" style="background: transparent url(/public/museumsandgalleries/images/Fashionable-Yorkshire-Lothe.jpg) no-repeat scroll center center;">
 
 
@@ -58,59 +58,15 @@ LS25 3EB<br />
     <a href="#" class="">Discover Fashionable Yorkshire<span>The latest exhibition at Lotherton Hall</span></a>
      </div>
 
-</div>       
+</div>      -->
+
+  {% include "includes/museums/visitorinfo.html" %} 
 
 {% endblock %} 
 
 {% block sectionOneFull%}
 
-
-
-    <hr class="ms-rteElement-spacer" />
-
-    <div class="promoListWebpart">
-  <div class="">
-<ul>
-                          
-          <li class="two heightTwo">
-     <a style="background: url(/public/museumsandgalleries/images/potsandppl.jpg) no-repeat"  href="articlePage.html"><span class="info">Yorkshire Pots and People<span class="secondaryInfo"></span> <span class="arrow"></span></span><span class="thirdInfo"></span></a>
-     </li> 
-
-                   
-          <li class="two heightTwo">
-     <a style="background: url(/public/museumsandgalleries/images/LothertonHall_flamingowildlifeworldpg.jpg) no-repeat "   href="articlePage.html"><span class="info">Wildlife World<span class="secondaryInfo"></span> <span class="arrow"></span></span><span class="thirdInfo">Coming soon</span></a>
-     </li> 
-
-                   
-          <li class="two heightTwo">
-     <a style="background: url(/public/museumsandgalleries/images/LH_Bird_Garden.jpg) no-repeat"  href="articlePage.html"><span class="info">Bird Garden<span class="secondaryInfo"></span> <span class="arrow"></span></span><span class="thirdInfo"></span></a>
-     </li> 
-         
-              
-          <li class="two heightAuto lotherton">       
-     <a  href="articlePage.html"><span class="info">E-newsletter<span class="secondaryInfo">keep in the now with our</span> <span class="arrow"></span></span><span class="thirdInfo"></span></a>
-     </li> 
-
-
-    <li class="two heightAuto  lotherton">
-     <a href="articlePage.html"><span class="info">What's on<span class="secondaryInfo">Upcoming events and workshops</span> <span class="arrow"></span></span><span class="thirdInfo"></span></a>
-     </li>  
-
-                  <li class="two  heightAuto lotherton">
-     <a  href="articlePage.html" rel="external"><span class="info">Tickets<span class="secondaryInfo">Book tickets online now</span> <span class="arrow"></span></span><span class="thirdInfo"></span></a>
-     </li> 
-
-
-     </ul>
-
-
-
-
-   <hr class="ms-rteElement-spacer" />                    
-
-
-  </div>
-</div>
+  {% include "includes/museums/mega-promovenues.html" %}
 
 
 
@@ -161,41 +117,7 @@ LS25 3EB<br />
 {% block sectionTwoFull%} 
 
 
-
-
-   <hr class="ms-rteElement-spacer" />                    
-
-<div class="promoListWebpart">
-  <div class="">
-<ul>
-            
-         
-              
-          <li class="two heightTwo">
-     <a style="background: url(/public/museumsandgalleries/images/gf-winner-park-2.jpg) no-repeat"  rel="external" href="articlePage.html"><span class="info">Green flag award<span class="secondaryInfo">Raising the standard of 
-Parks and Green Spaces</span> <span class="arrow"></span></span><span class="thirdInfo"></span></a>
-     </li> 
-
-
-    <li class="two heightTwo">
-     <a style="background: url(/public/museumsandgalleries/images/crop.jpg) no-repeat"  rel="external"href="articlePage.html"><span class="info">Leeds Arts fund<span class="secondaryInfo">Supporting Leeds art galleries since 1912</span> <span class="arrow"></span></span><span class="thirdInfo"></span></a>
-     </li>  
-
-                  <li class="two heightTwo">
-     <a style="background: url(/public/museumsandgalleries/images/prod_15696.jpg) no-repeat"  rel="external" href="articlePage.html"><span class="info">Online Shop<span class="secondaryInfo">Leeds Museums and Galleries</span> <span class="arrow"></span></span><span class="thirdInfo"></span></a>
-     </li> 
-
-
-     </ul>
-
-
-
-
-   <hr class="ms-rteElement-spacer" />                    
-
-
-  </div>
-</div>
+ {% include "includes/museums/mega-promo-external.html" %}
 
 {% endblock %}
 

@@ -152,6 +152,7 @@ margin:0 -15px;
 
 
 
+
  .promoListWebpart {
      ul li {
 
@@ -323,13 +324,13 @@ $vistitorInfoHeadingColor:#2f7251 !default;
 {
     background:$vistitorInfoBack;
     padding:0px 0px 30px 0;
-    position:absolute;
+    position:relative;
     bottom:0px;
     width:100%;
     
     @media screen and (max-width:768px){
         position:relative;
-        padding:60px 30px 50px 30px;
+        padding:20px 0px 50px 0px;
 
         a.btn{
             display:block;
@@ -346,7 +347,13 @@ $vistitorInfoHeadingColor:#2f7251 !default;
     }
 
     p{
-        font-size:16px;
+        font-size:18px;
+        font-weight:300;
+
+        span{
+            font-size:15px;
+            color:#999;
+        }
     }
 
     a.btn{
@@ -361,13 +368,22 @@ $vistitorInfoHeadingColor:#2f7251 !default;
         left:0px;
   
         &:after{
-        line-height:1.8em;
+        line-height:3.3em;
         color: #414141;
         border-left: 1px solid #414141;
         background:transparent;
         }
 
+        &:hover{
+         background:#e1e4e4;
+
+        }
+
     }
+}
+
+.heroBanner .visitorInfo{
+position:absolute;
 }
 
 

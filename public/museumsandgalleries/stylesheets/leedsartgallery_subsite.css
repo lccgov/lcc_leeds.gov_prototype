@@ -1677,7 +1677,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
         position: absolute;
         right: 20px;
         bottom: 20px;
-        color: #9DA5B2;
+        color: #005953;
         font-size: 24px; }
       .mega-promo .mega-promo__item a:hover {
         background: #e6e8f1;
@@ -1737,8 +1737,8 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
               font-size: 16px;
               line-height: 20px; } }
       .mega-promo .mega-promo__item a .mega-promo__highlight {
-        background: #F6F7FA;
-        color: #3D414A;
+        background: #005953;
+        color: #fff;
         position: absolute;
         top: 0;
         right: 0;
@@ -2104,15 +2104,15 @@ div.promo {
       line-height: 170px; }
 
 .visitorInfo {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(236, 240, 241, 0.9);
   padding: 0px 0px 30px 0;
-  position: absolute;
+  position: relative;
   bottom: 0px;
   width: 100%; }
   @media screen and (max-width: 768px) {
     .visitorInfo {
       position: relative;
-      padding: 60px 30px 50px 30px; }
+      padding: 20px 0px 50px 0px; }
       .visitorInfo a.btn {
         display: block; } }
   .visitorInfo h2 {
@@ -2122,7 +2122,11 @@ div.promo {
     color: #414141;
     border-bottom: 1px solid #414141; }
   .visitorInfo p {
-    font-size: 16px; }
+    font-size: 18px;
+    font-weight: 300; }
+    .visitorInfo p span {
+      font-size: 15px;
+      color: #999; }
   .visitorInfo a.btn {
     position: relative;
     padding: 15px 60px 15px 15px;
@@ -2134,10 +2138,15 @@ div.promo {
     top: 0px;
     left: 0px; }
     .visitorInfo a.btn:after {
-      line-height: 1.8em;
+      line-height: 3.3em;
       color: #414141;
       border-left: 1px solid #414141;
       background: transparent; }
+    .visitorInfo a.btn:hover {
+      background: #e1e4e4; }
+
+.heroBanner .visitorInfo {
+  position: absolute; }
 
 @media screen and (max-width: 768px) {
   .heroBanner {
@@ -2204,7 +2213,7 @@ ul.footerLogos {
     color: #666B76; }
   .mega-promo .mega-promo__item.abbey a .mega-promo__highlight {
     background: #7D4199;
-    color: #3D414A; }
+    color: #fff; }
 
 .mega-promo .mega-promo__item.thwaite a {
   background: #F6F7FA; }
@@ -2221,7 +2230,7 @@ ul.footerLogos {
     color: #666B76; }
   .mega-promo .mega-promo__item.thwaite a .mega-promo__highlight {
     background: #5C8727;
-    color: #3D414A; }
+    color: #fff; }
 
 .mega-promo .mega-promo__item.temple a {
   background: #F6F7FA; }
@@ -2238,7 +2247,7 @@ ul.footerLogos {
     color: #666B76; }
   .mega-promo .mega-promo__item.temple a .mega-promo__highlight {
     background: #860037;
-    color: #3D414A; }
+    color: #fff; }
 
 .mega-promo .mega-promo__item.lim a {
   background: #F6F7FA; }
@@ -2255,7 +2264,7 @@ ul.footerLogos {
     color: #666B76; }
   .mega-promo .mega-promo__item.lim a .mega-promo__highlight {
     background: #77230A;
-    color: #3D414A; }
+    color: #fff; }
 
 .mega-promo .mega-promo__item.lag a {
   background: #F6F7FA; }
@@ -2272,7 +2281,7 @@ ul.footerLogos {
     color: #666B76; }
   .mega-promo .mega-promo__item.lag a .mega-promo__highlight {
     background: #005953;
-    color: #3D414A; }
+    color: #fff; }
 
 .mega-promo .mega-promo__item.kirkstall a {
   background: #F6F7FA; }
@@ -2289,7 +2298,7 @@ ul.footerLogos {
     color: #666B76; }
   .mega-promo .mega-promo__item.kirkstall a .mega-promo__highlight {
     background: #00447C;
-    color: #3D414A; }
+    color: #fff; }
 
 .mega-promo .mega-promo__item.discovery a {
   background: #F6F7FA; }
@@ -2306,7 +2315,7 @@ ul.footerLogos {
     color: #666B76; }
   .mega-promo .mega-promo__item.discovery a .mega-promo__highlight {
     background: #16145F;
-    color: #3D414A; }
+    color: #fff; }
 
 .mega-promo .mega-promo__item.lotherton a {
   background: #F6F7FA; }
@@ -2323,7 +2332,7 @@ ul.footerLogos {
     color: #666B76; }
   .mega-promo .mega-promo__item.lotherton a .mega-promo__highlight {
     background: #2f7251;
-    color: #3D414A; }
+    color: #fff; }
 
 .mega-promo .mega-promo__item.city a {
   background: #F6F7FA; }
@@ -2340,7 +2349,7 @@ ul.footerLogos {
     color: #666B76; }
   .mega-promo .mega-promo__item.city a .mega-promo__highlight {
     background: #E86D1F;
-    color: #3D414A; }
+    color: #fff; }
 
 .groupPromo ul li a h3 {
   font-weight: 400; }
