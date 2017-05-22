@@ -2159,8 +2159,7 @@ h3 {
       top: 15px; }
       @media (max-width: 768px) {
         .sectionHeader .header-left .logo:after {
-          position: relative;
-          border: 1px solid; } }
+          display: none; } }
     @media (max-width: 767px) {
       .sectionHeader .header-left .logo {
         background-position: center center;
