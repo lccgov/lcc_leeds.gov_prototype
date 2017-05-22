@@ -1,4 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+a {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word; }
+
+.btn, .button {
+  white-space: normal !important; }
+
 /*********************************************
 Base.sass variables
 *********************************************/
@@ -2091,7 +2101,8 @@ docsList
   padding: 2em 1.75em;
   margin: 1em 0;
   background: #333; }
-  .highlighted img {
+  .highlighted border
+img {
     max-width: 100%; }
   .highlighted.section {
     margin: 0px; }
@@ -2133,7 +2144,9 @@ docsList
         color: #f6f6f6; }
   @media screen and (max-width: 400px) {
     .highlighted {
-      padding: 1.5em 1em; } }
+      padding: 1.5em 1em; }
+      .highlighted em {
+        font-size: 50px; } }
 
 .imgRight {
   float: right;
@@ -2153,9 +2166,9 @@ docsList
       max-width: 100%;
       margin: 0px 0 30px 0; } }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .lead {
-    font-size: 21px; } }
+    font-size: 25px !important; } }
 
 .logo {
   background: none;
