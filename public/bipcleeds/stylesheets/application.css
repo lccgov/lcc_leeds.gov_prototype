@@ -2130,6 +2130,9 @@ h3 {
 .sectionHeader {
   border-top: 1px solid #ddd;
   padding: 20px 0; }
+  @media screen and (max-width: 767px) {
+    .sectionHeader {
+      border-bottom: 1px solid #ddd; } }
   .sectionHeader .header-left {
     width: 100%;
     position: relative; }
@@ -2140,7 +2143,7 @@ h3 {
       width: 309px; }
       .sectionHeader .header-left .logo:hover {
         text-decoration: none; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         .sectionHeader .header-left .logo {
           text-align: center; }
           .sectionHeader .header-left .logo:after {
@@ -2156,11 +2159,12 @@ h3 {
       top: 15px; }
       @media (max-width: 768px) {
         .sectionHeader .header-left .logo:after {
-          display: none; } }
+          position: relative;
+          border: 1px solid; } }
     @media (max-width: 767px) {
       .sectionHeader .header-left .logo {
-        width: 100%;
-        background-position: center center; } }
+        background-position: center center;
+        margin: 30px auto; } }
     @media (max-width: 500px) {
       .sectionHeader .header-left .logo {
         background-size: 100%; } }

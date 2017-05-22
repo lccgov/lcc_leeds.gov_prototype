@@ -141,9 +141,16 @@ h3{
     border-top:1px solid #ddd;
     padding:20px 0;
 
+               @media screen and (max-width:767px){
+                 border-bottom:1px solid #ddd;
+            
+                }
+
     .header-left{
         width:100%;
         position:relative;
+
+     
 
 
        .logo {
@@ -158,7 +165,7 @@ h3{
     }
 
 
-        @media screen and (max-width:768px){
+        @media screen and (max-width:767px){
             text-align: center;
 
                 &:after{
@@ -184,7 +191,8 @@ h3{
         top:15px;
 
         @media (max-width:768px){
-            display:none
+           position:relative;
+           border:1px solid red;
         }
 
         
@@ -195,8 +203,8 @@ h3{
             .logo{
 
      @media (max-width: 767px){    
-            width:100%;
             background-position:center center;    
+            margin:30px auto;
         }
 
              @media (max-width: 500px){    

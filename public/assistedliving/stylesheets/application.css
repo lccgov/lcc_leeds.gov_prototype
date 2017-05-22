@@ -2206,7 +2206,6 @@ blockquote {
   margin: 50px 0; }
   @media (max-width: 500px) {
     .logo {
-      background-size: 100%;
       margin: 50px auto 0 auto; } }
 
 .header-left {
@@ -2222,10 +2221,12 @@ blockquote {
     text-align: right;
     padding-left: 150px;
     max-width: 700px; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 500px) {
       .header-left:after {
         position: relative;
-        padding: 0 30px 30px 30px; } }
+        padding: 0 30px 30px 30px;
+        top: 30px;
+        text-align: center; } }
 
 .sideNav {
   padding: 0px;
