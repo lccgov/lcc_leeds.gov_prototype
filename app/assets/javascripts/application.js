@@ -20,4 +20,15 @@
         scrollTop: $("#reveal").offset().top},
         'slow');
         }); 
+
+
+    
+        $(".show").click(function() {
+
+                 $(this).toggleClass("active");
+                 $("ul.secondaryNav").slideToggle("slow");
+                 $("ul.secondaryNav").toggleClass("active")
+                 event.preventDefault();
+            });
+
         

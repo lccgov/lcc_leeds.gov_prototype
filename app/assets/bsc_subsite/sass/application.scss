@@ -365,10 +365,10 @@ a.arrow {
             padding:0;
 
             &:first-of-type a{
-                  background: transparent;
-                  color:#333;
+              
+                  color:#fff;
                   padding:20px 15px;
-                  border-bottom:5px solid #00929F ;
+                  background:#00929F ;
 
                    &.active, &.active:hover {
                     color: #fff;

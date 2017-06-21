@@ -29,7 +29,7 @@ $font-secondary: 'Oswald', Helvetica, Arial;
 //$search-link:#333 ;
 
 // mainNav.scss
-$main-nav-background:#005953;
+$main-nav-background:#5f666f;
 //$main-nav-link:#fff ;
 
 //footer.scss
@@ -76,7 +76,7 @@ $arrow-color:#414141;
 //$content-border-color:#ddd;
 
 // section backgrounds
-$sectionHeader-background-color:#005953;
+$sectionHeader-background-color:#5f666f;
 $sectionOne-background-color:#fff;
 $sectionTwo-background-color:darken(#ecf0f1,5%);
 //$sectionThree-background-color:lighten($base-background-color, 3%) ;
@@ -169,11 +169,11 @@ p{
 }
 
 .header-nav-container .logo {
-    background:url(../images/leedsArtGallery-logo-w.svg) left center  no-repeat;
+    background:url(../images/LeedsArtGallery_Logo_RGB_White.png) left center  no-repeat;
     margin: 0px 0 0 -30px;
-    height:150px;
-    width:350px;
-    background-size:100%;
+    height:200px;
+    width:200px;
+    background-size:200px;
     
     &:hover{
         text-decoration:none;

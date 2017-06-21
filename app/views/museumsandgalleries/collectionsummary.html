@@ -1,0 +1,237 @@
+{% extends "layout_multi_sections.html" %}
+
+{% block page_title %}
+collections summary
+{% endblock %}
+
+
+  {% block css_register %}
+          <link href="{{ asset_path }}museumsandgalleries/stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+Collections summary
+{% endblock %}
+
+ {% block main_nav %}
+  {% include "includes/museums/main_nav.html" %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+
+{% endblock %}
+
+
+ {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
+ {% endblock %}
+
+{% block sectionOneContent %}
+{% endblock %}
+
+{% block pageContent %}
+
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+
+				
+
+
+    <h1>Archaeology</h1>
+    <div class="row">
+
+
+
+
+    
+            <div class="col-md-6">
+                    <div class="objectImageContainer">
+        <img alt="" src="http://www.leeds.gov.uk/museumsandgalleries/PublishingImages/TMS/Archaeology.jpg" style="BORDER: 0px solid; ">
+    </div>
+   
+                  <a class="btn btn-primary" href="/museumsandgalleries/pages/searchresults.aspx?department=7">
+                Browse the collection
+            </a>
+ <hr class="ms-rteElement-spacer" />
+
+                <div class="info">
+                    <div class="ExternalClass238E5ADAA3944EA59D2B3E2AC996521C"><div style="margin:0px;padding:0px;color:#333333;font-family:arial, helvetica, sans-serif;font-size:12.8px;background-color:#ffffff;">There are approximately 20,000 individual artefacts in the Leeds archaeological collections, including ancient Egyptian, Greek and Roman antiquities as well as native British, European and other overseas archaeological material. The historic core of the collections is composed of objects collected by the Leeds Philosophical and Literary Society between the early 19th century and 1921.</div><div style="margin:0px;padding:0px;color:#333333;font-family:arial, helvetica, sans-serif;font-size:12.8px;background-color:#ffffff;">These objects include sculpture from Greece and the Greek islands, marbles from Italy, and a diverse Egyptian collection including the mummy of the ancient Egyptian priest Nesyamun. The archaeological collection not only covers many thousands of years of history and prehistory but also represents a wide range of cultures and civilisations around the world. The archaeology collections are housed principally at The Discovery Centre where they can be viewed by appointment. Part of the Medieval collection is stored and displayed at Kirkstall Abbey.</div><div style="margin:0px;padding:0px;color:#333333;font-family:arial, helvetica, sans-serif;font-size:12.8px;background-color:#ffffff;">&nbsp;</div><div style="margin:0px;padding:0px;color:#333333;font-family:arial, helvetica, sans-serif;font-size:12.8px;background-color:#ffffff;">There are two galleries showcasing archaeology in the Leeds City Museum. The archaeology of the Leeds area can be explored in The Leeds Story, and treasures of Egypt, Greece and Rome are on display in Ancient Worlds.</div><div style="margin:0px;padding:0px;color:#333333;font-family:arial, helvetica, sans-serif;font-size:12.8px;background-color:#ffffff;">&nbsp;</div><div style="margin:0px;padding:0px;color:#333333;font-family:arial, helvetica, sans-serif;font-size:12.8px;background-color:#ffffff;">The end-date for archaeological collecting is the closure of Kirkstall Abbey in 1539, after which material is the responsibility of the Social History department. However, in cases where later material has been acquired by archaeological methods, i.e. by excavation, field walking or metal detecting, it will usually still become part of the archaeology collection. There is also archaeological material within the World Cultures collection, notably ancient Chinese, South America (particularly Peruvian), and Native American material.</div></div>
+                </div> 
+                 <hr class="ms-rteElement-spacer" />
+            </div>
+    
+    <div class="col-md-6">
+
+            <h2>Featured Objects</h2>
+            
+                <div class="collectionsPod">
+                    <a href="/museumsandgalleries/pages/object.aspx?oid=61291">
+                        <img class="imgPreview" data-src="http://tms.leeds.gov.uk/images/Archaeology/Roman Britain/Adel/LEEDM.D.1967.1018_tb.jpg" alt="Altar">
+                    </a>
+                    <h3>
+                        <a href="/museumsandgalleries/pages/object.aspx?oid=61291">Altar</a>
+                    </h3>
+                </div>
+            
+                <div class="collectionsPod">
+                    <a href="/museumsandgalleries/pages/object.aspx?oid=61479">
+                        <img class="imgPreview" data-src="http://tms.leeds.gov.uk/images/Archaeology/Ancient Greece/LEEDM.D.1967.1231_tb.jpg" alt="Altar">
+                    </a>
+                    <h3>
+                        <a href="/museumsandgalleries/pages/object.aspx?oid=61479">Altar</a>
+                    </h3>
+                </div>
+            
+                <div class="collectionsPod">
+                    <a href="/museumsandgalleries/pages/object.aspx?oid=56572">
+                        <img class="imgPreview" data-src="http://tms.leeds.gov.uk/images/Archaeology/Ancient Egypt/amulets/LEEDM.D.1960.0344 - lion amulet_tb.jpg" alt="Amulet">
+                    </a>
+                    <h3>
+                        <a href="/museumsandgalleries/pages/object.aspx?oid=56572">Amulet</a>
+                    </h3>
+                </div>
+            
+                <div class="collectionsPod">
+                    <a href="/museumsandgalleries/pages/object.aspx?oid=57864">
+                        <img class="imgPreview" data-src="http://tms.leeds.gov.uk/images/Archaeology/LEEDM.D.1964.0182 A_tb.jpg" alt="Axe">
+                    </a>
+                    <h3>
+                        <a href="/museumsandgalleries/pages/object.aspx?oid=57864">Axe</a>
+                    </h3>
+                </div>
+            
+    </div>
+
+<script>
+    (function ($) {
+        $(document).ready(function() {
+            $(".imgPreview").each(function() {
+                var missingImagePath = "/_layouts/images/museums/missingImage.jpg";
+
+                $(this).error(function() {
+                    if ($(this).attr("src") !== missingImagePath) {
+                        $(this).attr("src", missingImagePath);
+                    }
+                });
+
+                if ($(this).attr("data-src") === "") {
+                    $(this).attr("data-src", missingImagePath);
+                }
+
+                $(this).attr("src", $(this).attr("data-src"));
+            });
+        });
+    })(jQuery);
+</script>
+
+			</div>
+{% endblock %} 
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+
+
+
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+   {% include "includes/museums/footer_nav.html" %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+         {% include "includes/museums/re-userble-content-footer.html" %}
+ {% endblock %}

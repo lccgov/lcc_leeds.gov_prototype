@@ -1,0 +1,331 @@
+{% extends "layout_multi_sections-noH1.html" %}
+
+{% block page_title %}
+Object
+{% endblock %}
+
+
+  {% block css_register %}
+          <link href="{{ asset_path }}museumsandgalleries/stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+Altar
+{% endblock %}
+
+ {% block main_nav %}
+  {% include "includes/museums/main_nav.html" %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+
+{% endblock %}
+
+
+ {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
+ {% endblock %}
+
+{% block sectionOneContent %}
+{% endblock %}
+
+{% block pageContent %}
+
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <a class="btn btn-default" href="##" onclick="history.go(-1); return false;"><i class="fa fa-angle-left" aria-hidden="true"></i> Back to search results</a> 
+    </div>    
+        <hr  class="spacer" />
+    <div id="imgColumn" class="col-md-6">
+ 
+
+            
+            <div class="objectImageContainer" id="primaryImageContainer" style="display: block;">
+                <a rel="lightbox" href="http://tms.leeds.gov.uk/images/Archaeology/Roman Britain/Adel/LEEDM.D.1967.1018_lrg.jpg"><img id="mainImage" alt="Image of object" src="http://tms.leeds.gov.uk/images/Archaeology/Roman Britain/Adel/LEEDM.D.1967.1018_prv.jpg"></a>
+                
+                    <p>© Leeds Museums and Galleries
+Photograph taken by Norman Taylor</p>
+                
+	            <div class="imageLinks">
+                    <div class="enlargeImage">
+                    
+                        <a rel="lightbox" target="_blank" class="" href="http://tms.leeds.gov.uk/images/Archaeology/Roman Britain/Adel/LEEDM.D.1967.1018_lrg.jpg">Enlarge image <i class="fa fa-search" aria-hidden="true"></i></a>
+                            <a href="/museumsandgalleries/pages/CopyrightLicence.aspx?oid=61291" class="">Use this image</a>
+                    </div>
+                
+                    
+
+                    <div class="clear"></div>
+	
+                    
+                   
+                    
+                </div>
+            </div>         
+        
+    </div>
+
+    <div id="objectDetailsColumn" class="col-md-6">
+        <!-- Object details start -->
+        <h1>Altar</h1>
+        
+        <div class="info">
+            This altar is inscribed with a dedication to the goddess Brigantia by Cingetissa.&nbsp; Brigantia was a native goddess of the Iron Age Brigantes tribe who inhabited a large part of northern England.&nbsp;&nbsp;Brigantia was later adopted by the Romans who associated her with Victory or Minerva.&nbsp; A variety of religions were practised in Roman Britain and altars were frequently dedicated by individuals and set up in temples or as roadside shrines.
+        </div>
+        
+        <ul class="objectDetails">
+            
+                <li>
+                    <span>Accession number: </span>
+                    LEEDM.D.1967.1018
+                </li>
+            
+                <li>
+                    
+                        <span>Location: </span>
+                        City Museum
+                    
+                </li>
+            
+        </ul>
+
+        
+            <div class="furtherInformation">
+                <h3>Further information</h3>
+                <ul>
+                    
+                        <li>
+                            <span>Material: </span>
+                            stone; sandstone
+                        </li>
+                    
+                        <li>
+                            <span>Dimensions (H,W,D): </span>
+                            object: 356 x 229mm
+                        </li>
+                    
+                </ul>
+            </div>
+        
+
+
+        
+
+
+
+<script type="text/javascript">
+    (function($) {
+        var name, email, comment, allFields, tips;
+
+        function updateTips(t) {
+            tips
+                .text(t)
+                .addClass("ui-state-highlight");
+            setTimeout(function() {
+                tips.removeClass("ui-state-highlight", 1500);
+            }, 500);
+        }
+
+        function checkEntered(control, controlName) {
+            if (control.val() == '') {
+                control.addClass("ui-state-error");
+                updateTips(controlName + " is required");
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        function checkLength(control, controlName, min, max) {
+            if (control.val().length > max || control.val().length < min) {
+                control.addClass("ui-state-error");
+                updateTips(controlName + " must be between " + min + " and " + max + " characters long.");
+                return false;
+            } else
+                return true;
+
+        }
+
+        function checkRegexp(control, controlName, regexp) {
+            if (!(regexp.test(control.val()))) {
+                control.addClass("ui-state-error");
+                updateTips(controlName + " is invalid");
+                return false;
+            } else {
+                return true;
+            }
+        }
+
+        $(document).ready(function() {
+            name = $("#txtNameComments"),
+                email = $("#txtEmailComments"),
+                comment = $("#txtCommentComments"),
+                allFields = $([]).add(name).add(email).add(comment),
+                tips = $(".validateTips");
+
+            $("#dialog-form").dialog({
+                create: function(event) {
+                    $(event.target).dialog("widget").css({ "position": "fixed", "top": "20%", "left": "50%" });
+                },
+                autoOpen: false,
+                modal: true,
+                height: 450,
+                width: 300,
+                collision: "none",
+                buttons: {
+                    "Submit": function() {
+                        var valid = false;
+                        allFields.removeClass("ui-state-error");
+                        tips.text('');
+
+                        valid = checkEntered(name, "Name") &&
+                            checkLength(name, "Name", 2, 60) &&
+                            checkEntered(email, "Email address") &&
+                            checkRegexp(email, "Email address", /\S+@\S+\.\S+/) &&
+                            checkLength(comment, "Comment", 4, 1000);
+
+                        if (valid) {
+                            $($(this.parentElement).find("button")).hide();
+
+                            var data = { title: document.title, name: name.val(), email: email.val(), comment: comment.val() }
+
+                            CallServer(JSON.stringify(data));
+                            $("#ratingsMainComments").hide();
+                            updateTips("Many thanks for your comment! It will appear on this object's page after moderation.");
+                        }
+                    },
+                    Cancel: function() {
+                        $(this).dialog("close");
+                    }
+                },
+                close: function() {
+                    allFields.val("").removeClass("ui-state-error");
+                }
+            });
+
+            $("#create-user").button().click(function() {
+                $("#dialog-form").dialog("open");
+            });
+
+        });
+    })(jQuery);
+
+</script>
+
+    </div>
+</div>
+</a>
+{% endblock %} 
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+
+
+
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+   {% include "includes/museums/footer_nav.html" %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+         {% include "includes/museums/re-userble-content-footer.html" %}
+ {% endblock %}

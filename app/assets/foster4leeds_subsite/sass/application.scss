@@ -10,10 +10,10 @@
 
 //base.scss
 
-$base-background-color:#004D69;
+$base-background-color:#fff;
 //$base-font-size:16px ;
-$base-font-color:#fff ;
-$base-link-color:orange ;
+//$base-font-color:#333 ;
+//$base-link-color:#133E8D ;
 //$base-container-width:1500px ;
 //$btn-background-color:green ;
 //$font-primary: Arial ; // main font
@@ -28,11 +28,11 @@ $base-link-color:orange ;
 //$search-link:#333 ;
 
 // mainNav.scss
-$main-nav-background:#005878 ;
-$main-nav-link:orange;
+$main-nav-background:#D8DEE3 ;
+//$main-nav-link:#fff ;
 
 //footer.scss
-//$footer-font-color:#333 ;
+$footer-font-color:#333 ;
 //$footer-nav-selected-link:#133E8D ;
 
 // sectionSubsite.scss - socialamedia.scss
@@ -75,12 +75,12 @@ $main-nav-link:orange;
 //$content-border-color:#ddd;
 
 // section backgrounds
-//$sectionHeader-background-color:#efefef ;
-$sectionOne-background-color:#005878;
-$sectionTwo-background-color:darken($base-background-color, 5%) ;
-$sectionThree-background-color:$base-background-color;
-$sectionFour-background-color:darken($base-background-color, 5%)  ;
-$sectionFive-background-color:$base-background-color;
+$sectionHeader-background-color:#efefef ;
+$sectionOne-background-color:$base-background-color;
+//$sectionTwo-background-color:darken($base-background-color, 10%) ;
+//$sectionThree-background-color:lighten($base-background-color, 3%) ;
+//$sectionFour-background-color:lighten($base-background-color, 5%) ;
+//$sectionFive-background-color:darken($base-background-color, 5%) ;
 
 //iconlinks
 //$iconLinkIconColor:#FFC82E;
@@ -97,15 +97,6 @@ $news-pod-border-color:#ddd;
 //accordion
 $accordion-color:#ED943A;
 //$accordion-border-color:#ECF0F1;
-
-//mega-promo
-$promo-background-color:darken($base-background-color, 2%);
-$promo-arrow-color:#ED943A;
-$promo-header-color:#fff;
-$promo-secondary-color:#96b5d6;
-$promo-highlight-background-color:#AD033B;
-$promo-highlight-color:#fff;
-$promo-arrow:"\f054";
 
 @import 'mixins';
 @import 'variables';
@@ -135,74 +126,84 @@ $promo-arrow:"\f054";
 @import 'blocklinks';
 @import 'contentLink';
 @import 'docList';
+@import 'contentAssets';
 @import 'mega-promo';
 
-a {
-    color: orange;
-    &:hover{
-        color:darken(orange,50%);   
-    }
-
-}
-
-
-        .header-left{
-                width:100%;
-                position:relative;
-                text-align: center;
-
-                      &:after{
-                        content:'';
-                        right:0px;
-                        top:20px;
-                        color:#fff;
-                        position:absolute;
-                        background:url(../images/cfllogo.png) center top no-repeat;
-                        width:130px;
-                        height:180px;
-
-                        @media screen and (max-width:768px){
-                            position:relative;
-                            margin:0 auto;
-                            display:block;
-                        }
-                }        }
 
 
         
  .logo{
         height:100px;
-        width:600px;
-        background-size:100%;
+        width:400px;
         background:url(../images/logo.png) center top no-repeat;
-        background-size:100%;
         margin:60px 0;
 
-     
-
-            @media (max-width:768px){
-            margin-bottom:0px;
+        @media (max-width: 900px){
+            margin:20px auto;
+            width:350px;
+            background-size:350px;
+      
         }
 
-             @media (max-width:500px){
-            margin-bottom:0px;
-            height:60px;
+            @media (max-width:400px){
+             width:100%;
+            background-size:100%;
+      
+
         }
 
     }
 
-    .main-nav{
-        border-bottom:1px solid #004964;
-        border-top:1px solid #004964;
+
+
+// Main menu overides
+
+ .main-nav {
+
+    padding:10px 0 0px 0;
+  
+    li{
+        margin-right:2px;
+    }
+
+    a{
+        background:#ED943A;
+        &:hover{
+             background:darken(#ED943A, 15%) !important ;
+        }
+    }
+    ul ul {
+        background:darken(#ED943A, 15%);
+    }
+    li li 
+	{
+	margin-right:0;
+    border-color:darken(#ED943A,10%) !important ;
+
+	a {
+        background:transparent;
     }
 
 
-.ms-srch-sb > input {
-color:#414141;
+
+	}
+    @media screen and (max-width:768px){
+        background:#ED943A;
+    }
+
 }
 
-img {
-    max-width:100%;
+.main-nav ul li a.selected {
+    background:#ED943A !important;
 }
 
+
+ul.menu li a.main-menu {
+    background: #ED943A !important;
+}
+
+
+.logo-footer span {
+    background: url(../../images/lcclogo.svg) center center no-repeat;
+}
 

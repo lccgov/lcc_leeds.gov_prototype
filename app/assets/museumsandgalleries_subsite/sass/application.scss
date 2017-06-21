@@ -36,7 +36,7 @@ $main-nav-background:#c3102f;
 //$footer-nav-selected-link:#133E8D ;
 
 // sectionSubsite.scss - socialamedia.scss
-//$section-Background:#efefef ;
+$section-Background:#F6F7FA ;
 
 //  socialamedia.scss
 //$social-link-color:#337ab7 ;
@@ -195,762 +195,6 @@ p{
 
 /* start of reveal museums -----------------------------------------------------------------*/
 
-#reveal{
-    
-    background:#fff;
-    
-    .revealHeader{
-        text-align:right;
-        position:absolute;
-        right:0px;
-        z-index: 9;
-        a{
-            display:inline-block;
-            cursor:pointer;
-            position:relative;
-            background:lighten($main-nav-background,10%);
-            padding:20px 80px 20px 20px;
-            
-            span.textLink{
-                color:#fff;
-                text-transform:uppercase;
-                font-weight:bold;
-                display:block;
-                font-weight:600;
-                -webkit-transition: all ease .5s;
-                -moz-transition: all ease .5s;
-                transition: all ease .5s;
-            }//span textLink end
-            
-            span.icon{
-                display:block;
-                position:absolute;
-                top:0px;
-                right:20px;
-                -webkit-transition: all ease .5s;
-                -moz-transition: all ease .5s;
-                transition: all ease .5s;
-
-                 &:after {
-            font-family: FontAwesome;
-            font-size: 32px;
-            content: "\f067";
-            display: block;
-            margin:12px 0 0 3px;
-            color:#fff;
-        }
-            }//span icon end
-  
-        } //a end
-     
-    }//reveal header end
-    
-    #revealContent{
-        display:none;
-    }
-    
-    ul{
-        margin:0;
-        padding:90px 0 50px;
-        display:inline-block;
-        list-style: none;
-        text-align:center;
-           
-            li{
-                width:20%;
-                float:left;
-                border:1px solid #fff;
-                background:#fff;
-                min-height:310px;
-                position:relative;
-                
-                    h3{ 
-                        margin:0;
-                        padding: 20px 10px;
-                        background:rgba(39, 174, 96,1.0);
-                        
-                        span{
-                            position: absolute;
-                            width: 1px;
-                            height: 1px;
-                            padding: 0;
-                            margin: -1px;
-                            overflow: hidden;
-                            clip: rect(0, 0, 0, 0);
-                            border: 0;
-                        } // h3 span end
-                        
-                        img{
-                            margin:0 auto;
-                            max-width:100%;
-                            padding:0 60px 0 0;
-                        }//h3 img end
-                        
-                    }// h3 end
-
-                
-                    
-                    .rollover{
-                        position:relative;
-                        overflow: hidden;
-                        
-                        img{
-                            width:100%;
-                        }// rollover img end
-                        
-                        p{
-                            position:absolute;
-                            top:150px;
-                            right:0;
-                            width:100%;
-                            height:100%;
-                            font-weight:300;
-                            background:rgba(39, 174, 96,0.8);
-                            color:#fff;
-                            padding:15px;
-                            text-align:left;
-                            line-height:1.2em;
-                            font-size:$base-font-size;
-                            margin:0;
-                                -webkit-transition: all ease 1s;
-                            -moz-transition: all ease 1s;
-                            transition: all ease 1s;
-                        }// rollover p end
-                        
-                    }//rollover end
-                
-                a.link{
-                    
-                    span.link{
-                        position:absolute;
-                        bottom:0px;
-                        right:0;
-                        width:100%;
-                        background:#fff;
-                        padding:25px;
-                        text-align:left;
-                        color:#111;
-                        font-size:$base-font-size * 1.5;
-                        font-weight:700;
-                        text-transform:uppercase;
-                            -webkit-transition: all ease .5s;
-                        -moz-transition: all ease .5s;
-                        transition: all ease .5s;
-                    }//span link end
-                    
-                    span.arrow{
-                        background:#111;
-                        position:absolute;
-                        bottom:19px;
-                        right:20px;
-                        border-radius: 50%;
-                        width:50px;
-                        height:50px;
-                        z-index:2;
-                            -webkit-transition: all ease .5s;
-                        -moz-transition: all ease .5s;
-                        transition: all ease .5s;
- &:after {
-            font-family: FontAwesome;
-            font-size: 25px;
-            content: "\f105";
-            display: block;
-            color:#fff;
-            margin:7px 0 0 3px;
-        }
-                    }//span arrow end
-                                        
-                }//a end
-
-            }//li end
-
-    }//ul end
-    
-    a.revealClose{
-        text-align:center;
-        color:#bbb;
-        font-size:$base-font-size * 1.8;
-        padding:0 0 50px;
-        display:block;
-        cursor:pointer;
-        margin:0;
-        text-transform:uppercase;
-        width:100px;
-        margin:0 auto;
-        
-        span{
-            margin:0 auto 10px;
-            display:block;
-            width:35px;
-            height:35px;
-            background:#fff url(../images/revealClose.svg) center center no-repeat;
-        }//span end
-        
-    }//a reveal close end
-    
-}//reveal end
-
-/****************
-RESPONSIVE 990PX
-*****************/
-
-@media only screen and (max-width:990px) {
-
-    #reveal{
-
-        ul{
-            padding:40px 0 70px;
-
-                li{
-                    width:33.33%;
-                    min-height:150px;
-
-                      .rollover{
-                           display:none;
-                        }//rollover end
-
-                    a.link{
-
-                        span.link{
-                            position:relative;
-                            display:block;
-                            width:100%;
-                        }//span link end
-
-                    }//a link end
-
-                }//li end
-
-        }//ul end
-
-    }//reveal end
-       
-}//RESPONSIVE 990PX END
-
-/****************
-RESPONSIVE 500PX
-*****************/
-
-@media only screen and (max-width:600px) {
-
-    #reveal{
-        
-
-
-        ul{
-            padding:0 0 50px;
-
-                li{
-                    width:100%;
-                    min-height:0;
-
-                        h3{ 
-                            padding: 15px;
-                            text-align:left;
-                            cursor:pointer;
-
-                            span{
-                                position: relative;
-                                width: auto;
-                                height: auto;
-                                padding: 0;
-                                margin: 0;
-                                color:#fff;
-                                font-size:$base-font-size * 1.1;
-                            }//h3 span end
-
-                            img{
-                                display:none;
-                            }//h3 img end
-
-                        }//h3 end
-
-                        .revealInfo{
-                            display:none;
-                                -webkit-transition: all ease .5s;
-                            -moz-transition: all ease .5s;
-                            transition: all ease .5s;
-
-                            .rollover{
-                                display:block;
-
-                                img{
-                                    display:none;
-                                }// rollover img end
-
-                                p{
-                                    position:relative;
-                                    width:100%;
-                                    height:100%;
-                                    color:#fff;
-                                    padding:20px;
-                                    top:0;
-
-                                }// rollover p end
-
-                            }//rollover end
-
-                            a.link{    
-
-                                span.link{
-                                    padding: 15px;
-                                    font-size:$base-font-size * 1.4;
-                                }// span link end
-
-                                span.arrow{
-                                    bottom:10px;
-                                    right:10px;
-                                    padding:8px;
-                                }//span arrow end
-
-                            }//a link end
-
-                        }//reveal info end
-
-                }//li end
-
-        }//ul end
-
-    }//reveal end
-    
-    
-}//RESPONSIVE 500PX END
-
-/*************
-HOVER STATES
-*************/
-
-#reveal .revealHeader a:hover, #reveal .revealHeader a:focus{
-     text-decoration:none;
-}
-
-#reveal .revealHeader a:hover , #reveal .revealHeader a:focus{
-     background:darken($main-nav-background,10%) ;
-}
-
-#reveal .revealHeader a span.icon.active{
-    border-radius: 0;
-    top:0px;
-    
-    &:after{
-     content:'\f00d'   
-
-   }
-}
-
-#reveal a:hover, #reveal a:focus{
-    text-decoration:none !important;
-}
-
-
-#reveal ul li:hover .rollover p, #reveal ul li:focus .rollover p{
-    top:0px;
-}
-
-#reveal ul li a.link:hover span.link, #reveal ul li a.link:focus span.link{
-    background:#efefef;
-}
-
-#reveal a.revealClose:hover, #reveal a.revealClose:focus {
-    color:#000;
-}
-
-#reveal a.revealClose:hover span, #reveal a.revealClose:focus span{
-    background:#fff url(../img/revealCloseBlack.svg) center center no-repeat;
-}
-
-@media only screen and (max-width:600px) {
-    
-    #reveal .revealHeader a span.icon.active{
-        height:50px;
-    }
-    
-    #reveal ul li .revealInfo.active{
-        display:block;
-    }
-    
-}
-
-/*hover states end*/
-
-/****************
-li title style
-***************/
-
-#reveal ul li.title{
-    padding:25px;
-    background:#fff;
-    
-    h2{
-        text-transform:uppercase;
-        font-size:$base-font-size * 2;
-        color:#000;
-        font-weight:700;
-        margin-top:0px;
-    }
-    
-    p{
-        margin:0;
-        font-size:$base-font-size * 1.2;
-    }
-}
-
-/*li title style end*/
-
-@media only screen and (max-width:1200px) {
-
-    #reveal ul li.title{
-        padding:20px 10px;
-    }
-
-/*li title style end*/
-}
-
-@media only screen and (max-width:990px) {
-
-    #reveal ul li.title{
-        padding:20px 10px;
-        width:100%;
-    }
-
-/*li title style end*/
-}
-
-/***************
-li thwaite style
-****************/
-
-#reveal ul li.thwaite{
-    
-    h3{ 
-        background:$thwaite-base-color;
-
-    }
-
-    .rollover{
-                        
-        p{
-            background:rgba($thwaite-base-color, 0.8);
-        }
-
-    }//rollover end
-    
-    a.link{
-    
-        span.arrow{
-            background:$thwaite-base-color;
-        }
-        
-        &:hover span.arrow, &:focus span.arrow{
-            background:#111;
-        }
-        
-    }//a link end
-    
-}
-
-
-/***************
-li abbey style
-****************/
-
-#reveal ul li.abbey{
-    
-    h3{ 
-        background:$abbey-base-color;
-    }
-    
-    .rollover{
-                        
-        p{
-            background:rgba($abbey-base-color, 0.8);
-        }
-
-    }//rollover end
-    
-    a.link{
-    
-        span.arrow{
-            background:$abbey-base-color;
-        }
-        
-        &:hover span.arrow, &:focus span.arrow{
-            background:#111;
-        }
-        
-    }
-    
-}
-
-/*li abbey style end*/
-
-/***************
-li discovery style
-****************/
-
-#reveal ul li.discovery{
-
-    h3{ 
-        background:$discovery-base-color;
-    }
-
-    .rollover{
-                        
-        p{
-            background:rgba($discovery-base-color, 0.8);
-        }
-
-    }//rollover end
-    
-    a.link{
-    
-        span.arrow{
-            background:$discovery-base-color;
-        }
-        
-        &:hover span.arrow, &:focus span.arrow{
-            background:#111;
-        }
-        
-    }
-    
-}
-
-/*li discovery style end*/
-
-/***************
-li kirkstall style
-****************/
-
-#reveal ul li.kirkstall{
-
-    h3{ 
-        background:$kirkstall-base-color;
-    }
-    
-    .rollover{
-                        
-        p{
-            background:rgba($kirkstall-base-color, 0.8);
-        }
-
-    }//rollover end
-    
-    a.link{
-    
-        span.arrow{
-            background:$kirkstall-base-color;
-        }
-        
-        &:hover span.arrow, &:focus span.arrow{
-            background:#111;
-        }
-    }
-
-}
-
-/*li kirkstall style end*/
-
-/***************
-li lag style
-****************/
-
-#reveal ul li.lag{
-
-    h3{ 
-        background:$lag-base-color;
-    }
-        
-    .rollover{
-                        
-        p{
-            background:rgba($lag-base-color, 0.8);
-        }
-
-    }//rollover end
-    
-    a.link{
-    
-        span.arrow{
-            background:$lag-base-color;
-        }
-        
-        &:hover span.arrow, &:focus span.arrow{
-            background:#111;
-        }
-        
-    }
-    
-}
-
-/*li lag style end*/
-
-/***************
-li lim style
-****************/
-
-#reveal ul li.lim{
-
-    h3{ 
-        background:$lim-base-color;
-    }
-    
-    .rollover{
-                        
-        p{
-            background:rgba($lim-base-color, 0.8);
-        }
-
-    }//rollover end
-    
-    a.link{
-    
-        span.arrow{
-            background:$lim-base-color;
-        }
-        
-        &:hover span.arrow, &:focus span.arrow{
-            background:#111;
-        }
-        
-    }
-    
-}
-
-/*li lim style end*/
-
-/***************
-li temple style
-****************/
-
-#reveal ul li.temple{
-
-    h3{ 
-        background:$temple-base-color;
-    }
-
-    .rollover{
-                        
-        p{
-            background:rgba($temple-base-color, 0.8);
-        }
-
-    }//rollover end
-    
-    a.link{
-    
-        span.arrow{
-            background:$temple-base-color;
-        }
-        
-        &:hover span.arrow, &:focus span.arrow{
-            background:#111;
-        }
-        
-    }
-    
-}
-
-/*li temple style end*/
-
-/***************
-li city style
-****************/
-
-#reveal ul li.city{
-
-    h3{ 
-        background:$city-base-color;
-    }
-
-    .rollover{
-                        
-        p{
-            background:rgba($city-base-color, 0.8);
-        }
-
-    }//rollover end
-    
-    a.link{
-    
-        span.arrow{
-            background:$city-base-color;
-        }
-        
-        &:hover span.arrow, &:focus span.arrow{
-            background:#111;
-        }
-        
-    }
-    
-}
-
-/*li city style end*/
-
-/***************
-li lotherton style
-****************/
-
-#reveal ul li.lotherton{
-
-    h3{ 
-        background:$lotherton-base-color;
-    }
-
-    .rollover{
-                        
-        p{
-            background:rgba($lotherton-base-color, 0.8);
-        }
-
-    }//rollover end
-    
-    a.link{
-    
-        span.arrow{
-            background:$lotherton-base-color;
-        }
-        
-        &:hover span.arrow, &:focus span.arrow{
-            background:#111;
-        }
-        
-    }
-    
-}
-
-/*li lotherton style end*/
-
-
-/*********************
-additional styling
-********************/
-
-// additional styling to the li's to stop the title h2 & p displaying. It really needs to not display if the field is empty, some XSL coding needed!
-
-#reveal ul li.thwaite, #reveal ul li.abbey, #reveal ul li.discovery, #reveal ul li.kirkstall, #reveal ul li.lag, #reveal ul li.lim, #reveal ul li.temple, #reveal ul li.city, #reveal ul li.lotherton{
-    
-    
-    h2{
-        display:none;
-    }
-    
-    p{
-        display:none;
-    }
-    
-    .rollover{
-                        
-        p{
-            display:block;
-        }
-
-    }
-}
-
-/*additional styling end*/
-
-/* reaveal end -------------------------------------------------------------------------------------------------*/
 
 h2{
     span{
@@ -1076,3 +320,1126 @@ table td {
 .accordion-drawer a .fa{
    margin-right:10px;
 }
+
+
+.userControlMuseums {
+    width: 100%;
+    float: left
+}
+
+.userControlMuseums h2 {
+    margin: 10px 0
+}
+
+
+
+.button img {
+    display: none
+}
+
+.inputContainer input.searchInput,
+.userControlMuseums input.searchInput {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 44%;
+    float: left
+}
+
+.inputContainer {
+    padding: .7%;
+    width: 48%;
+    float: left
+}
+
+.inputContainer input.searchInput {
+    width: 60%
+}
+
+.userControlMuseums input.dateInput {
+    padding: 10px;
+    width: 27%;
+    float: left;
+    margin-right: 10px;
+    border-color: #ddd;
+    font-weight: 300
+}
+
+.userControlMuseums a {
+    background: url(/_layouts/images/standard/secondaryArrow.png) right 8px no-repeat;
+    margin-top: 5px;
+    padding: 5px 10px 10px 0;
+    display: inline-block;
+    font-size: .9em;
+    float: left;
+}
+
+.userControlMuseums .innerContainer {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background: #fff;
+    display: inline-block
+}
+
+.userControlMuseums .paging .innerContainer {
+    border: none;
+    padding: 0;
+    background: 0 0;
+    float: inherit;
+    margin-right: 0
+}
+
+.userControlMuseums .formContainerOuter {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 20px 0;
+    margin: 20px 0
+}
+
+.userControlMuseums .lcc-formContainer {
+    width: 100%;
+    padding: 0;
+    float: left
+}
+
+.userControlMuseums .lcc-caption {
+    width: 20%;
+    float: left;
+    text-align: right;
+    padding: 20px
+}
+
+.userControlMuseums .lcc-form {
+    width: 80%;
+    padding: 20px;
+    margin: 0;
+    float: right
+}
+
+.userControlMuseums .lcc-form select,
+.userControlMuseums .lcc-form select option {
+    margin-left: 5px;
+    min-width: 100px;
+    max-width: 150px;
+    font-size: 100%
+}
+
+.userControlMuseums .lcc-input {
+    width: 55%;
+    padding: 10px;
+    border-color: #ddd;
+    margin-right: 10px
+}
+
+.userControlMuseums .lcc-form select {
+    padding: 1%;
+    border: 1px solid #ddd
+}
+
+@media only screen and (max-width:768px) {
+    .userControlMuseums .lcc-caption,
+    .userControlMuseums .lcc-form {
+        width: 100%;
+        padding: 0;
+        text-align: left
+    }
+    .userControlMuseums .lcc-form {
+        padding: 0 0 20px
+    }
+    .userControlMuseums .lcc-input {
+        width: 100%
+    }
+}
+
+.userControlMuseums fieldset p {
+    color: #333;
+    display: inline-block
+}
+
+
+
+.collectionsPod {
+    background: $section-Background;
+    width: 22%;
+    float: left;
+    margin: 10px 1% 10px 0;
+    padding: 20px;
+    text-align: center
+
+
+}
+
+.collectionsPod a {
+    text-align: left
+}
+
+.col-md-6 .collectionsPod {
+    width: 48%;
+    float: left;
+    margin: 1%;
+    padding: 20px
+}
+
+.collectionsPod img {
+    max-width: 100%;
+    max-height: 110px;
+    min-height: 110px;
+    text-align: center;
+    border: 0
+}
+
+.collectionsPod h3 {
+    font-weight: 400;
+    display: block;
+    border-top: 1px solid #ddd;
+    margin: 10px 0 0;
+    padding: 0;
+    font-size: 22px
+}
+
+.collectionsPod h3 a {
+    display: block;
+    color: #333;
+    padding: 15px 10px
+}
+
+.collectionsPod h3 a:hover {
+    background: #ddd
+}
+
+.collectionsPod p a {
+    padding: 5px;
+    display: inline-block;
+    color: #333
+}
+
+.objectImagesContainer {
+    text-align: center
+}
+
+
+.object {
+    width: 100%;
+    padding: 20px;
+    background:$section-Background;
+    float: left;
+    margin: 10px 0
+}
+
+.object a {
+    float: left;
+    background: 0 0;
+    padding: 0 10px 0 0;
+    margin: 0
+}
+
+.object .imageContainer {
+    width: 25%;
+    padding: 0 20px;
+    background: #fff;
+    float: left;
+    min-height: 150px
+}
+
+.thumbNailView {
+    margin: 0 0 10px;
+    float: left;
+    width: 100%
+}
+
+.thumbNailView li {
+    width: 25%;
+    padding: 10px!important;
+    float: left
+}
+
+.thumbNailView li .object {
+    width: 100%
+}
+
+@media only screen and (max-width:1000px) {
+    .thumbNailView li {
+        width: 50%
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .thumbNailView li {
+        width: 100%;
+        padding: 0!important
+    }
+}
+
+.thumbNailView .object p {
+    display: none
+}
+
+.thumbNailView .object .imageContainer {
+    width: 100%
+}
+
+.object .imageContainer a {
+    text-align: center;
+    width: 100%
+}
+
+.object a img {
+    max-width: 100%;
+    padding: 0;
+    text-align: center;
+    display: block;
+    height: 120px;
+    margin: 20px auto
+}
+
+.thumbNailView .object a {
+    max-width: 100%
+}
+
+.object h3 {
+    background: 0 0;
+    display: inline-block;
+    padding: 0 0 0 20px;
+    font-size: 25px;
+    margin: 0;
+    width: 75%
+}
+
+.object h3 a {
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    padding: 10px 0;
+    display: block;
+    width: 100%
+}
+
+.thumbNailView .object h3 {
+    background: 0 0;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0;
+    width: 100%;
+    padding: 0
+}
+
+.thumbNailView .object h3 a {
+    border-bottom: none
+}
+
+.object p {
+    width: 75%;
+    display: inline-block;
+    padding: 0 0 0 20px
+}
+
+@media only screen and (max-width:500px) {
+    .object .imageContainer,
+    .object h3,
+    .object p {
+        padding: 0;
+        width: 100%
+    }
+}
+
+.objectHeader {
+    width: 70%
+}
+
+.thumbNailView .objectHeader {
+    width: 100%
+}
+
+.userControlMuseums .pagingContainer {
+    border: 1px solid #ddd;
+    padding: 1.5%;
+    background: #fff;
+    width: 97%;
+    float: left
+}
+
+.userControlMuseums ul.paging {
+    list-style: none;
+    padding: 1% 1% 1% 12%;
+    margin: 0;
+    border: none;
+    float: left;
+    width: 87%;
+    background: #e8e8e8
+}
+
+.userControlMuseums ul.paging li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    text-align: center
+}
+
+.userControlMuseums ul.paging li a {
+    border: 1px solid #999;
+    margin-right: 2px;
+    background: #fff;
+    padding: 5px 10px;
+    color: #c41231
+}
+
+.userControlMuseums ul.paging li.arrowImage a {
+    background: #c41231;
+    border-color: #c41231
+}
+
+.userControlMuseums ul.paging li a:hover {
+    background: #333;
+    color: #fff;
+    border-color: #333
+}
+
+.thumbNailView .object p {
+    width: 100%
+}
+
+.objectNumberNavContainer {
+    float: right;
+    width: 50%;
+    padding: 0;
+    margin-bottom: 20px
+}
+
+.objectNumber {
+    float: left;
+    width: 50%;
+    padding: 2% 0 2% 1%
+}
+
+.objectImageContainer {
+    border: 1px solid #ddd;
+    text-align: center;
+    margin:1em 0;
+}
+
+.objectImageContainer p {
+    padding: 5px;
+    border-top:1px solid #ddd;
+    display:block;
+    margin:0px;
+}
+
+.objectImageContainer img,
+.objectImageContainerFull img {
+    max-width: 100%;
+    border: 0;
+    margin: 0 auto;
+    padding: 30px
+}
+
+
+
+.objectImageContainer .imageLinks .enlargeImage {
+    width: 100%;
+    margin: 0;
+    float:left;
+    display: flex; /* or inline-flex */
+     flex-direction: row |;
+
+   a {
+ width:50%;
+ text-align: center;
+ display:block;
+ float:left;
+ border-top:1px solid #ddd;
+ padding:20px;
+ border-left:1px solid #ddd;
+
+
+ &:first-of-type{
+     background:#fff;
+     border-left:none;
+ }
+
+ &:hover{
+     background:#efefef;
+ }
+}
+}
+
+
+.objectInfoContainer h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #666;
+    text-transform: uppercase
+}
+
+.furtherInformation li span,
+ul.objectDetails li span {
+    color: #000;
+    font-weight: 700
+}
+
+.objectInfoContainer p {
+    margin-bottom: 10px
+}
+
+ul.objectDetails {
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding: 0
+}
+
+ul.objectDetails li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0
+}
+
+.furtherInformation {
+    width: 100%;
+    background: $section-Background;
+    margin: 20px 0;
+    padding: 20px 20px 10px
+}
+
+.furtherInformation h3 {
+    margin: 0;
+    padding: 0 0 20px
+}
+
+.furtherInformation ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0
+}
+
+.furtherInformation li {
+    border-top: 1px solid #ddd;
+    padding: 15px 0
+}
+
+
+
+.showLess,
+.showMore {
+    color: #039;
+    font-size: 1em;
+    cursor: pointer
+}
+
+.objectInfoContainer .hide {
+    display: none
+}
+
+.showMore {
+    background: url(/_layouts/images/standard/plus.gif) right 0 no-repeat;
+    display: inline;
+    padding-right: 20px
+}
+
+.showLess {
+    background: url(/_layouts/images/standard/minus.gif) right 0 no-repeat
+}
+
+.paging {
+    width: 100%
+}
+
+.content li {
+    padding: 0;
+    list-style: none
+}
+
+.page_link_container {
+    text-align: center;
+    float: left
+}
+
+.page_link_container:hover {
+    background: #333;
+    color: #fff;
+    border-color: #333
+}
+
+.page_link {
+    display: inline-block;
+    width: 100%
+}
+
+.pagingText.info_text {
+    clear: left;
+    float: left
+}
+
+.alt_page_navigation a,
+.page_navigation a {
+    float: left;
+    list-style: none;
+    padding: 10px;
+    color: #333;
+    border-left: 1px solid #efefef;
+    margin: 0
+}
+
+.page_navigation,
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset,
+.ui-dialog .ui-dialog-titlebar-close {
+    float: right
+}
+
+.alt_page_navigation a:hover,
+.page_navigation a:hover,
+a.active_page {
+    background: #666;
+    color: #fff;
+    border-color: #666
+}
+
+.page_navigation a.disabled {
+    background-color: #efefef;
+    color: #999;
+    pointer-events: none
+}
+
+a.first_last_link:first-of-type {
+    border: none
+}
+
+.page_navigation {
+    border: 1px solid #ddd;
+    text-align: right;
+    border-radius: 3px;
+    margin: 10px 0
+}
+
+.page_navigation:first-of-type {
+    margin: 0 0 10px
+}
+
+@media only screen and (max-width:768px) {
+    .page_link_container {
+        display: none
+    }
+    .page_navigation {
+        width: 100%
+    }
+    .page_navigation a {
+        width: 25%;
+        text-align: center
+    }
+}
+
+.ui-dialog .ui-state-error {
+    padding: .3em
+}
+
+.validateTips {
+    border: 1px solid transparent;
+    padding: .3em;
+    margin-top: 5px
+}
+
+#availableFiltersOuterContainer,
+#currentFiltersOuterContainer {
+    display: none
+}
+
+.filterRemoveButton {
+    display: inline-block!important;
+    padding: 2px 10px 2px 5px!important;
+    color: #fff;
+    margin-bottom: 2px!important;
+    float: right;
+}
+
+.advSearch {
+    clear: left
+}
+
+.tmsError {
+    width: 272px!important;
+    margin-left: 0!important
+}
+
+#tmsSearchContainer h2 {
+    padding-top: 0
+}
+
+#tmsSearchContainer a {
+    clear: both
+}
+
+#restStatusText {
+    display: none
+}
+
+.currentFilter {
+    padding: 7px 0 7px 10px;
+    margin: 0 10px;
+    display: block;
+    border: 1px solid #DDD;
+    background: #fff;
+    font-weight: 400;
+    clear: right
+}
+
+#resultsSpinner {
+    width: 100%;
+    height: 300px;
+    background-color: #fff;
+    z-index: 100000;
+    display: block
+}
+
+#spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -20px
+}
+
+#errorText {
+    width: 200px;
+    margin-left: 0
+}
+
+.ui-widget-content {
+    border: 5px solid #333;
+    background: #fff;
+    width: 90%;
+    padding: 5%
+}
+
+.ui-widget-content .userControlMuseums {
+    margin-bottom: 0
+}
+
+.ui-widget-content fieldset {
+    border: none
+}
+
+.ui-widget-content fieldset legend {
+    font-weight: 700;
+    margin-bottom: 5px
+}
+
+.ui-widget-content .lcc-caption {
+    padding: 2% 0 2% 5%;
+    width: 90%;
+    text-align: left
+}
+
+.ui-widget-content .lcc-form {
+    margin: 0 3% 2%;
+    padding: 3%;
+    width: 88%
+}
+
+.ui-dialog-buttonset .ui-button,
+.ui-widget-header a {
+    background: #C41231;
+    padding: 10px;
+    color: #fff;
+    border: none
+}
+
+.ui-dialog-buttonset .ui-button:hover,
+.ui-widget-header a:hover {
+    background: #333
+}
+
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+    border: 1px solid #000;
+    background: url(images/ui-bg_glass_55_fbf9ee_1x400.png) 50% 50% repeat-x #fbf9ee;
+    color: #363636
+}
+
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+    color: #363636
+}
+
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+    border: 1px solid red;
+    background: #fef1ec;
+    color: #cd0a0a
+}
+
+.ui-state-error a,
+.ui-state-error-text,
+.ui-widget-content .ui-state-error a,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error a,
+.ui-widget-header .ui-state-error-text {
+    color: #cd0a0a
+}
+
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+    font-weight: 700
+}
+
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+    opacity: .7;
+    filter: Alpha(Opacity=70);
+    font-weight: 400
+}
+
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+    opacity: .35;
+    filter: Alpha(Opacity=35);
+    background-image: none
+}
+
+.ui-state-disabled .ui-icon {
+    filter: Alpha(Opacity=35)
+}
+
+.ui-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .2em;
+    outline: 0
+}
+
+.ui-dialog .ui-dialog-content {
+    position: relative;
+    border: 0;
+    padding: 0;
+    background: 0 0;
+    overflow: auto;
+    width: 100%!important
+}
+
+.ui-dialog .ui-dialog-buttonpane {
+    text-align: left;
+    background-image: none;
+    padding: 0;
+    border: none;
+    width: 100%
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+    margin: .5em .4em .5em 0;
+    cursor: pointer
+}
+
+.ui-widget-overlay {
+    opacity: .9!important;
+    filter: Alpha(Opacity=90)!important;
+    background: #000;
+    z-index: 3000;
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.six .blogCommentsControl fieldset .column {
+    width: 98%
+}
+
+.stButton .stLarge {
+    background: 0 0!important;
+    height: 17px!important
+}
+
+span.st_sharethis_large {
+    display: block
+}
+
+#paging {
+    width: 100%
+}
+
+
+
+label {
+   font-weight: 200;
+}
+
+
+
+
+
+
+
+.licenceOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(/_layouts/images/museums/inactive.png);
+    display: block
+}
+
+.licenceOverlay span {
+    position: absolute;
+    top: 48px;
+    width: 86%;
+    padding: 2%;
+    margin: 5%;
+    font-size: .8em;
+    background: #fff;
+    border: 1px solid #000
+}
+
+
+.objectImageContainer a.standard {
+    background: 0 0;
+    margin-top: 0;
+    padding: 0;
+    display: inline;
+    font-size: .9em;
+    float: none;
+    color: #039
+}
+
+.objectInfoContainer .info p {
+    font-size: 1em
+}
+
+#dialog .inner {
+    margin-top: 10px;
+    font-size: .8em
+}
+
+#dialog .thumbImg {
+    background: #ddd;
+    border: 1px solid #ccc;
+    float: left;
+    margin: 0 20px 20px 0;
+    padding: 5% 5.2% 5% 5%;
+    width: 30%
+}
+
+
+
+
+
+
+.collectionBrowserObjectPackage {
+    background: #efefef;
+    width: 100%;
+    height: 400px;
+    float: left;
+    margin: 30px 0;
+    position: relative
+}
+
+.collectionBrowserObjectPackage img {
+    margin: 0 auto;
+    max-width: 96%;
+    text-align: center;
+    max-height: 200px
+}
+
+
+
+
+ul.secondaryNav {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    float: left;
+    font-size: 1em;
+    list-style: none;
+    padding: 0
+}
+
+ul.secondaryNav h2,
+ul.secondaryNav h3 {
+    margin: 0;
+    font-size: 20px;
+    padding: 15px
+}
+
+ul.secondaryNav h2 {
+    font-size: 25px;
+    border-top: 1px solid #ddd
+}
+
+ul.secondaryNav li {
+    margin-bottom: 10px
+}
+
+ul.secondaryNav li span {
+    width: 30px;
+    height: 38px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-indent: -5000%;
+    cursor: pointer
+}
+
+ul.secondaryNav a {
+    text-decoration: none;
+    padding: 10px 0;
+    display: inline-block;
+    color: #333
+}
+
+ul.secondaryNav ul {
+    width: 100%;
+    margin: 0;
+    padding: 5px 0;
+    list-style: none
+}
+
+ul.secondaryNav ul li {
+    margin: 0;
+    background: 0 0;
+    border-bottom: none
+}
+
+ul.secondaryNav ul li a {
+    padding: 10px;
+    margin: 0 10px;
+    display: block;
+    font-weight: 300
+}
+
+ul.secondaryNav ul li.active {
+    padding: 2px 2px 2px 0
+}
+
+ul.secondaryNav ul li.active a {
+    padding: 9px 0 9px 20px;
+    margin: 0 10px 0 0
+}
+
+ul.secondaryNav li {
+    border-bottom: 1px solid #DDD
+}
+
+
+
+ul.secondaryNav ul {
+    border-top: 1px solid #DDD
+}
+
+ul.secondaryNav ul li a {
+    border-top: 1px solid #ddd
+}
+
+ul.secondaryNav ul li a:hover {
+    background: #ddd
+}
+
+.filterRemoveButton:before,
+a.show_less:before,
+a.show_more:before {
+    font-family: FontAwesome;
+    font-size: 18px;
+    content: "\f067";
+    display: inline-block;
+    right: 10px;
+    top: 50%;
+    padding-right: 10px;
+    color: #c3102f;
+}
+
+.filterRemoveButton:before,
+a.show_less:before {
+    content: "\f068"
+}
+
+ul.secondaryNav a.filterRemoveButton {
+    border-top: none;
+    color: #039
+}
+
+ul.content {
+    padding: 0;
+    width: 100%
+}
+
+.lcc-formContainer input.button {
+    background: #AD0529;
+    box-shadow: inset 0 1px 1px #df0635;
+    border: none;
+    width: auto;
+    float: right;
+    color: #fff;
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 20px
+}
+
+.lcc-formContainer input.button:visited:after,
+.lcc-formContainer input:after {
+    font-family: FontAwesome;
+    font-size: 18px;
+    line-height: 2.8em;
+    content: "\f105";
+    position: absolute;
+    right: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    padding: 0 13px!important;
+    top: 0
+}
+
+#resultControls.formContainerOuter {
+    padding: 0
+}
+
+#resultControls.formContainerOuter .floatRight {
+    float: right
+}
+
+#resultControls.formContainerOuter .lcc-form {
+    padding: 20px 0
+}
+
+#details{
+    display:block; 
+    background:red;
+}
+
+
+    @media screen and(max-width:990px){
+    ul.secondaryNav{
+       display:none;
+
+       &.active{
+           display:block;
+       }
+    }
+}
+
+
+    .btn.show{
+
+        @media screen and(min-width:991px){
+            display:none!important;
+         }
+     
+     margin-bottom:20px;
+
+        &:after {
+    font-family: FontAwesome;
+    content: "\f067";
+    display:block;
+    background:transparent;
+    line-height:3.4em;
+}
+
+   &.active{
+       margin-bottom:0px;
+         &:after {
+          content: "\f068";
+
+         }
+   }
+    }

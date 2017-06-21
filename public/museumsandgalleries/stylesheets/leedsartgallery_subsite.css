@@ -1,14 +1,35 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,700,800,400,600");
-a {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-break: break-word; }
+.three-columns {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px; }
+  @media (max-width: 990px) {
+    .three-columns {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2; } }
+  @media (max-width: 767px) {
+    .three-columns {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1; } }
 
-.btn, .button {
-  white-space: normal !important; }
+.two-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px; }
+  @media (max-width: 767px) {
+    .two-columns {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1; } }
 
 /*********************************************
 Base.sass variables
@@ -43,7 +64,7 @@ body {
   max-width: 1500px; }
 
 .sectionHeader {
-  background: #005953; }
+  background: #5f666f; }
 
 .sectionOne {
   background: #fff; }
@@ -85,29 +106,29 @@ body {
   color: #fff; }
 
 .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, a.ms-tv-item:hover, a.ms-tv-header:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
-  background-color: #00403b;
+  background-color: #535961;
   color: #fff; }
 
 .main-nav {
-  background: #005953; }
+  background: #5f666f; }
   .main-nav ul {
     width: 100%; }
     .main-nav ul li a {
       color: #fff; }
     .main-nav ul li a:hover, .main-nav ul li a:focus {
-      background-color: #00403b;
+      background-color: #535961;
       color: #fff; }
     .main-nav ul li a.selected {
-      background: #004540 !important; }
+      background: #565c64 !important; }
   .main-nav ul ul {
-    background-color: #00403b;
-    background-color: #00403b; }
+    background-color: #535961;
+    background-color: #535961; }
     .main-nav ul ul li {
-      border-bottom: 1px solid #00302d; }
+      border-bottom: 1px solid #4c5259; }
       .main-nav ul ul li:first-of-type {
-        border-top: 1px solid #00302d; }
+        border-top: 1px solid #4c5259; }
       .main-nav ul ul li a:hover {
-        background: #00302d; }
+        background: #4c5259; }
 
 /*********************************************
  End mainMenu.sass variables
@@ -118,7 +139,7 @@ body {
 ul.menu li a {
   color: #337ab7; }
   ul.menu li a:hover, ul.menu li a:focus {
-    background: #005953 !important; }
+    background: #5f666f !important; }
   ul.menu li a.main-menu, ul.menu li a.search {
     background: #fff; }
   ul.menu li a.search {
@@ -126,10 +147,10 @@ ul.menu li a {
   ul.menu li a.search.active, ul.menu li a.search:hover, ul.menu li a.search:focus {
     background: #bdc3c7 !important; }
   ul.menu li a.main-menu {
-    background: #005953 !important;
+    background: #5f666f !important;
     color: #fff; }
   ul.menu li a.main-menu:hover, ul.menu li a.main-menu:focus, ul.menu li a.main-menu.active {
-    background: #00302d; }
+    background: #4c5259; }
 
 /*********************************************
  End ResponsiveMenu.sass variables
@@ -138,11 +159,11 @@ ul.menu li a {
  footer.sass variables
 *********************************************/
 footer.main {
-  background: #005953; }
+  background: #5f666f; }
   footer.main p {
     color: #fff; }
   footer.main .footer {
-    background: #005953; }
+    background: #5f666f; }
     footer.main .footer ul li a {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
       color: #fff !important; }
@@ -165,10 +186,10 @@ footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twit
 
 footer.main .socialBookmarks a:hover:after {
   background: #fff;
-  color: #005953; }
+  color: #5f666f; }
 
 footer.main .footerGlobal {
-  background: #004540; }
+  background: #5f666f; }
 
 .footerGlobal nav ul {
   list-style: none;
@@ -1187,10 +1208,13 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
 .col-md-8 #SearchBox {
   border: 1px solid #ddd;
   padding: 10px 10px 0 10px;
-  width: 100%;
-  max-width: 600px; }
+  width: 100%; }
   .col-md-8 #SearchBox .ms-srch-sbLarge > .ms-srch-sb-searchLink {
     float: right; }
+
+.col-md-8 .ms-srch-sb-borderFocused {
+  border: none !important;
+  width: 100%; }
 
 .col-md-8 .ms-srch-item-body {
   overflow: visible;
@@ -1210,8 +1234,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   margin: -9px 0 9px -5px; }
 
 .col-md-8 .ms-srch-sbLarge-fullWidth {
-  width: 80%;
-  max-width: 500px; }
+  width: 80%; }
 
 @media (max-width: 1024px) {
   .col-md-8 .col-md-8 .ms-srch-hover-outerContainer {
@@ -1568,8 +1591,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   padding: 2em 1.75em;
   margin: 1em 0;
   background: #fff; }
-  .highlighted border
-img {
+  .highlighted img {
     max-width: 100%; }
   .highlighted.section {
     margin: 0px; }
@@ -1611,9 +1633,7 @@ img {
         color: #f6f6f6; }
   @media screen and (max-width: 400px) {
     .highlighted {
-      padding: 1.5em 1em; }
-      .highlighted em {
-        font-size: 50px; } }
+      padding: 1.5em 1em; } }
 
 .imgRight {
   float: right;
@@ -1633,9 +1653,9 @@ img {
       max-width: 100%;
       margin: 0px 0 30px 0; } }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .lead {
-    font-size: 25px !important; } }
+    font-size: 21px; } }
 
 .mega-promo {
   display: -webkit-box;
@@ -1662,11 +1682,6 @@ img {
     -ms-flex-align-items: stretch;
     -webkit-align-items: stretch;
     align-items: stretch;
-    -webkit-box-flex: 1 1 auto;
-    -moz-box-flex: 1 1 auto;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
     margin-bottom: 15px; }
     .mega-promo .mega-promo__item.external a:after {
       content: "\f08e";
@@ -2174,17 +2189,20 @@ div.promo {
 .promoListWebpart ul li a .secondaryInfo {
   width: 100%; }
 
-.btn {
-  font-size: 25px;
-  text-align: left; }
-  .btn span {
+.btn, .button {
+  font-size: 20px;
+  text-align: left;
+  padding-right: 20px; }
+  .btn:after, .button:after {
+    display: none; }
+  .btn span, .button span {
     display: block;
     width: 100%;
     font-size: 20px; }
-  .btn.block {
+  .btn.block, .button.block {
     display: block;
     margin-bottom: 30px; }
-    .btn.block:after {
+    .btn.block:after, .button.block:after {
       background: transparent;
       border-left: 1px solid #006700;
       padding: 4.5% 0px !important;
@@ -2192,7 +2210,7 @@ div.promo {
       min-width: 65px;
       text-align: center;
       line-height: 1em; }
-    .btn.block span {
+    .btn.block span, .button.block span {
       font-weight: 200; }
 
 ul.footerLogos {
@@ -2374,11 +2392,11 @@ p {
   font-family: "Oswald", Helvetica, Arial; }
 
 .header-nav-container .logo {
-  background: url(../images/leedsArtGallery-logo-w.svg) left center no-repeat;
+  background: url(../images/LeedsArtGallery_Logo_RGB_White.png) left center no-repeat;
   margin: 0px 0 0 -30px;
-  height: 150px;
-  width: 350px;
-  background-size: 100%; }
+  height: 200px;
+  width: 200px;
+  background-size: 200px; }
   .header-nav-container .logo:hover {
     text-decoration: none; }
   @media screen and (max-width: 768px) {
@@ -2387,6 +2405,6 @@ p {
       margin: 0 auto; } }
 
 .main-nav {
-  border-top: 1px solid #00403b; }
+  border-top: 1px solid #535961; }
   .main-nav ul li a {
     font-size: 20px; }

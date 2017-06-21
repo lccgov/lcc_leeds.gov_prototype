@@ -1,0 +1,267 @@
+{% extends "layout_multi_sections.html" %}
+
+{% block page_title %}
+objectcopyright
+{% endblock %}
+
+
+  {% block css_register %}
+          <link href="{{ asset_path }}museumsandgalleries/stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+Collections List
+{% endblock %}
+
+ {% block main_nav %}
+  {% include "includes/museums/main_nav.html" %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+
+{% endblock %}
+
+
+ {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
+ {% endblock %}
+
+{% block sectionOneContent %}
+{% endblock %}
+
+{% block pageContent %}
+
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+<div class="row">
+    <div class="col-md-12">
+    <h1>Use this image</h1>
+                   <a class="btn btn-default" href="##" onclick="history.go(-1); return false;">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i> Back to image</a>
+                    </div>
+                    
+    <div class="col-md-4">
+
+            <input type="hidden" name="ctl00$PlaceHolderMain$CopyrightLicence$hdnObjectId" id="ctl00_PlaceHolderMain_CopyrightLicence_hdnObjectId" value="61479">
+            <div class="objectImageContainer">
+                <img id="ctl00_PlaceHolderMain_CopyrightLicence_imgThumb" src="http://tms.leeds.gov.uk/images/Archaeology/Ancient%20Greece/LEEDM.D.1967.1231_prv.jpg" style="border-width:0px;">
+            </div>
+
+            <h3>
+                Altar
+            </h3>
+            <p>
+                <strong>Accession number:</strong><br>
+                LEEDM.D.1967.1231
+            </p>
+            <p>
+                © Leeds Museums and Galleries
+Photograph taken by Norman Taylor
+            </p>
+
+
+            <h2>Contact us</h2>
+     
+    <a href="mailto:web@leeds.gov.uk" class="btn btn-default"><i class="fa fa-envelope-o" aria-hidden="true"></i> Email us</a>
+
+
+    </div>
+    <div id="ctl00_PlaceHolderMain_CopyrightLicence_pnlCreativeCommons" class="col-md-4">
+
+     
+	
+            
+
+ 
+   
+            <div id="ctl00_PlaceHolderMain_CopyrightLicence_pnlDownloadForm">
+		
+                <h2>Creative Commons</h2>
+
+                <p>A creative commons license allows you to use this image for non-commercial projects such as blogs, school/college work and family history research.</p>
+            <p>Image sizes will be a maximum of 800pixels and 72dpi.</p>
+
+                <p>In order to download this image you must agree to the 
+                    <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">terms and conditions</a> and complete the following. 
+                    <a style="cursor:pointer" id="btnWhy" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button"><span class="ui-button-text">Why?</span></a>
+                </p>
+
+             <hr />   
+
+            <h3>How do I download the image?</h3>
+                
+                
+                
+                <ul id="ccResults"></ul>
+
+                    <label><input id="ctl00_PlaceHolderMain_CopyrightLicence_cbTerms" type="checkbox" name="ctl00$PlaceHolderMain$CopyrightLicence$cbTerms">Tick here to confirm you have read and agree to the <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/">full agreement terms and conditions</a></label>
+                    <br>
+                    <span id="ctl00_PlaceHolderMain_CopyrightLicence_CheckBoxValidator" style="color:Red;visibility:hidden;">Please accept the terms and conditions</span>
+        
+  
+      
+                    <div class="form-group"
+                    <label for="ctl00_PlaceHolderMain_CopyrightLicence_fname">First name</label>
+                    <span id="ctl00_PlaceHolderMain_CopyrightLicence_RequiredFieldValidator1" style="color:Red;display:none;">Please enter your first name</span>
+                    <input name="ctl00$PlaceHolderMain$CopyrightLicence$fname" type="text" id="ctl00_PlaceHolderMain_CopyrightLicence_fname"></div>
+                    
+                     <div class="form-group"
+                    <label for="ctl00_PlaceHolderMain_CopyrightLicence_sname">Surname</label>
+                    <span id="ctl00_PlaceHolderMain_CopyrightLicence_RequiredFieldValidator5" style="color:Red;display:none;">Please enter your surname</span>
+                    <input name="ctl00$PlaceHolderMain$CopyrightLicence$sname" type="text" id="ctl00_PlaceHolderMain_CopyrightLicence_sname">
+                     </div>
+                     <div class="form-group"
+                    <label for="ctl00_PlaceHolderMain_CopyrightLicence_email">Email address</label>
+                    <span id="ctl00_PlaceHolderMain_CopyrightLicence_RequiredFieldValidator4" style="color:Red;display:none;">Please enter an email address</span>
+                    <span id="ctl00_PlaceHolderMain_CopyrightLicence_RequiredFieldValidator2" style="color:Red;display:none;">Invalid email address</span>
+                    <input name="ctl00$PlaceHolderMain$CopyrightLicence$email" type="text" id="ctl00_PlaceHolderMain_CopyrightLicence_email">
+                    </div>
+                     <div class="form-group"
+                    <label for="ctl00_PlaceHolderMain_CopyrightLicence_postcode">Postcode (and Country if not UK)</label>
+                    <span id="ctl00_PlaceHolderMain_CopyrightLicence_RequiredFieldValidator3" style="color:Red;display:none;">Please enter a postcode</span>
+                    <span id="ctl00_PlaceHolderMain_CopyrightLicence_regExPostCode" style="color:Red;display:none;">Please enter a valid postcode</span>
+                    <input name="ctl00$PlaceHolderMain$CopyrightLicence$postcode" type="text" id="ctl00_PlaceHolderMain_CopyrightLicence_postcode">
+                    </div>
+
+                <input type="submit" name="ctl00$PlaceHolderMain$CopyrightLicence$btnSubmit" value="License and download image" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$PlaceHolderMain$CopyrightLicence$btnSubmit&quot;, &quot;&quot;, true, &quot;AllValidators&quot;, &quot;&quot;, false, false))" id="ctl00_PlaceHolderMain_CopyrightLicence_btnSubmit" class="btn btn-primary">
+            
+	
+        </div>
+       <hr class="ms-rteElement-spacer" />
+</div>
+
+    <div id="ctl00_PlaceHolderMain_CopyrightLicence_pnlAnyOtherUse" class="col-md-4">
+	
+  
+
+            <h2>Any other use</h2>
+            <p>Should you wish to you use this image for any other purpose or require a higher resolution file, you must contact Bridgeman Art Library using the contact form.  Other use includes:</p>
+
+            <ul>
+                <li>Professional and commercial use in books, on tv, in displays and retail and promotional activity</li>
+                <li>Academic and non-commercial usage such as research papers, presentations and academic publications</li>
+            </ul>
+
+            <p>Charges depend on how and where you want to use the image. Contact the <strong>Bridgeman Art Library</strong> to obtain a quotation.</p>
+
+            <input type="button" id="btnShow" class="btn btn-primary" value="Contact Bridgeman Art" role="button" aria-disabled="false">
+
+            <p id="result" class="warningMessage"></p>
+  
+      <hr class="ms-rteElement-spacer" /> 
+</div>
+
+
+
+</div>
+
+{% endblock %} 
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+
+
+
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+   {% include "includes/museums/footer_nav.html" %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+         {% include "includes/museums/re-userble-content-footer.html" %}
+ {% endblock %}

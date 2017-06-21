@@ -1,12 +1,33 @@
-a {
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  -ms-word-break: break-all;
-  word-break: break-all;
-  word-break: break-word; }
+.three-columns {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px; }
+  @media (max-width: 990px) {
+    .three-columns {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2; } }
+  @media (max-width: 767px) {
+    .three-columns {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1; } }
 
-.btn, .button {
-  white-space: normal !important; }
+.two-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px; }
+  @media (max-width: 767px) {
+    .two-columns {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1; } }
 
 /*********************************************
 Base.sass variables
@@ -166,7 +187,7 @@ footer.main .socialBookmarks a:hover:after {
   color: #D8DEE3; }
 
 footer.main .footerGlobal {
-  background: #ccd4da; }
+  background: #D8DEE3; }
 
 .footerGlobal nav ul {
   list-style: none;
@@ -1236,10 +1257,13 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
 .col-md-8 #SearchBox {
   border: 1px solid #ddd;
   padding: 10px 10px 0 10px;
-  width: 100%;
-  max-width: 600px; }
+  width: 100%; }
   .col-md-8 #SearchBox .ms-srch-sbLarge > .ms-srch-sb-searchLink {
     float: right; }
+
+.col-md-8 .ms-srch-sb-borderFocused {
+  border: none !important;
+  width: 100%; }
 
 .col-md-8 .ms-srch-item-body {
   overflow: visible;
@@ -1259,8 +1283,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   margin: -9px 0 9px -5px; }
 
 .col-md-8 .ms-srch-sbLarge-fullWidth {
-  width: 80%;
-  max-width: 500px; }
+  width: 80%; }
 
 @media (max-width: 1024px) {
   .col-md-8 .col-md-8 .ms-srch-hover-outerContainer {
@@ -1325,8 +1348,7 @@ hr.ms-rteElement-spacer, hr.spacerTop, hr.spacerBottom {
   padding: 2em 1.75em;
   margin: 1em 0;
   background: #7e1530; }
-  .highlighted border
-img {
+  .highlighted img {
     max-width: 100%; }
   .highlighted.section {
     margin: 0px; }
@@ -1368,9 +1390,7 @@ img {
         color: #f6f6f6; }
   @media screen and (max-width: 400px) {
     .highlighted {
-      padding: 1.5em 1em; }
-      .highlighted em {
-        font-size: 50px; } }
+      padding: 1.5em 1em; } }
 
 .imgRight {
   float: right;
@@ -1390,9 +1410,9 @@ img {
       max-width: 100%;
       margin: 0px 0 30px 0; } }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .lead {
-    font-size: 25px !important; } }
+    font-size: 21px; } }
 
 .logo {
   height: 100px;

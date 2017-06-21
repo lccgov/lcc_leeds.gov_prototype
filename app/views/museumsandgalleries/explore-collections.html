@@ -1,0 +1,296 @@
+{% extends "layout_multi_sections.html" %}
+
+{% block page_title %}
+Explore collections
+{% endblock %}
+
+
+  {% block css_register %}
+          <link href="{{ asset_path }}museumsandgalleries/stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+Explore collections
+{% endblock %}
+
+ {% block main_nav %}
+  {% include "includes/museums/main_nav.html" %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+
+{% endblock %}
+
+
+ {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
+ {% endblock %}
+
+{% block sectionOneContent %}
+{% endblock %}
+
+{% block pageContent %}
+
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+<div class="userControlMuseums">
+    <label style="display: block" for="searchBox">Enter a search term</label>
+    <input type="text" id="searchBox" class="searchInput" placeholder="e.g. Leeds or &quot;Leeds Town Hall&quot;" required="">
+    <button id="searchBtn" class="button">Search</button>
+    <div class="clear"></div>
+    <p id="errorText" style="display: none" class="error">Please enter a search term.</p>
+    <a href="/museumsandgalleries/Pages/advancedsearch.aspx" class="advSearch">Advanced search</a>   
+</div>
+<hr class="ms-rteElement-spacer" />
+<div class="mega-promo">
+
+   <div class="mega-promo__item quarter">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(/public/images/16-9-image.png) "></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Anthropology</h3>
+                <p class="mega-promo__secondary"></p>
+            </div>
+          
+        </a>
+    </div>
+        <div class="mega-promo__item quarter">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(/public/images/16-9-image.png) "></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Archaeology</h3>
+                <p class="mega-promo__secondary"></p>
+            </div>
+          
+        </a>
+    </div>    <div class="mega-promo__item quarter">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                   <div class="mega-promo__img" style="background-image: url(/public/images/16-9-image.png) "></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Ceramics</h3>
+                <p class="mega-promo__secondary"></p>
+            </div>
+          
+        </a>
+    </div>    <div class="mega-promo__item quarter">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(/public/images/16-9-image.png) "></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Costume & Textiles</h3>
+                <p class="mega-promo__secondary"></p>
+            </div>
+           
+        </a>
+    </div>    
+   <div class="mega-promo__item quarter">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(/public/images/16-9-image.png) "></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Decorative Art</h3>
+                <p class="mega-promo__secondary"></p>
+            </div>
+          
+        </a>
+    </div>
+        <div class="mega-promo__item quarter">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(/public/images/16-9-image.png) "></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Fine Art</h3>
+                <p class="mega-promo__secondary"></p>
+            </div>
+          
+        </a>
+    </div>    <div class="mega-promo__item quarter">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+               <div class="mega-promo__img" style="background-image: url(/public/images/16-9-image.png) "></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Industial History</h3>
+                <p class="mega-promo__secondary"></p>
+            </div>
+          
+        </a>
+    </div>    <div class="mega-promo__item quarter">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(/public/images/16-9-image.png) "></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Natural Sciences Biology</h3>
+                <p class="mega-promo__secondary"></p>
+            </div>
+           
+        </a>
+    </div>   
+
+    <div class="mega-promo__item quarter">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(/public/images/16-9-image.png) "></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Natural Sciences Geology</h3>
+                <p class="mega-promo__secondary"></p>
+            </div>
+           
+        </a>
+    </div>    
+
+    
+    <div class="mega-promo__item quarter">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(/public/images/16-9-image.png) "></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Numismatics</h3>
+                <p class="mega-promo__secondary"></p>
+            </div>
+           
+        </a>
+    </div>    
+
+    
+    
+    <div class="mega-promo__item quarter">
+        <a href="#">
+            <div class="mega-promo__img-wrapper">
+                <div class="mega-promo__img" style="background-image: url(/public/images/16-9-image.png) "></div>
+            </div>
+            <div class="mega-promo__content">
+                <h3 class="mega-promo__header">Social History</h3>
+                <p class="mega-promo__secondary"></p>
+            </div>
+           
+        </a>
+    </div>     
+ 
+
+
+
+ 
+</div>
+{% endblock %} 
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+
+
+
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+   {% include "includes/museums/footer_nav.html" %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+         {% include "includes/museums/re-userble-content-footer.html" %}
+ {% endblock %}

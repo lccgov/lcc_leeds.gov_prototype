@@ -1,0 +1,198 @@
+{% extends "layout_multi_sections.html" %}
+
+{% block page_title %}
+Advanced Search
+{% endblock %}
+
+
+  {% block css_register %}
+          <link href="{{ asset_path }}museumsandgalleries/stylesheets/application.css" rel="stylesheet">
+   {% endblock %}
+
+ 
+
+{% block header %}
+Advanced Search
+{% endblock %}
+
+ {% block main_nav %}
+  {% include "includes/museums/main_nav.html" %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+  {% include "includes/breadcrumb_sp.html" %}
+ {% endblock %}
+
+{% block sectionOneContent %}
+{% endblock %}
+
+{% block pageContent %}
+
+{% endblock %}
+
+{% block sectionOneFullBottom %}
+<div class="userControlMuseums">
+                        <p id="errorText" class="error"></p>
+                        <h3>Include objects</h3>
+                         <div class="innerContainer">
+                            <input type="radio" id="Radio1" name="rbLocation" value="all" checked="checked">
+                            <label for="r1">All</label>
+                        </div>   
+                        <div class="innerContainer">
+                            <input type="radio" id="r1" name="rbLocation" value="display">
+                            <label for="r1">On display</label>
+                        </div>   
+                        <div class="innerContainer">
+                            <input type="radio" id="r2" name="rbLocation" value="storage">
+                            <label for="r2">In storage</label>
+                        </div>   
+        
+                        <fieldset class="formContainerOuter">
+                            <div class="lcc-formContainer">
+                                <div class="lcc-caption"> <label for="txtKeyword">Keyword:</label> </div>
+                                <div class="lcc-form">
+                                    <input type="text" class="lcc-input" id="txtKeyword">
+                                    <p>E.g. Trophy</p>
+                                </div>
+                            </div>
+                            <div class="lcc-formContainer">
+                                <div class="lcc-caption"> <label for="txtAccession">Accession number:</label> </div>
+                                <div class="lcc-form">
+                                    <input type="text" class="lcc-input" id="txtAccession">
+                                    <p>E.g. LEEDM.F.1969.0123</p>
+                                </div>
+                            </div>
+                            <div class="lcc-formContainer">
+                                <div class="lcc-caption"> <label for="txtArtist">Artist / Maker:</label> </div>
+                                <div class="lcc-form">
+                                    <input type="text" class="lcc-input" id="txtArtist">
+                                    <p>E.g. Grimshaw</p>
+                                </div>
+                            </div>
+                            <div class="lcc-formContainer">
+                                <div class="lcc-caption"> <label for="txtStartYear">Year:</label> </div>
+                                <div class="lcc-form">
+                                    <input type="text" class="dateInput" id="txtStartYear" placeholder="Year From">
+                                    <input type="text" class="dateInput" id="txtEndYear" placeholder="Year To">
+                                    <p>E.g. 1920 - 1930</p>
+                                </div>
+                            </div>
+                            <div class="lcc-formContainer">
+                                <div class="lcc-form">
+                                    <input type="submit" class="button" value="Search" id="btnSubmit">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <a href="/museumsandgalleries/Pages/Explore-Collections.aspx">Standard search</a>   
+                    </div>
+{% endblock %} 
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+
+
+
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+   {% include "includes/museums/footer_nav.html" %}
+ {% endblock %}
+
+  {% block reuserblecontent_footer %}
+         {% include "includes/museums/re-userble-content-footer.html" %}
+ {% endblock %}
