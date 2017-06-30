@@ -127,6 +127,9 @@ $accordion-color:green;
 @import 'blocklinks';
 //@import 'contentLink';
 //@import 'docList';
+@import 'accessibility';
+@import 'browser-alert';
+
 
 .sectionHeader{
     border-top:1px solid #ddd;

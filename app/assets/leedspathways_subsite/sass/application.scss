@@ -140,6 +140,9 @@ $blockquoteQuoteFooterColor:#C71585;
 @import 'docList';
 @import 'contentAssets';
 @import 'blockQuote';
+@import 'accessibility';
+@import 'browser-alert';
+
 
 
 
@@ -344,7 +347,9 @@ ul li {
 }
 
 
-
+footer.main .footerGlobal {
+    background: #555 url(../images/skyline.png) bottom -2px  right 0px no-repeat;
+}
 
 
 
