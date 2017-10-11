@@ -224,7 +224,7 @@ $input-border-color:$grey;
 
 //CUSTOM SASS FILES FOR STYLE GUIDE
 //@import 'prism';
-@import 'styleguide_digital';
+//@import 'styleguide_digital';
 //@import 'styleguide_code-example';
 //@import 'styleguide_sticky';
 //@import 'styleguide_swatch';
@@ -313,6 +313,67 @@ aside.col-md-4{
     height:40px;
     background-position:left top;
     background-size:100%;
+}
+
+.sectionHeader {
+
+    .container-fluid{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height:110px;
+
+        .header-nav{
+            width: 100%;
+            text-align:right;
+
+            a{ 
+                height:65px;
+                width:65px;
+                background:$white;
+                border-radius:4px;
+                color:$base-link-color;
+                text-align:center;
+
+                @media (min-width: 767px){
+                    display: inline-block;
+                }
+
+                &:before {
+                    margin-bottom: 0;
+                    font-size: 40px;
+                    color:$base-link-color;
+                    line-height:0.75;
+                }
+
+                &:hover,
+                &:active{
+                    background:$base-link-color !important;
+
+                    &:before {
+                        color:$white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#nav-search {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    padding: 15px;
+    height: auto;
+    width: 100%;
+    z-index: 10;
+    display: none;
+    margin: 0;
+    background: #03151e !important;
+}
+
+.search-text{
+    @extend .sr-only;
 }
 
 //footer
@@ -445,4 +506,16 @@ footer.main {
     margin:0;
     padding:20px 0;
     border-radius: 0;
+}
+
+//sr-only
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
 }
