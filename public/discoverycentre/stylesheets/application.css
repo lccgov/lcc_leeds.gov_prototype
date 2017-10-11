@@ -5,6 +5,14 @@
   -moz-box-shadow: 0 0 0 4px #FFBF47;
   box-shadow: 0 0 0 4px #FFBF47; }
 
+.border-link {
+  border-bottom: 1px solid rgba(19, 62, 141, 0.3);
+  text-decoration: none !important; }
+  .border-link:hover {
+    border-color: rgba(51, 153, 187, 0.3) !important; }
+  .border-link:visited {
+    border-color: rgba(76, 44, 146, 0.3); }
+
 .three-columns {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -185,7 +193,7 @@ footer.main {
 footer.main .socialBookmarks h2 {
   color: #fff; }
 
-footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after {
+footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after, footer.main .socialBookmarks .flickr:after {
   border: 1px solid #fff;
   color: #fff; }
 
@@ -473,13 +481,19 @@ ul.accordion {
       font-weight: 700;
       padding: 20px 20px 20px 60px;
       text-decoration: none !important;
-      font-size: 19px; }
+      font-size: 19px;
+      color: #133E8D; }
       @media (max-width: 641px) {
         ul.accordion li a.header {
           padding: 15px 15px 15px 35px;
           font-size: 16px; } }
-      ul.accordion li a.header:hover, ul.accordion li a.header:focus {
-        background: rgba(0, 0, 0, 0.05); }
+      ul.accordion li a.header:hover {
+        background: rgba(0, 0, 0, 0.05);
+        color: #133E8D; }
+      ul.accordion li a.header:focus {
+        color: #333 !important; }
+        ul.accordion li a.header:focus:after {
+          color: #333 !important; }
       ul.accordion li a.header:after {
         font-family: FontAwesome;
         font-size: 19px;
@@ -512,6 +526,15 @@ ul.accordion {
 
 ul.accordion div.text-block {
   padding: 0 20px !important; }
+
+ul.accordion div.text-highlight {
+  padding: 20px !important; }
+
+ul.accordion li div.content-block div:last-of-type {
+  padding-bottom: 30px !important; }
+
+ul.accordion li div.content-block div + .btn {
+  margin-right: 20px; }
 
 ul.accordion div.text-highlight {
   padding: 20px !important; }
@@ -1495,6 +1518,9 @@ h1.ms-dlg-heading {
   padding: 0;
   border: 0; }
 
+h1 input.ms-long {
+  width: 100% !important; }
+
 /* iconLinks -----------------------------------------------------------------*/
 .iconLinks ul {
   text-align: center;
@@ -1671,20 +1697,38 @@ h1.ms-dlg-heading {
               top: 50%;
               right: 15px;
               margin-top: -10px;
-              font-size: 34px; } }
+              font-size: 16px; } }
       .groupPromo ul li a p {
         font-size: 18px;
         font-weight: 300;
         margin-top: 10px;
         margin-bottom: 0;
         color: #666B76; }
+        @media (max-width: 767px) {
+          .groupPromo ul li a p {
+            font-size: 14px; } }
         @media (max-width: 600px) {
           .groupPromo ul li a p {
             padding-right: 30px;
-            font-size: 16px;
             margin-top: 5px; } }
     .groupPromo ul li.external a h3:after {
       content: '\f08e'; }
+    .groupPromo ul li a[rel="external"]:after,
+    .groupPromo ul li a.external:after,
+    .groupPromo ul li a[rel="pdf"]:after,
+    .groupPromo ul li a.pdf:after {
+      display: none; }
+    .groupPromo ul li a[rel="external"] h3:after,
+    .groupPromo ul li a.external h3:after,
+    .groupPromo ul li a[rel="pdf"] h3:after,
+    .groupPromo ul li a.pdf h3:after {
+      color: #9DA5B2; }
+    .groupPromo ul li a[rel="external"] h3:after,
+    .groupPromo ul li a.external h3:after {
+      content: "\f08e"; }
+    .groupPromo ul li a[rel="pdf"] h3:after,
+    .groupPromo ul li a.pdf h3:after {
+      content: "\f1c1"; }
 
 .groupPromo.blockLinksGreen .listWebpart ul li {
   background: #97BD0E; }
@@ -1911,8 +1955,7 @@ li a.arrow:first-of-type {
     align-items: stretch;
     margin-bottom: 15px; }
     .mega-promo .mega-promo__item.external a:after {
-      content: "\f08e";
-      font-size: 24px; }
+      content: "\f08e"; }
     .mega-promo .mega-promo__item a {
       display: block;
       width: 100%;
@@ -1933,7 +1976,10 @@ li a.arrow:first-of-type {
         right: 20px;
         bottom: 20px;
         color: #16145F;
-        font-size: 24px; }
+        font-size: 19px; }
+        @media (max-width: 600px) {
+          .mega-promo .mega-promo__item a:after {
+            font-size: 16px; } }
       .mega-promo .mega-promo__item a:hover {
         background: #e6e8f1;
         text-decoration: none; }

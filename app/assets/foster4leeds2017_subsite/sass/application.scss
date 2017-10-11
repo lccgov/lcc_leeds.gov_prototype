@@ -1,0 +1,448 @@
+//default sharpoint css - REMOVE BEFORE UPLOADING
+//@import 'sharepoint_core_15';
+//@import 'sharepoint_search_15';
+
+//google fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Open+Sans:400,700'); 
+
+// available variables to change the brand colours as required
+// masterhead.scss
+
+//$head-background: #ffffff;
+
+//mainMenu.scss -- responsive icons color
+//$menu-link-color:#337ab7;
+
+//base.scss
+
+//base colours
+$blue:#0A4E6D;
+$dark-blue: #052635;
+$light-blue: #3399BB;
+$pale-blue: #b3d9e6;
+$green:#008000;
+$light-green:#009A00;
+$black:#052635;
+$light-black:#3D414A;
+$dark-grey:#354855;
+$grey:#9DA5B2;
+$light-grey:#CFDCE1;
+$lighter-grey:#F6F7FA;
+$white:#FFFFFF;
+$yellow:#FFBF47;
+$dark-yellow:#FAA300;
+$red:#c0392b;
+$orange:#E65E24;
+$dark-orange:#723015;
+
+//$base-background-color:#fff;
+$base-font-size:16px;
+$base-font-color:$black;
+$header-font-color:$black;
+$base-link-color:$orange;
+$base-link-hover-color:$light-blue;
+$base-link-visited-color:#4C2C92;
+$secondary-link-color:$dark-blue;
+$secondary-font-color:$dark-grey;
+$border-color:$light-grey;
+$brand-color:$blue;
+$button-color:$green;
+$button-hover-color:lighten($button-color,5%);
+$focus-color:$yellow;
+$base-container-width:1400px ;
+//$btn-background-color:green ;
+$font-primary:'Open Sans', sans-serif; // main font
+$font-secondary:'Montserrat', sans-serif; // secondary font used for headings
+//$header-font-weight: 600;
+$alert-color:$red;
+
+//panel colours
+$panel-color:#E5F1F5;
+$panel-color-secondary:#DCDEE1;
+
+//global used on all partials to get a uniform spacing between elements
+//$base-margin-bottom:1.875em ;
+
+//headerTop
+//$search-link-background:#F3F3F4 ;
+//$search-link:#333 ;
+
+// mainNav.scss
+$main-nav-background:lighten( $brand-color, 3% );
+//$main-nav-link:#fff ;
+
+//footer.scss
+//$footer-font-color:#fff ;
+//$footer-nav-selected-link:#133E8D ;
+
+//sectionSubsite.scss - socialamedia.scss
+//$section-Background:#efefef ;
+
+//socialamedia.scss
+//$social-link-color:#337ab7 ;
+
+//sideNavigation.scss
+//$side-nav-active-background:#133E8D ;
+
+//carousel.scss
+//$carousel-active-background:#000 ;
+//$carousel-indicators-active-background:#ccc ;
+//$carousel-caption-background: rgba(0,0,0,0.6) ;
+//$carousel-caption-font-color:#fff ;
+
+
+//blocklinks.scss
+
+//$block-link-back:#f6f6f6 ;
+//$block-link-back-hover:#3380A4 ;
+//$promo-group-border:1px solid #fff ; 
+//$promo-group-background:#EDF2F5 ; 
+//$promo-group-li-background:#EDF2F5 ;
+//$promo-group-link-color:#216486 ;
+
+//promolist webpart
+//$link-font-color:#fff;
+//$span-info-color:#133E8D;
+//$span-info-hover:#131A22;
+//$span-info-secondary-color:#fff;
+//$span-arrow-base:darken($span-info-color, 10%);
+//$span-third-info-base:#f6f6f6;
+//$third-info-font-color:#333;
+//$arrow-color:#fff;
+//$contentFontColor:#333;
+//$content-arrow-color:#133E8D;
+//$content-border-color:#ddd;
+
+//section backgrounds
+$sectionHeader-background-color:$brand-color;
+$sectionOne-background-color:#fff;
+$sectionTwo-background-color:#fff;
+$sectionThree-background-color:#fff;
+$sectionFour-background-color:#fff;
+$sectionFive-background-color:#fff;
+
+//iconlinks
+//$iconLinkIconColor:#FFC82E;
+
+//heroBanner
+//$heroFontBackground:rgba(0, 0, 0, 0.5); 
+//$heroFontcolor:#fff; 
+
+//news
+//$news-button-background: #3498DB ;
+$news-pod-back:#ffffff ;
+$news-pod-border-color:#ddd;
+
+//accordion
+//$accordion-color:green;
+//$accordion-border-color:#ECF0F1;
+
+//Block quote
+// $blockquoteBorderColor:#bbcada ;
+// $blockquoteQuoteColor:#333;
+// $blockquoteQuoteFooterColor:#000;
+
+//highlighted box in content assets
+//$highlighted-background-color:#333 !default;
+//$highlighted-font-color:#fff !default;
+//$highlighted-alt-background-color:#f6f6f6 !default;
+//$highlighted-alt-font-color:#333 !default;
+
+//mega-promo
+$promo-background-color:$lighter-grey;
+$promo-arrow-color:#9DA5B2;
+$promo-header-color:$blue;
+$promo-secondary-color:$black;
+$promo-highlight-background-color:$dark-blue;
+$promo-highlight-color:$white;
+
+//button colours
+$primary-button-background-color:$orange;
+$primary-button-color:$white;
+$secondary-button-background-color:$blue;
+$secondary-button-color:$white;
+$outline-button-border-color:$blue;
+$outline-button-color:$blue;
+
+//group promo colours
+$group-promo-background-color: $lighter-grey;
+$group-promo-header-color: $blue;
+$group-promo-description-color: $black;
+$group-promo-arrow-color: $grey;
+
+//form colours
+$input-color:$black;
+$input-border-color:$grey;
+
+@import 'mixins';
+@import 'variables';
+@import 'brandColors';
+
+//FRONT END TOOLKIT SASS FILES
+
+//available sass files please un-comment out as required
+@import 'sharepointOverides';
+//@import 'mainMenuSubsites'; //subsites only
+//@import 'socialMedia'; //subsites only
+//@import 'sideNavigation'; //subsites only
+@import 'blocklinks'; //subsites only
+@import 'contentLink'; //subsites only
+//@import 'contentAssets'; //subsites only
+//@import 'polaroids'; //subsites only
+@import 'iconLinks'; //subsites only
+//@import 'heroBanner'; //subsites only
+//@import 'promoListwebpart'; //subsites only
+@import 'promoGroup'; //subsites only
+//@import 'sectionSubsite'; //subsites only
+@import 'promo'; //subsites only
+//@import 'carousel'; //subsites only
+//@import 'eventsWebparts'; //subsites only
+@import 'breadcrumb';
+@import 'accordion';
+@import 'alerts';
+//@import 'news';
+@import 'groupPromo';
+@import 'docList';
+@import 'blockQuote';
+@import 'accessibility';
+@import 'mega-promo';
+@import 'buttons';
+@import 'browser-alert';
+@import 'typography-lcc';
+@import 'tables';
+@import 'form_elements';
+@import 'images';
+@import 'webchat';
+@import 'description_list_accessible';
+@import 'phase-banner';
+@import 'side-nav';
+@import 'pagination';
+@import 'part-nav';
+@import 'sub-section-nav';
+@import 'atoz';
+@import 'lcc_search';
+
+//CUSTOM SASS FILES FOR STYLE GUIDE
+//@import 'prism';
+@import 'styleguide_digital';
+//@import 'styleguide_code-example';
+//@import 'styleguide_sticky';
+//@import 'styleguide_swatch';
+
+//CUSTOM SASS FILES FOR LEEDS.GOV.UK
+//@import 'easy-autocomplete';
+//@import 'search-results';
+//@import 'where-i-live';
+//@import 'open-data';
+//@import 'lcc_hero';
+//@import 'lcc_news';
+//@import 'ie-support';
+//@import 'sharepoint_2010_style_fallback';
+
+//BASE LEEDS.GOV.UK STYLES
+@import 'lcc_base_styles';
+
+//in front end toolkit
+@import 'lcc_footer';
+@import 'lcc_header';
+
+//@import 'report_a_problem';
+
+
+//CUSTOM STYLES FOR LEEDS.GOV.UK
+
+//site background
+html{
+    background-color:$white;
+}
+
+//bootsrap override
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+//hr
+hr{
+  border-color:rgba( $border-color, .5 );
+}
+
+//buttons
+.btn-primary{
+    border-bottom:2px solid darken($primary-button-background-color,5%);
+}
+.btn-secondary{
+    border-bottom:2px solid darken($secondary-button-background-color,5%);
+}
+
+//back to top (focus fix)
+.cd-top:focus{
+    background:$focus-color url("images/cd-top-arrow.svg") no-repeat center 50% !important;
+    opacity:1;
+}
+
+//video container
+.media-container{
+    margin:30px 0;
+}
+
+//clear
+.clear{
+    padding:0 !important;
+}
+
+//right hand column top margin
+aside.col-md-4{
+    margin-top:50px;
+
+    @media (max-width: 990px) {
+        margin-top:30px;
+    }
+
+    &.empty{
+        margin-top:0 !important;
+    }
+}
+
+//header
+.header-lcc .logo{
+    background-image:url(../images/foster4leeds_logo.svg);
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:268px;
+    height:40px;
+    background-position:left top;
+    background-size:100%;
+}
+
+//footer
+footer.main {
+    background: #fff;
+    border-top:1px solid $border-color;
+    margin-top:50px;
+
+    .container-fluid{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .footerGlobal {
+        background: #fff !important;
+        padding:0;
+
+        .footer-social{
+            border-bottom:1px solid $border-color;
+            padding:20px 0;
+
+            .socialBookmarks {
+                float: none;
+                padding:0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                h3{
+                    float:left;
+                    margin:0;
+                }
+                
+                ul{
+                    float:right;
+
+                    li{
+                        display:inline-block;
+                        margin:0;
+
+                        &:first-of-type{
+                            padding:0;
+                            color:$secondary-font-color;
+                        }
+
+                        a{
+                            margin:0;
+                            width: 70px;
+                            height: 70px;
+                            display:inline-block;
+
+                            &:after{
+                                color:$base-link-color;
+                                border-color:$base-link-color;
+                                border-radius: 4px;
+                            }
+
+                            &:hover{
+                                &:after{
+                                    color:$white;
+                                    background:$base-link-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-nav{
+            border-bottom:1px solid $border-color;
+            padding:60px 0 40px;
+
+            nav {
+                padding:0;
+
+                ul{
+                    @extend .three-columns;
+
+                    li {
+                        display:block;
+                        margin-bottom:20px;
+
+                        a{
+                            @extend .font-xsmall;
+                            font-family:$font-secondary;
+                            color:$secondary-font-color !important;
+                            border-color:rgba($secondary-font-color,0.5) !important;
+
+                            &:hover{
+                                opacity:0.7;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer-logos{
+                text-align:right;
+
+                a{
+                    display:inline-block;
+
+                    &:hover{
+                        opacity:0.7;
+                    }
+                }
+            }
+        }
+
+        .footer-bottom{
+            padding:30px 0;
+
+            p{
+                color:$secondary-font-color;
+                font-size:14px;
+            }
+        }
+    }
+}
+
+.cfl-logo{
+    padding-left:75px;
+}
+
+//breadcrumb
+.breadcrumb{
+    border-bottom:1px solid $border-color;
+    margin:0;
+    padding:20px 0;
+    border-radius: 0;
+}

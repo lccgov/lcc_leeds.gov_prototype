@@ -3,6 +3,14 @@
   -moz-box-shadow: 0 0 0 4px #FFBF47;
   box-shadow: 0 0 0 4px #FFBF47; }
 
+.border-link {
+  border-bottom: 1px solid rgba(19, 62, 141, 0.3);
+  text-decoration: none !important; }
+  .border-link:hover {
+    border-color: rgba(51, 153, 187, 0.3) !important; }
+  .border-link:visited {
+    border-color: rgba(76, 44, 146, 0.3); }
+
 .three-columns {
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -183,7 +191,7 @@ footer.main {
 footer.main .socialBookmarks h2 {
   color: #333; }
 
-footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after {
+footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after, footer.main .socialBookmarks .flickr:after {
   border: 1px solid #333;
   color: #333; }
 
@@ -568,13 +576,19 @@ ul.accordion {
       font-weight: 700;
       padding: 20px 20px 20px 60px;
       text-decoration: none !important;
-      font-size: 19px; }
+      font-size: 19px;
+      color: #133E8D; }
       @media (max-width: 641px) {
         ul.accordion li a.header {
           padding: 15px 15px 15px 35px;
           font-size: 16px; } }
-      ul.accordion li a.header:hover, ul.accordion li a.header:focus {
-        background: rgba(0, 0, 0, 0.05); }
+      ul.accordion li a.header:hover {
+        background: rgba(0, 0, 0, 0.05);
+        color: #133E8D; }
+      ul.accordion li a.header:focus {
+        color: #333 !important; }
+        ul.accordion li a.header:focus:after {
+          color: #333 !important; }
       ul.accordion li a.header:after {
         font-family: FontAwesome;
         font-size: 19px;
@@ -607,6 +621,15 @@ ul.accordion {
 
 ul.accordion div.text-block {
   padding: 0 20px !important; }
+
+ul.accordion div.text-highlight {
+  padding: 20px !important; }
+
+ul.accordion li div.content-block div:last-of-type {
+  padding-bottom: 30px !important; }
+
+ul.accordion li div.content-block div + .btn {
+  margin-right: 20px; }
 
 ul.accordion div.text-highlight {
   padding: 20px !important; }
@@ -1473,6 +1496,9 @@ h1.ms-dlg-heading {
 .slm-layout-main table th {
   padding: 0;
   border: 0; }
+
+h1 input.ms-long {
+  width: 100% !important; }
 
 .heroBanner {
   padding: 55px 0;
