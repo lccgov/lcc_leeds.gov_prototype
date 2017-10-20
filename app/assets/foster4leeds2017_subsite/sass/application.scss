@@ -234,7 +234,7 @@ $input-border-color:$grey;
 //@import 'search-results';
 //@import 'where-i-live';
 //@import 'open-data';
-//@import 'lcc_hero';
+@import 'lcc_hero';
 //@import 'lcc_news';
 //@import 'ie-support';
 //@import 'sharepoint_2010_style_fallback';
@@ -518,4 +518,65 @@ footer.main {
     overflow: hidden;
     clip: rect(0,0,0,0);
     border: 0;
+}
+
+//hero
+.hero-lcc-wrapper{
+    margin-top:-110px;
+    height:90vh;
+    background-image: url(../images/foster4leeds-background.jpg);
+
+    .hero-lcc {
+        background: rgba(5,38,53,.6);
+
+        .hero-lcc__content {
+            max-width: 850px;
+
+            .hero-lcc__intro{
+                .hero-lcc__intro-header {
+                    font-size: 68px;
+                    margin-bottom:15px;
+                }
+                .hero-lcc__intro-secondary{
+                    margin-bottom:40px;
+                    font-size:26px;
+                }
+            }
+
+            .hero-lcc__actions{
+                background: transparent;
+                padding:0;
+
+                .btn{
+                    font-size:24px;
+                    font-family:$font-secondary;
+
+                    &:first-of-type{
+                        margin-right:15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.btn{
+    &.btn-arrow{
+        padding: 20px 25px;
+
+        &:before{
+            display:none;
+        }
+        &:after{
+            position:relative;
+            width:auto;
+            font-size:40px;
+            display:inline-block;
+            top:4px;
+            right:auto;
+            padding:0 !important;
+            margin:0 0 0 20px;
+            font-weight:bold;
+        }
+    }
 }
