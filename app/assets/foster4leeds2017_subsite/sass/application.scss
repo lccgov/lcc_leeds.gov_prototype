@@ -268,11 +268,12 @@ hr{
 }
 
 //buttons
+.header-nav a.search,
 .btn-primary{
-    border-bottom:2px solid darken($primary-button-background-color,5%);
+    border-bottom:3px solid #723015;
 }
 .btn-secondary{
-    border-bottom:2px solid darken($secondary-button-background-color,5%);
+    border-bottom:3px solid #052635;
 }
 
 //back to top (focus fix)
@@ -316,45 +317,107 @@ aside.col-md-4{
 }
 
 .sectionHeader {
-
     .container-fluid{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height:110px;
+        .header-wrapper{
+            height:110px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
 
-        .header-nav{
-            width: 100%;
-            text-align:right;
+            .header-logo{
+                float:left;
+            }
 
-            a{ 
-                height:65px;
-                width:65px;
-                background:$white;
-                border-radius:4px;
-                color:$base-link-color;
-                text-align:center;
+            .header-content{
+                float:right;
 
-                @media (min-width: 767px){
-                    display: inline-block;
+                .header-custom{
+                    display:inline-block;
+
+                    .header-contact{
+                        display:inline-block;
+                        text-align:right;
+                        float:left;
+                        margin-right:30px;
+
+                        .header-telephone{
+                            display:block;
+                            font-family:$font-secondary;
+                            font-size:34px;
+                            color:white;
+                            line-height:1;
+
+                            &:before{
+                                font-family: "FontAwesome";
+                                content: "\f095";
+                                margin-right: 10px;
+                                font-size:30px;
+                            }
+                        }
+
+                        a{
+                            color:white;
+                            display:inline-block;
+
+                            &:hover{
+                                opacity:0.8;
+                            }
+                        }
+                    }
+
+                    .header-button{
+                        display:inline-block;
+
+                        .btn{
+                            margin:0 10px 0 0;
+                            height:65px;
+
+                            &.btn-account{
+                                &:before{
+                                    font-family: "FontAwesome";
+                                    content: "\f007";
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
                 }
 
-                &:before {
-                    margin-bottom: 0;
-                    font-size: 40px;
-                    color:$base-link-color;
-                    line-height:0.75;
-                }
+                .header-nav{
+                    display:inline-block;
 
-                &:hover,
-                &:active{
-                    background:$base-link-color !important;
+                    a{ 
+                        height:65px;
+                        width:65px;
+                        background:$white;
+                        border-radius:4px;
+                        color:$base-link-color;
+                        text-align:center;
+                        margin:0;
 
-                    &:before {
-                        color:$white;
+                        @media (min-width: 767px){
+                            display: inline-block;
+                        }
+
+                        &:before {
+                            margin-bottom: 0;
+                            font-size: 40px;
+                            color:$base-link-color;
+                            line-height:0.75;
+                        }
+
+                        &:hover,
+                        &:active{
+                            background:$base-link-color !important;
+
+                            &:before {
+                                color:$white;
+                            }
+                        }
                     }
                 }
             }
+
         }
     }
 }
@@ -406,6 +469,7 @@ footer.main {
                 h3{
                     float:left;
                     margin:0;
+                    font-size:27px;
                 }
                 
                 ul{
@@ -527,10 +591,11 @@ footer.main {
     background-image: url(../images/foster4leeds-background.jpg);
 
     .hero-lcc {
-        background: rgba(5,38,53,.6);
+        background: rgba(5,38,53,.7);
 
         .hero-lcc__content {
             max-width: 850px;
+            margin-top:55px;
 
             .hero-lcc__intro{
                 .hero-lcc__intro-header {
@@ -549,7 +614,6 @@ footer.main {
 
                 .btn{
                     font-size:24px;
-                    font-family:$font-secondary;
 
                     &:first-of-type{
                         margin-right:15px;
@@ -579,4 +643,8 @@ footer.main {
             font-weight:bold;
         }
     }
+}
+
+.btn{
+    font-family:$font-secondary;
 }
