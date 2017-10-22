@@ -4687,26 +4687,39 @@ footer.main {
 
 .hero-lcc-wrapper {
   margin-top: -110px;
-  height: 90vh;
-  background-image: url(../images/foster4leeds-background.jpg); }
+  background-image: url(../images/foster4leeds-background.jpg);
+  background-attachment: fixed; }
+  @media (min-width: 767px) {
+    .hero-lcc-wrapper {
+      height: 90vh; } }
   .hero-lcc-wrapper .hero-lcc {
     background: rgba(5, 38, 53, 0.7); }
     .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
       max-width: 850px;
       margin-top: 55px; }
-      .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
-        font-size: 68px;
-        margin-bottom: 15px; }
-      .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
-        margin-bottom: 40px;
-        font-size: 26px; }
+      @media (min-width: 767px) {
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
+          font-size: 68px;
+          margin-bottom: 15px; }
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
+          margin-bottom: 40px;
+          font-size: 26px; } }
       .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
         background: transparent;
-        padding: 0; }
+        padding: 0;
+        text-align: center; }
         .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo {
           font-size: 24px; }
+          @media (max-width: 767px) {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo {
+              margin: 0;
+              font-size: 19px;
+              text-align: center; } }
           .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button]:first-of-type, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button]:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a #myChatLinkInfo:first-of-type, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link #myChatLinkInfo:first-of-type, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo:first-of-type {
             margin-right: 15px; }
+            @media (max-width: 767px) {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button]:first-of-type, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button]:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a #myChatLinkInfo:first-of-type, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link #myChatLinkInfo:first-of-type, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo:first-of-type {
+                margin: 0 0 15px; } }
 
 .btn.btn-arrow, .btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo, .form-group input.btn-arrow[type=button], .form-group input.btn-arrow.btn.btn-primary, #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo {
   padding: 20px 25px; }

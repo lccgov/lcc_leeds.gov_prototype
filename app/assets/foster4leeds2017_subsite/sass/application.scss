@@ -587,8 +587,12 @@ footer.main {
 //hero
 .hero-lcc-wrapper{
     margin-top:-110px;
-    height:90vh;
     background-image: url(../images/foster4leeds-background.jpg);
+    background-attachment:fixed;
+
+    @media (min-width: 767px){
+        height:90vh;
+    }
 
     .hero-lcc {
         background: rgba(5,38,53,.7);
@@ -598,25 +602,39 @@ footer.main {
             margin-top:55px;
 
             .hero-lcc__intro{
-                .hero-lcc__intro-header {
-                    font-size: 68px;
-                    margin-bottom:15px;
-                }
-                .hero-lcc__intro-secondary{
-                    margin-bottom:40px;
-                    font-size:26px;
+
+                @media (min-width: 767px){
+                    .hero-lcc__intro-header {
+                        font-size: 68px;
+                        margin-bottom:15px;
+                    }
+                    .hero-lcc__intro-secondary{
+                        margin-bottom:40px;
+                        font-size:26px;
+                    }
                 }
             }
 
             .hero-lcc__actions{
                 background: transparent;
                 padding:0;
+                text-align:center;
 
                 .btn{
                     font-size:24px;
 
+                    @media (max-width: 767px){
+                        margin:0;
+                        font-size:19px;
+                        text-align:center;
+                    }
+
                     &:first-of-type{
                         margin-right:15px;
+
+                        @media (max-width: 767px){
+                            margin:0 0 15px;
+                        }
                     }
                 }
             }
