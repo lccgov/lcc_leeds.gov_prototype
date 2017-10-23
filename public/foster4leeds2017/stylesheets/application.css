@@ -4666,7 +4666,7 @@ aside.col-md-4 {
 
 #nav-search {
   position: absolute;
-  top: 85px;
+  top: 100px;
   left: 0px;
   padding: 15px;
   height: auto;
@@ -4674,12 +4674,28 @@ aside.col-md-4 {
   z-index: 10;
   display: none;
   margin: 0;
-  background: #03151e !important; }
+  background: #0A4E6D !important; }
+  @media (min-width: 768px) {
+    #nav-search .input-group {
+      margin: 0 auto;
+      display: block;
+      max-width: 1370px;
+      margin: 0 auto; } }
   @media (max-width: 990px) {
     #nav-search {
-      top: 65px; } }
+      top: 65px;
+      padding: 10px; } }
   #nav-search.active {
     display: block; }
+  #nav-search .ms-srch-sb-searchLink {
+    padding: 0;
+    line-height: 45px;
+    background: #E65E24;
+    text-align: center; }
+    #nav-search .ms-srch-sb-searchLink:hover {
+      background: #3399BB; }
+    #nav-search .ms-srch-sb-searchLink:after {
+      line-height: 52px; }
 
 footer.main {
   background: #fff;
@@ -4821,19 +4837,20 @@ footer.main {
             font-size: 40px; }
           @media (max-width: 400px) {
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-arrow, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn[rel=external], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[rel=external][type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[rel=external][type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input.btn-arrow[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input.btn-arrow[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo {
-              padding: 15px 45px 15px 15px; }
+              padding: 15px 40px 15px 15px; }
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-arrow:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn[rel=external]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[rel=external][type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[rel=external][type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input.btn-arrow[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input.btn-arrow[type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo:after {
-                right: 5px;
+                right: 15px;
                 font-size: 30px; } }
 
 .btn.btn-arrow, .btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo, .form-group input.btn-arrow[type=button], .form-group input.btn-arrow.btn.btn-primary, #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo {
-  padding: 20px 65px 20px 25px; }
+  padding: 20px 50px 20px 25px; }
   .btn.btn-arrow:before, .btn[rel=external]:before, .form-group input[rel=external][type=button]:before, .form-group input[rel=external].btn.btn-primary:before, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo:before, .form-group input.btn-arrow[type=button]:before, .form-group input.btn-arrow.btn.btn-primary:before, #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo:before {
     display: none; }
   .btn.btn-arrow:after, .btn[rel=external]:after, .form-group input[rel=external][type=button]:after, .form-group input[rel=external].btn.btn-primary:after, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo:after, .form-group input.btn-arrow[type=button]:after, .form-group input.btn-arrow.btn.btn-primary:after, #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo:after {
     font-size: 40px;
     width: auto;
-    right: 20px; }
+    right: 20px;
+    padding: 0 !important; }
 
 .btn, .form-group input[type=button], .form-group input.btn.btn-primary, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo {
   font-family: "Montserrat", sans-serif; }
