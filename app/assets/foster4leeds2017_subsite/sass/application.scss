@@ -49,7 +49,7 @@ $brand-color:$blue;
 $button-color:$green;
 $button-hover-color:lighten($button-color,5%);
 $focus-color:$yellow;
-$base-container-width:1400px ;
+$base-container-width:1280px ;
 //$btn-background-color:green ;
 $font-primary:'Open Sans', sans-serif; // main font
 $font-secondary:'Montserrat', sans-serif; // secondary font used for headings
@@ -270,10 +270,12 @@ hr{
 //buttons
 .header-nav a.search,
 .btn-primary{
-    border-bottom:3px solid #723015;
+    /*border-bottom:3px solid #723015;*/
+    box-shadow: 0px 3px 0px #723015;
 }
 .btn-secondary{
-    border-bottom:3px solid #052635;
+    /*border-bottom:3px solid #052635;*/
+    box-shadow: 0px 3px 0px #052635;
 }
 
 //back to top (focus fix)
@@ -362,7 +364,7 @@ $header-height-mobile:70px;
                         display:inline-block;
                         text-align:right;
                         float:left;
-                        margin-right:15px;
+                        margin:5px 15px 0 0;
 
                         @media (max-width: 990px) {
                             position:absolute;
@@ -374,6 +376,7 @@ $header-height-mobile:70px;
                             border-bottom:1px solid rgba(white,0.2);
                             padding:10px 15px;
                             background:#0A4E6D;
+                            margin:0;
                         }
 
                         .header-telephone{
@@ -382,6 +385,7 @@ $header-height-mobile:70px;
                             font-size:34px;
                             color:white;
                             line-height:1;
+                            margin:0;
 
                             @media (max-width: 990px) {
                                 font-size:30px;
@@ -701,10 +705,11 @@ footer.main {
                             @extend .font-xsmall;
                             font-family:$font-secondary;
                             color:$secondary-font-color !important;
-                            border-color:rgba($secondary-font-color,0.5) !important;
+                            text-decoration:underline;
 
                             &:hover{
                                 opacity:0.7;
+                                border:0;
                             }
                         }
                     }

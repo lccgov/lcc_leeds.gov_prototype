@@ -74,7 +74,7 @@ body {
       color: #fff; }
 
 .container-fluid {
-  max-width: 1400px; }
+  max-width: 1280px; }
 
 .sectionHeader {
   background: #0A4E6D; }
@@ -4488,10 +4488,12 @@ hr {
 .form-group input.btn.btn-primary,
 #myChatLinkContainer #myChatLink a #myChatLinkInfo,
 #myChatLinkContainer #myChatLink .link #myChatLinkInfo {
-  border-bottom: 3px solid #723015; }
+  /*border-bottom:3px solid #723015;*/
+  box-shadow: 0px 3px 0px #723015; }
 
 .btn-secondary, .form-group input[type=button].btn-secondary {
-  border-bottom: 3px solid #052635; }
+  /*border-bottom:3px solid #052635;*/
+  box-shadow: 0px 3px 0px #052635; }
 
 .cd-top:focus {
   background: #FFBF47 url("images/cd-top-arrow.svg") no-repeat center 50% !important;
@@ -4550,7 +4552,7 @@ aside.col-md-4 {
         display: inline-block;
         text-align: right;
         float: left;
-        margin-right: 15px; }
+        margin: 5px 15px 0 0; }
         @media (max-width: 990px) {
           .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-contact {
             position: absolute;
@@ -4561,13 +4563,15 @@ aside.col-md-4 {
             border-top: 1px solid rgba(255, 255, 255, 0.2);
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             padding: 10px 15px;
-            background: #0A4E6D; } }
+            background: #0A4E6D;
+            margin: 0; } }
         .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-contact .header-telephone {
           display: block;
           font-family: "Montserrat", sans-serif;
           font-size: 34px;
           color: white;
-          line-height: 1; }
+          line-height: 1;
+          margin: 0; }
           @media (max-width: 990px) {
             .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-contact .header-telephone {
               font-size: 30px;
@@ -4679,7 +4683,7 @@ aside.col-md-4 {
     #nav-search .input-group {
       margin: 0 auto;
       display: block;
-      max-width: 1370px;
+      max-width: 1250px;
       margin: 0 auto; } }
   @media (max-width: 990px) {
     #nav-search {
@@ -4782,9 +4786,10 @@ footer.main {
           footer.main .footerGlobal .footer-nav nav ul li a, footer.main .footerGlobal .footer-nav nav ul li .link {
             font-family: "Montserrat", sans-serif;
             color: #354855 !important;
-            border-color: rgba(53, 72, 85, 0.5) !important; }
+            text-decoration: underline; }
             footer.main .footerGlobal .footer-nav nav ul li a:hover, footer.main .footerGlobal .footer-nav nav ul li .link:hover {
-              opacity: 0.7; }
+              opacity: 0.7;
+              border: 0; }
       footer.main .footerGlobal .footer-nav .footer-logos {
         text-align: right; }
         @media (max-width: 990px) {
