@@ -305,6 +305,10 @@ aside.col-md-4{
     }
 }
 
+//header variables
+$header-height:110px;
+$header-height-mobile:70px;
+
 //header
 .header-lcc .logo{
     background-image:url(../images/foster4leeds_logo.svg);
@@ -314,15 +318,35 @@ aside.col-md-4{
     height:40px;
     background-position:left top;
     background-size:100%;
+
+    @media (max-width: 990px) {
+        width:200px;
+        height:29px;
+    }
+
+    @media (max-width: 600px) {
+        width:150px;
+        height:22px;
+    }
+}
+
+.header-nav-container{
+    @media (max-width: 780px) {
+        padding-bottom: 43px;
+    }
 }
 
 .sectionHeader {
     .container-fluid{
         .header-wrapper{
-            height:110px;
+            height:$header-height;
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            @media (max-width: 990px) {
+                height:$header-height-mobile;
+            }
 
             .header-logo{
                 float:left;
@@ -340,6 +364,18 @@ aside.col-md-4{
                         float:left;
                         margin-right:15px;
 
+                        @media (max-width: 780px) {
+                            position:absolute;
+                            width:100%;
+                            display:block;
+                            top:68px;
+                            left:0;
+                            border-top:1px solid rgba(white,0.2);
+                            border-bottom:1px solid rgba(white,0.2);
+                            padding:10px 15px;
+                            background:#0A4E6D;
+                        }
+
                         .header-telephone{
                             display:block;
                             font-family:$font-secondary;
@@ -347,11 +383,36 @@ aside.col-md-4{
                             color:white;
                             line-height:1;
 
+                            @media (max-width: 990px) {
+                                font-size:30px;
+                                margin:4px 0;
+                            }
+
+                            @media (max-width: 780px) {
+                                font-size:19px;
+                                display:inline-block;
+                                float:left;
+                                margin:2px 0;
+                            }
+
+                            @media (max-width: 340px) {
+                                font-size:16px;
+                                margin:4px 0;
+                            }
+
                             &:before{
                                 font-family: "FontAwesome";
                                 content: "\f095";
                                 margin-right: 10px;
                                 font-size:30px;
+
+                                @media (max-width: 780px) {
+                                    font-size:16px;
+                                }
+
+                                @media (max-width: 340px) {
+                                    font-size:14px;
+                                }
                             }
                         }
 
@@ -361,6 +422,18 @@ aside.col-md-4{
 
                             &:hover{
                                 opacity:0.8;
+                            }
+
+                            @media (max-width: 990px) {
+                                display:none;
+                            }
+
+                            @media (max-width: 780px) {
+                                display:inline-block;
+                            }
+
+                            @media (max-width: 320px) {
+                                font-size:14px;
                             }
                         }
                     }
@@ -372,11 +445,34 @@ aside.col-md-4{
                             margin:0 10px 0 0;
                             height:65px;
 
+
+                            @media (max-width: 990px) {
+                                height:40px;
+                                font-size:16px;
+                                padding:8px 10px;
+                            }
+
                             &.btn-account{
+                                 @media (max-width: 400px){
+                                    height: 40px;
+                                    width: 40px;
+                                    padding:0;
+                                    text-align:center;
+
+                                     span{
+                                         display:none;
+                                     }
+                                 }
                                 &:before{
                                     font-family: "FontAwesome";
                                     content: "\f007";
                                     margin-right: 10px;
+
+                                    @media (max-width: 400px){
+                                        margin:0;
+                                        font-size: 24px !important;
+                                        line-height: 1.5 !important;
+                                    }
                                 }
                             }
                         }
@@ -386,7 +482,7 @@ aside.col-md-4{
                 .header-nav{
                     display:inline-block;
 
-                    a{ 
+                    a.search{ 
                         height:65px;
                         width:65px;
                         background:$white;
@@ -394,9 +490,18 @@ aside.col-md-4{
                         color:$base-link-color;
                         text-align:center;
                         margin:0;
+                        display:inline-block;
 
-                        @media (min-width: 767px){
-                            display: inline-block;
+                        @media (max-width: 990px) {
+                            height:40px;
+                            width:40px;
+                            padding:0;
+                            display:inline-block;
+
+                            &:before{
+                                font-size:24px !important;
+                                line-height: 1.5 !important;
+                            }
                         }
 
                         &:before {
@@ -424,7 +529,7 @@ aside.col-md-4{
 
 #nav-search {
     position: absolute;
-    top: 50px;
+    top: 85px;
     left: 0px;
     padding: 15px;
     height: auto;
@@ -433,6 +538,14 @@ aside.col-md-4{
     display: none;
     margin: 0;
     background: #03151e !important;
+
+    @media (max-width: 990px) {
+        top: 65px;
+    }
+
+    &.active {
+        display: block;
+    }
 }
 
 .search-text{
@@ -570,6 +683,10 @@ footer.main {
     margin:0;
     padding:20px 0;
     border-radius: 0;
+
+    @media (max-width: 767px){
+        padding:10px 0;
+    }
 }
 
 //sr-only
@@ -590,6 +707,14 @@ footer.main {
     background-image: url(../images/foster4leeds-background.jpg);
     background-attachment:fixed;
 
+    @media (max-width: 990px) {
+        margin-top:-70px;
+    }
+
+    @media (max-width: 780px) {
+        margin-top:-115px;
+    }
+
     @media (min-width: 767px){
         height:90vh;
     }
@@ -600,6 +725,10 @@ footer.main {
         .hero-lcc__content {
             max-width: 850px;
             margin-top:55px;
+
+            @media (max-width: 780px) {
+                margin-top:90px;
+            }
 
             .hero-lcc__intro{
 
@@ -636,6 +765,21 @@ footer.main {
                             margin:0 0 15px;
                         }
                     }
+
+                    &.btn-arrow{
+                        &:after{
+                            font-size:40px;
+                        }
+
+                        @media (max-width: 400px) {
+                           padding: 15px 45px 15px 15px;
+
+                           &:after{
+                                right:5px;
+                                font-size:30px;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -644,21 +788,15 @@ footer.main {
 
 .btn{
     &.btn-arrow{
-        padding: 20px 25px;
+        padding: 20px 65px 20px 25px;
 
         &:before{
             display:none;
         }
         &:after{
-            position:relative;
-            width:auto;
             font-size:40px;
-            display:inline-block;
-            top:4px;
-            right:auto;
-            padding:0 !important;
-            margin:0 0 0 20px;
-            font-weight:bold;
+            width:auto;
+            right:20px;
         }
     }
 }
