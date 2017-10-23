@@ -4528,7 +4528,7 @@ aside.col-md-4 {
       width: 150px;
       height: 22px; } }
 
-@media (max-width: 780px) {
+@media (max-width: 990px) {
   .header-nav-container {
     padding-bottom: 43px; } }
 
@@ -4551,7 +4551,7 @@ aside.col-md-4 {
         text-align: right;
         float: left;
         margin-right: 15px; }
-        @media (max-width: 780px) {
+        @media (max-width: 990px) {
           .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-contact {
             position: absolute;
             width: 100%;
@@ -4572,7 +4572,7 @@ aside.col-md-4 {
             .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-contact .header-telephone {
               font-size: 30px;
               margin: 4px 0; } }
-          @media (max-width: 780px) {
+          @media (max-width: 990px) {
             .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-contact .header-telephone {
               font-size: 19px;
               display: inline-block;
@@ -4587,7 +4587,7 @@ aside.col-md-4 {
             content: "\f095";
             margin-right: 10px;
             font-size: 30px; }
-            @media (max-width: 780px) {
+            @media (max-width: 990px) {
               .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-contact .header-telephone:before {
                 font-size: 16px; } }
             @media (max-width: 340px) {
@@ -4601,7 +4601,7 @@ aside.col-md-4 {
           @media (max-width: 990px) {
             .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-contact a, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-contact .link {
               display: none; } }
-          @media (max-width: 780px) {
+          @media (max-width: 990px) {
             .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-contact a, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-contact .link {
               display: inline-block; } }
           @media (max-width: 320px) {
@@ -4717,12 +4717,29 @@ footer.main {
         display: flex;
         align-items: center;
         justify-content: space-between; }
+        @media (max-width: 400px) {
+          footer.main .footerGlobal .footer-social .socialBookmarks {
+            display: block; } }
         footer.main .footerGlobal .footer-social .socialBookmarks h3 {
           float: left;
           margin: 0;
           font-size: 27px; }
+          @media (max-width: 767px) {
+            footer.main .footerGlobal .footer-social .socialBookmarks h3 {
+              font-size: 21px; } }
+          @media (max-width: 400px) {
+            footer.main .footerGlobal .footer-social .socialBookmarks h3 {
+              float: none;
+              width: 100%;
+              margin-bottom: 10px;
+              text-align: center; } }
         footer.main .footerGlobal .footer-social .socialBookmarks ul {
           float: right; }
+          @media (max-width: 400px) {
+            footer.main .footerGlobal .footer-social .socialBookmarks ul {
+              float: none;
+              width: 100%;
+              text-align: center; } }
           footer.main .footerGlobal .footer-social .socialBookmarks ul li {
             display: inline-block;
             margin: 0; }
@@ -4734,16 +4751,29 @@ footer.main {
               width: 70px;
               height: 70px;
               display: inline-block; }
+              @media (max-width: 767px) {
+                footer.main .footerGlobal .footer-social .socialBookmarks ul li a, footer.main .footerGlobal .footer-social .socialBookmarks ul li .link {
+                  width: 40px;
+                  height: 40px; } }
               footer.main .footerGlobal .footer-social .socialBookmarks ul li a:after, footer.main .footerGlobal .footer-social .socialBookmarks ul li .link:after {
                 color: #E65E24;
                 border-color: #E65E24;
                 border-radius: 4px; }
+                @media (max-width: 767px) {
+                  footer.main .footerGlobal .footer-social .socialBookmarks ul li a:after, footer.main .footerGlobal .footer-social .socialBookmarks ul li .link:after {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 24px;
+                    padding-top: 3px; } }
               footer.main .footerGlobal .footer-social .socialBookmarks ul li a:hover:after, footer.main .footerGlobal .footer-social .socialBookmarks ul li .link:hover:after {
                 color: #FFFFFF;
                 background: #E65E24; }
     footer.main .footerGlobal .footer-nav {
       border-bottom: 1px solid #CFDCE1;
-      padding: 60px 0 40px; }
+      padding: 60px 0; }
+      @media (max-width: 767px) {
+        footer.main .footerGlobal .footer-nav {
+          padding: 30px 0; } }
       footer.main .footerGlobal .footer-nav nav {
         padding: 0; }
         footer.main .footerGlobal .footer-nav nav ul li {
@@ -4757,10 +4787,27 @@ footer.main {
               opacity: 0.7; }
       footer.main .footerGlobal .footer-nav .footer-logos {
         text-align: right; }
+        @media (max-width: 990px) {
+          footer.main .footerGlobal .footer-nav .footer-logos {
+            margin-top: 50px; } }
+        @media (max-width: 600px) {
+          footer.main .footerGlobal .footer-nav .footer-logos {
+            margin: 30px 0 30px; } }
         footer.main .footerGlobal .footer-nav .footer-logos a, footer.main .footerGlobal .footer-nav .footer-logos .link {
           display: inline-block; }
           footer.main .footerGlobal .footer-nav .footer-logos a:hover, footer.main .footerGlobal .footer-nav .footer-logos .link:hover {
             opacity: 0.7; }
+          @media (max-width: 990px) {
+            footer.main .footerGlobal .footer-nav .footer-logos a:first-of-type, footer.main .footerGlobal .footer-nav .footer-logos .link:first-of-type {
+              float: left; } }
+          @media (max-width: 500px) {
+            footer.main .footerGlobal .footer-nav .footer-logos a, footer.main .footerGlobal .footer-nav .footer-logos .link {
+              display: block;
+              width: 100%; }
+              footer.main .footerGlobal .footer-nav .footer-logos a:first-of-type, footer.main .footerGlobal .footer-nav .footer-logos .link:first-of-type {
+                margin-bottom: 30px; }
+              footer.main .footerGlobal .footer-nav .footer-logos a img, footer.main .footerGlobal .footer-nav .footer-logos .link img {
+                width: 50%; } }
     footer.main .footerGlobal .footer-bottom {
       padding: 30px 0; }
       footer.main .footerGlobal .footer-bottom p {
@@ -4769,6 +4816,15 @@ footer.main {
 
 .cfl-logo {
   padding-left: 75px; }
+  @media (max-width: 500px) {
+    .cfl-logo {
+      padding: 0; } }
+
+@media (min-width: 600px) and (max-width: 990px) {
+  .three-columns, footer.main .footerGlobal .footer-nav nav ul, footer.main .footerGlobal .footer-nav nav ul {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2; } }
 
 .breadcrumb {
   border-bottom: 1px solid #CFDCE1;
@@ -4796,7 +4852,7 @@ footer.main {
   @media (max-width: 990px) {
     .hero-lcc-wrapper {
       margin-top: -70px; } }
-  @media (max-width: 780px) {
+  @media (max-width: 990px) {
     .hero-lcc-wrapper {
       margin-top: -115px; } }
   @media (min-width: 767px) {
@@ -4807,7 +4863,7 @@ footer.main {
     .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
       max-width: 850px;
       margin-top: 55px; }
-      @media (max-width: 780px) {
+      @media (max-width: 990px) {
         .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
           margin-top: 90px; } }
       @media (min-width: 767px) {
@@ -4817,6 +4873,9 @@ footer.main {
         .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
           margin-bottom: 40px;
           font-size: 26px; } }
+      @media (max-width: 500px) {
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
+          margin: 0 0 10px; } }
       .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
         background: transparent;
         padding: 0;
@@ -4833,6 +4892,9 @@ footer.main {
             @media (max-width: 767px) {
               .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button]:first-of-type, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button]:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a #myChatLinkInfo:first-of-type, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link #myChatLinkInfo:first-of-type, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo:first-of-type {
                 margin: 0 0 15px; } }
+          @media (min-width: 655px) and (max-width: 767px) {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-arrow, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn[rel=external], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[rel=external][type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[rel=external][type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input.btn-arrow[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input.btn-arrow[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo {
+              margin: 0 10px 10px 0; } }
           .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-arrow:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn[rel=external]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[rel=external][type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[rel=external][type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input.btn-arrow[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input.btn-arrow[type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo:after {
             font-size: 40px; }
           @media (max-width: 400px) {

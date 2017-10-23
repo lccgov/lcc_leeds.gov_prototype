@@ -331,7 +331,7 @@ $header-height-mobile:70px;
 }
 
 .header-nav-container{
-    @media (max-width: 780px) {
+    @media (max-width: 990px) {
         padding-bottom: 43px;
     }
 }
@@ -364,7 +364,7 @@ $header-height-mobile:70px;
                         float:left;
                         margin-right:15px;
 
-                        @media (max-width: 780px) {
+                        @media (max-width: 990px) {
                             position:absolute;
                             width:100%;
                             display:block;
@@ -388,7 +388,7 @@ $header-height-mobile:70px;
                                 margin:4px 0;
                             }
 
-                            @media (max-width: 780px) {
+                            @media (max-width: 990px) {
                                 font-size:19px;
                                 display:inline-block;
                                 float:left;
@@ -406,7 +406,7 @@ $header-height-mobile:70px;
                                 margin-right: 10px;
                                 font-size:30px;
 
-                                @media (max-width: 780px) {
+                                @media (max-width: 990px) {
                                     font-size:16px;
                                 }
 
@@ -428,7 +428,7 @@ $header-height-mobile:70px;
                                 display:none;
                             }
 
-                            @media (max-width: 780px) {
+                            @media (max-width: 990px) {
                                 display:inline-block;
                             }
 
@@ -604,14 +604,35 @@ footer.main {
                 align-items: center;
                 justify-content: space-between;
 
+                @media (max-width: 400px){
+                    display:block;
+                }
+
                 h3{
                     float:left;
                     margin:0;
                     font-size:27px;
+
+                    @media (max-width: 767px){
+                        font-size:21px;
+                    }
+
+                    @media (max-width: 400px){
+                        float:none;
+                        width:100%;
+                        margin-bottom:10px;
+                        text-align:center;
+                    }
                 }
                 
                 ul{
                     float:right;
+
+                    @media (max-width: 400px){
+                        float:none;
+                        width:100%;
+                        text-align:center;
+                    }
 
                     li{
                         display:inline-block;
@@ -628,10 +649,22 @@ footer.main {
                             height: 70px;
                             display:inline-block;
 
+                            @media (max-width: 767px){
+                                width: 40px;
+                                height: 40px;
+                            }
+
                             &:after{
                                 color:$base-link-color;
                                 border-color:$base-link-color;
                                 border-radius: 4px;
+
+                                @media (max-width: 767px){
+                                    width: 40px;
+                                    height: 40px;
+                                    font-size:24px;
+                                    padding-top:3px;
+                                }
                             }
 
                             &:hover{
@@ -648,7 +681,11 @@ footer.main {
 
         .footer-nav{
             border-bottom:1px solid $border-color;
-            padding:60px 0 40px;
+            padding:60px 0;
+
+            @media (max-width: 767px){
+                padding:30px 0;
+            }
 
             nav {
                 padding:0;
@@ -677,11 +714,39 @@ footer.main {
             .footer-logos{
                 text-align:right;
 
+                @media (max-width: 990px){
+                    margin-top:50px;
+                }
+
+                @media (max-width: 600px){
+                    margin:30px 0 30px;
+                }
+
                 a{
                     display:inline-block;
 
                     &:hover{
                         opacity:0.7;
+                    }
+
+                    @media (max-width: 990px){
+
+                        &:first-of-type{
+                            float:left;
+                        }
+                    }
+
+                    @media (max-width: 500px){
+                        display:block;
+                        width:100%;
+
+                        &:first-of-type{
+                            margin-bottom:30px;
+                        }
+
+                        img{
+                            width:50%;
+                        }
                     }
                 }
             }
@@ -700,6 +765,18 @@ footer.main {
 
 .cfl-logo{
     padding-left:75px;
+
+    @media (max-width: 500px){
+        padding:0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 990px){
+    .three-columns, footer.main .footerGlobal .footer-nav nav ul {
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
 }
 
 //breadcrumb
@@ -736,7 +813,7 @@ footer.main {
         margin-top:-70px;
     }
 
-    @media (max-width: 780px) {
+    @media (max-width: 990px) {
         margin-top:-115px;
     }
 
@@ -751,7 +828,7 @@ footer.main {
             max-width: 850px;
             margin-top:55px;
 
-            @media (max-width: 780px) {
+            @media (max-width: 990px) {
                 margin-top:90px;
             }
 
@@ -765,6 +842,12 @@ footer.main {
                     .hero-lcc__intro-secondary{
                         margin-bottom:40px;
                         font-size:26px;
+                    }
+                }
+
+                @media (max-width: 500px){
+                    .hero-lcc__intro-header {
+                        margin: 0 0 10px;
                     }
                 }
             }
@@ -792,6 +875,11 @@ footer.main {
                     }
 
                     &.btn-arrow{
+
+                        @media (min-width: 655px) and (max-width: 767px){
+                            margin:0 10px 10px 0;
+                        }
+
                         &:after{
                             font-size:40px;
                         }
