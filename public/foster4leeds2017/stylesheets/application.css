@@ -50,12 +50,12 @@ Base.sass variables
 body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
-  color: #052635;
+  color: #0D4662;
   background-color: #fff; }
 
 .ms-rtestate-field h1.ms-rteElement-H2, .ms-rtestate-field h2.ms-rteElement-H2, .ms-rtestate-field h3.ms-rteElement-H2, .ms-rtestate-field h4.ms-rteElement-H2, .ms-rtestate-field h5.ms-rteElement-H2 {
   font-family: "Open Sans", sans-serif;
-  color: #052635; }
+  color: #0D4662; }
 
 .btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo, .button {
   background: green;
@@ -297,7 +297,7 @@ ul.cbs-List {
 .ms-rtestate-field .part-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: #052635;
+  color: #0D4662;
   padding: 0;
   display: block; }
 
@@ -901,9 +901,9 @@ ul.accordion {
         background: rgba(0, 0, 0, 0.05);
         color: #E55825; }
       ul.accordion li a.header:focus, ul.accordion li .header.link:focus {
-        color: #052635 !important; }
+        color: #0D4662 !important; }
         ul.accordion li a.header:focus:after, ul.accordion li .header.link:focus:after {
-          color: #052635 !important; }
+          color: #0D4662 !important; }
       ul.accordion li a.header:after, ul.accordion li .header.link:after {
         font-family: FontAwesome;
         font-size: 19px;
@@ -1112,7 +1112,7 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
       .groupPromo ul li .link:focus h3:after,
       .groupPromo ul li a:focus p,
       .groupPromo ul li .link:focus p {
-        color: #052635 !important; }
+        color: #0D4662 !important; }
       @media (max-width: 767px) {
         .groupPromo ul li a, .groupPromo ul li .link {
           min-height: 0;
@@ -1155,7 +1155,7 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
         font-weight: 300;
         margin-top: 10px;
         margin-bottom: 0;
-        color: #052635; }
+        color: #0D4662; }
         @media (max-width: 767px) {
           .groupPromo ul li a p, .groupPromo ul li .link p {
             font-size: 14px; } }
@@ -1656,7 +1656,7 @@ a.skip:focus, .skip.link:focus, a.skip:active, .skip.link:active {
               font-size: 21px;
               line-height: 26px; } }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__secondary {
-          color: #052635;
+          color: #0D4662;
           margin: 0;
           font-size: 18px;
           line-height: 24px;
@@ -1796,7 +1796,7 @@ a.skip:focus, .skip.link:focus, a.skip:active, .skip.link:active {
     display: none; }
   .btn:focus, .form-group input[type=button]:focus, .form-group input.btn.btn-primary:focus, #myChatLinkContainer #myChatLink a #myChatLinkInfo:focus, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:focus {
     background: #FFBF47;
-    color: #052635;
+    color: #0D4662;
     border-color: #FFBF47 !important; }
   .btn.btn-arrow, .btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo, .form-group input.btn-arrow[type=button], .form-group input.btn-arrow.btn.btn-primary, #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo {
     padding-right: 60px; }
@@ -1973,7 +1973,7 @@ footer.main .footerGlobal .footer-nav nav ul li .link,
   font-family: "Open Sans", sans-serif, sans-serif;
   font-weight: 400;
   text-transform: none;
-  color: #052635; }
+  color: #0D4662; }
   h1.top,
   h2.top,
   h3.top,
@@ -2285,7 +2285,7 @@ ul.bottom {
 .section-title {
   display: block;
   font-size: 24px;
-  color: #354855;
+  color: #105679;
   font-weight: 400; }
 
 .paragraph, .ms-rtestate-field p,
@@ -2331,7 +2331,7 @@ p.sharepoint,
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 400;
-  color: #354855; }
+  color: #105679; }
   @media (min-width: 641px) {
     .text-description {
       font-size: 19px; } }
@@ -2469,7 +2469,7 @@ blockquote {
   blockquote span.open-quote:after {
     color: #CFDCE1; }
   blockquote footer {
-    color: #052635; }
+    color: #0D4662; }
     @media (max-width: 641px) {
       blockquote footer {
         font-size: 16px !important; } }
@@ -3019,7 +3019,7 @@ textarea.form-control {
 .form-control {
   width: 100% !important;
   height: 45px;
-  color: #052635 !important;
+  color: #0D4662 !important;
   background-color: #fff !important;
   background-image: none;
   border: 1px solid #9DA5B2 !important;
@@ -3041,7 +3041,7 @@ textarea.form-control {
 
 .form-hint {
   display: block;
-  color: #354855;
+  color: #105679;
   font-weight: normal;
   margin-top: 1px;
   padding-bottom: 2px;
@@ -3249,7 +3249,7 @@ form legend {
       left: 15px;
       top: 15px;
       line-height: 1;
-      color: rgba(5, 38, 53, 0.8); }
+      color: rgba(13, 70, 98, 0.8); }
       @media (min-width: 641px) {
         #myChatLinkContainer #myChatLink #myChatLinkInfo:before {
           top: 50%;
@@ -3258,7 +3258,7 @@ form legend {
           margin-top: -30px; } }
     #myChatLinkContainer #myChatLink #myChatLinkInfo h4,
     #myChatLinkContainer #myChatLink #myChatLinkInfo span {
-      color: rgba(5, 38, 53, 0.8); }
+      color: rgba(13, 70, 98, 0.8); }
     #myChatLinkContainer #myChatLink #myChatLinkInfo h4 {
       margin: 0;
       font-size: 21px; }
@@ -3474,7 +3474,7 @@ form legend {
         .pagination-nav ul li a:before, .pagination-nav ul li .link:before {
           font-family: FontAwesome;
           position: absolute;
-          color: #094764;
+          color: #13668f;
           font-size: 60px; }
         .pagination-nav ul li a .pagination-nav__part-title, .pagination-nav ul li .link .pagination-nav__part-title {
           font-size: 24px;
@@ -3486,7 +3486,7 @@ form legend {
               font-size: 32px;
               line-height: 1.25; } }
         .pagination-nav ul li a .pagination-nav__label, .pagination-nav ul li .link .pagination-nav__label {
-          color: #052635; }
+          color: #0D4662; }
 
 .part-navigation__container {
   margin-top: 30px;
@@ -4132,7 +4132,7 @@ form legend {
           margin: 0 !important; } }
     .groupPromo ul li a p, .groupPromo ul li .link p {
       font-weight: 400;
-      color: #354855; }
+      color: #105679; }
       @media (max-width: 767px) {
         .groupPromo ul li a p, .groupPromo ul li .link p {
           font-size: 16px; } }
@@ -4141,7 +4141,7 @@ form legend {
     .groupPromo ul li .link:focus h3:after,
     .groupPromo ul li a:focus p,
     .groupPromo ul li .link:focus p {
-      color: #052635; }
+      color: #0D4662; }
     .groupPromo ul li a:hover, .groupPromo ul li .link:hover {
       background: #F6F7FA; }
       .groupPromo ul li a:hover h3, .groupPromo ul li .link:hover h3 {
@@ -4150,7 +4150,7 @@ form legend {
         .groupPromo ul li a:hover h3:after, .groupPromo ul li .link:hover h3:after {
           color: #3399BB; }
       .groupPromo ul li a:hover p, .groupPromo ul li .link:hover p {
-        color: #354855; }
+        color: #105679; }
     .groupPromo ul li a:active, .groupPromo ul li .link:active {
       background: #eff1f6 !important; }
   .groupPromo ul li a[rel="external"]:after, .groupPromo ul li [rel="external"].link:after,
@@ -4179,7 +4179,7 @@ form legend {
   font-weight: 600 !important; }
 
 .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__secondary {
-  color: #354855;
+  color: #105679;
   font-weight: 400; }
 
 .mega-promo .mega-promo__item a:hover, .mega-promo .mega-promo__item .link:hover {
@@ -4370,7 +4370,7 @@ footer.main .footerGlobal {
       border-color: #07374c; }
     .header-lcc .header-nav a:focus, .header-lcc .header-nav .link:focus {
       background: #FFBF47 !important;
-      color: #052635 !important;
+      color: #0D4662 !important;
       border-color: #FFBF47 !important; }
     .header-lcc .header-nav a.active, .header-lcc .header-nav .active.link {
       background: #041c27 !important;
@@ -4707,7 +4707,7 @@ footer.main {
   border-top: 1px solid #CFDCE1;
   margin-top: 50px; }
   footer.main p {
-    color: #052635; }
+    color: #0D4662; }
   footer.main .container-fluid {
     padding-right: 15px;
     padding-left: 15px; }
@@ -4744,7 +4744,7 @@ footer.main {
           margin: 0; }
           footer.main .footerGlobal .footer-contact .socialBookmarks ul li:first-of-type {
             padding: 0;
-            color: #354855; }
+            color: #105679; }
           footer.main .footerGlobal .footer-contact .socialBookmarks ul li a, footer.main .footerGlobal .footer-contact .socialBookmarks ul li .link {
             margin: 0;
             width: 70px;
@@ -4797,7 +4797,7 @@ footer.main {
           margin-bottom: 20px; }
           footer.main .footerGlobal .footer-nav nav ul li a, footer.main .footerGlobal .footer-nav nav ul li .link {
             font-family: "Montserrat", sans-serif;
-            color: #354855 !important;
+            color: #105679 !important;
             text-decoration: underline; }
             footer.main .footerGlobal .footer-nav nav ul li a:hover, footer.main .footerGlobal .footer-nav nav ul li .link:hover {
               opacity: 0.7;
@@ -4868,7 +4868,7 @@ footer.main {
     footer.main .footerGlobal .footer-bottom {
       padding: 30px 0; }
       footer.main .footerGlobal .footer-bottom p {
-        color: #354855;
+        color: #105679;
         font-size: 14px; }
 
 @media (min-width: 600px) and (max-width: 990px) {
@@ -5108,7 +5108,7 @@ footer.main {
   .contact-phone span {
     display: block;
     font-size: 14px;
-    color: #354855; }
+    color: #105679; }
 
 .contact-email {
   font-size: 19px;
