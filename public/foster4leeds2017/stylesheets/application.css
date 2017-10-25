@@ -4482,19 +4482,6 @@ html {
 hr {
   border-color: rgba(207, 220, 225, 0.5); }
 
-.header-nav a.search, .header-nav .search.link,
-.btn-primary,
-.form-group input[type=button],
-.form-group input.btn.btn-primary,
-#myChatLinkContainer #myChatLink a #myChatLinkInfo,
-#myChatLinkContainer #myChatLink .link #myChatLinkInfo {
-  /*border-bottom:3px solid #723015;*/
-  box-shadow: 0px 3px 0px #723015; }
-
-.btn-secondary, .form-group input[type=button].btn-secondary {
-  /*border-bottom:3px solid #052635;*/
-  box-shadow: 0px 3px 0px #052635; }
-
 .cd-top:focus {
   background: #FFBF47 url("images/cd-top-arrow.svg") no-repeat center 50% !important;
   opacity: 1; }
@@ -4958,8 +4945,10 @@ footer.main {
                 margin: 0 0 15px; } }
           .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-secondary#myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-secondary#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-secondary#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-secondary#myChatLinkInfo {
             background: white;
-            color: #E55825;
-            box-shadow: 0px 3px 0px #723015; }
+            color: #E55825; }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-secondary#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-secondary#myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-secondary#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-secondary#myChatLinkInfo:hover {
+              background: #E6EDF0;
+              color: #E55825; }
           .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-secondary#myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-secondary#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-secondary#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-secondary#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-primary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo {
             border: 0; }
           @media (min-width: 655px) and (max-width: 767px) {
@@ -5060,7 +5049,8 @@ footer.main {
             font-size: 40px; } }
       .section-promo .container-fluid .section-promo_content .section-promo_text {
         margin: 0 0 25px;
-        font-size: 19px; }
+        font-size: 19px;
+        line-height: 1.6; }
         @media (min-width: 990px) {
           .section-promo .container-fluid .section-promo_content .section-promo_text {
             font-size: 21px; } }

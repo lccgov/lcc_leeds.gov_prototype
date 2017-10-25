@@ -270,12 +270,12 @@ hr{
 //buttons
 .header-nav a.search,
 .btn-primary{
-    /*border-bottom:3px solid #723015;*/
-    box-shadow: 0px 3px 0px #723015;
+    //border-bottom:3px solid #723015;
+    //box-shadow: 0px 3px 0px #723015;
 }
 .btn-secondary{
-    /*border-bottom:3px solid #052635;*/
-    box-shadow: 0px 3px 0px #052635;
+    //border-bottom:3px solid #052635;
+    //box-shadow: 0px 3px 0px #052635;
 }
 
 //back to top (focus fix)
@@ -917,7 +917,12 @@ footer.main {
                     &.btn-secondary{
                         background:white;
                         color:$base-link-color;
-                        box-shadow: 0px 3px 0px #723015;
+                        //box-shadow: 0px 3px 0px #723015;
+
+                        &:hover{
+                            background:$panel-color;
+                            color:$base-link-color;   
+                        }
                     }
 
                     &.btn-secondary,
@@ -1069,6 +1074,7 @@ footer.main {
             .section-promo_text{
                 margin:0 0 25px;
                 font-size:19px;
+                line-height:1.6;
 
                 @media (min-width: 990px){
                     font-size:21px;
