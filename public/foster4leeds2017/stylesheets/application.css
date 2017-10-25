@@ -4559,10 +4559,8 @@ aside.col-md-4 {
             display: block;
             top: 68px;
             left: 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             padding: 10px 15px;
-            background: #E55825;
+            background: #d74c1a;
             margin: 0; } }
         .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-contact .header-telephone {
           display: block;

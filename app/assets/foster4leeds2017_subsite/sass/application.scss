@@ -372,10 +372,8 @@ $header-height-mobile:70px;
                             display:block;
                             top:68px;
                             left:0;
-                            border-top:1px solid rgba(white,0.2);
-                            border-bottom:1px solid rgba(white,0.2);
                             padding:10px 15px;
-                            background:$brand-color;
+                            background:darken($brand-color, 5%);
                             margin:0;
                         }
 
