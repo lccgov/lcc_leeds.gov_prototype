@@ -1115,6 +1115,10 @@ footer.main{
                 font-family:$font-secondary;
                 color:$secondary-font-color;
                 font-size: 14px;
+
+                &:hover{
+                    opacity:0.7;
+                }
             }
         }
     }

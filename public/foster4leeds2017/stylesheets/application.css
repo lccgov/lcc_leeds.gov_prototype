@@ -4272,6 +4272,8 @@ footer.main {
       font-family: "Montserrat", sans-serif;
       color: #105679;
       font-size: 14px; }
+      .footer-nav-secondary ul li a:hover, .footer-nav-secondary ul li .link:hover {
+        opacity: 0.7; }
 
 @media (max-width: 600px) {
   .footer-nav-secondary {
