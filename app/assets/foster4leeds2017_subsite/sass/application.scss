@@ -316,6 +316,9 @@ $header-height-mobile:70px;
     @media (max-width: 990px) {
         padding-bottom: 43px;
     }
+    @media (max-width: 641px) {
+        padding-bottom: 41px;
+    }
 }
 
 .sectionHeader {
@@ -893,7 +896,7 @@ footer.main {
                             height: 70px;
                             display:inline-block;
 
-                            @media (max-width: 767px){
+                            @media (max-width: 5000px){
                                 width: 40px;
                                 height: 40px;
                             }
@@ -903,7 +906,7 @@ footer.main {
                                 border-color:$base-link-color;
                                 border-radius: 4px;
 
-                                @media (max-width: 767px){
+                                @media (max-width: 5000px){
                                     width: 40px;
                                     height: 40px;
                                     font-size:24px;
@@ -1072,6 +1075,7 @@ footer.main {
 
 .contact-phone{
     font-size:30px;
+    font-size:19px;
 
     span{
         display:block;
@@ -1086,6 +1090,7 @@ footer.main {
 
 .contact-address{
     font-size:14px;
+    font-size:16px;
 }
 
 .contact-phone,
@@ -1143,7 +1148,7 @@ footer.main {
 .breadcrumb{
     border-bottom:1px solid $border-color;
     margin:0;
-    padding:20px 0;
+    padding:12px 0;
     border-radius: 0;
 
     @media (max-width: 767px){

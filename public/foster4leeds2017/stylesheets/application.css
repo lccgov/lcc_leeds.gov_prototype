@@ -3687,6 +3687,10 @@ aside.col-md-4 {
   .header-nav-container {
     padding-bottom: 43px; } }
 
+@media (max-width: 641px) {
+  .header-nav-container {
+    padding-bottom: 41px; } }
+
 .sectionHeader .container-fluid .header-wrapper {
   height: 110px;
   display: -webkit-box;
@@ -4098,7 +4102,7 @@ footer.main {
             width: 70px;
             height: 70px;
             display: inline-block; }
-            @media (max-width: 767px) {
+            @media (max-width: 5000px) {
               footer.main .footerGlobal .footer-contact .socialBookmarks ul li a, footer.main .footerGlobal .footer-contact .socialBookmarks ul li .link {
                 width: 40px;
                 height: 40px; } }
@@ -4106,7 +4110,7 @@ footer.main {
               color: #E55825;
               border-color: #E55825;
               border-radius: 4px; }
-              @media (max-width: 767px) {
+              @media (max-width: 5000px) {
                 footer.main .footerGlobal .footer-contact .socialBookmarks ul li a:after, footer.main .footerGlobal .footer-contact .socialBookmarks ul li .link:after {
                   width: 40px;
                   height: 40px;
@@ -4239,7 +4243,8 @@ footer.main {
   margin: 0; }
 
 .contact-phone {
-  font-size: 30px; }
+  font-size: 30px;
+  font-size: 19px; }
   .contact-phone span {
     display: block;
     font-size: 14px;
@@ -4249,7 +4254,8 @@ footer.main {
   font-size: 19px; }
 
 .contact-address {
-  font-size: 14px; }
+  font-size: 14px;
+  font-size: 16px; }
 
 .contact-phone,
 .contact-email,
@@ -4291,7 +4297,7 @@ footer.main {
 .breadcrumb {
   border-bottom: 1px solid #CFDCE1;
   margin: 0;
-  padding: 20px 0;
+  padding: 12px 0;
   border-radius: 0; }
   @media (max-width: 767px) {
     .breadcrumb {
