@@ -4306,3 +4306,21 @@ footer.main {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0; }
+
+th span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400; }
+
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    border: 0; } }
+
+.table-responsive + h3 {
+  margin-top: 15px; }
+
+.table-responsive + .text-highlight, .table-responsive + .text-block {
+  margin-top: 15px; }
+
+.text-highlight + h3, .text-block + h3 {
+  margin-top: 15px; }
