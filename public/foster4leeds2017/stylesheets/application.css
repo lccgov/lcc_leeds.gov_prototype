@@ -57,19 +57,19 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #0D4662; }
 
-.btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo, .button {
+.btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary, .button {
   background: green;
   box-shadow: inset 0 1px 1px #00b300; }
-  .btn-primary:hover, .form-group input[type=button]:hover, .form-group input.btn.btn-primary:hover, #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, .button:hover {
+  .btn-primary:hover, .form-group input[type=button]:hover, .form-group input.btn.btn-primary:hover, .button:hover {
     background: #004d00; }
 
-.btn, .form-group input[type=button], .form-group input.btn.btn-primary, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo, .button {
+.btn, .form-group input[type=button], .form-group input.btn.btn-primary, .button {
   border-color: green;
   color: #fff; }
-  .btn.btn-default, .form-group input.btn-default[type=button], .form-group input.btn-default.btn.btn-primary, #myChatLinkContainer #myChatLink a .btn-default#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-default#myChatLinkInfo, .btn.alt, .form-group input.alt[type=button], .form-group input.alt.btn.btn-primary, #myChatLinkContainer #myChatLink a .alt#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .alt#myChatLinkInfo, .button.btn-default, .button.alt {
+  .btn.btn-default, .form-group input.btn-default[type=button], .form-group input.btn-default.btn.btn-primary, .btn.alt, .form-group input.alt[type=button], .form-group input.alt.btn.btn-primary, .button.btn-default, .button.alt {
     border-color: green;
     color: green; }
-    .btn.btn-default:hover, .form-group input.btn-default[type=button]:hover, .form-group input.btn-default.btn.btn-primary:hover, #myChatLinkContainer #myChatLink a .btn-default#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .btn-default#myChatLinkInfo:hover, .btn.alt:hover, .form-group input.alt[type=button]:hover, .form-group input.alt.btn.btn-primary:hover, #myChatLinkContainer #myChatLink a .alt#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .alt#myChatLinkInfo:hover, .button.btn-default:hover, .button.alt:hover {
+    .btn.btn-default:hover, .form-group input.btn-default[type=button]:hover, .form-group input.btn-default.btn.btn-primary:hover, .btn.alt:hover, .form-group input.alt[type=button]:hover, .form-group input.alt.btn.btn-primary:hover, .button.btn-default:hover, .button.alt:hover {
       background: #004d00;
       color: #fff; }
 
@@ -284,8 +284,6 @@ ul.cbs-List {
 .relatedPages h3,
 .relatedPages
 .ms-rtestate-field h3,
-.ms-rtestate-field .list-atoz li h2, .list-atoz li
-.ms-rtestate-field h2,
 .ms-rtestate-field .heading-small, .ms-rtestate-field h4.ms-rteElement-H2, .ms-rtestate-field h1.heading-small, .ms-rtestate-field h2.heading-small, .ms-rtestate-field h3.medium-small, .ms-rtestate-field h4.medium-small,
 .ms-rtestate-field h4,
 .ms-rtestate-field .heading-xsmall,
@@ -469,97 +467,6 @@ h1.ms-dlg-heading {
 h1 input.ms-long {
   width: 100% !important; }
 
-.blockLinks .listWebpart {
-  background: transparent;
-  color: #555;
-  padding: 0px; }
-  .blockLinks .listWebpart h2 {
-    color: #555; }
-  .blockLinks .listWebpart a, .blockLinks .listWebpart .link {
-    background: rgba(18, 18, 18, 0);
-    color: #555; }
-    .blockLinks .listWebpart a:hover, .blockLinks .listWebpart .link:hover {
-      background: transparent; }
-  .blockLinks .listWebpart h2 {
-    display: block;
-    padding-bottom: 15px; }
-  .blockLinks .listWebpart ul {
-    text-align: center; }
-    .col-lg-12 .blockLinks .listWebpart ul li {
-      width: 12.5%; }
-    .col-md-8 .blockLinks .listWebpart ul li {
-      width: 20%; }
-    .col-md-6 .blockLinks .listWebpart ul li {
-      width: 25%; }
-    .col-md-4 .blockLinks .listWebpart ul li {
-      width: 50%; }
-      .col-md-4 .blockLinks .listWebpart ul li a img, .col-md-4 .blockLinks .listWebpart ul li .link img {
-        width: 66%;
-        margin: 0 17% 15px; }
-    .blockLinks .listWebpart ul li a, .blockLinks .listWebpart ul li .link {
-      text-align: center;
-      font-size: 1em;
-      float: left;
-      width: 100%;
-      padding: 15px;
-      cursor: pointer;
-      border: none;
-      margin: 0px; }
-      .blockLinks .listWebpart ul li a img, .blockLinks .listWebpart ul li .link img {
-        border: 0px;
-        width: 80%;
-        margin: 0 10% 15px; }
-      .blockLinks .listWebpart ul li a:hover, .blockLinks .listWebpart ul li .link:hover {
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        background: rgba(0, 0, 0, 0.1); }
-    @media only screen and (max-width: 991px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 16.66%; }
-        .col-lg-12 .blockLinks .listWebpart ul li a img, .col-lg-12 .blockLinks .listWebpart ul li .link img, .col-md-8 .blockLinks .listWebpart ul li a img, .col-md-8 .blockLinks .listWebpart ul li .link img, .col-md-6 .blockLinks .listWebpart ul li a img, .col-md-6 .blockLinks .listWebpart ul li .link img, .col-md-4 .blockLinks .listWebpart ul li a img, .col-md-4 .blockLinks .listWebpart ul li .link img {
-          width: 100%;
-          margin: 0 0 15px 0; } }
-    @media only screen and (max-width: 768px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 25%; } }
-    @media only screen and (max-width: 600px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 33.333%; } }
-    @media only screen and (max-width: 420px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 50%; } }
-
-/*BLOCK LINK END*/
-.contentLink ul {
-  margin: 0px;
-  list-style: none;
-  padding: 0px; }
-  .contentLink ul li {
-    margin: 30px 0px; }
-    .contentLink ul li div {
-      padding: 30px;
-      background: #ECF0F1;
-      text-align: center;
-      position: relative;
-      padding-bottom: 100px; }
-      .contentLink ul li div img {
-        max-width: 100%; }
-      .contentLink ul li div h2 {
-        font-size: 30px;
-        font-weight: bold; }
-      .contentLink ul li div p {
-        margin: 30px; }
-      .contentLink ul li div a.btn, .contentLink ul li div .btn.link, .contentLink ul li div .form-group input.link[type=button], .form-group .contentLink ul li div input.link[type=button], .contentLink ul li div #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .contentLink ul li div .link#myChatLinkInfo, .contentLink ul li div #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .contentLink ul li div a#myChatLinkInfo, .contentLink ul li div #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .contentLink ul li div a#myChatLinkInfo, .contentLink ul li div #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .contentLink ul li div #myChatLinkInfo.link {
-        position: absolute;
-        bottom: 30px;
-        left: 30px;
-        right: 30px;
-        width: auto; }
-      .contentLink ul li div:after {
-        content: '';
-        height: 80px;
-        display: block; }
-
 /* iconLinks -----------------------------------------------------------------*/
 .iconLinks ul {
   text-align: center;
@@ -623,219 +530,6 @@ h1 input.ms-long {
   .iconLinks li.facebook.linkedin a:after, .iconLinks li.facebook.linkedin .link:after, .iconLinks li.twitter.linkedin a:after, .iconLinks li.twitter.linkedin .link:after, .iconLinks li.youtube.linkedin a:after, .iconLinks li.youtube.linkedin .link:after, .iconLinks li.instagram.linkedin a:after, .iconLinks li.instagram.linkedin .link:after, .iconLinks li.email.linkedin a:after, .iconLinks li.email.linkedin .link:after, .iconLinks li.linkedin.linkedin a:after, .iconLinks li.linkedin.linkedin .link:after {
     content: "\f0e1";
     left: 35%; }
-
-ul.promo-group {
-  padding: 0;
-  margin: 0 0 1.875em 0;
-  display: inline-block;
-  width: 100%;
-  background: #EDF2F5;
-  border-left: 1px solid #fff;
-  border-top: 1px solid #fff; }
-  ul.promo-group li {
-    width: 20%;
-    float: left;
-    background: #EDF2F5;
-    list-style: none;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff; }
-    ul.promo-group li h2 {
-      padding: 0.5em; }
-    ul.promo-group li a, ul.promo-group li .link {
-      padding: 20px;
-      display: inline-block;
-      background: #EDF2F5;
-      width: 100%;
-      color: #216486;
-      font-size: 1.313em;
-      position: relative; }
-      ul.promo-group li a img, ul.promo-group li .link img {
-        max-width: 100%;
-        width: 100%;
-        margin: 0 0 0.4em 0; }
-      ul.promo-group li a:hover, ul.promo-group li .link:hover {
-        text-decoration: none;
-        background: #216486;
-        color: #fff;
-        border-color: #212d3a; }
-        ul.promo-group li a:hover p, ul.promo-group li .link:hover p, ul.promo-group li a:hover h3, ul.promo-group li .link:hover h3 {
-          color: #fff; }
-      ul.promo-group li a h3, ul.promo-group li .link h3 {
-        margin: 0 0 0.4em;
-        font-weight: 600;
-        font-size: 1em;
-        color: #216486; }
-      ul.promo-group li a p, ul.promo-group li .link p {
-        color: #666666;
-        font-size: 0.7em;
-        margin: 0; }
-    ul.promo-group li ul {
-      padding: 1em 1.5em;
-      border-top: 1px solid #fff; }
-      ul.promo-group li ul li {
-        width: 100%;
-        float: none;
-        border: none !important; }
-        ul.promo-group li ul li a, ul.promo-group li ul li .link {
-          font-size: 0.875em;
-          font-weight: 400;
-          padding: 0 0 0 1em;
-          margin-bottom: 0.75em;
-          color: #444444;
-          border: none !important;
-          background: transparent; }
-          ul.promo-group li ul li a.more, ul.promo-group li ul li .more.link {
-            color: #216486;
-            margin-bottom: 0; }
-          ul.promo-group li ul li a:hover, ul.promo-group li ul li .link:hover {
-            background: transparent !important;
-            text-decoration: underline !important;
-            color: #216486 !important; }
-          ul.promo-group li ul li a:before, ul.promo-group li ul li .link:before {
-            content: '\f105';
-            font-family: FontAwesome;
-            top: 0px;
-            left: 0px;
-            position: absolute; }
-
-.col-md-8 ul.promo-group li {
-  width: 33.3%; }
-
-@media (max-width: 1300px) {
-  ul.promo-group li {
-    width: 25%; } }
-
-@media (max-width: 990px) {
-  ul.promo-group li, .col-md-8 ul.promo-group li {
-    width: 50%; }
-    ul.promo-group li h2, .col-md-8 ul.promo-group li h2 {
-      margin-top: 0px;
-      padding: 20px 0;
-      font-size: 1.3em; }
-      ul.promo-group li h2 span, .col-md-8 ul.promo-group li h2 span {
-        display: inline-block;
-        font-weight: 700;
-        font-size: 1em; }
-    ul.promo-group li a, ul.promo-group li .link, .col-md-8 ul.promo-group li a, .col-md-8 ul.promo-group li .link {
-      padding: 20px;
-      position: relative;
-      height: 100%; }
-      ul.promo-group li a img, ul.promo-group li .link img, .col-md-8 ul.promo-group li a img, .col-md-8 ul.promo-group li .link img {
-        display: none; }
-      ul.promo-group li a.jump-to, ul.promo-group li .jump-to.link, .col-md-8 ul.promo-group li a.jump-to, .col-md-8 ul.promo-group li .jump-to.link {
-        display: none; }
-      ul.promo-group li a h3, ul.promo-group li .link h3, .col-md-8 ul.promo-group li a h3, .col-md-8 ul.promo-group li .link h3 {
-        min-height: 0px;
-        font-size: 0.9em; }
-        ul.promo-group li a h3:after, ul.promo-group li .link h3:after, .col-md-8 ul.promo-group li a h3:after, .col-md-8 ul.promo-group li .link h3:after {
-          content: '\f105';
-          font-family: FontAwesome;
-          position: absolute;
-          top: 40%;
-          right: 10px; }
-    ul.promo-group li ul, .col-md-8 ul.promo-group li ul {
-      display: none; } }
-
-@media (max-width: 600px) {
-  ul.promo-group li, .col-md-8 ul.promo-group li {
-    width: 100%; } }
-
-.promo {
-  background-size: cover !important;
-  padding: 0;
-  margin-bottom: 1.875em;
-  position: relative;
-  width: 100%;
-  overflow: hidden; }
-  .promo a, .promo .link {
-    display: block;
-    min-height: 270px; }
-    .promo a span.image, .promo .link span.image {
-      height: 100%;
-      width: 100%;
-      bottom: 0px;
-      transition: transform 1s;
-      background-size: cover !important; }
-      .promo a span.image:hover, .promo .link span.image:hover {
-        transform: scale(1.1); }
-      .promo a span.image:after, .promo .link span.image:after {
-        display: none; }
-    .promo a span, .promo .link span {
-      background: rgba(0, 0, 0, 0.6);
-      padding: 15px;
-      color: #fff;
-      border-radius: 0 0px 0px 0;
-      bottom: 0px;
-      color: #fff;
-      left: 0;
-      position: absolute;
-      width: 100%;
-      transition: all 0.5s ease; }
-      .promo a span:after, .promo .link span:after {
-        content: '\f105';
-        font-family: FontAwesome;
-        position: absolute;
-        font-weight: normal;
-        bottom: 17px;
-        right: 0px;
-        height: 25px;
-        width: 25px;
-        display: block;
-        color: #fff;
-        font-size: 22px;
-        transition: all 0.5s ease; }
-    .promo a:hover span, .promo .link:hover span {
-      width: 100%;
-      padding: 15px 15px 40px 15px; }
-
-.two .listWebpart ul .promo {
-  width: 48% !important; }
-
-.three .listWebpart ul .promo {
-  width: 31.33% !important; }
-
-.four .listWebpart ul .promo {
-  width: 23% !important; }
-
-.two .listWebpart ul,
-.three .listWebpart ul,
-.four .listWebpart ul {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -moz-box-flex-wrap: wrap;
-  -ms-flex-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 0 0 -2%; }
-  @media (max-width: 600px) {
-    .two .listWebpart ul,
-    .three .listWebpart ul,
-    .four .listWebpart ul {
-      margin: 0; } }
-  .two .listWebpart ul .promo,
-  .three .listWebpart ul .promo,
-  .four .listWebpart ul .promo {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align-items: stretch;
-    -moz-box-align-items: stretch;
-    -ms-flex-align-items: stretch;
-    -webkit-align-items: stretch;
-    align-items: stretch;
-    margin: 0 0 2% 2%; }
-    @media (max-width: 600px) {
-      .two .listWebpart ul .promo,
-      .three .listWebpart ul .promo,
-      .four .listWebpart ul .promo {
-        margin: 0 0 15px;
-        width: 100% !important; } }
 
 .breadcrumb {
   padding: 0;
@@ -943,7 +637,7 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
 ul.accordion li div.content-block div:last-of-type {
   padding-bottom: 30px !important; }
 
-ul.accordion li div.content-block div + .btn, ul.accordion li div.content-block .form-group div + input[type=button], .form-group ul.accordion li div.content-block div + input[type=button], ul.accordion li div.content-block .form-group div + input.btn.btn-primary, ul.accordion li div.content-block #myChatLinkContainer #myChatLink a .form-group div + input#myChatLinkInfo, ul.accordion li div.content-block #myChatLinkContainer #myChatLink .link .form-group div + input#myChatLinkInfo, ul.accordion li div.content-block #myChatLinkContainer #myChatLink a div + #myChatLinkInfo, #myChatLinkContainer #myChatLink a ul.accordion li div.content-block div + #myChatLinkInfo, ul.accordion li div.content-block #myChatLinkContainer #myChatLink .link div + #myChatLinkInfo, #myChatLinkContainer #myChatLink .link ul.accordion li div.content-block div + #myChatLinkInfo {
+ul.accordion li div.content-block div + .btn, ul.accordion li div.content-block .form-group div + input[type=button], .form-group ul.accordion li div.content-block div + input[type=button], ul.accordion li div.content-block .form-group div + input.btn.btn-primary {
   margin-right: 20px; }
 
 ul.accordion div.text-highlight, ul.accordion div.text-block {
@@ -1467,39 +1161,11 @@ docsList
   .docList.two li, .docList.three li, .docList.four li, .docList.five li {
     width: 100%; } }
 
-blockquote {
-  padding: 30px 60px 30px 80px;
-  position: relative;
-  border-left: 10px solid #bbcada;
-  margin: 30px 0; }
-  blockquote p {
-    margin: 0;
-    font-size: 1.250em !important; }
-  blockquote span {
-    position: absolute;
-    width: 26px;
-    height: 21px;
-    display: block;
-    top: 25px;
-    left: 20px; }
-    blockquote span.open-quote:after {
-      content: '\f10d';
-      font-family: FontAwesome;
-      font-size: 40px;
-      color: #333; }
-  blockquote footer {
-    padding: 10px 0;
-    background: transparent;
-    font-size: 1em;
-    color: #000; }
-
 a:focus, .link:focus,
 input[type=submit]:focus,
 .btn:focus,
 .form-group input[type=button]:focus,
 .form-group input.btn.btn-primary:focus,
-#myChatLinkContainer #myChatLink a #myChatLinkInfo:focus,
-#myChatLinkContainer #myChatLink .link #myChatLinkInfo:focus,
 .button:focus,
 .ms-srch-sb > .ms-srch-sb-searchLink:focus,
 .main-nav ul li a.selected:focus,
@@ -1769,7 +1435,7 @@ a.skip:focus, .skip.link:focus, a.skip:active, .skip.link:active {
     display: inline-block;
     width: 100%; }
 
-.btn, .form-group input[type=button], .form-group input.btn.btn-primary, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo {
+.btn, .form-group input[type=button], .form-group input.btn.btn-primary {
   font-weight: 400;
   font-size: 19px;
   border: 0;
@@ -1786,21 +1452,21 @@ a.skip:focus, .skip.link:focus, a.skip:active, .skip.link:active {
   text-align: left;
   line-height: 1.3em; }
   @media (max-width: 641px) {
-    .btn, .form-group input[type=button], .form-group input.btn.btn-primary, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo {
+    .btn, .form-group input[type=button], .form-group input.btn.btn-primary {
       margin: 5px 0 15px;
       padding: 15px 20px;
       font-size: 16px; } }
-  .btn.bottom, .form-group input.bottom[type=button], .form-group input.bottom.btn.btn-primary, #myChatLinkContainer #myChatLink a .bottom#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .bottom#myChatLinkInfo {
+  .btn.bottom, .form-group input.bottom[type=button], .form-group input.bottom.btn.btn-primary {
     margin-bottom: 0 !important; }
-  .btn:after, .form-group input[type=button]:after, .form-group input.btn.btn-primary:after, #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after {
+  .btn:after, .form-group input[type=button]:after, .form-group input.btn.btn-primary:after {
     display: none; }
-  .btn:focus, .form-group input[type=button]:focus, .form-group input.btn.btn-primary:focus, #myChatLinkContainer #myChatLink a #myChatLinkInfo:focus, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:focus {
+  .btn:focus, .form-group input[type=button]:focus, .form-group input.btn.btn-primary:focus {
     background: #FFBF47;
     color: #0D4662;
     border-color: #FFBF47 !important; }
-  .btn.btn-arrow, .btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo, .form-group input.btn-arrow[type=button], .form-group input.btn-arrow.btn.btn-primary, #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo {
+  .btn.btn-arrow, .btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary, .form-group input.btn-arrow[type=button], .form-group input.btn-arrow.btn.btn-primary {
     padding-right: 60px; }
-    .btn.btn-arrow:before, .btn[rel=external]:before, .form-group input[rel=external][type=button]:before, .form-group input[rel=external].btn.btn-primary:before, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo:before, .form-group input.btn-arrow[type=button]:before, .form-group input.btn-arrow.btn.btn-primary:before, #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo:before {
+    .btn.btn-arrow:before, .btn[rel=external]:before, .form-group input[rel=external][type=button]:before, .form-group input[rel=external].btn.btn-primary:before, .form-group input.btn-arrow[type=button]:before, .form-group input.btn-arrow.btn.btn-primary:before {
       height: 100%;
       width: 36px;
       position: absolute;
@@ -1810,7 +1476,7 @@ a.skip:focus, .skip.link:focus, a.skip:active, .skip.link:active {
       z-index: 5;
       display: block;
       content: ""; }
-    .btn.btn-arrow:after, .btn[rel=external]:after, .form-group input[rel=external][type=button]:after, .form-group input[rel=external].btn.btn-primary:after, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo:after, .form-group input.btn-arrow[type=button]:after, .form-group input.btn-arrow.btn.btn-primary:after, #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo:after {
+    .btn.btn-arrow:after, .btn[rel=external]:after, .form-group input[rel=external][type=button]:after, .form-group input[rel=external].btn.btn-primary:after, .form-group input.btn-arrow[type=button]:after, .form-group input.btn-arrow.btn.btn-primary:after {
       display: block;
       font-family: FontAwesome;
       content: "\f105";
@@ -1827,13 +1493,13 @@ a.skip:focus, .skip.link:focus, a.skip:active, .skip.link:active {
       line-height: 0;
       width: 36px; }
     @media (max-width: 767px) {
-      .btn.btn-arrow, .btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo, .form-group input.btn-arrow[type=button], .form-group input.btn-arrow.btn.btn-primary, #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo {
+      .btn.btn-arrow, .btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary, .form-group input.btn-arrow[type=button], .form-group input.btn-arrow.btn.btn-primary {
         padding-right: 50px; } }
-  .btn.btn-small, .form-group input[type=button].btn-small, .form-group input.btn-small.btn.btn-primary, #myChatLinkContainer #myChatLink a .btn-small#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-small#myChatLinkInfo {
+  .btn.btn-small, .form-group input[type=button].btn-small, .form-group input.btn-small.btn.btn-primary {
     font-size: 16px;
     padding: 10px; }
     @media (max-width: 767px) {
-      .btn.btn-small, .form-group input[type=button].btn-small, .form-group input.btn-small.btn.btn-primary, #myChatLinkContainer #myChatLink a .btn-small#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-small#myChatLinkInfo {
+      .btn.btn-small, .form-group input[type=button].btn-small, .form-group input.btn-small.btn.btn-primary {
         font-size: 14px; } }
 
 .btn-default {
@@ -1843,15 +1509,15 @@ a.skip:focus, .skip.link:focus, a.skip:active, .skip.link:active {
     background: #bfd1d7;
     color: white; }
 
-.btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo {
+.btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary {
   background-color: #E55825;
   color: #FFFFFF;
   border-color: #E55825; }
-  .btn-primary:hover, .form-group input[type=button]:hover, .form-group input.btn.btn-primary:hover, #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover {
+  .btn-primary:hover, .form-group input[type=button]:hover, .form-group input.btn.btn-primary:hover {
     background: #e8693c;
     color: #FFFFFF;
     border-color: #e8693c; }
-  .btn-primary:active, .form-group input[type=button]:active, .form-group input.btn.btn-primary:active, #myChatLinkContainer #myChatLink a #myChatLinkInfo:active, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:active {
+  .btn-primary:active, .form-group input[type=button]:active, .form-group input.btn.btn-primary:active {
     background: #c04417 !important;
     color: #FFFFFF !important;
     border-color: #c04417 !important; }
@@ -1882,9 +1548,9 @@ a.skip:focus, .skip.link:focus, a.skip:active, .skip.link:active {
   .btn-outline:after, .form-group input[type=button].btn-outline:after {
     background: rgba(0, 0, 0, 0.05); }
 
-.btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo {
+.btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary {
   margin: 0 0 20px; }
-  .btn[rel=external]:after, .form-group input[rel=external][type=button]:after, .form-group input[rel=external].btn.btn-primary:after, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo:after {
+  .btn[rel=external]:after, .form-group input[rel=external][type=button]:after, .form-group input[rel=external].btn.btn-primary:after {
     content: "\f08e";
     width: 41px; }
 
@@ -1943,7 +1609,6 @@ legend,
 .sideNav h3,
 .relatedPages h2,
 .relatedPages h3,
-.list-atoz li h2,
 .heading-small,
 .ms-rtestate-field h4,
 .ms-rtestate-field h4.ms-rteElement-H2,
@@ -2000,7 +1665,6 @@ footer.main .footerGlobal .footer-nav nav ul li .link,
   legend.top,
   .sideNav h2.top,
   .relatedPages h2.top,
-  .list-atoz li h2.top,
   .heading-small.top,
   .ms-rtestate-field h4.top.ms-rteElement-H2,
   .ms-rtestate-field h1.top.heading-small,
@@ -2054,7 +1718,6 @@ footer.main .footerGlobal .footer-nav nav ul li .link,
   legend.bottom,
   .sideNav h2.bottom,
   .relatedPages h2.bottom,
-  .list-atoz li h2.bottom,
   .heading-small.bottom,
   .ms-rtestate-field h4.bottom.ms-rteElement-H2,
   .ms-rtestate-field h1.bottom.heading-small,
@@ -2114,7 +1777,6 @@ legend,
 .sideNav h3,
 .relatedPages h2,
 .relatedPages h3,
-.list-atoz li h2,
 .heading-small,
 .ms-rtestate-field h4,
 .ms-rtestate-field h4.ms-rteElement-H2,
@@ -2232,7 +1894,7 @@ ul.bottom {
 .ms-rtestate-field h4.heading-medium, h3, .part-content h2, legend, .sideNav h2,
 .sideNav h3,
 .relatedPages h2,
-.relatedPages h3, .list-atoz li h2 {
+.relatedPages h3 {
   font-size: 19px;
   line-height: 1.2;
   margin-top: 30px;
@@ -2245,7 +1907,7 @@ ul.bottom {
     .ms-rtestate-field h4.heading-medium, h3, .part-content h2, legend, .sideNav h2,
     .sideNav h3,
     .relatedPages h2,
-    .relatedPages h3, .list-atoz li h2 {
+    .relatedPages h3 {
       font-size: 24px;
       line-height: 1.25;
       margin-top: 40px;
@@ -2308,7 +1970,7 @@ p.sharepoint,
       margin-top: 0.2631578947em;
       margin-bottom: 1.0526315789em; } }
 
-.hidden-text .panel, .hidden-text .sub-section-nav.panels .sub-section, .sub-section-nav.panels .hidden-text .sub-section {
+.hidden-text .panel {
   margin-top: 10px; }
 
 .lead {
@@ -2474,29 +2136,29 @@ blockquote {
       blockquote footer {
         font-size: 16px !important; } }
 
-.panel, .sub-section-nav.panels .sub-section {
+.panel {
   background: #E6EDF0;
   padding: 20px;
   box-shadow: none;
   border-radius: 0;
   border: 0;
   margin: 30px 0; }
-  .panel.top, .sub-section-nav.panels .top.sub-section {
+  .panel.top {
     margin-top: 0; }
-  .panel.panel-border, .sub-section-nav.panels .panel-border.sub-section {
+  .panel.panel-border {
     background: white;
     border: 10px solid #E5F1F5; }
   @media (min-width: 641px) {
-    .panel, .sub-section-nav.panels .sub-section {
+    .panel {
       padding: 30px;
       margin: 30px 0; } }
-  .panel h2:first-child, .sub-section-nav.panels .sub-section h2:first-child,
-  .panel h3:first-child, .sub-section-nav.panels .sub-section h3:first-child,
-  .panel h4:first-child, .sub-section-nav.panels .sub-section h4:first-child {
+  .panel h2:first-child,
+  .panel h3:first-child,
+  .panel h4:first-child {
     margin-top: 0; }
-  .panel .media-container, .sub-section-nav.panels .sub-section .media-container {
+  .panel .media-container {
     margin: 0; }
-  .panel p:last-child, .sub-section-nav.panels .sub-section p:last-child {
+  .panel p:last-child {
     margin-bottom: 0; }
 
 ul + .text-highlight, ul + .text-block {
@@ -2525,7 +2187,7 @@ ul + .heading-medium, .ms-rtestate-field ul + h3,
 .ms-rtestate-field ul + h4.heading-medium, ul + h3, .part-content ul + h2, ul + legend, .sideNav ul + h2,
 .sideNav ul + h3,
 .relatedPages ul + h2,
-.relatedPages ul + h3, .list-atoz li ul + h2 {
+.relatedPages ul + h3 {
   margin-top: 16px; }
   @media (max-width: 641px) {
     ul + .heading-medium, .ms-rtestate-field ul + h3,
@@ -2535,7 +2197,7 @@ ul + .heading-medium, .ms-rtestate-field ul + h3,
     .ms-rtestate-field ul + h4.heading-medium, ul + h3, .part-content ul + h2, ul + legend, .sideNav ul + h2,
     .sideNav ul + h3,
     .relatedPages ul + h2,
-    .relatedPages ul + h3, .list-atoz li ul + h2 {
+    .relatedPages ul + h3 {
       margin-top: 6px; } }
 
 ul + .heading-small, .ms-rtestate-field ul + h4,
@@ -2560,326 +2222,100 @@ ul + p {
 .text-highlight + p, .text-block + p {
   margin-top: 0; }
 
-.btn + h2, .form-group input[type=button] + h2, .form-group input.btn.btn-primary + h2, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
-.btn + h3, .form-group input[type=button] + h3, .form-group input.btn.btn-primary + h3, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3,
-.btn + .heading-medium, .form-group input[type=button] + .heading-medium, .form-group input.btn.btn-primary + .heading-medium, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + .heading-medium, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink a #myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + .heading-medium, .ms-rtestate-field
-.btn + h3, .form-group .ms-rtestate-field input[type=button] + h3, .ms-rtestate-field .form-group input[type=button] + h3, .form-group .ms-rtestate-field input.btn.btn-primary + h3, .ms-rtestate-field .form-group input.btn.btn-primary + h3, .form-group #myChatLinkContainer #myChatLink a .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .ms-rtestate-field #myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .ms-rtestate-field #myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3,
+.btn + h2, .form-group input[type=button] + h2, .form-group input.btn.btn-primary + h2,
+.btn + h3, .form-group input[type=button] + h3, .form-group input.btn.btn-primary + h3,
+.btn + .heading-medium, .form-group input[type=button] + .heading-medium, .form-group input.btn.btn-primary + .heading-medium, .ms-rtestate-field
+.btn + h3, .form-group .ms-rtestate-field input[type=button] + h3, .form-group .ms-rtestate-field input.btn.btn-primary + h3,
 .ms-rtestate-field h3.ms-rteElement-H2
 .btn + h1.heading-medium, .form-group
 .ms-rtestate-field h3.ms-rteElement-H2 input[type=button] + h1.heading-medium,
-.ms-rtestate-field h3.ms-rteElement-H2 .form-group input[type=button] + h1.heading-medium, .form-group
-.ms-rtestate-field h3.ms-rteElement-H2 input.btn.btn-primary + h1.heading-medium,
-.ms-rtestate-field h3.ms-rteElement-H2 .form-group input.btn.btn-primary + h1.heading-medium, .form-group #myChatLinkContainer #myChatLink a
-.ms-rtestate-field h3.ms-rteElement-H2 input#myChatLinkInfo + h1.heading-medium,
-.ms-rtestate-field h3.ms-rteElement-H2 .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h1.heading-medium, #myChatLinkContainer #myChatLink a .form-group
-.ms-rtestate-field h3.ms-rteElement-H2 input#myChatLinkInfo + h1.heading-medium,
-.ms-rtestate-field h3.ms-rteElement-H2 #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h1.heading-medium, .form-group #myChatLinkContainer #myChatLink .link
-.ms-rtestate-field h3.ms-rteElement-H2 input#myChatLinkInfo + h1.heading-medium,
-.ms-rtestate-field h3.ms-rteElement-H2 .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h1.heading-medium, #myChatLinkContainer #myChatLink .link .form-group
-.ms-rtestate-field h3.ms-rteElement-H2 input#myChatLinkInfo + h1.heading-medium,
-.ms-rtestate-field h3.ms-rteElement-H2 #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h1.heading-medium, #myChatLinkContainer #myChatLink a
-.ms-rtestate-field h3.ms-rteElement-H2 #myChatLinkInfo + h1.heading-medium,
-.ms-rtestate-field h3.ms-rteElement-H2 #myChatLinkContainer #myChatLink a #myChatLinkInfo + h1.heading-medium, #myChatLinkContainer #myChatLink .link
-.ms-rtestate-field h3.ms-rteElement-H2 #myChatLinkInfo + h1.heading-medium,
-.ms-rtestate-field h3.ms-rteElement-H2 #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h1.heading-medium,
+.ms-rtestate-field h3.ms-rteElement-H2 .form-group input[type=button] + h1.heading-medium,
 .ms-rtestate-field
 .btn + h2.heading-medium, .form-group
 .ms-rtestate-field input[type=button] + h2.heading-medium,
-.ms-rtestate-field .form-group input[type=button] + h2.heading-medium, .form-group
-.ms-rtestate-field input.btn.btn-primary + h2.heading-medium,
-.ms-rtestate-field .form-group input.btn.btn-primary + h2.heading-medium, .form-group #myChatLinkContainer #myChatLink a
-.ms-rtestate-field input#myChatLinkInfo + h2.heading-medium,
-.ms-rtestate-field .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2.heading-medium, #myChatLinkContainer #myChatLink a .form-group
-.ms-rtestate-field input#myChatLinkInfo + h2.heading-medium,
-.ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2.heading-medium, .form-group #myChatLinkContainer #myChatLink .link
-.ms-rtestate-field input#myChatLinkInfo + h2.heading-medium,
-.ms-rtestate-field .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2.heading-medium, #myChatLinkContainer #myChatLink .link .form-group
-.ms-rtestate-field input#myChatLinkInfo + h2.heading-medium,
-.ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2.heading-medium, #myChatLinkContainer #myChatLink a
-.ms-rtestate-field #myChatLinkInfo + h2.heading-medium,
-.ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2.heading-medium, #myChatLinkContainer #myChatLink .link
-.ms-rtestate-field #myChatLinkInfo + h2.heading-medium,
-.ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2.heading-medium,
-.ms-rtestate-field
-.btn + h3.heading-medium, .form-group
-.ms-rtestate-field input[type=button] + h3.heading-medium,
-.ms-rtestate-field .form-group input[type=button] + h3.heading-medium, .form-group
-.ms-rtestate-field input.btn.btn-primary + h3.heading-medium,
-.ms-rtestate-field .form-group input.btn.btn-primary + h3.heading-medium, .form-group #myChatLinkContainer #myChatLink a
-.ms-rtestate-field input#myChatLinkInfo + h3.heading-medium,
-.ms-rtestate-field .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3.heading-medium, #myChatLinkContainer #myChatLink a .form-group
-.ms-rtestate-field input#myChatLinkInfo + h3.heading-medium,
-.ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3.heading-medium, .form-group #myChatLinkContainer #myChatLink .link
-.ms-rtestate-field input#myChatLinkInfo + h3.heading-medium,
-.ms-rtestate-field .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3.heading-medium, #myChatLinkContainer #myChatLink .link .form-group
-.ms-rtestate-field input#myChatLinkInfo + h3.heading-medium,
-.ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3.heading-medium, #myChatLinkContainer #myChatLink a
-.ms-rtestate-field #myChatLinkInfo + h3.heading-medium,
-.ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3.heading-medium, #myChatLinkContainer #myChatLink .link
-.ms-rtestate-field #myChatLinkInfo + h3.heading-medium,
-.ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3.heading-medium,
 .ms-rtestate-field
 .btn + h4.heading-medium, .form-group
 .ms-rtestate-field input[type=button] + h4.heading-medium,
-.ms-rtestate-field .form-group input[type=button] + h4.heading-medium, .form-group
-.ms-rtestate-field input.btn.btn-primary + h4.heading-medium,
-.ms-rtestate-field .form-group input.btn.btn-primary + h4.heading-medium, .form-group #myChatLinkContainer #myChatLink a
-.ms-rtestate-field input#myChatLinkInfo + h4.heading-medium,
-.ms-rtestate-field .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h4.heading-medium, #myChatLinkContainer #myChatLink a .form-group
-.ms-rtestate-field input#myChatLinkInfo + h4.heading-medium,
-.ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h4.heading-medium, .form-group #myChatLinkContainer #myChatLink .link
-.ms-rtestate-field input#myChatLinkInfo + h4.heading-medium,
-.ms-rtestate-field .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h4.heading-medium, #myChatLinkContainer #myChatLink .link .form-group
-.ms-rtestate-field input#myChatLinkInfo + h4.heading-medium,
-.ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h4.heading-medium, #myChatLinkContainer #myChatLink a
-.ms-rtestate-field #myChatLinkInfo + h4.heading-medium,
-.ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h4.heading-medium, #myChatLinkContainer #myChatLink .link
-.ms-rtestate-field #myChatLinkInfo + h4.heading-medium,
-.ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h4.heading-medium,
-.btn + h3, .form-group input[type=button] + h3, .form-group input.btn.btn-primary + h3, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3, .part-content
-.btn + h2, .form-group .part-content input[type=button] + h2, .part-content .form-group input[type=button] + h2, .form-group .part-content input.btn.btn-primary + h2, .part-content .form-group input.btn.btn-primary + h2, .form-group #myChatLinkContainer #myChatLink a .part-content input#myChatLinkInfo + h2, .part-content .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .part-content input#myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .part-content input#myChatLinkInfo + h2, .part-content .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .part-content input#myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .part-content #myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .part-content #myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
-.btn + legend, .form-group input[type=button] + legend, .form-group input.btn.btn-primary + legend, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + legend, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink a #myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + legend, .sideNav
-.btn + h2, .form-group .sideNav input[type=button] + h2, .sideNav .form-group input[type=button] + h2, .form-group .sideNav input.btn.btn-primary + h2, .sideNav .form-group input.btn.btn-primary + h2, .form-group #myChatLinkContainer #myChatLink a .sideNav input#myChatLinkInfo + h2, .sideNav .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .sideNav input#myChatLinkInfo + h2, .sideNav #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .sideNav input#myChatLinkInfo + h2, .sideNav .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .sideNav input#myChatLinkInfo + h2, .sideNav #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .sideNav #myChatLinkInfo + h2, .sideNav #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .sideNav #myChatLinkInfo + h2, .sideNav #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
+.btn + h3, .form-group input[type=button] + h3, .form-group input.btn.btn-primary + h3, .part-content
+.btn + h2, .form-group .part-content input[type=button] + h2, .part-content .form-group input[type=button] + h2, .form-group .part-content input.btn.btn-primary + h2, .part-content .form-group input.btn.btn-primary + h2,
+.btn + legend, .form-group input[type=button] + legend, .form-group input.btn.btn-primary + legend, .sideNav
+.btn + h2, .form-group .sideNav input[type=button] + h2, .sideNav .form-group input[type=button] + h2, .form-group .sideNav input.btn.btn-primary + h2, .sideNav .form-group input.btn.btn-primary + h2,
 .sideNav
 .btn + h3, .form-group
-.sideNav input[type=button] + h3,
-.sideNav .form-group input[type=button] + h3, .form-group
+.sideNav input[type=button] + h3, .form-group
 .sideNav input.btn.btn-primary + h3,
-.sideNav .form-group input.btn.btn-primary + h3, .form-group #myChatLinkContainer #myChatLink a
-.sideNav input#myChatLinkInfo + h3,
-.sideNav .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group
-.sideNav input#myChatLinkInfo + h3,
-.sideNav #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link
-.sideNav input#myChatLinkInfo + h3,
-.sideNav .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group
-.sideNav input#myChatLinkInfo + h3,
-.sideNav #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a
-.sideNav #myChatLinkInfo + h3,
-.sideNav #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link
-.sideNav #myChatLinkInfo + h3,
-.sideNav #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3,
 .relatedPages
 .btn + h2, .form-group
 .relatedPages input[type=button] + h2,
 .relatedPages .form-group input[type=button] + h2, .form-group
 .relatedPages input.btn.btn-primary + h2,
-.relatedPages .form-group input.btn.btn-primary + h2, .form-group #myChatLinkContainer #myChatLink a
-.relatedPages input#myChatLinkInfo + h2,
-.relatedPages .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group
-.relatedPages input#myChatLinkInfo + h2,
-.relatedPages #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link
-.relatedPages input#myChatLinkInfo + h2,
-.relatedPages .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group
-.relatedPages input#myChatLinkInfo + h2,
-.relatedPages #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a
-.relatedPages #myChatLinkInfo + h2,
-.relatedPages #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link
-.relatedPages #myChatLinkInfo + h2,
-.relatedPages #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
+.relatedPages .form-group input.btn.btn-primary + h2,
 .relatedPages
 .btn + h3, .form-group
-.relatedPages input[type=button] + h3,
-.relatedPages .form-group input[type=button] + h3, .form-group
+.relatedPages input[type=button] + h3, .form-group
 .relatedPages input.btn.btn-primary + h3,
-.relatedPages .form-group input.btn.btn-primary + h3, .form-group #myChatLinkContainer #myChatLink a
-.relatedPages input#myChatLinkInfo + h3,
-.relatedPages .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group
-.relatedPages input#myChatLinkInfo + h3,
-.relatedPages #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link
-.relatedPages input#myChatLinkInfo + h3,
-.relatedPages .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group
-.relatedPages input#myChatLinkInfo + h3,
-.relatedPages #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a
-.relatedPages #myChatLinkInfo + h3,
-.relatedPages #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link
-.relatedPages #myChatLinkInfo + h3,
-.relatedPages #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3, .list-atoz li
-.btn + h2, .form-group .list-atoz li input[type=button] + h2, .list-atoz li .form-group input[type=button] + h2, .form-group .list-atoz li input.btn.btn-primary + h2, .list-atoz li .form-group input.btn.btn-primary + h2, .form-group #myChatLinkContainer #myChatLink a .list-atoz li input#myChatLinkInfo + h2, .list-atoz li .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .list-atoz li input#myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .list-atoz li input#myChatLinkInfo + h2, .list-atoz li .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .list-atoz li input#myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .list-atoz li #myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .list-atoz li #myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
-.btn + .heading-small, .form-group input[type=button] + .heading-small, .form-group input.btn.btn-primary + .heading-small, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + .heading-small, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + .heading-small, #myChatLinkContainer #myChatLink a #myChatLinkInfo + .heading-small, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + .heading-small, .ms-rtestate-field
-.btn + h4, .form-group .ms-rtestate-field input[type=button] + h4, .form-group .ms-rtestate-field input.btn.btn-primary + h4, #myChatLinkContainer #myChatLink a .ms-rtestate-field #myChatLinkInfo + h4, #myChatLinkContainer #myChatLink .link .ms-rtestate-field #myChatLinkInfo + h4,
+.btn + .heading-small, .form-group input[type=button] + .heading-small, .form-group input.btn.btn-primary + .heading-small, .ms-rtestate-field
+.btn + h4, .form-group .ms-rtestate-field input[type=button] + h4, .form-group .ms-rtestate-field input.btn.btn-primary + h4,
 .ms-rtestate-field
 .btn + h1.heading-small, .form-group
-.ms-rtestate-field input[type=button] + h1.heading-small, #myChatLinkContainer #myChatLink a
-.ms-rtestate-field #myChatLinkInfo + h1.heading-small, #myChatLinkContainer #myChatLink .link
-.ms-rtestate-field #myChatLinkInfo + h1.heading-small,
+.ms-rtestate-field input[type=button] + h1.heading-small,
 .ms-rtestate-field
 .btn + h2.heading-small, .form-group
-.ms-rtestate-field input[type=button] + h2.heading-small, #myChatLinkContainer #myChatLink a
-.ms-rtestate-field #myChatLinkInfo + h2.heading-small, #myChatLinkContainer #myChatLink .link
-.ms-rtestate-field #myChatLinkInfo + h2.heading-small,
+.ms-rtestate-field input[type=button] + h2.heading-small,
 .ms-rtestate-field
 .btn + h3.medium-small, .form-group
 .ms-rtestate-field input[type=button] + h3.medium-small,
 .ms-rtestate-field .form-group input[type=button] + h3.medium-small,
 .ms-rtestate-field .form-group input.btn.btn-primary + h3.medium-small,
-.ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3.medium-small,
-.ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3.medium-small, #myChatLinkContainer #myChatLink a
-.ms-rtestate-field #myChatLinkInfo + h3.medium-small,
-.ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3.medium-small, #myChatLinkContainer #myChatLink .link
-.ms-rtestate-field #myChatLinkInfo + h3.medium-small,
-.ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3.medium-small,
-.btn + h4, .form-group input[type=button] + h4, .form-group input.btn.btn-primary + h4, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h4, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h4, #myChatLinkContainer #myChatLink a #myChatLinkInfo + h4, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h4 {
+.btn + h4, .form-group input[type=button] + h4, .form-group input.btn.btn-primary + h4 {
   margin-top: 50px; }
   @media (max-width: 641px) {
-    .btn + h2, .form-group input[type=button] + h2, .form-group input.btn.btn-primary + h2, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
-    .btn + h3, .form-group input[type=button] + h3, .form-group input.btn.btn-primary + h3, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3,
-    .btn + .heading-medium, .form-group input[type=button] + .heading-medium, .form-group input.btn.btn-primary + .heading-medium, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + .heading-medium, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink a #myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + .heading-medium, .ms-rtestate-field
-    .btn + h3, .form-group .ms-rtestate-field input[type=button] + h3, .ms-rtestate-field .form-group input[type=button] + h3, .form-group .ms-rtestate-field input.btn.btn-primary + h3, .ms-rtestate-field .form-group input.btn.btn-primary + h3, .form-group #myChatLinkContainer #myChatLink a .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .ms-rtestate-field #myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .ms-rtestate-field #myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3,
+    .btn + h2, .form-group input[type=button] + h2, .form-group input.btn.btn-primary + h2,
+    .btn + h3, .form-group input[type=button] + h3, .form-group input.btn.btn-primary + h3,
+    .btn + .heading-medium, .form-group input[type=button] + .heading-medium, .form-group input.btn.btn-primary + .heading-medium, .ms-rtestate-field
+    .btn + h3, .form-group .ms-rtestate-field input[type=button] + h3, .form-group .ms-rtestate-field input.btn.btn-primary + h3,
     .ms-rtestate-field h3.ms-rteElement-H2
     .btn + h1.heading-medium, .form-group
     .ms-rtestate-field h3.ms-rteElement-H2 input[type=button] + h1.heading-medium,
-    .ms-rtestate-field h3.ms-rteElement-H2 .form-group input[type=button] + h1.heading-medium, .form-group
-    .ms-rtestate-field h3.ms-rteElement-H2 input.btn.btn-primary + h1.heading-medium,
-    .ms-rtestate-field h3.ms-rteElement-H2 .form-group input.btn.btn-primary + h1.heading-medium, .form-group #myChatLinkContainer #myChatLink a
-    .ms-rtestate-field h3.ms-rteElement-H2 input#myChatLinkInfo + h1.heading-medium,
-    .ms-rtestate-field h3.ms-rteElement-H2 .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h1.heading-medium, #myChatLinkContainer #myChatLink a .form-group
-    .ms-rtestate-field h3.ms-rteElement-H2 input#myChatLinkInfo + h1.heading-medium,
-    .ms-rtestate-field h3.ms-rteElement-H2 #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h1.heading-medium, .form-group #myChatLinkContainer #myChatLink .link
-    .ms-rtestate-field h3.ms-rteElement-H2 input#myChatLinkInfo + h1.heading-medium,
-    .ms-rtestate-field h3.ms-rteElement-H2 .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h1.heading-medium, #myChatLinkContainer #myChatLink .link .form-group
-    .ms-rtestate-field h3.ms-rteElement-H2 input#myChatLinkInfo + h1.heading-medium,
-    .ms-rtestate-field h3.ms-rteElement-H2 #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h1.heading-medium, #myChatLinkContainer #myChatLink a
-    .ms-rtestate-field h3.ms-rteElement-H2 #myChatLinkInfo + h1.heading-medium,
-    .ms-rtestate-field h3.ms-rteElement-H2 #myChatLinkContainer #myChatLink a #myChatLinkInfo + h1.heading-medium, #myChatLinkContainer #myChatLink .link
-    .ms-rtestate-field h3.ms-rteElement-H2 #myChatLinkInfo + h1.heading-medium,
-    .ms-rtestate-field h3.ms-rteElement-H2 #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h1.heading-medium,
+    .ms-rtestate-field h3.ms-rteElement-H2 .form-group input[type=button] + h1.heading-medium,
     .ms-rtestate-field
     .btn + h2.heading-medium, .form-group
     .ms-rtestate-field input[type=button] + h2.heading-medium,
-    .ms-rtestate-field .form-group input[type=button] + h2.heading-medium, .form-group
-    .ms-rtestate-field input.btn.btn-primary + h2.heading-medium,
-    .ms-rtestate-field .form-group input.btn.btn-primary + h2.heading-medium, .form-group #myChatLinkContainer #myChatLink a
-    .ms-rtestate-field input#myChatLinkInfo + h2.heading-medium,
-    .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2.heading-medium, #myChatLinkContainer #myChatLink a .form-group
-    .ms-rtestate-field input#myChatLinkInfo + h2.heading-medium,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2.heading-medium, .form-group #myChatLinkContainer #myChatLink .link
-    .ms-rtestate-field input#myChatLinkInfo + h2.heading-medium,
-    .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2.heading-medium, #myChatLinkContainer #myChatLink .link .form-group
-    .ms-rtestate-field input#myChatLinkInfo + h2.heading-medium,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2.heading-medium, #myChatLinkContainer #myChatLink a
-    .ms-rtestate-field #myChatLinkInfo + h2.heading-medium,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2.heading-medium, #myChatLinkContainer #myChatLink .link
-    .ms-rtestate-field #myChatLinkInfo + h2.heading-medium,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2.heading-medium,
-    .ms-rtestate-field
-    .btn + h3.heading-medium, .form-group
-    .ms-rtestate-field input[type=button] + h3.heading-medium,
-    .ms-rtestate-field .form-group input[type=button] + h3.heading-medium, .form-group
-    .ms-rtestate-field input.btn.btn-primary + h3.heading-medium,
-    .ms-rtestate-field .form-group input.btn.btn-primary + h3.heading-medium, .form-group #myChatLinkContainer #myChatLink a
-    .ms-rtestate-field input#myChatLinkInfo + h3.heading-medium,
-    .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3.heading-medium, #myChatLinkContainer #myChatLink a .form-group
-    .ms-rtestate-field input#myChatLinkInfo + h3.heading-medium,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3.heading-medium, .form-group #myChatLinkContainer #myChatLink .link
-    .ms-rtestate-field input#myChatLinkInfo + h3.heading-medium,
-    .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3.heading-medium, #myChatLinkContainer #myChatLink .link .form-group
-    .ms-rtestate-field input#myChatLinkInfo + h3.heading-medium,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3.heading-medium, #myChatLinkContainer #myChatLink a
-    .ms-rtestate-field #myChatLinkInfo + h3.heading-medium,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3.heading-medium, #myChatLinkContainer #myChatLink .link
-    .ms-rtestate-field #myChatLinkInfo + h3.heading-medium,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3.heading-medium,
     .ms-rtestate-field
     .btn + h4.heading-medium, .form-group
     .ms-rtestate-field input[type=button] + h4.heading-medium,
-    .ms-rtestate-field .form-group input[type=button] + h4.heading-medium, .form-group
-    .ms-rtestate-field input.btn.btn-primary + h4.heading-medium,
-    .ms-rtestate-field .form-group input.btn.btn-primary + h4.heading-medium, .form-group #myChatLinkContainer #myChatLink a
-    .ms-rtestate-field input#myChatLinkInfo + h4.heading-medium,
-    .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h4.heading-medium, #myChatLinkContainer #myChatLink a .form-group
-    .ms-rtestate-field input#myChatLinkInfo + h4.heading-medium,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h4.heading-medium, .form-group #myChatLinkContainer #myChatLink .link
-    .ms-rtestate-field input#myChatLinkInfo + h4.heading-medium,
-    .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h4.heading-medium, #myChatLinkContainer #myChatLink .link .form-group
-    .ms-rtestate-field input#myChatLinkInfo + h4.heading-medium,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h4.heading-medium, #myChatLinkContainer #myChatLink a
-    .ms-rtestate-field #myChatLinkInfo + h4.heading-medium,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h4.heading-medium, #myChatLinkContainer #myChatLink .link
-    .ms-rtestate-field #myChatLinkInfo + h4.heading-medium,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h4.heading-medium,
-    .btn + h3, .form-group input[type=button] + h3, .form-group input.btn.btn-primary + h3, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3, .part-content
-    .btn + h2, .form-group .part-content input[type=button] + h2, .part-content .form-group input[type=button] + h2, .form-group .part-content input.btn.btn-primary + h2, .part-content .form-group input.btn.btn-primary + h2, .form-group #myChatLinkContainer #myChatLink a .part-content input#myChatLinkInfo + h2, .part-content .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .part-content input#myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .part-content input#myChatLinkInfo + h2, .part-content .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .part-content input#myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .part-content #myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .part-content #myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
-    .btn + legend, .form-group input[type=button] + legend, .form-group input.btn.btn-primary + legend, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + legend, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink a #myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + legend, .sideNav
-    .btn + h2, .form-group .sideNav input[type=button] + h2, .sideNav .form-group input[type=button] + h2, .form-group .sideNav input.btn.btn-primary + h2, .sideNav .form-group input.btn.btn-primary + h2, .form-group #myChatLinkContainer #myChatLink a .sideNav input#myChatLinkInfo + h2, .sideNav .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .sideNav input#myChatLinkInfo + h2, .sideNav #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .sideNav input#myChatLinkInfo + h2, .sideNav .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .sideNav input#myChatLinkInfo + h2, .sideNav #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .sideNav #myChatLinkInfo + h2, .sideNav #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .sideNav #myChatLinkInfo + h2, .sideNav #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
+    .btn + h3, .form-group input[type=button] + h3, .form-group input.btn.btn-primary + h3, .part-content
+    .btn + h2, .form-group .part-content input[type=button] + h2, .part-content .form-group input[type=button] + h2, .form-group .part-content input.btn.btn-primary + h2, .part-content .form-group input.btn.btn-primary + h2,
+    .btn + legend, .form-group input[type=button] + legend, .form-group input.btn.btn-primary + legend, .sideNav
+    .btn + h2, .form-group .sideNav input[type=button] + h2, .sideNav .form-group input[type=button] + h2, .form-group .sideNav input.btn.btn-primary + h2, .sideNav .form-group input.btn.btn-primary + h2,
     .sideNav
     .btn + h3, .form-group
-    .sideNav input[type=button] + h3,
-    .sideNav .form-group input[type=button] + h3, .form-group
+    .sideNav input[type=button] + h3, .form-group
     .sideNav input.btn.btn-primary + h3,
-    .sideNav .form-group input.btn.btn-primary + h3, .form-group #myChatLinkContainer #myChatLink a
-    .sideNav input#myChatLinkInfo + h3,
-    .sideNav .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group
-    .sideNav input#myChatLinkInfo + h3,
-    .sideNav #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link
-    .sideNav input#myChatLinkInfo + h3,
-    .sideNav .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group
-    .sideNav input#myChatLinkInfo + h3,
-    .sideNav #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a
-    .sideNav #myChatLinkInfo + h3,
-    .sideNav #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link
-    .sideNav #myChatLinkInfo + h3,
-    .sideNav #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3,
     .relatedPages
     .btn + h2, .form-group
     .relatedPages input[type=button] + h2,
     .relatedPages .form-group input[type=button] + h2, .form-group
     .relatedPages input.btn.btn-primary + h2,
-    .relatedPages .form-group input.btn.btn-primary + h2, .form-group #myChatLinkContainer #myChatLink a
-    .relatedPages input#myChatLinkInfo + h2,
-    .relatedPages .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group
-    .relatedPages input#myChatLinkInfo + h2,
-    .relatedPages #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link
-    .relatedPages input#myChatLinkInfo + h2,
-    .relatedPages .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group
-    .relatedPages input#myChatLinkInfo + h2,
-    .relatedPages #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a
-    .relatedPages #myChatLinkInfo + h2,
-    .relatedPages #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link
-    .relatedPages #myChatLinkInfo + h2,
-    .relatedPages #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
+    .relatedPages .form-group input.btn.btn-primary + h2,
     .relatedPages
     .btn + h3, .form-group
-    .relatedPages input[type=button] + h3,
-    .relatedPages .form-group input[type=button] + h3, .form-group
+    .relatedPages input[type=button] + h3, .form-group
     .relatedPages input.btn.btn-primary + h3,
-    .relatedPages .form-group input.btn.btn-primary + h3, .form-group #myChatLinkContainer #myChatLink a
-    .relatedPages input#myChatLinkInfo + h3,
-    .relatedPages .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group
-    .relatedPages input#myChatLinkInfo + h3,
-    .relatedPages #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link
-    .relatedPages input#myChatLinkInfo + h3,
-    .relatedPages .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group
-    .relatedPages input#myChatLinkInfo + h3,
-    .relatedPages #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a
-    .relatedPages #myChatLinkInfo + h3,
-    .relatedPages #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link
-    .relatedPages #myChatLinkInfo + h3,
-    .relatedPages #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3, .list-atoz li
-    .btn + h2, .form-group .list-atoz li input[type=button] + h2, .list-atoz li .form-group input[type=button] + h2, .form-group .list-atoz li input.btn.btn-primary + h2, .list-atoz li .form-group input.btn.btn-primary + h2, .form-group #myChatLinkContainer #myChatLink a .list-atoz li input#myChatLinkInfo + h2, .list-atoz li .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .list-atoz li input#myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .list-atoz li input#myChatLinkInfo + h2, .list-atoz li .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .list-atoz li input#myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .list-atoz li #myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .list-atoz li #myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
-    .btn + .heading-small, .form-group input[type=button] + .heading-small, .form-group input.btn.btn-primary + .heading-small, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + .heading-small, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + .heading-small, #myChatLinkContainer #myChatLink a #myChatLinkInfo + .heading-small, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + .heading-small, .ms-rtestate-field
-    .btn + h4, .form-group .ms-rtestate-field input[type=button] + h4, .form-group .ms-rtestate-field input.btn.btn-primary + h4, #myChatLinkContainer #myChatLink a .ms-rtestate-field #myChatLinkInfo + h4, #myChatLinkContainer #myChatLink .link .ms-rtestate-field #myChatLinkInfo + h4,
+    .btn + .heading-small, .form-group input[type=button] + .heading-small, .form-group input.btn.btn-primary + .heading-small, .ms-rtestate-field
+    .btn + h4, .form-group .ms-rtestate-field input[type=button] + h4, .form-group .ms-rtestate-field input.btn.btn-primary + h4,
     .ms-rtestate-field
     .btn + h1.heading-small, .form-group
-    .ms-rtestate-field input[type=button] + h1.heading-small, #myChatLinkContainer #myChatLink a
-    .ms-rtestate-field #myChatLinkInfo + h1.heading-small, #myChatLinkContainer #myChatLink .link
-    .ms-rtestate-field #myChatLinkInfo + h1.heading-small,
+    .ms-rtestate-field input[type=button] + h1.heading-small,
     .ms-rtestate-field
     .btn + h2.heading-small, .form-group
-    .ms-rtestate-field input[type=button] + h2.heading-small, #myChatLinkContainer #myChatLink a
-    .ms-rtestate-field #myChatLinkInfo + h2.heading-small, #myChatLinkContainer #myChatLink .link
-    .ms-rtestate-field #myChatLinkInfo + h2.heading-small,
+    .ms-rtestate-field input[type=button] + h2.heading-small,
     .ms-rtestate-field
     .btn + h3.medium-small, .form-group
     .ms-rtestate-field input[type=button] + h3.medium-small,
     .ms-rtestate-field .form-group input[type=button] + h3.medium-small,
     .ms-rtestate-field .form-group input.btn.btn-primary + h3.medium-small,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3.medium-small,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3.medium-small, #myChatLinkContainer #myChatLink a
-    .ms-rtestate-field #myChatLinkInfo + h3.medium-small,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3.medium-small, #myChatLinkContainer #myChatLink .link
-    .ms-rtestate-field #myChatLinkInfo + h3.medium-small,
-    .ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3.medium-small,
-    .btn + h4, .form-group input[type=button] + h4, .form-group input.btn.btn-primary + h4, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h4, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h4, #myChatLinkContainer #myChatLink a #myChatLinkInfo + h4, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h4 {
+    .btn + h4, .form-group input[type=button] + h4, .form-group input.btn.btn-primary + h4 {
       margin-top: 30px; } }
 
 .list-nav .contact i {
@@ -2902,7 +2338,7 @@ h2 + h3 {
 .text-highlight p + ul, .text-block p + ul {
   margin-top: 15px; }
 
-p + .panel, .sub-section-nav.panels p + .sub-section {
+p + .panel {
   margin: 50px 0; }
 
 .top-header-margin {
@@ -2971,9 +2407,9 @@ form {
   .form-group input[type=file] {
     font-size: 16px;
     border: 0; }
-  .form-group .btn, .form-group input[type=button], .form-group input.btn.btn-primary, .form-group #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group #myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group #myChatLinkInfo {
+  .form-group .btn, .form-group input[type=button], .form-group input.btn.btn-primary {
     margin: 0; }
-  .form-group .panel, .form-group .sub-section-nav.panels .sub-section, .sub-section-nav.panels .form-group .sub-section {
+  .form-group .panel {
     display: inline-block;
     width: 100%;
     box-shadow: none;
@@ -2990,23 +2426,23 @@ form {
     -ms-border-radius: 0;
     border-radius: 0;
     background: none; }
-    .form-group .panel:first-child, .form-group .sub-section-nav.panels .sub-section:first-child, .sub-section-nav.panels .form-group .sub-section:first-child {
+    .form-group .panel:first-child {
       margin-top: 0; }
-    .form-group .panel:only-child, .form-group .sub-section-nav.panels .sub-section:only-child, .sub-section-nav.panels .form-group .sub-section:only-child, .form-group .panel:last-child, .form-group .sub-section-nav.panels .sub-section:last-child, .sub-section-nav.panels .form-group .sub-section:last-child {
+    .form-group .panel:only-child, .form-group .panel:last-child {
       margin-bottom: 0; }
-    .form-group .panel.panel-border-wide, .form-group .sub-section-nav.panels .panel-border-wide.sub-section, .sub-section-nav.panels .form-group .panel-border-wide.sub-section {
+    .form-group .panel.panel-border-wide {
       border-left-width: 10px; }
-    .form-group .panel.panel-border-narrow, .form-group .sub-section-nav.panels .panel-border-narrow.sub-section, .sub-section-nav.panels .form-group .panel-border-narrow.sub-section {
+    .form-group .panel.panel-border-narrow {
       border-left-width: 5px;
       float: left;
       width: 100%;
       margin: 10px 0 30px; }
-      .form-group .panel.panel-border-narrow:first-child, .form-group .sub-section-nav.panels .panel-border-narrow.sub-section:first-child, .sub-section-nav.panels .form-group .panel-border-narrow.sub-section:first-child {
+      .form-group .panel.panel-border-narrow:first-child {
         margin-top: 10px; }
-      .form-group .panel.panel-border-narrow:last-child, .form-group .sub-section-nav.panels .panel-border-narrow.sub-section:last-child, .sub-section-nav.panels .form-group .panel-border-narrow.sub-section:last-child {
+      .form-group .panel.panel-border-narrow:last-child {
         margin-top: 10px;
         margin-bottom: 0; }
-      .form-group .panel.panel-border-narrow .form-group, .form-group .sub-section-nav.panels .panel-border-narrow.sub-section .form-group, .sub-section-nav.panels .form-group .panel-border-narrow.sub-section .form-group {
+      .form-group .panel.panel-border-narrow .form-group {
         margin-bottom: 0; }
   .form-group input[type=button] {
     margin: 0 !important; }
@@ -3127,7 +2563,7 @@ input[type=submit], button {
   border-color: #9DA5B2;
   background: white; }
 
-.block-label.active + .panel, .sub-section-nav.panels .block-label.active + .sub-section {
+.block-label.active + .panel {
   display: block;
   visibility: visible; }
 
@@ -3193,11 +2629,11 @@ form legend {
   padding-top: 4px;
   padding-bottom: 0; }
 
-.form-group input[type=button], .form-group input.btn.btn-primary, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo {
+.form-group input[type=button], .form-group input.btn.btn-primary {
   width: auto;
   max-width: 100%; }
 
-.form-group .panel .form-date, .form-group .sub-section-nav.panels .sub-section .form-date, .sub-section-nav.panels .form-group .sub-section .form-date {
+.form-group .panel .form-date {
   margin-bottom: 30px;
   display: inline-block;
   width: 100%; }
@@ -3227,82 +2663,6 @@ form legend {
         width: 100%;
         float: none;
         padding: 5px 0 10px; } }
-
-#myChatLinkContainer {
-  margin: 30px 0; }
-  #myChatLinkContainer #myChatLink #myChatLinkInfo {
-    background: #DCDEE1;
-    padding: 15px 15px 15px 70px !important;
-    position: relative;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    border-radius: 4px; }
-    @media (min-width: 641px) {
-      #myChatLinkContainer #myChatLink #myChatLinkInfo {
-        padding: 20px 20px 20px 100px !important; } }
-    #myChatLinkContainer #myChatLink #myChatLinkInfo:before {
-      font-family: FontAwesome;
-      content: "\f086";
-      position: absolute;
-      font-size: 40px;
-      left: 15px;
-      top: 15px;
-      line-height: 1;
-      color: rgba(13, 70, 98, 0.8); }
-      @media (min-width: 641px) {
-        #myChatLinkContainer #myChatLink #myChatLinkInfo:before {
-          top: 50%;
-          left: 20px;
-          font-size: 60px;
-          margin-top: -30px; } }
-    #myChatLinkContainer #myChatLink #myChatLinkInfo h4,
-    #myChatLinkContainer #myChatLink #myChatLinkInfo span {
-      color: rgba(13, 70, 98, 0.8); }
-    #myChatLinkContainer #myChatLink #myChatLinkInfo h4 {
-      margin: 0;
-      font-size: 21px; }
-      @media (min-width: 641px) {
-        #myChatLinkContainer #myChatLink #myChatLinkInfo h4 {
-          font-size: 24px; } }
-    #myChatLinkContainer #myChatLink #myChatLinkInfo span {
-      font-size: 14px;
-      line-height: 1.1; }
-      @media (min-width: 641px) {
-        #myChatLinkContainer #myChatLink #myChatLinkInfo span {
-          font-size: 16px; } }
-  #myChatLinkContainer #myChatLink a, #myChatLinkContainer #myChatLink .link {
-    text-decoration: none !important; }
-    #myChatLinkContainer #myChatLink a #myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:before {
-      color: white; }
-    #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after {
-      display: block;
-      font-family: FontAwesome;
-      content: "\f105";
-      position: absolute;
-      right: 20px;
-      font-size: 30px;
-      top: 50%;
-      margin-top: -13px; }
-    #myChatLinkContainer #myChatLink a #myChatLinkInfo h4, #myChatLinkContainer #myChatLink .link #myChatLinkInfo h4 {
-      color: white;
-      text-decoration: none !important; }
-    #myChatLinkContainer #myChatLink a #myChatLinkInfo span, #myChatLinkContainer #myChatLink .link #myChatLinkInfo span {
-      color: white;
-      text-decoration: none !important;
-      display: inline-block;
-      width: 100%; }
-    #myChatLinkContainer #myChatLink a #myChatLinkInfo h4, #myChatLinkContainer #myChatLink .link #myChatLinkInfo h4,
-    #myChatLinkContainer #myChatLink a #myChatLinkInfo span,
-    #myChatLinkContainer #myChatLink .link #myChatLinkInfo span {
-      padding-right: 50px; }
-
-.rn_SyndicatedChatQuestionDiv {
-  width: 280px;
-  height: 80px; }
-
-.yui-skin-sam .yui-panel .hd {
-  width: 300px; }
 
 .description-list {
   margin: 10px 0 30px; }
@@ -3508,194 +2868,6 @@ form legend {
       @media (min-width: 641px) {
         .part-navigation__container nav ol li {
           font-size: 19px; } }
-
-.sub-section-nav {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-flex-direction: row;
-  -moz-box-flex-direction: row;
-  -ms-flex-flex-direction: row;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-flex-wrap: wrap;
-  -moz-box-flex-wrap: wrap;
-  -ms-flex-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 0 0 -50px;
-  width: auto;
-  padding: 15px 0; }
-  @media (max-width: 990px) {
-    .sub-section-nav {
-      padding: 15px 0; } }
-  @media (max-width: 600px) {
-    .sub-section-nav {
-      padding: 10px 0; } }
-  .sub-section-nav .sub-section {
-    padding-bottom: 10px;
-    width: calc(100% * (1/3) - 51px);
-    margin: 15px 0 0 50px;
-    border: 0; }
-    @media (max-width: 1200px) {
-      .sub-section-nav .sub-section {
-        width: calc(100% * (1/2) - 51px); } }
-    @media (max-width: 600px) {
-      .sub-section-nav .sub-section {
-        width: 100%; } }
-    .sub-section-nav .sub-section .sub-section-heading, .sub-section-nav.panels .sub-section a .sub-section-heading, .sub-section-nav.panels .sub-section .link .sub-section-heading {
-      border-bottom: 5px solid #F6F7FA;
-      margin: 0 0 15px;
-      padding-bottom: 10px;
-      font-size: 24px; }
-      @media (max-width: 767px) {
-        .sub-section-nav .sub-section .sub-section-heading, .sub-section-nav.panels .sub-section a .sub-section-heading, .sub-section-nav.panels .sub-section .link .sub-section-heading {
-          font-size: 19px; } }
-    .sub-section-nav .sub-section .list li {
-      margin-bottom: 15px; }
-      .sub-section-nav .sub-section .list li a, .sub-section-nav .sub-section .list li .link {
-        text-decoration: none; }
-        .sub-section-nav .sub-section .list li a:hover, .sub-section-nav .sub-section .list li .link:hover {
-          text-decoration: underline; }
-
-.no-flexbox .sub-section-nav .sub-section {
-  float: left; }
-
-@media (min-width: 990px) {
-  .no-flexbox .sub-section-nav .sub-section:nth-child(4) {
-    clear: both; } }
-
-@media (min-width: 767px) and (max-width: 990px) {
-  .no-flexbox .sub-section-nav .sub-section:nth-child(3) {
-    clear: both; } }
-
-.sub-section-nav.panels {
-  margin: -15px 0 0 -15px; }
-  .sub-section-nav.panels .sub-section {
-    width: calc(100% * (1/4) - 16px);
-    margin: 15px 0 0 15px;
-    background: #F6F7FA; }
-    @media (max-width: 990px) {
-      .sub-section-nav.panels .sub-section {
-        width: calc(100% * (1/2) - 16px); } }
-    @media (max-width: 767px) {
-      .sub-section-nav.panels .sub-section {
-        width: calc(100%); } }
-    .sub-section-nav.panels .sub-section a .sub-section-heading, .sub-section-nav.panels .sub-section .link .sub-section-heading {
-      border: 0;
-      margin-bottom: 10px !important; }
-    .sub-section-nav.panels .sub-section .list.list-nav li a, .sub-section-nav.panels .sub-section .list.list-nav li .link {
-      text-decoration: underline; }
-    .sub-section-nav.panels .sub-section li.contact {
-      margin: 20px 0 0 !important; }
-
-.sub-section h4 {
-  margin-bottom: 5px !important; }
-
-.col-md-8 .sub-section-nav.panels .sub-section {
-  width: calc(100% * (1/2) - 16px); }
-  @media (max-width: 767px) {
-    .col-md-8 .sub-section-nav.panels .sub-section {
-      width: calc(100%); } }
-
-.sub-section-heading + .list-nav, .sub-section-nav.panels .sub-section a .sub-section-heading + .list-nav, .sub-section-nav.panels .sub-section .link .sub-section-heading + .list-nav {
-  margin-bottom: 20px; }
-
-.sub-section-heading, .sub-section-nav.panels .sub-section a .sub-section-heading, .sub-section-nav.panels .sub-section .link .sub-section-heading {
-  border-bottom: 5px solid #F6F7FA;
-  margin: 30px 0 15px;
-  padding-bottom: 10px;
-  font-size: 24px; }
-  @media (max-width: 767px) {
-    .sub-section-heading, .sub-section-nav.panels .sub-section a .sub-section-heading, .sub-section-nav.panels .sub-section .link .sub-section-heading {
-      font-size: 19px;
-      margin: 20px 0 15px; } }
-
-.atoz {
-  background: #F6F7FA;
-  padding: 10px 0 6px;
-  width: 100%;
-  text-transform: uppercase;
-  margin-top: 30px; }
-  @media (max-width: 1300px) {
-    .atoz {
-      padding: 10px 0 16px; } }
-  .atoz .atoz__header {
-    display: inline-block;
-    margin: 0;
-    font-size: 21px;
-    font-weight: 800;
-    line-height: 1em;
-    padding: 10px 0; }
-    @media (max-width: 641px) {
-      .atoz .atoz__header {
-        font-size: 19px; } }
-  .atoz ul {
-    float: right;
-    padding: 5px 0;
-    margin: 0; }
-    @media (max-width: 1300px) {
-      .atoz ul {
-        float: none; } }
-    .atoz ul li {
-      float: left;
-      list-style: none;
-      font-size: 21px;
-      font-weight: 600;
-      line-height: 1em;
-      text-align: center;
-      padding: 0;
-      margin: 0 4px 4px 0; }
-      @media (max-width: 641px) {
-        .atoz ul li {
-          font-size: 16px; } }
-      .atoz ul li:last-of-type a, .atoz ul li:last-of-type .link {
-        width: 60px; }
-      .atoz ul li a, .atoz ul li .link {
-        padding: 5px 0;
-        border: 0;
-        text-decoration: none;
-        border: 1px solid white;
-        width: 30px;
-        display: inline-block;
-        background: white; }
-        .atoz ul li a:hover, .atoz ul li .link:hover {
-          background: #E55825;
-          color: white; }
-      .atoz ul li.active a, .atoz ul li.active .link {
-        background: #E55825;
-        color: white; }
-      .atoz ul li.inactive {
-        padding: 5px 0;
-        color: #9DA5B2;
-        width: 30px;
-        display: inline-block;
-        border: 1px solid white;
-        background: #F6F7FA; }
-
-.list-atoz {
-  margin: 0 0 30px; }
-  .list-atoz li {
-    margin-bottom: 10px;
-    padding-left: 10px; }
-    .list-atoz li h2 {
-      margin: 20px 0 5px -10px; }
-  .list-atoz li:first-child h2 {
-    margin-top: 0; }
-
-#atozListResultsTop .atoz,
-#DeltaPlaceHolderMain .atoz {
-  margin: 0; }
-
-.list-atoz {
-  padding: 0;
-  float: none; }
-  .list-atoz li {
-    padding: 0; }
-    .list-atoz li h2 {
-      margin: 20px 0; }
 
 .ms-srch-sb > input {
   -webkit-border-radius: 4px !important;
@@ -3916,34 +3088,34 @@ form legend {
               @media (max-width: 350px) {
                 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
                   font-size: 14px; } }
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] {
               height: 55px;
               border: 0;
               padding: 10px 25px;
               background: #E55825;
               font-size: 21px;
               margin: 0; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button]:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button]:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:hover {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button]:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button]:hover {
                 background: #009a00;
                 color: #FFFFFF; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button]:active, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button]:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo:active, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo:active, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:active {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button]:active, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button]:active {
                 background: #006700 !important;
                 color: #fff !important; }
               @media (max-width: 766px) {
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] {
                   width: 45px;
                   height: 45px; } }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo:after {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button]:after {
                 display: none; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo i, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo i, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i {
                 font-size: 26px; }
                 @media (min-width: 767px) {
-                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo i, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo i, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i {
+                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i {
                     display: none; } }
               @media (max-width: 766px) {
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] {
                   padding: 5px 10px; }
-                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] span, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo span, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo span, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo span {
+                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn span, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] span, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] span {
                     position: absolute;
                     width: 1px;
                     height: 1px;
@@ -3988,7 +3160,7 @@ form legend {
             align-content: space-between;
             width: 33.33% !important;
             padding-left: 10px; }
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button] {
               width: 100%;
               text-align: left;
               margin: 0;
@@ -4015,37 +3187,37 @@ form legend {
               -webkit-flex-direction: column;
               flex-direction: column;
               border-bottom: 2px solid #083d56; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:hover {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:hover {
                 background: #ea7b53;
                 color: #FFFFFF;
                 border-color: #ea7b53; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:active, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo:active, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo:active, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:active {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:active, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:active {
                 background: #c04417 !important;
                 color: #fff !important;
                 border-color: #c04417 !important; }
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:active:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:active:before, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:active:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo:active:before, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:active:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo:active:before, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:active:before {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:active:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:active:before, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:active:before {
                   background: #c04417 !important;
                   box-shadow: none; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:focus, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo:focus, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo:focus, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:focus {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:focus, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:focus {
                 border: 0; }
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:focus:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:focus:before, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:focus:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo:focus:before, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:focus:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo:focus:before, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:focus:before {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:focus:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:focus:before, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:focus:before {
                   background: #FFBF47; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:before, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo:before, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:before {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:before, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:before {
                 font-size: 22px;
                 width: 55px; }
                 @media (max-width: 767px) {
-                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:before, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo:before, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:before {
+                  .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:before, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:before {
                     width: 45px; } }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:before, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo:before, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:before {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:before, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:before, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:before {
                 background-color: #3399BB;
                 -webkit-border-radius: 0 4px 4px 0;
                 -moz-border-radius: 0 4px 4px 0;
                 -ms-border-radius: 0 4px 4px 0;
                 border-radius: 0 4px 4px 0; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo:after {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button]:after {
                 z-index: 5; }
               @media (min-width: 767px) {
-                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item #myChatLinkInfo {
+                .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__most-popular .hero-lcc__most-popular-item input[type=button] {
                   font-size: 19px;
                   padding: 17px 70px 17px 15px; } }
         @media (max-width: 767px) {
@@ -4089,7 +3261,7 @@ form legend {
   padding: 80px 15em; }
   .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .hero-lcc__search-input {
     height: 55px; }
-  .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink a #myChatLinkInfo i, #myChatLinkContainer #myChatLink a .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkContainer #myChatLink .link #myChatLinkInfo i, #myChatLinkContainer #myChatLink .link .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search #myChatLinkInfo i {
+  .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .btn i, .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search .form-group input[type=button] i, .form-group .ie8 .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .hero-lcc__search-wrapper .hero-lcc__search input[type=button] i {
     display: none; }
 
 @media (max-width: 600px) {
@@ -4479,9 +3651,6 @@ html {
   padding-right: 15px;
   padding-left: 15px; }
 
-hr {
-  border-color: rgba(207, 220, 225, 0.5); }
-
 .cd-top:focus {
   background: #FFBF47 url("images/cd-top-arrow.svg") no-repeat center 50% !important;
   opacity: 1; }
@@ -4604,33 +3773,33 @@ aside.col-md-4 {
               font-size: 14px; } }
       .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button {
         display: inline-block; }
-        .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input[type=button], .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input[type=button], .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkInfo, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkInfo {
+        .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input[type=button], .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input[type=button] {
           margin: 0 10px 0 0;
           height: 65px;
           border: 1px solid white;
           box-shadow: none; }
-          .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn:hover, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input[type=button]:hover, .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input[type=button]:hover, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkInfo:hover, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkInfo:hover {
+          .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn:hover, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input[type=button]:hover, .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input[type=button]:hover {
             background: white;
             color: #E55825; }
           @media (max-width: 990px) {
-            .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input[type=button], .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input[type=button], .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkInfo, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkInfo {
+            .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input[type=button], .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input[type=button] {
               height: 40px;
               font-size: 16px;
               padding: 9px 10px; } }
           @media (max-width: 400px) {
-            .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn.btn-account, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input.btn-account[type=button], .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input.btn-account[type=button], .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink a .btn-account#myChatLinkInfo, #myChatLinkContainer #myChatLink a .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn-account#myChatLinkInfo, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink .link .btn-account#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn-account#myChatLinkInfo {
+            .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn.btn-account, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input.btn-account[type=button], .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input.btn-account[type=button] {
               height: 40px;
               width: 40px;
               padding: 0;
               text-align: center; }
-              .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn.btn-account span, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input.btn-account[type=button] span, .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input.btn-account[type=button] span, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink a .btn-account#myChatLinkInfo span, #myChatLinkContainer #myChatLink a .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn-account#myChatLinkInfo span, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink .link .btn-account#myChatLinkInfo span, #myChatLinkContainer #myChatLink .link .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn-account#myChatLinkInfo span {
+              .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn.btn-account span, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input.btn-account[type=button] span, .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input.btn-account[type=button] span {
                 display: none; } }
-          .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn.btn-account:before, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input.btn-account[type=button]:before, .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input.btn-account[type=button]:before, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink a .btn-account#myChatLinkInfo:before, #myChatLinkContainer #myChatLink a .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn-account#myChatLinkInfo:before, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink .link .btn-account#myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn-account#myChatLinkInfo:before {
+          .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn.btn-account:before, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input.btn-account[type=button]:before, .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input.btn-account[type=button]:before {
             font-family: "FontAwesome";
             content: "\f007";
             margin-right: 10px; }
             @media (max-width: 400px) {
-              .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn.btn-account:before, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input.btn-account[type=button]:before, .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input.btn-account[type=button]:before, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink a .btn-account#myChatLinkInfo:before, #myChatLinkContainer #myChatLink a .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn-account#myChatLinkInfo:before, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button #myChatLinkContainer #myChatLink .link .btn-account#myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn-account#myChatLinkInfo:before {
+              .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn.btn-account:before, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input.btn-account[type=button]:before, .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input.btn-account[type=button]:before {
                 margin: 0;
                 font-size: 24px !important;
                 line-height: 1.5 !important; } }
@@ -4700,6 +3869,187 @@ aside.col-md-4 {
     #nav-search .ms-srch-sb-searchLink:after {
       line-height: 52px; }
 
+.hero-lcc-wrapper {
+  margin-top: -110px;
+  background-image: url(../images/foster4leeds-background.jpg);
+  background-attachment: fixed; }
+  @media (max-width: 990px) {
+    .hero-lcc-wrapper {
+      margin-top: -70px; } }
+  @media (max-width: 990px) {
+    .hero-lcc-wrapper {
+      margin-top: -115px; } }
+  @media (min-width: 767px) {
+    .hero-lcc-wrapper {
+      height: 90vh; } }
+  .hero-lcc-wrapper .hero-lcc {
+    background: rgba(5, 38, 53, 0.7); }
+    .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
+      max-width: 850px;
+      margin-top: 55px; }
+      @media (max-width: 990px) {
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
+          margin-top: 90px; } }
+      @media (min-width: 767px) {
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
+          font-size: 68px;
+          margin-bottom: 15px; }
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
+          margin-bottom: 40px;
+          font-size: 26px; } }
+      @media (max-width: 500px) {
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
+          margin: 0 0 10px; } }
+      .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
+        background: transparent;
+        padding: 0;
+        text-align: center; }
+        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button] {
+          font-size: 24px; }
+          @media (max-width: 767px) {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button] {
+              margin: 0;
+              font-size: 19px;
+              text-align: center; } }
+          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button]:first-of-type, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button]:first-of-type {
+            margin-right: 15px; }
+            @media (max-width: 767px) {
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button]:first-of-type, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button]:first-of-type {
+                margin: 0 0 15px; } }
+          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary {
+            background: white;
+            color: #E55825; }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary:hover {
+              background: #E6EDF0;
+              color: #E55825; }
+          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-primary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button] {
+            border: 0; }
+          @media (min-width: 655px) and (max-width: 767px) {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-arrow, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn[rel=external], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[rel=external][type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[rel=external][type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input.btn-arrow[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input.btn-arrow[type=button] {
+              margin: 0 10px 10px 0; } }
+          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-arrow:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn[rel=external]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[rel=external][type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[rel=external][type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input.btn-arrow[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input.btn-arrow[type=button]:after {
+            font-size: 40px; }
+          @media (max-width: 400px) {
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-arrow, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn[rel=external], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[rel=external][type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[rel=external][type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input.btn-arrow[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input.btn-arrow[type=button] {
+              padding: 15px 40px 15px 15px; }
+              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-arrow:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn[rel=external]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[rel=external][type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[rel=external][type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input.btn-arrow[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input.btn-arrow[type=button]:after {
+                right: 15px;
+                font-size: 30px; } }
+
+.btn.btn-arrow, .btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary, .form-group input.btn-arrow[type=button], .form-group input.btn-arrow.btn.btn-primary {
+  padding: 20px 50px 20px 25px; }
+  .btn.btn-arrow:before, .btn[rel=external]:before, .form-group input[rel=external][type=button]:before, .form-group input[rel=external].btn.btn-primary:before, .form-group input.btn-arrow[type=button]:before, .form-group input.btn-arrow.btn.btn-primary:before {
+    display: none; }
+  .btn.btn-arrow:after, .btn[rel=external]:after, .form-group input[rel=external][type=button]:after, .form-group input[rel=external].btn.btn-primary:after, .form-group input.btn-arrow[type=button]:after, .form-group input.btn-arrow.btn.btn-primary:after {
+    font-size: 40px;
+    width: auto;
+    right: 20px;
+    padding: 0 !important; }
+
+.btn, .form-group input[type=button], .form-group input.btn.btn-primary {
+  font-family: "Montserrat", sans-serif; }
+
+.text-highlight, .text-block, .text-block {
+  border-color: #b6cbd3; }
+
+.list-step {
+  list-style-type: none;
+  margin: 30px 0; }
+  .list-step li {
+    counter-increment: step-counter;
+    margin-bottom: 10px;
+    position: relative;
+    padding: 5px 10px 5px 40px; }
+    @media (min-width: 641px) {
+      .list-step li {
+        padding: 13px 10px 13px 70px;
+        margin-bottom: 15px; } }
+    .list-step li:last-of-type {
+      margin-bottom: 0; }
+    .list-step li:before {
+      content: counter(step-counter);
+      background-color: #E55825;
+      color: white;
+      font-weight: bold;
+      padding: 3px;
+      border-radius: 50%;
+      font-size: 19px;
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      text-align: center;
+      margin-right: 20px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      line-height: 1.3; }
+      @media (min-width: 641px) {
+        .list-step li:before {
+          font-size: 24px;
+          width: 50px;
+          height: 50px;
+          padding: 9px; } }
+
+.header-lcc .header-nav a, .header-lcc .header-nav .link {
+  text-shadow: none;
+  border: 0; }
+
+@media (max-width: 767px) {
+  .header-lcc .header-nav a:before, .header-lcc .header-nav .link:before, .header-lcc .header-nav .link:before {
+    display: inline-block; } }
+
+.sideNav h2, .sideNav h3, .relatedPages h2, .relatedPages h3 {
+  padding-bottom: 0;
+  border: 0; }
+
+.section-promo {
+  background: #E6EDF0;
+  margin: 30px 0; }
+  .section-promo.bottom {
+    margin-bottom: 0; }
+  .section-promo .container-fluid {
+    position: relative; }
+    .section-promo .container-fluid .section-promo_content {
+      padding: 60px 30px; }
+      @media (min-width: 990px) {
+        .section-promo .container-fluid .section-promo_content {
+          padding: 100px 30px; } }
+      .section-promo .container-fluid .section-promo_content .section-promo_title {
+        margin: 0 0 10px;
+        font-size: 27px; }
+        @media (min-width: 990px) {
+          .section-promo .container-fluid .section-promo_content .section-promo_title {
+            font-size: 40px; } }
+      .section-promo .container-fluid .section-promo_content .section-promo_text {
+        margin: 0 0 25px;
+        font-size: 16px;
+        line-height: 1.6; }
+        @media (min-width: 990px) {
+          .section-promo .container-fluid .section-promo_content .section-promo_text {
+            font-size: 21px; } }
+      .section-promo .container-fluid .section-promo_content .btn, .section-promo .container-fluid .section-promo_content .form-group input[type=button], .form-group .section-promo .container-fluid .section-promo_content input[type=button] {
+        margin: 0; }
+      .section-promo .container-fluid .section-promo_content .quote {
+        text-align: center;
+        margin: 0;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 21px; }
+        @media (min-width: 990px) {
+          .section-promo .container-fluid .section-promo_content .quote {
+            font-size: 32px; } }
+    .section-promo .container-fluid .section-promo_img {
+      width: 100%;
+      text-align: center; }
+      @media (min-width: 767px) {
+        .section-promo .container-fluid .section-promo_img {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 50%; } }
+      .section-promo .container-fluid .section-promo_img img {
+        margin: 0 auto; }
+
 footer.main {
   background: #fff;
   border-top: 1px solid #CFDCE1;
@@ -4715,6 +4065,9 @@ footer.main {
     footer.main .footerGlobal .footer-contact {
       border-bottom: 1px solid #CFDCE1;
       padding: 30px 0; }
+      @media (min-width: 767px) {
+        footer.main .footerGlobal .footer-contact {
+          padding: 50px 0; } }
       footer.main .footerGlobal .footer-contact .socialBookmarks {
         float: none;
         padding: 0;
@@ -4864,10 +4217,74 @@ footer.main {
             footer.main .footerGlobal .footer-nav .footer-logos ul li a img, footer.main .footerGlobal .footer-nav .footer-logos ul li .link img {
               height: 75px; }
     footer.main .footerGlobal .footer-bottom {
-      padding: 30px 0; }
+      padding: 20px 0; }
       footer.main .footerGlobal .footer-bottom p {
         color: #105679;
         font-size: 14px; }
+
+footer.main {
+  margin-top: 0; }
+
+@media (max-width: 767px) {
+  .contact-details {
+    text-align: left;
+    margin-bottom: 30px; }
+    .contact-details:last-of-type {
+      margin-bottom: 0; } }
+
+@media (min-width: 767px) and (max-width: 990px) {
+  .contact-details:nth-child(4) {
+    clear: left; }
+  .contact-details:nth-child(4), .contact-details:nth-child(5) {
+    margin-top: 50px; } }
+
+.contact-details h3 {
+  margin-top: 0; }
+
+.contact-details p {
+  margin: 0; }
+
+.contact-phone {
+  font-size: 30px; }
+  .contact-phone span {
+    display: block;
+    font-size: 14px;
+    color: #105679; }
+
+.contact-email {
+  font-size: 19px; }
+
+.contact-address {
+  font-size: 14px; }
+
+.contact-phone,
+.contact-email,
+.contact-address {
+  font-family: "Montserrat", sans-serif; }
+
+.footer-nav-secondary ul {
+  margin: 0;
+  padding: 0; }
+  .footer-nav-secondary ul li {
+    display: inline-block;
+    margin-right: 10px; }
+    .footer-nav-secondary ul li a, .footer-nav-secondary ul li .link {
+      font-family: "Montserrat", sans-serif;
+      color: #105679;
+      font-size: 14px; }
+
+@media (max-width: 600px) {
+  .footer-nav-secondary {
+    float: none;
+    width: 100%; } }
+
+.footer-copyright {
+  text-align: right; }
+  @media (max-width: 600px) {
+    .footer-copyright {
+      width: 100%;
+      margin-top: 15px;
+      text-align: left; } }
 
 @media (min-width: 600px) and (max-width: 990px) {
   .three-columns, footer.main .footerGlobal .footer-nav nav ul, footer.main .footerGlobal .footer-nav nav ul {
@@ -4893,227 +4310,3 @@ footer.main {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0; }
-
-.hero-lcc-wrapper {
-  margin-top: -110px;
-  background-image: url(../images/foster4leeds-background.jpg);
-  background-attachment: fixed; }
-  @media (max-width: 990px) {
-    .hero-lcc-wrapper {
-      margin-top: -70px; } }
-  @media (max-width: 990px) {
-    .hero-lcc-wrapper {
-      margin-top: -115px; } }
-  @media (min-width: 767px) {
-    .hero-lcc-wrapper {
-      height: 90vh; } }
-  .hero-lcc-wrapper .hero-lcc {
-    background: rgba(5, 38, 53, 0.7); }
-    .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
-      max-width: 850px;
-      margin-top: 55px; }
-      @media (max-width: 990px) {
-        .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
-          margin-top: 90px; } }
-      @media (min-width: 767px) {
-        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
-          font-size: 68px;
-          margin-bottom: 15px; }
-        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-secondary {
-          margin-bottom: 40px;
-          font-size: 26px; } }
-      @media (max-width: 500px) {
-        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
-          margin: 0 0 10px; } }
-      .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions {
-        background: transparent;
-        padding: 0;
-        text-align: center; }
-        .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo {
-          font-size: 24px; }
-          @media (max-width: 767px) {
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo {
-              margin: 0;
-              font-size: 19px;
-              text-align: center; } }
-          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button]:first-of-type, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button]:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a #myChatLinkInfo:first-of-type, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link #myChatLinkInfo:first-of-type, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo:first-of-type {
-            margin-right: 15px; }
-            @media (max-width: 767px) {
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button]:first-of-type, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button]:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a #myChatLinkInfo:first-of-type, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo:first-of-type, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link #myChatLinkInfo:first-of-type, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo:first-of-type {
-                margin: 0 0 15px; } }
-          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-secondary#myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-secondary#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-secondary#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-secondary#myChatLinkInfo {
-            background: white;
-            color: #E55825; }
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-secondary#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-secondary#myChatLinkInfo:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-secondary#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-secondary#myChatLinkInfo:hover {
-              background: #E6EDF0;
-              color: #E55825; }
-          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-secondary#myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-secondary#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-secondary#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-secondary#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-primary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkInfo {
-            border: 0; }
-          @media (min-width: 655px) and (max-width: 767px) {
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-arrow, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn[rel=external], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[rel=external][type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[rel=external][type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input.btn-arrow[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input.btn-arrow[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo {
-              margin: 0 10px 10px 0; } }
-          .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-arrow:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn[rel=external]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[rel=external][type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[rel=external][type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input.btn-arrow[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input.btn-arrow[type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo:after {
-            font-size: 40px; }
-          @media (max-width: 400px) {
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-arrow, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn[rel=external], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[rel=external][type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[rel=external][type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input.btn-arrow[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input.btn-arrow[type=button], .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo {
-              padding: 15px 40px 15px 15px; }
-              .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-arrow:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn[rel=external]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[rel=external][type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[rel=external][type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions [rel=external]#myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input.btn-arrow[type=button]:after, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input.btn-arrow[type=button]:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo:after, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn-arrow#myChatLinkInfo:after {
-                right: 15px;
-                font-size: 30px; } }
-
-.btn.btn-arrow, .btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo, .form-group input.btn-arrow[type=button], .form-group input.btn-arrow.btn.btn-primary, #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo {
-  padding: 20px 50px 20px 25px; }
-  .btn.btn-arrow:before, .btn[rel=external]:before, .form-group input[rel=external][type=button]:before, .form-group input[rel=external].btn.btn-primary:before, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo:before, .form-group input.btn-arrow[type=button]:before, .form-group input.btn-arrow.btn.btn-primary:before, #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo:before {
-    display: none; }
-  .btn.btn-arrow:after, .btn[rel=external]:after, .form-group input[rel=external][type=button]:after, .form-group input[rel=external].btn.btn-primary:after, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo:after, .form-group input.btn-arrow[type=button]:after, .form-group input.btn-arrow.btn.btn-primary:after, #myChatLinkContainer #myChatLink a .btn-arrow#myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .btn-arrow#myChatLinkInfo:after {
-    font-size: 40px;
-    width: auto;
-    right: 20px;
-    padding: 0 !important; }
-
-.btn, .form-group input[type=button], .form-group input.btn.btn-primary, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo {
-  font-family: "Montserrat", sans-serif; }
-
-.text-highlight, .text-block, .text-block {
-  border-color: #b6cbd3; }
-
-.list-step {
-  list-style-type: none;
-  margin: 30px 0; }
-  .list-step li {
-    counter-increment: step-counter;
-    margin-bottom: 10px;
-    position: relative;
-    padding: 5px 10px 5px 40px; }
-    @media (min-width: 641px) {
-      .list-step li {
-        padding: 13px 10px 13px 70px;
-        margin-bottom: 15px; } }
-    .list-step li:last-of-type {
-      margin-bottom: 0; }
-    .list-step li:before {
-      content: counter(step-counter);
-      background-color: #E55825;
-      color: white;
-      font-weight: bold;
-      padding: 4px;
-      border-radius: 50%;
-      font-size: 19px;
-      width: 30px;
-      height: 30px;
-      display: inline-block;
-      text-align: center;
-      margin-right: 20px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      line-height: 1.3; }
-      @media (min-width: 641px) {
-        .list-step li:before {
-          font-size: 24px;
-          width: 50px;
-          height: 50px;
-          padding: 10px; } }
-
-.header-lcc .header-nav a, .header-lcc .header-nav .link {
-  text-shadow: none;
-  border: 0; }
-
-@media (max-width: 767px) {
-  .header-lcc .header-nav a:before, .header-lcc .header-nav .link:before, .header-lcc .header-nav .link:before {
-    display: inline-block; } }
-
-.sideNav h2, .sideNav h3, .relatedPages h2, .relatedPages h3 {
-  padding-bottom: 0;
-  border: 0; }
-
-.section-promo {
-  background: #E6EDF0;
-  margin: 30px 0; }
-  .section-promo.bottom {
-    margin-bottom: 0; }
-  .section-promo .container-fluid {
-    position: relative; }
-    .section-promo .container-fluid .section-promo_content {
-      padding: 60px 30px; }
-      @media (min-width: 990px) {
-        .section-promo .container-fluid .section-promo_content {
-          padding: 100px 30px; } }
-      .section-promo .container-fluid .section-promo_content .section-promo_title {
-        margin: 0 0 10px;
-        font-size: 27px; }
-        @media (min-width: 990px) {
-          .section-promo .container-fluid .section-promo_content .section-promo_title {
-            font-size: 40px; } }
-      .section-promo .container-fluid .section-promo_content .section-promo_text {
-        margin: 0 0 25px;
-        font-size: 16px;
-        line-height: 1.6; }
-        @media (min-width: 990px) {
-          .section-promo .container-fluid .section-promo_content .section-promo_text {
-            font-size: 21px; } }
-      .section-promo .container-fluid .section-promo_content .btn, .section-promo .container-fluid .section-promo_content .form-group input[type=button], .form-group .section-promo .container-fluid .section-promo_content input[type=button], .section-promo .container-fluid .section-promo_content #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .section-promo .container-fluid .section-promo_content #myChatLinkInfo, .section-promo .container-fluid .section-promo_content #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .section-promo .container-fluid .section-promo_content #myChatLinkInfo {
-        margin: 0; }
-      .section-promo .container-fluid .section-promo_content .quote {
-        text-align: center;
-        margin: 0;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 700;
-        font-size: 21px; }
-        @media (min-width: 990px) {
-          .section-promo .container-fluid .section-promo_content .quote {
-            font-size: 32px; } }
-    .section-promo .container-fluid .section-promo_img {
-      width: 100%;
-      text-align: center; }
-      @media (min-width: 767px) {
-        .section-promo .container-fluid .section-promo_img {
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          width: 50%; } }
-      .section-promo .container-fluid .section-promo_img img {
-        margin: 0 auto; }
-
-footer.main {
-  margin-top: 0; }
-
-@media (max-width: 767px) {
-  .contact-details {
-    text-align: left;
-    margin-bottom: 30px; }
-    .contact-details:last-of-type {
-      margin-bottom: 0; } }
-
-@media (min-width: 767px) {
-  .contact-details {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align-items: center;
-    -moz-box-align-items: center;
-    -ms-flex-align-items: center;
-    -webkit-align-items: center;
-    align-items: center;
-    height: 100px; } }
-
-.contact-phone {
-  font-size: 30px;
-  font-family: "Montserrat", sans-serif;
-  margin: 0; }
-  .contact-phone span {
-    display: block;
-    font-size: 14px;
-    color: #105679; }
-
-.contact-email {
-  font-size: 19px;
-  font-family: "Montserrat", sans-serif;
-  margin: 0; }
-
-.contact-address {
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  margin: 0; }
