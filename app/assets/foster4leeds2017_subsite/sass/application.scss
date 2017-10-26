@@ -282,10 +282,6 @@ html{
 aside.col-md-4{
     margin-top:50px;
 
-    @media (max-width: 990px) {
-        margin-top:30px;
-    }
-
     &.empty{
         margin-top:0 !important;
     }
@@ -1041,10 +1037,6 @@ footer.main {
             }
         }
     }
-}
-
-footer.main{
-    margin-top:0;
 }
 
 //footer contact section

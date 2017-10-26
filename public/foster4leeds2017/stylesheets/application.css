@@ -3663,9 +3663,6 @@ html {
 
 aside.col-md-4 {
   margin-top: 50px; }
-  @media (max-width: 990px) {
-    aside.col-md-4 {
-      margin-top: 30px; } }
   aside.col-md-4.empty {
     margin-top: 0 !important; }
 
@@ -4221,9 +4218,6 @@ footer.main {
       footer.main .footerGlobal .footer-bottom p {
         color: #105679;
         font-size: 14px; }
-
-footer.main {
-  margin-top: 0; }
 
 @media (max-width: 767px) {
   .contact-details {
