@@ -1837,7 +1837,8 @@ li a.arrow:first-of-type {
     -ms-flex-align-items: stretch;
     -webkit-align-items: stretch;
     align-items: stretch;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    width: 100%; }
     .mega-promo .mega-promo__item.external a:after {
       content: "\f08e"; }
     .mega-promo .mega-promo__item a {
@@ -1851,7 +1852,8 @@ li a.arrow:first-of-type {
         .mega-promo .mega-promo__item a {
           padding-bottom: 30px; } }
       .mega-promo .mega-promo__item a:focus .mega-promo__header,
-      .mega-promo .mega-promo__item a:focus .mega-promo__secondary {
+      .mega-promo .mega-promo__item a:focus .mega-promo__secondary,
+      .mega-promo .mega-promo__item a:focus.external a:after, .mega-promo .mega-promo__item a:focus:after {
         color: #333 !important; }
       .mega-promo .mega-promo__item a:after {
         font-family: FontAwesome;
