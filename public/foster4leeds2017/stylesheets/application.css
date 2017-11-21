@@ -3864,8 +3864,8 @@ aside.col-md-4 {
   background-image: url(../images/foster4leeds_logo.svg);
   background-repeat: no-repeat;
   display: inline-block;
-  width: 268px;
-  height: 40px;
+  width: 325px;
+  height: 48px;
   background-position: left top;
   background-size: 100%; }
   @media (max-width: 990px) {
@@ -3876,14 +3876,6 @@ aside.col-md-4 {
     .header-lcc .logo {
       width: 150px;
       height: 22px; } }
-
-@media (max-width: 990px) {
-  .header-nav-container {
-    padding-bottom: 43px; } }
-
-@media (max-width: 641px) {
-  .header-nav-container {
-    padding-bottom: 41px; } }
 
 .sectionHeader .container-fluid .header-wrapper {
   height: 110px;
@@ -4071,9 +4063,6 @@ aside.col-md-4 {
   @media (max-width: 990px) {
     .hero-lcc-wrapper {
       margin-top: -70px; } }
-  @media (max-width: 990px) {
-    .hero-lcc-wrapper {
-      margin-top: -113px; } }
   @media (min-width: 767px) {
     .hero-lcc-wrapper {
       height: 90vh; } }
@@ -4084,7 +4073,7 @@ aside.col-md-4 {
       margin-top: 55px; }
       @media (max-width: 990px) {
         .hero-lcc-wrapper .hero-lcc .hero-lcc__content {
-          margin-top: 45px; } }
+          margin-top: 35px; } }
       @media (min-width: 767px) {
         .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
           font-size: 68px;
