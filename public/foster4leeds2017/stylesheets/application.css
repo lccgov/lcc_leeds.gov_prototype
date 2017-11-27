@@ -3870,9 +3870,17 @@ aside.col-md-4 {
   background-size: 100%; }
   @media (max-width: 990px) {
     .header-lcc .logo {
+      width: 250px;
+      height: 37px; } }
+  @media (max-width: 767px) {
+    .header-lcc .logo {
       width: 200px;
       height: 29px; } }
-  @media (max-width: 600px) {
+  @media (max-width: 399px) {
+    .header-lcc .logo {
+      width: 200px;
+      height: 29px; } }
+  @media (max-width: 350px) {
     .header-lcc .logo {
       width: 150px;
       height: 22px; } }
@@ -3973,7 +3981,7 @@ aside.col-md-4 {
               height: 40px;
               font-size: 16px;
               padding: 9px 10px; } }
-          @media (max-width: 400px) {
+          @media (max-width: 640px) {
             .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn.btn-account, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input.btn-account[type=button], .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input.btn-account[type=button] {
               height: 40px;
               width: 40px;
@@ -3985,7 +3993,10 @@ aside.col-md-4 {
             font-family: "FontAwesome";
             content: "\f007";
             margin-right: 10px; }
-            @media (max-width: 400px) {
+            @media (max-width: 990px) {
+              .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn.btn-account:before, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input.btn-account[type=button]:before, .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input.btn-account[type=button]:before {
+                margin-right: 5px; } }
+            @media (max-width: 641px) {
               .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .btn.btn-account:before, .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button .form-group input.btn-account[type=button]:before, .form-group .sectionHeader .container-fluid .header-wrapper .header-content .header-custom .header-button input.btn-account[type=button]:before {
                 margin: 0;
                 font-size: 24px !important;
@@ -4337,6 +4348,9 @@ footer.main {
             footer.main .footerGlobal .footer-nav nav ul li a:hover, footer.main .footerGlobal .footer-nav nav ul li .link:hover {
               opacity: 0.7;
               border: 0; }
+            @media (max-width: 641px) {
+              footer.main .footerGlobal .footer-nav nav ul li a, footer.main .footerGlobal .footer-nav nav ul li .link {
+                font-size: 16px; } }
       @media (max-width: 990px) {
         footer.main .footerGlobal .footer-nav .footer-logos {
           margin: 50px 0 0; } }
