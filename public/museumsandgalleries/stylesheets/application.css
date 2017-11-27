@@ -889,7 +889,7 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
             right: 0px;
             width: 100%;
             top: 50%;
-            margin: -25px 0 0 -36px; }
+            margin: -15px 0 0 -36px; }
         .promoListWebpart ul li a span.thirdInfo, .promoListWebpart ul li .link span.thirdInfo {
           background: #fff;
           right: 0px;
@@ -3916,7 +3916,7 @@ li a.arrow:first-of-type, li .arrow.link:first-of-type {
             padding: 15px; } }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__header {
           color: #c3102f;
-          margin: 0 0 5px;
+          margin: 0 0 10px;
           font-size: 24px;
           line-height: 30px;
           font-weight: 600; }
@@ -4836,7 +4836,7 @@ h4,
 .bold-xsmall,
 .part-title {
   font-family: "Oswald", Helvetica, Arial, sans-serif;
-  font-weight: 600; }
+  font-weight: 700; }
 
 p.top,
 ul.top {

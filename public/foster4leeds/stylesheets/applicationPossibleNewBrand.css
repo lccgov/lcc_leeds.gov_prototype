@@ -999,7 +999,7 @@ ul.promo-group {
             right: 0px;
             width: 100%;
             top: 50%;
-            margin: -25px 0 0 -36px; }
+            margin: -15px 0 0 -36px; }
         .promoListWebpart ul li a span.thirdInfo {
           background: #f6f6f6;
           right: 0px;
@@ -2656,7 +2656,7 @@ docsList
             padding: 15px; } }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header {
           color: #fff;
-          margin: 0 0 5px;
+          margin: 0 0 10px;
           font-size: 24px;
           line-height: 30px;
           font-weight: 600; }
