@@ -2835,31 +2835,6 @@ form legend {
 .form-label-header {
   margin: 0 0 10px; }
 
-.form-group + .text-highlight, .form-group + .text-block {
-  margin-bottom: 60px; }
-  @media (max-width: 641px) {
-    .form-group + .text-highlight, .form-group + .text-block {
-      margin-bottom: 50px; } }
-
-.form-top {
-  margin-bottom: 50px;
-  clear: both;
-  display: inline-block;
-  width: 100%; }
-  @media (max-width: 641px) {
-    .form-top {
-      margin-bottom: 30px; } }
-  .form-top .form-back {
-    width: 50%;
-    float: left; }
-    .form-top .form-back a, .form-top .form-back .link {
-      margin: 0; }
-  .form-top .form-progress {
-    text-align: right;
-    width: 50%;
-    float: right;
-    color: #105679; }
-
 .img-content {
   display: block;
   max-width: 100%;
@@ -3244,9 +3219,6 @@ form legend {
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
               font-size: 36px;
               margin: 0 0 5px; } }
-          @media (max-width: 330px) {
-            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header {
-              font-size: 28px; } }
           .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__intro .hero-lcc__intro-header span {
             display: block;
             font-size: 24px;
@@ -3739,10 +3711,6 @@ footer.main .footerGlobal {
       font-size: 22px;
       line-height: 1.2;
       margin: 12px 0; } }
-  @media (max-width: 320px) {
-    .header-lcc .logo {
-      font-size: 18px;
-      margin: 14px 0; } }
   .header-lcc .logo:after {
     display: none; }
   .header-lcc .logo:hover {
@@ -4734,6 +4702,3 @@ th span {
 
 .text-highlight + h3, .text-block + h3 {
   margin-top: 15px; }
-
-.btn, .form-group input[type=button], .form-group input.btn.btn-primary {
-  font-weight: 600; }
