@@ -2519,7 +2519,8 @@ p + .panel {
     display: block;
     font-weight: 400; }
 
-.sr-only, .search-text {
+.sr-only, .panel-event .panel-event-info .panel-event-info-date,
+.panel-event .panel-event-info strong, .search-text {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -4017,6 +4018,103 @@ footer.main .footerGlobal {
     .panel blockquote {
       font-size: 32px; } }
 
+.panel-event .panel-event-date {
+  background: #e55825;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #e55825 0%, #e55825 50%, #e55825 50%, #d64e27 50%, #d64e27 50%, #e55825 50%, #d64e27 50%, #d64e27 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #e55825 0%, #e55825 50%, #e55825 50%, #d64e27 50%, #d64e27 50%, #e55825 50%, #d64e27 50%, #d64e27 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #e55825 0%, #e55825 50%, #e55825 50%, #d64e27 50%, #d64e27 50%, #e55825 50%, #d64e27 50%, #d64e27 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55825', endColorstr='#d64e27',GradientType=0 );
+  /* IE6-9 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align-items: center;
+  -moz-box-align-items: center;
+  -ms-flex-align-items: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-flex-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: absolute; }
+  @media (max-width: 767px) {
+    .panel-event .panel-event-date {
+      padding: 20px;
+      top: 0;
+      left: 0; } }
+  @media (min-width: 767px) {
+    .panel-event .panel-event-date {
+      position: absolute;
+      min-height: 250px; } }
+  @media (min-width: 990px) {
+    .panel-event .panel-event-date {
+      height: 100%; } }
+  .panel-event .panel-event-date .panel-event-date-details {
+    color: white;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    margin: 0;
+    font-size: 14px; }
+    @media (min-width: 767px) {
+      .panel-event .panel-event-date .panel-event-date-details {
+        font-size: 28px; } }
+    .panel-event .panel-event-date .panel-event-date-details span {
+      display: block; }
+      .panel-event .panel-event-date .panel-event-date-details span.big-number {
+        font-size: 40px;
+        font-weight: 700; }
+        @media (min-width: 767px) {
+          .panel-event .panel-event-date .panel-event-date-details span.big-number {
+            font-size: 100px; } }
+
+.panel-event .panel-event-info .panel-event-info-location,
+.panel-event .panel-event-info .panel-event-info-time {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+  padding-left: 30px;
+  position: relative; }
+  .panel-event .panel-event-info .panel-event-info-location:before,
+  .panel-event .panel-event-info .panel-event-info-time:before {
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    top: -4px;
+    display: block;
+    font-size: 21px;
+    width: 21px;
+    text-align: center; }
+
+.panel-event .panel-event-info .panel-event-info-location {
+  color: #E55825;
+  margin-bottom: 10px; }
+  .panel-event .panel-event-info .panel-event-info-location:before {
+    content: "\f041"; }
+
+.panel-event .panel-event-info .panel-event-info-time:before {
+  content: "\f017"; }
+
+.panel-event-list {
+  margin: 60px 0; }
+  .panel-event-list h2 {
+    margin: 0 0 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #CFDCE1; }
+    @media (min-width: 641px) {
+      .panel-event-list h2 {
+        margin: 0 0 30px;
+        padding-bottom: 30px; } }
+
 html {
   background-color: #FFFFFF; }
 
@@ -4675,7 +4773,8 @@ footer.main {
     .breadcrumb {
       padding: 10px 0; } }
 
-.sr-only, .search-text {
+.sr-only, .panel-event .panel-event-info .panel-event-info-date,
+.panel-event .panel-event-info strong, .search-text {
   position: absolute;
   width: 1px;
   height: 1px;
