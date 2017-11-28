@@ -22,7 +22,7 @@
     margin:30px 0;
 
     @media (min-width: 641px){
-        margin:50px 0;
+        margin:60px 0;
     }
 
     .container-fluid{
@@ -152,6 +152,12 @@
 }
 
 .panel-event{
+    .panel-event-title{
+        margin:0 0 15px;
+    }
+    .panel-event-description{
+        margin:0 0 20px;
+    }
     .panel-event-date{
         background: rgb(229,88,37); /* Old browsers */
         background: -moz-linear-gradient(top, rgba(229,88,37,1) 0%, rgba(229,88,37,1) 50%, rgba(229,88,37,1) 50%, rgba(214,78,39,1) 50%, rgba(214,78,39,1) 50%, rgba(229,88,37,1) 50%, rgba(214,78,39,1) 50%, rgba(214,78,39,1) 100%); /* FF3.6-15 */
@@ -163,11 +169,10 @@
         @include justify-content(center);
         position: absolute;
 
-
         @media (max-width: 767px){
             padding: 20px;
             top: 0;
-            left: 0;
+            right: 0;
         }
 
         @media (min-width: 767px){
@@ -210,20 +215,31 @@
         .panel-event-info-location,
         .panel-event-info-time{
             font-weight:700;
-            font-size:16px;
+            font-size:14px;
             margin:0;
-            padding-left:30px;
+            padding-left:28px;
             position:relative;
 
             &:before{
                 font-family: FontAwesome;
                 position:absolute;
                 left:0;
-                top:-4px;
+                top:0;
                 display:block;
-                font-size:21px;
-                width:21px;
+                font-size:16px;
+                width:16px;
                 text-align:center;
+            }
+
+            @media (min-width: 641px){
+                font-size:16px;
+                padding-left:30px;
+
+                &:before{
+                    top:-3px;
+                    font-size:21px;
+                    width:21px;
+                }
             }
         }
         .panel-event-info-location{   
@@ -247,16 +263,27 @@
 }
 
 .panel-event-list{
-    margin:60px 0;
+    margin:30px 0;
+
+    @media (min-width: 641px){
+        margin:60px 0;
+    }
 
     h2{
-        margin:0 0 15px;
-        padding-bottom:15px;
-        border-bottom:1px solid $border-color;
+        margin-top:0;
+    }
 
-        @media (min-width: 641px){
-            margin:0 0 30px;
-            padding-bottom:30px;
+    .panel-event{
+        &:first-of-type{
+            margin-top:30px;
         }
+    }
+}
+
+.panel.img + .panel.img{
+    margin-top:-15px;
+
+    @media (min-width: 641px){
+        margin-top:-30px;
     }
 }
