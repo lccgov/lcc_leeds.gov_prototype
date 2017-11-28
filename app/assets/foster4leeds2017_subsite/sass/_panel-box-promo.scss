@@ -1,0 +1,152 @@
+//panel overides for full section images and events
+.panel.alt {
+    background: $hightlight-color;
+    h2,
+    h3,
+    p,
+    .btn,
+    blockquote,
+    blockquote footer {
+        color: #fff;
+    }
+    .btn.btn-outline {
+        color: #fff !important;
+        border-color: #fff !important;
+    }
+}
+
+.panel.img {
+    position: relative;
+    padding: 0;
+    min-height: 250px;
+    margin:30px 0;
+
+    @media (min-width: 641px){
+        margin:50px 0;
+    }
+
+    .container-fluid{
+        padding:0;
+    }
+
+    hr {
+        border-top: 1px solid #d3d3d3;
+    }
+    .img-container {
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        min-height: 250px;
+        &.right {
+            right: 0px;
+            left: auto;
+        }
+        &.center {
+            right: auto;
+            left: auto;
+            text-align: center;
+        }
+        @media screen and (max-width:990px) {
+            position: relative;
+        }
+    }
+    .content {
+        padding: 30px;
+
+        @media (min-width: 641px){
+            padding: 50px;
+        }
+    }
+    &.event {
+        min-height: auto;
+        font-size: 16px;
+        h3,
+        .heading-medium {
+            margin: 0.2631578947em 0 0 0;
+            font-size: 20px;
+            span {
+                color: $hightlight-color;
+                float: right;
+                @media (max-width: 767px) {
+                    float: none;
+                }
+            }
+        }
+        .img-container {
+            min-height: 150px;
+        }
+        .content {
+            padding: 20px;
+        }
+    }
+    .panel-promo_title{
+        margin:0 0 10px;
+        font-size:27px;
+
+        @media (min-width: 990px){
+            font-size:40px;
+        }
+    }
+
+    .panel-promo_text{
+        margin:0 0 25px;
+        font-size:16px;
+        line-height:1.6;
+
+        @media (min-width: 990px){
+            font-size:21px;
+        }
+    }
+    
+    .btn{
+        margin:0;
+    }
+}
+
+.content-block {
+    margin: 0 auto;
+}
+
+// End panel overides for full section images and events
+
+.no-margin{
+    margin:0;
+}
+
+.panel{
+    blockquote{
+        margin:0;
+        font-family:$font-secondary;
+        font-weight:700;
+        font-size:21px;
+        padding:0 0 0 30px;
+        border:0;
+        position:relative;
+
+        &:before{
+            font-family: FontAwesome;
+            content:"\f10d";
+            position:absolute;
+            top:0;
+            left:-10px;
+            opacity:0.5;
+            font-size:25px;
+
+            @media (min-width: 641px){
+                left:-15px;
+                font-size:30px;
+            }
+        }
+
+        footer{
+            font-weight:400;
+            margin-top:15px;
+        }
+
+        @media (min-width: 990px){
+            font-size:32px;
+        }
+    }
+}

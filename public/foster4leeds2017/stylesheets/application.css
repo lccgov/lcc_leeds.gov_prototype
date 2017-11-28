@@ -50,12 +50,12 @@ Base.sass variables
 body {
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
-  color: #0D4662;
+  color: #052635;
   background-color: #fff; }
 
 .ms-rtestate-field h1.ms-rteElement-H2, .ms-rtestate-field h2.ms-rteElement-H2, .ms-rtestate-field h3.ms-rteElement-H2, .ms-rtestate-field h4.ms-rteElement-H2, .ms-rtestate-field h5.ms-rteElement-H2 {
   font-family: "Open Sans", sans-serif;
-  color: #0D4662; }
+  color: #052635; }
 
 .btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary, .button {
   background: green;
@@ -387,7 +387,7 @@ ul.cbs-List {
 .ms-rtestate-field .part-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  color: #0D4662;
+  color: #052635;
   padding: 0;
   display: block; }
 
@@ -688,9 +688,9 @@ ul.accordion {
         background: rgba(0, 0, 0, 0.05);
         color: #E55825; }
       ul.accordion li a.header:focus, ul.accordion li .header.link:focus {
-        color: #0D4662 !important; }
+        color: #052635 !important; }
         ul.accordion li a.header:focus:after, ul.accordion li .header.link:focus:after {
-          color: #0D4662 !important; }
+          color: #052635 !important; }
       ul.accordion li a.header:after, ul.accordion li .header.link:after {
         font-family: FontAwesome;
         font-size: 19px;
@@ -899,7 +899,7 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
       .groupPromo ul li .link:focus h3:after,
       .groupPromo ul li a:focus p,
       .groupPromo ul li .link:focus p {
-        color: #0D4662 !important; }
+        color: #052635 !important; }
       @media (max-width: 767px) {
         .groupPromo ul li a, .groupPromo ul li .link {
           min-height: 0;
@@ -942,7 +942,7 @@ ul.accordion div.text-highlight, ul.accordion div.text-block {
         font-weight: 300;
         margin-top: 10px;
         margin-bottom: 0;
-        color: #0D4662; }
+        color: #052635; }
         @media (max-width: 767px) {
           .groupPromo ul li a p, .groupPromo ul li .link p {
             font-size: 14px; } }
@@ -1420,7 +1420,7 @@ a.skip:focus, .skip.link:focus, a.skip:active, .skip.link:active {
               font-size: 21px;
               line-height: 26px; } }
         .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__secondary {
-          color: #0D4662;
+          color: #052635;
           margin: 0;
           font-size: 18px;
           line-height: 24px;
@@ -1560,7 +1560,7 @@ a.skip:focus, .skip.link:focus, a.skip:active, .skip.link:active {
     display: none; }
   .btn:focus, .form-group input[type=button]:focus, .form-group input.btn.btn-primary:focus {
     background: #FFBF47;
-    color: #0D4662;
+    color: #052635;
     border-color: #FFBF47 !important; }
   .btn.btn-arrow, .btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary, .form-group input.btn-arrow[type=button], .form-group input.btn-arrow.btn.btn-primary {
     padding-right: 60px; }
@@ -1739,7 +1739,7 @@ footer.main .footerGlobal .footer-nav nav ul li .link,
   font-family: "Open Sans", sans-serif, sans-serif;
   font-weight: 400;
   text-transform: none;
-  color: #0D4662; }
+  color: #052635; }
   h1.top,
   h2.top,
   h3.top,
@@ -2054,7 +2054,7 @@ ul.bottom {
 .section-title {
   display: block;
   font-size: 24px;
-  color: #105679;
+  color: #07374c;
   font-weight: 400; }
 
 .paragraph, .ms-rtestate-field p,
@@ -2100,7 +2100,7 @@ p.sharepoint,
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 400;
-  color: #105679; }
+  color: #07374c; }
   @media (min-width: 641px) {
     .text-description {
       font-size: 19px; } }
@@ -2253,7 +2253,7 @@ blockquote {
   blockquote span.open-quote:after {
     color: #CFDCE1; }
   blockquote footer {
-    color: #0D4662; }
+    color: #052635; }
     @media (max-width: 641px) {
       blockquote footer {
         font-size: 16px !important; } }
@@ -2634,7 +2634,7 @@ textarea.form-control {
 .form-control {
   width: 100% !important;
   height: 45px;
-  color: #0D4662 !important;
+  color: #052635 !important;
   background-color: #fff !important;
   background-image: none;
   border: 1px solid #9DA5B2 !important;
@@ -2656,7 +2656,7 @@ textarea.form-control {
 
 .form-hint {
   display: block;
-  color: #105679;
+  color: #07374c;
   font-weight: normal;
   margin-top: 1px;
   padding-bottom: 2px;
@@ -3028,7 +3028,7 @@ form legend {
         .pagination-nav ul li a:before, .pagination-nav ul li .link:before {
           font-family: FontAwesome;
           position: absolute;
-          color: #13668f;
+          color: #094764;
           font-size: 60px; }
         .pagination-nav ul li a .pagination-nav__part-title, .pagination-nav ul li .link .pagination-nav__part-title {
           font-size: 24px;
@@ -3040,7 +3040,7 @@ form legend {
               font-size: 32px;
               line-height: 1.25; } }
         .pagination-nav ul li a .pagination-nav__label, .pagination-nav ul li .link .pagination-nav__label {
-          color: #0D4662; }
+          color: #052635; }
 
 .part-navigation__container {
   margin-top: 30px;
@@ -3498,7 +3498,7 @@ form legend {
           margin: 0 !important; } }
     .groupPromo ul li a p, .groupPromo ul li .link p {
       font-weight: 400;
-      color: #105679; }
+      color: #07374c; }
       @media (max-width: 767px) {
         .groupPromo ul li a p, .groupPromo ul li .link p {
           font-size: 16px; } }
@@ -3507,7 +3507,7 @@ form legend {
     .groupPromo ul li .link:focus h3:after,
     .groupPromo ul li a:focus p,
     .groupPromo ul li .link:focus p {
-      color: #0D4662; }
+      color: #052635; }
     .groupPromo ul li a:hover, .groupPromo ul li .link:hover {
       background: #F6F7FA; }
       .groupPromo ul li a:hover h3, .groupPromo ul li .link:hover h3 {
@@ -3516,7 +3516,7 @@ form legend {
         .groupPromo ul li a:hover h3:after, .groupPromo ul li .link:hover h3:after {
           color: #3399BB; }
       .groupPromo ul li a:hover p, .groupPromo ul li .link:hover p {
-        color: #105679; }
+        color: #07374c; }
     .groupPromo ul li a:active, .groupPromo ul li .link:active {
       background: #eff1f6 !important; }
   .groupPromo ul li a[rel="external"]:after, .groupPromo ul li [rel="external"].link:after,
@@ -3545,7 +3545,7 @@ form legend {
   font-weight: 700 !important; }
 
 .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__secondary {
-  color: #105679;
+  color: #07374c;
   font-weight: 400; }
 
 .mega-promo .mega-promo__item a:hover, .mega-promo .mega-promo__item .link:hover {
@@ -3736,7 +3736,7 @@ footer.main .footerGlobal {
       border-color: #07374c; }
     .header-lcc .header-nav a:focus, .header-lcc .header-nav .link:focus {
       background: #FFBF47 !important;
-      color: #0D4662 !important;
+      color: #052635 !important;
       border-color: #FFBF47 !important; }
     .header-lcc .header-nav a.active, .header-lcc .header-nav .active.link {
       background: #041c27 !important;
@@ -3837,6 +3837,185 @@ footer.main .footerGlobal {
         font-size: 34px;
         content: "\f002";
         margin: 0; } }
+
+.panel.alt {
+  background: #E55825; }
+  .panel.alt h2,
+  .panel.alt h3,
+  .panel.alt p,
+  .panel.alt .btn,
+  .panel.alt .form-group input[type=button], .form-group
+  .panel.alt input[type=button],
+  .panel.alt .form-group input.btn.btn-primary, .form-group
+  .panel.alt input.btn.btn-primary,
+  .panel.alt blockquote,
+  .panel.alt blockquote footer {
+    color: #fff; }
+  .panel.alt .btn.btn-outline, .panel.alt .form-group input[type=button].btn-outline, .form-group .panel.alt input[type=button].btn-outline {
+    color: #fff !important;
+    border-color: #fff !important; }
+
+.panel.img {
+  position: relative;
+  padding: 0;
+  min-height: 250px;
+  margin: 30px 0; }
+  @media (min-width: 641px) {
+    .panel.img {
+      margin: 50px 0; } }
+  .panel.img .container-fluid {
+    padding: 0; }
+  .panel.img hr {
+    border-top: 1px solid #d3d3d3; }
+  .panel.img .img-container {
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    min-height: 250px; }
+    .panel.img .img-container.right {
+      right: 0px;
+      left: auto; }
+    .panel.img .img-container.center {
+      right: auto;
+      left: auto;
+      text-align: center; }
+    @media screen and (max-width: 990px) {
+      .panel.img .img-container {
+        position: relative; } }
+  .panel.img .content {
+    padding: 30px; }
+    @media (min-width: 641px) {
+      .panel.img .content {
+        padding: 50px; } }
+  .panel.img.event {
+    min-height: auto;
+    font-size: 16px; }
+    .panel.img.event h3,
+    .panel.img.event .heading-medium,
+    .panel.img.event .ms-rtestate-field h3, .ms-rtestate-field
+    .panel.img.event h3,
+    .panel.img.event h3,
+    .panel.img.event .part-content h2, .part-content
+    .panel.img.event h2,
+    .panel.img.event legend,
+    .panel.img.event .sideNav h2, .sideNav
+    .panel.img.event h2,
+    .panel.img.event
+    .sideNav h3,
+    .sideNav
+    .panel.img.event h3,
+    .panel.img.event
+    .relatedPages h2,
+    .relatedPages
+    .panel.img.event h2,
+    .panel.img.event
+    .relatedPages h3,
+    .relatedPages
+    .panel.img.event h3 {
+      margin: 0.2631578947em 0 0 0;
+      font-size: 20px; }
+      .panel.img.event h3 span,
+      .panel.img.event .heading-medium span,
+      .panel.img.event .ms-rtestate-field h3 span, .ms-rtestate-field
+      .panel.img.event h3 span,
+      .panel.img.event h3 span,
+      .panel.img.event .part-content h2 span, .part-content
+      .panel.img.event h2 span,
+      .panel.img.event legend span,
+      .panel.img.event .sideNav h2 span, .sideNav
+      .panel.img.event h2 span,
+      .panel.img.event
+      .sideNav h3 span,
+      .sideNav
+      .panel.img.event h3 span,
+      .panel.img.event
+      .relatedPages h2 span,
+      .relatedPages
+      .panel.img.event h2 span,
+      .panel.img.event
+      .relatedPages h3 span,
+      .relatedPages
+      .panel.img.event h3 span {
+        color: #E55825;
+        float: right; }
+        @media (max-width: 767px) {
+          .panel.img.event h3 span,
+          .panel.img.event .heading-medium span,
+          .panel.img.event .ms-rtestate-field h3 span, .ms-rtestate-field
+          .panel.img.event h3 span,
+          .panel.img.event h3 span,
+          .panel.img.event .part-content h2 span, .part-content
+          .panel.img.event h2 span,
+          .panel.img.event legend span,
+          .panel.img.event .sideNav h2 span, .sideNav
+          .panel.img.event h2 span,
+          .panel.img.event
+          .sideNav h3 span,
+          .sideNav
+          .panel.img.event h3 span,
+          .panel.img.event
+          .relatedPages h2 span,
+          .relatedPages
+          .panel.img.event h2 span,
+          .panel.img.event
+          .relatedPages h3 span,
+          .relatedPages
+          .panel.img.event h3 span {
+            float: none; } }
+    .panel.img.event .img-container {
+      min-height: 150px; }
+    .panel.img.event .content {
+      padding: 20px; }
+  .panel.img .panel-promo_title {
+    margin: 0 0 10px;
+    font-size: 27px; }
+    @media (min-width: 990px) {
+      .panel.img .panel-promo_title {
+        font-size: 40px; } }
+  .panel.img .panel-promo_text {
+    margin: 0 0 25px;
+    font-size: 16px;
+    line-height: 1.6; }
+    @media (min-width: 990px) {
+      .panel.img .panel-promo_text {
+        font-size: 21px; } }
+  .panel.img .btn, .panel.img .form-group input[type=button], .form-group .panel.img input[type=button], .panel.img .form-group input.btn.btn-primary, .form-group .panel.img input.btn.btn-primary {
+    margin: 0; }
+
+.content-block {
+  margin: 0 auto; }
+
+.no-margin {
+  margin: 0; }
+
+.panel blockquote {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  padding: 0 0 0 30px;
+  border: 0;
+  position: relative; }
+  .panel blockquote:before {
+    font-family: FontAwesome;
+    content: "\f10d";
+    position: absolute;
+    top: 0;
+    left: -10px;
+    opacity: 0.5;
+    font-size: 25px; }
+    @media (min-width: 641px) {
+      .panel blockquote:before {
+        left: -15px;
+        font-size: 30px; } }
+  .panel blockquote footer {
+    font-weight: 400;
+    margin-top: 15px; }
+  @media (min-width: 990px) {
+    .panel blockquote {
+      font-size: 32px; } }
 
 html {
   background-color: #FFFFFF; }
@@ -4233,15 +4412,11 @@ aside.col-md-4 {
         @media (min-width: 990px) {
           .section-promo .container-fluid .section-promo_content .quote {
             font-size: 32px; } }
+        @media (min-width: 400px) and (max-width: 767px) {
+          .section-promo .container-fluid .section-promo_content .quote {
+            font-size: 32px; } }
     .section-promo .container-fluid .section-promo_img {
-      width: 100%;
       text-align: center; }
-      @media (min-width: 767px) {
-        .section-promo .container-fluid .section-promo_img {
-          position: absolute;
-          bottom: 0;
-          right: 0;
-          width: 50%; } }
       .section-promo .container-fluid .section-promo_img img {
         margin: 0 auto; }
 
@@ -4250,7 +4425,7 @@ footer.main {
   border-top: 1px solid #CFDCE1;
   margin-top: 50px; }
   footer.main p {
-    color: #0D4662; }
+    color: #052635; }
   footer.main .container-fluid {
     padding-right: 15px;
     padding-left: 15px; }
@@ -4290,7 +4465,7 @@ footer.main {
           margin: 0; }
           footer.main .footerGlobal .footer-contact .socialBookmarks ul li:first-of-type {
             padding: 0;
-            color: #105679; }
+            color: #07374c; }
           footer.main .footerGlobal .footer-contact .socialBookmarks ul li a, footer.main .footerGlobal .footer-contact .socialBookmarks ul li .link {
             margin: 0;
             width: 70px;
@@ -4343,7 +4518,7 @@ footer.main {
           margin-bottom: 20px; }
           footer.main .footerGlobal .footer-nav nav ul li a, footer.main .footerGlobal .footer-nav nav ul li .link {
             font-family: "Montserrat", sans-serif;
-            color: #105679 !important;
+            color: #07374c !important;
             text-decoration: underline; }
             footer.main .footerGlobal .footer-nav nav ul li a:hover, footer.main .footerGlobal .footer-nav nav ul li .link:hover {
               opacity: 0.7;
@@ -4417,7 +4592,7 @@ footer.main {
     footer.main .footerGlobal .footer-bottom {
       padding: 20px 0; }
       footer.main .footerGlobal .footer-bottom p {
-        color: #105679;
+        color: #07374c;
         font-size: 14px; }
 
 @media (max-width: 767px) {
@@ -4445,7 +4620,7 @@ footer.main {
   .contact-phone span {
     display: block;
     font-size: 14px;
-    color: #105679; }
+    color: #07374c; }
 
 .contact-email {
   font-size: 19px; }
@@ -4467,7 +4642,7 @@ footer.main {
     margin-right: 10px; }
     .footer-nav-secondary ul li a, .footer-nav-secondary ul li .link {
       font-family: "Montserrat", sans-serif;
-      color: #105679;
+      color: #07374c;
       font-size: 14px; }
       .footer-nav-secondary ul li a:hover, .footer-nav-secondary ul li .link:hover {
         opacity: 0.7; }
@@ -4527,3 +4702,6 @@ th span {
 
 .text-highlight + h3, .text-block + h3 {
   margin-top: 15px; }
+
+.btn, .form-group input[type=button], .form-group input.btn.btn-primary {
+  font-weight: 600; }

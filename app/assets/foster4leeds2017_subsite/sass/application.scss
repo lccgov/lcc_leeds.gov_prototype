@@ -22,7 +22,7 @@ $light-blue: #3399BB;
 $pale-blue: #b3d9e6;
 $green:#008000;
 $light-green:#009A00;
-$black:#0D4662;
+$black:#052635;
 $light-black:#3D414A;
 $dark-grey:#354855;
 $grey:#9DA5B2;
@@ -174,6 +174,8 @@ $group-promo-arrow-color: $grey;
 $input-color:$black;
 $input-border-color:$grey;
 
+$hightlight-color:$orange;
+
 @import 'mixins';
 @import 'variables';
 @import 'brandColors';
@@ -245,6 +247,8 @@ $input-border-color:$grey;
 //in front end toolkit
 @import 'lcc_footer';
 @import 'lcc_header';
+
+@import 'panel-box-promo';
 
 //@import 'report_a_problem';
 
@@ -822,19 +826,15 @@ $header-height-mobile:70px;
                 @media (min-width: 990px){
                     font-size:32px;
                 }
+
+                @media (min-width: 400px) and (max-width: 767px){
+                    font-size:32px;
+                }
             }
         }
 
         .section-promo_img{
-            width:100%;
             text-align:center;
-
-            @media (min-width: 767px){
-                position:absolute;
-                bottom:0;
-                right:0;
-                width:50%;
-            }
 
             img{
                 margin:0 auto;
@@ -1197,4 +1197,8 @@ th span{
 
 .text-highlight + h3{
     margin-top:15px;
+}
+
+.btn{
+    font-weight:600;
 }
