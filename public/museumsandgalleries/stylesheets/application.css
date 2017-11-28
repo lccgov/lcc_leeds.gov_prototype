@@ -5188,31 +5188,6 @@ blockquote {
       blockquote footer {
         font-size: 16px !important; } }
 
-.panel {
-  background: #F6F7FA;
-  padding: 20px;
-  box-shadow: none;
-  border-radius: 0;
-  border: 0;
-  margin: 30px 0; }
-  .panel.top {
-    margin-top: 0; }
-  .panel.panel-border {
-    background: white;
-    border: 10px solid #E5F1F5; }
-  @media (min-width: 641px) {
-    .panel {
-      padding: 30px;
-      margin: 30px 0; } }
-  .panel h2:first-child,
-  .panel h3:first-child,
-  .panel h4:first-child {
-    margin-top: 0; }
-  .panel .media-container {
-    margin: 0; }
-  .panel p:last-child {
-    margin-bottom: 0; }
-
 ul + .text-highlight, ul + .text-block {
   margin-top: 6px; }
 
@@ -5333,9 +5308,6 @@ h2 + h3 {
 
 .text-highlight p + ul, .text-block p + ul {
   margin-top: 15px; }
-
-p + .panel {
-  margin: 50px 0; }
 
 .top-header-margin {
   margin-top: 50px; }
