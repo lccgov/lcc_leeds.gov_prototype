@@ -4440,10 +4440,27 @@ aside.col-md-4 {
                 margin: 0 0 15px; } }
           .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary {
             background: white;
-            color: #E55825; }
+            color: #E55825;
+            -webkit-box-shadow: 0px 3px 0px 0px #933411;
+            -moz-box-shadow: 0px 3px 0px 0px #933411;
+            box-shadow: 0px 3px 0px 0px #933411; }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary:hover {
+              -webkit-box-shadow: 0px 3px 0px 0px #E6EDF0;
+              -moz-box-shadow: 0px 3px 0px 0px #E6EDF0;
+              box-shadow: 0px 3px 0px 0px #E6EDF0; }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary:active, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary:active {
+              -webkit-box-shadow: 0px 3px 0px 0px #c04417;
+              -moz-box-shadow: 0px 3px 0px 0px #c04417;
+              box-shadow: 0px 3px 0px 0px #c04417; }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary:focus, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary:focus, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary:focus {
+              -webkit-box-shadow: 0px 3px 0px 0px #FFBF47;
+              -moz-box-shadow: 0px 3px 0px 0px #FFBF47;
+              box-shadow: 0px 3px 0px 0px #FFBF47; }
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary:hover, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary:hover, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary:hover {
               background: #E6EDF0;
               color: #E55825; }
+            .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary:active, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary:active, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary:active {
+              background: #c04417 !important; }
           .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button].btn-secondary, .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button].btn-secondary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn.btn-primary, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button] {
             border: 0; }
           @media (min-width: 655px) and (max-width: 767px) {
@@ -4491,6 +4508,16 @@ aside.col-md-4 {
     .list-step li:before {
       content: counter(step-counter);
       background-color: #E55825;
+      background: #E55825;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #E55825 0%, #E55825 50%, #E55825 50%, #d74c1a 50%, #d74c1a 50%, #E55825 50%, #d74c1a 50%, #d74c1a 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #E55825 0%, #E55825 50%, #E55825 50%, #d74c1a 50%, #d74c1a 50%, #E55825 50%, #d74c1a 50%, #d74c1a 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #E55825 0%, #E55825 50%, #E55825 50%, #d74c1a 50%, #d74c1a 50%, #E55825 50%, #d74c1a 50%, #d74c1a 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
+      /* IE6-9 */
       color: white;
       font-weight: bold;
       padding: 3px;
@@ -4663,7 +4690,8 @@ footer.main {
         padding: 0; }
         footer.main .footerGlobal .footer-nav nav ul li {
           display: block;
-          margin-bottom: 20px; }
+          margin-bottom: 15px;
+          font-size: 24px; }
           footer.main .footerGlobal .footer-nav nav ul li a, footer.main .footerGlobal .footer-nav nav ul li .link {
             font-family: "Montserrat", sans-serif;
             color: #07374c !important;
@@ -4772,6 +4800,8 @@ footer.main {
 
 .contact-email {
   font-size: 19px; }
+  .contact-email a, .contact-email .link {
+    word-wrap: break-word; }
 
 .contact-address {
   font-size: 14px;
@@ -4852,15 +4882,40 @@ th span {
 .text-highlight + h3, .text-block + h3 {
   margin-top: 15px; }
 
-/*@mixin btn-border($border-color){
-    -webkit-box-shadow: 0px 2px 0px 0px $border-color;
-    -moz-box-shadow: 0px 2px 0px 0px $border-color;
-    box-shadow: 0px 2px 0px 0px $border-color;
-}
+.btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary {
+  -webkit-box-shadow: 0px 3px 0px 0px #933411;
+  -moz-box-shadow: 0px 3px 0px 0px #933411;
+  box-shadow: 0px 3px 0px 0px #933411; }
+  .btn-primary:hover, .form-group input[type=button]:hover, .form-group input.btn.btn-primary:hover {
+    -webkit-box-shadow: 0px 3px 0px 0px #e8693c;
+    -moz-box-shadow: 0px 3px 0px 0px #e8693c;
+    box-shadow: 0px 3px 0px 0px #e8693c; }
+  .btn-primary:active, .form-group input[type=button]:active, .form-group input.btn.btn-primary:active {
+    -webkit-box-shadow: 0px 3px 0px 0px #c04417;
+    -moz-box-shadow: 0px 3px 0px 0px #c04417;
+    box-shadow: 0px 3px 0px 0px #c04417; }
+  .btn-primary:focus, .form-group input[type=button]:focus, .form-group input.btn.btn-primary:focus {
+    -webkit-box-shadow: 0px 3px 0px 0px #FFBF47;
+    -moz-box-shadow: 0px 3px 0px 0px #FFBF47;
+    box-shadow: 0px 3px 0px 0px #FFBF47; }
 
-.btn-primary{
-    @include btn-border(darken($base-link-color,15%));
-}*/
+.btn-secondary, .form-group input[type=button].btn-secondary {
+  -webkit-box-shadow: 0px 3px 0px 0px #010b10;
+  -moz-box-shadow: 0px 3px 0px 0px #010b10;
+  box-shadow: 0px 3px 0px 0px #010b10; }
+  .btn-secondary:hover, .form-group input[type=button].btn-secondary:hover {
+    -webkit-box-shadow: 0px 3px 0px 0px #0c5f84;
+    -moz-box-shadow: 0px 3px 0px 0px #0c5f84;
+    box-shadow: 0px 3px 0px 0px #0c5f84; }
+  .btn-secondary:active, .form-group input[type=button].btn-secondary:active {
+    -webkit-box-shadow: 0px 3px 0px 0px #062d3e;
+    -moz-box-shadow: 0px 3px 0px 0px #062d3e;
+    box-shadow: 0px 3px 0px 0px #062d3e; }
+  .btn-secondary:focus, .form-group input[type=button].btn-secondary:focus {
+    -webkit-box-shadow: 0px 3px 0px 0px #FFBF47;
+    -moz-box-shadow: 0px 3px 0px 0px #FFBF47;
+    box-shadow: 0px 3px 0px 0px #FFBF47; }
+
 @media (min-width: 990px) {
   .panel blockquote {
     font-size: 27px; } }
@@ -4888,10 +4943,10 @@ hr {
   margin-top: 10px; }
   @media (min-width: 641px) {
     .panel.img .btn, .panel.img .form-group input[type=button], .form-group .panel.img input[type=button], .panel.img .form-group input.btn.btn-primary, .form-group .panel.img input.btn.btn-primary {
-      margin-top: 30px; } }
+      margin-top: 15px; } }
 
 .panel-event-list p + .panel-event {
-  margin-top: 60px; }
+  margin-top: 30px; }
   @media (min-width: 641px) {
     .panel-event-list p + .panel-event {
       margin-top: 60px; } }

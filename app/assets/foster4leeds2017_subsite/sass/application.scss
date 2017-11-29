@@ -257,6 +257,31 @@ $panel-alt-color:white;
 //@import 'report_a_problem';
 
 
+@mixin btn-border($border-color, $border-width, $hover-border-color, $active-border-color){
+    -webkit-box-shadow: 0px $border-width 0px 0px $border-color;
+    -moz-box-shadow: 0px $border-width 0px 0px $border-color;
+    box-shadow: 0px $border-width 0px 0px $border-color;
+
+    &:hover{
+    -webkit-box-shadow: 0px $border-width 0px 0px $hover-border-color;
+    -moz-box-shadow: 0px $border-width 0px 0px $hover-border-color;
+    box-shadow: 0px $border-width 0px 0px $hover-border-color;
+    }
+
+    &:active{
+    -webkit-box-shadow: 0px $border-width 0px 0px $active-border-color;
+    -moz-box-shadow: 0px $border-width 0px 0px $active-border-color;
+    box-shadow: 0px $border-width 0px 0px $active-border-color;
+    }
+
+    &:focus{
+    -webkit-box-shadow: 0px $border-width 0px 0px $focus-color;
+    -moz-box-shadow: 0px $border-width 0px 0px $focus-color;
+    box-shadow: 0px $border-width 0px 0px $focus-color;
+    }
+}
+
+
 //CUSTOM STYLES FOR LEEDS.GOV.UK
 
 //site background
@@ -654,11 +679,16 @@ $header-height-mobile:70px;
                     &.btn-secondary{
                         background:white;
                         color:$base-link-color;
+                        @include btn-border(darken($primary-button-background-color,20%), 3px, $panel-color, darken($primary-button-background-color,10%));
                         //box-shadow: 0px 3px 0px #723015;
 
                         &:hover{
                             background:$panel-color;
                             color:$base-link-color;   
+                        }
+
+                        &:active{
+                            background:darken($primary-button-background-color,10%) !important;
                         }
                     }
 
@@ -739,6 +769,7 @@ $header-height-mobile:70px;
         &:before{
             content: counter(step-counter);
             background-color: $base-link-color;
+            @include gradient-background-half($panel-event-date-background-light, $panel-event-date-background-dark);
             color: white;
             font-weight: bold;
             padding: 3px;
@@ -959,7 +990,8 @@ footer.main {
 
                     li {
                         display:block;
-                        margin-bottom:20px;
+                        margin-bottom:15px;
+                        font-size:24px;
 
                         a{
                             @extend .font-xsmall;
@@ -1099,6 +1131,10 @@ footer.main {
 
 .contact-email{
     font-size:19px;
+
+    a{
+        word-wrap: break-word;
+    }
 }
 
 .contact-address{
@@ -1205,15 +1241,13 @@ th span{
     margin-top:15px;
 }
 
-/*@mixin btn-border($border-color){
-    -webkit-box-shadow: 0px 2px 0px 0px $border-color;
-    -moz-box-shadow: 0px 2px 0px 0px $border-color;
-    box-shadow: 0px 2px 0px 0px $border-color;
+.btn-primary{
+    @include btn-border(darken($primary-button-background-color,20%), 3px, lighten($primary-button-background-color, 5%), darken($primary-button-background-color,10%));
 }
 
-.btn-primary{
-    @include btn-border(darken($base-link-color,15%));
-}*/
+.btn-secondary{
+    @include btn-border(darken($secondary-button-background-color,20%), 3px, lighten($secondary-button-background-color,5%), darken($secondary-button-background-color,10%));
+}
 
 @media (min-width: 990px){
     .panel blockquote {
@@ -1255,12 +1289,12 @@ hr {
     margin-top:10px;
 
     @media (min-width: 641px){
-        margin-top: 30px;
+        margin-top: 15px;
     }
 }
 
 .panel-event-list p + .panel-event {
-    margin-top: 60px;
+    margin-top: 30px;
 
     @media (min-width: 641px){
         margin-top: 60px;
