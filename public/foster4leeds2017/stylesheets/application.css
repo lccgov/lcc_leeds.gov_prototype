@@ -4880,7 +4880,7 @@ hr {
   padding: 30px 0; }
   @media (min-width: 641px) {
     .panel-event-list {
-      padding: 50px 0; } }
+      padding: 60px 0; } }
   .panel-event-list .panel:last-of-type {
     margin-bottom: 0; }
 
@@ -4888,4 +4888,10 @@ hr {
   margin-top: 10px; }
   @media (min-width: 641px) {
     .panel.img .btn, .panel.img .form-group input[type=button], .form-group .panel.img input[type=button], .panel.img .form-group input.btn.btn-primary, .form-group .panel.img input.btn.btn-primary {
-      margin-top: 15px; } }
+      margin-top: 30px; } }
+
+.panel-event-list p + .panel-event {
+  margin-top: 60px; }
+  @media (min-width: 641px) {
+    .panel-event-list p + .panel-event {
+      margin-top: 60px; } }
