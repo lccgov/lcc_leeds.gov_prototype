@@ -1233,11 +1233,12 @@ hr {
 }
 
 .panel-event-list {
-    border: 1px solid $border-color;
-    padding: 30px;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    padding: 30px 0;
 
     @media (min-width: 641px){
-        padding: 50px;
+        padding: 50px 0;
     }
 
     .panel{
