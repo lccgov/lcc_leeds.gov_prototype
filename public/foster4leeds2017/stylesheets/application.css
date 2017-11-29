@@ -4883,3 +4883,9 @@ hr {
       padding: 50px 0; } }
   .panel-event-list .panel:last-of-type {
     margin-bottom: 0; }
+
+.panel.img .btn, .panel.img .form-group input[type=button], .form-group .panel.img input[type=button], .panel.img .form-group input.btn.btn-primary, .form-group .panel.img input.btn.btn-primary {
+  margin-top: 10px; }
+  @media (min-width: 641px) {
+    .panel.img .btn, .panel.img .form-group input[type=button], .form-group .panel.img input[type=button], .panel.img .form-group input.btn.btn-primary, .form-group .panel.img input.btn.btn-primary {
+      margin-top: 15px; } }

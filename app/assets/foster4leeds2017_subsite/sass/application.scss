@@ -1248,3 +1248,11 @@ hr {
         }
     }
 }
+
+.panel.img .btn{
+    margin-top:10px;
+
+    @media (min-width: 641px){
+        margin-top:15px;
+    }
+}
