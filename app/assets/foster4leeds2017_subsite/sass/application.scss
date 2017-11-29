@@ -46,7 +46,7 @@ $secondary-link-color:$dark-blue;
 $secondary-font-color:lighten($base-font-color,5%);
 $border-color:$light-grey;
 $brand-color:$orange;
-$button-color:$green;
+$button-color:$orange;
 $button-hover-color:lighten($button-color,5%);
 $focus-color:$yellow;
 $base-container-width:1280px ;
@@ -161,8 +161,8 @@ $primary-button-background-color:$orange;
 $primary-button-color:$white;
 $secondary-button-background-color:$blue;
 $secondary-button-color:$white;
-$outline-button-border-color:$blue;
-$outline-button-color:$blue;
+$outline-button-border-color:$orange;
+$outline-button-color:$orange;
 
 //group promo colours
 $group-promo-background-color: $lighter-grey;
@@ -1214,3 +1214,36 @@ th span{
 .btn-primary{
     @include btn-border(darken($base-link-color,15%));
 }*/
+
+@media (min-width: 990px){
+    .panel blockquote {
+        font-size: 27px;
+    }
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 0;
+    border-top: 1px solid $border-color;
+}
+
+.panel-event-list p + .panel-event {
+    margin-top: 40px;
+}
+
+.panel-event-list {
+    border: 1px solid $border-color;
+    padding: 30px;
+
+    @media (min-width: 641px){
+        padding: 50px;
+    }
+
+    .panel{
+        
+        &:last-of-type{
+            margin-bottom:0;
+        }
+    }
+}
