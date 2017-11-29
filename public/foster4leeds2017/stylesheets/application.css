@@ -4427,7 +4427,8 @@ aside.col-md-4 {
         padding: 0;
         text-align: center; }
         .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button] {
-          font-size: 24px; }
+          font-size: 24px;
+          box-shadow: none !important; }
           @media (max-width: 767px) {
             .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .btn, .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions .form-group input[type=button], .form-group .hero-lcc-wrapper .hero-lcc .hero-lcc__content .hero-lcc__actions input[type=button] {
               margin: 0;
