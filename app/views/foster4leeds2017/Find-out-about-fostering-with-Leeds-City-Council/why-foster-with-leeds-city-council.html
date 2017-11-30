@@ -14,7 +14,7 @@
  
 
 {% block header %}
-Why foster with Leeds City Council?
+Find out about fostering with Leeds City Council
 {% endblock %}
 
  {% block main_nav %}
@@ -30,11 +30,14 @@ Why foster with Leeds City Council?
 
 
  {% block breadcrumb %}
-<ul>
+ <ul>
     <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
         <a href="/foster4leeds2017">Home</a>
         <ul class="">
-            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Why foster with Leeds city council?</li>
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span><a href="/foster4leeds2017/Find-out-about-fostering-with-Leeds-City-Council/what-is-fostering">Find out about fostering with Leeds City Council</a></li>
+        </ul>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Why foster with us?</li>
         </ul>
     </li>
 </ul>
@@ -42,11 +45,21 @@ Why foster with Leeds City Council?
 
 {% block sectionOneContent %}
 
-{% endblock %}
-
-{% block pageContent %}
+<aside class="part-navigation__container" role="complementary">
+    <nav role="navigation" class="part-navigation" aria-label="Pages in this guide">
+        <ol>
+            <li><a href="/foster4leeds2017/Find-out-about-fostering-with-Leeds-City-Council/what-is-fostering">What is fostering?</a></li>
+            <li><a href="/foster4leeds2017/Find-out-about-fostering-with-Leeds-City-Council/who-can-be-a-foster-carer">Who can be a foster carer?</a></li>
+            <li>Why foster with us?</li>
+			<li><a href="#">Register your interest</a></li>
+			<li><a href="/foster4leeds2017/Find-out-about-fostering-with-Leeds-City-Council/how-to-become-a-foster-carer">What happens after you’ve registered your interest</a></li>
+			<li><a href="/foster4leeds2017/Find-out-about-fostering-with-Leeds-City-Council/transfer-to-leeds-city-council">Transfer to Leeds City Council</a></li>
+        </ol>
+    </nav>
+</aside>
 
 <div class="text">
+    <h2>3. Why foster with us?</h2>
     <p class="lead">There are many reasons to foster with Leeds City Council, including financial support, allowances, a comprehensive training package, your own support worker and gym membership.</p>
         
     {% include "includes/foster4leeds2017/panel-quote-alt.html" %}
@@ -183,7 +196,35 @@ Why foster with Leeds City Council?
         <p>If you are already a foster carer registered elsewhere you can <a href="/foster4leeds2017/already-a-foster-carer-with-an-independent-agency-or-other-council">transfer to Leeds city council</a>.</p>
     </div>
     
+
+
+<nav class="pagination-nav" role="navigation" aria-label="Pagination">
+    <ul>
+            <li class="pagination-nav__previous-page">
+                    <a href="/foster4leeds2017/Find-out-about-fostering-with-Leeds-City-Council/who-can-be-a-foster-carer" rel="prev">
+                    <span class="pagination-nav__part-title">Previous</span>
+                    <span class="pagination-nav__label">Who can be a foster carer?</span>
+                    </a>
+                </li>
+        <li class="pagination-nav__next-page">
+            <a href="#" rel="next">
+            <span class="pagination-nav__part-title">Next</span>
+            <span class="pagination-nav__label">Register your interest</span>
+            </a>
+        </li>
+        <div style="clear:both"></div>
+    </ul>
+    </nav>	
+
 </div>
+	
+
+
+{% endblock %}
+
+{% block pageContent %}
+
+
 
 {% endblock %}
 

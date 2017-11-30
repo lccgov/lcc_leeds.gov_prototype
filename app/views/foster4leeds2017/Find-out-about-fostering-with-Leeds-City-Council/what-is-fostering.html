@@ -14,7 +14,7 @@
  
 
 {% block header %}
-What is fostering?
+Find out about fostering with Leeds City Council
 {% endblock %}
 
  {% block main_nav %}
@@ -36,7 +36,8 @@ What is fostering?
     <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
         <a href="/foster4leeds2017">Home</a>
         <ul class="">
-            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>What is fostering?</li>
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Find out about fostering with Leeds City Council</li>
+            
         </ul>
     </li>
 </ul>
@@ -44,13 +45,24 @@ What is fostering?
 
 {% block sectionOneContent %}
 
+<aside class="part-navigation__container" role="complementary">
+    <nav role="navigation" class="part-navigation" aria-label="Pages in this guide">
+        <ol>
+            <li>What is fostering?</li>
+            <li><a href="/foster4leeds2017/Find-out-about-fostering-with-Leeds-City-Council/who-can-be-a-foster-carer">Who can be a foster carer?</a></li>
+            <li><a href="/foster4leeds2017/Find-out-about-fostering-with-Leeds-City-Council/why-foster-with-leeds-city-council">Why foster with us?</a></li>
+			<li><a href="#">Register your interest</a></li>
+			<li><a href="/foster4leeds2017/Find-out-about-fostering-with-Leeds-City-Council/how-to-become-a-foster-carer">What happens after you’ve registered your interest</a></li>
+			<li><a href="/foster4leeds2017/Find-out-about-fostering-with-Leeds-City-Council/transfer-to-leeds-city-council">Transfer to Leeds City Council</a></li>
+        </ol>
+    </nav>
+</aside>
 
 
-{% endblock %}
-
-{% block pageContent %}
 
 <div class="text">
+<h2>1. What is fostering?</h2>
+
     <p class="lead">Fostering is when children who aren’t able to live with their birth families are placed in a safe and loving family home on a temporary basis.</p>
     <p>There are <a href="/foster4leeds2017/who-can-I-foster/who-can-I-foster.html">several kinds of fostering</a>, and you can foster for a few nights to years, depending on the situation.</p>
     <p>We have age ranges from babies up to 18 year olds that need foster homes. You could make a big difference to their lives by listening to their needs, forming a stable relationship and providing a caring and loving home.</p>
@@ -65,9 +77,30 @@ What is fostering?
     <div role="note" aria-label="Information" class="text-highlight">
         <p>All our foster carers are provided with training and support from a team of social workers.</p>
     </div>
+
+
+<nav class="pagination-nav" role="navigation" aria-label="Pagination">
+    <ul>
+        <li class="pagination-nav__next-page">
+            <a href="/foster4leeds2017/Find-out-about-fostering-with-Leeds-City-Council/who-can-be-a-foster-carer" rel="next">
+            <span class="pagination-nav__part-title">Next</span>
+            <span class="pagination-nav__label">Who can be a foster carer?</span>
+            </a>
+        </li>
+        <div style="clear:both"></div>
+    </ul>
+    </nav>
 </div>
 
-{% include "includes/foster4leeds2017/panel-events.html" %}
+
+
+{% endblock %}
+
+{% block pageContent %}
+
+
+
+
 
 {% endblock %}
 
@@ -89,6 +122,7 @@ What is fostering?
 {% endblock %}
 
 {% block sectionOneThirdCol1 %}
+
  {% endblock %}
 
  {% block sectionOneThirdCol2 %}
@@ -103,6 +137,7 @@ What is fostering?
 {% endblock %} 
 
 {% block sectionTwoFull%} 
+{% include "includes/foster4leeds2017/panel-events.html" %}
 
 {% include "includes/foster4leeds2017/panel-register.html" %}
 
