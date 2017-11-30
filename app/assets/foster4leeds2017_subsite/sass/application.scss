@@ -22,7 +22,7 @@ $light-blue: #3399BB;
 $pale-blue: #b3d9e6;
 $green:#008000;
 $light-green:#009A00;
-$black:#0D4662;
+$black:#052635;
 $light-black:#3D414A;
 $dark-grey:#354855;
 $grey:#9DA5B2;
@@ -46,7 +46,7 @@ $secondary-link-color:$dark-blue;
 $secondary-font-color:lighten($base-font-color,5%);
 $border-color:$light-grey;
 $brand-color:$orange;
-$button-color:$green;
+$button-color:$orange;
 $button-hover-color:lighten($button-color,5%);
 $focus-color:$yellow;
 $base-container-width:1280px ;
@@ -161,8 +161,8 @@ $primary-button-background-color:$orange;
 $primary-button-color:$white;
 $secondary-button-background-color:$blue;
 $secondary-button-color:$white;
-$outline-button-border-color:$blue;
-$outline-button-color:$blue;
+$outline-button-border-color:$orange;
+$outline-button-color:$orange;
 
 //group promo colours
 $group-promo-background-color: $lighter-grey;
@@ -173,6 +173,13 @@ $group-promo-arrow-color: $grey;
 //form colours
 $input-color:$black;
 $input-border-color:$grey;
+
+//panel colors
+$panel-event-date-background-light:$base-link-color;
+$panel-event-date-background-dark:darken($panel-event-date-background-light,5%);
+$panel-event-date-color:white;
+$hightlight-color:$base-link-color;
+$panel-alt-color:white;
 
 @import 'mixins';
 @import 'variables';
@@ -209,6 +216,7 @@ $input-border-color:$grey;
 @import 'buttons';
 @import 'browser-alert';
 @import 'typography-lcc';
+@import 'panel';
 @import 'tables';
 @import 'form_elements';
 @import 'images';
@@ -247,6 +255,31 @@ $input-border-color:$grey;
 @import 'lcc_header';
 
 //@import 'report_a_problem';
+
+
+@mixin btn-border($border-color, $border-width, $hover-border-color, $active-border-color){
+    -webkit-box-shadow: 0px $border-width 0px 0px $border-color;
+    -moz-box-shadow: 0px $border-width 0px 0px $border-color;
+    box-shadow: 0px $border-width 0px 0px $border-color;
+
+    &:hover{
+    -webkit-box-shadow: 0px $border-width 0px 0px $hover-border-color;
+    -moz-box-shadow: 0px $border-width 0px 0px $hover-border-color;
+    box-shadow: 0px $border-width 0px 0px $hover-border-color;
+    }
+
+    &:active{
+    -webkit-box-shadow: 0px $border-width 0px 0px $active-border-color;
+    -moz-box-shadow: 0px $border-width 0px 0px $active-border-color;
+    box-shadow: 0px $border-width 0px 0px $active-border-color;
+    }
+
+    &:focus{
+    -webkit-box-shadow: 0px $border-width 0px 0px $focus-color;
+    -moz-box-shadow: 0px $border-width 0px 0px $focus-color;
+    box-shadow: 0px $border-width 0px 0px $focus-color;
+    }
+}
 
 
 //CUSTOM STYLES FOR LEEDS.GOV.UK
@@ -325,6 +358,7 @@ $header-height-mobile:70px;
 }
 
 .sectionHeader {
+    //@include gradient-background-half($panel-event-date-background-light, $panel-event-date-background-dark);
     .container-fluid{
         .header-wrapper{
             height:$header-height;
@@ -439,6 +473,7 @@ $header-height-mobile:70px;
                                 padding:9px 10px;
                             }
                             &.btn-account{
+                                                          
                                  @media (max-width: 640px){
                                     height: 40px;
                                     width: 40px;
@@ -626,6 +661,7 @@ $header-height-mobile:70px;
 
                 .btn{
                     font-size:24px;
+                    box-shadow:none !important;
 
                     @media (max-width: 767px){
                         margin:0;
@@ -644,11 +680,16 @@ $header-height-mobile:70px;
                     &.btn-secondary{
                         background:white;
                         color:$base-link-color;
+                        @include btn-border(darken($primary-button-background-color,20%), 3px, $panel-color, darken($primary-button-background-color,10%));
                         //box-shadow: 0px 3px 0px #723015;
 
                         &:hover{
                             background:$panel-color;
                             color:$base-link-color;   
+                        }
+
+                        &:active{
+                            background:darken($primary-button-background-color,10%) !important;
                         }
                     }
 
@@ -729,6 +770,7 @@ $header-height-mobile:70px;
         &:before{
             content: counter(step-counter);
             background-color: $base-link-color;
+            @include gradient-background-half($panel-event-date-background-light, $panel-event-date-background-dark);
             color: white;
             font-weight: bold;
             padding: 3px;
@@ -822,19 +864,15 @@ $header-height-mobile:70px;
                 @media (min-width: 990px){
                     font-size:32px;
                 }
+
+                @media (min-width: 400px) and (max-width: 767px){
+                    font-size:32px;
+                }
             }
         }
 
         .section-promo_img{
-            width:100%;
             text-align:center;
-
-            @media (min-width: 767px){
-                position:absolute;
-                bottom:0;
-                right:0;
-                width:50%;
-            }
 
             img{
                 margin:0 auto;
@@ -953,7 +991,8 @@ footer.main {
 
                     li {
                         display:block;
-                        margin-bottom:20px;
+                        margin-bottom:15px;
+                        font-size:24px;
 
                         a{
                             @extend .font-xsmall;
@@ -977,12 +1016,12 @@ footer.main {
             .footer-logos{
 
                 @media (max-width: 990px){
-                    margin:50px 0 0;
+                    margin:40px 0 -10px;
                 }
 
                 
                 @media (max-width: 600px){
-                    margin:20px 0 0;
+                    margin:10px 0 -30px;
                 }
 
                 ul{
@@ -1093,6 +1132,10 @@ footer.main {
 
 .contact-email{
     font-size:19px;
+
+    a{
+        word-wrap: break-word;
+    }
 }
 
 .contact-address{
@@ -1197,4 +1240,64 @@ th span{
 
 .text-highlight + h3{
     margin-top:15px;
+}
+
+.btn-primary{
+    @include btn-border(darken($primary-button-background-color,20%), 3px, lighten($primary-button-background-color, 5%), darken($primary-button-background-color,10%));
+}
+
+.btn-secondary{
+    @include btn-border(darken($secondary-button-background-color,20%), 3px, lighten($secondary-button-background-color,5%), darken($secondary-button-background-color,10%));
+}
+
+@media (min-width: 990px){
+    .panel blockquote {
+        font-size: 27px;
+    }
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 0;
+    border-top: 1px solid $border-color;
+}
+
+//panel amends to go into front end toolkit
+
+.panel-event-list p + .panel-event {
+    margin-top: 40px;
+}
+
+.panel-event-list {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    padding: 30px 0;
+
+    @media (min-width: 641px){
+        padding: 60px 0;
+    }
+
+    .panel{
+        
+        &:last-of-type{
+            margin-bottom:0;
+        }
+    }
+}
+
+.panel.img .btn{
+    margin-top:10px;
+
+    @media (min-width: 641px){
+        margin-top: 15px;
+    }
+}
+
+.panel-event-list p + .panel-event {
+    margin-top: 30px;
+
+    @media (min-width: 641px){
+        margin-top: 60px;
+    }
 }
