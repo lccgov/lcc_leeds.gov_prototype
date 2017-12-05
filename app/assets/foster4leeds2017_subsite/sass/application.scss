@@ -181,9 +181,8 @@ $panel-event-date-color:white;
 $hightlight-color:$base-link-color;
 $panel-alt-color:white;
 
-@import 'mixins';
-@import 'variables';
-@import 'brandColors';
+@import 'base';
+
 
 //FRONT END TOOLKIT SASS FILES
 
@@ -204,6 +203,7 @@ $panel-alt-color:white;
 //@import 'promo'; //subsites only
 //@import 'carousel'; //subsites only
 //@import 'eventsWebparts'; //subsites only
+@import 'brand-colors';
 @import 'breadcrumb';
 @import 'accordion';
 @import 'alerts';

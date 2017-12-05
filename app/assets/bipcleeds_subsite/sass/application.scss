@@ -15,7 +15,7 @@ $base-background-color:#fff;
 //$base-font-color:#333 ;
 $base-link-color:#133E8D ;
 //$base-container-width:1500px ;
-$btn-background-color:#133E8D ;
+$btn-background-color:#663399 ;
 //$font-primary: Arial ; // main font
 //$font-secondary: Arial ; // secondary font
 
@@ -95,50 +95,123 @@ $news-pod-back:#ffffff ;
 $news-pod-border-color:#ddd;
 
 //accordion
-$accordion-color:green;
+$accordion-color:#803f92;
 //$accordion-border-color:#ECF0F1;
 
-@import 'mixins';
-@import 'variables';
-@import 'brandColors';
+//Block quote
+ $blockquoteBorderColor:#efefef;
+ $blockquoteQuoteColor:#803f92;
+ $blockquoteQuoteFooterColor:#803f92;
 
-// available sass files please un-comment out as required
 
-//@import 'mainMenuSubsites';
-@import 'breadcrumb';
-@import 'sectionSubsite';
-@import 'promo';
-@import 'carousel';
-//@import 'socialMedia';
-@import 'sideNavigation';
-//@import 'blockLinks';
+//Arrow Link
+$ArrowLinkBorderColor:$blockquoteBorderColor;
+$ArrowLinkColor:$blockquoteQuoteColor;
+
+//mega-promo
+//$promo-background-color:#F6F7FA;
+//$promo-arrow-color:#9DA5B2;
+//$promo-header-color:#3D414A;
+//$promo-secondary-color:#666B76;
+//$promo-highlight-background-color:#F6F7FA;
+//$promo-highlight-color:#3D414A;
+//$promo-arrow:"\f054";
+
+//button colours
+//button colours
+//$primary-button-background-color:green;
+//$primary-button-color:white !default;
+//$secondary-button-background-color:blue;
+//$secondary-button-color:white;
+//$outline-button-border-color:blue;
+//$outline-button-color:blue;
+
+
+//group promo colours
+//$group-promo-background-color: #F6F7FA;
+//$group-promo-header-color: #3D414A;
+//$group-promo-description-color: #666B76;
+//$group-promo-arrow-color: #9DA5B2;
+
+//panel colors
+//$panel-event-date-background-light:$base-link-color;
+//$panel-event-date-background-dark:darken($panel-event-date-background-light,5%);
+//$panel-event-date-color:white;
+//$hightlight-color:$base-link-color;
+//$panel-alt-color:white;
+
+//extra colours
+//$focus-color:#FFBF47;
+//$secondary-link-color:#003F55;
+//$secondary-font-color:#666B76;
+//$border-color:#DCDEE1;
+//$panel-color:darken(#F6F7FA,3%);
+//$button-hover-color:lighten(#008000,5%);
+//$base-link-hover-color:#3399BB;
+//$black:#212224;
+//$light-black:#3D414A;
+//$dark-grey:#666B76;
+//$grey:#9DA5B2;
+//$light-grey:#DCDEE1;
+//$lighter-grey:#F6F7FA;
+
+
+//form colours
+//$input-color:#212224;
+//$input-border-color:#9DA5B2;
+
+
+//Arrow Link
+//$ArrowLinkBorderColor:#bbcada;
+//$ArrowLinkColor:#333 ;
+
+//responsive menu width
+//$responsiveMenuWidth:1200px ;
+
+
+
+@import 'base';
+
+@import '2010_typography_overrides';
 @import 'accordion';
-@import 'promoGroup';
-@import 'alerts';
-@import 'promoListwebpart';
-//@import 'eventsWebparts';
-@import 'sharepointOverides';
-@import 'iconLinks';
-@import 'heroBanner';
+@import 'a-to-z';
+@import 'block-links';
+@import 'block-quote';
+@import 'brand-colors';
+@import 'carousel';
+//@import 'content-assets'; //subsite only
+@import 'content-link'; //subsite only
+@import 'description-list';
+@import 'doc-list'; //needs aligning with lcc_doc-list and a.doc within typography - DH
+@import 'events-search-results';
+@import 'events-webparts';
+@import 'group-promo';
+@import 'hero-banner';
+@import 'hero-banner-overlay'; //needs aligning with hero-bnner - RM
+@import 'icon-links';
+//@import 'lcc-base-styles'; //needs finalising - DH & RM
+//@import 'lcc-doc-list'; //see above - DH
+//@import 'lcc-footer'; //needs aligning with footer - is it leeds.gov specific? - DH
+//@import 'lcc-header'; //needs aligning with header - is it leeds.gov specific? - DH
+//@import 'lcc-hero'; //needs aligning with hero - is it leeds.gov specific? - DH
+//@import 'lcc-news'; //needs aligning with footer - is it leeds.gov specific? - DH
+//@import 'lcc-search'; //needs aligning with global search - is it leeds.gov specific? - DH
+@import 'mega-promo';
 @import 'news';
-@import 'polaroids';
-@import 'groupPromo';
-@import 'blocklinks';
-@import 'contentLink';
-@import 'docList';
-@import 'accessibility';
-@import 'browser-alert';
-
-
-h2{
-    font-size:30px;
-}
-
-h3{
-    font-size:25px
-}
-
-
+@import 'open-data'; //is it leeds.gov.uk specific? - does it need re-naming- DH
+@import 'journey-page';
+@import 'phase-banner'; //work needed to have in page beta banner
+@import 'polaroids'; //subsite only
+@import 'promo';
+@import 'promo-list-webpart'; //subsite only
+@import 'section-subsite'; //subsite only
+@import 'sharepoint-overrides'; 
+@import 'side-nav'; //needs aligning with side-navigation - DH & RM
+@import 'side-navigation'; //needs aligning with side-nav - DH & RM
+//@import 'survey-webpart'; //is it leeds.gov specific? Relys on where-i-live which should be in the fet but renamed to search-panel - DH
+@import 'url-helper';
+@import 'webchat';
+ 
 .sectionHeader{
     border-top:1px solid #ddd;
     padding:20px 0;
@@ -225,12 +298,7 @@ h3{
     border-bottom:5px solid #bbcada;
     background:transparent;
 
-    h3{ 
-        margin:0;
-        background: #803F92;
-        color:#fff;
-        padding:20px 15px;
-    }
+
 
 
     ul{
@@ -257,9 +325,9 @@ h3{
             }
 
             a {
-                font-size: 1.2em;
+                font-size: 1.1em;
                 margin: 0;
-                padding: 20px 15px;
+                padding:15px;
                 background: transparent;
                 width: 100%;
                 border-bottom: 1px solid #bbcada;
@@ -273,7 +341,7 @@ h3{
 
                 &.active, &.active:hover {
                     color: #803F92;
-                    background:transparent !important;
+                    background:#f6f6f6 !important;
                     cursor:default;
                 }
             }
@@ -284,27 +352,6 @@ h3{
     
 }
 
-.related{
-      border:none;
-
-      h3  {
-         background: transparent;
-         color:#333;
-         font-size:20px;
-         font-weight:600;
-    }
-
-   ul li a{
-                font-size: 1.2em;
-                margin: 0;
-                padding: 10px 15px;
-                background: transparent;
-                width: 100%;
-                border-bottom:none;
-                text-decoration:none !important;
-                font-weight:600;
-    }
-}
 
 .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-tv-selected:link, a.ms-tv-header:hover, a.ms-tv-item:hover {
     background-color: #f2f2f2;
@@ -313,4 +360,20 @@ h3{
 
 footer.main{
     border-top:10px solid #803F92;
+    margin-top:50px;
 }
+
+
+.ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-tv-selected:link, a.ms-tv-header:hover, a.ms-tv-item:hover, .main-nav ul li a.selected  {
+    background-color:  #803f92 !important;
+    color: #fff;
+}
+
+
+.sectionSubsite a, footer.main a  {
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+

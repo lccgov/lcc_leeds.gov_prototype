@@ -97,8 +97,69 @@ $highlighted-font-color:#333;
 //$highlighted-alt-font-color:#333 !default;
 
 
+//mega-promo
+//$promo-background-color:#F6F7FA;
+//$promo-arrow-color:#9DA5B2;
+//$promo-header-color:#3D414A;
+//$promo-secondary-color:#666B76;
+//$promo-highlight-background-color:#F6F7FA;
+//$promo-highlight-color:#3D414A;
+//$promo-arrow:"\f054";
+
+//button colours
+//button colours
+//$primary-button-background-color:green;
+//$primary-button-color:white !default;
+//$secondary-button-background-color:blue;
+//$secondary-button-color:white;
+//$outline-button-border-color:blue;
+//$outline-button-color:blue;
+
+
 //group promo colours
-$group-promo-background-color: #F6F7FA;
+//$group-promo-background-color: #F6F7FA;
+//$group-promo-header-color: #3D414A;
+//$group-promo-description-color: #666B76;
+//$group-promo-arrow-color: #9DA5B2;
+
+//panel colors
+//$panel-event-date-background-light:$base-link-color;
+//$panel-event-date-background-dark:darken($panel-event-date-background-light,5%);
+//$panel-event-date-color:white;
+//$hightlight-color:$base-link-color;
+//$panel-alt-color:white;
+
+//extra colours
+//$focus-color:#FFBF47;
+//$secondary-link-color:#003F55;
+//$secondary-font-color:#666B76;
+//$border-color:#DCDEE1;
+//$panel-color:darken(#F6F7FA,3%);
+//$button-hover-color:lighten(#008000,5%);
+//$base-link-hover-color:#3399BB;
+//$black:#212224;
+//$light-black:#3D414A;
+//$dark-grey:#666B76;
+//$grey:#9DA5B2;
+//$light-grey:#DCDEE1;
+//$lighter-grey:#F6F7FA;
+
+
+//form colours
+//$input-color:#212224;
+//$input-border-color:#9DA5B2;
+
+
+//Arrow Link
+//$ArrowLinkBorderColor:#bbcada;
+//$ArrowLinkColor:#333 ;
+
+//responsive menu width
+//$responsiveMenuWidth:1200px ;
+
+
+//group promo colours
+$group-promo-background-color: #e7ebf7;
 $group-promo-header-color: #3D414A;
 $group-promo-description-color: #666B76;
 $group-promo-arrow-color: #C71585 ;
@@ -110,40 +171,48 @@ $blockquoteQuoteFooterColor:#C71585;
 
 
 
-@import 'mixins';
-@import 'variables';
-@import 'brandColors';
 
-// available sass files please un-comment out as required
+@import 'base';
 
-//@import 'mainMenuSubsites';
-@import 'breadcrumb';
-@import 'sectionSubsite';
-//@import 'promo';
-//@import 'carousel';
-//@import 'socialMedia';
-//@import 'sideNavigation';
-//@import 'blockLinks';
+@import '2010_typography_overrides';
 @import 'accordion';
-@import 'promoGroup';
-@import 'alerts';
-//@import 'promoListwebpart';
-//@import 'eventsWebparts';
-@import 'sharepointOverides';
-@import 'iconLinks';
-@import 'heroBanner';
+@import 'a-to-z';
+@import 'block-links';
+@import 'block-quote';
+@import 'brand-colors';
+@import 'carousel';
+@import 'content-assets'; //subsite only
+@import 'content-link'; //subsite only
+@import 'description-list';
+@import 'doc-list'; //needs aligning with lcc_doc-list and a.doc within typography - DH
+@import 'events-search-results';
+@import 'events-webparts';
+@import 'group-promo';
+@import 'hero-banner';
+@import 'hero-banner-overlay'; //needs aligning with hero-bnner - RM
+@import 'icon-links';
+//@import 'lcc-base-styles'; //needs finalising - DH & RM
+//@import 'lcc-doc-list'; //see above - DH
+//@import 'lcc-footer'; //needs aligning with footer - is it leeds.gov specific? - DH
+//@import 'lcc-header'; //needs aligning with header - is it leeds.gov specific? - DH
+//@import 'lcc-hero'; //needs aligning with hero - is it leeds.gov specific? - DH
+//@import 'lcc-news'; //needs aligning with footer - is it leeds.gov specific? - DH
+//@import 'lcc-search'; //needs aligning with global search - is it leeds.gov specific? - DH
+@import 'mega-promo';
 @import 'news';
-@import 'polaroids';
-@import 'groupPromo';
-@import 'blocklinks';
-@import 'contentLink';
-@import 'docList';
-@import 'contentAssets';
-@import 'blockQuote';
-@import 'accessibility';
-@import 'browser-alert';
-
-
+@import 'open-data'; //is it leeds.gov.uk specific? - does it need re-naming- DH
+@import 'journey-page';
+@import 'phase-banner'; //work needed to have in page beta banner
+@import 'polaroids'; //subsite only
+@import 'promo';
+@import 'promo-list-webpart'; //subsite only
+@import 'section-subsite'; //subsite only
+@import 'sharepoint-overrides'; 
+@import 'side-nav'; //needs aligning with side-navigation - DH & RM
+@import 'side-navigation'; //needs aligning with side-nav - DH & RM
+//@import 'survey-webpart'; //is it leeds.gov specific? Relys on where-i-live which should be in the fet but renamed to search-panel - DH
+@import 'url-helper';
+@import 'webchat';
 
 
 .header-nav-container .logo {
@@ -204,9 +273,32 @@ h1, h2, h3, h4, h5 {
 	font-family: 'BebasNeuewebfont';
 }
 
-h1, h2, h3{
+.ms-rtestate-field {
+    word-wrap:normal;
+
+    &h1, &h2, &h3, &h4, &h5{
+        font-family: 'BebasNeuewebfont';
+}
+    }
+
+
+
+h1, h2, h3, .ms-rtestate-field h1, .ms-rtestate-field h2, .ms-rtestate-field h3 {
 
 	color: #C71585;
+    font-family: 'BebasNeuewebfont';
+}
+
+.ms-rtestate-field h1, h1{
+    font-size:65px;
+}
+
+.ms-rtestate-field h2, h2{
+    font-size:50px;
+}
+
+.ms-rtestate-field h3, h3{
+    font-size:40px;
 }
 
 
@@ -214,11 +306,11 @@ h1, h2, h3{
 
 &.thirds{
     li{
-            width: calc(100% * (1/3) - 5px) !important;
+            width: calc(100% * (1/3) - 7px) !important;
     
 
            @media (max-width: 1024px) {
-                    width: calc(100% * (1/2) - 5px) !important;
+                    width: calc(100% * (1/2) - 7px) !important;
             }
 
               @media (max-width: 600px) {
@@ -275,19 +367,23 @@ ul li {
   
 
 
-.groupPromo {
+.groupPromo.multiColors  {
 
-    .listWebpart li.blue   {
+
+    h3{font-family: 'BebasNeuewebfont';}
+
+
+    .listWebpart li.blue ,   li:nth-of-type(1)   {
         @include groupPromoMulticolors(#0092DF, #fff, #fff,#fff);
     }
-    .listWebpart li.pink {
+    .listWebpart li.pink, li:nth-of-type(2) {
         @include groupPromoMulticolors(#eb278e, #fff,#fff,#fff);
     }
-   .listWebpart li.green {
+   .listWebpart li.green, li:nth-of-type(3) {
         @include groupPromoMulticolors(#ABCE1E, #fff,#fff,#fff);
     }
 
- .listWebpart li.orange {
+ .listWebpart li.orange, li:nth-of-type(4) {
         @include groupPromoMulticolors(#ffb200, #fff,#fff,#fff);
     }
 
@@ -322,22 +418,25 @@ ul li {
 
 
     h3 {
-    font-weight: 200;
+    font-family:arial;
+    font-size:18px;
+    font-weight:bold;
 }
 }
 }
 
- .highlighted {
-    padding: 25px; border: 5px solid #efefef;
+ .panel {
+    padding: 25px; border: 5px solid #d3d3d3;
     border-radius: 13px;
     background:transparent;
 
     h2, h3{
         margin-top:0px;
         color:#C71585;
+        font-family: 'BebasNeuewebfont';
     }
 
-    .highlighted {
+    .panel {
 
     margin: 2em 0 0 0;
     background: #F6F7FA;
@@ -347,10 +446,17 @@ ul li {
 }
 
 
-footer.main .footerGlobal {
-    background: #555 url(../images/skyline.png) bottom -2px  right 0px no-repeat;
+
+.col-md-4 .groupPromo ul li {
+    width: 100%!important;
 }
 
 
+.groupPromo a[rel=external]:after{
+    display:none;
+}
 
+blockquote p {
 
+    font-size: 19px!important;
+}
