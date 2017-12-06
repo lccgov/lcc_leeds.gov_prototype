@@ -1,336 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
-.input-focus, .form-control:focus {
-  -webkit-box-shadow: 0 0 0 4px #FFBF47;
-  -moz-box-shadow: 0 0 0 4px #FFBF47;
-  box-shadow: 0 0 0 4px #FFBF47; }
-
-.border-link, .hidden-text a.reveal, .hidden-text .reveal.link, .list-nav li a, .list-nav li .link {
-  border-bottom: 1px solid rgba(19, 62, 141, 0.3);
-  text-decoration: none !important; }
-  .border-link:hover, .hidden-text a.reveal:hover, .hidden-text .reveal.link:hover, .list-nav li a:hover, .list-nav li .link:hover {
-    border-color: rgba(51, 153, 187, 0.3) !important; }
-  .border-link:visited, .hidden-text a.reveal:visited, .hidden-text .reveal.link:visited, .list-nav li a:visited, .list-nav li .link:visited {
-    border-color: rgba(76, 44, 146, 0.3); }
-
-.three-columns {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px; }
-  @media (max-width: 990px) {
-    .three-columns {
-      -webkit-column-count: 2;
-      -moz-column-count: 2;
-      column-count: 2; } }
-  @media (max-width: 767px) {
-    .three-columns {
-      -webkit-column-count: 1;
-      -moz-column-count: 1;
-      column-count: 1; } }
-
-.two-columns, .part-navigation__container nav ol {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px; }
-  @media (max-width: 767px) {
-    .two-columns, .part-navigation__container nav ol {
-      -webkit-column-count: 1;
-      -moz-column-count: 1;
-      column-count: 1; } }
-
-/*********************************************
-Base.sass variables
-*********************************************/
-body {
-  font-size: 16px;
-  font-family: "Open Sans", Arial;
-  color: #333;
-  background-color: #fff; }
-
-.ms-rtestate-field h1.ms-rteElement-H2, .ms-rtestate-field h2.ms-rteElement-H2, .ms-rtestate-field h3.ms-rteElement-H2, .ms-rtestate-field h4.ms-rteElement-H2, .ms-rtestate-field h5.ms-rteElement-H2 {
-  font-family: "Open Sans", Arial;
-  color: #333; }
-
-.btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary, .form-group input[type=submit], .form-group input.limitedrte-Style-BUTTON, .limitedrte-Style-BUTTON, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo, .button {
-  background: #DF791C;
-  box-shadow: inset 0 1px 1px #e89346; }
-  .btn-primary:hover, .form-group input[type=button]:hover, .form-group input.btn.btn-primary:hover, .form-group input[type=submit]:hover, .form-group input.limitedrte-Style-BUTTON:hover, .limitedrte-Style-BUTTON:hover, #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, .button:hover {
-    background: #b26016; }
-
-.btn, .form-group input[type=button], .form-group input.btn.btn-primary, .form-group input[type=submit], .form-group input.limitedrte-Style-BUTTON, .limitedrte-Style-BUTTON, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo, .button {
-  border-color: #DF791C;
-  color: #fff; }
-  .btn.btn-default, .form-group input.btn-default[type=button], .form-group input.btn-default.btn.btn-primary, .form-group input.btn-default[type=submit], .form-group input.btn-default.limitedrte-Style-BUTTON, .btn-default.limitedrte-Style-BUTTON, #myChatLinkContainer #myChatLink a .btn-default#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-default#myChatLinkInfo, .btn.alt, .form-group input.alt[type=button], .form-group input.alt.btn.btn-primary, .form-group input.alt[type=submit], .form-group input.alt.limitedrte-Style-BUTTON, .alt.limitedrte-Style-BUTTON, #myChatLinkContainer #myChatLink a .alt#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .alt#myChatLinkInfo, .button.btn-default, .button.alt {
-    border-color: #DF791C;
-    color: #DF791C; }
-    .btn.btn-default:hover, .form-group input.btn-default[type=button]:hover, .form-group input.btn-default.btn.btn-primary:hover, .form-group input.btn-default[type=submit]:hover, .form-group input.btn-default.limitedrte-Style-BUTTON:hover, .btn-default.limitedrte-Style-BUTTON:hover, #myChatLinkContainer #myChatLink a .btn-default#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .btn-default#myChatLinkInfo:hover, .btn.alt:hover, .form-group input.alt[type=button]:hover, .form-group input.alt.btn.btn-primary:hover, .form-group input.alt[type=submit]:hover, .form-group input.alt.limitedrte-Style-BUTTON:hover, .alt.limitedrte-Style-BUTTON:hover, #myChatLinkContainer #myChatLink a .alt#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .alt#myChatLinkInfo:hover, .button.btn-default:hover, .button.alt:hover {
-      background: #b26016;
-      color: #fff; }
-
-.container-fluid {
-  max-width: 1500px; }
-
-.sectionHeader {
-  background: #fff; }
-
-.sectionOne {
-  background: #fff; }
-
-.sectionTwo {
-  background: #e6e6e6; }
-
-.sectionThree {
-  background: white; }
-
-.sectionFour {
-  background: white; }
-
-.sectionFive {
-  background: #f2f2f2; }
-
-/*********************************************
- End Base.sass variables
-*********************************************/
-/*********************************************
-globhalSearch.sass variables
-*********************************************/
-@media (max-width: 767px) {
-  #nav-search {
-    position: absolute;
-    top: 62px;
-    left: 0px;
-    background: #bdc3c7;
-    padding: 20px;
-    margin: 0px;
-    height: auto;
-    width: 100%;
-    z-index: 10;
-    display: none; }
-    #nav-search.active {
-      display: block; }
-    #nav-search .input-group {
-      margin: 0 !important;
-      width: 100%; }
-    #nav-search .ms-srch-sb > input {
-      min-width: 100% !important;
-      margin: 0px !important; }
-    #nav-search .ms-srch-sb > .ms-srch-sb-searchLink {
-      height: 100%;
-      min-height: 100%; } }
-
-/*********************************************
- End globhalSearch.sass variables
-*********************************************/
-/*********************************************
- Masterhead.sass variables
-*********************************************/
-.masterhead {
-  background: #ffffff; }
-
-/*********************************************
- End Masterhead.sass variables
-*********************************************/
-/*********************************************
- mainMenu.sass variables
-*********************************************/
-.ms-core-navigation {
-  font-family: "Open Sans", Arial; }
-
-.ms-core-listMenu-item, .ms-core-listMenu-item:link, .ms-core-listMenu-item:visited, .ms-tv-item:link, .ms-tv-item:visited, .ms-tv-header:link, .ms-tv-header:visited {
-  color: #fff; }
-
-.ms-core-listMenu-horizontalBox a.ms-core-listMenu-item:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-item.link:hover, .ms-core-listMenu-horizontalBox a.ms-core-listMenu-item.ms-core-listMenu-selected:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-item.ms-core-listMenu-selected.link:hover, a.ms-tv-item:hover, .ms-tv-item.link:hover, a.ms-tv-header:hover, .ms-tv-header.link:hover, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:link, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected:visited, .ms-core-listMenu-horizontalBox .ms-core-listMenu-selected, .ms-tv-selected:link {
-  background-color: #3c3c3c;
-  color: #fff; }
-
-.main-nav {
-  background: #494949; }
-  .main-nav ul {
-    width: 100%; }
-    .main-nav ul li a, .main-nav ul li .link {
-      color: #fff; }
-    .main-nav ul li a:hover, .main-nav ul li .link:hover, .main-nav ul li a:focus, .main-nav ul li .link:focus {
-      background-color: #3c3c3c;
-      color: #fff; }
-    .main-nav ul li a.selected, .main-nav ul li .selected.link {
-      background: #3f3f3f !important; }
-  .main-nav ul ul {
-    background-color: #3c3c3c;
-    background-color: #3c3c3c; }
-    .main-nav ul ul li {
-      border-bottom: 1px solid #353535; }
-      .main-nav ul ul li:first-of-type {
-        border-top: 1px solid #353535; }
-      .main-nav ul ul li a:hover, .main-nav ul ul li .link:hover {
-        background: #353535; }
-
-/*********************************************
- End mainMenu.sass variables
-*********************************************/
-/*********************************************
- ResponsiveMenu.sass variables
-*********************************************/
-ul.menu li a, ul.menu li .link {
-  color: #337ab7;
-  text-decoration: none; }
-  ul.menu li a:hover, ul.menu li .link:hover, ul.menu li a:focus, ul.menu li .link:focus {
-    background: #494949 !important; }
-  ul.menu li a.main-menu, ul.menu li .main-menu.link, ul.menu li a.search, ul.menu li .search.link {
-    background: #fff; }
-  ul.menu li a.search, ul.menu li .search.link {
-    background: #cdcdcd; }
-  ul.menu li a.search.active, ul.menu li .search.active.link, ul.menu li a.search:hover, ul.menu li .search.link:hover, ul.menu li a.search:focus, ul.menu li .search.link:focus {
-    background: #bdc3c7 !important; }
-  ul.menu li a.main-menu, ul.menu li .main-menu.link {
-    background: #494949 !important;
-    color: #fff; }
-  ul.menu li a.main-menu:hover, ul.menu li .main-menu.link:hover, ul.menu li a.main-menu:focus, ul.menu li .main-menu.link:focus, ul.menu li a.main-menu.active, ul.menu li .main-menu.active.link {
-    background: #353535; }
-
-@media (max-width: 767px) {
-  ul.menu li a.main-menu, ul.menu li .main-menu.link,
-  ul.menu li a.search,
-  ul.menu li .search.link {
-    display: block !important;
-    text-decoration: none; }
-  .main-nav {
-    position: absolute;
-    left: -767px;
-    top: 0px;
-    z-index: 10;
-    min-height: 640px;
-    width: 100%;
-    -webkit-transition: all ease .5s;
-    -moz-transition: all ease .5s;
-    -o-transition: all ease .5s;
-    transition: all ease .5s; }
-    .main-nav .container-fluid {
-      padding: 20px; }
-    .main-nav.active {
-      left: 0px; }
-    .main-nav .container-fluid ul li {
-      border-top: 1px solid rgba(0, 0, 0, 0.2);
-      margin: 0px;
-      padding-top: 0 !important;
-      width: 100%; }
-      .main-nav .container-fluid ul li a, .main-nav .container-fluid ul li .link {
-        width: 100%;
-        background: none; }
-        .main-nav .container-fluid ul li a:hover, .main-nav .container-fluid ul li .link:hover, .main-nav .container-fluid ul li a:focus, .main-nav .container-fluid ul li .link:focus {
-          background: rgba(0, 0, 0, 0.2); }
-        .main-nav .container-fluid ul li a.selected, .main-nav .container-fluid ul li .selected.link {
-          background: none;
-          color: #fff; }
-      .main-nav .container-fluid ul li ul {
-        display: block;
-        position: relative;
-        width: 100%;
-        margin-left: 0px;
-        background: none;
-        float: left;
-        padding: 0px 0 10px 0;
-        border: none; }
-        .main-nav .container-fluid ul li ul li {
-          border: none;
-          float: left; }
-          .main-nav .container-fluid ul li ul li a, .main-nav .container-fluid ul li ul li .link {
-            font-size: 16px;
-            background: none;
-            padding: 5px 20px;
-            color: #fff; }
-        .main-nav .container-fluid ul li ul.active {
-          display: block; } }
-
-@media (max-width: 767px) {
-  .main-nav .ms-core-listMenu-horizontalBox li.static > .ms-core-listMenu-item {
-    margin-left: 0px; }
-  .menu-horizontal {
-    width: 100%; }
-  .ms-core-listMenu-horizontalBox, .ms-core-listMenu-horizontalBox ul {
-    display: block; }
-  .ms-core-listMenu-horizontalBox li.static, .ms-core-listMenu-horizontalBox a.static, .ms-core-listMenu-horizontalBox .static.link, .ms-core-listMenu-horizontalBox span.static {
-    width: 100%; } }
-
-/*********************************************
- End ResponsiveMenu.sass variables
-*********************************************/
-/*********************************************
- footer.sass variables
-*********************************************/
-footer.main {
-  background: #494949; }
-  footer.main p {
-    color: #fff; }
-  footer.main .footer {
-    background: #494949; }
-    footer.main .footer ul li a, footer.main .footer ul li .link {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
-      color: #fff !important; }
-    footer.main .footer ul li a:hover, footer.main .footer ul li .link:hover, footer.main .footer ul li a:focus, footer.main .footer ul li .link:focus {
-      background: rgba(0, 0, 0, 0.2); }
-    footer.main .footer ul li a.selected, footer.main .footer ul li .selected.link {
-      background-color: rgba(0, 0, 0, 0.2) !important; }
-    footer.main .footer ul li ul li:last-of-type {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    footer.main .footer ul li ul li a:hover, footer.main .footer ul li ul li .link:hover, footer.main .footer ul li ul li a:focus, footer.main .footer ul li ul li .link:focus {
-      background: rgba(0, 0, 0, 0.2);
-      color: #fff; }
-
-footer.main .socialBookmarks h2 {
-  color: #fff; }
-
-footer.main .socialBookmarks .facebook:after, footer.main .socialBookmarks .twitter:after, footer.main .socialBookmarks .youtube:after, footer.main .socialBookmarks .email:after, footer.main .socialBookmarks .instagram:after, footer.main .socialBookmarks .flickr:after {
-  border: 1px solid #fff;
-  color: #fff; }
-
-footer.main .socialBookmarks a:hover:after, footer.main .socialBookmarks .link:hover:after {
-  background: #fff;
-  color: #494949; }
-
-footer.main .footerGlobal {
-  background: #494949; }
-
-.footerGlobal nav ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px; }
-  .footerGlobal nav ul li {
-    display: inline-block; }
-  .footerGlobal nav ul li:after {
-    color: #fff; }
-  .footerGlobal nav ul a, .footerGlobal nav ul .link {
-    color: #fff; }
-
-/*********************************************
- End footer.sass variables
-*********************************************/
-/** jquery ui datepicker overides ***/
-.ui-datepicker-header {
-  background: #000; }
-
-.ui-datepicker .ui-datepicker-prev-hover:hover,
-.ui-datepicker .ui-datepicker-next-hover:hover,
-.ui-datepicker .ui-datepicker-next:hover,
-.ui-datepicker .ui-datepicker-prev:hover {
-  background: black; }
-
-td .ui-state-active,
-td .ui-state-hover {
-  background: #000; }
-
-/** jquery ui datepicker overides ***/
-/** main button color for forms and comments **/
-form input[type=submit].submit {
-  background: #DF791C; }
-
-/**End  main button color for forms and comments **/
 .border-link, .hidden-text a.reveal, .hidden-text .reveal.link, .list-nav li a, .list-nav li .link {
   border-bottom: 1px solid rgba(19, 62, 141, 0.3);
   text-decoration: none !important; }
@@ -1043,23 +713,55 @@ ul,
 ol {
   list-style-type: none; }
 
-.list, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol {
+.list, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol {
   padding: 0;
   margin-top: 0;
   margin-bottom: 15px;
   display: inline-block;
   width: 100%; }
   @media (min-width: 641px) {
-    .list, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol {
+    .list, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul,
+    #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul,
+    #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul,
+    #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul,
+    #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol,
+    #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol,
+    #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol,
+    #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol,
+    #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol {
       margin-bottom: 17px; } }
-  .list li, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul li, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol li {
+  .list li, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul li,
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul li,
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul li,
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul li,
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul li, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol li,
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol li,
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol li,
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol li,
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol li {
     margin-bottom: 7px; }
 
-.list-bullet, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul {
+.list-bullet, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul {
   list-style-type: disc;
   padding-left: 20px; }
 
-.list-number, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol {
+.list-number, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol {
   list-style-type: decimal;
   padding-left: 20px; }
 
@@ -3901,10 +3603,18 @@ table.styledTable td,
 .limitedrte-Style-image-right {
   padding: 0; }
 
-#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul {
+#ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul {
   list-style-type: disc; }
 
-#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol {
+#ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol {
   list-style-type: decimal; }
 
 ul.accordion {
@@ -3968,7 +3678,39 @@ ul.accordion {
       @media (max-width: 641px) {
         ul.accordion li div.content-block {
           padding: 10px 10px 5px 35px !important; } }
-  ul.accordion .list a, ul.accordion #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul a, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol a, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion .list .link, ul.accordion #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul .link, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol .link, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ol .link {
+  ul.accordion .list a, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul a, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul a,
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul a,
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul a,
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul a,
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol a, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol a,
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol a,
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol a,
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol a,
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion .list .link, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul .link, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul .link,
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul .link,
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul .link,
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul .link,
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol .link, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol .link,
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol .link,
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol .link,
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol .link,
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ol .link {
     text-decoration: none; }
 
 ul.accordion div.text-block {
@@ -4949,14 +4691,14 @@ docsList
 /*************************
 CHECKBOXES EVENTS FILTERS
 *************************/
-.btn-group .btn, .btn-group .form-group input[type=button], .form-group .btn-group input[type=button], .btn-group .form-group input.btn.btn-primary, .form-group .btn-group input.btn.btn-primary, .btn-group .form-group input[type=submit], .form-group .btn-group input[type=submit], .btn-group .form-group input.limitedrte-Style-BUTTON, .form-group .btn-group input.limitedrte-Style-BUTTON, .btn-group .limitedrte-Style-BUTTON, .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .btn-group #myChatLinkInfo, .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-group #myChatLinkInfo, .input-group-btn .btn, .input-group-btn .form-group input[type=button], .form-group .input-group-btn input[type=button], .input-group-btn .form-group input.btn.btn-primary, .form-group .input-group-btn input.btn.btn-primary, .input-group-btn .form-group input[type=submit], .form-group .input-group-btn input[type=submit], .input-group-btn .form-group input.limitedrte-Style-BUTTON, .form-group .input-group-btn input.limitedrte-Style-BUTTON, .input-group-btn .limitedrte-Style-BUTTON, .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .input-group-btn #myChatLinkInfo, .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .input-group-btn #myChatLinkInfo, .btn.btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary, .form-group input[type=submit], .limitedrte-Style-BUTTON, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo {
+.btn-group .btn, .btn-group .form-group input[type=button], .form-group .btn-group input[type=button], .btn-group .form-group input.btn.btn-primary, .form-group .btn-group input.btn.btn-primary, .btn-group .form-group input[type=submit], .form-group .btn-group input[type=submit], .btn-group .form-group input.limitedrte-Style-BUTTON, .form-group .btn-group input.limitedrte-Style-BUTTON, .btn-group .limitedrte-Style-BUTTON, .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .btn-group #myChatLinkInfo, .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-group #myChatLinkInfo, .input-group-btn .btn, .input-group-btn .form-group input[type=button], .form-group .input-group-btn input[type=button], .input-group-btn .form-group input.btn.btn-primary, .form-group .input-group-btn input.btn.btn-primary, .input-group-btn .form-group input[type=submit], .form-group .input-group-btn input[type=submit], .input-group-btn .form-group input.limitedrte-Style-BUTTON, .form-group .input-group-btn input.limitedrte-Style-BUTTON, .input-group-btn .limitedrte-Style-BUTTON, .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .input-group-btn #myChatLinkInfo, .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .input-group-btn #myChatLinkInfo {
   font-size: 18px;
   padding: 20px 20px;
   box-shadow: inset 0 0px 0px; }
-  .btn-group .btn:after, .btn-group .form-group input[type=button]:after, .form-group .btn-group input[type=button]:after, .btn-group .form-group input.btn.btn-primary:after, .form-group .btn-group input.btn.btn-primary:after, .btn-group .form-group input[type=submit]:after, .form-group .btn-group input[type=submit]:after, .btn-group .form-group input.limitedrte-Style-BUTTON:after, .form-group .btn-group input.limitedrte-Style-BUTTON:after, .btn-group .limitedrte-Style-BUTTON:after, .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .btn-group #myChatLinkInfo:after, .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .btn-group #myChatLinkInfo:after, .input-group-btn .btn:after, .input-group-btn .form-group input[type=button]:after, .form-group .input-group-btn input[type=button]:after, .input-group-btn .form-group input.btn.btn-primary:after, .form-group .input-group-btn input.btn.btn-primary:after, .input-group-btn .form-group input[type=submit]:after, .form-group .input-group-btn input[type=submit]:after, .input-group-btn .form-group input.limitedrte-Style-BUTTON:after, .form-group .input-group-btn input.limitedrte-Style-BUTTON:after, .input-group-btn .limitedrte-Style-BUTTON:after, .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .input-group-btn #myChatLinkInfo:after, .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .input-group-btn #myChatLinkInfo:after, .btn.btn-primary:after, .form-group input[type=button]:after, .form-group input.btn.btn-primary:after, .form-group input[type=submit]:after, .limitedrte-Style-BUTTON:after, #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after {
+  .btn-group .btn:after, .btn-group .form-group input[type=button]:after, .form-group .btn-group input[type=button]:after, .btn-group .form-group input.btn.btn-primary:after, .form-group .btn-group input.btn.btn-primary:after, .btn-group .form-group input[type=submit]:after, .form-group .btn-group input[type=submit]:after, .btn-group .form-group input.limitedrte-Style-BUTTON:after, .form-group .btn-group input.limitedrte-Style-BUTTON:after, .btn-group .limitedrte-Style-BUTTON:after, .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .btn-group #myChatLinkInfo:after, .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .btn-group #myChatLinkInfo:after, .input-group-btn .btn:after, .input-group-btn .form-group input[type=button]:after, .form-group .input-group-btn input[type=button]:after, .input-group-btn .form-group input.btn.btn-primary:after, .form-group .input-group-btn input.btn.btn-primary:after, .input-group-btn .form-group input[type=submit]:after, .form-group .input-group-btn input[type=submit]:after, .input-group-btn .form-group input.limitedrte-Style-BUTTON:after, .form-group .input-group-btn input.limitedrte-Style-BUTTON:after, .input-group-btn .limitedrte-Style-BUTTON:after, .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .input-group-btn #myChatLinkInfo:after, .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .input-group-btn #myChatLinkInfo:after {
     content: "";
     display: none; }
-  .btn-group .btn:hover, .btn-group .form-group input[type=button]:hover, .form-group .btn-group input[type=button]:hover, .btn-group .form-group input.btn.btn-primary:hover, .form-group .btn-group input.btn.btn-primary:hover, .btn-group .form-group input[type=submit]:hover, .form-group .btn-group input[type=submit]:hover, .btn-group .form-group input.limitedrte-Style-BUTTON:hover, .form-group .btn-group input.limitedrte-Style-BUTTON:hover, .btn-group .limitedrte-Style-BUTTON:hover, .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .btn-group #myChatLinkInfo:hover, .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .btn-group #myChatLinkInfo:hover, .input-group-btn .btn:hover, .input-group-btn .form-group input[type=button]:hover, .form-group .input-group-btn input[type=button]:hover, .input-group-btn .form-group input.btn.btn-primary:hover, .form-group .input-group-btn input.btn.btn-primary:hover, .input-group-btn .form-group input[type=submit]:hover, .form-group .input-group-btn input[type=submit]:hover, .input-group-btn .form-group input.limitedrte-Style-BUTTON:hover, .form-group .input-group-btn input.limitedrte-Style-BUTTON:hover, .input-group-btn .limitedrte-Style-BUTTON:hover, .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .input-group-btn #myChatLinkInfo:hover, .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .input-group-btn #myChatLinkInfo:hover, .btn.btn-primary:hover, .form-group input[type=button]:hover, .form-group input.btn.btn-primary:hover, .form-group input[type=submit]:hover, .limitedrte-Style-BUTTON:hover, #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover {
+  .btn-group .btn:hover, .btn-group .form-group input[type=button]:hover, .form-group .btn-group input[type=button]:hover, .btn-group .form-group input.btn.btn-primary:hover, .form-group .btn-group input.btn.btn-primary:hover, .btn-group .form-group input[type=submit]:hover, .form-group .btn-group input[type=submit]:hover, .btn-group .form-group input.limitedrte-Style-BUTTON:hover, .form-group .btn-group input.limitedrte-Style-BUTTON:hover, .btn-group .limitedrte-Style-BUTTON:hover, .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .btn-group #myChatLinkInfo:hover, .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .btn-group #myChatLinkInfo:hover, .input-group-btn .btn:hover, .input-group-btn .form-group input[type=button]:hover, .form-group .input-group-btn input[type=button]:hover, .input-group-btn .form-group input.btn.btn-primary:hover, .form-group .input-group-btn input.btn.btn-primary:hover, .input-group-btn .form-group input[type=submit]:hover, .form-group .input-group-btn input[type=submit]:hover, .input-group-btn .form-group input.limitedrte-Style-BUTTON:hover, .form-group .input-group-btn input.limitedrte-Style-BUTTON:hover, .input-group-btn .limitedrte-Style-BUTTON:hover, .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .input-group-btn #myChatLinkInfo:hover, .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .input-group-btn #myChatLinkInfo:hover {
     background: #002a3f; }
 
 .eventsFilter .btn-group .btn, .eventsFilter .btn-group .form-group input[type=button], .form-group .eventsFilter .btn-group input[type=button], .eventsFilter .btn-group .form-group input.btn.btn-primary, .form-group .eventsFilter .btn-group input.btn.btn-primary, .eventsFilter .btn-group .form-group input[type=submit], .form-group .eventsFilter .btn-group input[type=submit], .eventsFilter .btn-group .form-group input.limitedrte-Style-BUTTON, .form-group .eventsFilter .btn-group input.limitedrte-Style-BUTTON, .eventsFilter .btn-group .limitedrte-Style-BUTTON, .eventsFilter .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .eventsFilter .btn-group #myChatLinkInfo, .eventsFilter .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .eventsFilter .btn-group #myChatLinkInfo, .eventsFilter .input-group-btn .btn, .eventsFilter .input-group-btn .form-group input[type=button], .form-group .eventsFilter .input-group-btn input[type=button], .eventsFilter .input-group-btn .form-group input.btn.btn-primary, .form-group .eventsFilter .input-group-btn input.btn.btn-primary, .eventsFilter .input-group-btn .form-group input[type=submit], .form-group .eventsFilter .input-group-btn input[type=submit], .eventsFilter .input-group-btn .form-group input.limitedrte-Style-BUTTON, .form-group .eventsFilter .input-group-btn input.limitedrte-Style-BUTTON, .eventsFilter .input-group-btn .limitedrte-Style-BUTTON, .eventsFilter .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .eventsFilter .input-group-btn #myChatLinkInfo, .eventsFilter .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .eventsFilter .input-group-btn #myChatLinkInfo {
@@ -8622,31 +8364,6 @@ h1 input.ms-long {
   .sideNav .sideNav__more,
   .relatedPages .sideNav__more {
     font-weight: 700; }
-
-.sideNav {
-  padding: 10px 20px 20px;
-  background: #fff;
-  margin-bottom: 20px; }
-  .sideNav h3 {
-    margin: 0.6em 0; }
-  .sideNav li {
-    list-style: none; }
-  .sideNav a, .sideNav .link {
-    font-size: 1.1em;
-    line-height: 1.2em;
-    display: inline-block;
-    margin: 0px 0px 5px;
-    padding: 10px;
-    background: #fff;
-    width: 100%; }
-    .sideNav a:hover, .sideNav .link:hover {
-      background: gray !important;
-      color: #fff; }
-    .sideNav a.active, .sideNav .active.link {
-      color: #E67E22;
-      background: transparent; }
-      .sideNav a.active:hover, .sideNav .active.link:hover {
-        background: transparent; }
 
 #myChatLinkContainer {
   margin: 30px 0; }

@@ -24,8 +24,8 @@ $primary-button-background-color:#FFC82E;
 //$primary-button-color:white !default;
 $secondary-button-background-color:#F38520;
 //$secondary-button-color:white !default;
-$outline-button-border-color:#FFC82E !default;
-$outline-button-color:#FFC82E !default;
+$outline-button-border-color:#FFC82E;
+$outline-button-color:#FFC82E;
 
 
 // global used on all partials to get a uniform spacing between elements
@@ -185,7 +185,7 @@ $white:#fff;
 
 @import 'base';
 
-@import '2010_typography_overrides';
+@import '2010-typography-overrides';
 @import 'accordion';
 @import 'a-to-z';
 @import 'block-links';
@@ -199,7 +199,7 @@ $white:#fff;
 @import 'events-search-results';
 @import 'events-webparts';
 @import 'group-promo';
-@import 'hero-banner';
+//@import 'hero-banner';
 @import 'hero-banner-overlay'; //needs aligning with hero-bnner - RM
 @import 'icon-links';
 //@import 'lcc-base-styles'; //needs finalising - DH & RM
@@ -249,8 +249,7 @@ a:visited{
                         padding-left:150px;
 
                         @media screen and (max-width:768px){
-                            position:relative;
-                            padding:0 30px 30px 30px;
+                           display:none;
                         }
                     }
 
@@ -382,10 +381,6 @@ strong {
     font-weight:100;}
 
 
-.btn:after, .button:after, .btn:visited:after, .button:visited:after {
-    font-size: 22px;
-}
-
 
 
 
@@ -398,12 +393,6 @@ strong {
     border-bottom:1px solid #efefef;
     background:#f6f6f6;
 
-    h3{
-        margin:0;
-        background: #F38520;
-        color:#fff;
-        padding:20px 15px;
-    }
 
     ul.nav{
         margin:0 auto;
@@ -482,15 +471,9 @@ strong {
 
 
 
-.btn, .button {
-  border-radius:0px;
-}
 
 
-.btn-primary, .button
-{
-  border:1px solid;
-}
+
 
 
 
@@ -502,7 +485,6 @@ strong {
       color:#fff;
       background:$btn-background-color;
       text-transform:uppercase !important;
-      border-color:$btn-background-color;
       box-shadow:none;
       font-weight:400;
       font-size:18px;

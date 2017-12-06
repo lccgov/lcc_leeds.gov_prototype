@@ -110,7 +110,6 @@ h2,
 h3,
 .part-content h2,
 legend,
-.list-atoz li h2,
 .ms-rtestate-field h3,
 .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium,
 .ms-rtestate-field h2.heading-medium,
@@ -144,8 +143,6 @@ table.styledTable td,
 .link-small,
 .telephone .additionalInfo,
 .scopeNote,
-.eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p,
-.eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p,
 .bold-xlarge,
 .bold-large,
 .bold-medium,
@@ -177,7 +174,6 @@ table.styledTable td,
   h3.top,
   .part-content h2.top,
   legend.top,
-  .list-atoz li h2.top,
   .ms-rtestate-field h3.ms-rteElement-H2 h1.top.heading-medium,
   .ms-rtestate-field h2.top.heading-medium,
   .ms-rtestate-field h3.top.heading-medium,
@@ -205,8 +201,6 @@ table.styledTable td,
   .top.link-small,
   .telephone .top.additionalInfo,
   .top.scopeNote,
-  .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p.top,
-  .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p.top,
   .bold-xlarge.top,
   .bold-large.top,
   .bold-medium.top,
@@ -236,7 +230,6 @@ table.styledTable td,
   h3.bottom,
   .part-content h2.bottom,
   legend.bottom,
-  .list-atoz li h2.bottom,
   .ms-rtestate-field h3.ms-rteElement-H2 h1.bottom.heading-medium,
   .ms-rtestate-field h2.bottom.heading-medium,
   .ms-rtestate-field h3.bottom.heading-medium,
@@ -264,8 +257,6 @@ table.styledTable td,
   .bottom.link-small,
   .telephone .bottom.additionalInfo,
   .bottom.scopeNote,
-  .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p.bottom,
-  .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p.bottom,
   .bold-xlarge.bottom,
   .bold-large.bottom,
   .bold-medium.bottom,
@@ -298,7 +289,6 @@ h2,
 h3,
 .part-content h2,
 legend,
-.list-atoz li h2,
 .ms-rtestate-field h3,
 .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium,
 .ms-rtestate-field h2.heading-medium,
@@ -382,11 +372,11 @@ table.styledTable td,
       font-size: 19px;
       line-height: 1.3157894737; } }
 
-.font-xsmall, .link-small, .telephone .additionalInfo, .scopeNote, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p {
+.font-xsmall, .link-small, .telephone .additionalInfo, .scopeNote {
   font-size: 14px;
   line-height: 1.1428571429; }
   @media (min-width: 641px) {
-    .font-xsmall, .link-small, .telephone .additionalInfo, .scopeNote, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p {
+    .font-xsmall, .link-small, .telephone .additionalInfo, .scopeNote {
       font-size: 16px;
       line-height: 1.25; } }
 
@@ -424,7 +414,7 @@ table.styledTable td,
       margin-top: 50px;
       margin-bottom: 0.7em; } }
 
-.heading-medium, h3, .part-content h2, legend, .list-atoz li h2, .ms-rtestate-field h3,
+.heading-medium, h3, .part-content h2, legend, .ms-rtestate-field h3,
 .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium,
 .ms-rtestate-field h2.heading-medium,
 .ms-rtestate-field h3.heading-medium,
@@ -437,7 +427,7 @@ table.styledTable td,
   margin-top: 30px;
   margin-bottom: 0.5em; }
   @media (min-width: 641px) {
-    .heading-medium, h3, .part-content h2, legend, .list-atoz li h2, .ms-rtestate-field h3,
+    .heading-medium, h3, .part-content h2, legend, .ms-rtestate-field h3,
     .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium,
     .ms-rtestate-field h2.heading-medium,
     .ms-rtestate-field h3.heading-medium,
@@ -567,8 +557,8 @@ p.sharepoint,
     border-color: #133E8D;
     background: rgba(19, 62, 141, 0.1); }
   .text-highlight.text-highlight--green, .text-highlight--green.text-block {
-    border-color: green;
-    background: rgba(0, 128, 0, 0.1); }
+    border-color: #721371;
+    background: rgba(114, 19, 113, 0.1); }
   .text-highlight.text-highlight--red, .text-highlight--red.text-block {
     border-color: #c0392b;
     background: rgba(192, 57, 43, 0.1); }
@@ -713,23 +703,55 @@ ul,
 ol {
   list-style-type: none; }
 
-.list, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol {
+.list, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol {
   padding: 0;
   margin-top: 0;
   margin-bottom: 15px;
   display: inline-block;
   width: 100%; }
   @media (min-width: 641px) {
-    .list, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol {
+    .list, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul,
+    #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul,
+    #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul,
+    #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul,
+    #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol,
+    #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol,
+    #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol,
+    #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol,
+    #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol {
       margin-bottom: 17px; } }
-  .list li, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul li, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol li {
+  .list li, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul li,
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul li,
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul li,
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul li,
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul li, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol li,
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol li,
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol li,
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol li,
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol li {
     margin-bottom: 7px; }
 
-.list-bullet, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul {
+.list-bullet, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul {
   list-style-type: disc;
   padding-left: 20px; }
 
-.list-number, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol {
+.list-number, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol {
   list-style-type: decimal;
   padding-left: 20px; }
 
@@ -783,7 +805,7 @@ ul + .heading-large, ul + h2, .part-content ul + .part-title, .ms-rtestate-field
     .ms-rtestate-field ul + h4.heading-large {
       margin-top: 6px; } }
 
-ul + .heading-medium, ul + h3, .part-content ul + h2, ul + legend, .list-atoz li ul + h2, .ms-rtestate-field ul + h3,
+ul + .heading-medium, ul + h3, .part-content ul + h2, ul + legend, .ms-rtestate-field ul + h3,
 .ms-rtestate-field h3.ms-rteElement-H2 ul + h1.heading-medium,
 .ms-rtestate-field ul + h2.heading-medium,
 .ms-rtestate-field ul + h3.heading-medium,
@@ -793,7 +815,7 @@ ul + .heading-medium, ul + h3, .part-content ul + h2, ul + legend, .list-atoz li
 .relatedPages ul + h3 {
   margin-top: 16px; }
   @media (max-width: 641px) {
-    ul + .heading-medium, ul + h3, .part-content ul + h2, ul + legend, .list-atoz li ul + h2, .ms-rtestate-field ul + h3,
+    ul + .heading-medium, ul + h3, .part-content ul + h2, ul + legend, .ms-rtestate-field ul + h3,
     .ms-rtestate-field h3.ms-rteElement-H2 ul + h1.heading-medium,
     .ms-rtestate-field ul + h2.heading-medium,
     .ms-rtestate-field ul + h3.heading-medium,
@@ -830,8 +852,7 @@ ul + p {
 .btn + .heading-medium, .form-group input[type=button] + .heading-medium, .form-group input.btn.btn-primary + .heading-medium, .form-group input[type=submit] + .heading-medium, .form-group input.limitedrte-Style-BUTTON + .heading-medium, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + .heading-medium, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + .heading-medium, .limitedrte-Style-BUTTON + .heading-medium, #myChatLinkContainer #myChatLink a #myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + .heading-medium,
 .btn + h3, .form-group input[type=button] + h3, .form-group input.btn.btn-primary + h3, .form-group input[type=submit] + h3, .form-group input.limitedrte-Style-BUTTON + h3, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, .limitedrte-Style-BUTTON + h3, #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3, .part-content
 .btn + h2, .form-group .part-content input[type=button] + h2, .part-content .form-group input[type=button] + h2, .form-group .part-content input.btn.btn-primary + h2, .part-content .form-group input.btn.btn-primary + h2, .form-group .part-content input[type=submit] + h2, .part-content .form-group input[type=submit] + h2, .form-group .part-content input.limitedrte-Style-BUTTON + h2, .part-content .form-group input.limitedrte-Style-BUTTON + h2, .form-group #myChatLinkContainer #myChatLink a .part-content input#myChatLinkInfo + h2, .part-content .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .part-content input#myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .part-content input#myChatLinkInfo + h2, .part-content .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .part-content input#myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, .part-content .limitedrte-Style-BUTTON + h2, #myChatLinkContainer #myChatLink a .part-content #myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .part-content #myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
-.btn + legend, .form-group input[type=button] + legend, .form-group input.btn.btn-primary + legend, .form-group input[type=submit] + legend, .form-group input.limitedrte-Style-BUTTON + legend, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + legend, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + legend, .limitedrte-Style-BUTTON + legend, #myChatLinkContainer #myChatLink a #myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + legend, .list-atoz li
-.btn + h2, .form-group .list-atoz li input[type=button] + h2, .list-atoz li .form-group input[type=button] + h2, .form-group .list-atoz li input.btn.btn-primary + h2, .list-atoz li .form-group input.btn.btn-primary + h2, .form-group .list-atoz li input[type=submit] + h2, .list-atoz li .form-group input[type=submit] + h2, .form-group .list-atoz li input.limitedrte-Style-BUTTON + h2, .list-atoz li .form-group input.limitedrte-Style-BUTTON + h2, .form-group #myChatLinkContainer #myChatLink a .list-atoz li input#myChatLinkInfo + h2, .list-atoz li .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .list-atoz li input#myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .list-atoz li input#myChatLinkInfo + h2, .list-atoz li .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .list-atoz li input#myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, .list-atoz li .limitedrte-Style-BUTTON + h2, #myChatLinkContainer #myChatLink a .list-atoz li #myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .list-atoz li #myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2, .ms-rtestate-field
+.btn + legend, .form-group input[type=button] + legend, .form-group input.btn.btn-primary + legend, .form-group input[type=submit] + legend, .form-group input.limitedrte-Style-BUTTON + legend, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + legend, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + legend, .limitedrte-Style-BUTTON + legend, #myChatLinkContainer #myChatLink a #myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + legend, .ms-rtestate-field
 .btn + h3, .form-group .ms-rtestate-field input[type=button] + h3, .ms-rtestate-field .form-group input[type=button] + h3, .form-group .ms-rtestate-field input.btn.btn-primary + h3, .ms-rtestate-field .form-group input.btn.btn-primary + h3, .form-group .ms-rtestate-field input[type=submit] + h3, .ms-rtestate-field .form-group input[type=submit] + h3, .form-group .ms-rtestate-field input.limitedrte-Style-BUTTON + h3, .ms-rtestate-field .form-group input.limitedrte-Style-BUTTON + h3, .form-group #myChatLinkContainer #myChatLink a .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, .ms-rtestate-field .limitedrte-Style-BUTTON + h3, #myChatLinkContainer #myChatLink a .ms-rtestate-field #myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .ms-rtestate-field #myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3,
 .ms-rtestate-field h3.ms-rteElement-H2
 .btn + h1.heading-medium, .form-group
@@ -1034,8 +1055,7 @@ ul + p {
     .btn + .heading-medium, .form-group input[type=button] + .heading-medium, .form-group input.btn.btn-primary + .heading-medium, .form-group input[type=submit] + .heading-medium, .form-group input.limitedrte-Style-BUTTON + .heading-medium, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + .heading-medium, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + .heading-medium, .limitedrte-Style-BUTTON + .heading-medium, #myChatLinkContainer #myChatLink a #myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + .heading-medium,
     .btn + h3, .form-group input[type=button] + h3, .form-group input.btn.btn-primary + h3, .form-group input[type=submit] + h3, .form-group input.limitedrte-Style-BUTTON + h3, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, .limitedrte-Style-BUTTON + h3, #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3, .part-content
     .btn + h2, .form-group .part-content input[type=button] + h2, .part-content .form-group input[type=button] + h2, .form-group .part-content input.btn.btn-primary + h2, .part-content .form-group input.btn.btn-primary + h2, .form-group .part-content input[type=submit] + h2, .part-content .form-group input[type=submit] + h2, .form-group .part-content input.limitedrte-Style-BUTTON + h2, .part-content .form-group input.limitedrte-Style-BUTTON + h2, .form-group #myChatLinkContainer #myChatLink a .part-content input#myChatLinkInfo + h2, .part-content .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .part-content input#myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .part-content input#myChatLinkInfo + h2, .part-content .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .part-content input#myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, .part-content .limitedrte-Style-BUTTON + h2, #myChatLinkContainer #myChatLink a .part-content #myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .part-content #myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
-    .btn + legend, .form-group input[type=button] + legend, .form-group input.btn.btn-primary + legend, .form-group input[type=submit] + legend, .form-group input.limitedrte-Style-BUTTON + legend, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + legend, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + legend, .limitedrte-Style-BUTTON + legend, #myChatLinkContainer #myChatLink a #myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + legend, .list-atoz li
-    .btn + h2, .form-group .list-atoz li input[type=button] + h2, .list-atoz li .form-group input[type=button] + h2, .form-group .list-atoz li input.btn.btn-primary + h2, .list-atoz li .form-group input.btn.btn-primary + h2, .form-group .list-atoz li input[type=submit] + h2, .list-atoz li .form-group input[type=submit] + h2, .form-group .list-atoz li input.limitedrte-Style-BUTTON + h2, .list-atoz li .form-group input.limitedrte-Style-BUTTON + h2, .form-group #myChatLinkContainer #myChatLink a .list-atoz li input#myChatLinkInfo + h2, .list-atoz li .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .list-atoz li input#myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .list-atoz li input#myChatLinkInfo + h2, .list-atoz li .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .list-atoz li input#myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, .list-atoz li .limitedrte-Style-BUTTON + h2, #myChatLinkContainer #myChatLink a .list-atoz li #myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .list-atoz li #myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2, .ms-rtestate-field
+    .btn + legend, .form-group input[type=button] + legend, .form-group input.btn.btn-primary + legend, .form-group input[type=submit] + legend, .form-group input.limitedrte-Style-BUTTON + legend, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + legend, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + legend, .limitedrte-Style-BUTTON + legend, #myChatLinkContainer #myChatLink a #myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + legend, .ms-rtestate-field
     .btn + h3, .form-group .ms-rtestate-field input[type=button] + h3, .ms-rtestate-field .form-group input[type=button] + h3, .form-group .ms-rtestate-field input.btn.btn-primary + h3, .ms-rtestate-field .form-group input.btn.btn-primary + h3, .form-group .ms-rtestate-field input[type=submit] + h3, .ms-rtestate-field .form-group input[type=submit] + h3, .form-group .ms-rtestate-field input.limitedrte-Style-BUTTON + h3, .ms-rtestate-field .form-group input.limitedrte-Style-BUTTON + h3, .form-group #myChatLinkContainer #myChatLink a .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, .ms-rtestate-field .limitedrte-Style-BUTTON + h3, #myChatLinkContainer #myChatLink a .ms-rtestate-field #myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .ms-rtestate-field #myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3,
     .ms-rtestate-field h3.ms-rteElement-H2
     .btn + h1.heading-medium, .form-group
@@ -1396,17 +1416,17 @@ h2 + h3 {
     color: white; }
 
 .btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary, .form-group input[type=submit], .form-group input.limitedrte-Style-BUTTON, .limitedrte-Style-BUTTON, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo {
-  background-color: green;
+  background-color: #721371;
   color: white;
-  border-color: green; }
+  border-color: #721371; }
   .btn-primary:hover, .form-group input[type=button]:hover, .form-group input.btn.btn-primary:hover, .form-group input[type=submit]:hover, .form-group input.limitedrte-Style-BUTTON:hover, .limitedrte-Style-BUTTON:hover, #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover {
-    background: #009a00;
+    background: #881787;
     color: white;
-    border-color: #009a00; }
+    border-color: #881787; }
   .btn-primary:active, .form-group input[type=button]:active, .form-group input.btn.btn-primary:active, .form-group input[type=submit]:active, .form-group input.limitedrte-Style-BUTTON:active, .limitedrte-Style-BUTTON:active, #myChatLinkContainer #myChatLink a #myChatLinkInfo:active, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:active {
-    background: #004d00 !important;
+    background: #460c46 !important;
     color: white !important;
-    border-color: #004d00 !important; }
+    border-color: #460c46 !important; }
 
 .btn-secondary, .form-group input[type=button].btn-secondary {
   background-color: blue;
@@ -1956,8 +1976,6 @@ p + .panel {
     .panel.img.event .part-content h2, .part-content
     .panel.img.event h2,
     .panel.img.event legend,
-    .panel.img.event .list-atoz li h2, .list-atoz li
-    .panel.img.event h2,
     .panel.img.event .ms-rtestate-field h3, .ms-rtestate-field
     .panel.img.event h3,
     .panel.img.event .sideNav h2, .sideNav
@@ -1982,8 +2000,6 @@ p + .panel {
       .panel.img.event .part-content h2 span, .part-content
       .panel.img.event h2 span,
       .panel.img.event legend span,
-      .panel.img.event .list-atoz li h2 span, .list-atoz li
-      .panel.img.event h2 span,
       .panel.img.event .ms-rtestate-field h3 span, .ms-rtestate-field
       .panel.img.event h3 span,
       .panel.img.event .sideNav h2 span, .sideNav
@@ -2009,8 +2025,6 @@ p + .panel {
           .panel.img.event .part-content h2 span, .part-content
           .panel.img.event h2 span,
           .panel.img.event legend span,
-          .panel.img.event .list-atoz li h2 span, .list-atoz li
-          .panel.img.event h2 span,
           .panel.img.event .ms-rtestate-field h3 span, .ms-rtestate-field
           .panel.img.event h3 span,
           .panel.img.event .sideNav h2 span, .sideNav
@@ -3571,10 +3585,18 @@ table.styledTable td,
 .limitedrte-Style-image-right {
   padding: 0; }
 
-#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul {
+#ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul {
   list-style-type: disc; }
 
-#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol {
+#ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol {
   list-style-type: decimal; }
 
 ul.accordion {
@@ -3638,7 +3660,39 @@ ul.accordion {
       @media (max-width: 641px) {
         ul.accordion li div.content-block {
           padding: 10px 10px 5px 35px !important; } }
-  ul.accordion .list a, ul.accordion #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul a, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol a, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion .list .link, ul.accordion #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul .link, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol .link, #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ol .link {
+  ul.accordion .list a, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul a, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul a,
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul a,
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul a,
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul a,
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ul a, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol a, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol a,
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol a,
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol a,
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol a,
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ol a, ul.accordion .list .link, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul .link, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul .link,
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul .link,
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul .link,
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul .link,
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ul .link, ul.accordion #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol .link, #ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol .link,
+  #ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol .link,
+  #ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol .link,
+  #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion ol .link, ul.accordion
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol .link,
+  #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion ol .link {
     text-decoration: none; }
 
 ul.accordion div.text-block {
@@ -3656,179 +3710,6 @@ ul.accordion li div.content-block div + .btn, ul.accordion li div.content-block 
 ul.accordion div.text-highlight, ul.accordion div.text-block {
   padding: 20px !important; }
 
-.atoz {
-  background: #F6F7FA;
-  padding: 20px 0 26px;
-  width: 100%;
-  text-transform: uppercase;
-  margin-top: 50px; }
-  @media (max-width: 1300px) {
-    .atoz {
-      padding: 10px 0 16px; } }
-  .atoz .atoz__header {
-    display: inline-block;
-    margin: 0;
-    font-size: 21px;
-    font-weight: 800;
-    line-height: 1em;
-    padding: 10px 0; }
-    @media (max-width: 641px) {
-      .atoz .atoz__header {
-        font-size: 19px; } }
-  .atoz ul {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-justify-content: flex-star;
-    -moz-box-justify-content: flex-star;
-    -ms-flex-justify-content: flex-star;
-    -webkit-justify-content: flex-star;
-    justify-content: flex-star;
-    -webkit-box-flex-wrap: wrap;
-    -moz-box-flex-wrap: wrap;
-    -ms-flex-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    float: none;
-    margin: 10px 0 0;
-    padding: 0; }
-    .atoz ul li {
-      float: left;
-      list-style: none;
-      font-size: 21px;
-      font-weight: 600;
-      line-height: 1em;
-      text-align: center;
-      padding: 0;
-      margin: 0 4px 4px 0;
-      -webkit-box-flex: auto;
-      -moz-box-flex: auto;
-      -webkit-flex: auto;
-      -ms-flex: auto;
-      flex: auto;
-      border: 1px solid #F6F7FA;
-      background: white; }
-      @media (max-width: 1100px) {
-        .atoz ul li {
-          min-width: 50px; } }
-      @media (max-width: 641px) {
-        .atoz ul li {
-          font-size: 16px; } }
-      .atoz ul li:last-of-type a, .atoz ul li:last-of-type .link {
-        width: 100%; }
-      .atoz ul li a, .atoz ul li .link {
-        text-decoration: none;
-        border: 0;
-        width: 100%;
-        display: inline-block;
-        background: white;
-        padding: 10px 0; }
-        @media (max-width: 1100px) {
-          .atoz ul li a, .atoz ul li .link {
-            padding: 15px 0; } }
-        .atoz ul li a:hover, .atoz ul li .link:hover {
-          background: #133E8D;
-          color: white; }
-      .atoz ul li.active a, .atoz ul li.active .link {
-        background: #133E8D;
-        color: white; }
-      .atoz ul li.inactive {
-        color: #9DA5B2;
-        display: inline-block;
-        border: 1px solid white;
-        background: #F6F7FA;
-        padding: 10px 0;
-        width: auto; }
-        @media (max-width: 1100px) {
-          .atoz ul li.inactive {
-            padding: 15px 0;
-            min-width: 50px; } }
-
-.list-atoz {
-  margin: 0 0 30px; }
-  .list-atoz li {
-    margin-bottom: 10px;
-    padding-left: 10px; }
-    .list-atoz li h2 {
-      margin: 20px 0 5px -10px; }
-  .list-atoz li:first-child h2 {
-    margin-top: 0; }
-
-#atozListResultsTop .atoz,
-#DeltaPlaceHolderMain .atoz {
-  margin: 0; }
-
-.list-atoz {
-  padding: 0;
-  float: none; }
-  .list-atoz li {
-    padding: 0; }
-    .list-atoz li h2 {
-      margin: 20px 0; }
-
-.blockLinks .listWebpart {
-  background: transparent;
-  color: #555;
-  padding: 0px; }
-  .blockLinks .listWebpart h2 {
-    color: #555; }
-  .blockLinks .listWebpart a, .blockLinks .listWebpart .link {
-    background: rgba(18, 18, 18, 0);
-    color: #555; }
-    .blockLinks .listWebpart a:hover, .blockLinks .listWebpart .link:hover {
-      background: transparent; }
-  .blockLinks .listWebpart h2 {
-    display: block;
-    padding-bottom: 15px; }
-  .blockLinks .listWebpart ul {
-    text-align: center; }
-    .col-lg-12 .blockLinks .listWebpart ul li {
-      width: 12.5%; }
-    .col-md-8 .blockLinks .listWebpart ul li {
-      width: 20%; }
-    .col-md-6 .blockLinks .listWebpart ul li {
-      width: 25%; }
-    .col-md-4 .blockLinks .listWebpart ul li {
-      width: 50%; }
-      .col-md-4 .blockLinks .listWebpart ul li a img, .col-md-4 .blockLinks .listWebpart ul li .link img {
-        width: 66%;
-        margin: 0 17% 15px; }
-    .blockLinks .listWebpart ul li a, .blockLinks .listWebpart ul li .link {
-      text-align: center;
-      font-size: 1em;
-      float: left;
-      width: 100%;
-      padding: 15px;
-      cursor: pointer;
-      border: none;
-      margin: 0px; }
-      .blockLinks .listWebpart ul li a img, .blockLinks .listWebpart ul li .link img {
-        border: 0px;
-        width: 80%;
-        margin: 0 10% 15px; }
-      .blockLinks .listWebpart ul li a:hover, .blockLinks .listWebpart ul li .link:hover {
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        background: rgba(0, 0, 0, 0.1); }
-    @media only screen and (max-width: 991px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 16.66%; }
-        .col-lg-12 .blockLinks .listWebpart ul li a img, .col-lg-12 .blockLinks .listWebpart ul li .link img, .col-md-8 .blockLinks .listWebpart ul li a img, .col-md-8 .blockLinks .listWebpart ul li .link img, .col-md-6 .blockLinks .listWebpart ul li a img, .col-md-6 .blockLinks .listWebpart ul li .link img, .col-md-4 .blockLinks .listWebpart ul li a img, .col-md-4 .blockLinks .listWebpart ul li .link img {
-          width: 100%;
-          margin: 0 0 15px 0; } }
-    @media only screen and (max-width: 768px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 25%; } }
-    @media only screen and (max-width: 600px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 33.333%; } }
-    @media only screen and (max-width: 420px) {
-      .col-lg-12 .blockLinks .listWebpart ul li, .col-md-8 .blockLinks .listWebpart ul li, .col-md-6 .blockLinks .listWebpart ul li, .col-md-4 .blockLinks .listWebpart ul li {
-        width: 50%; } }
-
-/*BLOCK LINK END*/
 blockquote {
   padding: 30px 60px 30px 80px;
   position: relative;
@@ -4106,2123 +3987,6 @@ form input[type=submit].submit {
   background: #721371; }
 
 /**End  main button color for forms and comments **/
-/*****************
-CAROUSEL BOOTSTRAP
-*******************/
-.carousel {
-  height: 400px;
-  margin-bottom: 1.875em; }
-  .carousel .item,
-  .carousel .active,
-  .carousel .carousel-inner {
-    height: 100%; }
-  .carousel .fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-  .carousel .carousel-control {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    color: #fff;
-    text-align: center;
-    -webkit-text-shadow: none;
-    -moz-text-shadow: none;
-    -o-text-shadow: none;
-    text-shadow: none;
-    filter: alpha(opacity=100);
-    opacity: 1;
-    width: 5%; }
-    .carousel .carousel-control.right {
-      right: 0;
-      left: auto;
-      background-image: none; }
-    .carousel .carousel-control.left {
-      left: 0;
-      right: auto;
-      background-image: none; }
-  .carousel .carousel-caption {
-    position: absolute;
-    right: 10%;
-    bottom: 25%;
-    left: 10%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #333;
-    text-align: left;
-    -webkit-text-shadow: none;
-    -moz-text-shadow: none;
-    -o-text-shadow: none;
-    text-shadow: none;
-    background: none; }
-    .carousel .carousel-caption a, .carousel .carousel-caption .link {
-      display: inline-block;
-      cursor: pointer;
-      z-index: 10; }
-      .carousel .carousel-caption a h2 span, .carousel .carousel-caption .link h2 span, .carousel .carousel-caption a p, .carousel .carousel-caption .link p, .carousel .carousel-caption a p, .carousel .carousel-caption .link p {
-        background: rgba(0, 0, 0, 0.6);
-        color: #fff;
-        padding: 20px;
-        margin: 0 0 10px;
-        display: inline-block; }
-      .carousel .carousel-caption a:hover h2 span, .carousel .carousel-caption .link:hover h2 span,
-      .carousel .carousel-caption a:focus h2 span,
-      .carousel .carousel-caption .link:focus h2 span,
-      .carousel .carousel-caption a:hover p,
-      .carousel .carousel-caption .link:hover p,
-      .carousel .carousel-caption a:focus p,
-      .carousel .carousel-caption .link:focus p {
-        background: #000; }
-      .carousel .carousel-caption a h2, .carousel .carousel-caption .link h2 {
-        margin: 0; }
-      .carousel .carousel-caption a p, .carousel .carousel-caption .link p {
-        font-size: 1.500rem; }
-      .carousel .carousel-caption a .external p:after, .carousel .carousel-caption .link .external p:after {
-        content: '\f08e';
-        font-family: FontAwesome;
-        font-weight: normal;
-        font-style: normal;
-        margin: 0px 0px 0px 10px; }
-  .carousel .carousel-caption span.carouselLink {
-    display: block; }
-  .carousel .carousel-indicators {
-    top: 5%;
-    bottom: auto; }
-    .carousel .carousel-indicators li {
-      border: 3px solid #ffffff;
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-      margin: 0; }
-    .carousel .carousel-indicators .active {
-      background: #fff; }
-  .carousel #carouselButtons {
-    position: absolute;
-    bottom: 10%;
-    left: 0;
-    z-index: 16;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center; }
-  .carousel #carouselButtons button {
-    border: none;
-    color: #006DA5;
-    padding: 10px 20px;
-    margin: 0 1px; }
-    .carousel #carouselButtons button:after {
-      content: "";
-      background: transparent; }
-  .carousel #carouselButtons button:hover,
-  .carousel #carouselButtons button:focus {
-    background: #000;
-    color: #fff; }
-
-@media (max-width: 767px) {
-  .carousel {
-    display: none; } }
-
-@media screen and (min-width: 767px) {
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next,
-  .carousel-control .icon-prev {
-    width: 55px;
-    height: 55px;
-    margin-top: -30px;
-    font-size: 2.575rem;
-    color: #006DA5;
-    border-radius: 50%;
-    padding: 12px;
-    background: rgba(255, 255, 255, 0.9); }
-  .carousel-control:hover .icon-next,
-  .carousel-control:focus .icon-next,
-  .carousel-control:hover .icon-prev,
-  .carousel-control:focus .icon-prev {
-    background: #000;
-    color: #fff; } }
-
-.carousel #carouselButtons button {
-  background: #fff; }
-
-.carousel-inner .item {
-  padding: 0px; }
-
-/*END CAROUSEL BOOTSTRAP*/
-.highlighted, .panel {
-  padding: 2em 1.75em;
-  margin: 1em 0;
-  background: #333;
-  box-shadow: 0 0 0; }
-  .highlighted img, .panel img {
-    max-width: 100%; }
-  .highlighted.section, .panel.section {
-    margin: 0px; }
-  .highlighted.alignCenter, .panel.alignCenter {
-    text-align: center; }
-  .highlighted h2:first-of-type, .highlighted h3:first-of-type, .highlighted h4:first-of-type, .panel h2:first-of-type, .panel h3:first-of-type, .panel h4:first-of-type {
-    margin-top: 0px; }
-  .highlighted h2, .highlighted h3, .highlighted h4, .highlighted p, .highlighted ul, .highlighted ol, .highlighted em, .panel h2, .panel h3, .panel h4, .panel p, .panel ul, .panel ol, .panel em {
-    color: #fff; }
-  .highlighted em, .panel em {
-    font-size: 80px;
-    font-style: normal;
-    line-height: 60px;
-    margin-bottom: 30px;
-    font-weight: 800;
-    display: block; }
-  .highlighted a.btn, .highlighted .btn.link, .highlighted .form-group input.link[type=button], .form-group .highlighted input.link[type=button], .highlighted .form-group input.link.btn.btn-primary, .form-group .highlighted input.link.btn.btn-primary, .highlighted .form-group input.link[type=submit], .form-group .highlighted input.link[type=submit], .highlighted .form-group input.link.limitedrte-Style-BUTTON, .form-group .highlighted input.link.limitedrte-Style-BUTTON, .highlighted .link.limitedrte-Style-BUTTON, .highlighted #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted .link#myChatLinkInfo, .highlighted a.limitedrte-Style-BUTTON, .highlighted #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted a#myChatLinkInfo, .highlighted #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .highlighted a#myChatLinkInfo, .highlighted #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .highlighted #myChatLinkInfo.link, .panel a.btn, .panel .btn.link, .panel .form-group input.link[type=button], .form-group .panel input.link[type=button], .panel .form-group input.link.btn.btn-primary, .form-group .panel input.link.btn.btn-primary, .panel .form-group input.link[type=submit], .form-group .panel input.link[type=submit], .panel .form-group input.link.limitedrte-Style-BUTTON, .form-group .panel input.link.limitedrte-Style-BUTTON, .panel .link.limitedrte-Style-BUTTON, .panel #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel .link#myChatLinkInfo, .panel a.limitedrte-Style-BUTTON, .panel #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel a#myChatLinkInfo, .panel #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .panel a#myChatLinkInfo, .panel #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .panel #myChatLinkInfo.link {
-    font-size: 18px;
-    border-color: #fff;
-    color: #fff;
-    background: transparent;
-    margin: 0px 0 20px;
-    display: inline-block; }
-    @media screen and (max-width: 400px) {
-      .highlighted a.btn, .highlighted .btn.link, .highlighted .form-group input.link[type=button], .form-group .highlighted input.link[type=button], .highlighted .form-group input.link.btn.btn-primary, .form-group .highlighted input.link.btn.btn-primary, .highlighted .form-group input.link[type=submit], .form-group .highlighted input.link[type=submit], .highlighted .form-group input.link.limitedrte-Style-BUTTON, .form-group .highlighted input.link.limitedrte-Style-BUTTON, .highlighted .link.limitedrte-Style-BUTTON, .highlighted #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted .link#myChatLinkInfo, .highlighted a.limitedrte-Style-BUTTON, .highlighted #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted a#myChatLinkInfo, .highlighted #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .highlighted a#myChatLinkInfo, .highlighted #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .highlighted #myChatLinkInfo.link, .panel a.btn, .panel .btn.link, .panel .form-group input.link[type=button], .form-group .panel input.link[type=button], .panel .form-group input.link.btn.btn-primary, .form-group .panel input.link.btn.btn-primary, .panel .form-group input.link[type=submit], .form-group .panel input.link[type=submit], .panel .form-group input.link.limitedrte-Style-BUTTON, .form-group .panel input.link.limitedrte-Style-BUTTON, .panel .link.limitedrte-Style-BUTTON, .panel #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel .link#myChatLinkInfo, .panel a.limitedrte-Style-BUTTON, .panel #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel a#myChatLinkInfo, .panel #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .panel a#myChatLinkInfo, .panel #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .panel #myChatLinkInfo.link {
-        width: 100%; } }
-    .highlighted a.btn:hover, .highlighted .btn.link:hover, .highlighted .form-group input.link[type=button]:hover, .form-group .highlighted input.link[type=button]:hover, .highlighted .form-group input.link[type=submit]:hover, .form-group .highlighted input.link[type=submit]:hover, .highlighted .link.limitedrte-Style-BUTTON:hover, .highlighted #myChatLinkContainer #myChatLink a .link#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .highlighted .link#myChatLinkInfo:hover, .highlighted a.limitedrte-Style-BUTTON:hover, .highlighted #myChatLinkContainer #myChatLink a a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .highlighted a#myChatLinkInfo:hover, .highlighted #myChatLinkContainer #myChatLink .link a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .highlighted a#myChatLinkInfo:hover, .highlighted #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link:hover, #myChatLinkContainer #myChatLink .link .highlighted #myChatLinkInfo.link:hover, .panel a.btn:hover, .panel .btn.link:hover, .panel .form-group input.link[type=button]:hover, .form-group .panel input.link[type=button]:hover, .panel .form-group input.link[type=submit]:hover, .form-group .panel input.link[type=submit]:hover, .panel .link.limitedrte-Style-BUTTON:hover, .panel #myChatLinkContainer #myChatLink a .link#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .panel .link#myChatLinkInfo:hover, .panel a.limitedrte-Style-BUTTON:hover, .panel #myChatLinkContainer #myChatLink a a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .panel a#myChatLinkInfo:hover, .panel #myChatLinkContainer #myChatLink .link a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .panel a#myChatLinkInfo:hover, .panel #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link:hover, #myChatLinkContainer #myChatLink .link .panel #myChatLinkInfo.link:hover {
-      background: #fff;
-      color: #333; }
-  .highlighted.alt, .panel.alt {
-    background: #f6f6f6; }
-    .highlighted.alt h2, .highlighted.alt h3, .highlighted.alt h4, .highlighted.alt p, .highlighted.alt ul, .highlighted.alt ol, .highlighted.alt em, .panel.alt h2, .panel.alt h3, .panel.alt h4, .panel.alt p, .panel.alt ul, .panel.alt ol, .panel.alt em {
-      color: #333; }
-    .highlighted.alt a.btn, .highlighted.alt .btn.link, .highlighted.alt .form-group input.link[type=button], .form-group .highlighted.alt input.link[type=button], .highlighted.alt .form-group input.link[type=submit], .form-group .highlighted.alt input.link[type=submit], .highlighted.alt .link.limitedrte-Style-BUTTON, .highlighted.alt #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted.alt .link#myChatLinkInfo, .highlighted.alt a.limitedrte-Style-BUTTON, .highlighted.alt #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted.alt a#myChatLinkInfo, .highlighted.alt #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .highlighted.alt a#myChatLinkInfo, .highlighted.alt #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .highlighted.alt #myChatLinkInfo.link, .panel.alt a.btn, .panel.alt .btn.link, .panel.alt .form-group input.link[type=button], .form-group .panel.alt input.link[type=button], .panel.alt .form-group input.link[type=submit], .form-group .panel.alt input.link[type=submit], .panel.alt .link.limitedrte-Style-BUTTON, .panel.alt #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel.alt .link#myChatLinkInfo, .panel.alt a.limitedrte-Style-BUTTON, .panel.alt #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel.alt a#myChatLinkInfo, .panel.alt #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .panel.alt a#myChatLinkInfo, .panel.alt #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .panel.alt #myChatLinkInfo.link {
-      border-color: #333;
-      color: #333; }
-      .highlighted.alt a.btn:hover, .highlighted.alt .btn.link:hover, .highlighted.alt .form-group input.link[type=button]:hover, .form-group .highlighted.alt input.link[type=button]:hover, .highlighted.alt .form-group input.link[type=submit]:hover, .form-group .highlighted.alt input.link[type=submit]:hover, .highlighted.alt .link.limitedrte-Style-BUTTON:hover, .highlighted.alt #myChatLinkContainer #myChatLink a .link#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .highlighted.alt .link#myChatLinkInfo:hover, .highlighted.alt a.limitedrte-Style-BUTTON:hover, .highlighted.alt #myChatLinkContainer #myChatLink a a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .highlighted.alt a#myChatLinkInfo:hover, .highlighted.alt #myChatLinkContainer #myChatLink .link a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .highlighted.alt a#myChatLinkInfo:hover, .highlighted.alt #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link:hover, #myChatLinkContainer #myChatLink .link .highlighted.alt #myChatLinkInfo.link:hover, .panel.alt a.btn:hover, .panel.alt .btn.link:hover, .panel.alt .form-group input.link[type=button]:hover, .form-group .panel.alt input.link[type=button]:hover, .panel.alt .form-group input.link[type=submit]:hover, .form-group .panel.alt input.link[type=submit]:hover, .panel.alt .link.limitedrte-Style-BUTTON:hover, .panel.alt #myChatLinkContainer #myChatLink a .link#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .panel.alt .link#myChatLinkInfo:hover, .panel.alt a.limitedrte-Style-BUTTON:hover, .panel.alt #myChatLinkContainer #myChatLink a a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .panel.alt a#myChatLinkInfo:hover, .panel.alt #myChatLinkContainer #myChatLink .link a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .panel.alt a#myChatLinkInfo:hover, .panel.alt #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link:hover, #myChatLinkContainer #myChatLink .link .panel.alt #myChatLinkInfo.link:hover {
-        background: #333;
-        color: #f6f6f6; }
-  @media screen and (max-width: 400px) {
-    .highlighted, .panel {
-      padding: 1.5em 1em; } }
-
-@media (max-width: 768px) {
-  .lead {
-    font-size: 21px; } }
-
-a.arrow, .arrow.link {
-  padding: 15px;
-  display: block;
-  position: relative;
-  border-bottom: 1px solid #bbcada; }
-  a.arrow:first-of-type, .arrow.link:first-of-type {
-    border-top: 1px solid #bbcada; }
-  a.arrow:after, .arrow.link:after {
-    content: '\f105';
-    font-family: FontAwesome;
-    font-size: 20px;
-    border-radius: 50%;
-    border: 2px solid #333;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    padding: 2px 0 0 2px;
-    margin: -18px 5px 0 0;
-    color: #333;
-    display: inline-block;
-    right: 0px;
-    position: absolute;
-    top: 50%; }
-  a.arrow:hover, .arrow.link:hover {
-    background: #f2f2f2; }
-    a.arrow:hover:after, .arrow.link:hover:after {
-      background: #333;
-      color: #fff; }
-
-li a.arrow:first-of-type, li .arrow.link:first-of-type {
-  border-top: none; }
-
-.contentLink ul {
-  margin: 0px;
-  list-style: none;
-  padding: 0px; }
-  .contentLink ul li {
-    margin: 30px 0px; }
-    .contentLink ul li div {
-      padding: 30px;
-      background: #ECF0F1;
-      text-align: center;
-      position: relative;
-      padding-bottom: 100px; }
-      .contentLink ul li div img {
-        max-width: 100%; }
-      .contentLink ul li div h2 {
-        font-size: 30px;
-        font-weight: bold; }
-      .contentLink ul li div p {
-        margin: 30px; }
-      .contentLink ul li div a.btn, .contentLink ul li div .btn.link, .contentLink ul li div .form-group input.link[type=button], .form-group .contentLink ul li div input.link[type=button], .contentLink ul li div .form-group input.link[type=submit], .form-group .contentLink ul li div input.link[type=submit], .contentLink ul li div .link.limitedrte-Style-BUTTON, .contentLink ul li div #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .contentLink ul li div .link#myChatLinkInfo, .contentLink ul li div a.limitedrte-Style-BUTTON, .contentLink ul li div #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .contentLink ul li div a#myChatLinkInfo, .contentLink ul li div #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .contentLink ul li div a#myChatLinkInfo, .contentLink ul li div #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .contentLink ul li div #myChatLinkInfo.link {
-        position: absolute;
-        bottom: 30px;
-        left: 30px;
-        right: 30px;
-        width: auto; }
-      .contentLink ul li div:after {
-        content: '';
-        height: 80px;
-        display: block; }
-
-.description-list {
-  margin: 10px 0 30px; }
-  .description-list .description-list__item {
-    border-bottom: 1px solid #DCDEE1; }
-    .description-list .description-list__item h3 {
-      font-size: 19px;
-      margin: 0;
-      padding-top: 1rem; }
-      @media (min-width: 641px) {
-        .description-list .description-list__item h3 {
-          float: left;
-          width: 25%;
-          padding: 1rem .75rem; } }
-    .description-list .description-list__item .description-list__item-content {
-      margin: 0;
-      padding-bottom: 1rem;
-      padding-top: .25rem; }
-      @media (min-width: 641px) {
-        .description-list .description-list__item .description-list__item-content {
-          float: left;
-          width: 75%;
-          padding: 1rem .75rem; } }
-      .description-list .description-list__item .description-list__item-content p:last-child,
-      .description-list .description-list__item .description-list__item-content ul:last-child,
-      .description-list .description-list__item .description-list__item-content li:last-child,
-      .description-list .description-list__item .description-list__item-content .text-highlight:last-child,
-      .description-list .description-list__item .description-list__item-content .text-block:last-child {
-        margin-bottom: 0; }
-      @media (min-width: 641px) {
-        .description-list .description-list__item .description-list__item-content p:first-child,
-        .description-list .description-list__item .description-list__item-content ul:first-child,
-        .description-list .description-list__item .description-list__item-content li:first-child,
-        .description-list .description-list__item .description-list__item-content .text-highlight:first-child,
-        .description-list .description-list__item .description-list__item-content .text-block:first-child {
-          margin-top: 0; } }
-      .description-list .description-list__item .description-list__item-content ul li .day {
-        font-weight: 700;
-        display: inline-block; }
-        .description-list .description-list__item .description-list__item-content ul li .day:after {
-          content: ":";
-          margin-right: 5px; }
-      .description-list .description-list__item .description-list__item-content ul li .hours {
-        display: inline-block; }
-      .description-list .description-list__item .description-list__item-content p {
-        margin-bottom: 10px; }
-      .description-list .description-list__item .description-list__item-content .text-highlight, .description-list .description-list__item .description-list__item-content .text-block {
-        margin: 10px 0; }
-
-/*********************
-docsList
-**********************/
-.docList a, .docList .link {
-  display: block;
-  text-align: left;
-  position: relative;
-  height: 100%;
-  padding-top: 45px;
-  font-weight: bold;
-  border: 1px solid #ddd;
-  text-decoration: none !important; }
-  .docList a:hover, .docList .link:hover, .docList a:focus, .docList .link:focus {
-    background: #F6F7FA;
-    color: #333;
-    border-color: #DCDEE1; }
-    .docList a:hover span.thirdInfo, .docList .link:hover span.thirdInfo, .docList a:focus span.thirdInfo, .docList .link:focus span.thirdInfo {
-      color: #333; }
-  .docList a:before, .docList .link:before {
-    content: '\f138';
-    font-family: FontAwesome;
-    position: absolute;
-    font-weight: normal;
-    top: -1px;
-    left: -1px;
-    height: 45px;
-    width: 45px;
-    display: block;
-    padding: 8px 15px;
-    color: #333;
-    font-size: 22px; }
-    .docList a:before:hover, .docList .link:before:hover {
-      color: #333 !important; }
-  .docList a span.info, .docList .link span.info {
-    border-top: 1px solid #DCDEE1;
-    display: inline-block;
-    width: 100%;
-    padding: 10px;
-    padding: 15px 40px 15px 15px;
-    height: 100%; }
-    .docList a span.info span.arrow, .docList .link span.info span.arrow {
-      position: absolute;
-      height: auto;
-      width: 20px;
-      right: 10px;
-      bottom: 10px;
-      background: transparent; }
-      .docList a span.info span.arrow:after, .docList .link span.info span.arrow:after {
-        content: '\f138';
-        font-family: FontAwesome;
-        font-weight: normal;
-        font-style: normal;
-        text-decoration: none !important;
-        border: none; }
-  .docList a span.thirdInfo, .docList .link span.thirdInfo {
-    position: absolute;
-    top: 12px;
-    right: 15px;
-    color: #666B76; }
-
-.docList .pdf a:before, .docList .pdf .link:before {
-  content: '\f1c1';
-  color: #ED1F24; }
-
-.docList .word a:before, .docList .word .link:before {
-  content: '\f1c2';
-  color: #294BA0; }
-
-.docList .xl a:before, .docList .xl .link:before {
-  content: '\f1c3';
-  color: #269129; }
-
-.docList .external a:before, .docList .external .link:before {
-  content: '\f08e';
-  color: rgba(0, 0, 0, 0.5); }
-
-.docList .pp a:before, .docList .pp .link:before {
-  content: '\f1c4';
-  color: orange; }
-
-.docList .pdf a:hover:before, .docList .pdf .link:hover:before, .docList .word a:hover:before, .docList .word .link:hover:before, .docList .xl a:hover:before, .docList .xl .link:hover:before, .docList .external a:hover:before, .docList .external .link:hover:before, .docList .pp a:hover:before, .docList .pp .link:hover:before {
-  color: #fff; }
-
-.docList.one, .docList.two, .docList.three, .docList.four, .docList.five {
-  width: 100%; }
-
-.docList ul {
-  padding: 0px; }
-
-.docList li {
-  padding: 15px; }
-
-.docList.five li {
-  width: 20%; }
-
-.docList.four li {
-  width: 25%; }
-
-.docList.three li {
-  width: 33.333333%; }
-
-.docList.two li {
-  width: 50%; }
-
-.docList.one li {
-  width: 100%;
-  padding: 0;
-  margin-bottom: 0px; }
-  .docList.one li a, .docList.one li .link {
-    border: none;
-    border-bottom: 1px solid #DCDEE1;
-    padding: 20px 15px 20px 40px;
-    margin: 0px; }
-    .docList.one li a:hover, .docList.one li .link:hover {
-      background: #F6F7FA;
-      text-decoration: none; }
-      .docList.one li a:hover span.info, .docList.one li .link:hover span.info, .docList.one li a:hover:before, .docList.one li .link:hover:before, .docList.one li a:hover span.thirdInfo, .docList.one li .link:hover span.thirdInfo {
-        background: transparent;
-        color: #333; }
-    .docList.one li a:before, .docList.one li .link:before {
-      font-family: FontAwesome;
-      position: absolute;
-      font-weight: normal;
-      top: 17px;
-      left: 10px;
-      height: 25px;
-      margin-top: -5px;
-      width: 25px;
-      display: block;
-      padding: 0px;
-      font-size: 22px; }
-    .docList.one li a .info, .docList.one li .link .info {
-      border: none;
-      padding: 0px;
-      margin: 0px;
-      display: inline;
-      margin: 0; }
-      .docList.one li a .info span.arrow, .docList.one li .link .info span.arrow {
-        display: none; }
-    .docList.one li a span.thirdInfo, .docList.one li .link span.thirdInfo {
-      padding: 0px 25px;
-      padding: 0px 20px 0 10px;
-      display: inline;
-      position: relative;
-      top: 0px;
-      right: auto; }
-
-@media (max-width: 1200px) {
-  .docList.four li, .docList.five li {
-    width: 33%;
-    float: left; } }
-
-@media (max-width: 991px) {
-  .docList.three li, .docList.four li, .docList.five li {
-    width: 50%;
-    float: left; } }
-
-@media (max-width: 600px) {
-  .docList.two li, .docList.three li, .docList.four li, .docList.five li {
-    width: 100%; } }
-
-.eventSearchResults h2 {
-  margin-top: 0; }
-
-.eventSearchResults .eventSearchResultsList .eventListOnly ul.content {
-  padding: 0; }
-  .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li {
-    margin-bottom: 5px; }
-    .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link {
-      text-decoration: none;
-      background: #F6F7FA;
-      display: inline-block;
-      width: 100%;
-      padding: 30px; }
-      .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper h3, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper h3 {
-        position: relative;
-        margin: 0 0 3px;
-        color: #133E8D;
-        padding-right: 25px; }
-        .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper h3:after, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper h3:after {
-          content: '\f105';
-          font-family: FontAwesome;
-          position: absolute;
-          top: 0;
-          right: 0;
-          color: #9da5b2; }
-      .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper .dateFull .dateTime, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper .dateFull .dateTime {
-        color: #333; }
-      .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p {
-        margin-bottom: 0;
-        color: #666B76; }
-        .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper p strong, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper p strong {
-          font-weight: normal; }
-      .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a:hover .eventsContentPod .eventsContentPodWrapper h3, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link:hover .eventsContentPod .eventsContentPodWrapper h3 {
-        color: #3399BB;
-        text-decoration: underline; }
-        .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a:hover .eventsContentPod .eventsContentPodWrapper h3:after, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link:hover .eventsContentPod .eventsContentPodWrapper h3:after {
-          color: #3399BB; }
-
-/*************************
-CHECKBOXES EVENTS FILTERS
-*************************/
-.btn-group .btn, .btn-group .form-group input[type=button], .form-group .btn-group input[type=button], .btn-group .form-group input.btn.btn-primary, .form-group .btn-group input.btn.btn-primary, .btn-group .form-group input[type=submit], .form-group .btn-group input[type=submit], .btn-group .form-group input.limitedrte-Style-BUTTON, .form-group .btn-group input.limitedrte-Style-BUTTON, .btn-group .limitedrte-Style-BUTTON, .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .btn-group #myChatLinkInfo, .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .btn-group #myChatLinkInfo, .input-group-btn .btn, .input-group-btn .form-group input[type=button], .form-group .input-group-btn input[type=button], .input-group-btn .form-group input.btn.btn-primary, .form-group .input-group-btn input.btn.btn-primary, .input-group-btn .form-group input[type=submit], .form-group .input-group-btn input[type=submit], .input-group-btn .form-group input.limitedrte-Style-BUTTON, .form-group .input-group-btn input.limitedrte-Style-BUTTON, .input-group-btn .limitedrte-Style-BUTTON, .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .input-group-btn #myChatLinkInfo, .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .input-group-btn #myChatLinkInfo, .btn.btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary, .form-group input[type=submit], .limitedrte-Style-BUTTON, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo {
-  font-size: 18px;
-  padding: 20px 20px;
-  box-shadow: inset 0 0px 0px; }
-  .btn-group .btn:after, .btn-group .form-group input[type=button]:after, .form-group .btn-group input[type=button]:after, .btn-group .form-group input.btn.btn-primary:after, .form-group .btn-group input.btn.btn-primary:after, .btn-group .form-group input[type=submit]:after, .form-group .btn-group input[type=submit]:after, .btn-group .form-group input.limitedrte-Style-BUTTON:after, .form-group .btn-group input.limitedrte-Style-BUTTON:after, .btn-group .limitedrte-Style-BUTTON:after, .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .btn-group #myChatLinkInfo:after, .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .btn-group #myChatLinkInfo:after, .input-group-btn .btn:after, .input-group-btn .form-group input[type=button]:after, .form-group .input-group-btn input[type=button]:after, .input-group-btn .form-group input.btn.btn-primary:after, .form-group .input-group-btn input.btn.btn-primary:after, .input-group-btn .form-group input[type=submit]:after, .form-group .input-group-btn input[type=submit]:after, .input-group-btn .form-group input.limitedrte-Style-BUTTON:after, .form-group .input-group-btn input.limitedrte-Style-BUTTON:after, .input-group-btn .limitedrte-Style-BUTTON:after, .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .input-group-btn #myChatLinkInfo:after, .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .input-group-btn #myChatLinkInfo:after, .btn.btn-primary:after, .form-group input[type=button]:after, .form-group input.btn.btn-primary:after, .form-group input[type=submit]:after, .limitedrte-Style-BUTTON:after, #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after {
-    content: "";
-    display: none; }
-  .btn-group .btn:hover, .btn-group .form-group input[type=button]:hover, .form-group .btn-group input[type=button]:hover, .btn-group .form-group input.btn.btn-primary:hover, .form-group .btn-group input.btn.btn-primary:hover, .btn-group .form-group input[type=submit]:hover, .form-group .btn-group input[type=submit]:hover, .btn-group .form-group input.limitedrte-Style-BUTTON:hover, .form-group .btn-group input.limitedrte-Style-BUTTON:hover, .btn-group .limitedrte-Style-BUTTON:hover, .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .btn-group #myChatLinkInfo:hover, .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .btn-group #myChatLinkInfo:hover, .input-group-btn .btn:hover, .input-group-btn .form-group input[type=button]:hover, .form-group .input-group-btn input[type=button]:hover, .input-group-btn .form-group input.btn.btn-primary:hover, .form-group .input-group-btn input.btn.btn-primary:hover, .input-group-btn .form-group input[type=submit]:hover, .form-group .input-group-btn input[type=submit]:hover, .input-group-btn .form-group input.limitedrte-Style-BUTTON:hover, .form-group .input-group-btn input.limitedrte-Style-BUTTON:hover, .input-group-btn .limitedrte-Style-BUTTON:hover, .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .input-group-btn #myChatLinkInfo:hover, .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .input-group-btn #myChatLinkInfo:hover, .btn.btn-primary:hover, .form-group input[type=button]:hover, .form-group input.btn.btn-primary:hover, .form-group input[type=submit]:hover, .limitedrte-Style-BUTTON:hover, #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover {
-    background: #002a3f; }
-
-.eventsFilter .btn-group .btn, .eventsFilter .btn-group .form-group input[type=button], .form-group .eventsFilter .btn-group input[type=button], .eventsFilter .btn-group .form-group input.btn.btn-primary, .form-group .eventsFilter .btn-group input.btn.btn-primary, .eventsFilter .btn-group .form-group input[type=submit], .form-group .eventsFilter .btn-group input[type=submit], .eventsFilter .btn-group .form-group input.limitedrte-Style-BUTTON, .form-group .eventsFilter .btn-group input.limitedrte-Style-BUTTON, .eventsFilter .btn-group .limitedrte-Style-BUTTON, .eventsFilter .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .eventsFilter .btn-group #myChatLinkInfo, .eventsFilter .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .eventsFilter .btn-group #myChatLinkInfo, .eventsFilter .input-group-btn .btn, .eventsFilter .input-group-btn .form-group input[type=button], .form-group .eventsFilter .input-group-btn input[type=button], .eventsFilter .input-group-btn .form-group input.btn.btn-primary, .form-group .eventsFilter .input-group-btn input.btn.btn-primary, .eventsFilter .input-group-btn .form-group input[type=submit], .form-group .eventsFilter .input-group-btn input[type=submit], .eventsFilter .input-group-btn .form-group input.limitedrte-Style-BUTTON, .form-group .eventsFilter .input-group-btn input.limitedrte-Style-BUTTON, .eventsFilter .input-group-btn .limitedrte-Style-BUTTON, .eventsFilter .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .eventsFilter .input-group-btn #myChatLinkInfo, .eventsFilter .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .eventsFilter .input-group-btn #myChatLinkInfo {
-  height: 45px;
-  font-size: 18px;
-  padding: 6px 20px;
-  background: #006da5;
-  border-color: #006da5;
-  box-shadow: inset 0 0px 0px; }
-  .eventsFilter .btn-group .btn:hover, .eventsFilter .btn-group .form-group input[type=button]:hover, .form-group .eventsFilter .btn-group input[type=button]:hover, .eventsFilter .btn-group .form-group input[type=submit]:hover, .form-group .eventsFilter .btn-group input[type=submit]:hover, .eventsFilter .btn-group .limitedrte-Style-BUTTON:hover, .eventsFilter .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .eventsFilter .btn-group #myChatLinkInfo:hover, .eventsFilter .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .eventsFilter .btn-group #myChatLinkInfo:hover, .eventsFilter .input-group-btn .btn:hover, .eventsFilter .input-group-btn .form-group input[type=button]:hover, .form-group .eventsFilter .input-group-btn input[type=button]:hover, .eventsFilter .input-group-btn .form-group input[type=submit]:hover, .form-group .eventsFilter .input-group-btn input[type=submit]:hover, .eventsFilter .input-group-btn .limitedrte-Style-BUTTON:hover, .eventsFilter .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .eventsFilter .input-group-btn #myChatLinkInfo:hover, .eventsFilter .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .eventsFilter .input-group-btn #myChatLinkInfo:hover {
-    background: #002a3f; }
-
-.eventsFilterType .panel-body, .venuesFilterType .panel-body {
-  padding: 5px; }
-
-.eventsFilterType .check label, .venuesFilterType .check label {
-  width: 100%;
-  border-top: 1px solid;
-  border-color: #ededed;
-  background: #fff;
-  padding: 12px 10px 12px;
-  margin: 0px; }
-  .eventsFilterType .check label input[type=checkbox], .venuesFilterType .check label input[type=checkbox] {
-    width: auto;
-    height: auto !important;
-    min-height: auto; }
-
-/*CHECKBOXES EVENTS FILTERS END*/
-.events h1, .venues h1 {
-  display: none; }
-
-.eventsSearchHeader, venuesSearchHeader {
-  width: 100%;
-  font-family: "Open Sans", Arial; }
-
-.eventsSearchTitle, .venuesSearchTitle {
-  width: 60%;
-  float: left;
-  margin-bottom: 50px; }
-
-.eventsSearchTitle h3, .venuesSearchTitle h3 {
-  line-height: 1em;
-  font-size: 50px;
-  margin: 0px 0px 7px 0px; }
-
-.eventsSearchTitle p, .venuesSearchTitle p {
-  font-size: 36px !important;
-  color: #1E2A34;
-  line-height: 1em !important;
-  margin: 0px !important;
-  font-weight: 600; }
-
-.eventsSearchChange, .venuesSearchChange {
-  width: 40%;
-  float: right; }
-
-@media only screen and (max-width: 600px) {
-  .eventsSearchChange, .venuesSearchChange {
-    width: 40%;
-    float: right;
-    margin-bottom: 50px; } }
-
-.eventsSearchChange p, .venuesSearchChange p {
-  line-height: 1em;
-  margin: 0px 0px 10px;
-  font-size: 36px;
-  font-family: "Open Sans", Arial; }
-
-.eventsSearchChangeTitle, .venuesSearchChangeTitle {
-  width: 100%;
-  display: block; }
-
-.eventsSearchSort, .venuesSearchSort {
-  width: 100%;
-  background: #ffffff;
-  padding: 21px 20px 21px 20px;
-  border-bottom: 1px solid #E0E0E0;
-  height: 94px;
-  /*events fix*/ }
-
-@media only screen and (max-width: 600px) {
-  .eventsSearchSort, .venuesSearchSort {
-    padding: 15px; }
-  .selectedFilters a, .selectedFilters .link {
-    padding: 5px 40px 5px 10px;
-    /*events fix*/
-    width: 100%;
-    /*events fix*/
-    margin: 0 0 10px 0;
-    /*events fix*/
-    font-size: 14px;
-    /*events fix*/ } }
-
-#filterhide {
-  float: left;
-  padding: 0px 0 0 0px;
-  width: 100%; }
-  #filterhide a.btn, #filterhide .btn.link, #filterhide .form-group input.link[type=button], .form-group #filterhide input.link[type=button], #filterhide .form-group input.link[type=submit], .form-group #filterhide input.link[type=submit], #filterhide .link.limitedrte-Style-BUTTON, #filterhide #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a #filterhide .link#myChatLinkInfo, #filterhide a.limitedrte-Style-BUTTON, #filterhide #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a #filterhide a#myChatLinkInfo, #filterhide #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link #filterhide a#myChatLinkInfo, #filterhide #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link #filterhide #myChatLinkInfo.link {
-    padding: 15px 20px;
-    display: block;
-    background: #006da5;
-    border-color: #006da5;
-    box-shadow: inset 0 0 0; }
-    #filterhide a.btn:hover, #filterhide .btn.link:hover, #filterhide .form-group input.link[type=button]:hover, .form-group #filterhide input.link[type=button]:hover, #filterhide .form-group input.link[type=submit]:hover, .form-group #filterhide input.link[type=submit]:hover, #filterhide .link.limitedrte-Style-BUTTON:hover, #filterhide #myChatLinkContainer #myChatLink a .link#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a #filterhide .link#myChatLinkInfo:hover, #filterhide a.limitedrte-Style-BUTTON:hover, #filterhide #myChatLinkContainer #myChatLink a a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a #filterhide a#myChatLinkInfo:hover, #filterhide #myChatLinkContainer #myChatLink .link a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link #filterhide a#myChatLinkInfo:hover, #filterhide #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link:hover, #myChatLinkContainer #myChatLink .link #filterhide #myChatLinkInfo.link:hover, #filterhide a.btn:focus, #filterhide .btn.link:focus, #filterhide .form-group input.link[type=button]:focus, .form-group #filterhide input.link[type=button]:focus, #filterhide .form-group input.link[type=submit]:focus, .form-group #filterhide input.link[type=submit]:focus, #filterhide .link.limitedrte-Style-BUTTON:focus, #filterhide #myChatLinkContainer #myChatLink a .link#myChatLinkInfo:focus, #myChatLinkContainer #myChatLink a #filterhide .link#myChatLinkInfo:focus, #filterhide a.limitedrte-Style-BUTTON:focus, #filterhide #myChatLinkContainer #myChatLink a a#myChatLinkInfo:focus, #myChatLinkContainer #myChatLink a #filterhide a#myChatLinkInfo:focus, #filterhide #myChatLinkContainer #myChatLink .link a#myChatLinkInfo:focus, #myChatLinkContainer #myChatLink .link #filterhide a#myChatLinkInfo:focus, #filterhide #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link:focus, #myChatLinkContainer #myChatLink .link #filterhide #myChatLinkInfo.link:focus {
-      background: #002a3f;
-      border-color: #002a3f; }
-
-.mapToggle {
-  float: left; }
-  .mapToggle a.btn, .mapToggle .btn.link, .mapToggle .form-group input.link[type=button], .form-group .mapToggle input.link[type=button], .mapToggle .form-group input.link.btn.btn-primary, .form-group .mapToggle input.link.btn.btn-primary, .mapToggle .form-group input.link[type=submit], .form-group .mapToggle input.link[type=submit], .mapToggle .form-group input.link.limitedrte-Style-BUTTON, .form-group .mapToggle input.link.limitedrte-Style-BUTTON, .mapToggle .link.limitedrte-Style-BUTTON, .mapToggle #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .mapToggle .link#myChatLinkInfo, .mapToggle a.limitedrte-Style-BUTTON, .mapToggle #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .mapToggle a#myChatLinkInfo, .mapToggle #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .mapToggle a#myChatLinkInfo, .mapToggle #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .mapToggle #myChatLinkInfo.link {
-    display: inline-block;
-    font-size: 19.8px;
-    padding: 13px 20px;
-    height: 50px;
-    border-radius: 0px;
-    line-height: 1.2em;
-    background: #F5F7F8;
-    border: 1px solid #E0E0E0;
-    color: #34444B; }
-    .mapToggle a.btn:hover, .mapToggle .btn.link:hover, .mapToggle .form-group input.link[type=button]:hover, .form-group .mapToggle input.link[type=button]:hover, .mapToggle .form-group input.link[type=submit]:hover, .form-group .mapToggle input.link[type=submit]:hover, .mapToggle .link.limitedrte-Style-BUTTON:hover, .mapToggle #myChatLinkContainer #myChatLink a .link#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .mapToggle .link#myChatLinkInfo:hover, .mapToggle a.limitedrte-Style-BUTTON:hover, .mapToggle #myChatLinkContainer #myChatLink a a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .mapToggle a#myChatLinkInfo:hover, .mapToggle #myChatLinkContainer #myChatLink .link a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .mapToggle a#myChatLinkInfo:hover, .mapToggle #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link:hover, #myChatLinkContainer #myChatLink .link .mapToggle #myChatLinkInfo.link:hover, .mapToggle a.btn:focus, .mapToggle .btn.link:focus, .mapToggle .form-group input.link[type=button]:focus, .form-group .mapToggle input.link[type=button]:focus, .mapToggle .form-group input.link[type=submit]:focus, .form-group .mapToggle input.link[type=submit]:focus, .mapToggle .link.limitedrte-Style-BUTTON:focus, .mapToggle #myChatLinkContainer #myChatLink a .link#myChatLinkInfo:focus, #myChatLinkContainer #myChatLink a .mapToggle .link#myChatLinkInfo:focus, .mapToggle a.limitedrte-Style-BUTTON:focus, .mapToggle #myChatLinkContainer #myChatLink a a#myChatLinkInfo:focus, #myChatLinkContainer #myChatLink a .mapToggle a#myChatLinkInfo:focus, .mapToggle #myChatLinkContainer #myChatLink .link a#myChatLinkInfo:focus, #myChatLinkContainer #myChatLink .link .mapToggle a#myChatLinkInfo:focus, .mapToggle #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link:focus, #myChatLinkContainer #myChatLink .link .mapToggle #myChatLinkInfo.link:focus {
-      background: #BCC9CF;
-      color: #293238;
-      border-color: #BCC9CF; }
-  .mapToggle a.active, .mapToggle .active.link, .mapToggle a.active:hover, .mapToggle .active.link:hover, .mapToggle a.active:focus, .mapToggle .active.link:focus {
-    background: #000;
-    color: #293238;
-    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    border: none;
-    color: #fff; }
-  .mapToggle .btn-toggle-right {
-    margin-left: -4px; }
-
-.sortEvents, .sortVenues {
-  float: right; }
-  .sortEvents span, .sortVenues span {
-    font-weight: bold;
-    margin: 0px 0px 10px 0px;
-    font-family: "Open Sans", Arial;
-    text-transform: uppercase;
-    font-size: 18px;
-    background-color: transaparent;
-    text-align: center;
-    cursor: pointer;
-    min-width: 0px;
-    border-radius: 0px;
-    border: none;
-    color: #293238; }
-  .sortEvents select, .sortVenues select {
-    height: 40px;
-    margin: 0;
-    border-radius: 0px;
-    padding: 10px;
-    background: #fff;
-    border: 1px solid #D0DCE8;
-    max-width: 150px; }
-
-.eventSearchResults .page_navigation, .venuesSearchResults .page_navigation {
-  text-align: right; }
-
-.eventsSearchChange, .venuesSearchChange {
-  margin-top: 40px; }
-  .eventsSearchChange input[type="text"], .venuesSearchChange input[type="text"] {
-    border-color: #EFF3F7;
-    background: #EFF3F7;
-    margin: 0;
-    line-height: 2.2em;
-    min-height: 30px;
-    padding: 0px 10px;
-    width: 70%;
-    height: 45px !important;
-    float: left;
-    font-size: 1em; }
-  .eventsSearchChange .button, .venuesSearchChange .button {
-    float: left;
-    width: 30%;
-    background: #3498DB;
-    border-radius: 0px;
-    border: none;
-    text-shadow: none;
-    height: 39px !important;
-    min-height: 45px !important;
-    margin-left: 0px;
-    border: 1px solid #3498DB;
-    color: #fff;
-    font-weight: normal;
-    margin: 0px;
-    text-align: center;
-    line-height: 40px; }
-    .eventsSearchChange .button:hover, .eventsSearchChange .button:focus, .venuesSearchChange .button:hover, .venuesSearchChange .button:focus {
-      background: #fff;
-      color: #3498DB !important; }
-
-.reset {
-  font-size: 0.9em;
-  color: #006da5;
-  text-decoration: underline;
-  cursor: pointer; }
-  .reset:hover {
-    color: #000; }
-
-.resetIcon {
-  float: left;
-  margin: 0px;
-  margin: 6px 6px 0px 0px;
-  height: 10px;
-  width: 10px; }
-  .resetIcon:after {
-    font-family: FontAwesome;
-    content: "\f021";
-    font-size: 12px;
-    margin-top: -2px;
-    float: right; }
-
-.eventsContentPod, .venuesContentPod {
-  position: relative;
-  padding: 20px !important;
-  background: #F5F7F8;
-  margin: 0 0 20px 0;
-  color: #1E2A34;
-  -webkit-box-shadow: 2px 2px 0px 0px #ccd5d7;
-  -moz-box-shadow: 2px 2px 0px 0px #ccd5d7;
-  box-shadow: 2px 2px 0px 0px #ccd5d7; }
-  .eventsContentPod:after, .venuesContentPod:after {
-    font-family: FontAwesome;
-    content: "\f105";
-    font-size: 35px;
-    right: 0px;
-    top: 50%;
-    margin-top: -30px;
-    position: absolute;
-    padding: 0px 15px;
-    color: #006da5; }
-  .eventsContentPod:hover, .venuesContentPod:hover {
-    background: #d7dfe3; }
-  .eventsContentPod.image, .venuesContentPod.image {
-    padding: 0px !important;
-    border: none; }
-    .eventsContentPod.image .eventsContentPodWrapper, .venuesContentPod.image .eventsContentPodWrapper {
-      display: table;
-      width: 90%;
-      position: relative;
-      overflow: hidden;
-      height: 100%; }
-      .eventsContentPod.image .eventsContentPodWrapper .removeSidePadding, .venuesContentPod.image .eventsContentPodWrapper .removeSidePadding {
-        background: #006da5;
-        position: absolute;
-        height: 100%;
-        top: 0px;
-        bottom: 0px; }
-      .eventsContentPod.image .eventsContentPodWrapper .paddingTopBottom, .venuesContentPod.image .eventsContentPodWrapper .paddingTopBottom {
-        background: #fff;
-        float: right;
-        min-height: 210px; }
-    .eventsContentPod.image img, .venuesContentPod.image img {
-      width: 100%;
-      max-width: 100%; }
-    .eventsContentPod.image .dateFull, .venuesContentPod.image .dateFull {
-      display: block;
-      padding: 15px;
-      text-align: center; }
-      .eventsContentPod.image .dateFull .dateTime, .venuesContentPod.image .dateFull .dateTime {
-        float: none;
-        color: #fff;
-        font-size: 18px;
-        font-style: normal;
-        font-family: "Open Sans", Arial; }
-        .eventsContentPod.image .dateFull .dateTime .dateIcon, .venuesContentPod.image .dateFull .dateTime .dateIcon {
-          height: 25px; }
-    @media only screen and (max-width: 600px) {
-      .eventsContentPod.image img, .venuesContentPod.image img {
-        width: 50%;
-        float: left; }
-      .eventsContentPod.image .dateFull, .venuesContentPod.image .dateFull {
-        float: left;
-        width: 50%; }
-      .eventsContentPod.image.image .removeSidePadding, .venuesContentPod.image.image .removeSidePadding {
-        position: relative; }
-      .eventsContentPod.image.image .paddingTopBottom, .venuesContentPod.image.image .paddingTopBottom {
-        min-height: auto; } }
-    @media only screen and (max-width: 400px) {
-      .eventsContentPod.image img, .venuesContentPod.image img {
-        width: 100%;
-        float: left; }
-      .eventsContentPod.image .dateFull, .venuesContentPod.image .dateFull {
-        float: left;
-        width: 100%; } }
-    @media only screen and (max-width: 600px) {
-      .eventsContentPod.image .eventsContentPodWrapper, .venuesContentPod.image .eventsContentPodWrapper {
-        width: 100%; }
-        .eventsContentPod.image .eventsContentPodWrapper .paddingTopBottom, .eventsContentPod.image .eventsContentPodWrapper .removeSidePadding, .venuesContentPod.image .eventsContentPodWrapper .paddingTopBottom, .venuesContentPod.image .eventsContentPodWrapper .removeSidePadding {
-          width: 100%; } }
-  .eventsContentPod h3, .venuesContentPod h3 {
-    margin-top: 0px;
-    color: #006da5; }
-  .eventsContentPod p.eventLocation, .venuesContentPod p.eventLocation {
-    font-weight: bold;
-    margin: 5px 0 10px 0; }
-
-.venuesContentPod {
-  margin: 0 0 0px 0; }
-
-.eventsContentPodImage, .venuesContentPodImage {
-  margin: 0px 0px 5px 0px; }
-
-.eventSearchResults .contentPod img, .venues .contentPod img, .venuesSearchResults .contentPod img, .venues .contentPod img {
-  border: 2px solid #ECF0F1; }
-
-.eventsContentPodWrapper, .venuesContentPodWrapper {
-  display: inline-block;
-  width: 85%; }
-
-.dateFull {
-  display: inline-block; }
-
-.dateTime {
-  float: left;
-  margin: 4px 0px;
-  font-style: italic;
-  color: #293238; }
-
-.eventsFilterHeader, .venuesFilterHeader {
-  padding: 25px 15px 14px 25px;
-  margin: -1px -1px 0 -1px;
-  border-bottom: 1px solid #E0E0E0;
-  height: 95px;
-  /*events fix*/ }
-  .eventsFilterHeader h2, .venuesFilterHeader h2 {
-    font-size: 26.1px;
-    text-transform: uppercase;
-    line-height: 1.2em;
-    padding: 0px;
-    margin: 0px;
-    font-weight: normal;
-    color: #000; }
-
-.iconLeft.filterIcon {
-  margin: -4px 10px 0px 0; }
-  .iconLeft.filterIcon:after {
-    font-family: FontAwesome;
-    content: "\f1de";
-    font-size: 25px;
-    color: #000;
-    margin-top: -5px; }
-
-@media only screen and (max-width: 991px) {
-  #eventSearchResultsMap .selectedFilters {
-    padding: 10px 15px 10px;
-    /*events fix*/ }
-  .eventsFilterHeader, .venuesFilterHeader {
-    height: 85px;
-    /*events fix*/
-    padding: 25px 15px 15px 30px;
-    background: #006da5 !important;
-    margin: -1px 0 0 -1px;
-    border-bottom: none; }
-    .eventsFilterHeader .filterIcon:after, .eventsFilterHeader a, .eventsFilterHeader .link, .venuesFilterHeader .filterIcon:after, .venuesFilterHeader a, .venuesFilterHeader .link {
-      color: #fff; }
-    .eventsFilterHeader h2, .venuesFilterHeader h2 {
-      color: #fff;
-      margin-top: -5px; }
-  .eventsSearchSort, .venuesSearchSort {
-    height: auto;
-    /*events fix*/ }
-  .eventsSearchSort, .venuesSearchSort {
-    height: auto !important;
-    display: inline-block;
-    background: #F5F7F8;
-    padding: 15px 15px 15px; }
-  .mapToggle a.btn, .mapToggle .btn.link, .mapToggle .form-group input.link[type=button], .form-group .mapToggle input.link[type=button], .mapToggle .form-group input.link.btn.btn-primary, .form-group .mapToggle input.link.btn.btn-primary, .mapToggle .form-group input.link[type=submit], .form-group .mapToggle input.link[type=submit], .mapToggle .form-group input.link.limitedrte-Style-BUTTON, .form-group .mapToggle input.link.limitedrte-Style-BUTTON, .mapToggle .link.limitedrte-Style-BUTTON, .mapToggle #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .mapToggle .link#myChatLinkInfo, .mapToggle a.limitedrte-Style-BUTTON, .mapToggle #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .mapToggle a#myChatLinkInfo, .mapToggle #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .mapToggle a#myChatLinkInfo, .mapToggle #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .mapToggle #myChatLinkInfo.link {
-    width: 49.9%;
-    /*events fix*/ }
-  .selectedFilters a, .selectedFilters .link {
-    width: 48%;
-    /*events fix*/
-    margin: 0 1% 10px 0;
-    /*events fix*/ }
-  .eventsFilter.col-md-3, .venuesFilter.col-md-3 {
-    width: 100%;
-    /*events fix*/
-    left: -120%;
-    /*events fix*/
-    top: 80px;
-    /*events fix*/ } }
-
-@media only screen and (max-width: 700px) {
-  .selectedFilters a, .selectedFilters .link {
-    padding: 5px 40px 5px 10px;
-    /*events fix*/
-    width: 100%;
-    /*events fix*/
-    margin: 0 0 10px 0;
-    /*events fix*/
-    font-size: 14px;
-    /*events fix*/ } }
-
-.eventsFilterType, .venuesFilterType {
-  padding: 0px 15px 7px 15px; }
-  .eventsFilterType h3, .venuesFilterType h3 {
-    margin: 15px 0px 15px 0px;
-    font-size: 21.6px;
-    text-transform: uppercase;
-    display: inline-block; }
-  .eventsFilterType label, .venuesFilterType label {
-    padding: 0px;
-    margin: 0;
-    float: left;
-    margin: 2px;
-    font-weight: 500; }
-  .eventsFilterType input, .eventsFilterType select, .venuesFilterType input, .venuesFilterType select {
-    margin: 0;
-    border-radius: 0 0 0 0;
-    line-height: 2.2em;
-    min-height: 30px;
-    padding: 10px;
-    height: 45px !important;
-    font-size: 1em;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    border: 1px solid #E0E0E0; }
-  .eventsFilterType select, .venuesFilterType select {
-    width: 170px;
-    float: none; }
-  .eventsFilterType .columns, .venuesFilterType .columns {
-    width: 100%; }
-  .eventsFilterType a.viewMore, .eventsFilterType .viewMore.link, .venuesFilterType a.viewMore, .venuesFilterType .viewMore.link {
-    display: block;
-    margin-top: 10px;
-    text-transform: uppercase;
-    padding: 0 0px 0 20px;
-    width: 100%;
-    clear: left; }
-    .eventsFilterType a.viewMore:hover, .eventsFilterType .viewMore.link:hover, .venuesFilterType a.viewMore:hover, .venuesFilterType .viewMore.link:hover {
-      color: #293238;
-      cursor: pointer; }
-  .eventsFilterType a.viewHide, .eventsFilterType .viewHide.link, .venuesFilterType a.viewHide, .venuesFilterType .viewHide.link {
-    display: block;
-    margin-top: 10px;
-    text-transform: uppercase;
-    padding: 0 0px 0 20px;
-    width: 100%;
-    clear: left; }
-    .eventsFilterType a.viewHide:hover, .eventsFilterType .viewHide.link:hover, .venuesFilterType a.viewHide:hover, .venuesFilterType .viewHide.link:hover {
-      color: #293238;
-      cursor: pointer; }
-
-#googleMap {
-  width: 100%;
-  height: 500px;
-  margin-bottom: 30px; }
-
-#map-canvas {
-  width: 100%;
-  height: 550px; }
-  #map-canvas img {
-    float: none !important;
-    padding: 0px !important;
-    border: 0px !important;
-    margin: 0px !important;
-    background: none !important; }
-
-.eventSearchResults #paging, .venuesSearchResults #paging,
-.eventSearchResults #eventsList, .venuesSearchResults #eventsList {
-  margin: 0px 0;
-  float: left;
-  width: 100%; }
-  .eventSearchResults #paging h2, .venuesSearchResults #paging h2,
-  .eventSearchResults #eventsList h2, .venuesSearchResults #eventsList h2 {
-    font-size: 27px;
-    margin: 0px 0px 5px 0; }
-    .eventSearchResults #paging h2 span, .venuesSearchResults #paging h2 span,
-    .eventSearchResults #eventsList h2 span, .venuesSearchResults #eventsList h2 span {
-      color: #1E2A34; }
-
-.eventSearchResults.page_navigation, .alt_page_navigation, .venuesSearchResults.page_navigation, .alt_page_navigation {
-  margin: 0px; }
-
-.eventSearchResults#paging .info_text, .venuesSearchResultsSearchResults#paging .info_text {
-  margin-top: -9px; }
-
-.eventSearchResults .events .page_navigation, .alt_page_navigation, .venuesSearchResultsSearchResults .events .page_navigation, .alt_page_navigation {
-  margin-top: -4px; }
-
-.eventSearchResults .userControl .page_navigation a, .eventSearchResults .userControl .page_navigation .link, .page_navigation a, .page_navigation .link, .alt_page_navigation a, .alt_page_navigation .link, .venuesSearchResultsSearchResults .userControl .page_navigation a, .venuesSearchResultsSearchResults .userControl .page_navigation .link, .page_navigation a, .page_navigation .link, .alt_page_navigation a, .alt_page_navigation .link {
-  margin: 0px 2px; }
-
-#categoryOverflow {
-  display: none; }
-
-.eventSearchResults #paging .paging, .venueSearchResults #paging .paging {
-  padding: 5px 15px;
-  clear: left; }
-
-@media only screen and (max-width: 800px) {
-  .container .quarter.column {
-    width: 100%;
-    margin: 0 0% 0 0%; }
-  .threeQuarters {
-    width: 100%;
-    margin: 0 0% 0 0%; }
-  .eventsFilter, .venuesFilter {
-    padding: 0px 0px 0px 0px; } }
-
-@media only screen and (max-width: 600px) {
-  .eventsSearchTitle, .venuesSearchTitle {
-    width: 100%;
-    margin-bottom: 20px; }
-  .eventsSearchTitle h3, .venuesSearchTitle h3 {
-    margin: 0px; }
-  .eventsSearchChange, .venuesSearchChange {
-    width: 100%; }
-  #googleMap {
-    width: 100%;
-    height: 300px; }
-  #map-canvas {
-    width: 100%;
-    height: 300px; }
-  .eventSearchResults .page_navigation, .venuesSearchResults .page_navigation {
-    text-align: center !important;
-    margin-bottom: 10px; } }
-
-.searchDate:after, .searchDate:before {
-  font-family: FontAwesome;
-  font-size: 20px; }
-
-.searchDate:after {
-  content: "\f073"; }
-
-.dateIcon {
-  font-style: normal; }
-  .dateIcon:after, .dateIcon:before {
-    font-family: FontAwesome;
-    font-size: 20px; }
-  .dateIcon:after {
-    content: "\f073"; }
-
-.listIcon:after, .listIcon:before {
-  font-family: FontAwesome;
-  font-size: 20px; }
-
-.listIcon:after {
-  content: "\f00b"; }
-
-.mapIcon:after, .mapIcon:before {
-  font-family: FontAwesome;
-  font-size: 20px; }
-
-.mapIcon:after {
-  content: "\f041"; }
-
-.iconLeft {
-  float: left;
-  margin: 0px 5px 0px 0px; }
-
-.iconRight {
-  float: right;
-  margin: 0px 0px 0px 5px; }
-
-.iconTwenty {
-  height: 20px;
-  width: 20px; }
-
-.backIcon {
-  margin: 2px 10px 0px -3px; }
-
-.printIcon {
-  margin: 2px -3px 0px 12px; }
-
-.forwardIcon {
-  margin: 2px -3px 0px 12px; }
-
-/*EVENT SEARCH RESULTS END*/
-/*SEARCH RESULTS FILTER - RESPONSIVE*/
-#filterhide {
-  display: none;
-  cursor: pointer; }
-
-#closeIcon {
-  display: none; }
-
-#filterCloseButton {
-  display: none;
-  margin: 30px 0; }
-
-#filterCloseButton .btn, #filterCloseButton .form-group input[type=button], .form-group #filterCloseButton input[type=button], #filterCloseButton .form-group input[type=submit], .form-group #filterCloseButton input[type=submit], #filterCloseButton .limitedrte-Style-BUTTON, #filterCloseButton #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a #filterCloseButton #myChatLinkInfo, #filterCloseButton #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #filterCloseButton #myChatLinkInfo {
-  display: block;
-  padding: 15px 20px;
-  display: block;
-  background: #006da5;
-  border-color: #006da5;
-  box-shadow: inset 0 0 0; }
-  #filterCloseButton .btn:hover, #filterCloseButton .form-group input[type=button]:hover, .form-group #filterCloseButton input[type=button]:hover, #filterCloseButton .form-group input[type=submit]:hover, .form-group #filterCloseButton input[type=submit]:hover, #filterCloseButton .limitedrte-Style-BUTTON:hover, #filterCloseButton #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a #filterCloseButton #myChatLinkInfo:hover, #filterCloseButton #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link #filterCloseButton #myChatLinkInfo:hover, #filterCloseButton .btn:focus, #filterCloseButton .form-group input[type=button]:focus, .form-group #filterCloseButton input[type=button]:focus, #filterCloseButton .form-group input[type=submit]:focus, .form-group #filterCloseButton input[type=submit]:focus, #filterCloseButton .limitedrte-Style-BUTTON:focus, #filterCloseButton #myChatLinkContainer #myChatLink a #myChatLinkInfo:focus, #myChatLinkContainer #myChatLink a #filterCloseButton #myChatLinkInfo:focus, #filterCloseButton #myChatLinkContainer #myChatLink .link #myChatLinkInfo:focus, #myChatLinkContainer #myChatLink .link #filterCloseButton #myChatLinkInfo:focus {
-    background: #002a3f;
-    border-color: #002a3f;
-    color: #fff; }
-
-.eventsFilter.col-md-3 .mapIcon, .venuesFilter.col-md-3 .mapIcon {
-  text-indent: 30px;
-  /*events fix*/
-  margin-top: -10px;
-  /*events fix*/ }
-
-@media only screen and (max-width: 991px) {
-  #filterhide {
-    display: inline-block; }
-  .eventsFilterHeader, .venuesFilterHeader {
-    /*margin-top:20px;*/
-    position: relative; }
-  .mapToggle {
-    width: 100%;
-    margin-bottom: 15px; }
-  .eventsFilterType .mapToggle {
-    margin: 20px 0 5px 0; }
-  .mapToggle a.btn, .mapToggle .btn.link, .mapToggle .form-group input.link[type=button], .form-group .mapToggle input.link[type=button], .mapToggle .form-group input.link.btn.btn-primary, .form-group .mapToggle input.link.btn.btn-primary, .mapToggle .form-group input.link[type=submit], .form-group .mapToggle input.link[type=submit], .mapToggle .form-group input.link.limitedrte-Style-BUTTON, .form-group .mapToggle input.link.limitedrte-Style-BUTTON, .mapToggle .link.limitedrte-Style-BUTTON, .mapToggle #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .mapToggle .link#myChatLinkInfo, .mapToggle a.limitedrte-Style-BUTTON, .mapToggle #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .mapToggle a#myChatLinkInfo, .mapToggle #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .mapToggle a#myChatLinkInfo, .mapToggle #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .mapToggle #myChatLinkInfo.link {
-    width: 50%; }
-  .hide800 {
-    display: none; }
-  #filterCloseButton {
-    display: block; }
-  .eventsFilter.col-md-3, .venuesFilter.col-md-3 {
-    position: absolute;
-    z-index: 2000;
-    border: none; }
-  .eventsFilter.active, .venuesFilter.active {
-    background: #fff;
-    border-bottom: 1px solid #E0E0E0;
-    left: 0px;
-    transition: all 0.2s linear;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear; }
-  #closeIcon {
-    display: block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    background: white;
-    width: 85px;
-    height: 85px;
-    float: right;
-    text-indent: -10000em;
-    cursor: pointer; }
-    #closeIcon:after {
-      font-family: fontAwesome;
-      content: "\f00d";
-      right: 10px;
-      top: 50%;
-      left: 50%;
-      margin: -25px 0 0 -14px;
-      text-indent: 0px;
-      color: #006da5;
-      position: absolute;
-      font-size: 35px; }
-    #closeIcon:hover {
-      background: rgba(0, 0, 0, 0.5); } }
-
-@media only screen and (max-width: 500px) {
-  .mapToggle a.btn, .mapToggle .btn.link, .mapToggle .form-group input.link[type=button], .form-group .mapToggle input.link[type=button], .mapToggle .form-group input.link.btn.btn-primary, .form-group .mapToggle input.link.btn.btn-primary, .mapToggle .form-group input.link[type=submit], .form-group .mapToggle input.link[type=submit], .mapToggle .form-group input.link.limitedrte-Style-BUTTON, .form-group .mapToggle input.link.limitedrte-Style-BUTTON, .mapToggle .link.limitedrte-Style-BUTTON, .mapToggle #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .mapToggle .link#myChatLinkInfo, .mapToggle a.limitedrte-Style-BUTTON, .mapToggle #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .mapToggle a#myChatLinkInfo, .mapToggle #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .mapToggle a#myChatLinkInfo, .mapToggle #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .mapToggle #myChatLinkInfo.link {
-    padding: 13px 10px; } }
-
-/*SEARCH RESULTS FILTER - RESPONSIVE END*/
-/*****************
-EVENT DETAILS
-*****************/
-.mainContentArticle {
-  margin-bottom: 40px; }
-  .mainContentArticle img {
-    float: right;
-    padding: 10px;
-    border: 1px solid #ECF0F1;
-    margin: 0px 0px 15px 15px;
-    background: #fff; }
-
-.eventBottomButtons {
-  width: 100%; }
-
-.eventSponsors {
-  width: 100%;
-  margin-top: 30px; }
-  .eventSponsors img {
-    float: left;
-    height: 100px;
-    margin: 0px 10px 10px 0px; }
-
-.venueMap {
-  clear: left; }
-
-.eventDetailsBlock a.btn, .eventDetailsBlock .btn.link, .eventDetailsBlock .form-group input.link[type=button], .form-group .eventDetailsBlock input.link[type=button], .eventDetailsBlock .form-group input.link.btn.btn-primary, .form-group .eventDetailsBlock input.link.btn.btn-primary, .eventDetailsBlock .form-group input.link[type=submit], .form-group .eventDetailsBlock input.link[type=submit], .eventDetailsBlock .form-group input.link.limitedrte-Style-BUTTON, .form-group .eventDetailsBlock input.link.limitedrte-Style-BUTTON, .eventDetailsBlock .link.limitedrte-Style-BUTTON, .eventDetailsBlock #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .eventDetailsBlock .link#myChatLinkInfo, .eventDetailsBlock a.limitedrte-Style-BUTTON, .eventDetailsBlock #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .eventDetailsBlock a#myChatLinkInfo, .eventDetailsBlock #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .eventDetailsBlock a#myChatLinkInfo, .eventDetailsBlock #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .eventDetailsBlock #myChatLinkInfo.link {
-  display: block; }
-
-.eventDetailsBlock.active a, .eventDetailsBlock.active .link {
-  background: #ECF0F1 !important; }
-
-.eventDetails {
-  margin-bottom: 20px; }
-
-.eventAction {
-  width: 100%; }
-  .eventAction a, .eventAction .link, .eventAction a:visited, .eventAction .link:visited {
-    width: 100%;
-    padding: 20px 0px;
-    color: #ffffff;
-    background: #006da5;
-    font-size: 1.5em;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    border: 2px solid #006da5;
-    font-family: "Open Sans", Arial; }
-    .eventAction a:hover, .eventAction .link:hover, .eventAction a:focus, .eventAction .link:focus, .eventAction a:visited:hover, .eventAction .link:visited:hover, .eventAction a:visited:focus, .eventAction .link:visited:focus {
-      background: #fff;
-      color: #006da5; }
-
-.eventVenue {
-  margin: 0px 4% 30px 0px; }
-
-.eventDetailsBlock {
-  padding: 20px;
-  position: relative;
-  background: #EEF2F7;
-  word-wrap: break-word;
-  float: left;
-  width: 100%;
-  font-family: "Open Sans", Arial; }
-  .eventDetailsBlock h2, .eventDetailsBlock h3, .eventDetailsBlock h4 {
-    font-size: 1.5em;
-    margin: 0 0 10px 0;
-    width: 100%; }
-  .eventDetailsBlock.eventCost {
-    background: #dde5ef; }
-  .eventDetailsBlock p {
-    margin: 0px; }
-    .eventDetailsBlock p.cost {
-      font-size: 3em;
-      font-weight: bold;
-      line-height: 1em;
-      color: #1E2A34; }
-  .eventDetailsBlock .eventDeatilsIcon {
-    position: absolute;
-    right: 0px;
-    top: 0px; }
-  .eventDetailsBlock #googleMap {
-    height: 250px;
-    border: 2px solid #A6B8BD;
-    margin-bottom: 15px; }
-  .eventDetailsBlock a.btn, .eventDetailsBlock .btn.link, .eventDetailsBlock .form-group input.link[type=button], .form-group .eventDetailsBlock input.link[type=button], .eventDetailsBlock .form-group input.link.btn.btn-primary, .form-group .eventDetailsBlock input.link.btn.btn-primary, .eventDetailsBlock .form-group input.link[type=submit], .form-group .eventDetailsBlock input.link[type=submit], .eventDetailsBlock .form-group input.link.limitedrte-Style-BUTTON, .form-group .eventDetailsBlock input.link.limitedrte-Style-BUTTON, .eventDetailsBlock .link.limitedrte-Style-BUTTON, .eventDetailsBlock #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .eventDetailsBlock .link#myChatLinkInfo, .eventDetailsBlock a.limitedrte-Style-BUTTON, .eventDetailsBlock #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .eventDetailsBlock a#myChatLinkInfo, .eventDetailsBlock #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .eventDetailsBlock a#myChatLinkInfo, .eventDetailsBlock #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .eventDetailsBlock #myChatLinkInfo.link {
-    margin-top: 15px; }
-
-.half {
-  width: 48%;
-  margin-top: 10px; }
-
-@media only screen and (max-width: 600px) {
-  .half {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px; } }
-
-.eventDetailsBlockIcon {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 24px;
-  right: 20px; }
-
-.eventDetailsBlockIconVenue {
-  font-style: normal; }
-  .eventDetailsBlockIconVenue:after, .eventDetailsBlockIconVenue:before {
-    font-family: FontAwesome;
-    font-size: 20px; }
-  .eventDetailsBlockIconVenue:before {
-    content: "\f041";
-    margin: 0px 10px 0px 0;
-    position: relative;
-    top: -10px;
-    font-size: 25px; }
-
-.eventDetailsBlockIconContact {
-  font-style: normal; }
-  .eventDetailsBlockIconContact:after, .eventDetailsBlockIconContact:before {
-    font-family: FontAwesome;
-    font-size: 20px; }
-  .eventDetailsBlockIconContact:before {
-    content: "\f095";
-    margin: 0px 10px 0px 0;
-    position: relative;
-    top: -10px;
-    font-size: 25px; }
-
-.allDates {
-  display: none; }
-
-@media only screen and (max-width: 700px) {
-  .eventBottomButtons {
-    display: none; } }
-
-@media only screen and (max-width: 500px) {
-  .mainContentArticle img {
-    display: none; }
-  .eventSponsors img {
-    display: inline; } }
-
-/*EVENT DETAILS END*/
-.col-md-9.contentBackground {
-  padding: 0px; }
-
-.col-md-9.contentBackground #paging {
-  padding: 20px;
-  background: #fff; }
-
-.col-md-9.contentBackground {
-  background: #fff;
-  padding: 0px; }
-
-ul.content {
-  margin: 0;
-  padding: 20px 0 0 0;
-  list-style: none;
-  clear: left;
-  border-top: 1px solid #E0E0E0; }
-  ul.content li {
-    padding: 0; }
-
-.eventsFilterSortContainer {
-  border: 1px solid #E0E0E0;
-  position: relative;
-  margin-bottom: 50px;
-  background: #F5F7F8; }
-
-@media only screen and (max-width: 769px) {
-  .eventsFilterSortContainer {
-    margin: 0 0 25px 0; } }
-
-.eventsFilter.col-md-3, .venuesFilter.col-md-3 {
-  padding: 0px; }
-
-.venueBottomButtons {
-  width: 100%;
-  display: inline-block;
-  margin-bottom: 80px; }
-
-@media only screen and (max-width: 400px) {
-  .venueBottomButtons a.btn, .venueBottomButtons .btn.link, .venueBottomButtons .form-group input.link[type=button], .form-group .venueBottomButtons input.link[type=button], .venueBottomButtons .form-group input.link.btn.btn-primary, .form-group .venueBottomButtons input.link.btn.btn-primary, .venueBottomButtons .form-group input.link[type=submit], .form-group .venueBottomButtons input.link[type=submit], .venueBottomButtons .form-group input.link.limitedrte-Style-BUTTON, .form-group .venueBottomButtons input.link.limitedrte-Style-BUTTON, .venueBottomButtons .link.limitedrte-Style-BUTTON, .venueBottomButtons #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .venueBottomButtons .link#myChatLinkInfo, .venueBottomButtons a.limitedrte-Style-BUTTON, .venueBottomButtons #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .venueBottomButtons a#myChatLinkInfo, .venueBottomButtons #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .venueBottomButtons a#myChatLinkInfo, .venueBottomButtons #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .venueBottomButtons #myChatLinkInfo.link {
-    width: 100%;
-    margin-bottom: 10px; } }
-
-a.additionalData.events, .additionalData.events.link {
-  color: #006da5;
-  font-family: "Open Sans", Arial;
-  padding: 10px 20px 10px 40px;
-  display: inline-block;
-  margin: 0px 0px 20px;
-  width: 100%;
-  border-width: 0px 1px 1px;
-  border-style: solid;
-  border-color: #E0E0E0;
-  text-transform: uppercase;
-  cursor: pointer; }
-  a.additionalData.events:hover, .additionalData.events.link:hover {
-    text-decoration: none;
-    color: #1E2A34; }
-
-.content .row {
-  margin: 0px; }
-
-ul.simple-pagination {
-  list-style: none; }
-
-.simple-pagination {
-  display: block;
-  padding: 0;
-  margin: 20px 0;
-  float: left; }
-
-.simple-pagination ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-
-.simple-pagination li {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  float: left; }
-
-@media only screen and (max-width: 700px) {
-  .simple-pagination {
-    float: none; }
-    .simple-pagination li {
-      width: 50%;
-      display: none; }
-      .simple-pagination li:first-of-type, .simple-pagination li:last-of-type {
-        display: block; }
-      .simple-pagination li span, .simple-pagination li a, .simple-pagination li .link {
-        width: 100%; }
-  .eventSearchResults #paging .paging, .venueSearchResults #paging .paging {
-    padding: 0px; } }
-
-.light-theme a, .light-theme .link, .light-theme span {
-  float: left;
-  color: #293238 !important;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: normal;
-  text-align: center;
-  border: 1px solid #A6B8BD;
-  min-width: 14px;
-  padding: 3px 10px;
-  margin: 0 5px 0 0;
-  border-radius: 0;
-  box-shadow: 0;
-  background: #fff; }
-
-.light-theme a:hover, .light-theme .link:hover {
-  text-decoration: none;
-  background: #ECF0F1; }
-
-.light-theme .current {
-  background: #ECF0F1;
-  color: #293238;
-  -webkit-box-shadow: inset -10px 10px 8px -13px #333333;
-  -moz-box-shadow: inset -10px 10px 8px -13px #333333;
-  box-shadow: inset -10px 10px 8px -13px #333333;
-  cursor: default; }
-
-.light-theme .ellipse {
-  background: none;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  font-weight: bold;
-  cursor: default; }
-
-.dateBox {
-  border: 1px solid #D5DFEA;
-  background: #EFF3F7;
-  float: left;
-  width: 99.8%;
-  margin-bottom: 10px; }
-
-ul.date-list {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-
-.dateBox h2 {
-  background-color: #fff;
-  background-position: 15px 50%;
-  border-bottom: 1px solid #D5DFEA;
-  padding: 20px;
-  font-size: 1.3em;
-  margin: 0px; }
-
-.dateBox li {
-  background: #DFE7EF;
-  border: 1px solid #D5DFEA;
-  width: 29.333%;
-  margin: 2%;
-  float: left; }
-
-@media (max-width: 500px) {
-  .dateBox li {
-    width: 96%;
-    margin: 2%; } }
-
-.dateBox li h2 {
-  padding: 15px;
-  text-align: left;
-  font-size: 1.1em;
-  font-weight: bold;
-  text-align: center; }
-
-.dateBox li h2 span {
-  color: #1E2A34;
-  font-size: 1.2em;
-  width: 100%;
-  display: inline-block; }
-
-.dateBox p {
-  padding: 15px;
-  color: #2C3E50;
-  text-align: center;
-  font-size: 15px; }
-
-.dateBox p span {
-  font-size: 1.4em;
-  font-weight: bold;
-  width: 100%;
-  display: inline-block; }
-
-.dateBox a, .dateBox .link {
-  border-top: 1px solid #D5DFEA;
-  background-position: 15px 50%;
-  padding: 15px 15px 15px 20px;
-  display: inline-block;
-  width: 100%;
-  font-size: 1.2em;
-  font-weight: bold;
-  cursor: pointer; }
-
-.dateBox a:hover, .dateBox .link:hover {
-  background-color: #D5DFEA;
-  text-decoration: none; }
-
-.contentBox {
-  display: block;
-  border: 1px solid #D5DFEA;
-  background: #fff;
-  margin: 20px 0;
-  float: left;
-  width: 100%; }
-
-.contentBoxBorder {
-  display: block;
-  border: 1px solid #D5DFEA;
-  margin: 20px 0;
-  width: 99.8%;
-  float: left; }
-
-.contentBox .innerContentBox, .contentBoxBorder .innerContentBox {
-  display: block;
-  padding: 15px; }
-
-.innerContentNoPadding {
-  display: block;
-  background: #fff;
-  position: relative;
-  min-height: 50px; }
-
-.innerContentNoPadding p {
-  padding: 20px;
-  margin: 0px; }
-
-.innerContentPadding {
-  display: block;
-  background: #fff;
-  padding: 20px; }
-
-.contentBox h2, .contentBoxBorder h2 {
-  border-bottom: 1px solid #D5DFEA;
-  padding: 15px;
-  font-size: 1.5em;
-  margin: 0px; }
-
-.contentBox h3 {
-  border-bottom: 1px solid #e5e5e5;
-  padding: 15px 0px;
-  font-size: 1.3em;
-  margin: 0px 0px 15px 0px; }
-
-.contentBoxBorder h3 {
-  padding: 5px 0px;
-  font-size: 1.1em;
-  margin: 0px 0px 5px 0px;
-  font-weight: bold; }
-
-.contentBoxBorder ul, .contentBox ul {
-  margin: 0 0 10px 0;
-  padding: 0px; }
-
-.contentBoxBorder li, .contentBox li {
-  display: inline;
-  padding: 10px 30px 10px 0; }
-
-.contentBox h4, .contentBoxBorder h4 {
-  padding: 0px;
-  font-size: 1em; }
-
-.contentBox p, .contentBoxBorder p {
-  font-size: 0.9em;
-  margin-bottom: 20px; }
-
-.plusMinus {
-  font-style: normal; }
-  .plusMinus:after, .plusMinus:before {
-    font-family: FontAwesome;
-    font-size: 20px; }
-  .plusMinus:before {
-    content: "\f055";
-    margin: 0px 10px 0px 0;
-    position: relative;
-    font-size: 25px; }
-  .plusMinus.active:before {
-    content: "\f056"; }
-
-.when {
-  font-style: normal; }
-  .when:after, .when:before {
-    font-family: FontAwesome;
-    font-size: 20px; }
-  .when:before {
-    content: "\f073";
-    margin: 0px 10px 0px 0;
-    position: relative;
-    top: -2px; }
-
-table.basicTable {
-  width: 100%; }
-
-table.basicTable th {
-  padding: 10px 20px 20px 20px; }
-
-table.basicTable td {
-  padding: 10px 20px;
-  background: #EFF3F7;
-  border-bottom: 1px solid #fff;
-  border-top: 1px solid #D5DFEA; }
-
-/* Bootstrap accordion overides */
-.panel-group .panel {
-  border-radius: 0px; }
-
-.panel-group .panel {
-  margin: 0px;
-  padding: 0px;
-  background-color: transparent;
-  border: none;
-  border-radius: 0px;
-  box-shadow: 0px 0px 0px transparent; }
-  .panel-group .panel a, .panel-group .panel .link {
-    text-decoration: none; }
-
-.panel-group {
-  margin: 0; }
-
-.panel-group .panel-heading + .panel-collapse > .list-group, .panel-group .panel-heading + .panel-collapse > .panel-body {
-  border-top: none; }
-
-.panel-group .panel + .panel {
-  margin-top: 0px; }
-
-.panel-default > .panel-heading {
-  padding: 0;
-  border: none;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  background: none; }
-
-.panel-default > .panel-heading a, .panel-default > .panel-heading .link {
-  display: block;
-  padding: 15px; }
-  .panel-default > .panel-heading a:after, .panel-default > .panel-heading .link:after {
-    font-family: FontAwesome;
-    content: "\f106";
-    font-size: 25px;
-    margin-top: -5px;
-    float: right; }
-
-.panel-default > .panel-heading a.collapsed, .panel-default > .panel-heading .collapsed.link {
-  display: block;
-  padding: 15px; }
-  .panel-default > .panel-heading a.collapsed:after, .panel-default > .panel-heading .collapsed.link:after {
-    font-family: FontAwesome;
-    content: "\f107";
-    font-size: 25px;
-    margin-top: -5px;
-    float: right; }
-
-.panel-default.panel {
-  border-bottom: 1px solid #D0DCE8; }
-
-/* End Bootstrap accordion overides */
-/*jquery Autocomplete styling */
-input.ui-autocomplete-input {
-  width: 100%;
-  padding-left: 32px; }
-  input.ui-autocomplete-input.mapIcon {
-    background-position: 5px 50%; }
-
-.ui-widget-content {
-  border: 1px solid #D0DCE8;
-  border-top: none;
-  color: #222222;
-  background-color: #fff; }
-
-.ui-menu {
-  display: block;
-  float: left;
-  list-style: none outside none;
-  margin: 0;
-  padding: 0; }
-
-.ui-menu .ui-menu-item {
-  clear: left;
-  float: left;
-  margin: 0;
-  padding: 10px;
-  width: 100%;
-  border-top: 1px solid #D0DCE8; }
-
-.ui-menu .ui-menu-item:first-of-type {
-  border-top: none; }
-
-.ui-menu .ui-menu-item a.ui-corner-all:hover, .ui-menu .ui-menu-item .ui-corner-all.link:hover, .ui-menu .ui-menu-item a.ui-corner-all:focus, .ui-menu .ui-menu-item .ui-corner-all.link:focus, .ui-menu .ui-menu-item a.ui-corner-all:active, .ui-menu .ui-menu-item .ui-corner-all.link:active {
-  background: #ECF0F1;
-  border-radius: 0; }
-
-.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
-  background: #ECF0F1;
-  color: #000;
-  border-radius: 0;
-  font-weight: normal; }
-
-/* End jquery Autocomplete styling */
-.eventsFilterType input, .eventsFilterType select {
-  width: 100%; }
-
-.eventsFilterType ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid #E0E0E0; }
-  .eventsFilterType ul a, .eventsFilterType ul .link {
-    display: block;
-    border-bottom: 1px solid #E0E0E0;
-    padding: 10px;
-    color: #1E2A34;
-    font-weight: 300; }
-    .eventsFilterType ul a:hover, .eventsFilterType ul .link:hover, .eventsFilterType ul a:focus, .eventsFilterType ul .link:focus {
-      background: #ECF0F1; }
-
-.form-control {
-  width: 100%;
-  height: 50px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 38px;
-  color: #555;
-  background-color: #fff;
-  background-image: none;
-  border: 1px solid #E4E8EC;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none; }
-
-.searchForm input[type=text] {
-  border-right: none; }
-
-.searchForm .input-group-btn .btn, .searchForm .input-group-btn .form-group input[type=button], .form-group .searchForm .input-group-btn input[type=button], .searchForm .input-group-btn .form-group input.btn.btn-primary, .form-group .searchForm .input-group-btn input.btn.btn-primary, .searchForm .input-group-btn .form-group input[type=submit], .form-group .searchForm .input-group-btn input[type=submit], .searchForm .input-group-btn .form-group input.limitedrte-Style-BUTTON, .form-group .searchForm .input-group-btn input.limitedrte-Style-BUTTON, .searchForm .input-group-btn .limitedrte-Style-BUTTON, .searchForm .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .searchForm .input-group-btn #myChatLinkInfo, .searchForm .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .searchForm .input-group-btn #myChatLinkInfo {
-  border-left: none;
-  border-color: #E4E8EC;
-  width: 60px;
-  padding: 12px 15px; }
-  .searchForm .input-group-btn .btn:before, .searchForm .input-group-btn .form-group input[type=button]:before, .form-group .searchForm .input-group-btn input[type=button]:before, .searchForm .input-group-btn .form-group input[type=submit]:before, .form-group .searchForm .input-group-btn input[type=submit]:before, .searchForm .input-group-btn .limitedrte-Style-BUTTON:before, .searchForm .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo:before, #myChatLinkContainer #myChatLink a .searchForm .input-group-btn #myChatLinkInfo:before, .searchForm .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo:before, #myChatLinkContainer #myChatLink .link .searchForm .input-group-btn #myChatLinkInfo:before {
-    font-family: "Glyphicons Halflings";
-    content: "\e003";
-    font-size: 25px;
-    color: #fff;
-    line-height: 0.68em; }
-
-.searchForm .input-group-btn .btn:hover, .searchForm .input-group-btn .form-group input[type=button]:hover, .form-group .searchForm .input-group-btn input[type=button]:hover, .searchForm .input-group-btn .form-group input[type=submit]:hover, .form-group .searchForm .input-group-btn input[type=submit]:hover, .searchForm .input-group-btn .limitedrte-Style-BUTTON:hover, .searchForm .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .searchForm .input-group-btn #myChatLinkInfo:hover, .searchForm .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .searchForm .input-group-btn #myChatLinkInfo:hover,
-.searchForm .input-group-btn .btn:focus,
-.searchForm .input-group-btn .form-group input[type=button]:focus, .form-group
-.searchForm .input-group-btn input[type=button]:focus,
-.searchForm .input-group-btn .form-group input[type=submit]:focus, .form-group
-.searchForm .input-group-btn input[type=submit]:focus,
-.searchForm .input-group-btn .limitedrte-Style-BUTTON:focus,
-.searchForm .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo:focus, #myChatLinkContainer #myChatLink a
-.searchForm .input-group-btn #myChatLinkInfo:focus,
-.searchForm .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo:focus, #myChatLinkContainer #myChatLink .link
-.searchForm .input-group-btn #myChatLinkInfo:focus {
-  width: 60px; }
-
-select.form-control {
-  padding-right: 60px;
-  height: 50px;
-  line-height: inherit;
-  cursor: pointer; }
-
-.location {
-  position: relative; }
-  .location:after, .location:before {
-    font-family: FontAwesome;
-    font-size: 20px; }
-  .location:before {
-    content: "\f041";
-    position: absolute;
-    color: #34444b;
-    left: 15px;
-    top: 0px; }
-
-.distance {
-  position: relative; }
-  .distance:after, .distance:before {
-    font-family: FontAwesome;
-    font-size: 20px; }
-  .distance:before {
-    content: "\f107";
-    position: absolute;
-    color: #34444b;
-    right: 15px;
-    top: 5px;
-    font-size: 25px; }
-
-.activitySearchHomeContent .distance:before {
-  top: -4px; }
-
-select.form-control::-ms-expand {
-  display: none; }
-
-.keywordSearch h1 {
-  display: block; }
-
-@media only screen and (max-width: 760px) {
-  .keywordSearch h1 {
-    margin-bottom: 0px; } }
-
-.keyword h2 {
-  margin: 8px 10px 0 0;
-  text-align: right;
-  font-size: 32.4px; }
-  .keyword h2 span {
-    color: #1E2A34; }
-
-@media only screen and (max-width: 991px) {
-  .keyword h2 {
-    margin: -4px 10px 0px 0px; }
-  .eventsFilter .keyword {
-    padding: 15px 0;
-    width: 100%; }
-    .eventsFilter .keyword h2 {
-      margin: 0px 10px 5px 0px;
-      text-align: left;
-      text-transform: uppercase;
-      font-size: 21.6px;
-      font-weight: 700; }
-    .eventsFilter .keyword .col-xs-12 {
-      width: 100%; }
-    .eventsFilter .keyword .btn-group .btn, .eventsFilter .keyword .btn-group .form-group input[type=button], .form-group .eventsFilter .keyword .btn-group input[type=button], .eventsFilter .keyword .btn-group .form-group input[type=submit], .form-group .eventsFilter .keyword .btn-group input[type=submit], .eventsFilter .keyword .btn-group .limitedrte-Style-BUTTON, .eventsFilter .keyword .btn-group #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .eventsFilter .keyword .btn-group #myChatLinkInfo, .eventsFilter .keyword .btn-group #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .eventsFilter .keyword .btn-group #myChatLinkInfo, .eventsFilter .keyword .input-group-btn .btn, .eventsFilter .keyword .input-group-btn .form-group input[type=button], .form-group .eventsFilter .keyword .input-group-btn input[type=button], .eventsFilter .keyword .input-group-btn .form-group input[type=submit], .form-group .eventsFilter .keyword .input-group-btn input[type=submit], .eventsFilter .keyword .input-group-btn .limitedrte-Style-BUTTON, .eventsFilter .keyword .input-group-btn #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .eventsFilter .keyword .input-group-btn #myChatLinkInfo, .eventsFilter .keyword .input-group-btn #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .eventsFilter .keyword .input-group-btn #myChatLinkInfo {
-      height: 45px; }
-  .col-md-9.contentBackground {
-    background: #fff;
-    padding: 0px; } }
-
-@media only screen and (max-width: 765px) {
-  .keyword h2 {
-    text-align: left;
-    margin: 0px 10px 10px 0px; } }
-
-.eventsFilter .btn, .eventsFilter .form-group input[type=button], .form-group .eventsFilter input[type=button], .eventsFilter .form-group input.btn.btn-primary, .form-group .eventsFilter input.btn.btn-primary, .eventsFilter .form-group input[type=submit], .form-group .eventsFilter input[type=submit], .eventsFilter .form-group input.limitedrte-Style-BUTTON, .form-group .eventsFilter input.limitedrte-Style-BUTTON, .eventsFilter .limitedrte-Style-BUTTON, .eventsFilter #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink a .eventsFilter #myChatLinkInfo, .eventsFilter #myChatLinkContainer #myChatLink .link #myChatLinkInfo, #myChatLinkContainer #myChatLink .link .eventsFilter #myChatLinkInfo {
-  width: 100%; }
-
-.selectedFilters {
-  padding: 10px 0 0 0; }
-  .selectedFilters a, .selectedFilters .link {
-    display: inline-block;
-    margin: 0px 10px 10px 0;
-    padding: 10px 40px 10px 10px;
-    font-family: 'Oswald', sans-serif;
-    color: #000;
-    border: 1px solid #000;
-    text-decoration: none;
-    position: relative; }
-    .selectedFilters a:after, .selectedFilters .link:after {
-      font-family: fontAwesome;
-      content: "\f00d";
-      right: 10px;
-      top: 50%;
-      margin-top: -12px;
-      position: absolute; }
-    .selectedFilters a:hover, .selectedFilters .link:hover {
-      background: #000;
-      color: #fff; }
-
-#eventSearchResultsMap .selectedFilters {
-  padding: 20px 20px 10px;
-  /*events fix*/
-  display: inline-block;
-  width: 100%; }
-
-#eventSearchResultsMap .selectedFilters a, #eventSearchResultsMap .selectedFilters .link {
-  margin: 0px 10px 10px 0;
-  /*events fix*/ }
-
-.panel-title > a, .panel-title > .link, .panel-title > small, .panel-title > .small, .panel-title > small > a, .panel-title > small > .link, .panel-title > .small > a, .panel-title > .small > .link {
-  color: #006da5; }
-
-.removeSidePadding {
-  padding-left: 0px;
-  padding-right: 0px; }
-
-/********************
-ACTIVITY SEARCH HOME
-********************/
-.activitySearchHome {
-  text-align: center;
-  padding: 0px 0px 50px 0px; }
-  .activitySearchHome .nav-tabs {
-    border-bottom: none;
-    margin: 40px 0px;
-    text-align: center; }
-  .activitySearchHome .nav-tabs > li > a, .activitySearchHome .nav-tabs > li > .link {
-    margin-right: 0px;
-    border: 1px solid #000;
-    border-radius: 0px 0px 0px 0px;
-    padding: 10px 40px;
-    height: 60px;
-    font-size: 25px;
-    font-weight: 400;
-    background-color: rgba(255, 255, 255, 0.05);
-    color: #721371; }
-  .activitySearchHome .nav-tabs > li.active > a, .activitySearchHome .nav-tabs > li.active > .link, .activitySearchHome .nav-tabs > li.active > a:focus, .activitySearchHome .nav-tabs > li.active > .link:focus, .activitySearchHome .nav-tabs > li.active > a:hover, .activitySearchHome .nav-tabs > li.active > .link:hover {
-    color: #fff;
-    cursor: default;
-    background-color: rgba(0, 0, 0, 0.25);
-    border-color: #000;
-    -webkit-box-shadow: inset 0px 0px 23px -5px rgba(0, 0, 0, 0.85);
-    -moz-box-shadow: inset 0px 0px 23px -5px rgba(0, 0, 0, 0.85);
-    box-shadow: inset 0px 0px 23px -5px rgba(0, 0, 0, 0.85); }
-  .activitySearchHome .nav-tabs > li {
-    float: none;
-    display: inline-block;
-    *display: inline;
-    /* ie7 fix */
-    zoom: 1;
-    /* hasLayout ie7 trigger */
-    margin-left: -4px; }
-
-@media only screen and (max-width: 770px) {
-  .activitySearchHome {
-    padding: 0px 0px 20px 0px; } }
-
-.activitySearchHome h2 {
-  margin-top: 0px;
-  margin-bottom: 20px; }
-
-.activitySearchHome h3 {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-
-.activitySearchHomeContent span.optional {
-  color: #efefef;
-  font-size: 20px;
-  display: inline; }
-
-.activitySearchHome select, .activitySearchHome input {
-  height: 55px;
-  padding: 10px;
-  margin: 0;
-  font-size: 16px;
-  color: #293238;
-  border-radius: 0px;
-  border: none;
-  border-right: 1px solid #efefef;
-  background-color: #fff;
-  width: 25%; }
-
-.activitySearchHome select {
-  background: #fff; }
-
-.activitySearchHome select::-ms-expand {
-  display: none; }
-
-.activitySearchHome select {
-  padding-right: 60px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  cursor: pointer; }
-
-.activitySearchHome input.btn, .activitySearchHome .form-group input[type=button], .form-group .activitySearchHome input[type=button], .activitySearchHome .form-group input.btn.btn-primary, .form-group .activitySearchHome input.btn.btn-primary, .activitySearchHome .form-group input[type=submit], .form-group .activitySearchHome input[type=submit], .activitySearchHome .form-group input.limitedrte-Style-BUTTON, .form-group .activitySearchHome input.limitedrte-Style-BUTTON, .activitySearchHome input.limitedrte-Style-BUTTON, .activitySearchHome #myChatLinkContainer #myChatLink a input#myChatLinkInfo, #myChatLinkContainer #myChatLink a .activitySearchHome input#myChatLinkInfo, .activitySearchHome #myChatLinkContainer #myChatLink .link input#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .activitySearchHome input#myChatLinkInfo {
-  border-right: 0px;
-  width: 20%;
-  padding: 10px;
-  vertical-align: top;
-  color: #fff;
-  background: #721371;
-  font-family: "Open Sans", Arial; }
-
-.searchButton {
-  width: 100%; }
-
-.activitySearchHomeHeader {
-  padding: 30px 0px; }
-
-.activitySearchHomeHeader a:link, .activitySearchHomeHeader .link:link, .activitySearchHomeHeader a:visited, .activitySearchHomeHeader .link:visited {
-  border: 2px solid #E7CC26;
-  font-size: 20px;
-  color: #fff;
-  padding: 15px 70px 15px 50px; }
-
-.activitySearchHomeHeader a:hover, .activitySearchHomeHeader .link:hover {
-  border: 2px solid #E7CC26;
-  color: #fff !important;
-  text-decoration: none; }
-
-.activitySearchHomeHeader.active a, .activitySearchHomeHeader.active .link {
-  border: 3px solid #fff;
-  color: #fff; }
-
-.activitySearchHomeHeader.active a:hover, .activitySearchHomeHeader.active .link:hover {
-  border: 3px solid #fff;
-  color: #E7CC26 !important; }
-
-.activitySearchHomeContent {
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center; }
-
-@media only screen and (max-width: 700px) {
-  .nav-tabs > li {
-    width: 50%;
-    margin: 0px; }
-    .nav-tabs > li a, .nav-tabs > li .link {
-      padding: 10px 0 !important; }
-  .activitySearchHome input, .activitySearchHome select {
-    width: 75%;
-    border: none; }
-  .activitySearchHome input.btn, .activitySearchHome .form-group input[type=button], .form-group .activitySearchHome input[type=button], .activitySearchHome .form-group input.btn.btn-primary, .form-group .activitySearchHome input.btn.btn-primary, .activitySearchHome .form-group input[type=submit], .form-group .activitySearchHome input[type=submit], .activitySearchHome .form-group input.limitedrte-Style-BUTTON, .form-group .activitySearchHome input.limitedrte-Style-BUTTON, .activitySearchHome input.limitedrte-Style-BUTTON, .activitySearchHome #myChatLinkContainer #myChatLink a input#myChatLinkInfo, #myChatLinkContainer #myChatLink a .activitySearchHome input#myChatLinkInfo, .activitySearchHome #myChatLinkContainer #myChatLink .link input#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .activitySearchHome input#myChatLinkInfo {
-    float: right;
-    width: 25%;
-    min-width: 25%; }
-  .eventDateRange, #location, span.distance, span.distance:before, #venue-location {
-    display: none;
-    width: 0px; } }
-
-.paddingTopBottom {
-  padding-top: 15px;
-  padding-bottom: 15px; }
-
-#loading {
-  text-align: center;
-  font-size: 36px;
-  font-family: "Open Sans", Arial;
-  height: 250px;
-  background: #fff; }
-  #loading span {
-    font-weight: bold; }
-  #loading .loadingImage {
-    width: 100%;
-    height: 84px;
-    background: url("../images/loading.GIF") no-repeat center center;
-    display: block; }
-
-ul.content li.resultsItemWrapper {
-  margin: 1%;
-  width: 31.33333333333%;
-  padding: 0; }
-  ul.content li.resultsItemWrapper .resultsItem {
-    height: 100%;
-    padding: 20px !important;
-    background: #F5F7F8;
-    margin: 0 0 20px 0;
-    color: #1E2A34;
-    -webkit-box-shadow: 2px 2px 0px 0px #ccd5d7;
-    -moz-box-shadow: 2px 2px 0px 0px #ccd5d7;
-    box-shadow: 2px 2px 0px 0px #ccd5d7; }
-    ul.content li.resultsItemWrapper .resultsItem a:hover, ul.content li.resultsItemWrapper .resultsItem .link:hover, ul.content li.resultsItemWrapper .resultsItem a:focus, ul.content li.resultsItemWrapper .resultsItem .link:focus {
-      color: #004b72;
-      text-decoration: none; }
-    ul.content li.resultsItemWrapper .resultsItem h3 {
-      margin: 0.4em 0; }
-
-@media (max-width: 1199px) {
-  ul.content li.resultsItemWrapper {
-    width: 46%;
-    float: left;
-    margin: 2%; } }
-
-@media (max-width: 529px) {
-  ul.content li.resultsItemWrapper {
-    width: 100%;
-    margin: 0;
-    padding-bottom: 20px; } }
-
-.resultsList li.row {
-  margin-bottom: 20px !important; }
-
-.resultsList li.row .eventsContentPod {
-  margin-bottom: 0px !important; }
-
-.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
-  cursor: pointer; }
-
-.additionaldates {
-  margin: 6px 5px;
-  display: inline-block;
-  color: #999;
-  font-size: 12px; }
-
-.eventsFilterSortContainer .btn:after, .eventsFilterSortContainer .form-group input[type=button]:after, .form-group .eventsFilterSortContainer input[type=button]:after, .eventsFilterSortContainer .form-group input.btn.btn-primary:after, .form-group .eventsFilterSortContainer input.btn.btn-primary:after, .eventsFilterSortContainer .form-group input[type=submit]:after, .form-group .eventsFilterSortContainer input[type=submit]:after, .eventsFilterSortContainer .form-group input.limitedrte-Style-BUTTON:after, .form-group .eventsFilterSortContainer input.limitedrte-Style-BUTTON:after, .eventsFilterSortContainer .limitedrte-Style-BUTTON:after, .eventsFilterSortContainer #myChatLinkContainer #myChatLink a #myChatLinkInfo:after, #myChatLinkContainer #myChatLink a .eventsFilterSortContainer #myChatLinkInfo:after, .eventsFilterSortContainer #myChatLinkContainer #myChatLink .link #myChatLinkInfo:after, #myChatLinkContainer #myChatLink .link .eventsFilterSortContainer #myChatLinkInfo:after {
-  display: none; }
-
-.eventListOnly {
-  margin-bottom: 1.875em; }
-
 .groupPromo .listWebpart {
   margin: 0;
   padding: 0; }
@@ -6494,61 +4258,6 @@ ul.content li.resultsItemWrapper {
     width: 100%; }
 
 .heroBanner {
-  padding: 55px 0;
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -o-background-size: cover !important;
-  background-size: cover !important; }
-  .heroBanner .container-fluid {
-    position: relative; }
-    .heroBanner .container-fluid h1, .heroBanner .container-fluid p.lead {
-      font-size: 40px;
-      font-weight: 100;
-      color: #fff;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
-      line-height: 48px;
-      width: 40%;
-      margin: 0 0 20px 0; }
-    .heroBanner .container-fluid p {
-      font-size: 20px;
-      font-weight: 100;
-      color: #fff;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
-      width: 40%;
-      margin: 0 0 20px 0; }
-  .heroBanner .button {
-    position: absolute;
-    bottom: 0px;
-    right: 55px;
-    font-size: 20px; }
-  @media only screen and (max-width: 700px) {
-    .heroBanner {
-      padding: 0px; }
-      .heroBanner .container-fluid {
-        padding: 30px;
-        background: rgba(0, 0, 0, 0.5); }
-        .heroBanner .container-fluid h1, .heroBanner .container-fluid p.lead {
-          width: 100%;
-          margin: 0 auto;
-          font-size: 30px;
-          line-height: 30px;
-          background: none;
-          padding: 0 20px; }
-        .heroBanner .container-fluid p {
-          font-size: 25px;
-          width: 100%;
-          margin: 0px auto;
-          background: none; }
-        .heroBanner .container-fluid .button {
-          position: relative;
-          font-size: 20px;
-          width: 100%;
-          right: 0px;
-          display: block; } }
-
-.heroBanner {
   padding: 60px 0 110px 0;
   -webkit-background-size: cover !important;
   -moz-background-size: cover !important;
@@ -6565,7 +4274,7 @@ ul.content li.resultsItemWrapper {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.4);
     display: block;
     z-index: 0; }
   .heroBanner .container-fluid {
@@ -6882,197 +4591,6 @@ ul.content li.resultsItemWrapper {
     display: inline-block;
     width: 100%; }
 
-.sectionSubsite.news {
-  float: left; }
-  .sectionSubsite.news h3 {
-    border: 0px; }
-  .sectionSubsite.news input {
-    padding: 10px;
-    height: 50px;
-    border: 1px solid #ddd;
-    float: left; }
-  @media only screen and (max-width: 400px) {
-    .sectionSubsite.news input {
-      width: 150px; } }
-  .sectionSubsite.news a.button, .sectionSubsite.news .button.link {
-    display: inline-block;
-    background: green;
-    border: none;
-    margin-top: 0px;
-    float: left;
-    padding: 12px;
-    text-decoration: none; }
-    .sectionSubsite.news a.button:hover, .sectionSubsite.news .button.link:hover {
-      background: #001a00;
-      color: #fff;
-      text-decoration: none; }
-    .sectionSubsite.news a.button:after, .sectionSubsite.news .button.link:after {
-      display: none; }
-  .sectionSubsite.news .datePickerContainer {
-    float: left;
-    width: 250px; }
-    .sectionSubsite.news .datePickerContainer:first-of-type {
-      width: 150px; }
-    .sectionSubsite.news .datePickerContainer label {
-      width: 100%; }
-    .sectionSubsite.news .datePickerContainer input {
-      width: 140px;
-      margin-bottom: 10px; }
-    @media only screen and (max-width: 400px) {
-      .sectionSubsite.news .datePickerContainer input {
-        width: 150px; } }
-  .sectionSubsite.news .accordion {
-    margin: 0px; }
-    .sectionSubsite.news .accordion a.header, .sectionSubsite.news .accordion .header.link {
-      margin: 0px; }
-    .sectionSubsite.news .accordion li div div {
-      padding: 0px; }
-
-#paging h2 {
-  font-size: 40px;
-  color: #9B59B6;
-  padding: 10px 0px; }
-
-#paging .contentPod {
-  margin: 0px 0px 0px 0px;
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-  background: #ffffff;
-  font-size: 0.9em; }
-  #paging .contentPod h3 {
-    font-size: 1.4em;
-    margin: 0px;
-    line-height: 1.1em;
-    margin-bottom: 5px; }
-  #paging .contentPod a, #paging .contentPod .link {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    text-decoration: none; }
-    #paging .contentPod a:hover, #paging .contentPod .link:hover, #paging .contentPod a:focus, #paging .contentPod .link:focus {
-      text-decoration: none;
-      background: #f2f2f2; }
-    #paging .contentPod a p.date, #paging .contentPod .link p.date {
-      text-transform: uppercase; }
-    #paging .contentPod a img, #paging .contentPod .link img {
-      margin: 0px 15px 0px 0px;
-      max-width: 300px; }
-  #paging .contentPod h2 {
-    font-size: 1.4em;
-    font-weight: normal !important; }
-
-#paging ul.content {
-  border: none;
-  margin: 0;
-  padding: 0px 0 0 0;
-  list-style: none;
-  clear: left; }
-  #paging ul.content li {
-    padding: 0; }
-
-.ms-promlink-headerNav {
-  display: inline-flex;
-  float: none;
-  margin-bottom: 20px; }
-
-.ms-promlink-button-inner {
-  display: none; }
-
-.pagingNav {
-  display: block;
-  padding: 0 0 20px 0;
-  border-bottom: 1px solid #ddd;
-  text-align: center; }
-
-.pageNumbers a, .pageNumbers .link, .ms-promlink-button, .pageNumbers strong {
-  float: left;
-  list-style: none;
-  padding: 10px;
-  color: #333;
-  border: 1px solid #c4c4c4;
-  border-left: none;
-  margin: 0;
-  height: auto;
-  width: auto;
-  font-size: 18px;
-  font-family: "Open Sans", Arial; }
-  .pageNumbers a:first-of-type, .pageNumbers .link:first-of-type, .ms-promlink-button:first-of-type, .pageNumbers strong:first-of-type {
-    border-left: 1px solid #c4c4c4; }
-  .pageNumbers a:hover, .pageNumbers .link:hover, .ms-promlink-button:hover, .pageNumbers strong:hover {
-    background: #666;
-    color: #fff;
-    border-color: #666; }
-
-.ms-promlink-button span:before {
-  font-family: FontAwesome;
-  content: "\f105";
-  position: absolute;
-  font-size: 22px;
-  color: green;
-  top: 4px;
-  left: 6px;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased; }
-
-.ms-promlink-button .ms-promlink-button-image {
-  overflow: visible; }
-
-.ms-promlink-button span.previous:before {
-  content: "\f104"; }
-
-.alt_page_navigation a:hover, .alt_page_navigation .link:hover,
-.page_navigation a:hover,
-.page_navigation .link:hover,
-a.active_page,
-.active_page.link {
-  background: #666;
-  color: #fff;
-  border-color: #666; }
-
-.pageNumbers strong {
-  background-color: #efefef;
-  color: #999;
-  pointer-events: none;
-  border-left: none !important; }
-
-.sectionSubsite.news ul.accordion li div.content-block {
-  padding: 0px !important; }
-
-.open-data {
-  padding: 0; }
-  .open-data a, .open-data .link {
-    text-decoration: underline !important; }
-  .open-data li {
-    border-bottom: 1px solid #DCDEE1 !important;
-    margin-top: 20px;
-    position: relative; }
-    .open-data li:last-child {
-      border: 0 !important; }
-    @media (min-width: 767px) {
-      .open-data li .heading-small, .open-data li h4, .open-data li .ms-rtestate-field h4, .ms-rtestate-field .open-data li h4, .open-data li
-      .ms-rtestate-field h3.medium-small,
-      .ms-rtestate-field .open-data li h3.medium-small {
-        padding-right: 180px; } }
-    @media (min-width: 767px) {
-      .open-data li .open-data__link {
-        position: absolute;
-        right: 0;
-        top: 0; } }
-    .open-data li .open-data__info {
-      margin: 10px 0 20px; }
-      .open-data li .open-data__info .open-data__info-cost,
-      .open-data li .open-data__info .open-data__info-contact,
-      .open-data li .open-data__info .open-data__info-format {
-        border: 0 !important;
-        font-size: 16px;
-        margin: 5px 0 0; }
-        @media (min-width: 767px) {
-          .open-data li .open-data__info .open-data__info-cost,
-          .open-data li .open-data__info .open-data__info-contact,
-          .open-data li .open-data__info .open-data__info-format {
-            float: left;
-            margin: 0 25px 0 0; } }
-
 .pagination-nav {
   display: block;
   margin: 50px 0;
@@ -7161,101 +4679,6 @@ a.active_page,
         .part-navigation__container nav ol li {
           font-size: 19px; } }
 
-.phase-banner {
-  padding: 7px 0;
-  background: rgba(255, 191, 71, 0.5); }
-  .phase-banner p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.6; }
-    @media (max-width: 641px) {
-      .phase-banner p {
-        font-size: 14px; } }
-    .phase-banner p strong {
-      background: #007299;
-      color: white;
-      padding: 1px 5px;
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      border-radius: 2px;
-      margin-right: 3px; }
-  .phase-banner.page {
-    padding: 10px 0;
-    background: transparent;
-    border-bottom: 1px solid #DCDEE1; }
-    .phase-banner.page strong {
-      background: #FFCC33;
-      color: #212224; }
-
-/*******************
-POLAROID WEBPART
-********************/
-.polaroid {
-  -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s;
-  transition: all ease .5s;
-  margin: 50px 0; }
-  .polaroid .listWebpart li {
-    width: 25% !important; }
-    .polaroid .listWebpart li a, .polaroid .listWebpart li .link {
-      text-decoration: none;
-      color: #293238;
-      border-bottom: none;
-      margin-bottom: 5px;
-      font-size: 1.3em;
-      font-weight: bold;
-      margin: 0px;
-      padding: 0px;
-      background: #fff;
-      border: 10px solid #293238;
-      margin: 10px;
-      text-align: center;
-      padding: 10px;
-      height: 100%;
-      display: block;
-      -webkit-box-shadow: 10px 10px 21px -5px #bdbdbd;
-      -moz-box-shadow: 10px 10px 21px -5px #bdbdbd;
-      box-shadow: 10px 10px 21px -5px #bdbdbd;
-      -ms-transform: rotate(4deg) translate3d(0, 0, 0);
-      -webkit-transform: rotate(4deg) translate3d(0, 0, 0);
-      transform: rotate(4deg) translate3d(0, 0, 0);
-      -webkit-transition: all ease .5s;
-      -moz-transition: all ease .5s;
-      transition: all ease .5s;
-      cursor: pointer; }
-      .polaroid .listWebpart li a:hover, .polaroid .listWebpart li .link:hover, .polaroid .listWebpart li a:focus, .polaroid .listWebpart li .link:focus {
-        -ms-transform: rotate(0deg) translate3d(0, 0, 0);
-        -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
-        transform: rotate(0deg) translate3d(0, 0, 0); }
-      .polaroid .listWebpart li a span, .polaroid .listWebpart li .link span {
-        font-size: 0.9em;
-        line-height: 1.3em;
-        font-weight: normal;
-        margin: 0px;
-        padding: 0px;
-        color: #293238;
-        border-bottom: none;
-        margin-bottom: 5px;
-        display: block; }
-    .polaroid .listWebpart li:nth-child(odd) a, .polaroid .listWebpart li:nth-child(odd) .link {
-      -ms-transform: rotate(-4deg) translate3d(0, 0, 0);
-      -webkit-transform: rotate(-4deg) translate3d(0, 0, 0);
-      transform: rotate(-4deg) translate3d(0, 0, 0); }
-      .polaroid .listWebpart li:nth-child(odd) a:hover, .polaroid .listWebpart li:nth-child(odd) .link:hover, .polaroid .listWebpart li:nth-child(odd) a:focus, .polaroid .listWebpart li:nth-child(odd) .link:focus {
-        -ms-transform: rotate(0deg) translate3d(0, 0, 0);
-        -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
-        transform: rotate(0deg) translate3d(0, 0, 0); }
-
-@media only screen and (max-width: 800px) {
-  .polaroid .listWebpart li {
-    width: 50% !important; } }
-
-@media only screen and (max-width: 500px) {
-  .polaroid {
-    margin: 10px 0; } }
-
-/*END POLAROID SECTION*/
 .promo {
   background-size: cover !important;
   padding: 0;
@@ -7969,50 +5392,6 @@ POLAROID WEBPART
   .promoListWebpart .contentLink.heightTwo {
     padding-bottom: 80px; } }
 
-.sectionSubsite {
-  margin: 0 0 1.875em 0;
-  padding: 20px;
-  width: 100%;
-  background: #efefef; }
-  .sectionSubsite h2, .sectionSubsite h3 {
-    margin-top: 0;
-    font-size: 22px; }
-    .sectionSubsite h2 img, .sectionSubsite h3 img {
-      float: left;
-      padding: 0 10px 10px 0; }
-    .sectionSubsite h2 i, .sectionSubsite h3 i {
-      font-family: FontAwesome;
-      font-size: 20px;
-      border-radius: 50%;
-      border: 1px solid #333;
-      width: 35px;
-      height: 35px;
-      text-align: center;
-      padding: 7px 0 0 0;
-      margin: 0 10px 5px 0;
-      color: #333; }
-  .sectionSubsite p {
-    clear: left;
-    margin: 2px 0 0;
-    padding: 10px;
-    background: #fff; }
-    .sectionSubsite p a, .sectionSubsite p .link {
-      background: #f6f6f6;
-      display: block;
-      margin-top: 10px; }
-      .sectionSubsite p a:after, .sectionSubsite p .link:after {
-        font-family: "Glyphicons Halflings";
-        content: "\e080";
-        font-size: 16px;
-        padding: -2px;
-        margin-top: 0px;
-        float: right; }
-  .sectionSubsite a, .sectionSubsite .link, .sectionSubsite a[rel=external], .sectionSubsite [rel=external].link {
-    display: block;
-    margin: 2px 0 0;
-    padding: 15px;
-    background: #fff; }
-
 /**********************
 Sharepoint overides
 ********************/
@@ -8044,9 +5423,7 @@ ul.cbs-List {
 .ms-rtestate-field h3,
 .ms-rtestate-field .part-content h2, .part-content
 .ms-rtestate-field h2,
-.ms-rtestate-field legend,
-.ms-rtestate-field .list-atoz li h2, .list-atoz li
-.ms-rtestate-field h2, .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium, .ms-rtestate-field h2.heading-medium, .ms-rtestate-field h3.heading-medium, .ms-rtestate-field h4.heading-medium,
+.ms-rtestate-field legend, .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium, .ms-rtestate-field h2.heading-medium, .ms-rtestate-field h3.heading-medium, .ms-rtestate-field h4.heading-medium,
 .ms-rtestate-field .sideNav h2, .sideNav
 .ms-rtestate-field h2,
 .ms-rtestate-field
@@ -8293,31 +5670,6 @@ h1 input.ms-long {
   .relatedPages .sideNav__more {
     font-weight: 700; }
 
-.sideNav {
-  padding: 10px 20px 20px;
-  background: #efefef;
-  margin-bottom: 20px; }
-  .sideNav h3 {
-    margin: 0.6em 0; }
-  .sideNav li {
-    list-style: none; }
-  .sideNav a, .sideNav .link {
-    font-size: 1.1em;
-    line-height: 1.2em;
-    display: inline-block;
-    margin: 0px 0px 5px;
-    padding: 10px;
-    background: #fff;
-    width: 100%; }
-    .sideNav a:hover, .sideNav .link:hover {
-      background: #707070 !important;
-      color: #fff; }
-    .sideNav a.active, .sideNav .active.link {
-      color: #E67E22;
-      background: transparent; }
-      .sideNav a.active:hover, .sideNav .active.link:hover {
-        background: transparent; }
-
 #myChatLinkContainer {
   margin: 30px 0; }
   #myChatLinkContainer #myChatLink #myChatLinkInfo {
@@ -8482,11 +5834,6 @@ ul.menu li a.main-menu, ul.menu li .main-menu.link {
   margin: 30px 0;
   border-bottom: 5px solid #bbcada;
   background: transparent; }
-  .sideNav h3 {
-    margin: 0;
-    background: #721371;
-    color: #fff;
-    padding: 20px 15px; }
   .sideNav ul {
     margin: 0;
     padding: 0; }
