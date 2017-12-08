@@ -1,7 +1,6 @@
-@charset "UTF-8";
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css");
 .border-link, .hidden-text a.reveal, .hidden-text .reveal.link, .list-nav li a, .list-nav li .link {
-  border-bottom: 1px solid rgba(162, 173, 0, 0.3);
+  border-bottom: 1px solid rgba(167, 80, 65, 0.3);
   text-decoration: none !important; }
   .border-link:hover, .hidden-text a.reveal:hover, .hidden-text .reveal.link:hover, .list-nav li a:hover, .list-nav li .link:hover {
     border-color: rgba(51, 153, 187, 0.3) !important; }
@@ -26,7 +25,7 @@
       -moz-column-count: 1;
       column-count: 1; } }
 
-.two-columns, .part-navigation__container nav ol {
+.two-columns {
   -webkit-column-count: 2;
   -moz-column-count: 2;
   column-count: 2;
@@ -34,7 +33,7 @@
   -moz-column-gap: 30px;
   column-gap: 30px; }
   @media (max-width: 767px) {
-    .two-columns, .part-navigation__container nav ol {
+    .two-columns {
       -webkit-column-count: 1;
       -moz-column-count: 1;
       column-count: 1; } }
@@ -81,7 +80,8 @@ body {
   font-size: 16px;
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  color: #333; }
   @media (min-width: 641px) {
     body {
       font-size: 19px;
@@ -109,7 +109,6 @@ h2,
 h3,
 .part-content h2,
 legend,
-.list-atoz li h2,
 .ms-rtestate-field h3,
 .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium,
 .ms-rtestate-field h2.heading-medium,
@@ -176,7 +175,6 @@ table.styledTable td,
   h3.top,
   .part-content h2.top,
   legend.top,
-  .list-atoz li h2.top,
   .ms-rtestate-field h3.ms-rteElement-H2 h1.top.heading-medium,
   .ms-rtestate-field h2.top.heading-medium,
   .ms-rtestate-field h3.top.heading-medium,
@@ -235,7 +233,6 @@ table.styledTable td,
   h3.bottom,
   .part-content h2.bottom,
   legend.bottom,
-  .list-atoz li h2.bottom,
   .ms-rtestate-field h3.ms-rteElement-H2 h1.bottom.heading-medium,
   .ms-rtestate-field h2.bottom.heading-medium,
   .ms-rtestate-field h3.bottom.heading-medium,
@@ -297,7 +294,6 @@ h2,
 h3,
 .part-content h2,
 legend,
-.list-atoz li h2,
 .ms-rtestate-field h3,
 .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium,
 .ms-rtestate-field h2.heading-medium,
@@ -423,7 +419,7 @@ table.styledTable td,
       margin-top: 50px;
       margin-bottom: 0.7em; } }
 
-.heading-medium, h3, .part-content h2, legend, .list-atoz li h2, .ms-rtestate-field h3,
+.heading-medium, h3, .part-content h2, legend, .ms-rtestate-field h3,
 .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium,
 .ms-rtestate-field h2.heading-medium,
 .ms-rtestate-field h3.heading-medium,
@@ -436,7 +432,7 @@ table.styledTable td,
   margin-top: 30px;
   margin-bottom: 0.5em; }
   @media (min-width: 641px) {
-    .heading-medium, h3, .part-content h2, legend, .list-atoz li h2, .ms-rtestate-field h3,
+    .heading-medium, h3, .part-content h2, legend, .ms-rtestate-field h3,
     .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium,
     .ms-rtestate-field h2.heading-medium,
     .ms-rtestate-field h3.heading-medium,
@@ -563,11 +559,11 @@ p.sharepoint,
   .text-highlight p:last-of-type, .text-block p:last-of-type {
     margin-bottom: 0; }
   .text-highlight.text-highlight--blue, .text-highlight--blue.text-block {
-    border-color: #A2AD00;
-    background: rgba(162, 173, 0, 0.1); }
+    border-color: #A75041;
+    background: rgba(167, 80, 65, 0.1); }
   .text-highlight.text-highlight--green, .text-highlight--green.text-block {
-    border-color: green;
-    background: rgba(0, 128, 0, 0.1); }
+    border-color: #A75041;
+    background: rgba(167, 80, 65, 0.1); }
   .text-highlight.text-highlight--red, .text-highlight--red.text-block {
     border-color: #c0392b;
     background: rgba(192, 57, 43, 0.1); }
@@ -667,7 +663,7 @@ a[rel="external"]:after, [rel="external"].link:after {
 
 a, .link {
   text-decoration: underline;
-  color: #A2AD00; }
+  color: #A75041; }
   a:hover, .link:hover {
     color: #3399BB; }
   a:visited, .link:visited {
@@ -685,7 +681,7 @@ a[rel="external"], [rel="external"].link {
 .text-link.reveal {
   text-decoration: none; }
   .text-link.reveal.collapsed span {
-    border-bottom: 1px solid #A2AD00; }
+    border-bottom: 1px solid #A75041; }
   .text-link.reveal:before {
     font-family: FontAwesome;
     content: "\f0d7"; }
@@ -694,7 +690,7 @@ a[rel="external"], [rel="external"].link {
 
 .link-back {
   text-decoration: none !important;
-  border-bottom: 1px solid #A2AD00;
+  border-bottom: 1px solid #A75041;
   display: inline-block; }
   .link-back:before {
     font-family: FontAwesome;
@@ -703,10 +699,10 @@ a[rel="external"], [rel="external"].link {
   .link-back:hover {
     border-bottom: 1px solid #3399BB; }
   .link-back:visited {
-    color: #A2AD00 !important; }
+    color: #A75041 !important; }
 
 .link-small {
-  color: #A2AD00; }
+  color: #A75041; }
 
 ul,
 ol {
@@ -814,7 +810,7 @@ ul + .heading-large, ul + h2, .part-content ul + .part-title, .ms-rtestate-field
     .ms-rtestate-field ul + h4.heading-large {
       margin-top: 6px; } }
 
-ul + .heading-medium, ul + h3, .part-content ul + h2, ul + legend, .list-atoz li ul + h2, .ms-rtestate-field ul + h3,
+ul + .heading-medium, ul + h3, .part-content ul + h2, ul + legend, .ms-rtestate-field ul + h3,
 .ms-rtestate-field h3.ms-rteElement-H2 ul + h1.heading-medium,
 .ms-rtestate-field ul + h2.heading-medium,
 .ms-rtestate-field ul + h3.heading-medium,
@@ -824,7 +820,7 @@ ul + .heading-medium, ul + h3, .part-content ul + h2, ul + legend, .list-atoz li
 .relatedPages ul + h3 {
   margin-top: 16px; }
   @media (max-width: 641px) {
-    ul + .heading-medium, ul + h3, .part-content ul + h2, ul + legend, .list-atoz li ul + h2, .ms-rtestate-field ul + h3,
+    ul + .heading-medium, ul + h3, .part-content ul + h2, ul + legend, .ms-rtestate-field ul + h3,
     .ms-rtestate-field h3.ms-rteElement-H2 ul + h1.heading-medium,
     .ms-rtestate-field ul + h2.heading-medium,
     .ms-rtestate-field ul + h3.heading-medium,
@@ -861,8 +857,7 @@ ul + p {
 .btn + .heading-medium, .form-group input[type=button] + .heading-medium, .form-group input.btn.btn-primary + .heading-medium, .form-group input[type=submit] + .heading-medium, .form-group input.limitedrte-Style-BUTTON + .heading-medium, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + .heading-medium, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + .heading-medium, .limitedrte-Style-BUTTON + .heading-medium, #myChatLinkContainer #myChatLink a #myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + .heading-medium,
 .btn + h3, .form-group input[type=button] + h3, .form-group input.btn.btn-primary + h3, .form-group input[type=submit] + h3, .form-group input.limitedrte-Style-BUTTON + h3, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, .limitedrte-Style-BUTTON + h3, #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3, .part-content
 .btn + h2, .form-group .part-content input[type=button] + h2, .part-content .form-group input[type=button] + h2, .form-group .part-content input.btn.btn-primary + h2, .part-content .form-group input.btn.btn-primary + h2, .form-group .part-content input[type=submit] + h2, .part-content .form-group input[type=submit] + h2, .form-group .part-content input.limitedrte-Style-BUTTON + h2, .part-content .form-group input.limitedrte-Style-BUTTON + h2, .form-group #myChatLinkContainer #myChatLink a .part-content input#myChatLinkInfo + h2, .part-content .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .part-content input#myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .part-content input#myChatLinkInfo + h2, .part-content .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .part-content input#myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, .part-content .limitedrte-Style-BUTTON + h2, #myChatLinkContainer #myChatLink a .part-content #myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .part-content #myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
-.btn + legend, .form-group input[type=button] + legend, .form-group input.btn.btn-primary + legend, .form-group input[type=submit] + legend, .form-group input.limitedrte-Style-BUTTON + legend, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + legend, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + legend, .limitedrte-Style-BUTTON + legend, #myChatLinkContainer #myChatLink a #myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + legend, .list-atoz li
-.btn + h2, .form-group .list-atoz li input[type=button] + h2, .list-atoz li .form-group input[type=button] + h2, .form-group .list-atoz li input.btn.btn-primary + h2, .list-atoz li .form-group input.btn.btn-primary + h2, .form-group .list-atoz li input[type=submit] + h2, .list-atoz li .form-group input[type=submit] + h2, .form-group .list-atoz li input.limitedrte-Style-BUTTON + h2, .list-atoz li .form-group input.limitedrte-Style-BUTTON + h2, .form-group #myChatLinkContainer #myChatLink a .list-atoz li input#myChatLinkInfo + h2, .list-atoz li .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .list-atoz li input#myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .list-atoz li input#myChatLinkInfo + h2, .list-atoz li .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .list-atoz li input#myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, .list-atoz li .limitedrte-Style-BUTTON + h2, #myChatLinkContainer #myChatLink a .list-atoz li #myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .list-atoz li #myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2, .ms-rtestate-field
+.btn + legend, .form-group input[type=button] + legend, .form-group input.btn.btn-primary + legend, .form-group input[type=submit] + legend, .form-group input.limitedrte-Style-BUTTON + legend, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + legend, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + legend, .limitedrte-Style-BUTTON + legend, #myChatLinkContainer #myChatLink a #myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + legend, .ms-rtestate-field
 .btn + h3, .form-group .ms-rtestate-field input[type=button] + h3, .ms-rtestate-field .form-group input[type=button] + h3, .form-group .ms-rtestate-field input.btn.btn-primary + h3, .ms-rtestate-field .form-group input.btn.btn-primary + h3, .form-group .ms-rtestate-field input[type=submit] + h3, .ms-rtestate-field .form-group input[type=submit] + h3, .form-group .ms-rtestate-field input.limitedrte-Style-BUTTON + h3, .ms-rtestate-field .form-group input.limitedrte-Style-BUTTON + h3, .form-group #myChatLinkContainer #myChatLink a .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, .ms-rtestate-field .limitedrte-Style-BUTTON + h3, #myChatLinkContainer #myChatLink a .ms-rtestate-field #myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .ms-rtestate-field #myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3,
 .ms-rtestate-field h3.ms-rteElement-H2
 .btn + h1.heading-medium, .form-group
@@ -1065,8 +1060,7 @@ ul + p {
     .btn + .heading-medium, .form-group input[type=button] + .heading-medium, .form-group input.btn.btn-primary + .heading-medium, .form-group input[type=submit] + .heading-medium, .form-group input.limitedrte-Style-BUTTON + .heading-medium, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + .heading-medium, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + .heading-medium, .limitedrte-Style-BUTTON + .heading-medium, #myChatLinkContainer #myChatLink a #myChatLinkInfo + .heading-medium, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + .heading-medium,
     .btn + h3, .form-group input[type=button] + h3, .form-group input.btn.btn-primary + h3, .form-group input[type=submit] + h3, .form-group input.limitedrte-Style-BUTTON + h3, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, .limitedrte-Style-BUTTON + h3, #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3, .part-content
     .btn + h2, .form-group .part-content input[type=button] + h2, .part-content .form-group input[type=button] + h2, .form-group .part-content input.btn.btn-primary + h2, .part-content .form-group input.btn.btn-primary + h2, .form-group .part-content input[type=submit] + h2, .part-content .form-group input[type=submit] + h2, .form-group .part-content input.limitedrte-Style-BUTTON + h2, .part-content .form-group input.limitedrte-Style-BUTTON + h2, .form-group #myChatLinkContainer #myChatLink a .part-content input#myChatLinkInfo + h2, .part-content .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .part-content input#myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .part-content input#myChatLinkInfo + h2, .part-content .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .part-content input#myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, .part-content .limitedrte-Style-BUTTON + h2, #myChatLinkContainer #myChatLink a .part-content #myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .part-content #myChatLinkInfo + h2, .part-content #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2,
-    .btn + legend, .form-group input[type=button] + legend, .form-group input.btn.btn-primary + legend, .form-group input[type=submit] + legend, .form-group input.limitedrte-Style-BUTTON + legend, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + legend, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + legend, .limitedrte-Style-BUTTON + legend, #myChatLinkContainer #myChatLink a #myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + legend, .list-atoz li
-    .btn + h2, .form-group .list-atoz li input[type=button] + h2, .list-atoz li .form-group input[type=button] + h2, .form-group .list-atoz li input.btn.btn-primary + h2, .list-atoz li .form-group input.btn.btn-primary + h2, .form-group .list-atoz li input[type=submit] + h2, .list-atoz li .form-group input[type=submit] + h2, .form-group .list-atoz li input.limitedrte-Style-BUTTON + h2, .list-atoz li .form-group input.limitedrte-Style-BUTTON + h2, .form-group #myChatLinkContainer #myChatLink a .list-atoz li input#myChatLinkInfo + h2, .list-atoz li .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink a .form-group .list-atoz li input#myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h2, .form-group #myChatLinkContainer #myChatLink .link .list-atoz li input#myChatLinkInfo + h2, .list-atoz li .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .form-group .list-atoz li input#myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h2, .list-atoz li .limitedrte-Style-BUTTON + h2, #myChatLinkContainer #myChatLink a .list-atoz li #myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink a #myChatLinkInfo + h2, #myChatLinkContainer #myChatLink .link .list-atoz li #myChatLinkInfo + h2, .list-atoz li #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h2, .ms-rtestate-field
+    .btn + legend, .form-group input[type=button] + legend, .form-group input.btn.btn-primary + legend, .form-group input[type=submit] + legend, .form-group input.limitedrte-Style-BUTTON + legend, .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + legend, .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + legend, .limitedrte-Style-BUTTON + legend, #myChatLinkContainer #myChatLink a #myChatLinkInfo + legend, #myChatLinkContainer #myChatLink .link #myChatLinkInfo + legend, .ms-rtestate-field
     .btn + h3, .form-group .ms-rtestate-field input[type=button] + h3, .ms-rtestate-field .form-group input[type=button] + h3, .form-group .ms-rtestate-field input.btn.btn-primary + h3, .ms-rtestate-field .form-group input.btn.btn-primary + h3, .form-group .ms-rtestate-field input[type=submit] + h3, .ms-rtestate-field .form-group input[type=submit] + h3, .form-group .ms-rtestate-field input.limitedrte-Style-BUTTON + h3, .ms-rtestate-field .form-group input.limitedrte-Style-BUTTON + h3, .form-group #myChatLinkContainer #myChatLink a .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink a input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink a .form-group .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink a .form-group input#myChatLinkInfo + h3, .form-group #myChatLinkContainer #myChatLink .link .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field .form-group #myChatLinkContainer #myChatLink .link input#myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .form-group .ms-rtestate-field input#myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink .link .form-group input#myChatLinkInfo + h3, .ms-rtestate-field .limitedrte-Style-BUTTON + h3, #myChatLinkContainer #myChatLink a .ms-rtestate-field #myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink a #myChatLinkInfo + h3, #myChatLinkContainer #myChatLink .link .ms-rtestate-field #myChatLinkInfo + h3, .ms-rtestate-field #myChatLinkContainer #myChatLink .link #myChatLinkInfo + h3,
     .ms-rtestate-field h3.ms-rteElement-H2
     .btn + h1.heading-medium, .form-group
@@ -1425,32 +1419,38 @@ h2 + h3 {
   .btn-default:hover {
     background: #ced1d5;
     color: white; }
+  .btn-default:visited {
+    color: white; }
 
 .btn-primary, .form-group input[type=button], .form-group input.btn.btn-primary, .form-group input[type=submit], .form-group input.limitedrte-Style-BUTTON, .limitedrte-Style-BUTTON, #myChatLinkContainer #myChatLink a #myChatLinkInfo, #myChatLinkContainer #myChatLink .link #myChatLinkInfo {
-  background-color: green;
+  background-color: #A75041;
   color: white;
-  border-color: green; }
+  border-color: #A75041; }
   .btn-primary:hover, .form-group input[type=button]:hover, .form-group input.btn.btn-primary:hover, .form-group input[type=submit]:hover, .form-group input.limitedrte-Style-BUTTON:hover, .limitedrte-Style-BUTTON:hover, #myChatLinkContainer #myChatLink a #myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:hover {
-    background: #009a00;
+    background: #b85a49;
     color: white;
-    border-color: #009a00; }
+    border-color: #b85a49; }
   .btn-primary:active, .form-group input[type=button]:active, .form-group input.btn.btn-primary:active, .form-group input[type=submit]:active, .form-group input.limitedrte-Style-BUTTON:active, .limitedrte-Style-BUTTON:active, #myChatLinkContainer #myChatLink a #myChatLinkInfo:active, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:active {
-    background: #004d00 !important;
+    background: #823e33 !important;
     color: white !important;
-    border-color: #004d00 !important; }
+    border-color: #823e33 !important; }
+  .btn-primary:visited, .form-group input[type=button]:visited, .form-group input.btn.btn-primary:visited, .form-group input[type=submit]:visited, .form-group input.limitedrte-Style-BUTTON:visited, .limitedrte-Style-BUTTON:visited, #myChatLinkContainer #myChatLink a #myChatLinkInfo:visited, #myChatLinkContainer #myChatLink .link #myChatLinkInfo:visited {
+    color: white; }
 
 .btn-secondary, .form-group input[type=button].btn-secondary {
-  background-color: blue;
-  color: white;
-  border-color: blue; }
+  background-color: #ddd;
+  color: #A75041;
+  border-color: #ddd; }
   .btn-secondary:hover, .form-group input[type=button].btn-secondary:hover {
-    background: #1a1aff;
-    color: white;
-    border-color: #1a1aff; }
+    background: #eaeaea;
+    color: #A75041;
+    border-color: #eaeaea; }
   .btn-secondary:active, .form-group input[type=button].btn-secondary:active {
-    background: #0000cc !important;
-    color: white !important;
-    border-color: #0000cc !important; }
+    background: #c4c4c4 !important;
+    color: #A75041 !important;
+    border-color: #c4c4c4 !important; }
+  .btn-secondary:visited, .form-group input[type=button].btn-secondary:visited {
+    color: #A75041; }
 
 .btn-outline, .form-group input[type=button].btn-outline {
   color: blue !important;
@@ -1464,6 +1464,8 @@ h2 + h3 {
     border-color: #0000cc; }
   .btn-outline:after, .form-group input[type=button].btn-outline:after {
     background: rgba(0, 0, 0, 0.05); }
+  .btn-outline:visited, .form-group input[type=button].btn-outline:visited {
+    color: blue !important; }
 
 .btn[rel=external], .form-group input[rel=external][type=button], .form-group input[rel=external].btn.btn-primary, .form-group input[rel=external][type=submit], .form-group input[rel=external].limitedrte-Style-BUTTON, [rel=external].limitedrte-Style-BUTTON, #myChatLinkContainer #myChatLink a [rel=external]#myChatLinkInfo, #myChatLinkContainer #myChatLink .link [rel=external]#myChatLinkInfo {
   margin: 0 0 20px; }
@@ -1919,7 +1921,7 @@ p + .panel {
   margin: 50px 0; }
 
 .panel.alt {
-  background: #A2AD00; }
+  background: #A75041; }
   .panel.alt h2,
   .panel.alt h3,
   .panel.alt p,
@@ -1987,8 +1989,6 @@ p + .panel {
     .panel.img.event .part-content h2, .part-content
     .panel.img.event h2,
     .panel.img.event legend,
-    .panel.img.event .list-atoz li h2, .list-atoz li
-    .panel.img.event h2,
     .panel.img.event .ms-rtestate-field h3, .ms-rtestate-field
     .panel.img.event h3,
     .panel.img.event .sideNav h2, .sideNav
@@ -2013,8 +2013,6 @@ p + .panel {
       .panel.img.event .part-content h2 span, .part-content
       .panel.img.event h2 span,
       .panel.img.event legend span,
-      .panel.img.event .list-atoz li h2 span, .list-atoz li
-      .panel.img.event h2 span,
       .panel.img.event .ms-rtestate-field h3 span, .ms-rtestate-field
       .panel.img.event h3 span,
       .panel.img.event .sideNav h2 span, .sideNav
@@ -2031,7 +2029,7 @@ p + .panel {
       .relatedPages h3 span,
       .relatedPages
       .panel.img.event h3 span {
-        color: #A2AD00;
+        color: #A75041;
         float: right; }
         @media (max-width: 767px) {
           .panel.img.event h3 span,
@@ -2040,8 +2038,6 @@ p + .panel {
           .panel.img.event .part-content h2 span, .part-content
           .panel.img.event h2 span,
           .panel.img.event legend span,
-          .panel.img.event .list-atoz li h2 span, .list-atoz li
-          .panel.img.event h2 span,
           .panel.img.event .ms-rtestate-field h3 span, .ms-rtestate-field
           .panel.img.event h3 span,
           .panel.img.event .sideNav h2 span, .sideNav
@@ -2116,13 +2112,13 @@ p + .panel {
   margin: 0 0 20px; }
 
 .panel-event .panel-event-date {
-  background: #A2AD00;
+  background: #A75041;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #A2AD00 0%, #A2AD00 50%, #A2AD00 50%, #8a9400 50%, #8a9400 50%, #A2AD00 50%, #8a9400 50%, #8a9400 100%);
+  background: -moz-linear-gradient(top, #A75041 0%, #A75041 50%, #A75041 50%, #95473a 50%, #95473a 50%, #A75041 50%, #95473a 50%, #95473a 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #A2AD00 0%, #A2AD00 50%, #A2AD00 50%, #8a9400 50%, #8a9400 50%, #A2AD00 50%, #8a9400 50%, #8a9400 100%);
+  background: -webkit-linear-gradient(top, #A75041 0%, #A75041 50%, #A75041 50%, #95473a 50%, #95473a 50%, #A75041 50%, #95473a 50%, #95473a 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #A2AD00 0%, #A2AD00 50%, #A2AD00 50%, #8a9400 50%, #8a9400 50%, #A2AD00 50%, #8a9400 50%, #8a9400 100%);
+  background: linear-gradient(to bottom, #A75041 0%, #A75041 50%, #A75041 50%, #95473a 50%, #95473a 50%, #A75041 50%, #95473a 50%, #95473a 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 );
   /* IE6-9 */
@@ -2203,7 +2199,7 @@ p + .panel {
         width: 21px; } }
 
 .panel-event .panel-event-info .panel-event-info-location {
-  color: #A2AD00;
+  color: #A75041;
   margin-bottom: 10px; }
   .panel-event .panel-event-info .panel-event-info-location:before {
     content: "\f041"; }
@@ -2467,55 +2463,74 @@ div.ms-rteElement-div-center {
 
 .cd-top {
   display: inline-block;
-  height: 40px;
-  width: 40px;
+  height: auto;
+  width: auto;
   position: fixed;
-  bottom: 40px;
+  bottom: 10px;
   right: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   /* image replacement properties */
   overflow: hidden;
-  text-indent: 100%;
+  text-indent: 0;
   white-space: nowrap;
-  background: rgba(0, 0, 0, 0.8) url("<%= asset_path('cd-top-arrow.svg') %>") no-repeat center 50%;
+  background: black;
   visibility: hidden;
   opacity: 0;
   -webkit-transition: opacity .3s 0s, visibility 0s .3s;
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   -o-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
-  z-index: 999; }
+  z-index: 999;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+  @media only screen and (min-width: 767px) {
+    .cd-top {
+      right: 20px;
+      bottom: 20px;
+      font-size: 16px; } }
+  @media only screen and (min-width: 1024px) {
+    .cd-top {
+      height: auto;
+      width: auto;
+      right: 30px;
+      bottom: 30px; } }
+  .cd-top:before {
+    font-family: FontAwesome;
+    content: '\f077';
+    display: block;
+    line-height: 0;
+    margin: 5px 0 10px; }
+  .cd-top:focus {
+    background: #FFBF47;
+    opacity: 1; }
+  .cd-top:hover {
+    text-decoration: none;
+    color: white;
+    background: grey; }
+  .cd-top.cd-is-visible {
+    visibility: visible;
+    opacity: 1; }
+  .cd-top.cd-fade-out {
+    opacity: .5; }
 
-.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+.cd-top.cd-is-visible,
+.cd-top.cd-fade-out,
+.no-touch .cd-top:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
   -moz-transition: opacity .3s 0s, visibility 0s 0s;
   -o-transition: opacity .3s 0s, visibility 0s 0s;
   transition: opacity .3s 0s, visibility 0s 0s; }
 
-.cd-top.cd-is-visible {
-  /* the button becomes visible */
-  visibility: visible;
-  opacity: 1; }
-
-.cd-top.cd-fade-out {
-  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-  opacity: .5; }
-
 .no-touch .cd-top:hover {
-  background-color: black;
+  background-color: grey;
   opacity: 1; }
-
-@media only screen and (min-width: 767px) {
-  .cd-top {
-    right: 20px;
-    bottom: 20px; } }
-
-@media only screen and (min-width: 1024px) {
-  .cd-top {
-    height: 60px;
-    width: 60px;
-    right: 30px;
-    bottom: 30px; } }
 
 /***********
 MAIN MENU
@@ -3626,7 +3641,7 @@ ul.accordion {
     border-bottom: 1px solid #DCDEE1;
     border-left: 5px solid transparent !important; }
     ul.accordion li:hover {
-      border-left: 5px solid #A2AD00 !important; }
+      border-left: 5px solid #A75041 !important; }
     ul.accordion li ul li,
     ul.accordion li ul li:hover {
       border: 0 !important; }
@@ -3638,14 +3653,14 @@ ul.accordion {
       padding: 20px 20px 20px 60px;
       text-decoration: none !important;
       font-size: 19px;
-      color: #A2AD00; }
+      color: #A75041; }
       @media (max-width: 641px) {
         ul.accordion li a.header, ul.accordion li .header.link {
           padding: 15px 15px 15px 35px;
           font-size: 16px; } }
       ul.accordion li a.header:hover, ul.accordion li .header.link:hover {
         background: rgba(0, 0, 0, 0.05);
-        color: #A2AD00; }
+        color: #A75041; }
       ul.accordion li a.header:focus, ul.accordion li .header.link:focus {
         color: #333 !important; }
         ul.accordion li a.header:focus:after, ul.accordion li .header.link:focus:after {
@@ -3659,7 +3674,7 @@ ul.accordion {
         left: 20px;
         top: 21px;
         margin-top: 0;
-        color: #A2AD00;
+        color: #A75041;
         font-weight: 400; }
         @media (max-width: 641px) {
           ul.accordion li a.header:after, ul.accordion li .header.link:after {
@@ -3669,7 +3684,7 @@ ul.accordion {
       ul.accordion li a.header.active:after, ul.accordion li .header.active.link:after {
         content: "\f068"; }
       ul.accordion li a.header:visited, ul.accordion li .header.link:visited {
-        color: #A2AD00; }
+        color: #A75041; }
     ul.accordion li div {
       padding: 0 !important; }
     ul.accordion li div.content-block {
@@ -3726,118 +3741,6 @@ ul.accordion li div.content-block div + .btn, ul.accordion li div.content-block 
 
 ul.accordion div.text-highlight, ul.accordion div.text-block {
   padding: 20px !important; }
-
-.atoz {
-  background: #F6F7FA;
-  padding: 20px 0 26px;
-  width: 100%;
-  text-transform: uppercase;
-  margin-top: 50px; }
-  @media (max-width: 1300px) {
-    .atoz {
-      padding: 10px 0 16px; } }
-  .atoz .atoz__header {
-    display: inline-block;
-    margin: 0;
-    font-size: 21px;
-    font-weight: 800;
-    line-height: 1em;
-    padding: 10px 0; }
-    @media (max-width: 641px) {
-      .atoz .atoz__header {
-        font-size: 19px; } }
-  .atoz ul {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-justify-content: flex-star;
-    -moz-box-justify-content: flex-star;
-    -ms-flex-justify-content: flex-star;
-    -webkit-justify-content: flex-star;
-    justify-content: flex-star;
-    -webkit-box-flex-wrap: wrap;
-    -moz-box-flex-wrap: wrap;
-    -ms-flex-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    float: none;
-    margin: 10px 0 0;
-    padding: 0; }
-    .atoz ul li {
-      float: left;
-      list-style: none;
-      font-size: 21px;
-      font-weight: 600;
-      line-height: 1em;
-      text-align: center;
-      padding: 0;
-      margin: 0 4px 4px 0;
-      -webkit-box-flex: auto;
-      -moz-box-flex: auto;
-      -webkit-flex: auto;
-      -ms-flex: auto;
-      flex: auto;
-      border: 1px solid #F6F7FA;
-      background: white; }
-      @media (max-width: 1100px) {
-        .atoz ul li {
-          min-width: 50px; } }
-      @media (max-width: 641px) {
-        .atoz ul li {
-          font-size: 16px; } }
-      .atoz ul li:last-of-type a, .atoz ul li:last-of-type .link {
-        width: 100%; }
-      .atoz ul li a, .atoz ul li .link {
-        text-decoration: none;
-        border: 0;
-        width: 100%;
-        display: inline-block;
-        background: white;
-        padding: 10px 0; }
-        @media (max-width: 1100px) {
-          .atoz ul li a, .atoz ul li .link {
-            padding: 15px 0; } }
-        .atoz ul li a:hover, .atoz ul li .link:hover {
-          background: #A2AD00;
-          color: white; }
-      .atoz ul li.active a, .atoz ul li.active .link {
-        background: #A2AD00;
-        color: white; }
-      .atoz ul li.inactive {
-        color: #9DA5B2;
-        display: inline-block;
-        border: 1px solid white;
-        background: #F6F7FA;
-        padding: 10px 0;
-        width: auto; }
-        @media (max-width: 1100px) {
-          .atoz ul li.inactive {
-            padding: 15px 0;
-            min-width: 50px; } }
-
-.list-atoz {
-  margin: 0 0 30px; }
-  .list-atoz li {
-    margin-bottom: 10px;
-    padding-left: 10px; }
-    .list-atoz li h2 {
-      margin: 20px 0 5px -10px; }
-  .list-atoz li:first-child h2 {
-    margin-top: 0; }
-
-#atozListResultsTop .atoz,
-#DeltaPlaceHolderMain .atoz {
-  margin: 0; }
-
-.list-atoz {
-  padding: 0;
-  float: none; }
-  .list-atoz li {
-    padding: 0; }
-    .list-atoz li h2 {
-      margin: 20px 0; }
 
 .blockLinks .listWebpart {
   background: transparent;
@@ -4174,272 +4077,9 @@ td .ui-state-hover {
 /** jquery ui datepicker overides ***/
 /** main button color for forms and comments **/
 form input[type=submit].submit {
-  background: #A2AD00; }
+  background: #A75041; }
 
 /**End  main button color for forms and comments **/
-/*****************
-CAROUSEL BOOTSTRAP
-*******************/
-.carousel {
-  height: 400px;
-  margin-bottom: 1.875em; }
-  .carousel .item,
-  .carousel .active,
-  .carousel .carousel-inner {
-    height: 100%; }
-  .carousel .fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-  .carousel .carousel-control {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    color: #fff;
-    text-align: center;
-    -webkit-text-shadow: none;
-    -moz-text-shadow: none;
-    -o-text-shadow: none;
-    text-shadow: none;
-    filter: alpha(opacity=100);
-    opacity: 1;
-    width: 5%; }
-    .carousel .carousel-control.right {
-      right: 0;
-      left: auto;
-      background-image: none; }
-    .carousel .carousel-control.left {
-      left: 0;
-      right: auto;
-      background-image: none; }
-  .carousel .carousel-caption {
-    position: absolute;
-    right: 10%;
-    bottom: 25%;
-    left: 10%;
-    z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #333;
-    text-align: left;
-    -webkit-text-shadow: none;
-    -moz-text-shadow: none;
-    -o-text-shadow: none;
-    text-shadow: none;
-    background: none; }
-    .carousel .carousel-caption a, .carousel .carousel-caption .link {
-      display: inline-block;
-      cursor: pointer;
-      z-index: 10; }
-      .carousel .carousel-caption a h2 span, .carousel .carousel-caption .link h2 span, .carousel .carousel-caption a p, .carousel .carousel-caption .link p, .carousel .carousel-caption a p, .carousel .carousel-caption .link p {
-        background: rgba(0, 0, 0, 0.6);
-        color: #fff;
-        padding: 20px;
-        margin: 0 0 10px;
-        display: inline-block; }
-      .carousel .carousel-caption a:hover h2 span, .carousel .carousel-caption .link:hover h2 span,
-      .carousel .carousel-caption a:focus h2 span,
-      .carousel .carousel-caption .link:focus h2 span,
-      .carousel .carousel-caption a:hover p,
-      .carousel .carousel-caption .link:hover p,
-      .carousel .carousel-caption a:focus p,
-      .carousel .carousel-caption .link:focus p {
-        background: #000; }
-      .carousel .carousel-caption a h2, .carousel .carousel-caption .link h2 {
-        margin: 0; }
-      .carousel .carousel-caption a p, .carousel .carousel-caption .link p {
-        font-size: 1.500rem; }
-      .carousel .carousel-caption a .external p:after, .carousel .carousel-caption .link .external p:after {
-        content: '\f08e';
-        font-family: FontAwesome;
-        font-weight: normal;
-        font-style: normal;
-        margin: 0px 0px 0px 10px; }
-  .carousel .carousel-caption span.carouselLink {
-    display: block; }
-  .carousel .carousel-indicators {
-    top: 5%;
-    bottom: auto; }
-    .carousel .carousel-indicators li {
-      border: 3px solid #ffffff;
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-      margin: 0; }
-    .carousel .carousel-indicators .active {
-      background: #fff; }
-  .carousel #carouselButtons {
-    position: absolute;
-    bottom: 10%;
-    left: 0;
-    z-index: 16;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center; }
-  .carousel #carouselButtons button {
-    border: none;
-    color: #006DA5;
-    padding: 10px 20px;
-    margin: 0 1px; }
-    .carousel #carouselButtons button:after {
-      content: "";
-      background: transparent; }
-  .carousel #carouselButtons button:hover,
-  .carousel #carouselButtons button:focus {
-    background: #000;
-    color: #fff; }
-
-@media (max-width: 767px) {
-  .carousel {
-    display: none; } }
-
-@media screen and (min-width: 767px) {
-  .carousel-control .glyphicon-chevron-left,
-  .carousel-control .glyphicon-chevron-right,
-  .carousel-control .icon-next,
-  .carousel-control .icon-prev {
-    width: 55px;
-    height: 55px;
-    margin-top: -30px;
-    font-size: 2.575rem;
-    color: #006DA5;
-    border-radius: 50%;
-    padding: 12px;
-    background: rgba(255, 255, 255, 0.9); }
-  .carousel-control:hover .icon-next,
-  .carousel-control:focus .icon-next,
-  .carousel-control:hover .icon-prev,
-  .carousel-control:focus .icon-prev {
-    background: #000;
-    color: #fff; } }
-
-.carousel #carouselButtons button {
-  background: #fff; }
-
-.carousel-inner .item {
-  padding: 0px; }
-
-/*END CAROUSEL BOOTSTRAP*/
-.highlighted, .panel {
-  padding: 2em 1.75em;
-  margin: 1em 0;
-  background: #ECF0F1;
-  box-shadow: 0 0 0; }
-  .highlighted img, .panel img {
-    max-width: 100%; }
-  .highlighted.section, .panel.section {
-    margin: 0px; }
-  .highlighted.alignCenter, .panel.alignCenter {
-    text-align: center; }
-  .highlighted h2:first-of-type, .highlighted h3:first-of-type, .highlighted h4:first-of-type, .panel h2:first-of-type, .panel h3:first-of-type, .panel h4:first-of-type {
-    margin-top: 0px; }
-  .highlighted h2, .highlighted h3, .highlighted h4, .highlighted p, .highlighted ul, .highlighted ol, .highlighted em, .panel h2, .panel h3, .panel h4, .panel p, .panel ul, .panel ol, .panel em {
-    color: #666; }
-  .highlighted em, .panel em {
-    font-size: 80px;
-    font-style: normal;
-    line-height: 60px;
-    margin-bottom: 30px;
-    font-weight: 800;
-    display: block; }
-  .highlighted a.btn, .highlighted .btn.link, .highlighted .form-group input.link[type=button], .form-group .highlighted input.link[type=button], .highlighted .form-group input.link.btn.btn-primary, .form-group .highlighted input.link.btn.btn-primary, .highlighted .form-group input.link[type=submit], .form-group .highlighted input.link[type=submit], .highlighted .form-group input.link.limitedrte-Style-BUTTON, .form-group .highlighted input.link.limitedrte-Style-BUTTON, .highlighted .link.limitedrte-Style-BUTTON, .highlighted #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted .link#myChatLinkInfo, .highlighted a.limitedrte-Style-BUTTON, .highlighted #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted a#myChatLinkInfo, .highlighted #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .highlighted a#myChatLinkInfo, .highlighted #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .highlighted #myChatLinkInfo.link, .panel a.btn, .panel .btn.link, .panel .form-group input.link[type=button], .form-group .panel input.link[type=button], .panel .form-group input.link.btn.btn-primary, .form-group .panel input.link.btn.btn-primary, .panel .form-group input.link[type=submit], .form-group .panel input.link[type=submit], .panel .form-group input.link.limitedrte-Style-BUTTON, .form-group .panel input.link.limitedrte-Style-BUTTON, .panel .link.limitedrte-Style-BUTTON, .panel #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel .link#myChatLinkInfo, .panel a.limitedrte-Style-BUTTON, .panel #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel a#myChatLinkInfo, .panel #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .panel a#myChatLinkInfo, .panel #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .panel #myChatLinkInfo.link {
-    font-size: 16px;
-    border-color: #666;
-    color: #666;
-    background: transparent;
-    margin: 0px 0 20px;
-    display: inline-block; }
-    @media screen and (max-width: 400px) {
-      .highlighted a.btn, .highlighted .btn.link, .highlighted .form-group input.link[type=button], .form-group .highlighted input.link[type=button], .highlighted .form-group input.link.btn.btn-primary, .form-group .highlighted input.link.btn.btn-primary, .highlighted .form-group input.link[type=submit], .form-group .highlighted input.link[type=submit], .highlighted .form-group input.link.limitedrte-Style-BUTTON, .form-group .highlighted input.link.limitedrte-Style-BUTTON, .highlighted .link.limitedrte-Style-BUTTON, .highlighted #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted .link#myChatLinkInfo, .highlighted a.limitedrte-Style-BUTTON, .highlighted #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted a#myChatLinkInfo, .highlighted #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .highlighted a#myChatLinkInfo, .highlighted #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .highlighted #myChatLinkInfo.link, .panel a.btn, .panel .btn.link, .panel .form-group input.link[type=button], .form-group .panel input.link[type=button], .panel .form-group input.link.btn.btn-primary, .form-group .panel input.link.btn.btn-primary, .panel .form-group input.link[type=submit], .form-group .panel input.link[type=submit], .panel .form-group input.link.limitedrte-Style-BUTTON, .form-group .panel input.link.limitedrte-Style-BUTTON, .panel .link.limitedrte-Style-BUTTON, .panel #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel .link#myChatLinkInfo, .panel a.limitedrte-Style-BUTTON, .panel #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel a#myChatLinkInfo, .panel #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .panel a#myChatLinkInfo, .panel #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .panel #myChatLinkInfo.link {
-        width: 100%; } }
-    .highlighted a.btn:hover, .highlighted .btn.link:hover, .highlighted .form-group input.link[type=button]:hover, .form-group .highlighted input.link[type=button]:hover, .highlighted .form-group input.link[type=submit]:hover, .form-group .highlighted input.link[type=submit]:hover, .highlighted .link.limitedrte-Style-BUTTON:hover, .highlighted #myChatLinkContainer #myChatLink a .link#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .highlighted .link#myChatLinkInfo:hover, .highlighted a.limitedrte-Style-BUTTON:hover, .highlighted #myChatLinkContainer #myChatLink a a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .highlighted a#myChatLinkInfo:hover, .highlighted #myChatLinkContainer #myChatLink .link a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .highlighted a#myChatLinkInfo:hover, .highlighted #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link:hover, #myChatLinkContainer #myChatLink .link .highlighted #myChatLinkInfo.link:hover, .panel a.btn:hover, .panel .btn.link:hover, .panel .form-group input.link[type=button]:hover, .form-group .panel input.link[type=button]:hover, .panel .form-group input.link[type=submit]:hover, .form-group .panel input.link[type=submit]:hover, .panel .link.limitedrte-Style-BUTTON:hover, .panel #myChatLinkContainer #myChatLink a .link#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .panel .link#myChatLinkInfo:hover, .panel a.limitedrte-Style-BUTTON:hover, .panel #myChatLinkContainer #myChatLink a a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .panel a#myChatLinkInfo:hover, .panel #myChatLinkContainer #myChatLink .link a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .panel a#myChatLinkInfo:hover, .panel #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link:hover, #myChatLinkContainer #myChatLink .link .panel #myChatLinkInfo.link:hover {
-      background: #666;
-      color: #ECF0F1; }
-  .highlighted.alt, .panel.alt {
-    background: #A2AD00; }
-    .highlighted.alt h2, .highlighted.alt h3, .highlighted.alt h4, .highlighted.alt p, .highlighted.alt ul, .highlighted.alt ol, .highlighted.alt em, .panel.alt h2, .panel.alt h3, .panel.alt h4, .panel.alt p, .panel.alt ul, .panel.alt ol, .panel.alt em {
-      color: #fff; }
-    .highlighted.alt a.btn, .highlighted.alt .btn.link, .highlighted.alt .form-group input.link[type=button], .form-group .highlighted.alt input.link[type=button], .highlighted.alt .form-group input.link[type=submit], .form-group .highlighted.alt input.link[type=submit], .highlighted.alt .link.limitedrte-Style-BUTTON, .highlighted.alt #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted.alt .link#myChatLinkInfo, .highlighted.alt a.limitedrte-Style-BUTTON, .highlighted.alt #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .highlighted.alt a#myChatLinkInfo, .highlighted.alt #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .highlighted.alt a#myChatLinkInfo, .highlighted.alt #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .highlighted.alt #myChatLinkInfo.link, .panel.alt a.btn, .panel.alt .btn.link, .panel.alt .form-group input.link[type=button], .form-group .panel.alt input.link[type=button], .panel.alt .form-group input.link[type=submit], .form-group .panel.alt input.link[type=submit], .panel.alt .link.limitedrte-Style-BUTTON, .panel.alt #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel.alt .link#myChatLinkInfo, .panel.alt a.limitedrte-Style-BUTTON, .panel.alt #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .panel.alt a#myChatLinkInfo, .panel.alt #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .panel.alt a#myChatLinkInfo, .panel.alt #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .panel.alt #myChatLinkInfo.link {
-      border-color: #fff;
-      color: #fff; }
-      .highlighted.alt a.btn:hover, .highlighted.alt .btn.link:hover, .highlighted.alt .form-group input.link[type=button]:hover, .form-group .highlighted.alt input.link[type=button]:hover, .highlighted.alt .form-group input.link[type=submit]:hover, .form-group .highlighted.alt input.link[type=submit]:hover, .highlighted.alt .link.limitedrte-Style-BUTTON:hover, .highlighted.alt #myChatLinkContainer #myChatLink a .link#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .highlighted.alt .link#myChatLinkInfo:hover, .highlighted.alt a.limitedrte-Style-BUTTON:hover, .highlighted.alt #myChatLinkContainer #myChatLink a a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .highlighted.alt a#myChatLinkInfo:hover, .highlighted.alt #myChatLinkContainer #myChatLink .link a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .highlighted.alt a#myChatLinkInfo:hover, .highlighted.alt #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link:hover, #myChatLinkContainer #myChatLink .link .highlighted.alt #myChatLinkInfo.link:hover, .panel.alt a.btn:hover, .panel.alt .btn.link:hover, .panel.alt .form-group input.link[type=button]:hover, .form-group .panel.alt input.link[type=button]:hover, .panel.alt .form-group input.link[type=submit]:hover, .form-group .panel.alt input.link[type=submit]:hover, .panel.alt .link.limitedrte-Style-BUTTON:hover, .panel.alt #myChatLinkContainer #myChatLink a .link#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .panel.alt .link#myChatLinkInfo:hover, .panel.alt a.limitedrte-Style-BUTTON:hover, .panel.alt #myChatLinkContainer #myChatLink a a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink a .panel.alt a#myChatLinkInfo:hover, .panel.alt #myChatLinkContainer #myChatLink .link a#myChatLinkInfo:hover, #myChatLinkContainer #myChatLink .link .panel.alt a#myChatLinkInfo:hover, .panel.alt #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link:hover, #myChatLinkContainer #myChatLink .link .panel.alt #myChatLinkInfo.link:hover {
-        background: #fff;
-        color: #A2AD00; }
-  @media screen and (max-width: 400px) {
-    .highlighted, .panel {
-      padding: 1.5em 1em; } }
-
-@media (max-width: 768px) {
-  .lead {
-    font-size: 21px; } }
-
-a.arrow, .arrow.link {
-  padding: 15px;
-  display: block;
-  position: relative;
-  border-bottom: 1px solid #bbcada; }
-  a.arrow:first-of-type, .arrow.link:first-of-type {
-    border-top: 1px solid #bbcada; }
-  a.arrow:after, .arrow.link:after {
-    content: '\f105';
-    font-family: FontAwesome;
-    font-size: 20px;
-    border-radius: 50%;
-    border: 2px solid #333;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    padding: 2px 0 0 2px;
-    margin: -18px 5px 0 0;
-    color: #333;
-    display: inline-block;
-    right: 0px;
-    position: absolute;
-    top: 50%; }
-  a.arrow:hover, .arrow.link:hover {
-    background: #f2f2f2; }
-    a.arrow:hover:after, .arrow.link:hover:after {
-      background: #333;
-      color: #fff; }
-
-li a.arrow:first-of-type, li .arrow.link:first-of-type {
-  border-top: none; }
-
-.contentLink ul {
-  margin: 0px;
-  list-style: none;
-  padding: 0px; }
-  .contentLink ul li {
-    margin: 30px 0px; }
-    .contentLink ul li div {
-      padding: 30px;
-      background: #ECF0F1;
-      text-align: center;
-      position: relative;
-      padding-bottom: 100px; }
-      .contentLink ul li div img {
-        max-width: 100%; }
-      .contentLink ul li div h2 {
-        font-size: 30px;
-        font-weight: bold; }
-      .contentLink ul li div p {
-        margin: 30px; }
-      .contentLink ul li div a.btn, .contentLink ul li div .btn.link, .contentLink ul li div .form-group input.link[type=button], .form-group .contentLink ul li div input.link[type=button], .contentLink ul li div .form-group input.link[type=submit], .form-group .contentLink ul li div input.link[type=submit], .contentLink ul li div .link.limitedrte-Style-BUTTON, .contentLink ul li div #myChatLinkContainer #myChatLink a .link#myChatLinkInfo, #myChatLinkContainer #myChatLink a .contentLink ul li div .link#myChatLinkInfo, .contentLink ul li div a.limitedrte-Style-BUTTON, .contentLink ul li div #myChatLinkContainer #myChatLink a a#myChatLinkInfo, #myChatLinkContainer #myChatLink a .contentLink ul li div a#myChatLinkInfo, .contentLink ul li div #myChatLinkContainer #myChatLink .link a#myChatLinkInfo, #myChatLinkContainer #myChatLink .link .contentLink ul li div a#myChatLinkInfo, .contentLink ul li div #myChatLinkContainer #myChatLink .link #myChatLinkInfo.link, #myChatLinkContainer #myChatLink .link .contentLink ul li div #myChatLinkInfo.link {
-        position: absolute;
-        bottom: 30px;
-        left: 30px;
-        right: 30px;
-        width: auto; }
-      .contentLink ul li div:after {
-        content: '';
-        height: 80px;
-        display: block; }
-
 .description-list {
   margin: 10px 0 30px; }
   .description-list .description-list__item {
@@ -4488,9 +4128,6 @@ li a.arrow:first-of-type, li .arrow.link:first-of-type {
       .description-list .description-list__item .description-list__item-content .text-highlight, .description-list .description-list__item .description-list__item-content .text-block {
         margin: 10px 0; }
 
-/*********************
-docsList
-**********************/
 .docList a, .docList .link {
   display: block;
   text-align: left;
@@ -4498,7 +4135,7 @@ docsList
   height: 100%;
   padding-top: 45px;
   font-weight: bold;
-  border: 1px solid #ddd;
+  border: 1px solid #DCDEE1;
   text-decoration: none !important; }
   .docList a:hover, .docList .link:hover, .docList a:focus, .docList .link:focus {
     background: #F6F7FA;
@@ -4546,7 +4183,8 @@ docsList
     position: absolute;
     top: 12px;
     right: 15px;
-    color: #666B76; }
+    color: #666B76;
+    font-weight: 300; }
 
 .docList .pdf a:before, .docList .pdf .link:before {
   content: '\f1c1';
@@ -4568,7 +4206,15 @@ docsList
   content: '\f1c4';
   color: orange; }
 
-.docList .pdf a:hover:before, .docList .pdf .link:hover:before, .docList .word a:hover:before, .docList .word .link:hover:before, .docList .xl a:hover:before, .docList .xl .link:hover:before, .docList .external a:hover:before, .docList .external .link:hover:before, .docList .pp a:hover:before, .docList .pp .link:hover:before {
+.docList .pdf a:hover:before, .docList .pdf .link:hover:before,
+.docList .word a:hover:before,
+.docList .word .link:hover:before,
+.docList .xl a:hover:before,
+.docList .xl .link:hover:before,
+.docList .external a:hover:before,
+.docList .external .link:hover:before,
+.docList .pp a:hover:before,
+.docList .pp .link:hover:before {
   color: #fff; }
 
 .docList.one, .docList.two, .docList.three, .docList.four, .docList.five {
@@ -4579,6 +4225,9 @@ docsList
 
 .docList li {
   padding: 15px; }
+  @media (max-width: 600px) {
+    .docList li {
+      padding: 5px 0; } }
 
 .docList.five li {
   width: 20%; }
@@ -4604,7 +4253,9 @@ docsList
     .docList.one li a:hover, .docList.one li .link:hover {
       background: #F6F7FA;
       text-decoration: none; }
-      .docList.one li a:hover span.info, .docList.one li .link:hover span.info, .docList.one li a:hover:before, .docList.one li .link:hover:before, .docList.one li a:hover span.thirdInfo, .docList.one li .link:hover span.thirdInfo {
+      .docList.one li a:hover span.info, .docList.one li .link:hover span.info, .docList.one li a:hover:before, .docList.one li .link:hover:before,
+      .docList.one li a:hover span.thirdInfo,
+      .docList.one li .link:hover span.thirdInfo {
         background: transparent;
         color: #333; }
     .docList.one li a:before, .docList.one li .link:before {
@@ -4636,18 +4287,39 @@ docsList
       right: auto; }
 
 @media (max-width: 1200px) {
-  .docList.four li, .docList.five li {
+  .docList.four li,
+  .docList.five li {
     width: 33%;
     float: left; } }
 
 @media (max-width: 991px) {
-  .docList.three li, .docList.four li, .docList.five li {
+  .docList.three li,
+  .docList.four li,
+  .docList.five li {
     width: 50%;
     float: left; } }
 
 @media (max-width: 600px) {
-  .docList.two li, .docList.three li, .docList.four li, .docList.five li {
+  .docList.two li,
+  .docList.three li,
+  .docList.four li,
+  .docList.five li {
     width: 100%; } }
+
+.docList.one .listWebpart ul li {
+  float: none; }
+  .docList.one .listWebpart ul li a:before, .docList.one .listWebpart ul li .link:before {
+    top: 22px; }
+    @media (max-width: 641px) {
+      .docList.one .listWebpart ul li a:before, .docList.one .listWebpart ul li .link:before {
+        top: 20px; } }
+  .docList.one .listWebpart ul li:first-of-type a, .docList.one .listWebpart ul li:first-of-type .link {
+    border-top: 1px solid #DCDEE1; }
+
+.docList.one, .docList.two, .docList.three, .docList.four, .docList.five {
+  margin: 30px 0; }
+  .docList.one ul li a, .docList.one ul li .link, .docList.two ul li a, .docList.two ul li .link, .docList.three ul li a, .docList.three ul li .link, .docList.four ul li a, .docList.four ul li .link, .docList.five ul li a, .docList.five ul li .link {
+    border-bottom: 1px solid #DCDEE1; }
 
 .eventSearchResults h2 {
   margin-top: 0; }
@@ -4665,7 +4337,7 @@ docsList
       .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper h3, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper h3 {
         position: relative;
         margin: 0 0 3px;
-        color: #A2AD00;
+        color: #A75041;
         padding-right: 25px; }
         .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li a .eventsContentPod .eventsContentPodWrapper h3:after, .eventSearchResults .eventSearchResultsList .eventListOnly ul.content li .link .eventsContentPod .eventsContentPodWrapper h3:after {
           content: '\f105';
@@ -6106,7 +5778,7 @@ ACTIVITY SEARCH HOME
     font-size: 25px;
     font-weight: 400;
     background-color: rgba(255, 255, 255, 0.05);
-    color: #A2AD00; }
+    color: #A75041; }
   .activitySearchHome .nav-tabs > li.active > a, .activitySearchHome .nav-tabs > li.active > .link, .activitySearchHome .nav-tabs > li.active > a:focus, .activitySearchHome .nav-tabs > li.active > .link:focus, .activitySearchHome .nav-tabs > li.active > a:hover, .activitySearchHome .nav-tabs > li.active > .link:hover {
     color: #fff;
     cursor: default;
@@ -6174,7 +5846,7 @@ ACTIVITY SEARCH HOME
   padding: 10px;
   vertical-align: top;
   color: #fff;
-  background: #A2AD00;
+  background: #A75041;
   font-family: "Helvetica Neue", Helvetica, Arial; }
 
 .searchButton {
@@ -6564,111 +6236,6 @@ ul.content li.resultsItemWrapper {
   .ie8 .groupPromo ul li a, .ie8 .groupPromo ul li .link {
     width: 100%; }
 
-.heroBanner {
-  padding: 55px 0;
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -o-background-size: cover !important;
-  background-size: cover !important; }
-  .heroBanner .container-fluid {
-    position: relative; }
-    .heroBanner .container-fluid h1, .heroBanner .container-fluid p.lead {
-      font-size: 40px;
-      font-weight: 100;
-      color: #fff;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
-      line-height: 48px;
-      width: 40%;
-      margin: 0 0 20px 0; }
-    .heroBanner .container-fluid p {
-      font-size: 20px;
-      font-weight: 100;
-      color: #fff;
-      padding: 20px;
-      background: rgba(0, 0, 0, 0.5);
-      width: 40%;
-      margin: 0 0 20px 0; }
-  .heroBanner .button {
-    position: absolute;
-    bottom: 0px;
-    right: 55px;
-    font-size: 20px; }
-  @media only screen and (max-width: 700px) {
-    .heroBanner {
-      padding: 0px; }
-      .heroBanner .container-fluid {
-        padding: 30px;
-        background: rgba(0, 0, 0, 0.5); }
-        .heroBanner .container-fluid h1, .heroBanner .container-fluid p.lead {
-          width: 100%;
-          margin: 0 auto;
-          font-size: 30px;
-          line-height: 30px;
-          background: none;
-          padding: 0 20px; }
-        .heroBanner .container-fluid p {
-          font-size: 25px;
-          width: 100%;
-          margin: 0px auto;
-          background: none; }
-        .heroBanner .container-fluid .button {
-          position: relative;
-          font-size: 20px;
-          width: 100%;
-          right: 0px;
-          display: block; } }
-
-.heroBanner {
-  padding: 60px 0 110px 0;
-  -webkit-background-size: cover !important;
-  -moz-background-size: cover !important;
-  -o-background-size: cover !important;
-  background-size: cover !important;
-  min-height: 450px;
-  position: relative; }
-  .heroBanner:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: block;
-    z-index: 0; }
-  .heroBanner .container-fluid {
-    z-index: 1;
-    position: relative; }
-    .heroBanner .container-fluid p.lead, .heroBanner .container-fluid p, .heroBanner .container-fluid h1, .heroBanner .container-fluid h2 {
-      color: #fff;
-      max-width: 46em; }
-    @media (min-width: 641px) {
-      .heroBanner .container-fluid h1, .heroBanner .container-fluid p.lead {
-        font-size: 70px;
-        line-height: 1em; }
-      .heroBanner .container-fluid h2 {
-        font-size: 42px; } }
-  .heroBanner .button {
-    position: absolute;
-    bottom: 0px;
-    right: 55px;
-    font-size: 20px; }
-  @media only screen and (max-width: 700px) {
-    .heroBanner {
-      padding: 0px;
-      min-height: auto; }
-      .heroBanner .container-fluid {
-        padding: 30px; }
-        .heroBanner .container-fluid .button {
-          position: relative;
-          font-size: 20px;
-          width: 100%;
-          right: 0px;
-          display: block; } }
-
 /* iconLinks -----------------------------------------------------------------*/
 .iconLinks ul {
   text-align: center;
@@ -6734,599 +6301,6 @@ ul.content li.resultsItemWrapper {
     content: "\f0e1";
     left: 35%; }
 
-.mega-promo {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -moz-box-flex-wrap: wrap;
-  -ms-flex-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 0 0 -15px;
-  padding: 30px 0 30px; }
-  .mega-promo .mega-promo__item {
-    padding-left: 15px;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align-items: stretch;
-    -moz-box-align-items: stretch;
-    -ms-flex-align-items: stretch;
-    -webkit-align-items: stretch;
-    align-items: stretch;
-    margin-bottom: 15px;
-    width: 100%; }
-    .mega-promo .mega-promo__item.external a:after, .mega-promo .mega-promo__item.external .link:after {
-      content: "\f08e"; }
-    .mega-promo .mega-promo__item a, .mega-promo .mega-promo__item .link {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      background: #F6F7FA;
-      position: relative;
-      text-decoration: none; }
-      @media (max-width: 500px) {
-        .mega-promo .mega-promo__item a, .mega-promo .mega-promo__item .link {
-          padding-bottom: 30px; } }
-      .mega-promo .mega-promo__item a:focus .mega-promo__header, .mega-promo .mega-promo__item .link:focus .mega-promo__header,
-      .mega-promo .mega-promo__item a:focus .mega-promo__secondary,
-      .mega-promo .mega-promo__item .link:focus .mega-promo__secondary,
-      .mega-promo .mega-promo__item a:focus.external a:after,
-      .mega-promo .mega-promo__item .link:focus.external a:after,
-      .mega-promo .mega-promo__item a:focus.external .link:after,
-      .mega-promo .mega-promo__item .link:focus.external .link:after, .mega-promo .mega-promo__item a:focus:after, .mega-promo .mega-promo__item .link:focus:after {
-        color: #333 !important; }
-      .mega-promo .mega-promo__item a:after, .mega-promo .mega-promo__item .link:after {
-        font-family: FontAwesome;
-        content: "";
-        position: absolute;
-        right: 20px;
-        bottom: 20px;
-        color: #9DA5B2;
-        font-size: 19px; }
-        @media (max-width: 600px) {
-          .mega-promo .mega-promo__item a:after, .mega-promo .mega-promo__item .link:after {
-            font-size: 16px; } }
-      .mega-promo .mega-promo__item a:hover, .mega-promo .mega-promo__item .link:hover {
-        background: #e6e8f1;
-        text-decoration: none; }
-        .mega-promo .mega-promo__item a:hover .mega-promo__img, .mega-promo .mega-promo__item .link:hover .mega-promo__img {
-          opacity: 0.8; }
-        .mega-promo .mega-promo__item a:hover .mega-promo__header, .mega-promo .mega-promo__item .link:hover .mega-promo__header {
-          text-decoration: underline; }
-      .mega-promo .mega-promo__item a .mega-promo__img-wrapper, .mega-promo .mega-promo__item .link .mega-promo__img-wrapper {
-        display: block;
-        position: relative;
-        z-index: 1;
-        background-color: white;
-        padding-bottom: 56.25%;
-        float: none;
-        margin: 0;
-        width: 100%; }
-        .mega-promo .mega-promo__item a .mega-promo__img-wrapper .mega-promo__img, .mega-promo .mega-promo__item .link .mega-promo__img-wrapper .mega-promo__img {
-          bottom: 0;
-          left: 0;
-          position: absolute;
-          right: 0;
-          top: 0;
-          display: block;
-          padding-bottom: 56.25%;
-          background-repeat: no-repeat;
-          background-position: top center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover; }
-      .mega-promo .mega-promo__item a .mega-promo__content, .mega-promo .mega-promo__item .link .mega-promo__content {
-        display: block;
-        padding: 20px 60px 20px 20px; }
-        @media (max-width: 500px) {
-          .mega-promo .mega-promo__item a .mega-promo__content, .mega-promo .mega-promo__item .link .mega-promo__content {
-            position: relative;
-            padding: 15px; } }
-        .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__header {
-          color: #3D414A;
-          margin: 0 0 10px;
-          font-size: 24px;
-          line-height: 30px;
-          font-weight: 600; }
-          @media (max-width: 500px) {
-            .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__header, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__header {
-              font-size: 21px;
-              line-height: 26px; } }
-        .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__secondary {
-          color: #666B76;
-          margin: 0;
-          font-size: 18px;
-          line-height: 24px;
-          font-weight: 400; }
-          @media (max-width: 500px) {
-            .mega-promo .mega-promo__item a .mega-promo__content .mega-promo__secondary, .mega-promo .mega-promo__item .link .mega-promo__content .mega-promo__secondary {
-              font-size: 16px;
-              line-height: 20px; } }
-      .mega-promo .mega-promo__item a .mega-promo__highlight, .mega-promo .mega-promo__item .link .mega-promo__highlight {
-        background: #F6F7FA;
-        color: #3D414A;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 2;
-        padding: 10px; }
-    .mega-promo .mega-promo__item.featured {
-      width: 100% !important; }
-      .mega-promo .mega-promo__item.featured .mega-promo__header {
-        font-size: 32px !important;
-        line-height: 36px !important;
-        margin-bottom: 10px !important;
-        color: #3D414A; }
-      @media (min-width: 600px) {
-        .mega-promo .mega-promo__item.featured .mega-promo__highlight {
-          font-size: 20px !important; } }
-      @media (max-width: 600px) {
-        .mega-promo .mega-promo__item.featured {
-          margin-left: -15px;
-          margin-right: -15px; }
-          .mega-promo .mega-promo__item.featured a, .mega-promo .mega-promo__item.featured .link {
-            padding-bottom: 50px; } }
-      @media (min-width: 767px) {
-        .mega-promo .mega-promo__item.featured .mega-promo__header {
-          font-size: 40px !important;
-          line-height: 44px !important; } }
-      @media (min-width: 990px) {
-        .mega-promo .mega-promo__item.featured a:after, .mega-promo .mega-promo__item.featured .link:after {
-          right: 30px;
-          bottom: 30px;
-          font-size: 32px; }
-        .mega-promo .mega-promo__item.featured a .mega-promo__img-wrapper, .mega-promo .mega-promo__item.featured .link .mega-promo__img-wrapper {
-          display: inline-block;
-          width: 66.66%;
-          float: left;
-          padding-bottom: 37.5%; }
-          .mega-promo .mega-promo__item.featured a .mega-promo__img-wrapper .mega-promo__img, .mega-promo .mega-promo__item.featured .link .mega-promo__img-wrapper .mega-promo__img {
-            padding-bottom: 37.5%; }
-        .mega-promo .mega-promo__item.featured a .mega-promo__content, .mega-promo .mega-promo__item.featured .link .mega-promo__content {
-          float: right;
-          display: inline-block;
-          width: 33.33%;
-          padding: 30px; }
-        .mega-promo .mega-promo__item.featured a .mega-promo__highlight, .mega-promo .mega-promo__item.featured .link .mega-promo__highlight {
-          right: auto;
-          left: 0; } }
-    .mega-promo .mega-promo__item.two-thirds {
-      width: 66.66% !important; }
-    .mega-promo .mega-promo__item.half {
-      width: 50% !important; }
-    @media (min-width: 767px) {
-      .mega-promo .mega-promo__item.two-thirds .mega-promo__header, .mega-promo .mega-promo__item.half .mega-promo__header {
-        font-size: 32px !important; } }
-    .mega-promo .mega-promo__item.third {
-      width: 33.33% !important; }
-    .mega-promo .mega-promo__item.quarter {
-      width: 25% !important; }
-      .mega-promo .mega-promo__item.quarter .mega-promo__header {
-        font-size: 21px !important;
-        line-height: 26px !important; }
-      @media (max-width: 767px) {
-        .mega-promo .mega-promo__item.quarter {
-          width: 50% !important; } }
-      @media (max-width: 500px) {
-        .mega-promo .mega-promo__item.quarter {
-          width: 100% !important; } }
-    @media (max-width: 767px) {
-      .mega-promo .mega-promo__item.two-thirds, .mega-promo .mega-promo__item.half, .mega-promo .mega-promo__item.third {
-        width: 100% !important; } }
-    @media (min-width: 767px) {
-      .mega-promo .mega-promo__item.third a, .mega-promo .mega-promo__item.third .link, .mega-promo .mega-promo__item.quarter a, .mega-promo .mega-promo__item.quarter .link {
-        padding-bottom: 50px; }
-        .mega-promo .mega-promo__item.third a .mega-promo__content, .mega-promo .mega-promo__item.third .link .mega-promo__content, .mega-promo .mega-promo__item.quarter a .mega-promo__content, .mega-promo .mega-promo__item.quarter .link .mega-promo__content {
-          padding: 20px; } }
-    .mega-promo .mega-promo__item.no-img.third a, .mega-promo .mega-promo__item.no-img.third .link, .mega-promo .mega-promo__item.no-img.quarter a, .mega-promo .mega-promo__item.no-img.quarter .link {
-      padding-bottom: 0 !important; }
-    .mega-promo .mega-promo__item.no-img a:after, .mega-promo .mega-promo__item.no-img .link:after {
-      display: none; }
-    .mega-promo .mega-promo__item.no-img .mega-promo__img-wrapper {
-      display: none; }
-    .mega-promo .mega-promo__item.no-img .mega-promo__header {
-      font-size: 32px !important;
-      line-height: 36px !important; }
-      @media (max-width: 500px) {
-        .mega-promo .mega-promo__item.no-img .mega-promo__header {
-          font-size: 24px !important;
-          line-height: 30px !important; } }
-    .mega-promo .mega-promo__item.no-img .mega-promo__highlight {
-      position: relative;
-      top: auto;
-      right: auto;
-      padding: 10px;
-      display: inline-block;
-      margin: -5px 0 20px 20px; }
-
-.no-flexbox .mega-promo .mega-promo__item {
-  display: inline-block;
-  float: left; }
-  .no-flexbox .mega-promo .mega-promo__item.featured a, .no-flexbox .mega-promo .mega-promo__item.featured .link {
-    display: inline-block;
-    width: 100%; }
-
-.sectionSubsite.news {
-  float: left; }
-  .sectionSubsite.news h3 {
-    border: 0px; }
-  .sectionSubsite.news input {
-    padding: 10px;
-    height: 50px;
-    border: 1px solid #ddd;
-    float: left; }
-  @media only screen and (max-width: 400px) {
-    .sectionSubsite.news input {
-      width: 150px; } }
-  .sectionSubsite.news a.button, .sectionSubsite.news .button.link {
-    display: inline-block;
-    background: green;
-    border: none;
-    margin-top: 0px;
-    float: left;
-    padding: 12px;
-    text-decoration: none; }
-    .sectionSubsite.news a.button:hover, .sectionSubsite.news .button.link:hover {
-      background: #001a00;
-      color: #fff;
-      text-decoration: none; }
-    .sectionSubsite.news a.button:after, .sectionSubsite.news .button.link:after {
-      display: none; }
-  .sectionSubsite.news .datePickerContainer {
-    float: left;
-    width: 250px; }
-    .sectionSubsite.news .datePickerContainer:first-of-type {
-      width: 150px; }
-    .sectionSubsite.news .datePickerContainer label {
-      width: 100%; }
-    .sectionSubsite.news .datePickerContainer input {
-      width: 140px;
-      margin-bottom: 10px; }
-    @media only screen and (max-width: 400px) {
-      .sectionSubsite.news .datePickerContainer input {
-        width: 150px; } }
-  .sectionSubsite.news .accordion {
-    margin: 0px; }
-    .sectionSubsite.news .accordion a.header, .sectionSubsite.news .accordion .header.link {
-      margin: 0px; }
-    .sectionSubsite.news .accordion li div div {
-      padding: 0px; }
-
-#paging h2 {
-  font-size: 40px;
-  color: #9B59B6;
-  padding: 10px 0px; }
-
-#paging .contentPod {
-  margin: 0px 0px 0px 0px;
-  width: 100%;
-  border-bottom: 1px solid #ddd;
-  background: #ffffff;
-  font-size: 0.9em; }
-  #paging .contentPod h3 {
-    font-size: 1.4em;
-    margin: 0px;
-    line-height: 1.1em;
-    margin-bottom: 5px; }
-  #paging .contentPod a, #paging .contentPod .link {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    text-decoration: none; }
-    #paging .contentPod a:hover, #paging .contentPod .link:hover, #paging .contentPod a:focus, #paging .contentPod .link:focus {
-      text-decoration: none;
-      background: #f2f2f2; }
-    #paging .contentPod a p.date, #paging .contentPod .link p.date {
-      text-transform: uppercase; }
-    #paging .contentPod a img, #paging .contentPod .link img {
-      margin: 0px 15px 0px 0px;
-      max-width: 300px; }
-  #paging .contentPod h2 {
-    font-size: 1.4em;
-    font-weight: normal !important; }
-
-#paging ul.content {
-  border: none;
-  margin: 0;
-  padding: 0px 0 0 0;
-  list-style: none;
-  clear: left; }
-  #paging ul.content li {
-    padding: 0; }
-
-.ms-promlink-headerNav {
-  display: inline-flex;
-  float: none;
-  margin-bottom: 20px; }
-
-.ms-promlink-button-inner {
-  display: none; }
-
-.pagingNav {
-  display: block;
-  padding: 0 0 20px 0;
-  border-bottom: 1px solid #ddd;
-  text-align: center; }
-
-.pageNumbers a, .pageNumbers .link, .ms-promlink-button, .pageNumbers strong {
-  float: left;
-  list-style: none;
-  padding: 10px;
-  color: #333;
-  border: 1px solid #c4c4c4;
-  border-left: none;
-  margin: 0;
-  height: auto;
-  width: auto;
-  font-size: 16px;
-  font-family: "Helvetica Neue", Helvetica, Arial; }
-  .pageNumbers a:first-of-type, .pageNumbers .link:first-of-type, .ms-promlink-button:first-of-type, .pageNumbers strong:first-of-type {
-    border-left: 1px solid #c4c4c4; }
-  .pageNumbers a:hover, .pageNumbers .link:hover, .ms-promlink-button:hover, .pageNumbers strong:hover {
-    background: #666;
-    color: #fff;
-    border-color: #666; }
-
-.ms-promlink-button span:before {
-  font-family: FontAwesome;
-  content: "\f105";
-  position: absolute;
-  font-size: 22px;
-  color: green;
-  top: 4px;
-  left: 6px;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased; }
-
-.ms-promlink-button .ms-promlink-button-image {
-  overflow: visible; }
-
-.ms-promlink-button span.previous:before {
-  content: "\f104"; }
-
-.alt_page_navigation a:hover, .alt_page_navigation .link:hover,
-.page_navigation a:hover,
-.page_navigation .link:hover,
-a.active_page,
-.active_page.link {
-  background: #666;
-  color: #fff;
-  border-color: #666; }
-
-.pageNumbers strong {
-  background-color: #efefef;
-  color: #999;
-  pointer-events: none;
-  border-left: none !important; }
-
-.sectionSubsite.news ul.accordion li div.content-block {
-  padding: 0px !important; }
-
-.open-data {
-  padding: 0; }
-  .open-data a, .open-data .link {
-    text-decoration: underline !important; }
-  .open-data li {
-    border-bottom: 1px solid #DCDEE1 !important;
-    margin-top: 20px;
-    position: relative; }
-    .open-data li:last-child {
-      border: 0 !important; }
-    @media (min-width: 767px) {
-      .open-data li .heading-small, .open-data li h4, .open-data li .ms-rtestate-field h4, .ms-rtestate-field .open-data li h4, .open-data li
-      .ms-rtestate-field h3.medium-small,
-      .ms-rtestate-field .open-data li h3.medium-small {
-        padding-right: 180px; } }
-    @media (min-width: 767px) {
-      .open-data li .open-data__link {
-        position: absolute;
-        right: 0;
-        top: 0; } }
-    .open-data li .open-data__info {
-      margin: 10px 0 20px; }
-      .open-data li .open-data__info .open-data__info-cost,
-      .open-data li .open-data__info .open-data__info-contact,
-      .open-data li .open-data__info .open-data__info-format {
-        border: 0 !important;
-        font-size: 16px;
-        margin: 5px 0 0; }
-        @media (min-width: 767px) {
-          .open-data li .open-data__info .open-data__info-cost,
-          .open-data li .open-data__info .open-data__info-contact,
-          .open-data li .open-data__info .open-data__info-format {
-            float: left;
-            margin: 0 25px 0 0; } }
-
-.pagination-nav {
-  display: block;
-  margin: 50px 0;
-  border-top: 2px solid #DCDEE1;
-  border-bottom: 2px solid #DCDEE1; }
-  .pagination-nav ul {
-    margin: 0;
-    padding: 0; }
-    .pagination-nav ul li {
-      font-size: 16px;
-      line-height: 1.14286;
-      float: left;
-      list-style: none;
-      text-align: right;
-      margin: 0;
-      padding: 0;
-      width: 49%; }
-      .pagination-nav ul li.pagination-nav__previous-page {
-        float: left;
-        text-align: left; }
-        .pagination-nav ul li.pagination-nav__previous-page a, .pagination-nav ul li.pagination-nav__previous-page .link {
-          padding: 0.75em 0 0.75em 3em; }
-          .pagination-nav ul li.pagination-nav__previous-page a:before, .pagination-nav ul li.pagination-nav__previous-page .link:before {
-            content: '\f104';
-            left: 7px;
-            top: 0;
-            color: #3399BB; }
-      .pagination-nav ul li.pagination-nav__next-page {
-        float: right;
-        text-align: right; }
-        .pagination-nav ul li.pagination-nav__next-page a, .pagination-nav ul li.pagination-nav__next-page .link {
-          text-align: right;
-          padding: 0.75em 3em 0.75em 0; }
-          .pagination-nav ul li.pagination-nav__next-page a:before, .pagination-nav ul li.pagination-nav__next-page .link:before {
-            content: '\f105';
-            right: 7px;
-            top: 0;
-            color: #3399BB; }
-      @media (max-width: 640px) {
-        .pagination-nav ul li.pagination-nav__previous-page, .pagination-nav ul li.pagination-nav__next-page {
-          float: none;
-          width: 100%; } }
-      .pagination-nav ul li a, .pagination-nav ul li .link {
-        display: block;
-        text-decoration: none;
-        border: 0;
-        position: relative; }
-        .pagination-nav ul li a:hover, .pagination-nav ul li .link:hover {
-          background: #F6F7FA;
-          color: #A2AD00; }
-        .pagination-nav ul li a:before, .pagination-nav ul li .link:before {
-          font-family: FontAwesome;
-          position: absolute;
-          color: #4d4d4d;
-          font-size: 60px; }
-        .pagination-nav ul li a .pagination-nav__part-title, .pagination-nav ul li .link .pagination-nav__part-title {
-          font-size: 24px;
-          line-height: 1.11111;
-          margin-bottom: 0.1em;
-          display: block; }
-          @media (min-width: 641px) {
-            .pagination-nav ul li a .pagination-nav__part-title, .pagination-nav ul li .link .pagination-nav__part-title {
-              font-size: 32px;
-              line-height: 1.25; } }
-        .pagination-nav ul li a .pagination-nav__label, .pagination-nav ul li .link .pagination-nav__label {
-          color: #333; }
-
-.part-navigation__container {
-  margin-top: 30px;
-  padding-bottom: 8px;
-  margin-bottom: 45px;
-  border-bottom: 2px solid #F6F7FA; }
-  @media (max-width: 640px) {
-    .part-navigation__container {
-      padding-bottom: 3px;
-      margin-bottom: 30px; } }
-  .part-navigation__container nav ol {
-    padding: 0; }
-    .part-navigation__container nav ol li {
-      font-size: 16px;
-      margin-bottom: 12px;
-      list-style: decimal;
-      margin-left: 1.5em;
-      padding-left: 0.3em; }
-      @media (min-width: 641px) {
-        .part-navigation__container nav ol li {
-          font-size: 19px; } }
-
-.phase-banner {
-  padding: 7px 0;
-  background: rgba(255, 191, 71, 0.5); }
-  .phase-banner p {
-    margin: 0;
-    font-size: 16px;
-    line-height: 1.6; }
-    @media (max-width: 641px) {
-      .phase-banner p {
-        font-size: 14px; } }
-    .phase-banner p strong {
-      background: #007299;
-      color: white;
-      padding: 1px 5px;
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      -ms-border-radius: 2px;
-      border-radius: 2px;
-      margin-right: 3px; }
-  .phase-banner.page {
-    padding: 10px 0;
-    background: transparent;
-    border-bottom: 1px solid #DCDEE1; }
-    .phase-banner.page strong {
-      background: #FFCC33;
-      color: #212224; }
-
-/*******************
-POLAROID WEBPART
-********************/
-.polaroid {
-  -webkit-transition: all ease .5s;
-  -moz-transition: all ease .5s;
-  transition: all ease .5s;
-  margin: 50px 0; }
-  .polaroid .listWebpart li {
-    width: 25% !important; }
-    .polaroid .listWebpart li a, .polaroid .listWebpart li .link {
-      text-decoration: none;
-      color: #293238;
-      border-bottom: none;
-      margin-bottom: 5px;
-      font-size: 1.3em;
-      font-weight: bold;
-      margin: 0px;
-      padding: 0px;
-      background: #fff;
-      border: 10px solid #293238;
-      margin: 10px;
-      text-align: center;
-      padding: 10px;
-      height: 100%;
-      display: block;
-      -webkit-box-shadow: 10px 10px 21px -5px #bdbdbd;
-      -moz-box-shadow: 10px 10px 21px -5px #bdbdbd;
-      box-shadow: 10px 10px 21px -5px #bdbdbd;
-      -ms-transform: rotate(4deg) translate3d(0, 0, 0);
-      -webkit-transform: rotate(4deg) translate3d(0, 0, 0);
-      transform: rotate(4deg) translate3d(0, 0, 0);
-      -webkit-transition: all ease .5s;
-      -moz-transition: all ease .5s;
-      transition: all ease .5s;
-      cursor: pointer; }
-      .polaroid .listWebpart li a:hover, .polaroid .listWebpart li .link:hover, .polaroid .listWebpart li a:focus, .polaroid .listWebpart li .link:focus {
-        -ms-transform: rotate(0deg) translate3d(0, 0, 0);
-        -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
-        transform: rotate(0deg) translate3d(0, 0, 0); }
-      .polaroid .listWebpart li a span, .polaroid .listWebpart li .link span {
-        font-size: 0.9em;
-        line-height: 1.3em;
-        font-weight: normal;
-        margin: 0px;
-        padding: 0px;
-        color: #293238;
-        border-bottom: none;
-        margin-bottom: 5px;
-        display: block; }
-    .polaroid .listWebpart li:nth-child(odd) a, .polaroid .listWebpart li:nth-child(odd) .link {
-      -ms-transform: rotate(-4deg) translate3d(0, 0, 0);
-      -webkit-transform: rotate(-4deg) translate3d(0, 0, 0);
-      transform: rotate(-4deg) translate3d(0, 0, 0); }
-      .polaroid .listWebpart li:nth-child(odd) a:hover, .polaroid .listWebpart li:nth-child(odd) .link:hover, .polaroid .listWebpart li:nth-child(odd) a:focus, .polaroid .listWebpart li:nth-child(odd) .link:focus {
-        -ms-transform: rotate(0deg) translate3d(0, 0, 0);
-        -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
-        transform: rotate(0deg) translate3d(0, 0, 0); }
-
-@media only screen and (max-width: 800px) {
-  .polaroid .listWebpart li {
-    width: 50% !important; } }
-
-@media only screen and (max-width: 500px) {
-  .polaroid {
-    margin: 10px 0; } }
-
-/*END POLAROID SECTION*/
 .promo {
   background-size: cover !important;
   padding: 0;
@@ -8040,50 +7014,6 @@ POLAROID WEBPART
   .promoListWebpart .contentLink.heightTwo {
     padding-bottom: 80px; } }
 
-.sectionSubsite {
-  margin: 0 0 1.875em 0;
-  padding: 20px;
-  width: 100%;
-  background: #efefef; }
-  .sectionSubsite h2, .sectionSubsite h3 {
-    margin-top: 0;
-    font-size: 22px; }
-    .sectionSubsite h2 img, .sectionSubsite h3 img {
-      float: left;
-      padding: 0 10px 10px 0; }
-    .sectionSubsite h2 i, .sectionSubsite h3 i {
-      font-family: FontAwesome;
-      font-size: 20px;
-      border-radius: 50%;
-      border: 1px solid #333;
-      width: 35px;
-      height: 35px;
-      text-align: center;
-      padding: 7px 0 0 0;
-      margin: 0 10px 5px 0;
-      color: #333; }
-  .sectionSubsite p {
-    clear: left;
-    margin: 2px 0 0;
-    padding: 10px;
-    background: #fff; }
-    .sectionSubsite p a, .sectionSubsite p .link {
-      background: #f6f6f6;
-      display: block;
-      margin-top: 10px; }
-      .sectionSubsite p a:after, .sectionSubsite p .link:after {
-        font-family: "Glyphicons Halflings";
-        content: "\e080";
-        font-size: 16px;
-        padding: -2px;
-        margin-top: 0px;
-        float: right; }
-  .sectionSubsite a, .sectionSubsite .link, .sectionSubsite a[rel=external], .sectionSubsite [rel=external].link {
-    display: block;
-    margin: 2px 0 0;
-    padding: 15px;
-    background: #fff; }
-
 /**********************
 Sharepoint overides
 ********************/
@@ -8115,9 +7045,7 @@ ul.cbs-List {
 .ms-rtestate-field h3,
 .ms-rtestate-field .part-content h2, .part-content
 .ms-rtestate-field h2,
-.ms-rtestate-field legend,
-.ms-rtestate-field .list-atoz li h2, .list-atoz li
-.ms-rtestate-field h2, .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium, .ms-rtestate-field h2.heading-medium, .ms-rtestate-field h3.heading-medium, .ms-rtestate-field h4.heading-medium,
+.ms-rtestate-field legend, .ms-rtestate-field h3.ms-rteElement-H2 h1.heading-medium, .ms-rtestate-field h2.heading-medium, .ms-rtestate-field h3.heading-medium, .ms-rtestate-field h4.heading-medium,
 .ms-rtestate-field .sideNav h2, .sideNav
 .ms-rtestate-field h2,
 .ms-rtestate-field
@@ -8363,31 +7291,6 @@ h1 input.ms-long {
   .sideNav .sideNav__more,
   .relatedPages .sideNav__more {
     font-weight: 700; }
-
-.sideNav {
-  padding: 10px 20px 20px;
-  background: #efefef;
-  margin-bottom: 20px; }
-  .sideNav h3 {
-    margin: 0.6em 0; }
-  .sideNav li {
-    list-style: none; }
-  .sideNav a, .sideNav .link {
-    font-size: 1.1em;
-    line-height: 1.2em;
-    display: inline-block;
-    margin: 0px 0px 5px;
-    padding: 10px;
-    background: #fff;
-    width: 100%; }
-    .sideNav a:hover, .sideNav .link:hover {
-      background: #707070 !important;
-      color: #fff; }
-    .sideNav a.active, .sideNav .active.link {
-      color: #E67E22;
-      background: transparent; }
-      .sideNav a.active:hover, .sideNav .active.link:hover {
-        background: transparent; }
 
 #myChatLinkContainer {
   margin: 30px 0; }

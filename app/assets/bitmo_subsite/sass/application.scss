@@ -109,14 +109,12 @@ $news-pod-border-color:#ddd;
 //$promo-arrow:"\f054";
 
 //button colours
-//button colours
-//$primary-button-background-color:green;
+$primary-button-background-color:$main-nav-background;
 //$primary-button-color:white !default;
-//$secondary-button-background-color:blue;
-//$secondary-button-color:white;
+$secondary-button-background-color:#ddd;
+$secondary-button-color:$primary-button-background-color;
 //$outline-button-border-color:blue;
 //$outline-button-color:blue;
-
 
 //group promo colours
 //$group-promo-background-color: #F6F7FA;
