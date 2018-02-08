@@ -1,69 +1,87 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import 'sharepoint'; //default sharpoint css - REMOVE BEFORE UPLOADING
 
+//google fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,700');
 
 // available variables to change the brand colours as required
-// masterhead.scss
 
-//$head-background: #ffffff;
-
-
-// mainMenu.scss -- responsive icons color
-//$menu-link-color:#337ab7;
-
-
-//base.scss
-
+//base colours
+$blue:#007299;
+$dark-blue: #003F55;
+$light-blue: #3399BB;
+$pale-blue: #b3d9e6;
+$green:#008000;
+$light-green:#009A00;
+$black:#212224;
+$light-black:#3D414A;
+$dark-grey:#666B76;
+$grey:#9DA5B2;
+$light-grey:#DCDEE1;
+$lighter-grey:#F6F7FA;
+$white:#FFFFFF;
+$yellow:#FFBF47;
+$dark-yellow:#FAA300;
+$red:#c0392b;
 //$base-background-color:#fff;
-//$base-font-size:16px ;
-//$base-font-color:#333 ;
-//$base-link-color:#133E8D ;
-//$base-container-width:1500px ;
+$border-color:$light-grey;
+$brand-color:$blue;
+$button-color:$green;
+$button-hover-color:lighten($button-color,5%);
+$focus-color:$yellow;
+$base-container-width:1280px;
 //$btn-background-color:green ;
-$font-primary: 'Open Sans', Arial ; // main font
-$font-secondary:'Open Sans', Arial ; // secondary font
+$alert-color:$red;
 
+//typography
+$font-primary:'Open Sans', sans-serif; // main font
+$font-secondary:'Montserrat', sans-serif; // secondary font used for headings
+//$base-font-size:16px !default;
+//$base-font-size-desktop:19px !default;
+$base-line-height: 1.4;
+$base-font-color:$black;
+$header-font-color:$black;
+$secondary-font-color:$dark-grey;
+$header-font-weight: 700;
+//$base-font-weight: 400 !default;
+$base-link-color:$blue;
+$base-link-hover-color:$light-blue;
+$base-link-visited-color:#4C2C92;
+$secondary-link-color:$dark-blue;
 
-// global used on all partials to get a uniform spacing between elements
+//panel colours
+$panel-color:#E5F1F5;
+$panel-color-secondary:#DCDEE1;
+//$panel-alt-background-color:#003F55;
+//$panel-alt-color:white;
+//global used on all partials to get a uniform spacing between elements
 //$base-margin-bottom:1.875em ;
-
 //headerTop
 //$search-link-background:#F3F3F4 ;
 //$search-link:#333 ;
-
 // mainNav.scss
-$main-nav-background:#085da9 ;
+$main-nav-background:lighten( $brand-color,3%);
 //$main-nav-link:#fff ;
-
 //footer.scss
 //$footer-font-color:#fff ;
 //$footer-nav-selected-link:#133E8D ;
-
-// sectionSubsite.scss - socialamedia.scss
+//sectionSubsite.scss - socialamedia.scss
 //$section-Background:#efefef ;
-
-//  socialamedia.scss
+//socialamedia.scss
 //$social-link-color:#337ab7 ;
-
-//  sideNavigation.scss
+//sideNavigation.scss
 //$side-nav-active-background:#133E8D ;
-
-//  carousel.scss
+//carousel.scss
 //$carousel-active-background:#000 ;
 //$carousel-indicators-active-background:#ccc ;
 //$carousel-caption-background: rgba(0,0,0,0.6) ;
 //$carousel-caption-font-color:#fff ;
-
-
-// blocklinks.scss
-
+//blocklinks.scss
 //$block-link-back:#f6f6f6 ;
 //$block-link-back-hover:#3380A4 ;
 //$promo-group-border:1px solid #fff ; 
 //$promo-group-background:#EDF2F5 ; 
 //$promo-group-li-background:#EDF2F5 ;
 //$promo-group-link-color:#216486 ;
-
-
 //promolist webpart
 //$link-font-color:#fff;
 //$span-info-color:#133E8D;
@@ -76,291 +94,592 @@ $main-nav-background:#085da9 ;
 //$contentFontColor:#333;
 //$content-arrow-color:#133E8D;
 //$content-border-color:#ddd;
-
-// section backgrounds
-$sectionHeader-background-color:#085da9;
-$sectionOne-background-color:#fff ;
-$sectionTwo-background-color:#f6f6f6;
-$sectionThree-background-color:#f6f6f6;
-$sectionFour-background-color:#fff ;
-$sectionFive-background-color:#f6f6f6;
-
+//section backgrounds
+$sectionHeader-background-color:$brand-color;
+$sectionOne-background-color:#fff;
+$sectionTwo-background-color:#fff;
+$sectionThree-background-color:#fff;
+$sectionFour-background-color:#fff;
+$sectionFive-background-color:#fff;
 //iconlinks
 //$iconLinkIconColor:#FFC82E;
-
 //heroBanner
 //$heroFontBackground:rgba(0, 0, 0, 0.5); 
 //$heroFontcolor:#fff; 
-
 //news
 //$news-button-background: #3498DB ;
-$news-pod-back:#ffffff ;
+$news-pod-back:#ffffff;
 $news-pod-border-color:#ddd;
-
 //accordion
-$accordion-color:green;
-//$accordion-border-color:#ECF0F1;
+$accordion-color:$base-link-color;
+$accordion-border-color:$border-color;
+//Block quote
+// $blockquoteBorderColor:#bbcada ;
+// $blockquoteQuoteColor:#333;
+// $blockquoteQuoteFooterColor:#000;
+//highlighted box in content assets
+//$highlighted-background-color:#333 !default;
+//$highlighted-font-color:#fff !default;
+//$highlighted-alt-background-color:#f6f6f6 !default;
+//$highlighted-alt-font-color:#333 !default;
 
+//mega-promo
+$promo-background-color:$lighter-grey;
+$promo-arrow-color:#9DA5B2;
+$promo-header-color:$blue;
+$promo-secondary-color:$black;
+$promo-highlight-background-color:$blue;
+$promo-highlight-color:$white;
+
+//button colours
+$primary-button-background-color:$green;
+$primary-button-color:$white;
+$secondary-button-background-color:$blue;
+$secondary-button-color:$white;
+$outline-button-border-color:$blue;
+$outline-button-color:$blue;
+
+//group promo colours
+$group-promo-background-color: $lighter-grey;
+$group-promo-header-color: $blue;
+$group-promo-description-color: $black;
+$group-promo-arrow-color: $grey;
+
+//form colours
+$input-color:$black;
+$input-border-color:$grey;
+
+//back to top
+//$back-top-color:white;
+//$back-top-hover-color:white;
+//$back-top-background:black;
+//$back-top-hover-background:grey;
+
+//phase banner
+//$phase-banner-stage-background:#007299 !default;
+//$phase-banner-stage-color:white !default;
+
+//- FRONT END TOOLKIT
+@import 'url-helper';
 @import 'base';
-
+@import 'brand-colors';
 @import '2010-typography-overrides';
 @import 'accordion';
+@import 'accordion-aria';
 @import 'a-to-z';
-@import 'block-links';
-@import 'block-quote';
-@import 'brand-colors';
-@import 'carousel';
-@import 'content-assets'; //subsite only
-@import 'content-link'; //subsite only
+//@import 'block-links'; //subsite only
+//@import 'block-quote'; //subsite only
+//@import 'carousel';
+//@import 'content-assets'; //subsite only
+//@import 'content-link'; //subsite only
 @import 'description-list';
-@import 'doc-list'; //needs aligning with lcc_doc-list and a.doc within typography - DH
+@import 'doc-list';
 @import 'events-search-results';
-@import 'events-webparts';
+//@import 'events-webparts';
 @import 'group-promo';
-@import 'hero-banner';
-@import 'hero-banner-overlay'; //needs aligning with hero-bnner - RM
+//@import 'hero-banner';
+//@import 'hero-banner-overlay'; //needs aligning with hero-bnner - RM
 @import 'icon-links';
-//@import 'lcc-base-styles'; //needs finalising - DH & RM
-//@import 'lcc-doc-list'; //see above - DH
-//@import 'lcc-footer'; //needs aligning with footer - is it leeds.gov specific? - DH
-//@import 'lcc-header'; //needs aligning with header - is it leeds.gov specific? - DH
-//@import 'lcc-hero'; //needs aligning with hero - is it leeds.gov specific? - DH
-//@import 'lcc-news'; //needs aligning with footer - is it leeds.gov specific? - DH
-//@import 'lcc-search'; //needs aligning with global search - is it leeds.gov specific? - DH
+@import 'lcc-hero';
 @import 'mega-promo';
-@import 'news';
+//@import 'news'; //subsites only
 @import 'open-data'; //is it leeds.gov.uk specific? - does it need re-naming- DH
 @import 'journey-page';
-@import 'phase-banner'; //work needed to have in page beta banner
-@import 'polaroids'; //subsite only
-@import 'promo';
-@import 'promo-list-webpart'; //subsite only
-@import 'section-subsite'; //subsite only
-@import 'sharepoint-overrides'; 
+@import 'phase-banner';
+//@import 'polaroids'; //subsite only
+//@import 'promo'; //subsites only
+//@import 'promo-list-webpart'; //subsite only
+//@import 'section-subsite'; //subsite only
+@import 'sharepoint-overrides';
+@import 'sharepoint-search-results';
 @import 'side-nav'; //needs aligning with side-navigation - DH & RM
-@import 'side-navigation'; //needs aligning with side-nav - DH & RM
-//@import 'survey-webpart'; //is it leeds.gov specific? Relys on where-i-live which should be in the fet but renamed to search-panel - DH
-@import 'url-helper';
+//@import 'side-navigation'; //needs aligning with side-nav - DH & RM
+@import 'sub-section-nav';
 @import 'webchat';
 
+//-PROJECT SPECIFIC
+@import 'styleguide';//not needed for live site
+@import 'sticky-nav';//not currently needed for live site
+@import 'modern-gov'; //not needed for live site
 
-.logo {
-    background:none;
-    margin: 20px -5px;
-    height:auto;
-    width:auto;
+@import 'leedsgov-specific';
+@import 'leedsgov-overrides';
+@import 'where-i-live'; //needs fine tuning and adding to toolkit - DH
 
-    
-    &:hover{
-        text-decoration:none;
+@import 'lcc-header'; //a part of the toolkit but needs to be at end
+
+@import 'table-saw';
+
+//site background
+html {
+    background-color: $blue;
+}
+
+//video container
+.media-container {
+    margin: 30px 0;
+}
+
+//Roadworks map
+.ElginRoadworksWidget {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @media (max-width: 450px) {
+        height: 400px !important;
     }
+}
 
-    &:after{
-        content:'Leeds.gov.uk';
-        text-transform:uppercase;
-        font-size:50px;
-        color:#fff;
-        font-weight:300;
-
-
+//right hand column top margin
+aside.col-md-4 {
+    margin-top: 50px;
+    @media (max-width: 990px) {
+        margin-top: 30px;
     }
-
-        @media screen and (max-width:768px){
-            text-align: center;
-
-                &:after{
-           font-size:30px;
-            text-align: center;
-
-
+    &.empty {
+        margin-top: 0 !important;
     }
+}
+
+//sub-section - Is this needed? Need to test. DH.
+.sub-section-nav .sub-section a {
+    .sub-section-heading {
+        text-decoration: none;
+        color: $base-link-color;
+    }
+    &:visited,
+    &:visited .sub-section-heading {
+        text-decoration: none !important;
+        color: #663399;
+    }
+}
+
+//social bookmark link text decoration color 
+.socialBookmarks ul li a:visited {
+    color: $blue;
+}
+
+//Promolistwebpart reset - Can this be global? Need to check. DH.
+.promoListWebpart {
+    ol,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+//self service custom buttons
+.header-actions {
+    position: absolute;
+    top: -110px;
+    right: 15px;
+    @media (max-width: 641px) {
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-bottom: 20px;
+    }
+}
+
+//sp pagination
+.pagination-nav {
+    position: relative;
+    #PagingSelf {
+        position: absolute;
+        left: 50%;
+        width: 100px;
+        top: 30%;
+        margin-left: -50px;
+        z-index: 5;
+        @media (max-width: 641px) {
+            position: relative;
+            left: auto;
+            width: 100%;
+            top: auto;
+            margin-left: 0;
+            text-align: center
         }
+    }
 }
-.main-nav{
-    border-top:1px solid #075498;
+
+//btn overrides
+.btn-primary,
+.form-group input[type=button],
+.form-group input.btn.btn-primary,
+.form-group input[type=submit],
+.limitedrte-Style-BUTTON {
+    box-shadow: 0px 3px 0px darken($primary-button-background-color, 10%);
 }
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 
+.btn-secondary,
+.form-group input[type=button].btn-secondary {
+    box-shadow: 0px 3px 0px darken($secondary-button-background-color, 10%);
+}
 
-// available variables to change the brand colours as required
-// masterhead.scss
-
-//$head-background: #ffffff;
-
-
-// mainMenu.scss -- responsive icons color
-//$menu-link-color:#337ab7;
-
-
-//base.scss
-
-//$base-background-color:#fff;
-//$base-font-size:16px ;
-//$base-font-color:#333 ;
-//$base-link-color:#133E8D ;
-//$base-container-width:1500px ;
-//$btn-background-color:green ;
-$font-primary: 'Open Sans', Arial ; // main font
-$font-secondary:'Open Sans', Arial ; // secondary font
-
-
-// global used on all partials to get a uniform spacing between elements
-//$base-margin-bottom:1.875em ;
-
-//headerTop
-//$search-link-background:#F3F3F4 ;
-//$search-link:#333 ;
-
-// mainNav.scss
-$main-nav-background:#085da9 ;
-//$main-nav-link:#fff ;
-
-//footer.scss
-//$footer-font-color:#fff ;
-//$footer-nav-selected-link:#133E8D ;
-
-// sectionSubsite.scss - socialamedia.scss
-//$section-Background:#efefef ;
-
-//  socialamedia.scss
-//$social-link-color:#337ab7 ;
-
-//  sideNavigation.scss
-//$side-nav-active-background:#133E8D ;
-
-//  carousel.scss
-//$carousel-active-background:#000 ;
-//$carousel-indicators-active-background:#ccc ;
-//$carousel-caption-background: rgba(0,0,0,0.6) ;
-//$carousel-caption-font-color:#fff ;
-
-
-// blocklinks.scss
-
-//$block-link-back:#f6f6f6 ;
-//$block-link-back-hover:#3380A4 ;
-//$promo-group-border:1px solid #fff ; 
-//$promo-group-background:#EDF2F5 ; 
-//$promo-group-li-background:#EDF2F5 ;
-//$promo-group-link-color:#216486 ;
-
-
-//promolist webpart
-//$link-font-color:#fff;
-//$span-info-color:#133E8D;
-//$span-info-hover:#131A22;
-//$span-info-secondary-color:#fff;
-//$span-arrow-base:darken($span-info-color, 10%);
-//$span-third-info-base:#f6f6f6;
-//$third-info-font-color:#333;
-//$arrow-color:#fff;
-//$contentFontColor:#333;
-//$content-arrow-color:#133E8D;
-//$content-border-color:#ddd;
-
-// section backgrounds
-$sectionHeader-background-color:#085da9;
-$sectionOne-background-color:#fff ;
-$sectionTwo-background-color:#f6f6f6;
-$sectionThree-background-color:#f6f6f6;
-$sectionFour-background-color:#fff ;
-$sectionFive-background-color:#f6f6f6;
-
-//iconlinks
-//$iconLinkIconColor:#FFC82E;
-
-//heroBanner
-//$heroFontBackground:rgba(0, 0, 0, 0.5); 
-//$heroFontcolor:#fff; 
-
-//news
-//$news-button-background: #3498DB ;
-$news-pod-back:#ffffff ;
-$news-pod-border-color:#ddd;
-
-//accordion
-$accordion-color:green;
-//$accordion-border-color:#ECF0F1;
-
-
-// available sass files please un-comment out as required
-
-@import 'base';
-
-@import '2010-typography-overrides';
-@import 'accordion';
-@import 'a-to-z';
-@import 'block-links';
-@import 'block-quote';
-@import 'brand-colors';
-@import 'carousel';
-@import 'content-assets'; //subsite only
-@import 'content-link'; //subsite only
-@import 'description-list';
-@import 'doc-list'; //needs aligning with lcc_doc-list and a.doc within typography - DH
-@import 'events-search-results';
-@import 'events-webparts';
-@import 'group-promo';
-@import 'hero-banner';
-@import 'hero-banner-overlay'; //needs aligning with hero-bnner - RM
-@import 'icon-links';
-//@import 'lcc-base-styles'; //needs finalising - DH & RM
-//@import 'lcc-doc-list'; //see above - DH
-//@import 'lcc-footer'; //needs aligning with footer - is it leeds.gov specific? - DH
-//@import 'lcc-header'; //needs aligning with header - is it leeds.gov specific? - DH
-//@import 'lcc-hero'; //needs aligning with hero - is it leeds.gov specific? - DH
-//@import 'lcc-news'; //needs aligning with footer - is it leeds.gov specific? - DH
-//@import 'lcc-search'; //needs aligning with global search - is it leeds.gov specific? - DH
-@import 'mega-promo';
-@import 'news';
-@import 'open-data'; //is it leeds.gov.uk specific? - does it need re-naming- DH
-@import 'journey-page';
-@import 'phase-banner'; //work needed to have in page beta banner
-@import 'polaroids'; //subsite only
-@import 'promo';
-@import 'promo-list-webpart'; //subsite only
-@import 'section-subsite'; //subsite only
-@import 'sharepoint-overrides'; 
-@import 'side-nav'; //needs aligning with side-navigation - DH & RM
-@import 'side-navigation'; //needs aligning with side-nav - DH & RM
-//@import 'survey-webpart'; //is it leeds.gov specific? Relys on where-i-live which should be in the fet but renamed to search-panel - DH
-@import 'url-helper';
-@import 'webchat';
-
-
-.logo {
-    background:none;
-    margin: 20px -5px;
-    height:auto;
-    width:auto;
-
-    
-    &:hover{
-        text-decoration:none;
-    }
-
-    &:after{
-        content:'Leeds.gov.uk';
-        text-transform:uppercase;
-        font-size:50px;
-        color:#fff;
-        font-weight:300;
-
-
-    }
-
-        @media screen and (max-width:768px){
-            text-align: center;
-
-                &:after{
-           font-size:30px;
-            text-align: center;
-
-
-    }
+.btn {
+    padding: 15px 20px;
+    &.btn-arrow,
+    &.btn[rel=external] {
+        padding-right: 45px;
+        &:before {
+            display: none !important;
         }
-}
-.main-nav{
-    border-top:1px solid #075498;
+        &:after {
+            right: 20px;
+            top: 50%;
+            height: auto;
+            background: transparent;
+            padding: 0 0 0 15px;
+            font-size: inherit;
+            text-align: center;
+            line-height: 0;
+            width: auto;
+        }
+    }
+    &:focus,
+    &:active {
+        border-color: $focus-color !important;
+        box-shadow: 0px 3px 0px $focus-color;
+    }
+    &.btn-small{
+        padding: 10px 14px;
+        @media (min-width: 641px) {
+            padding: 12px 16px;
+        }
+        &.btn-arrow{
+            padding: 10px 40px 10px 14px;
+            @media (min-width: 641px) {
+                padding: 12px 42px 12px 16px;
+            }
+        }
+    }
 }
 
+//bredcrumb override
+.breadcrumb {
+    line-height: 1.5;
+}
+
+//page logo
+.page-logo{
+    margin:0 0 30px;
+
+    @media (min-width: 400px) {
+        max-width:50%;
+    }
+
+    @media (min-width: 641px) {
+        margin:-20px 0 30px;
+    }
+
+    @media (min-width: 990px) {
+        position:absolute;
+        right:-48%;
+        top:50px;
+        max-width:50%;
+        max-height:100px;
+    }
+}
+
+.panel.top{
+    margin-top:0;
+}
+
+//sponsors
+.sponsor-logos{
+    @include flexbox();
+    @include justify-content(space-evenly);
+    @include align-items(center);
+    border-top:1px solid $border-color;
+    border-bottom:1px solid $border-color;
+    margin:30px 0 0;
+    padding:15px 0;
+    @media (min-width: 641px) {
+        margin:50px 0 0;
+    }
+    img{
+        max-height:130px;
+        padding:15px;
+    }
+    a{
+        &:hover{
+            img{
+                opacity:0.7;
+            }
+        }
+    }
+}
+
+//helper class
+.center-text{
+    margin:0 auto;
+}
+
+.mega-promo + h2{
+    margin-top:5px;
+}
+
+.mega-promo + .panel{
+    margin-top:-15px;
+}
+
+
+@media (max-width: 990px) {
+    .panel .media-container {
+        margin-top: 15px;
+    }
+}
+
+//table
+table{
+    caption{
+        @include sr-only();
+    }
+}
+
+//Add to typography-lcc in FET
+.list-step{
+    list-style-type: none;
+    margin:30px 0;
+
+    li{
+        counter-increment: step-counter;
+        margin-bottom: 10px;
+        position:relative;
+        padding:4px 10px 5px 45px;
+
+        @media (min-width: 641px){
+            padding:7px 10px 13px 55px;  
+            margin-bottom: 15px;
+        }
+
+        &:last-of-type{
+            margin-bottom:0;
+        }
+
+        &:before{
+            content: counter(step-counter);
+            background-color: $base-link-color;
+            color: white;
+            font-weight: bold;
+            padding: 5px;
+            border-radius: 50%;
+            font-size:16px;
+            width:30px;
+            height:30px;
+            display:inline-block;
+            text-align:center;
+            margin-right:20px;
+            position:absolute;
+            left:0;
+            top:0;
+            line-height: 1.3;
+
+            @media (min-width: 641px){
+                font-size:19px;
+                width:40px;
+                height:40px;
+                padding: 8px;
+            }
+        }
+    }
+}
+
+$panel-padding:30px;
+
+//panels
+.panel{
+    h2,
+    h3,
+    h4{
+        margin-bottom:10px;
+        @media (min-width: 641px){
+            margin-bottom:15px; 
+        }
+        + p{
+            margin-top:0;
+        }
+    }
+
+    p{
+        margin-bottom:15px;
+
+        + .btn{
+            margin-top:5px !important;
+        }
+    }
+
+    .btn{
+        margin-bottom:0;
+    }
+}
+
+
+.panel.img .content {
+    @media (min-width: 641px){
+        padding: $panel-padding;
+    }
+}
+
+
+.panel blockquote {
+    @media (min-width: 990px){
+        font-size: 24px;
+        line-height:1.25;
+    }
+}
+
+
+//panel blockquote
+.panel blockquote:before {
+    left: -5px;
+}
+
+//inset text
+blockquote {
+    padding:15px;
+    @media (min-width: 641px){
+        padding:30px;
+    }
+}
+.text-block {
+    padding:0 15px;
+    @media (min-width: 641px){
+        padding:0 30px;
+    }
+}
+.text-highlight {
+    padding:15px;
+    @media (min-width: 641px){
+        padding:15px 30px;
+    }
+}
+
+.paragraph,
+p,
+p.sharepoint,
+.link-back,
+.hidden-text,
+.text-link.reveal,
+ul.list {
+  line-height:1.6;
+}
+
+.lead {
+  font-size: 19px;
+  line-height: 1.6;
+
+  @media (min-width: 641px) {
+    font-size: 24px;
+    line-height: 1.6;
+    margin-top: 1.0526315789em;
+  }
+
+  &.header{
+    margin-bottom:50px;
+  }
+
+  a[rel="external"] {
+      margin-right: 32px;
+  }
+}
+
+//text-highlight needs adding to FET
+.text-highlight{
+    *{
+        margin:15px 0 0;
+    }
+    li{
+        margin:7px 0 0;
+        &:first-child{
+            margin-top:0;
+        }
+    }
+    *:first-child { 
+        margin-top: 0 !important; 
+    }
+    *:last-child { 
+        margin-bottom: 0 !important; 
+    }
+    pre{
+        margin-top:15px;
+    }
+}
+
+@media (max-width: 641px){
+.text-highlight h2, .text-highlight h3, .text-highlight h4, .text-block h2, .text-block h3, .text-block h4 {
+    margin-bottom: 15px;
+}
+}
+
+//pocket
+.pocket{
+    position:relative;
+    .pocket-wrapper{
+        height:300px;
+        overflow:hidden;
+        &.active{
+            height:100%;
+        }
+        &.panel-event-pocket{
+            height:475px;
+            &.active{
+                height:100%;
+            }
+        }
+    }
+    .pocket-control{
+        position:absolute;
+        bottom:0;
+        text-align:center;
+        width:100%;
+        border-bottom:1px solid $border-color;
+        height:100px;
+        @include linearGradient(rgba(255,255,255,0), rgba(255,255,255,1));
+
+        .btn-more{
+            margin:0;
+            font-size:24px;
+            margin-top:65px;
+            &:after{
+                font-family: "FontAwesome";
+                display:inline-block;
+                content: "\f078";
+                margin-left:10px;
+            }
+        }
+    }
+}
+
+//errors and validation 
+.error-summary{
+    border: 5px solid #cc0000;
+    padding:30px;
+    *{
+        margin:15px 0 0;
+    }
+    li{
+        margin:7px 0 0;
+        &:first-child{
+            margin-top:0;
+        }
+    }
+    *:first-child { 
+        margin-top: 0 !important; 
+    }
+    *:last-child { 
+        margin-bottom: 0 !important; 
+    }
+    .error-summary-list{
+        padding:0;
+        li{
+            a{
+                color:#cc0000;
+                font-weight:bold;
+            }
+        }
+    }
+}
+
+.form-label{
+    font-weight:bold;
+}

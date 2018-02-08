@@ -1,4 +1,4 @@
-{% extends "layout_multi_sections_home.html" %}
+{% extends "layout_multi_sections_home-lcc.html" %}
 
 {% block page_title %}
 	Home Page
@@ -24,84 +24,91 @@
 {% endblock %} 
 
 {% block sectionOneFull%}
+<h1>Subsites within leeds.gov</h1>
 <div class="groupPromo">
-  <div class="listWebpart">
-    <ul>
-      <li>
-        <a href="adopt4leeds.html">
-    <h3>adopt 4 leeds</h3></a>
-      </li>
-      <li>
-        <a href="bipcleeds.html" >
-     <h3>bipcleeds</h3></a>
-      </li>
-      <li>
-        <a  href="bitmo.html" >
-      <h3>bitmo</h3></a>
-      </li>
-      <li>
-        <a  href="bsc.html">
-       <h3>bsc</h3></a>
-      </li>
-      <li>
-        <a  href="childfriendlyleeds.html">
-   <h3>Child Friendly Leeds</h3></a>
-      </li>
-    <li>
-        <a  href="civicenterprise.html">
-       <h3>Civic enterprise</h3></a>
-      </li>
-
-        <li>
-        <a  href="foster4leeds.html">
-     <h3>Foster4leeds</h3></a>
-      </li> 
-      <li>
-        <a  href="foster4leeds2017.html">
-     <h3>Foster4leeds 2017</h3></a>
-      </li> 
+    <div class="listWebpart">
+        <ul>
             <li>
-        <a href="leedsenterprisezone.html">
-  <h3>leeds enterprise zone</h3></a>
-      </li> 
+                <a href="adopt4leeds.html">
+                    <h3>Adopt4Leeds</h3>
+                </a>
+            </li>
+            <li>
+                <a href="assistedliving.html">
+                    <h3>Assisted living</h3>
+                </a>
+            </li>
+            <li>
+                <a href="bipcleeds.html">
+                    <h3>BIPCLeeds</h3>
+                </a>
+            </li>
+            <li>
+                <a href="bitmo.html">
+                    <h3>BITMO</h3>
+                </a>
+            </li>
+            <li>
+                <a href="bsc.html">
+                    <h3>BSC</h3>
+                </a>
+            </li>
+            <li>
+                <a href="childfriendlyleeds.html">
+                    <h3>Child Friendly Leeds</h3>
+                </a>
+            </li>
+            <li>
+                <a href="civicenterprise.html">
+                    <h3>Civic enterprise</h3>
+                </a>
+            </li>
+            <li>
+                <a href="domesticviolence.html">
+                    <h3>Domestic Violence</h3>
+                </a>
+            </li>
+            <li>
+                <a href="foster4leeds2017.html">
+                    <h3>Foster4leeds</h3>
+                </a>
+            </li>
+            <li>
+                <a href="leedsenterprisezone.html">
+                    <h3>Leeds enterprise zone</h3>
+                </a>
+            </li>
 
             <li>
-        <a  href="leedsmarkets.html">
-<h3>Leeds Markets</h3></a>
-      </li> 
+                <a href="leedsmarkets.html">
+                    <h3>Leeds Markets</h3>
+                </a>
+            </li>
             <li>
-        <a  href="leedspathways.html">
-<h3>Leeds Pathways</h3></a>
-      </li>
+                <a href="leedsmic.html">
+                    <h3>Leeds Mic</h3>
+                </a>
+            </li>
+            <li>
+                <a href="leedspathways.html">
+                    <h3>Leeds Pathways</h3>
+                </a>
+            </li>
 
-                  <li>
-        <a  href="museumsandgalleries.html">
-<h3>Museums and Galleries</h3></a>
-      </li>
+            <li>
+                <a href="museumsandgalleries.html">
+                    <h3>Museums and Galleries</h3>
+                </a>
+            </li>
+            <li>
+                <a href="saferleeds.html">
+                    <h3>Safer leeds</h3>
+                </a>
+            </li>
 
-                        <li>
-        <a  href="leedsmic.html">
-<h3>Leeds Mic</h3></a>
-      </li>
-
-                         <li>
-        <a  href="domesticviolence.html">
-<h3>Domestic Violence</h3></a>
-      </li>     
-
-                          <li>
-        <a  href="assistedliving.html">
-<h3>Assisted living</h3></a>
-      </li>  
-
-                                <li>
-        <a  href="saferleeds.html">
-<h3>Safer leeds</h3></a>
-      </li>          
-
-    </ul>
-    <div class="clearfix"></div>
-  </div>
+        </ul>
+        <div class="clearfix"></div>
+    </div>
 </div>
 {% endblock %}
 
@@ -226,6 +233,6 @@
    {% include "includes/footer_nav.html" %}
  {% endblock %}
 
- {% block reuserblecontent_footer %}
-     {% include "includes/re-userble-content-footer.html" %}
+ {% block reusablecontent_footer %}
+     {% include "includes/reusable-content-footer-lcc.html" %}
  {% endblock %}
