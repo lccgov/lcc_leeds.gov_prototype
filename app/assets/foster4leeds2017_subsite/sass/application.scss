@@ -1,6 +1,6 @@
 //default sharpoint css - REMOVE BEFORE UPLOADING
-//@import 'sharepoint_core_15';
-//@import 'sharepoint_search_15';
+@import '../sass/sharepoint-core-15';
+@import '../sass/sharepoint-search-15';
 //google fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,700');
 // available variables to change the brand colours as required
@@ -115,8 +115,8 @@ $sectionFive-background-color:#fff;
 $news-pod-back:#ffffff;
 $news-pod-border-color:#ddd;
 //accordion
-//$accordion-color:green;
-//$accordion-border-color:#ECF0F1;
+$accordion-color:$orange;
+$accordion-border-color:$border-color;
 //Block quote
 // $blockquoteBorderColor:#bbcada ;
 // $blockquoteQuoteColor:#333;
@@ -158,6 +158,7 @@ $panel-alt-color:white;
 @import 'base';
 @import '2010-typography-overrides';
 @import 'accordion';
+@import 'accordion-aria';
 //@import 'a-to-z';
 //@import 'block-links';
 //@import 'block-quote';
@@ -189,6 +190,7 @@ $panel-alt-color:white;
 @import 'promo-list-webpart'; //subsite only
 @import 'section-subsite'; //subsite only
 @import 'sharepoint-overrides';
+@import 'sharepoint-search-results';
 @import 'side-nav'; //needs aligning with side-navigation - DH & RM
 //@import 'side-navigation'; //needs aligning with side-nav - DH & RM
 //@import 'survey-webpart'; //is it leeds.gov specific? Relys on where-i-live which should be in the fet but renamed to search-panel - DH

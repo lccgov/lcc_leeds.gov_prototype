@@ -1,0 +1,30 @@
+//google fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Open+Sans:400,700');
+//brand colour
+$brand-color:#007299;
+//container width
+$base-container-width:1280px;
+//typography
+$font-primary:'Open Sans',sans-serif; // main font
+$font-secondary:'Montserrat',sans-serif; // secondary font used for headings
+//base css
+@import 'base';
+@import 'lcc-header';
+//branding colours
+.sectionHeader,
+footer.main,
+footer.main .footerGlobal,
+html {
+    background: $brand-color;
+}
+//footer logo
+footer.main .footerGlobal .logo-footer {
+    img {
+        margin: 0 0 10px 0;
+        width: 220px;
+        height: 66px;
+    }
+    p{
+        font-size:16px;
+    }
+}

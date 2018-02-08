@@ -31,6 +31,37 @@
     padding-left: 50px;
     padding-right: 15px; }
 
+.three-columns {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px; }
+  @media (max-width: 990px) {
+    .three-columns {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      column-count: 2; } }
+  @media (max-width: 767px) {
+    .three-columns {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1; } }
+
+.two-columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px; }
+  @media (max-width: 767px) {
+    .two-columns {
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1; } }
+
 body {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
@@ -323,7 +354,8 @@ p.sharepoint,
 .link-back,
 .hidden-text,
 .text-link.reveal {
-  margin: 0.25em 0 1em; }
+  margin: 0.25em 0 1em;
+  line-height: 1.6; }
   @media (min-width: 641px) {
     .paragraph,
     p,
@@ -346,11 +378,11 @@ p.sharepoint,
 
 .lead {
   font-size: 19px;
-  line-height: 1.4; }
+  line-height: 1.6; }
   @media (min-width: 641px) {
     .lead {
       font-size: 24px;
-      line-height: 1.4;
+      line-height: 1.6;
       margin-top: 1.0526315789em; } }
   .lead.header {
     margin-bottom: 50px; }
@@ -1033,7 +1065,7 @@ textarea.form-control {
 
 .form-label {
   display: block;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 19px; }
   @media (min-width: 641px) {
     .form-label {
@@ -1241,6 +1273,86 @@ form legend {
     float: right;
     color: #666B76; }
 
+.header-lcc .service-name {
+  width: 100%;
+  display: block;
+  margin: -5px 0 10px 0;
+  text-align: left; }
+  @media (min-width: 641px) {
+    .header-lcc .service-name {
+      text-align: right;
+      position: absolute;
+      top: 15px;
+      right: 15px; } }
+  @media (min-width: 990px) {
+    .header-lcc .service-name {
+      margin-left: -250px;
+      padding: 0 250px;
+      text-align: center;
+      top: 30px; } }
+  .header-lcc .service-name a {
+    color: white;
+    font-weight: 700;
+    font-family: "Open Sans", Arial;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    display: inline-block; }
+    @media (min-width: 641px) {
+      .header-lcc .service-name a {
+        text-align: right; } }
+    @media (min-width: 990px) {
+      .header-lcc .service-name a {
+        font-size: 19px;
+        text-align: center; } }
+
+.form-back {
+  margin: 10px 0 0;
+  padding: 0; }
+
+h1 .form-progress {
+  display: block;
+  font-size: 16px;
+  color: #666B76; }
+  @media (min-width: 641px) {
+    h1 .form-progress {
+      font-size: 19px; } }
+
+.check-answers {
+  position: relative; }
+  @media (max-width: 641px) {
+    .check-answers h3 {
+      padding-right: 75px; } }
+  .check-answers p {
+    margin: 0 !important;
+    width: 100%; }
+    @media (min-width: 641px) {
+      .check-answers p {
+        float: left;
+        width: 80%; } }
+  .check-answers a {
+    text-align: right;
+    line-height: 1.6; }
+    @media (max-width: 641px) {
+      .check-answers a {
+        position: absolute;
+        top: 1rem;
+        right: 0; } }
+    @media (min-width: 641px) {
+      .check-answers a {
+        float: right;
+        width: 20%; } }
+
+.panel-confirmation {
+  text-align: center;
+  padding: 30px 15px; }
+  @media (min-width: 641px) {
+    .panel-confirmation {
+      padding: 80px 40px; } }
+  .panel-confirmation h1 {
+    margin: 0 0 15px; }
+
 a:focus,
 input[type=submit]:focus,
 .btn:focus,
@@ -1363,7 +1475,7 @@ table td.numeric {
       width: 75%; } }
 
 .panel {
-  background: #F6F7FA;
+  background: #eceef5;
   padding: 20px;
   box-shadow: none;
   border-radius: 0;
@@ -2475,7 +2587,7 @@ footer.main {
 
 .logo-footer span {
   background: url("<%= asset_path('lcc-logo-white-01.svg') %>") center center no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   width: 150px;
   height: 45px;
   display: block;
@@ -3106,6 +3218,23 @@ table.styledTable td,
 #ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol,
 #ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol {
   list-style-type: decimal; }
+
+#ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ul.accordion,
+#ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField ol.list-step,
+#ctl00_PlaceHolderMain_ctl01__ControlWrapper_RichHtmlField .docList ul,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ul.accordion,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField ol.list-step,
+#ctl00_PlaceHolderMain_ctl02__ControlWrapper_RichHtmlField .docList ul,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ul.accordion,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField ol.list-step,
+#ctl00_PlaceHolderMain_ctl03__ControlWrapper_RichHtmlField .docList ul,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ul.accordion,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField ol.list-step,
+#ctl00_PlaceHolderMain_ctl04__ControlWrapper_RichHtmlField .docList ul,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ul.accordion,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField ol.list-step,
+#ctl00_PlaceHolderMain_ctl05__ControlWrapper_RichHtmlField .docList ul {
+  list-style-type: none; }
 
 ul.accordion {
   list-style: none;

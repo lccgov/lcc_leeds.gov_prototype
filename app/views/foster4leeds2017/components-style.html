@@ -42,6 +42,45 @@ Why choose Foster 4 Leeds
 
 {% block sectionOneContent %}
 <h2>Accordion - accessible</h2>
+<div class="accordion"
+    data-aria-accordion
+    data-multi
+    data-default="none">
+
+    <h3 class="accordion__heading">
+        Heading 1
+    </h3>
+    <div class="accordion__panel">
+        <p>
+            Here is the first panel of content.
+        </p>
+        <p>
+            This particular accordion example can have multiple opened panels at a time, or every panel closed.
+        </p>
+    </div>
+
+    <h3 class="accordion__heading">
+        Heading 2
+    </h3>
+    <div class="accordion__panel">
+        <p>
+            By using the <code>data-multi</code> attribute, multiple
+            panels can be opened at once.
+        </p>
+    </div>
+
+    <h3 class="accordion__heading">
+        Heading 3
+    </h3>
+    <div class="accordion__panel">
+        <p>
+            The <code>data-default="none"</code> attribute is used to
+            indicate that no panel will be open by default, when the
+            accordion is initially rendered.
+        </p>
+    </div>
+</div>
+
 <ul class="accordion">
     <li>
         <div class="accordion-drawer">

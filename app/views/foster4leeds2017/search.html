@@ -1,0 +1,266 @@
+{% extends "layout_multi_sections-lcc.html" %}
+
+{% block page_title %}
+Search | Foster4Leeds
+{% endblock %}
+
+
+{% block css_register %}
+    <link href="{{ asset_path }}foster4leeds2017/stylesheets/application.css" rel="stylesheet">
+{% endblock %}
+
+{% block additional_page_scripts %}
+{% endblock %}  
+ 
+
+{% block header %}
+Search
+{% endblock %}
+
+ {% block main_nav %}
+ {% endblock %}
+
+
+
+ {% block sectionOneTop %}
+{% endblock %} 
+
+{% block sectionOneFull%}
+{% endblock %}
+
+
+ {% block breadcrumb %}
+<ul>
+    <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>
+        <a href="/foster4leeds2017">Home</a>
+        <ul class="">
+            <li class=""><span class="s4-breadcrumb-arrowcont"><img src="/_layouts/15/images/nodearrow.png" alt="" style="display:inline-block;padding-top:4px;"></span>Search</li>
+        </ul>
+    </li>
+</ul>
+ {% endblock %}
+
+{% block sectionOneContent %}
+
+{% endblock %}
+
+{% block pageContent %}
+<div class="ms-webpart-zone ms-fullWidth">
+	<div id="MSOZoneCell_WebPartWPQ7" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div webpartid="dbcafd3d-aa95-405d-9f5f-f4e6b254e3bd" haspers="false" id="WebPartWPQ7" width="100%" class="ms-WPBody noindex " allowdelete="false" style=""><div class="ms-rtestate-field"><h2 class="search-results-title">Search results for<br></h2></div><div class="ms-clear"></div></div>
+		</div><div class="ms-PartSpacingVertical"></div>
+	</div><div id="MSOZoneCell_WebPartWPQ9" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div webpartid="57b362f1-ad9a-47ae-a385-8c625ce80c55" haspers="false" id="WebPartWPQ9" width="100%" class="ms-WPBody noindex " allowdelete="false" style=""><div class="ms-rtestate-field"><!-- CSS file -->
+<link rel="stylesheet" href="/Style Library/txt_files_/AutoComplete/easy-autocomplete.min.css"> 
+
+<div class="lcc-search-box">
+    <div class="input-group">
+        <label class="sr-only" for="restSearch">Search the website</label>
+        <div class="easy-autocomplete eac-square eac-description">
+            <div id="menu-container">
+                <input type="search" class="form-control" name="search" id="restSearch" autocomplete="off" placeholder="Search this site..." value="">
+            </div>
+        </div>
+        <span class="input-group-btn">
+            <button id="btnSearch" class="btn" type="button"><span class="sr-only">Search</span></button>
+        </span>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+	var LCCbutton = document.getElementById("btnSearch");
+	var LCCSearchInput = document.getElementById("restSearch");
+	
+    LCCSearchInput.addEventListener("keyup", function(e){
+	    e.preventDefault();
+	    if(e.keyCode == 13){
+	        LCCbutton.click() = function (){
+	    		var searchInput = LCCSearchInput.value;
+	    		window.open("/search-results?k=" + searchInput, "_self");
+			}
+	    }
+	    LCCbutton.onclick = function () {
+    		var searchInput = LCCSearchInput.value;
+    		window.open("/search-results?k=" + searchInput, "_self");
+		}
+	});
+	
+	function getQueryVariable(variable)
+	{
+	       var query = window.location.search.substring(1);
+	       var vars = query.split("&");
+	       for (var i=0;i<vars.length;i++) {
+	               var pair = vars[i].split("=");
+	               if(pair[0] == variable){return pair[1];}
+	       }
+	       return(false);
+	}
+	
+	searchStr = getQueryVariable("k");
+	document.getElementById("restSearch").value = decodeURI(searchStr);
+	
+</script>
+
+<style>
+#menu-container ul{
+	z-index:1000 !important;
+}
+</style>
+
+</div><div class="ms-clear"></div></div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block sectionOneRightHandColumn %}
+
+
+{% endblock %}
+
+{% block sectionLeftHandColumn %}
+<div class="ms-webpart-zone ms-fullWidth">
+	<div id="MSOZoneCell_WebPartWPQ8" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div webpartid="1cef6c2f-e462-49ab-ba8d-891311c37126" haspers="false" id="WebPartWPQ8" width="100%" class="ms-WPBody noindex " allowdelete="false" style=""><div class="ms-rtestate-field"><h3 class="filter-by-title">Filter by:<br></h3></div><div class="ms-clear"></div></div>
+		</div><div class="ms-PartSpacingVertical"></div>
+	</div><div id="MSOZoneCell_WebPartWPQ6" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div webpartid="6043cf3e-2e34-4f46-bb8d-906620414406" haspers="false" id="WebPartWPQ6" width="100%" class="ms-WPBody noindex " allowdelete="false" style=""><div style="display: none;"></div><div componentid="ctl00_ctl46_g_6043cf3e_2e34_4f46_bb8d_906620414406_csr" id="ctl00_ctl46_g_6043cf3e_2e34_4f46_bb8d_906620414406_csr">        <div class="ms-ref-ctrl" id="Refinement" name="Control">                            <div class="ms-ref-refiner" id="ctl00_ctl46_g_6043cf3e_2e34_4f46_bb8d_906620414406_csr1" name="Group" refinername="FileType">          <div id="Container">            <a class=" ms-ref-refinername" href="javascript: {}" onclick="EnsureScriptParams('SearchUI.js', 'Srch.SU.toggleRefCategory', this.parentNode, 'FileType')" onmouseup="this.blur();">
+                    <div class="ms-displayInlineBlock" id="ctl00_ctl46_g_6043cf3e_2e34_4f46_bb8d_906620414406_csr_RefinerHeading_FileType">Result type</div>
+                    <div class="ms-ref-uparrow" id="refinerExpandCollapseArrow"></div>
+                  </a>            <div id="SelectedSection" class="ms-ref-selSec">            </div>            <div id="UnselectedSection" class="ms-ref-unselSec" style="display:">                <div id="unselShortList" class="ms-ref-unsel-shortList">                      <div id="Value" name="Item">                <a id="FilterLink" class="ms-displayBlock" onclick="$getClientControl(this).addRefinementFiltersJSONWithOr('{\u0022FileType\u0022:[\u0022equals\u0028\\\u0022odc\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022ods\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022xls\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022xlsb\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022xlsm\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022xlsx\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022xltm\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022xltx\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022xlam\\\u0022\u0029\u0022]}');" href="javascript:{}" title="Refine by: Excel">                    <div id="RefinementName" class="ms-ref-name ms-displayInlineBlock ms-ref-ellipsis"> Excel </div>                </a>            </div>                      <div id="Value" name="Item">                <a id="FilterLink" class="ms-displayBlock" onclick="$getClientControl(this).addRefinementFiltersJSONWithOr('{\u0022FileType\u0022:[\u0022equals\u0028\\\u0022pdf\\\u0022\u0029\u0022]}');" href="javascript:{}" title="Refine by: PDF">                    <div id="RefinementName" class="ms-ref-name ms-displayInlineBlock ms-ref-ellipsis"> PDF </div>                </a>            </div>                      <div id="Value" name="Item">                <a id="FilterLink" class="ms-displayBlock" onclick="$getClientControl(this).addRefinementFiltersJSONWithOr('{\u0022FileType\u0022:[\u0022equals\u0028\\\u0022odp\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022ppt\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022pptm\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022pptx\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022potm\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022potx\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022ppam\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022ppsm\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022ppsx\\\u0022\u0029\u0022]}');" href="javascript:{}" title="Refine by: PowerPoint">                    <div id="RefinementName" class="ms-ref-name ms-displayInlineBlock ms-ref-ellipsis"> PowerPoint </div>                </a>            </div>                      <div id="Value" name="Item">                <a id="FilterLink" class="ms-displayBlock" onclick="$getClientControl(this).addRefinementFiltersJSONWithOr('{\u0022FileType\u0022:[\u0022equals\u0028\\\u0022HTML\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022MHTML\\\u0022\u0029\u0022]}');" href="javascript:{}" title="Refine by: Web page">                    <div id="RefinementName" class="ms-ref-name ms-displayInlineBlock ms-ref-ellipsis"> Web page </div>                </a>            </div>                      <div id="Value" name="Item">                <a id="FilterLink" class="ms-displayBlock" onclick="$getClientControl(this).addRefinementFiltersJSONWithOr('{\u0022FileType\u0022:[\u0022equals\u0028\\\u0022docx\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022doc\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022docm\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022dot\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022nws\\\u0022\u0029\u0022,\u0022equals\u0028\\\u0022dotx\\\u0022\u0029\u0022]}');" href="javascript:{}" title="Refine by: Word">                    <div id="RefinementName" class="ms-ref-name ms-displayInlineBlock ms-ref-ellipsis"> Word </div>                </a>            </div>                </div>             </div>        </div>    </div>                <div id="ctl00_ctl46_g_6043cf3e_2e34_4f46_bb8d_906620414406_csr2EmptyRefinement" class="ms-disabled ms-alignCenter ms-hide">                        We don't have any refiners to show you                </div>        </div>    </div><noscript>&lt;div id="ctl00_ctl46_g_6043cf3e_2e34_4f46_bb8d_906620414406_noscript"&gt;It looks like your browser does not have JavaScript enabled. Please turn on JavaScript and try again.&lt;/div&gt;</noscript><div id="ctl00_ctl46_g_6043cf3e_2e34_4f46_bb8d_906620414406">
+
+			</div><div class="ms-clear"></div></div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+{% block sectionOneRightContent %}
+<div class="ms-webpart-zone ms-fullWidth">
+	<div id="MSOZoneCell_WebPartWPQ5" class="s4-wpcell-plain ms-webpartzone-cell ms-webpart-cell-vertical ms-fullWidth ">
+		<div class="ms-webpart-chrome ms-webpart-chrome-vertical ms-webpart-chrome-fullWidth ">
+			<div webpartid="a0e63131-780d-471a-ab7e-685a10eac5d1" haspers="false" id="WebPartWPQ5" width="100%" class="ms-WPBody noindex " allowdelete="false" style=""><div style="display: none;"></div><div componentid="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr" id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr" style="">                            <div class="ms-srch-result" id="Result" name="Control">                        <div id="Groups" class="ms-srch-result-groups">                                            <div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr23_group" name="Group" class="ms-srch-group " data-queryruleid="00000000-0000-0000-0000-000000000000">             <div id="GroupBorderTop"></div>                 <div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr23_groupContent" class="ms-srch-group-content">	            	            	            	            	            <div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr24_item" name="Item" data-displaytemplate="DefaultItem" class="ms-srch-item">						<div class="ms-srch-item-body">							<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr24_itemTitle" class="ms-srch-item-title">								<h3 class="ms-srch-ellipsis">										<a rel="pdf" href="https://www.leeds.gov.uk/foster4leeds/Release Documents/foster carer terms and conditions.pdf" class="ms-srch-item-link" title="foster carer terms and conditions">foster carer terms and conditions <span>(pdf, 169.9KB)</span><span class="sr-only">Opens in new window</span></a>								</h3>							</div>								<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr24_itemSummary" class="ms-srch-item-summary">																		Long Service and other awards for <strong class="ms-srch-item-highlightedText">foster</strong> carers   The Financial Support to <strong class="ms-srch-item-highlightedText">Foster</strong> Carers document is revised periodically and an … <br>																		               						<a href="https://www.leeds.gov.uk/foster4leeds/Release Documents/foster carer terms and conditions.pdf">https://www.leeds.gov.uk/foster4leeds/Release Documents/foster carer terms and conditions.pdf</a>								</div>						</div>            	</div>    	            	            	            	            	            <div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr25_item" name="Item" data-displaytemplate="DefaultItem" class="ms-srch-item">						<div class="ms-srch-item-body">							<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr25_itemTitle" class="ms-srch-item-title">								<h3 class="ms-srch-ellipsis">										<a rel="pdf" href="https://www.leeds.gov.uk/foster4leeds/Release Documents/FOSTER CARER CHARTER.pdf" class="ms-srch-item-link" title="FOSTER CARER CHARTER">FOSTER CARER CHARTER <span>(pdf, 133.1KB)</span><span class="sr-only">Opens in new window</span></a>								</h3>							</div>								<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr25_itemSummary" class="ms-srch-item-summary">																		an annual review of your work as <strong class="ms-srch-item-highlightedText">foster</strong> carers; give you honest and open feedback about your competency as a <strong class="ms-srch-item-highlightedText">foster</strong> carer; provide you with access to 24-hour … <br>																		               						<a href="https://www.leeds.gov.uk/foster4leeds/Release Documents/FOSTER CARER CHARTER.pdf">https://www.leeds.gov.uk/foster4leeds/Release Documents/FOSTER CARER CHARTER.pdf</a>								</div>						</div>            	</div>    	            	            	            	            	            <div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr26_item" name="Item" data-displaytemplate="DefaultItem" class="ms-srch-item">						<div class="ms-srch-item-body">							<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr26_itemTitle" class="ms-srch-item-title">								<h3 class="ms-srch-ellipsis">										<a rel="pdf" href="https://www.leeds.gov.uk/foster4leeds/Release Documents/Foster for Leeds booklet May 2014 LOW RES.pdf" class="ms-srch-item-link" title="Foster for Leeds booklet May 2014 LOW RES">Foster for Leeds booklet May 2014 LOW RES <span>(pdf, 1.3MB)</span><span class="sr-only">Opens in new window</span></a>								</h3>							</div>								<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr26_itemSummary" class="ms-srch-item-summary">																		to place Leeds children with Leeds <strong class="ms-srch-item-highlightedText">foster</strong> carers, ensuring our <strong class="ms-srch-item-highlightedText">foster</strong> carers look after children on a regular … you should be generally healthy and medically fit to <strong class="ms-srch-item-highlightedText">foster</strong> … <br>																		               						<a href="https://www.leeds.gov.uk/foster4leeds/Release Documents/Foster for Leeds booklet May 2014 LOW RES.pdf">https://www.leeds.gov.uk/foster4leeds/Release Documents/Foster for Leeds booklet May 2014 LOW RES.pdf</a>								</div>						</div>            	</div>    	            	            	            	            	            <div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr27_item" name="Item" data-displaytemplate="DefaultItem" class="ms-srch-item">						<div class="ms-srch-item-body">							<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr27_itemTitle" class="ms-srch-item-title">								<h3 class="ms-srch-ellipsis">										<a rel="html" href="https://www.leeds.gov.uk/foster4leeds/Pages/hear-what-our-foster-carers-have-to-say.aspx" class="ms-srch-item-link" title="Hear what our foster carers have to say">Hear what our foster carers have to say </a>								</h3>							</div>								<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr27_itemSummary" class="ms-srch-item-summary">																		Videos with real foster carers talking about their experiences<br>																		               						<a href="https://www.leeds.gov.uk/foster4leeds/Pages/hear-what-our-foster-carers-have-to-say.aspx">https://www.leeds.gov.uk/foster4leeds/Pages/hear-what-our-foster-carers-have-to-say.aspx</a>								</div>						</div>            	</div>    	            	            	            	            	            <div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr28_item" name="Item" data-displaytemplate="DefaultItem" class="ms-srch-item">						<div class="ms-srch-item-body">							<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr28_itemTitle" class="ms-srch-item-title">								<h3 class="ms-srch-ellipsis">										<a rel="html" href="https://www.leeds.gov.uk/foster4leeds/Pages/who-can-I-foster.aspx" class="ms-srch-item-link" title="Who can I foster?">Who can I foster? </a>								</h3>							</div>								<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr28_itemSummary" class="ms-srch-item-summary">																		Children and young people of all ages need <strong class="ms-srch-item-highlightedText">foster</strong> carers and we'll ask you if you have an … We currently have a shortage of <strong class="ms-srch-item-highlightedText">foster</strong> carers for the following groups of children and … <br>																		               						<a href="https://www.leeds.gov.uk/foster4leeds/Pages/who-can-I-foster.aspx">https://www.leeds.gov.uk/foster4leeds/Pages/who-can-I-foster.aspx</a>								</div>						</div>            	</div>    	            	            	            	            	            <div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr29_item" name="Item" data-displaytemplate="DefaultItem" class="ms-srch-item">						<div class="ms-srch-item-body">							<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr29_itemTitle" class="ms-srch-item-title">								<h3 class="ms-srch-ellipsis">										<a rel="html" href="https://www.leeds.gov.uk/foster4leeds/current-foster-carers" class="ms-srch-item-link" title="current foster carers">current foster carers </a>								</h3>							</div>								<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr29_itemSummary" class="ms-srch-item-summary">																		Login to the members area if you already foster with Leeds City Council<br>																		               						<a href="https://www.leeds.gov.uk/foster4leeds/current-foster-carers">https://www.leeds.gov.uk/foster4leeds/current-foster-carers</a>								</div>						</div>            	</div>    	            	            	            	            	            <div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr30_item" name="Item" data-displaytemplate="DefaultItem" class="ms-srch-item">						<div class="ms-srch-item-body">							<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr30_itemTitle" class="ms-srch-item-title">								<h3 class="ms-srch-ellipsis">										<a rel="doc" href="https://www.leeds.gov.uk/docs/Application for FSM only - Foster Carers.doc" class="ms-srch-item-link" title="Free School Meals Claim Form">Free School Meals Claim Form <span>(doc, 298.5KB)</span><span class="sr-only">Opens in new window</span></a>								</h3>							</div>								<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr30_itemSummary" class="ms-srch-item-summary">																		for under Social Services supervision as either a <strong class="ms-srch-item-highlightedText">Foster</strong> Carer or Family Network carer … FREE SCHOOL MEALS CLAIM FORM FOR <strong class="ms-srch-item-highlightedText">FOSTER</strong> PARENTS AND FAMILY NETWORK CARERS … <br>																		               						<a href="https://www.leeds.gov.uk/docs/Application for FSM only - Foster Carers.doc">https://www.leeds.gov.uk/docs/Application for FSM only - Foster Carers.doc</a>								</div>						</div>            	</div>    	            	            	            	            	            <div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr31_item" name="Item" data-displaytemplate="DefaultItem" class="ms-srch-item">						<div class="ms-srch-item-body">							<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr31_itemTitle" class="ms-srch-item-title">								<h3 class="ms-srch-ellipsis">										<a rel="pdf" href="https://www.leeds.gov.uk/youthinformationHub/Documents/Foster Family Fun Days in Leeds (July-Oct 2015).pdf" class="ms-srch-item-link" title="Foster Family Fun Days in Leeds (July-Oct 2015)">Foster Family Fun Days in Leeds (July-Oct 2015) <span>(pdf, 634.8KB)</span><span class="sr-only">Opens in new window</span></a>								</h3>							</div>								<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr31_itemSummary" class="ms-srch-item-summary">																		3503 Keep up-to-date with <strong class="ms-srch-item-highlightedText">foster</strong> fun activities at www.heart.ac.uk/fosterfun     <strong class="ms-srch-item-highlightedText">Foster</strong> Family Fun Days in Leeds  We … <br>																		               						<a href="https://www.leeds.gov.uk/youthinformationHub/Documents/Foster Family Fun Days in Leeds (July-Oct 2015).pdf">https://www.leeds.gov.uk/youthinformationHub/Documents/Foster Family Fun Days in Leeds (July-Oct 2015).pdf</a>								</div>						</div>            	</div>    	            	            	            	            	            <div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr32_item" name="Item" data-displaytemplate="DefaultItem" class="ms-srch-item">						<div class="ms-srch-item-body">							<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr32_itemTitle" class="ms-srch-item-title">								<h3 class="ms-srch-ellipsis">										<a rel="pdf" href="https://www.leeds.gov.uk/docs/151 - Fostering - Complex Needs.pdf" class="ms-srch-item-link" title="Fostering - Complex Needs">Fostering - Complex Needs <span>(pdf, 90.5KB)</span><span class="sr-only">Opens in new window</span></a>								</h3>							</div>								<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr32_itemSummary" class="ms-srch-item-summary">																		closely with the child’s social worker and <strong class="ms-srch-item-highlightedText">foster</strong> carer to form a team around the child … the age of 21 may apply to become a <strong class="ms-srch-item-highlightedText">Foster</strong> Carer but those between the ages of 21 and 25 … <br>																		               						<a href="https://www.leeds.gov.uk/docs/151 - Fostering - Complex Needs.pdf">https://www.leeds.gov.uk/docs/151 - Fostering - Complex Needs.pdf</a>								</div>						</div>            	</div>    	            	            	            	            	            <div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr33_item" name="Item" data-displaytemplate="DefaultItem" class="ms-srch-item">						<div class="ms-srch-item-body">							<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr33_itemTitle" class="ms-srch-item-title">								<h3 class="ms-srch-ellipsis">										<a rel="pdf" href="https://www.leeds.gov.uk/docs/150 - Fostering Service.pdf" class="ms-srch-item-link" title="Fostering Service">Fostering Service <span>(pdf, 168.4KB)</span><span class="sr-only">Opens in new window</span></a>								</h3>							</div>								<div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_csr33_itemSummary" class="ms-srch-item-summary">																		complex needs, and one  team supporting <strong class="ms-srch-item-highlightedText">foster</strong> carers with teenagers, and two teams for supporting           mainstream <strong class="ms-srch-item-highlightedText">foster</strong> carers … How do people become <strong class="ms-srch-item-highlightedText">foster</strong> carers … <br>																		               						<a href="https://www.leeds.gov.uk/docs/150 - Fostering Service.pdf">https://www.leeds.gov.uk/docs/150 - Fostering Service.pdf</a>								</div>						</div>            	</div>    <div class="ms-srch-group-clear"></div></div>                                                    <div id="GroupBorderBottom"></div>        </div>                                  </div>                        <ul id="Paging" class="ms-srch-Paging">                                    <li id="PagingSelf"><a id="SelfLink_1">1</a></li>                                    <li id="PagingLink"><a id="PageLink_2" href="#" title="Move to page 2" onclick="$getClientControl(this).page(11);return Srch.U.cancelEvent(event);">2</a></li>                                    <li id="PagingImageLink"><a id="PageLinkNext" href="#" class="ms-commandLink ms-promlink-button ms-promlink-button-enabled ms-verticalAlignMiddle" title="Move to next page" onclick="$getClientControl(this).page(11);return Srch.U.cancelEvent(event);">                                        <span class="ms-promlink-button-image">                                            <img src="/_layouts/15/images/searchresultui.png?rev=23" class="ms-srch-pagingNext" alt="Move to next page">                                        </span>                                    </a></li>                        </ul>                <div class="ms-srch-resultFooter">                        <div id="ResultCount" class="ms-srch-resultscount">                            About 666 results                        </div>                    <ul id="ResultFooter">                    </ul>                </div>        </div>    </div><noscript>&lt;div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_noscript"&gt;It looks like your browser does not have JavaScript enabled. Please turn on JavaScript and try again.&lt;/div&gt;</noscript><div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1">
+				<div class="display-none">
+					<div class="ms-webpart-chrome-title" id="WebPartWPQ10_ChromeTitle">
+						<span title="" id="WebPartTitleWPQ10" class="js-webpart-titleCell"><h2 style="text-align:justify;" class="ms-webpart-titleText"><nobr><span></span><span id="WebPartCaptionWPQ10"></span></nobr></h2></span>
+					</div><div webpartid="00000000-0000-0000-0000-000000000000" haspers="true" id="WebPartWPQ10" width="100%" class="ms-WPBody ms-WPBorder noindex ms-wpContentDivSpace " onlyformepart="true" allowdelete="false" style=""><div componentid="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_ctl00_csr" id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_ctl00_csr"><div class="ms-srch-dataProvider" id="DataProvider" name="Control"></div></div><noscript>&lt;div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_ctl00_noscript"&gt;It looks like your browser does not have JavaScript enabled. Please turn on JavaScript and try again.&lt;/div&gt;</noscript><div id="ctl00_ctl46_g_a0e63131_780d_471a_ab7e_685a10eac5d1_ctl00">
+
+					</div><div class="ms-clear"></div></div>
+				</div>
+			</div><div class="ms-clear"></div></div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+
+{% block sectionOneThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionOneThirdCol2 %}
+ {% endblock %}
+
+{% block sectionOneThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionTwoTop %}
+{% endblock %} 
+
+{% block sectionTwoFull%} 
+{% endblock %}
+
+{% block sectionTwoContent %}
+{% endblock %}
+
+{% block sectionTwoRightHandColumn %}
+{% endblock %}
+
+{% block sectionTwoThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionTwoThirdCol2 %}
+ {% endblock %}
+
+{% block sectionTwoThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionThreeTop %}
+{% endblock %} 
+
+{% block sectionThreeFull%}
+{% endblock %}
+
+{% block sectionThreeContent %}
+{% endblock %}
+
+{% block sectionThreeRightHandColumn %}
+{% endblock %}
+
+{% block sectionThreeThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionThreeThirdCol2 %}
+ {% endblock %}
+
+{% block sectionThreeThirdCol3 %}
+ {% endblock %}
+
+
+{% block sectionFourTop %}
+{% endblock %} 
+
+{% block sectionFourFull%}
+{% endblock %}
+
+{% block sectionFourContent %}
+{% endblock %}
+
+{% block sectionFourRightHandColumn %}
+{% endblock %}
+
+{% block sectionFourThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFourThirdCol2 %}
+ {% endblock %}
+
+{% block sectionFourThirdCol3 %}
+ {% endblock %}
+
+
+
+{% block sectionFiveTop %}
+{% endblock %} 
+
+{% block sectionFiveFull%}
+{% endblock %}
+
+{% block sectionFiveContent %}
+{% endblock %}
+
+{% block sectionFiveRightHandColumn %}
+{% endblock %}
+
+{% block sectionFiveThirdCol1 %}
+ {% endblock %}
+
+ {% block sectionFiveThirdCol2 %}
+
+ {% endblock %}
+
+{% block sectionFiveThirdCol3 %}
+ {% endblock %}
+
+  {% block footer_nav %}
+ {% endblock %}
+
+ {% block reuserblecontent_footer %}
+     {% include "includes/foster4leeds2017/footer_foster4leeds2017.html" %}
+ {% endblock %}

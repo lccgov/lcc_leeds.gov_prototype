@@ -1,0 +1,101 @@
+<!DOCTYPE html >
+<!--[if IE]><![endif]-->
+<!--[if lt IE 7 ]> <html lang="en" class="ie6">    <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7">    <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8">    <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9">    <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+
+    <!-- HEAD -->
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>LCC Forms template</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+        <!-- Modernizr -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <!-- Respond.js -->
+        <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+
+        <!-- LCC TEMPLATE CSS -->
+        <link rel="stylesheet" href="{{ asset_path }}stylesheets/lcc-template.css?1.1.60" />
+        <!-- LCC BASE CSS -->
+        <link href="{{ asset_path }}forms/stylesheets/application.css" rel="stylesheet">
+    </head>
+
+    <!-- BODY -->
+    <body>
+        <!-- Header mark-up -->
+        <!-- Header -->
+        <header class="header-nav-container"> 
+            <div id="header" class="header-lcc">
+                <section class="sectionHeader">
+                    <div class="container-fluid">
+                        <div class="header-wrapper">
+                            <div class="header-logo">
+                                <a href="https://www.leeds.gov.uk" title="Go to the homepage" class="logo"><span class="sr-only">Go to leeds.gov.uk home page</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <!-- /.header-nav-container -->
+        
+        <section id="main" class="sectionOne">
+            <div class="container-fluid">
+                
+                <!-- Main content -->
+                <div class="row">
+                    <div class="col-md-8">
+
+                        <!-- page header -->
+                        <h1>LCC Template</h1>
+
+
+                        <!-- content goes here -->
+                        <div class="text">
+                            <p class="lead">Template for LCC subsite forms.</p>
+                            
+                            <p>You can refer to our <a href="https://lcc-prototype-kit.herokuapp.com/design-patterns-pages/styleguide">style guide and design patterns</a> for adding content.</p>
+                        </div>
+                    
+                    <!-- Right hand column -->
+                    <aside role="complementary" class="col-md-4">
+                        
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <!-- Third party template specific style -->
+        <style>
+            footer{
+                margin-top:30px !important;
+            }
+            
+            @media (min-width: 641px){
+                footer{
+                    margin-top:50px !important;
+                }
+            }
+        </style>
+
+        <footer class="main" role="contentinfo">
+            <section class="footerGlobal">
+                <div class="container-fluid">
+                    <div class="col-sm-6 logo-footer">
+                        <a href="https://www.leeds.gov.uk" title="Go to the homepage"><span class="sr-only">Go to leeds.gov.uk home page</span><img src="https://www-beta.leeds.gov.uk/_catalogs/masterpage/public/stylesheets/images/lcc-logo-white-01.svg" alt="Leeds City Council logo"></a>
+                        <p>Copyright © Leeds City Council 2018</p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
