@@ -478,7 +478,7 @@ p.sharepoint,
 .text-block {
   margin: 0 0 30px;
   border: 0;
-  border-left: 1px solid #E5F1F5;
+  border-left: 2px solid #E5F1F5;
   padding: 0 15px; }
   @media (min-width: 641px) {
     .text-block {
@@ -599,7 +599,8 @@ a[rel="external"] {
 .link-back {
   text-decoration: none !important;
   border-bottom: 1px solid #007299;
-  display: inline-block; }
+  display: inline-block;
+  margin: 10px 0 0; }
   .link-back:before {
     font-family: FontAwesome;
     content: "\f0d9";
@@ -632,7 +633,21 @@ ol {
   padding: 0;
   margin-top: 0;
   margin-bottom: 15px;
-  display: inline-block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex-wrap: wrap;
+  -moz-box-flex-wrap: wrap;
+  -ms-flex-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%; }
   @media (min-width: 641px) {
     .list {
@@ -886,7 +901,7 @@ h2 + h3 {
     .box-layout.main.transparent .box-layout-item {
       padding: 0 0 15px 0; } }
   .box-layout .list-nav li {
-    border-left: 3px solid #f8f9fa; }
+    border-left: 3px solid #dde3e6; }
     .box-layout .list-nav li a {
       border: 0;
       padding-left: 15px;
@@ -901,6 +916,8 @@ h2 + h3 {
       .box-layout.transparent .box-layout-item {
         width: 100%;
         padding: 0 0 5px 0; } }
+    .box-layout.transparent .box-layout-item .list-nav li {
+      border-left: 3px solid #f8f9fa; }
 
 .telephone {
   font-weight: 700;
@@ -1001,21 +1018,19 @@ h2 + h3 {
     content: ""; }
   .btn-arrow:after,
   .btn[rel=external]:after {
-    display: block;
-    font-family: FontAwesome;
     content: "\f105";
+    font-family: FontAwesome;
+    display: block;
     position: absolute;
     right: 0px;
     height: auto;
     background: transparent;
     padding: 0;
     top: 50%;
-    font-size: 22px;
-    content: "\f105";
-    padding: 0;
     text-align: center;
     line-height: 0;
-    width: 36px; }
+    width: 36px;
+    font-size: 30px; }
   @media (max-width: 767px) {
     .btn-arrow,
     .btn[rel=external] {
@@ -1025,7 +1040,9 @@ h2 + h3 {
   margin: 0 0 20px; }
   .btn[rel=external]:after {
     content: "\f08e";
-    width: 41px; }
+    width: 41px;
+    font-size: 14px;
+    opacity: 0.8; }
 
 .btn.bottom {
   margin-bottom: 0 !important; }
@@ -1223,6 +1240,17 @@ textarea.form-control {
     .form-label {
       font-size: 21px; } }
 
+.form-label-bold {
+  font-weight: bold; }
+
+.form-label-large {
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 10px; }
+  @media (min-width: 641px) {
+    .form-label-large {
+      font-size: 24px; } }
+
 .label-small .block-label {
   padding: 8px 15px 8px 38px;
   font-size: 16px; }
@@ -1236,7 +1264,8 @@ textarea.form-control {
 .block-label.inline {
   clear: both;
   display: inline-block;
-  float: none; }
+  float: none;
+  margin-right: 10px; }
 
 .form-control-3-4 {
   width: 100% !important; }
@@ -1530,6 +1559,74 @@ h1 .form-progress {
       color: #d32f2f;
       font-weight: bold; }
 
+@media (min-width: 641px) {
+  .search-group {
+    width: 50% !important; } }
+
+.search-group.postcode-lookup {
+  max-width: 20em !important;
+  margin-bottom: 15px; }
+  @media (min-width: 641px) {
+    .search-group.postcode-lookup {
+      width: 20em !important;
+      margin-bottom: 20px; } }
+
+.search-group .form-control {
+  width: 100% !important;
+  -webkit-border-radius: 4px 0 0 4px !important;
+  -moz-border-radius: 4px 0 0 4px !important;
+  -ms-border-radius: 4px 0 0 4px !important;
+  border-radius: 4px 0 0 4px !important; }
+
+.search-group .btn {
+  height: 45px;
+  background: #2e7d32;
+  color: white;
+  border: 1px solid #2e7d32;
+  border-bottom-color: #19451c;
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 16px;
+  box-shadow: none !important; }
+  .search-group .btn:hover {
+    background: #359039; }
+
+.search-group-link {
+  display: block;
+  margin: 5px 0 0 !important;
+  font-size: 16px;
+  line-height: 1.6; }
+  @media (min-width: 641px) {
+    .search-group-link {
+      font-size: 19px; } }
+
+.form-group-link {
+  margin-top: 15px;
+  display: inline-block; }
+
+.postcode-completed p,
+.postcode-completed a {
+  float: left;
+  padding: 0;
+  line-height: 1; }
+
+.postcode-completed label {
+  display: block; }
+
+.postcode-completed p {
+  margin: 0 15px 0 0; }
+
+.postcode-completed a {
+  margin: 0; }
+
+@media (max-width: 340px) {
+  .postcode-completed label {
+    display: block;
+    margin: 0 0 10px 0;
+    float: none; }
+  .postcode-completed p {
+    margin: 0 10px 0 0; } }
+
 a:focus,
 input[type=submit]:focus,
 .btn:focus,
@@ -1602,6 +1699,11 @@ a.skip:focus, a.skip:active {
         width: 100%;
         float: none;
         padding: 5px 0 10px; } }
+
+.img-border {
+  border: 1px solid #eceff1;
+  padding: 0;
+  margin: 5px 0 20px; }
 
 table {
   border-collapse: collapse;
@@ -1791,7 +1893,7 @@ p + .panel {
     position: absolute;
     top: 0;
     left: -10px;
-    opacity: 0.5;
+    opacity: 0.2;
     font-size: 25px; }
     @media (min-width: 641px) {
       .panel blockquote:before {
@@ -1958,6 +2060,17 @@ p + .panel {
 
 .panel .btn {
   margin-bottom: 0; }
+
+.panel p + .btn {
+  margin-top: 10px !important; }
+
+.panel .text-block,
+.panel .text-highlight {
+  border-color: #9bc9d9; }
+
+.panel.alt .text-block,
+.panel.alt .text-highlight {
+  border-color: #00394d; }
 
 hr.ms-rteElement-spacer {
   -ms-name: "spacer";
@@ -2797,12 +2910,14 @@ footer.main {
     color: #fff; }
 
 .logo-footer span {
-  background: url("<%= asset_path('lcc-logo-white-01.svg') %>") center center no-repeat;
-  background-size: 100% 100%;
-  width: 150px;
-  height: 45px;
+  background: url("../images/lcc-logo-white-01.svg") center center/100% 100% no-repeat;
   display: block;
-  margin: 1.875em 0; }
+  margin: 0 0 1.25em 0;
+  width: 220px;
+  height: 66px; }
+  @media (max-width: 500px) {
+    .logo-footer span {
+      margin: 0 0 20px; } }
 
 .socialBookmarks {
   background: #f8f9fa;
@@ -2878,6 +2993,41 @@ footer.main {
     @media (max-width: 641px) {
       .alert .alertInner {
         padding: 15px 15px 8px; } }
+    .alert .alertInner ul,
+    .alert .alertInner ol {
+      color: #212224;
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 15px;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-flex-direction: column;
+      -moz-box-flex-direction: column;
+      -ms-flex-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-flex-wrap: wrap;
+      -moz-box-flex-wrap: wrap;
+      -ms-flex-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      flex-wrap: wrap;
+      width: 100%; }
+      @media (min-width: 641px) {
+        .alert .alertInner ul,
+        .alert .alertInner ol {
+          margin-bottom: 17px; } }
+      .alert .alertInner ul li,
+      .alert .alertInner ol li {
+        margin-bottom: 7px; }
+    .alert .alertInner ul {
+      list-style-type: disc;
+      padding-left: 20px; }
+    .alert .alertInner ol {
+      list-style-type: decimal;
+      padding-left: 20px; }
   .alert.alert-warning {
     background: #FFBF47; }
     .alert.alert-warning a:focus {
@@ -2953,27 +3103,29 @@ footer.main {
     .breadcrumb {
       padding: 0;
       font-size: 14px; } }
-  .breadcrumb ul {
-    padding: 0; }
-    .breadcrumb ul li a {
-      position: relative;
-      margin-right: 16px; }
-      .breadcrumb ul li a:after {
-        position: absolute;
-        display: inline-block;
-        content: "/";
-        font-size: 16px;
-        padding: 0 8px;
-        text-decoration: none !important; }
-  .breadcrumb img {
-    display: none !important; }
-  .breadcrumb ul {
+  .breadcrumb ul,
+  .breadcrumb ol {
+    padding: 0;
     list-style: none;
     display: inline; }
-    .breadcrumb ul li {
+    .breadcrumb ul li,
+    .breadcrumb ol li {
       display: inline; }
+      .breadcrumb ul li a,
+      .breadcrumb ol li a {
+        position: relative;
+        margin-right: 16px; }
+        .breadcrumb ul li a:after,
+        .breadcrumb ol li a:after {
+          position: absolute;
+          display: inline-block;
+          content: "/";
+          font-size: 16px;
+          padding: 0 8px;
+          text-decoration: none !important; }
+  .breadcrumb img {
+    display: none !important; }
 
-/*could be coded better*/
 .breadcrumb ul:first-child {
   margin-left: 0; }
 
@@ -3426,7 +3578,21 @@ table.styledTable td,
   padding: 0;
   margin-top: 0;
   margin-bottom: 15px;
-  display: inline-block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex-wrap: wrap;
+  -moz-box-flex-wrap: wrap;
+  -ms-flex-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   list-style-type: disc;
   padding-left: 20px; }
@@ -3455,7 +3621,21 @@ table.styledTable td,
   padding: 0;
   margin-top: 0;
   margin-bottom: 15px;
-  display: inline-block;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  -ms-flex-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex-wrap: wrap;
+  -moz-box-flex-wrap: wrap;
+  -ms-flex-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 100%;
   list-style-type: decimal;
   padding-left: 20px; }
@@ -4190,14 +4370,10 @@ form input[type=submit].submit {
           top: 0px;
           right: 0px;
           color: #90a4ae; }
-          @media (max-width: 767px) {
-            .groupPromo ul li a h3:after {
-              top: 20px;
-              right: 20px; } }
           @media (max-width: 600px) {
             .groupPromo ul li a h3:after {
               top: 50%;
-              right: 15px;
+              right: 0;
               margin-top: -10px;
               font-size: 16px; } }
       .groupPromo ul li a p {
@@ -4826,7 +5002,7 @@ form input[type=submit].submit {
 Sharepoint overides
 ********************/
 body {
-  overflow: scroll; }
+  overflow: auto; }
 
 ul.cbs-List {
   display: block;
@@ -5120,7 +5296,7 @@ h1 input.ms-long {
     margin-bottom: 15px;
     padding-bottom: 10px;
     font-size: 24px;
-    border-bottom: 5px solid #F6F7FA; }
+    border-bottom: 5px solid #eceff1; }
     @media (max-width: 641px) {
       .sideNav h2,
       .sideNav h3,
